@@ -70,6 +70,8 @@ def parse_arguments():
                         help='Specific LLM model name to override the default.')
     parser.add_argument('--api_key', type=str,
                         help='API key for the selected LLM provider (uses environment variable if not set).')
+    parser.add_argument('--prompt_name', type=str,
+                        help='Base name of the prompt template file (e.g., "invoice_extraction" for invoice_extraction.j2).')
 
     # PDF Processing Configuration
     parser.add_argument('--ocr_mode', type=str, default='hybrid', choices=['hybrid', 'docling', 'gpt'],
@@ -185,12 +187,15 @@ def main():
                      'llm_provider': args.llm_provider, # Pass provider choice down
                      'api_key': args.api_key,           # Pass api_key down
                      'vision_model': args.llm_model,    # Pass model override (GPTPVisionProcessor will use this if set)
+                     # Pass prompt_name for potential use by GPTPVisionProcessor or Gemini native call
+                     'prompt_name': args.prompt_name,
+                     # 'gpt_vision_prompt' might become redundant if prompt_name is used, keep for now? Or remove? Let's keep for potential direct template path override.
                      'gpt_vision_prompt': args.gpt_vision_prompt,
                 },
                 # Add other component configs if needed (e.g., chunker for weaviate)
                 'chunker_config': {},
-                'json_transformer_config': {},
-                'markdown_transformer_config': {},
+                'json_transformer_config': {'prompt_name': args.prompt_name}, # Pass prompt_name
+                'markdown_transformer_config': {'prompt_name': args.prompt_name}, # Pass prompt_name (though not used yet)
             }
 
             # Add Weaviate config if needed

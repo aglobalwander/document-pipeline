@@ -118,12 +118,27 @@ class HybridPDFProcessor(BaseProcessor):
             # 1. Handle Gemini Native PDF Processing
             if provider == 'gemini' and self.gemini_client:
                  self.logger.info("Using Gemini native PDF processing.")
-                 # We need a prompt for Gemini PDF processing. Use a default or get from config.
-                 pdf_prompt = self.config.get('gemini_pdf_prompt', "Extract all text content from this PDF document.")
+                 # Determine the prompt: use template content if prompt_name exists, else default string
+                 pdf_prompt_text = "Extract all text content from this PDF document." # Default prompt
+                 prompt_name = self.config.get('prompt_name')
+                 if prompt_name:
+                      template_name = f"{prompt_name}.j2"
+                      try:
+                           # Need a template manager instance here
+                           template_dir = self.config.get('template_dir', self.settings.TEMPLATE_DIR)
+                           template_manager = PromptTemplateManager(template_dir)
+                           # Render the template (pass relevant context if needed, e.g., metadata)
+                           prompt_context = {'document': document, 'metadata': document.get('metadata', {})}
+                           pdf_prompt_text = template_manager.render_prompt(template_name, prompt_context)
+                           self.logger.info(f"Using Gemini PDF prompt from template: {template_name}")
+                      except Exception as e:
+                           self.logger.warning(f"Failed to load/render Gemini prompt template '{template_name}': {e}. Using default prompt.")
+                           # pdf_prompt_text remains the default
+
                  try:
                       extracted_text = self.gemini_client.process_pdf(
                           pdf_path=document['source_path'],
-                          prompt=pdf_prompt
+                          prompt=pdf_prompt_text # Pass the determined prompt text
                           # Pass other kwargs like max_tokens if needed from config
                       )
                       document['content'] = extracted_text

@@ -35,7 +35,9 @@ class TextToJSON(BaseTransformer):
         # JSON configuration
         self.json_schema = self.config.get('json_schema', None)
         self.use_llm = self.config.get('use_llm', True) # Keep flag to enable/disable LLM use
-        self.schema_prompt_template = self.config.get('schema_prompt_template', 'json_extraction.j2')
+        # Prioritize prompt_name, fallback to schema_prompt_template, then default
+        self.prompt_name = self.config.get('prompt_name')
+        self.schema_prompt_template = self.config.get('schema_prompt_template', 'json_extraction.j2') # Keep as fallback/default
 
         # LLM Client Initialization
         self.llm_client: Optional[BaseLLMClient] = None
@@ -116,26 +118,34 @@ class TextToJSON(BaseTransformer):
             # Prepare prompt with schema
             schema_str = json.dumps(self.json_schema) if self.json_schema else "Extract the main information from the text into a structured JSON format."
             
+            # Determine template name to use
+            template_to_use = None
+            if self.prompt_name:
+                 template_to_use = f"{self.prompt_name}.j2"
+                 self.logger.debug(f"Using prompt_name for JSON template: {template_to_use}")
+            else:
+                 template_to_use = self.schema_prompt_template # Fallback to default/specific template
+                 self.logger.debug(f"Using default/specific JSON template: {template_to_use}")
+
             # Render prompt template
             try:
                 prompt = self.template_manager.render_prompt(
-                    self.schema_prompt_template, 
+                    template_to_use,
                     {
                         'content': content,
-                        'schema': schema_str,
+                        'schema': schema_str, # Pass schema string to template context
                         'document': document
                     }
                 )
+                self.logger.info(f"Successfully rendered JSON prompt from template: {template_to_use}")
             except jinja2.exceptions.TemplateNotFound:
-                # Fallback if template not found
-                self.logger.warning(f"JSON schema prompt template not found: {self.schema_prompt_template}")
-                prompt = f"""Extract the structured information from the following text into JSON format. 
-                
-{schema_str}
-
-TEXT:
-{content[:5000]}  # Limit content length
-"""
+                self.logger.error(f"JSON prompt template not found: {template_to_use}. Cannot proceed with LLM extraction.")
+                # Decide on fallback: maybe return rules-based extraction? Or raise error?
+                # For now, let's raise an error as the user intended LLM extraction.
+                raise ValueError(f"JSON prompt template '{template_to_use}' not found.")
+            except Exception as e:
+                 self.logger.error(f"Error rendering JSON prompt template '{template_to_use}': {e}")
+                 raise ValueError(f"Error rendering JSON prompt template '{template_to_use}'") from e
             
             # Call the LLM client's structured output method
             # Pass the schema dictionary directly

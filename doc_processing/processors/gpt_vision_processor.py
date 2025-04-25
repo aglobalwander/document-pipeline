@@ -53,8 +53,10 @@ class GPTPVisionProcessor(BaseProcessor):
                   logger.error(f"Failed to initialize OpenAIClient for unknown reasons.")
              self.llm_client = None # Ensure client is None
 
-        # Prompt configuration
-        self.prompt_template_name = self.config.get('prompt_template') # e.g., 'gpt_vision_ocr.j2'
+        # Prompt configuration - prioritize prompt_name if provided
+        self.prompt_name = self.config.get('prompt_name') # e.g., 'invoice_extraction'
+        # Fallback to specific template path if prompt_name not given
+        self.prompt_template_path = self.config.get('prompt_template') # e.g., 'pdf_extraction.j2'
         template_dir = self.config.get('template_dir', self.DEFAULT_TEMPLATE_DIR)
         self.template_manager = PromptTemplateManager(template_dir)
 
@@ -98,17 +100,28 @@ class GPTPVisionProcessor(BaseProcessor):
                     # Add other relevant context if needed
                 }
 
-                # Render custom prompt or use default
-                if self.prompt_template_name:
+                # Determine template name to use
+                template_to_use = None
+                if self.prompt_name:
+                    template_to_use = f"{self.prompt_name}.j2" # Construct filename from name
+                    logger.debug(f"Using prompt_name to look for template: {template_to_use}")
+                elif self.prompt_template_path:
+                    template_to_use = self.prompt_template_path # Use direct path if name not given
+                    logger.debug(f"Using specific prompt_template path: {template_to_use}")
+
+                # Render prompt using the determined template or default
+                if template_to_use:
                     try:
                         prompt_text = self.template_manager.render_prompt(
-                            self.prompt_template_name,
+                            template_to_use,
                             prompt_context
                         )
+                        logger.info(f"Successfully rendered prompt from template: {template_to_use}")
                     except Exception as e:
-                        logger.warning(f"Failed to render custom prompt template '{self.prompt_template_name}': {e}. Using default prompt.")
+                        logger.warning(f"Failed to render prompt template '{template_to_use}': {e}. Using default prompt.")
                         prompt_text = self.DEFAULT_PROMPT
                 else:
+                    logger.debug("No prompt_name or prompt_template provided. Using default prompt.")
                     prompt_text = self.DEFAULT_PROMPT
 
                 # Construct payload for multimodal input (specific to client/API)

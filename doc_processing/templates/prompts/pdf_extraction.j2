@@ -1,0 +1,57 @@
+{# Template for PDF extraction with GPT-4 Vision #}
+Extract all text from this image of page {{ page_number }} of a PDF document. Follow these specific instructions:
+
+1. Extract ALL visible text from the image, including:
+   - Main body text
+   - Headers and footers
+   - Page numbers
+   - Table contents
+   - Figure captions
+   - Footnotes and endnotes
+   - Sidebar text
+   - References and citations
+
+2. Maintain the original formatting structure as closely as possible:
+   - Preserve paragraph breaks
+   - Maintain heading levels (indicated with # for Markdown)
+   - Preserve bullet points and numbered lists
+   - Keep table structure using Markdown table format when possible
+
+3. For tables:
+   - If the table is complex, try to maintain its structure using Markdown table syntax
+   - If that's not possible, describe the table structure briefly and extract all text content
+
+4. For mathematical equations and formulas:
+   - Render using LaTeX notation inside $ $ delimiters when possible
+   - If the equation is complex, describe it briefly
+
+5. For special content:
+   - Clearly label footnotes as [Footnote: ...]
+   - Indicate page numbers as [Page X]
+   - Mark figure captions as [Figure: ...]
+
+6. Error correction:
+   - Fix obvious OCR errors
+   - Correct hyphenation issues at line breaks
+   - Join words split across lines
+
+7. Return ONLY the extracted text content.
+   - Do NOT include explanations, descriptions, or commentary about the extraction process
+   - Do NOT include placeholders for images or other non-text elements beyond brief labels
+   - Do NOT include your own analysis of the content
+
+8. Special instructions:
+{% if config.preserve_page_boundaries %}
+   - Start the extraction with "=== Page {{ page_number }} ===" to clearly mark page boundaries
+{% endif %}
+{% if config.extract_columns %}
+   - Handle multi-column layouts by extracting text from left to right, column by column
+{% endif %}
+{% if config.handle_rotated_text %}
+   - Extract any rotated or sideways text, noting its orientation
+{% endif %}
+{% if config.extract_tables_only %}
+   - Focus on extracting tables and their data, minimizing extraction of body text
+{% endif %}
+
+Return only the extracted text, formatted cleanly and ready for use.

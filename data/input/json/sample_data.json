@@ -1,0 +1,36 @@
+{
+  "report": {
+    "title": "Quarterly Analytics",
+    "period": "Q1 2025",
+    "sections": [
+      {
+        "name": "Performance Metrics",
+        "metrics": [
+          {
+            "name": "Document Processing",
+            "throughput": "1200 docs/hr",
+            "accuracy": "98.5%"
+          },
+          {
+            "name": "AI Classification",
+            "throughput": "850 items/min",
+            "accuracy": "96.2%"
+          }
+        ]
+      },
+      {
+        "name": "System Health",
+        "metrics": [
+          {
+            "name": "Uptime",
+            "value": "99.99%"
+          },
+          {
+            "name": "API Latency",
+            "value": "142ms"
+          }
+        ]
+      }
+    ]
+  }
+}

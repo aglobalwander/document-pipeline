@@ -1,0 +1,23 @@
+{# Template for JSON extraction with LLM #}
+Extract the structured information from the following text into JSON format. 
+
+{% if schema %}
+Your output should conform to the following schema:
+{{ schema }}
+{% else %}
+Extract the following information into a structured JSON format:
+- Document title: The title of the document
+- Author(s): Any authors mentioned in the document
+- Date: Any dates mentioned in the document that might indicate when it was written
+- Key topics: The main topics or themes discussed
+- Main points: The key arguments or findings presented in the document
+- Sections: A list of main sections or chapters with brief summaries
+- References: Any citations or references mentioned
+{% endif %}
+
+Focus on extracting the factual information only, without adding any interpretations or inferences beyond what's explicitly stated in the text.
+
+Return ONLY a valid JSON object, with no additional text or explanation.
+
+TEXT:
+{{ content | truncate(5000) }}

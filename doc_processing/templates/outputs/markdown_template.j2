@@ -1,0 +1,31 @@
+{# Template for Markdown document generation #}
+# {{ title }}
+
+{% if metadata %}
+## Document Metadata
+
+| Property | Value |
+|----------|-------|
+{% for key, value in metadata.items() %}
+{% if key not in ['content', 'chunks', 'pages', 'error'] and value is not none %}
+| {{ key }} | {{ value }} |
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if toc %}
+{{ toc }}
+{% endif %}
+
+{% for section in sections %}
+{% if section.heading %}
+{{'#' * section.heading.level }} {{ section.heading.text }}
+{% endif %}
+
+{{ section.content }}
+
+{% endfor %}
+
+---
+
+*Document processed on {{ now.strftime('%Y-%m-%d %H:%M:%S') }}*

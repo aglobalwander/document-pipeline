@@ -1,0 +1,6 @@
+John Doe - Software Engineer
+Skills: Python, Machine Learning, PDF Processing
+Experience:
+- 5 years as a Python Developer
+- 3 years working with document processing systems
+Education: BS in Computer Science

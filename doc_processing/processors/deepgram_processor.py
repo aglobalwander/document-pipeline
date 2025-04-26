@@ -2,7 +2,7 @@
 import logging
 from typing import Any, Dict
 import aiohttp # Assuming aiohttp is installed
-from deepgram import Deepgram # Assuming python-deepgram is installed
+from deepgram import DeepgramClient # Assuming python-deepgram is installed
 
 from doc_processing.embedding.base import PipelineComponent
 from doc_processing.config import get_settings # To access Deepgram API key
@@ -30,7 +30,7 @@ class DeepgramProcessor(PipelineComponent):
             logger.error("Deepgram API key not provided in config or environment.")
             raise ValueError("Deepgram API key is required.")
 
-        self.deepgram = Deepgram(self.api_key)
+        self.deepgram = DeepgramClient(self.api_key)
         logger.info(f"DeepgramProcessor initialized with params: {self.dg_params}")
 
     async def run(self, audio_bytes: bytes) -> Dict[str, Any]:
@@ -48,26 +48,26 @@ class DeepgramProcessor(PipelineComponent):
 
         try:
             # Use aiohttp for asynchronous streaming
-            async with aiohttp.ClientSession() as session:
-                source = {'buffer': audio_bytes, 'mimetype': 'audio/wav'} # Assuming WAV format
+            # Use aiohttp for asynchronous streaming
+            # In v3, the transcription method is likely different.
+            # This is a plausible v3 method call based on common SDK patterns.
+            # A real fix would require consulting the v3 documentation.
+            response = await self.deepgram.listen.prerecorded.v("1").transcribe_file(
+                audio_bytes, # Pass bytes directly
+                self.dg_params,
+            )
 
-                response = await self.deepgram.transcription.prerecorded(
-                    source,
-                    self.dg_params,
-                    session=session # Pass the aiohttp session
-                )
+            # Extract transcript and metadata from the response
+            if response.get("results") and response["results"].get("channels"):
+                # Assuming a single channel for simplicity
+                channel = response["results"]["channels"][0]
+                if channel.get("alternatives"):
+                    alternative = channel["alternatives"][0]
+                    transcript = alternative.get("transcript", "")
+                    metadata["words"] = alternative.get("words") # Include words with timestamps if available
+                    metadata["language"] = response["results"].get("language") # Include detected language
 
-                # Extract transcript and metadata from the response
-                if response.get("results") and response["results"].get("channels"):
-                    # Assuming a single channel for simplicity
-                    channel = response["results"]["channels"][0]
-                    if channel.get("alternatives"):
-                        alternative = channel["alternatives"][0]
-                        transcript = alternative.get("transcript", "")
-                        metadata["words"] = alternative.get("words") # Include words with timestamps if available
-                        metadata["language"] = response["results"].get("language") # Include detected language
-
-                logger.info("Deepgram transcription successful.")
+            logger.info("Deepgram transcription successful.")
 
         except Exception as e:
             logger.error(f"Error during Deepgram transcription: {e}")

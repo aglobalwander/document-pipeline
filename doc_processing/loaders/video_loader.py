@@ -4,11 +4,11 @@ from typing import Any, Dict, Union
 from pathlib import Path
 import ffmpeg # Assuming ffmpeg-python is installed
 
-from doc_processing.embedding.base import PipelineComponent
+from doc_processing.embedding.base import BaseProcessor
 
 logger = logging.getLogger(__name__)
 
-class VideoLoader(PipelineComponent):
+class VideoLoader(BaseProcessor):
     """
     Loads video files and extracts the audio track as WAV bytes.
     Requires FFmpeg to be installed and in the system's PATH.
@@ -23,24 +23,36 @@ class VideoLoader(PipelineComponent):
         self.cfg = cfg or {}
         logger.info("VideoLoader initialized.")
 
-    def run(self, file_path: Union[str, Path]) -> Dict[str, Any]:
+    def process(self, document: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Loads a video file and extracts its audio track.
+        Loads a video file from the provided data dictionary and extracts its audio track.
 
         Args:
-            file_path: The path to the video file.
+            data: A dictionary containing the video file path in the 'content' key
+                  and optional initial metadata in the 'metadata' key.
 
         Returns:
-            A dictionary containing the audio data as WAV bytes and metadata.
+            A dictionary containing the audio data as WAV bytes and merged metadata.
             Returns {"content": None, "metadata": {"error": ...}} on failure.
         """
+        file_path = data.get('content')
+        initial_metadata = data.get('metadata', {})
+
+        if not file_path:
+            error_msg = "No file path provided in input data."
+            logger.error(error_msg)
+            return {"content": None, "metadata": {**initial_metadata, "error": error_msg}}
+
         path = Path(file_path)
         if not path.is_file():
-            logger.error(f"File not found: {file_path}")
-            return {"content": None, "metadata": {"error": f"File not found: {file_path}"}}
+            error_msg = f"File not found: {file_path}"
+            logger.error(error_msg)
+            return {"content": None, "metadata": {**initial_metadata, "error": error_msg}}
 
         audio_bytes = None
+        # Start with initial metadata and add/update with video-specific metadata
         metadata: Dict[str, Any] = {
+            **initial_metadata,
             "filename": path.name,
             "file_type": path.suffix.lower(),
         }
@@ -76,11 +88,13 @@ class VideoLoader(PipelineComponent):
 
 
         except ffmpeg.Error as e:
-            logger.error(f"FFmpeg error processing video file {file_path}: {e.stderr.decode()}")
-            metadata["error"] = f"FFmpeg error: {e.stderr.decode()}"
+            error_msg = f"FFmpeg error processing video file {file_path}: {e.stderr.decode()}"
+            logger.error(error_msg)
+            metadata["error"] = error_msg
         except Exception as e:
-            logger.error(f"Error processing video file {file_path}: {e}")
-            metadata["error"] = f"Error processing video: {e}"
+            error_msg = f"Error processing video file {file_path}: {e}"
+            logger.error(error_msg)
+            metadata["error"] = error_msg
 
         return {"content": audio_bytes, "metadata": metadata}
 

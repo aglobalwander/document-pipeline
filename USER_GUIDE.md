@@ -88,15 +88,15 @@ python scripts/run_pipeline.py --input_path data/input/audio/sample.wav --output
 ```
 *(Output: `data/output/audio_transcripts/sample_output.txt` containing the transcript)*
 
-**8. Process `SampleVideo_1280x720_1mb.mp4` video file to markdown (transcription + markdown formatting):**
+
+**8. Process `SampleVideo_1280x720_1mb.mp4` video file:**
 
 ```bash
-python scripts/run_pipeline.py --input_path data/input/video/SampleVideo_1280x720_1mb.mp4 --output_dir data/output/video_transcripts --pipeline_type markdown
+python scripts/run_pipeline.py --input_path data/input/video/SampleVideo_1280x720_1mb.mp4 --output_dir data/output/video_processing --pipeline_type text # Or markdown/json depending on desired output
 ```
-*(Output: `data/output/video_transcripts/SampleVideo_1280x720_1mb_output.md` containing the formatted transcript)*
+*(Note: If the video has an available transcript, it will be extracted. If not, the video file will be downloaded to the output directory for post-processing, and its path will be included in the output metadata.)*
 
 **9. Process `sample_test.pdf` and ingest into Weaviate:**
-
 ```bash
 # Ensure your Weaviate instance is running and configured via environment variables or .env file
 python scripts/run_pipeline.py --input_path data/input/pdfs/sample_test.pdf --pipeline_type weaviate

@@ -31,3 +31,7 @@
     *   **Module-Level Import Conflict:** Resolved issues caused by top-level `docling` imports interfering with `sys.path` modifications by moving the `DocumentConverter` import inside the relevant method (`_process_with_docling`).
 *   **Docling Page Number Error:**
     *   `AttributeError: 'int' object has no attribute 'page_number'`: Handled by adding a `hasattr` check and fallback logic when iterating through `docling_doc.pages` in `HybridPDFProcessor._process_with_docling`.
+*   **Weaviate Schema and Collection Creation Errors:**
+    *   **Incompatible Sharding Configuration:** Resolved `AttributeError` by removing unsupported parameters (`key`, `strategy`, `function`) from `Configure.sharding()` in schema definitions (`KnowledgeItemSchema`, `KnowledgeMainSchema`).
+    *   **Missing Configuration Attributes:** Resolved `AttributeError` by adding missing attributes (`inverted_index_config`, `multi_tenancy_config`, `replication_config`, `sharding_config`) to all relevant schema classes (`AudioItemSchema`, `AudioChunkSchema`, `ImageItemSchema`, `VideoItemSchema`, `VideoChunkSchema`).
+    *   Successfully ran integration tests (`pytest -m integration`) after applying fixes.

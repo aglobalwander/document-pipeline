@@ -1,0 +1,15 @@
+name: SampleCollection
+description: A sample collection for demonstration purposes.
+properties:
+  - name: title
+    dataType:
+      - TEXT
+  - name: content
+    dataType:
+      - TEXT
+  - name: source
+    dataType:
+      - TEXT
+vectorizerConfig:
+  text2vec-openai:
+    model: text-embedding-3-large

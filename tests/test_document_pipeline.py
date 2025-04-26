@@ -21,9 +21,9 @@ def test_pdf_to_text_conversion():
     print(f"Input file: {SAMPLE_REPORT}")
     assert SAMPLE_REPORT.exists(), f"Input file not found: {SAMPLE_REPORT}"
 
-    config = {'weaviate_enabled': False}
+    config = {'weaviate_enabled': False, 'pipeline_type': 'text'}
     pipeline = DocumentPipeline(config=config)
-    pipeline.configure_pdf_to_text_pipeline()
+
 
     result = pipeline.process_document(str(SAMPLE_REPORT))
 
@@ -55,11 +55,11 @@ def test_hybrid_pdf_processing():
     print(f"Input file: {sample_test_path}")
     assert sample_test_path.exists(), f"Input file not found: {sample_test_path}"
 
-    config = {'weaviate_enabled': False}
+    config = {'weaviate_enabled': False, 'pipeline_type': 'hybrid'}
     # Add any specific config for hybrid if needed, e.g.,
     # config['use_docling'] = True # Or False to test specific paths
     pipeline = DocumentPipeline(config=config)
-    pipeline.configure_hybrid_pdf_pipeline()
+
 
     result = pipeline.process_document(str(sample_test_path))
 
@@ -80,9 +80,9 @@ def test_pdf_to_markdown_conversion():
     print(f"Input file: {sample_test_path}")
     assert sample_test_path.exists(), f"Input file not found: {sample_test_path}"
 
-    config = {'weaviate_enabled': False}
+    config = {'weaviate_enabled': False, 'pipeline_type': 'markdown'}
     pipeline = DocumentPipeline(config=config)
-    pipeline.configure_pdf_to_markdown_pipeline()
+
 
     result = pipeline.process_document(str(sample_test_path))
 
@@ -90,12 +90,12 @@ def test_pdf_to_markdown_conversion():
     assert isinstance(result, dict), "Result should be a dictionary"
     # Check if markdown content is added or if 'content' is modified
     # Assuming the transformer adds a 'markdown_content' key for now
-    assert 'markdown_content' in result or 'content' in result, "Result should contain markdown or original content"
-    markdown_content = result.get('markdown_content', result.get('content', '')) # Get whichever is available
+    assert 'markdown' in result, "Result should contain a 'markdown' key"
+    markdown_content = result['markdown'] # Check the correct key
     assert isinstance(markdown_content, str), "Markdown content should be a string"
     assert len(markdown_content) > 0, "Markdown content string should not be empty"
     # Basic check for markdown syntax (this is very basic, might need refinement)
-    assert '#' in markdown_content or '*' in markdown_content or '_' in markdown_content, "Content should show signs of Markdown formatting"
+    assert '#' in markdown_content or '*' in markdown_content or '_' in markdown_content, "Content should show signs of Markdown formatting in the 'markdown' field"
     print(f"Markdown content length: {len(markdown_content)}")
     print("--- Test 4 Passed ---")
 import json # Need this for validation
@@ -107,9 +107,9 @@ def test_pdf_to_json_conversion():
     print(f"Input file: {sample_test_path}")
     assert sample_test_path.exists(), f"Input file not found: {sample_test_path}"
 
-    config = {'weaviate_enabled': False}
+    config = {'weaviate_enabled': False, 'pipeline_type': 'json'}
     pipeline = DocumentPipeline(config=config)
-    pipeline.configure_pdf_to_json_pipeline()
+
 
     result = pipeline.process_document(str(sample_test_path))
 

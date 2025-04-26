@@ -1,46 +1,80 @@
-import os
-import weaviate
-# Import the new get_weaviate_client function
-from weaviate_layer.client import get_weaviate_client
-from weaviate.classes.init import Auth
-from tenacity import retry, stop_after_attempt, wait_fixed # Added import for tenacity
-import logging
+#!/usr/bin/env python
+"""
+Script to verify Weaviate connection and diagnose issues.
+"""
 
-# Configure logging for the script
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+import logging
+import sys
+from pathlib import Path
+
+# Configure logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler()]
+)
 logger = logging.getLogger(__name__)
 
+# Add project root to sys.path
+project_root = Path(__file__).resolve().parent
+sys.path.append(str(project_root))
 
-# The get_weaviate_client function is now in weaviate_layer.client, so we call that.
-# The retry logic is already inside get_weaviate_client, so no need for the decorator here.
-def verify_connection():
-    """
-    Verifies connection to Weaviate using the get_weaviate_client function.
-    """
-    client = None
+try:
+    import weaviate
+    logger.info(f"Weaviate client version: {weaviate.__version__}")
+except ImportError:
+    logger.error("Failed to import weaviate. Is it installed? Try: pip install weaviate-client")
+    sys.exit(1)
+
+# Import our client getter
+try:
+    from weaviate_layer.client import get_weaviate_client
+    from weaviate_layer.config import settings
+    logger.info("Successfully imported project modules")
+except ImportError as e:
+    logger.error(f"Failed to import project modules: {e}")
+    sys.exit(1)
+
+def main():
+    """Test Weaviate connection and print diagnostic information."""
+    # Print environment settings
+    logger.info("=== Environment Settings ===")
+    logger.info(f"Weaviate URL: {settings.weav_url if settings.weav_url else 'Not set (will use local)'}")
+    logger.info(f"Weaviate API Key provided: {bool(settings.weav_api_key)}")
+    logger.info(f"OpenAI API Key provided: {bool(settings.openai_api_key)}")
+    
+    # Try to connect
+    logger.info("=== Connection Test ===")
     try:
-        logger.info("Attempting to get Weaviate client via weaviate_layer.client...")
         client = get_weaviate_client()
-
-        # v4 does not have is_ready(); use a lightweight call to check
+        logger.info("Successfully connected to Weaviate!")
+        
+        # Check if we can get the schema
+        logger.info("=== Schema Test ===")
         try:
-            collections = client.collections.list_all()
-            logger.info("Weaviate client is ready!")
-            logger.info(f"Collections: {list(collections.keys())}")
-            return True
-        except Exception as check_e:
-            logger.error(f"Weaviate client is not ready or accessible: {check_e}")
-            return False
+            schema = client.schema.get()
+            logger.info(f"Successfully retrieved schema with {len(schema['classes'] if 'classes' in schema else [])} classes")
+            
+            # List collections (v4 client)
+            try:
+                collections = client.collections.list_all()
+                logger.info(f"Collections: {[c.name for c in collections]}")
+            except Exception as e:
+                logger.error(f"Error listing collections: {e}")
+                
+        except Exception as e:
+            logger.error(f"Error retrieving schema: {e}")
+        
+        # Close the client
+        client.close()
+        logger.info("Connection closed")
+        
     except Exception as e:
-        logger.error(f"Connection failed: {e}")
+        logger.error(f"Failed to connect to Weaviate: {e}", exc_info=True)
         return False
-    finally:
-        if client:
-            client.close()
-            logger.info("Weaviate client connection closed.")
+    
+    return True
 
 if __name__ == "__main__":
-    if verify_connection():
-        logger.info("Weaviate connection verification successful.")
-    else:
-        logger.error("Weaviate connection verification failed.")
+    success = main()
+    sys.exit(0 if success else 1)

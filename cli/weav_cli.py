@@ -45,10 +45,15 @@ def _drop(
 
 @weav.command("ingest")
 def ingest(
-    name: str,
+    name: str = typer.Argument(..., help="Name of the target collection"),
     jsonl_path: str = typer.Argument(..., help="Path to JSON-Lines file"),
+    collection_name: str = typer.Option(
+        None, "--collection", "-c", help="Override target collection name"
+    ),
 ):
-    """Bulk-ingest objects from a JSON-Lines file."""
+    """
+    Bulk-ingest objects from a JSON-Lines file into a specified or default collection.
+    """
     import json, pathlib
     rows = (json.loads(line) for line in pathlib.Path(jsonl_path).read_text().splitlines())
     ingest_rows(name, rows)

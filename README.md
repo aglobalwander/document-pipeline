@@ -101,6 +101,42 @@ The primary way to use the pipeline is via the `scripts/run_pipeline.py` script.
 
 Refer to the **`USER_GUIDE.md`** for detailed instructions and examples on how to use `run_pipeline.py` with different input types, pipeline types, and options (like selecting the LLM provider or OCR mode).
 
+## Specifying Weaviate Collections
+
+When using the `weaviate` pipeline type, you can now specify a target Weaviate collection for data ingestion using the `--collection` flag. This allows you to direct processed documents and chunks into a collection other than the default ones defined internally.
+
+To use a specific collection, you must define its schema in a YAML file within the `weaviate_layer/schemas/` directory. The filename should match the desired collection name (e.g., `MyNewCollection.yaml` for a collection named `MyNewCollection`).
+
+The YAML schema should follow a structure similar to the internal schema definitions, specifying the collection's name, description, properties, and vectorizer configuration.
+
+Example `weaviate_layer/schemas/MyNewCollection.yaml`:
+
+```yaml
+name: MyNewCollection
+description: A custom collection for specific data.
+properties:
+  - name: title
+    dataType:
+      - TEXT
+  - name: content
+    dataType:
+      - TEXT
+  - name: custom_field
+    dataType:
+      - TEXT
+vectorizerConfig:
+  text2vec-openai:
+    model: text-embedding-3-large
+```
+
+You can then run the pipeline targeting this collection:
+
+```bash
+python scripts/run_pipeline.py --input_path data/input/pdfs/sample_test.pdf --pipeline_type weaviate --collection MyNewCollection
+```
+
+If the specified collection does not exist in your Weaviate instance, the pipeline will attempt to create it using the provided YAML schema.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue.

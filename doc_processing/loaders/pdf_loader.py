@@ -131,8 +131,20 @@ class PDFLoader(BaseDocumentLoader):
                  document['pages'] = []
 
 
-            # Initialize empty content - downstream processors will populate this
-            document['content'] = ""
+            # Extract text content from all pages
+            all_text = []
+            self.logger.info(f"Extracting text from {len(doc)} pages...")
+            for i, page in enumerate(doc):
+                try:
+                    page_text = page.get_text("text") # Extract plain text
+                    all_text.append(page_text)
+                except Exception as page_text_err:
+                    self.logger.error(f"Error extracting text from page {i+1}: {page_text_err}")
+                    all_text.append(f"\n[Error extracting text from page {i+1}]\n") # Add error marker
+
+            document['content'] = "\n".join(all_text) # Join page texts
+            self.logger.info(f"Finished extracting text. Total length: {len(document['content'])} chars.")
+
 
             # Close the document
             doc.close()

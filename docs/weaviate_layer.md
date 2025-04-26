@@ -118,6 +118,18 @@ The `weaviate_layer.manage_collections.ingest_rows` function is used for efficie
 
 Collection schemas are defined declaratively using Pydantic dataclasses in `weaviate_layer/schema.py`. This approach keeps schema definitions separate from the code that interacts with Weaviate, making them easier to manage and understand.
 
+### Defined Collection Schemas
+
+The `weaviate_layer/schema.py` file defines the following collection schemas:
+
+*   **KnowledgeItem:** Represents a full document or knowledge item. Stores metadata like title, source, source type, and timestamps.
+*   **KnowledgeMain:** Represents chunks of text extracted from KnowledgeItems. Stores the text content, chunk index, and a reference back to the parent KnowledgeItem.
+*   **AudioItem:** Represents an audio file. Stores metadata like transcript, duration, language, and filename, with a reference to the parent KnowledgeItem.
+*   **AudioChunk:** Represents chunks of audio transcripts. Stores text, time start/end, chunk index, and a reference to the parent AudioItem.
+*   **ImageItem:** Represents an image file. Stores metadata like caption, OCR text, dimensions, backend used for processing, and filename, with a reference to the parent KnowledgeItem.
+*   **VideoItem:** Represents a video file. Stores metadata like transcript, duration, language, and filename, with a reference to the parent KnowledgeItem.
+*   **VideoChunk:** Represents chunks of video transcripts. Stores text, time start/end, chunk index, and a reference to the parent VideoItem.
+
 ## Testing (Planned)
 
 Integration tests for the `weaviate_layer` are planned to ensure the core functionality (client connection, collection management, data ingestion) works correctly against a live Weaviate instance. These tests will likely involve spinning up a local Weaviate container using Docker Compose.

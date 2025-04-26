@@ -5,12 +5,12 @@ A modular Python document processing pipeline for converting various file types 
 ## 🌟 Features
 
 -   **Modular Architecture**: Easily extendable loaders, processors, and transformers.
--   **Multi-Format Input**: Handles PDF, DOCX, TXT, MD, and JSON files.
--   **Advanced PDF Processing**:
-    -   Uses **Docling** for layout-aware text extraction (if available).
-    -   Uses **OpenAI Vision** models for image-based OCR.
-    -   Uses **Gemini** models for native PDF understanding (text and vision).
-    -   Hybrid mode intelligently selects the best method (or falls back).
+-   **Multi-Format Input**: Handles PDF, DOCX, TXT, MD, JSON, Audio, Image, and Video files.
+-   **Advanced Processing**:
+    -   **PDFs**: Uses **Docling** for layout-aware text extraction (if available), **OpenAI Vision** for image-based OCR, and **Gemini** for native PDF understanding (text and vision). Hybrid mode intelligently selects the best method (or falls back).
+    -   **Audio**: Supports transcription (e.g., via Deepgram).
+    -   **Images**: Supports processing and OCR.
+    -   **Video**: Supports processing and transcription of audio tracks.
 -   **LLM Integration**: Abstracted client for OpenAI and Gemini (more can be added).
 -   **Output Formats**: Convert documents to plain Text, Markdown, or structured JSON.
 -   **Flexible Execution**: `scripts/run_pipeline.py` for running pipelines on single files or directories with various options.
@@ -106,4 +106,4 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 
 ## 📜 License
 
-This project is licensed under the MIT License. (Note: A LICENSE file should be added).
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.

@@ -16,15 +16,15 @@ python scripts/run_pipeline.py --input_path <path_to_input> --output_dir <path_t
 
 ### Key Arguments:
 
-*   `--input_path <path_to_input>`: **(Required)** Path to the single input file (e.g., `data/input/pdfs/sample_test.pdf`, `data/input/text/sample_report.txt`, `data/input/docx/sample_word.docx`) or an input directory (e.g., `data/input/text`). Supported types: `.pdf`, `.txt`, `.md`, `.json`, `.docx`.
+*   `--input_path <path_to_input>`: **(Required)** Path to the single input file (e.g., `data/input/pdfs/sample_test.pdf`, `data/input/audio/sample.wav`) or an input directory (e.g., `data/input/text`). Supported types: `.pdf`, `.txt`, `.md`, `.json`, `.docx`, `.mp3`, `.wav`, `.ogg`, `.m4a`, `.3gp`, `.flv`, `.mkv`, `.mp4`, `.jpg`, `.png`, `.gif`.
 *   `--output_dir <path_to_output_dir>`: **(Required)** Path to the directory where output files will be saved (e.g., `data/output/markdown`). The script will create this directory if it doesn't exist. Output filenames are generated automatically based on the input filename and pipeline type.
 *   `--pipeline_type <type>`: **(Required)** Specifies the processing pipeline and primary output format. Choose from:
-    *   `text`: Plain text extraction (`.txt` output). Suitable for most input types.
-    *   `markdown`: Text extraction with Markdown formatting (`.md` output). Suitable for most input types.
-    *   `json`: Structured JSON extraction (`.json` output). Best suited for text-based inputs (PDF, TXT, MD, DOCX).
+    *   `text`: Plain text extraction (`.txt` output). Suitable for most input types, including audio/video after transcription and images after OCR.
+    *   `markdown`: Text extraction with Markdown formatting (`.md` output). Suitable for most input types, including audio/video after transcription and images after OCR.
+    *   `json`: Structured JSON extraction (`.json` output). Best suited for text-based inputs (PDF, TXT, MD, DOCX) or extracted text from other formats.
     *   `hybrid`: Runs the hybrid PDF processing (useful if you don't need a specific transformation like Markdown or JSON, defaults to `.txt` output). Primarily for PDF input.
     *   `weaviate`: Processes and prepares data for ingestion into Weaviate collections ('KnowledgeItem' and 'KnowledgeMain'). Refer to [docs/weaviate_layer.md](docs/weaviate_layer.md) for details on Weaviate integration and collection management.
-*   `--ocr_mode <mode>`: **(Optional, PDF input only)** Controls the Optical Character Recognition (OCR) method used for PDF files. Choose from:
+*   `--ocr_mode <mode>`: **(Optional, PDF and Image input only)** Controls the Optical Character Recognition (OCR) method used for PDF and Image files. Choose from:
     *   `hybrid` (Default): Attempts to use Docling if available and suitable, otherwise falls back to the configured LLM's vision capability (e.g., GPT Vision for OpenAI, native PDF for Gemini).
     *   `docling`: Forces the use of Docling (will fall back to the LLM if Docling fails or is unavailable).
     *   `gpt`: Forces the use of the GPT Vision processor (currently assumes OpenAI provider). *Note: This might be less effective if the selected `--llm_provider` is not OpenAI.*
@@ -80,3 +80,25 @@ python scripts/run_pipeline.py --input_path data/input/text --output_dir data/ou
 ```
 
 *(This guide will be expanded as more features are added.)*
+
+**7. Process `sample.wav` audio file to plain text:**
+
+```bash
+python scripts/run_pipeline.py --input_path data/input/audio/sample.wav --output_dir data/output/audio_transcripts --pipeline_type text
+```
+*(Output: `data/output/audio_transcripts/sample_output.txt` containing the transcript)*
+
+**8. Process `SampleVideo_1280x720_1mb.mp4` video file to markdown (transcription + markdown formatting):**
+
+```bash
+python scripts/run_pipeline.py --input_path data/input/video/SampleVideo_1280x720_1mb.mp4 --output_dir data/output/video_transcripts --pipeline_type markdown
+```
+*(Output: `data/output/video_transcripts/SampleVideo_1280x720_1mb_output.md` containing the formatted transcript)*
+
+**9. Process `sample_test.pdf` and ingest into Weaviate:**
+
+```bash
+# Ensure your Weaviate instance is running and configured via environment variables or .env file
+python scripts/run_pipeline.py --input_path data/input/pdfs/sample_test.pdf --pipeline_type weaviate
+```
+*(Note: Weaviate ingestion does not produce output files in the output_dir by default, as data is sent directly to Weaviate. Ensure your Weaviate client is properly configured.)*

@@ -60,11 +60,51 @@ def ensure_collections():
     """
     logging.info("Running 'ensure-collections' command...")
     try:
-        ensure_collections_exist()
+        ensure_collections_exist() # Call with no arguments to process all
         logging.info("'ensure-collections' command finished successfully.")
     except Exception as e:
         logging.error(f"Error during 'ensure-collections': {e}")
         raise typer.Exit(code=1)
+
+@weav.command("create-audio")
+def create_audio_collections():
+    """
+    Ensures the AudioItem and AudioChunk collections exist.
+    """
+    logging.info("Running 'create-audio' command...")
+    try:
+        ensure_collections_exist(schema_names=["AudioItem", "AudioChunk"])
+        logging.info("'create-audio' command finished successfully.")
+    except Exception as e:
+        logging.error(f"Error during 'create-audio': {e}")
+        raise typer.Exit(code=1)
+
+@weav.command("create-image")
+def create_image_collections():
+    """
+    Ensures the ImageItem collection exists.
+    """
+    logging.info("Running 'create-image' command...")
+    try:
+        ensure_collections_exist(schema_names=["ImageItem"])
+        logging.info("'create-image' command finished successfully.")
+    except Exception as e:
+        logging.error(f"Error during 'create-image': {e}")
+        raise typer.Exit(code=1)
+
+@weav.command("create-video")
+def create_video_collections():
+    """
+    Ensures the VideoItem and VideoChunk collections exist.
+    """
+    logging.info("Running 'create-video' command...")
+    try:
+        ensure_collections_exist(schema_names=["VideoItem", "VideoChunk"])
+        logging.info("'create-video' command finished successfully.")
+    except Exception as e:
+        logging.error(f"Error during 'create-video': {e}")
+        raise typer.Exit(code=1)
+
 
 # Keep the original create-collections command commented out for now
 # @app.command()

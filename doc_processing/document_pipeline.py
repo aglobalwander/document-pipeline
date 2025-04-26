@@ -8,13 +8,17 @@ from pathlib import Path
 from pydantic import BaseModel
 
 from doc_processing.config import get_settings, ensure_directories_exist
-from doc_processing.embedding.base import Pipeline, PipelineComponent  # Corrected import path
+from doc_processing.embedding.base import Pipeline, PipelineComponent, BaseDocumentLoader
 from doc_processing.loaders.pdf_loader import PDFLoader
-from doc_processing.processors.pdf_processor import HybridPDFProcessor  # Renamed from GPTVisionPDFProcessor
+from doc_processing.loaders.youtube_loader import YouTubeLoader
+from doc_processing.processors.pdf_processor import HybridPDFProcessor
 from doc_processing.transformers.text_to_markdown import TextToMarkdown
 from doc_processing.transformers.text_to_json import TextToJSON
 from doc_processing.transformers.chunker import DocumentChunker
 from doc_processing.transformers.instructor_extractor import InstructorExtractor
+from doc_processing.loaders.image_loader import ImageLoader
+from doc_processing.loaders.text_loader import TextLoader
+from doc_processing.loaders.video_loader import VideoLoader
 
 
 class DocumentPipeline:
@@ -42,108 +46,153 @@ class DocumentPipeline:
         # Create directories if they don't exist
         ensure_directories_exist()
 
-        # Initialize pipeline components based on configuration
-        self._initialize_pipeline()
+        # Store pipeline component definitions based on configuration, but don't add to self.pipeline yet
+        self._pipeline_component_definitions: List[Dict[str, Any]] = []
+        self._initialize_pipeline_definitions()
 
-    def _initialize_pipeline(self) -> None:
-        """Initialize pipeline components based on configuration."""
-        # Core pipeline
-        self.pipeline = Pipeline()
+        # self.pipeline will be initialized in process_document
 
-        # No internal client or schema manager initialization needed here anymore when using external client.
+    def _initialize_pipeline_definitions(self) -> None:
+        """Define pipeline components based on configuration."""
+        pipeline_type = self.config.get('pipeline_type', 'text') # Default to 'text' pipeline
+
+        # Define component classes and their configs for each pipeline type (excluding the initial loader)
+        if pipeline_type == 'text':
+            self._pipeline_component_definitions = [
+                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
+                # Add other text processing components here if needed
+            ]
+        elif pipeline_type == 'markdown':
+            self._pipeline_component_definitions = [
+                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
+                {'class': TextToMarkdown, 'config': self.config.get('markdown_transformer_config', {})},
+            ]
+        elif pipeline_type == 'json':
+             self._pipeline_component_definitions = [
+                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
+                {'class': TextToJSON, 'config': self.config.get('json_transformer_config', {})},
+            ]
+        elif pipeline_type == 'hybrid':
+             self._pipeline_component_definitions = [
+                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
+                # Hybrid pipeline might have other specific components
+            ]
+        elif pipeline_type == 'weaviate':
+             if not self.weaviate_enabled:
+                 raise ValueError("Weaviate is not enabled for the 'weaviate' pipeline type.")
+             self._pipeline_component_definitions = [
+                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
+                {'class': DocumentChunker, 'config': self.config.get('chunker_config', {})},
+                # Weaviate ingestion is handled in process_document after chunking
+            ]
+        # Add other pipeline types here (e.g., 'youtube_text', 'youtube_weaviate')
+        # For now, YouTube processing will use the components defined for the selected pipeline_type
+        # after the YouTubeLoader.
+
+        self.logger.info(f"Initialized pipeline definitions for type: {pipeline_type}")
 
     # -------------------------------------------------------------------------
-    # Pipeline configuration helpers
+    # Pipeline configuration helpers (These methods are now outdated and removed)
     # -------------------------------------------------------------------------
+    # The configure_* methods were removed as pipeline configuration is now handled
+    # in _initialize_pipeline_definitions based on the 'pipeline_type' config.
 
-    def configure_pdf_to_text_pipeline(self) -> 'DocumentPipeline':
-        """Configure pipeline for PDF to text conversion."""
-        pdf_loader = PDFLoader(self.config.get('pdf_loader_config', {}))
-        pdf_processor = HybridPDFProcessor(self.config.get('pdf_processor_config', {}))
-        self.pipeline.add_component(pdf_loader)
-        self.pipeline.add_component(pdf_processor)
-        return self
-
-    def configure_hybrid_pdf_pipeline(self) -> 'DocumentPipeline':
-        """Configure pipeline for hybrid PDF processing with Docling and GPT Vision."""
-        pdf_loader = PDFLoader(self.config.get('pdf_loader_config', {}))
-        processor_config = {
-            'use_docling': self.config.get('use_docling', True),
-            'docling_use_easyocr': self.config.get('docling_use_easyocr', True),
-            'docling_extract_tables': self.config.get('docling_extract_tables', True),
-            'model': self.config.get('model', 'gpt-4o'),
-            'max_tokens': self.config.get('max_tokens', 1500),
-            'resolution_scale': self.config.get('resolution_scale', 2),
-        }
-        hybrid_processor = HybridPDFProcessor(processor_config)
-        self.pipeline.add_component(pdf_loader)
-        self.pipeline.add_component(hybrid_processor)
-        self.logger.info("Configured hybrid PDF processing pipeline")
-        return self
-
-    def configure_structured_extraction_pipeline(self, response_model: Type[BaseModel]) -> 'DocumentPipeline':
-        """Configure pipeline for structured data extraction using Instructor."""
-        self.configure_hybrid_pdf_pipeline()
-        extractor_config = {
-            'model': self.config.get('extraction_model', 'gpt-4o'),
-            'temperature': self.config.get('temperature', 0.2),
-            'max_tokens': self.config.get('max_tokens', 4000),
-            'system_prompt': self.config.get('system_prompt', "You are an expert document analyzer. Extract structured information from the document."),
-        }
-        instructor_extractor = InstructorExtractor(response_model=response_model, config=extractor_config)
-        self.pipeline.add_component(instructor_extractor)
-        self.logger.info(f"Added structured extraction with {response_model.__name__} model")
-        return self
-
-    def configure_pdf_to_markdown_pipeline(self) -> 'DocumentPipeline':
-        """Configure pipeline for PDF to markdown conversion."""
-        self.configure_pdf_to_text_pipeline()
-        markdown_transformer = TextToMarkdown(self.config.get('markdown_transformer_config', {}))
-        self.pipeline.add_component(markdown_transformer)
-        return self
-
-    def configure_pdf_to_json_pipeline(self) -> 'DocumentPipeline':
-        """Configure pipeline for PDF to JSON conversion."""
-        self.configure_pdf_to_text_pipeline()
-        json_transformer = TextToJSON(self.config.get('json_transformer_config', {}))
-        self.pipeline.add_component(json_transformer)
-        return self
-
-    def configure_pdf_to_weaviate_pipeline(self) -> 'DocumentPipeline':
-        """Configure pipeline for PDF to Weaviate ingestion."""
-        if not self.weaviate_enabled:
-            raise ValueError("Weaviate is not enabled in this pipeline")
-        self.configure_pdf_to_text_pipeline()
-        chunker = DocumentChunker(self.config.get('chunker_config', {}))
-        self.pipeline.add_component(chunker)
-        return self
 
     # -------------------------------------------------------------------------
     # Processing helpers
     # -------------------------------------------------------------------------
 
     def process_document(self, source_path: Union[str, Path]) -> Dict[str, Any]:
-        """Process a single document."""
-        doc_id = str(uuid.uuid4())
-        result = self.pipeline.run(str(source_path))
-        if 'id' not in result:
-            result['id'] = doc_id
-        if self.weaviate_enabled and 'chunks' in result:
-            self._upload_to_weaviate(result)
-        return result
+        """Process a single document or YouTube URL."""
+        source_path_str = str(source_path)
+
+        # Determine the appropriate initial loader based on the source_path
+        initial_loader: BaseDocumentLoader
+        if YouTubeLoader(self.config)._is_youtube_url(source_path_str):
+             self.logger.info(f"Detected YouTube URL: {source_path_str}. Using YouTubeLoader.")
+             initial_loader = YouTubeLoader(self.config)
+        elif source_path_str.lower().endswith('.pdf'):
+             self.logger.info(f"Detected PDF file: {source_path_str}. Using PDFLoader.")
+             initial_loader = PDFLoader(self.config.get('pdf_loader_config', {}))
+        elif source_path_str.lower().endswith(('.jpg', '.png', '.gif')):
+             self.logger.info(f"Detected image file: {source_path_str}. Using ImageLoader.")
+             initial_loader = ImageLoader(self.config.get('image_loader_config', {}))
+        elif source_path_str.lower().endswith(('.txt', '.md', '.json', '.docx')):
+             self.logger.info(f"Detected text/document file: {source_path_str}. Using TextLoader.")
+             # Note: This might need refinement to use specific loaders for MD, JSON, DOCX
+             initial_loader = TextLoader(self.config.get('text_loader_config', {}))
+        elif source_path_str.lower().endswith(('.3gp', '.flv', '.mkv', '.mp4')):
+             self.logger.info(f"Detected video file: {source_path_str}. Using VideoLoader.")
+             initial_loader = VideoLoader(self.config.get('video_loader_config', {}))
+        else:
+             # Fallback for unknown file types or if no specific loader matched
+             self.logger.warning(f"Could not determine loader for {source_path_str}. Defaulting to TextLoader.")
+             initial_loader = TextLoader(self.config.get('text_loader_config', {})) # Default fallback loader
+
+        # Run the initial loader
+        initial_load_result = initial_loader.load(source_path_str)
+
+        # Initialize a new pipeline for subsequent processing
+        processing_pipeline = Pipeline()
+
+        # The output of the initial loader becomes the input for the rest of the pipeline
+        pipeline_input = initial_load_result
+
+        # If the initial loader was YouTubeLoader, the content is a file path.
+        # The next component should be the VideoLoader to process this file.
+        # Add the subsequent pipeline components based on the stored definitions
+        for component_def in self._pipeline_component_definitions:
+            component_class = component_def['class']
+            component_config = component_def.get('config', {})
+            processing_pipeline.add_component(component_class(component_config))
+
+        # Run the rest of the configured pipeline
+        processed_document = processing_pipeline.run(pipeline_input)
+
+        # Ensure the result is a dictionary
+        if not isinstance(processed_document, dict):
+             self.logger.error(f"Pipeline did not return a dictionary: {type(processed_document)}")
+             # Attempt to convert if it's a list with a single item, otherwise raise error
+             if isinstance(processed_document, list) and len(processed_document) == 1 and isinstance(processed_document[0], dict):
+                  processed_document = processed_document[0]
+             else:
+                  raise TypeError(f"Pipeline result is not a dictionary: {processed_document}")
+
+
+        # Assign a unique ID if not already present
+        if 'id' not in processed_document:
+            processed_document['id'] = str(uuid.uuid4())
+
+        # Merge initial metadata from YouTubeLoader if it exists
+        if isinstance(initial_loader, YouTubeLoader) and initial_load_result and 'metadata' in initial_load_result:
+             # Merge metadata, prioritizing metadata from later stages if keys overlap
+             merged_metadata = initial_load_result['metadata'].copy()
+             merged_metadata.update(processed_document.get('metadata', {}))
+             processed_document['metadata'] = merged_metadata
+
+        # Handle Weaviate ingestion if enabled and chunks are present
+        if self.weaviate_enabled and 'chunks' in processed_document:
+             self._upload_to_weaviate(processed_document)
+
+        # The return type should be Dict[str, Any] for a single processed document
+        return processed_document
 
     def process_directory(self, directory_path: Union[str, Path], file_extension: str = '.pdf') -> List[Dict[str, Any]]:
         """Process all documents in a directory."""
         path = Path(directory_path)
         if not path.is_dir():
             raise ValueError(f"Directory does not exist: {path}")
+        # Note: This method currently assumes processing local files with a specific extension.
+        # It might need refactoring to handle directories containing mixed file types or URLs
+        # if that becomes a requirement. For now, it remains focused on local files.
         files = list(path.glob(f'*{file_extension}'))
         self.logger.info(f"Found {len(files)} {file_extension} files in {path}")
         results = []
         for fp in files:
             try:
                 self.logger.info(f"Processing {fp}")
-                results.append(self.process_document(fp))
+                # Call process_document for each file
+                results.extend(self.process_document(fp)) # Use extend as process_document now returns List
             except Exception as exc:  # noqa: BLE001
                 self.logger.error(f"Error processing {fp}: {exc}")
         return results
@@ -163,8 +212,8 @@ class DocumentPipeline:
         doc_properties = {
             'body': document.get('content', ''),
             'title': document.get('metadata', {}).get('title', doc_uuid),
-            'source': document.get('source_path', ''),
-            'source_type': document.get('metadata', {}).get('file_type', 'unknown'),
+            'source': document.get('source_path', ''), # Use source_path from the document
+            'source_type': document.get('metadata', {}).get('source_type', 'unknown'), # Use source_type from metadata
             'created_at': document.get('metadata', {}).get('created_at', time.time()),
             'updated_at': time.time(),
             # ... map more metadata as needed

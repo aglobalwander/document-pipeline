@@ -5,15 +5,16 @@ A modular Python document processing pipeline for converting various file types 
 ## 🌟 Features
 
 -   **Modular Architecture**: Easily extendable loaders, processors, and transformers.
--   **Multi-Format Input**: Handles PDF, DOCX, TXT, MD, JSON, Audio, Image, and Video files.
+-   **Multi-Format Input**: Handles PDF, DOCX, TXT, MD, JSON, Audio, Image, and Video files, **including processing directly from YouTube URLs**.
 -   **Advanced Processing**:
     -   **PDFs**: Uses **Docling** for layout-aware text extraction (if available), **OpenAI Vision** for image-based OCR, and **Gemini** for native PDF understanding (text and vision). Hybrid mode intelligently selects the best method (or falls back).
     -   **Audio**: Supports transcription (e.g., via Deepgram).
     -   **Images**: Supports processing and OCR.
     -   **Video**: Supports processing and transcription of audio tracks.
+    -   **YouTube**: Download and process video content directly from YouTube URLs.
 -   **LLM Integration**: Abstracted client for OpenAI and Gemini (more can be added).
 -   **Output Formats**: Convert documents to plain Text, Markdown, or structured JSON.
--   **Flexible Execution**: `scripts/run_pipeline.py` for running pipelines on single files or directories with various options.
+-   **Flexible Execution**: `scripts/run_pipeline.py` for running pipelines on single files, directories, or **YouTube URLs** with various options.
 -   **Weaviate Integration**: Includes a complete modular layer for Weaviate v4 integration, including client connection, collection management, and data ingestion/retrieval. See [docs/weaviate_layer.md](docs/weaviate_layer.md) for detailed documentation.
 -   **Jinja Templates**: Flexible prompt and output formatting.
 -   **Jupyter Notebooks**: Interactive examples (may need updates).
@@ -96,9 +97,9 @@ document-pipeline/
 
 ## 🔍 Usage
 
-The primary way to use the pipeline is via the `scripts/run_pipeline.py` script.
+The primary way to use the pipeline is via the `scripts/run_pipeline.py` script. It can now accept local file paths, directory paths, or **YouTube URLs** as input.
 
-Refer to the **`USER_GUIDE.md`** for detailed instructions and examples on how to use `run_pipeline.py` with different file types, pipeline types, and options (like selecting the LLM provider or OCR mode).
+Refer to the **`USER_GUIDE.md`** for detailed instructions and examples on how to use `run_pipeline.py` with different input types, pipeline types, and options (like selecting the LLM provider or OCR mode).
 
 ## 🤝 Contributing
 

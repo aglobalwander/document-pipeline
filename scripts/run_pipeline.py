@@ -9,6 +9,9 @@ and uploading results to Weaviate or saving to files.
 import os
 import sys
 import argparse
+import os
+import sys
+import argparse
 import logging
 from pathlib import Path
 import json
@@ -19,13 +22,14 @@ from urllib.parse import urlparse # Import urlparse for URL checking
 
 # Add project root to sys.path to allow importing doc_processing modules
 project_root = Path(__file__).resolve().parent.parent
-sys.path.append(str(project_root))
+sys.path.insert(0, str(project_root))
 
 from doc_processing.document_pipeline import DocumentPipeline
 from doc_processing.config import get_settings, ensure_directories_exist
 
-# Import Weaviate client getter
+# Import Weaviate client getter and collection management function
 from weaviate_layer.client import get_weaviate_client
+from weaviate_layer.collections import ensure_collections_exist # Import ensure_collections_exist
 
 # --- Logging Setup ---
 logging.basicConfig(
@@ -90,6 +94,8 @@ def parse_arguments():
                         help='Weaviate URL (uses environment variable if not set).')
     parser.add_argument('--weaviate_api_key', type=str,
                         help='Weaviate API key (uses environment variable if not set).')
+    parser.add_argument('--collection', type=str,
+                        help='Target Weaviate collection name for ingestion.')
 
 
     return parser.parse_args()
@@ -162,8 +168,13 @@ def main():
 
             weaviate_client = get_weaviate_client(config=weaviate_config)
             logger.info("Successfully connected to Weaviate.")
+
+            # Ensure the target collection exists using the new logic
+            ensure_collections_exist(collection_name=args.collection)
+            logger.info(f"Ensured collection '{args.collection}' exists.")
+
         except Exception as e:
-            logger.error(f"Failed to connect to Weaviate: {e}")
+            logger.error(f"Failed to connect to Weaviate or ensure collection: {e}")
             sys.exit(1)
 
     # --- Process Inputs ---
@@ -186,53 +197,68 @@ def main():
             # Add other relevant args to config as needed by components
             'weaviate_enabled': args.pipeline_type == 'weaviate', # Explicitly enable weaviate in config
             'weaviate_class_prefix': args.weaviate_class_prefix,
+            'collection_name': args.collection, # Pass the collection name from CLI args
         }
 
         # Instantiate DocumentPipeline for each input (to ensure a clean pipeline per document/URL)
         pipeline = DocumentPipeline(config=pipeline_config, weaviate_client=weaviate_client)
 
         try:
-            # process_document now returns a List[Dict[str, Any]]
-            processed_documents = pipeline.process_document(input_item)
-            all_results.extend(processed_documents)
+            # process_document returns a single dictionary
+            processed_document = pipeline.process_document(input_item)
+            all_results.append(processed_document) # Append the single dict to results
 
             # --- Handle Output (Save to file if not Weaviate) ---
             if args.pipeline_type != 'weaviate':
-                for doc in processed_documents:
-                    # Determine output filename and format
-                    original_filename = Path(input_item).name if not is_url(input_item) else doc.get('metadata', {}).get('title', 'output')
-                    original_stem = Path(original_filename).stem
-                    output_format = args.output_format if args.output_format else args.pipeline_type # Use pipeline_type as default output format
-                    output_extension = f".{output_format}"
+                # Use the single processed_document directly
+                doc = processed_document
+                # Determine output filename and format
+                # Use metadata from the processed doc if available, otherwise derive from input_item
+                metadata = doc.get('metadata', {})
+                original_filename = Path(input_item).name if not is_url(input_item) else metadata.get('title', 'output')
+                original_stem = Path(original_filename).stem
+                output_format = args.output_format if args.output_format else args.pipeline_type
+                # Map 'text' format to '.txt' extension, otherwise use the format directly
+                output_extension = ".txt" if output_format == 'text' else f".{output_format}"
 
-                    # Ensure output directory exists for the specific format
-                    format_output_dir = output_dir / output_format
-                    format_output_dir.mkdir(parents=True, exist_ok=True)
+                # Ensure output directory exists for the specific format
+                # Use pipeline_type for the subdirectory name, not the output_format
+                format_output_dir = output_dir / args.pipeline_type
+                format_output_dir.mkdir(parents=True, exist_ok=True)
 
-                    output_filename = f"{original_stem}_output{output_extension}"
-                    output_filepath = format_output_dir / output_filename
+                output_filename = f"{original_stem}_output{output_extension}"
+                output_filepath = format_output_dir / output_filename
 
-                    # Save content based on output format
-                    content_to_save = ""
-                    if output_format == 'json':
-                        # For JSON output, save the entire document dictionary
-                        content_to_save = json.dumps(doc, indent=2)
-                    elif 'content' in doc:
-                        # For text/markdown, save the 'content' field
-                        content_to_save = doc['content']
-                    elif 'text' in doc:
-                         # If 'content' is not available, try 'text' (e.g., from chunks)
-                         content_to_save = doc['text']
-                    else:
-                         logger.warning(f"No 'content' or 'text' field found in processed document for {input_item}. Skipping file output.")
-                         continue # Skip saving if no content
+                # Save content based on output format
+                content_to_save = ""
+                if output_format == 'json':
+                    # For JSON output, save the entire document dictionary
+                    content_to_save = json.dumps(doc, indent=2)
+                elif output_format == 'markdown' and 'markdown' in doc:
+                    # For Markdown output, prioritize the 'markdown' field if it exists
+                    content_to_save = doc['markdown']
+                elif 'content' in doc:
+                    # Fallback for text or if 'markdown' key is missing for markdown output
+                    content_to_save = doc['content']
+                elif 'text' in doc:
+                     # Further fallback (e.g., from chunks, though less likely now)
+                     content_to_save = doc['text']
+                else:
+                     logger.warning(f"No 'content' or 'text' field found in processed document for {input_item}. Skipping file output.")
+                     # Removed the 'continue' as we are no longer in a loop here
 
+                # Only attempt to write if content was found
+                if content_to_save:
                     try:
                         with open(output_filepath, 'w', encoding='utf-8') as f:
                             f.write(content_to_save)
                         logger.info(f"Saved output to {output_filepath}")
                     except IOError as e:
                         logger.error(f"Error saving output to {output_filepath}: {e}")
+                        # Re-raise the exception so the script fails and the test catches it
+                        raise
+                elif args.pipeline_type != 'weaviate': # Log warning only if not weaviate pipeline and no content
+                     logger.warning(f"No content found to save for {input_item} to {output_filepath}")
 
         except Exception as exc:
             logger.error(f"Error processing input {input_item}: {exc}")

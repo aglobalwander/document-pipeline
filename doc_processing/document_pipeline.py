@@ -14,7 +14,7 @@ from doc_processing.loaders.youtube_loader import YouTubeLoader
 from doc_processing.processors.pdf_processor import HybridPDFProcessor
 from doc_processing.transformers.text_to_markdown import TextToMarkdown
 from doc_processing.transformers.text_to_json import TextToJSON
-from doc_processing.transformers.chunker import DocumentChunker
+from doc_processing.transformers.chunker import LangChainChunker # Import the new chunker
 from doc_processing.transformers.instructor_extractor import InstructorExtractor
 from doc_processing.loaders.image_loader import ImageLoader
 from doc_processing.loaders.text_loader import TextLoader
@@ -52,45 +52,76 @@ class DocumentPipeline:
 
         # self.pipeline will be initialized in process_document
 
-    def _initialize_pipeline_definitions(self) -> None:
-        """Define pipeline components based on configuration."""
-        pipeline_type = self.config.get('pipeline_type', 'text') # Default to 'text' pipeline
 
-        # Define component classes and their configs for each pipeline type (excluding the initial loader)
+    def _initialize_pipeline_definitions(self):
+        """Initialize the list of pipeline component definitions based on config."""
+        self.logger.info("Initializing pipeline component definitions...")
+        self._pipeline_component_definitions = [] # Ensure it's empty before populating
+        pipeline_type = self.config.get('pipeline_type', 'text') # Default to 'text'
+        self.logger.info(f"Configuring pipeline for type: {pipeline_type}")
+
+        # Define component configurations from self.config if they exist
+        chunker_config = self.config.get('chunker_config', {})
+        hybrid_processor_config = self.config.get('hybrid_processor_config', {})
+        markdown_config = self.config.get('markdown_config', {})
+        json_config = self.config.get('json_config', {})
+        instructor_config = self.config.get('instructor_config', {})
+        # Add other configs as needed, e.g., text_cleaner_config
+
+        # --- Define Pipeline Steps based on Type ---
+
+        # Example: Add TextCleaner if configured globally or for specific types
+        # if self.config.get('use_text_cleaner', False):
+        #     self._pipeline_component_definitions.append({'class': TextCleaner, 'config': text_cleaner_config})
+
         if pipeline_type == 'text':
-            self._pipeline_component_definitions = [
-                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
-                # Add other text processing components here if needed
-            ]
-        elif pipeline_type == 'markdown':
-            self._pipeline_component_definitions = [
-                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
-                {'class': TextToMarkdown, 'config': self.config.get('markdown_transformer_config', {})},
-            ]
-        elif pipeline_type == 'json':
-             self._pipeline_component_definitions = [
-                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
-                {'class': TextToJSON, 'config': self.config.get('json_transformer_config', {})},
-            ]
+            # For the 'text' pipeline type, the goal is often to just output the raw loaded text.
+            # No additional processing components (like chunking) are needed after the initial loader.
+            # The initial loader (e.g., TextLoader) provides the 'content'.
+            self.logger.info("Pipeline type 'text': No additional components added after initial loader.")
+            pass # No components needed after the loader for simple text output
         elif pipeline_type == 'hybrid':
-             self._pipeline_component_definitions = [
-                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
-                # Hybrid pipeline might have other specific components
-            ]
-        elif pipeline_type == 'weaviate':
-             if not self.weaviate_enabled:
-                 raise ValueError("Weaviate is not enabled for the 'weaviate' pipeline type.")
-             self._pipeline_component_definitions = [
-                {'class': HybridPDFProcessor, 'config': self.config.get('pdf_processor_config', {})},
-                {'class': DocumentChunker, 'config': self.config.get('chunker_config', {})},
-                # Weaviate ingestion is handled in process_document after chunking
-            ]
-        # Add other pipeline types here (e.g., 'youtube_text', 'youtube_weaviate')
-        # For now, YouTube processing will use the components defined for the selected pipeline_type
-        # after the YouTubeLoader.
+            # Hybrid PDF processing first, then chunking
+            # Assumes initial loader (PDFLoader) provides necessary data for HybridPDFProcessor
+            self._pipeline_component_definitions.append({'class': HybridPDFProcessor, 'config': hybrid_processor_config})
+            self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
+        elif pipeline_type == 'markdown':
+            # Convert to Markdown, then chunk
+            # Assumes input is text content from a loader
+            # Convert to Markdown. Chunking is usually not desired for the final Markdown output.
+            self._pipeline_component_definitions.append({'class': TextToMarkdown, 'config': markdown_config})
+            # self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config}) # Removed chunker
+        elif pipeline_type == 'json':
+            # Convert to JSON, then chunk
+            # Assumes input is text content from a loader
+            self._pipeline_component_definitions.append({'class': TextToJSON, 'config': json_config})
+            # Note: Chunking JSON might not always make sense, depends on the structure.
+            # Consider if chunking should happen *before* JSON conversion for some use cases.
+            self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
+        elif pipeline_type == 'structured':
+             # Use InstructorExtractor, then chunk
+             # Assumes input is text content and config includes 'response_model'
+             if 'response_model' not in instructor_config:
+                 self.logger.error("InstructorExtractor requires 'response_model' in its config. Pipeline may fail.")
+                 # Decide whether to raise error or proceed without extractor
+             self._pipeline_component_definitions.append({'class': InstructorExtractor, 'config': instructor_config})
+             self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
+        # Add elif blocks for other pipeline types (e.g., 'image', 'video', 'audio')
+        # These might involve processors like ImageProcessor, VideoToChunks, AudioTranscription
+        # elif pipeline_type == 'image':
+        #     self._pipeline_component_definitions.append({'class': ImageProcessor, 'config': self.config.get('image_processor_config', {})})
+        #     # Chunking might not apply directly to image metadata/description
+        # elif pipeline_type == 'video':
+        #      self._pipeline_component_definitions.append({'class': VideoToChunks, 'config': self.config.get('video_chunker_config', {})})
+        # elif pipeline_type == 'audio':
+        #      self._pipeline_component_definitions.append({'class': AudioTranscription, 'config': self.config.get('audio_transcription_config', {})}) # Example
+        #      self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config}) # Chunk transcript
+        else:
+            self.logger.warning(f"Unknown or unsupported pipeline_type: {pipeline_type}. Defaulting to text pipeline (chunking only).")
+            # Default to just chunking the content provided by the initial loader
+            self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
 
-        self.logger.info(f"Initialized pipeline definitions for type: {pipeline_type}")
-
+        self.logger.info(f"Pipeline definitions initialized with {len(self._pipeline_component_definitions)} components for type '{pipeline_type}'.")
     # -------------------------------------------------------------------------
     # Pipeline configuration helpers (These methods are now outdated and removed)
     # -------------------------------------------------------------------------
@@ -105,29 +136,41 @@ class DocumentPipeline:
     def process_document(self, source_path: Union[str, Path]) -> Dict[str, Any]:
         """Process a single document or YouTube URL."""
         source_path_str = str(source_path)
+        self.logger.info(f"Processing source path: {source_path_str}") # Added logging
 
         # Determine the appropriate initial loader based on the source_path
         initial_loader: BaseDocumentLoader
         if YouTubeLoader(self.config)._is_youtube_url(source_path_str):
              self.logger.info(f"Detected YouTube URL: {source_path_str}. Using YouTubeLoader.")
              initial_loader = YouTubeLoader(self.config)
+             self.logger.info(f"Selected loader: YouTubeLoader") # Added logging
         elif source_path_str.lower().endswith('.pdf'):
              self.logger.info(f"Detected PDF file: {source_path_str}. Using PDFLoader.")
              initial_loader = PDFLoader(self.config.get('pdf_loader_config', {}))
+             self.logger.info(f"Selected loader: PDFLoader") # Added logging
         elif source_path_str.lower().endswith(('.jpg', '.png', '.gif')):
              self.logger.info(f"Detected image file: {source_path_str}. Using ImageLoader.")
              initial_loader = ImageLoader(self.config.get('image_loader_config', {}))
+             self.logger.info(f"Selected loader: ImageLoader") # Added logging
         elif source_path_str.lower().endswith(('.txt', '.md', '.json', '.docx')):
              self.logger.info(f"Detected text/document file: {source_path_str}. Using TextLoader.")
              # Note: This might need refinement to use specific loaders for MD, JSON, DOCX
              initial_loader = TextLoader(self.config.get('text_loader_config', {}))
+             self.logger.info(f"Selected loader: TextLoader") # Added logging
         elif source_path_str.lower().endswith(('.3gp', '.flv', '.mkv', '.mp4')):
              self.logger.info(f"Detected video file: {source_path_str}. Using VideoLoader.")
              initial_loader = VideoLoader(self.config.get('video_loader_config', {}))
+             self.logger.info(f"Selected loader: VideoLoader") # Added logging
+        elif source_path_str.lower().endswith(('.wav', '.ogg', '.mp3', '.m4a')): # Added audio loader check
+             self.logger.info(f"Detected audio file: {source_path_str}. Using AudioLoader.")
+             from doc_processing.loaders.audio_loader import AudioLoader # Import AudioLoader
+             initial_loader = AudioLoader(self.config.get('audio_loader_config', {}))
+             self.logger.info(f"Selected loader: AudioLoader") # Added logging
         else:
              # Fallback for unknown file types or if no specific loader matched
              self.logger.warning(f"Could not determine loader for {source_path_str}. Defaulting to TextLoader.")
              initial_loader = TextLoader(self.config.get('text_loader_config', {})) # Default fallback loader
+             self.logger.info(f"Selected loader: TextLoader (fallback)") # Added logging
 
         # Run the initial loader
         initial_load_result = initial_loader.load(source_path_str)
@@ -145,9 +188,11 @@ class DocumentPipeline:
             component_class = component_def['class']
             component_config = component_def.get('config', {})
             processing_pipeline.add_component(component_class(component_config))
+            self.logger.info(f"Added pipeline component: {component_class.__name__}") # Added logging
 
         # Run the rest of the configured pipeline
         processed_document = processing_pipeline.run(pipeline_input)
+        self.logger.info(f"Pipeline run completed. Result type: {type(processed_document)}") # Added logging
 
         # Ensure the result is a dictionary
         if not isinstance(processed_document, dict):

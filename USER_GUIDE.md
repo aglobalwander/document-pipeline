@@ -23,7 +23,7 @@ python scripts/run_pipeline.py --input_path <path_to_input> --output_dir <path_t
     *   `markdown`: Text extraction with Markdown formatting (`.md` output). Suitable for most input types.
     *   `json`: Structured JSON extraction (`.json` output). Best suited for text-based inputs (PDF, TXT, MD, DOCX).
     *   `hybrid`: Runs the hybrid PDF processing (useful if you don't need a specific transformation like Markdown or JSON, defaults to `.txt` output). Primarily for PDF input.
-    *   `weaviate`: Processes and prepares data for Weaviate ingestion (details TBD).
+    *   `weaviate`: Processes and prepares data for ingestion into Weaviate collections ('KnowledgeItem' and 'KnowledgeMain'). Refer to [docs/weaviate_layer.md](docs/weaviate_layer.md) for details on Weaviate integration and collection management.
 *   `--ocr_mode <mode>`: **(Optional, PDF input only)** Controls the Optical Character Recognition (OCR) method used for PDF files. Choose from:
     *   `hybrid` (Default): Attempts to use Docling if available and suitable, otherwise falls back to the configured LLM's vision capability (e.g., GPT Vision for OpenAI, native PDF for Gemini).
     *   `docling`: Forces the use of Docling (will fall back to the LLM if Docling fails or is unavailable).

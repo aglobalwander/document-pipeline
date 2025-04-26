@@ -14,7 +14,7 @@ A modular Python document processing pipeline for converting various file types 
 -   **LLM Integration**: Abstracted client for OpenAI and Gemini (more can be added).
 -   **Output Formats**: Convert documents to plain Text, Markdown, or structured JSON.
 -   **Flexible Execution**: `scripts/run_pipeline.py` for running pipelines on single files or directories with various options.
--   **Weaviate Integration (Partial)**: Includes client and schema management for vector database integration (ingestion pipeline needs configuration).
+-   **Weaviate Integration**: Includes a complete modular layer for Weaviate v4 integration, including client connection, collection management, and data ingestion/retrieval. See [docs/weaviate_layer.md](docs/weaviate_layer.md) for detailed documentation.
 -   **Jinja Templates**: Flexible prompt and output formatting.
 -   **Jupyter Notebooks**: Interactive examples (may need updates).
 

@@ -5,16 +5,16 @@ A modular Python document processing pipeline for converting various file types 
 ## 🌟 Features
 
 -   **Modular Architecture**: Easily extendable loaders, processors, and transformers.
--   **Multi-Format Input**: Handles PDF, DOCX, TXT, MD, JSON, Audio, Image, and Video files, **including processing directly from YouTube URLs**.
+-   **Multi-Format Input**: Handles PDF, DOCX, TXT, MD, JSON, Audio, Image, and Video files, **including processing directly from YouTube URLs**. If a YouTube video does not have an available transcript, the video file will be downloaded for post-processing.
 -   **Advanced Processing**:
     -   **PDFs**: Uses **Docling** for layout-aware text extraction (if available), **OpenAI Vision** for image-based OCR, and **Gemini** for native PDF understanding (text and vision). Hybrid mode intelligently selects the best method (or falls back).
-    -   **Audio**: Supports transcription (e.g., via Deepgram).
+    -   **Audio**: Supports transcription.
     -   **Images**: Supports processing and OCR.
-    -   **Video**: Supports processing and transcription of audio tracks.
-    -   **YouTube**: Download and process video content directly from YouTube URLs.
+    -   **Video**: Supports processing and extraction of audio tracks.
+    -   **YouTube**: Download video content directly from YouTube URLs. If a transcript is not available, the video file is provided for post-processing.
 -   **LLM Integration**: Abstracted client for OpenAI and Gemini (more can be added).
 -   **Output Formats**: Convert documents to plain Text, Markdown, or structured JSON.
--   **Flexible Execution**: `scripts/run_pipeline.py` for running pipelines on single files, directories, or **YouTube URLs** with various options.
+-   **Flexible Execution**: `scripts/run_pipeline.py` for running pipelines on single files, directories, or **YouTube URLs** with various options. If a YouTube video has no transcript, the downloaded video file path is included in the output metadata.
 -   **Weaviate Integration**: Includes a complete modular layer for Weaviate v4 integration, including client connection, collection management, and data ingestion/retrieval. See [docs/weaviate_layer.md](docs/weaviate_layer.md) for detailed documentation.
 -   **Jinja Templates**: Flexible prompt and output formatting.
 -   **Jupyter Notebooks**: Interactive examples (may need updates).

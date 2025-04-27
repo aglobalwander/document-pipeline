@@ -1,0 +1,18 @@
+name: MyNewCollection
+description: Stores document chunks processed by the pipeline.
+properties:
+  - name: text # The content of the chunk
+    dataType:
+      - TEXT
+  - name: chunk_index # The index of the chunk within the original document
+    dataType:
+      - INT
+  - name: document_id # The UUID of the original document this chunk belongs to
+    dataType:
+      - TEXT
+# Define the vectorizer configuration (adjust model as needed)
+vectorizerConfig:
+  text2vec-openai:
+    model: text-embedding-3-small
+    # You might need to specify dimensions depending on the model, e.g.:
+    # dimensions: 1536

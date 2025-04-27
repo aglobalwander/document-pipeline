@@ -79,8 +79,6 @@ python scripts/run_pipeline.py --input_path data/input/text/sample_report.txt --
 python scripts/run_pipeline.py --input_path data/input/text --output_dir data/output/text_batch --pipeline_type text
 ```
 
-*(This guide will be expanded as more features are added.)*
-
 **7. Process `sample.wav` audio file to plain text:**
 
 ```bash
@@ -101,7 +99,7 @@ python scripts/run_pipeline.py --input_path data/input/video/SampleVideo_1280x72
 # Ensure your Weaviate instance is running and configured via environment variables or .env file
 python scripts/run_pipeline.py --input_path data/input/pdfs/sample_test.pdf --pipeline_type weaviate
 ```
-*(Note: Weaviate ingestion does not produce output files in the output_dir by default, as data is sent directly to Weaviate. Ensure your Weaviate client is properly configured.)*
+*(Note: Weaviate ingestion does not produce output files in the output_dir by default, as data is sent directly to Weaviate. Ensure your Weaviate client is properly configured via environment variables. You can specify a target collection using the `--collection <CollectionName>` argument; otherwise, it defaults to internal collections like 'KnowledgeMain'.)*
 ## Troubleshooting
 
 *   **Encoding Errors:** If you encounter encoding errors, especially when processing DOCX files, try specifying the encoding explicitly in the command. For example:

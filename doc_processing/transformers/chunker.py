@@ -37,17 +37,18 @@ class LangChainChunker(BaseTransformer): # Inheriting from BaseTransformer as in
         """Split document into chunks using LangChain.
         
         Args:
-            document: Document to chunk (expected to have 'content' key)
+            document: Document to chunk (expected to have 'content' or 'markdown' key)
             
         Returns:
             Document with added 'chunks' key
         """
-        if not document.get('content'):
-            self.logger.warning(f"Document has no content to chunk")
+        # Check for content in 'content' or 'markdown' fields
+        content = document.get('content') or document.get('markdown')
+
+        if not content:
+            self.logger.warning(f"Document has no content or markdown field to chunk")
             document['chunks'] = []
             return document
-        
-        content = document.get('content', '')
         
         # Use only token-based splitting for uniform chunking
         chunks = self.token_splitter.split_text(content)

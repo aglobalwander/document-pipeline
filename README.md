@@ -147,12 +147,14 @@ If the specified collection does not exist in your Weaviate instance, the pipeli
 
 ## Word & PowerPoint Support
 
-The pipeline now supports processing Word (DOCX) and PowerPoint (PPTX) files:
+The pipeline now supports processing Word (DOCX) and PowerPoint (PPTX) files. Specifically, you can now convert DOCX files to Markdown using the `markdown` pipeline type.
 
 ```bash
 # Word → Markdown
 python scripts/run_pipeline.py --input_path data/input/docx/sample_word.docx --pipeline_type markdown
+```
 
+```bash
 # PowerPoint → Weaviate (slide chunks)
 python scripts/run_pipeline.py --input_path data/input/pptx/sample_deck.pptx --pipeline_type weaviate
 ```

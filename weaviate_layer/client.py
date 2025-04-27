@@ -21,10 +21,19 @@ def get_weaviate_client(config=None):
     # Use config overrides if provided, otherwise use settings
     weav_url = config.get('weaviate_url') if config and 'weaviate_url' in config else settings.weav_url
     weav_api_key = config.get('weaviate_api_key') if config and 'weaviate_api_key' in config else settings.weav_api_key
+    openai_api_key = settings.openai_api_key # Load OpenAI key from settings
     
+    # Prepare headers, including OpenAI key if available
+    headers = {}
+    if openai_api_key:
+        headers["X-Openai-Api-Key"] = openai_api_key
+        logging.info("OpenAI API Key found, adding to headers.")
+    else:
+        logging.warning("OpenAI API Key not found in settings. Vectorization might fail if using OpenAI module.")
+
     logging.info("Attempting to connect to Weaviate...")
     logging.info(f"Using Weaviate URL: {weav_url if weav_url else 'Not set (will use local)'}")
-    logging.info(f"API Key provided: {bool(weav_api_key)}")
+    logging.info(f"Weaviate API Key provided: {bool(weav_api_key)}")
     
     try:
         if weav_url and weav_api_key:
@@ -32,6 +41,7 @@ def get_weaviate_client(config=None):
             client = weaviate.connect_to_weaviate_cloud(
                 cluster_url=weav_url,
                 auth_credentials=Auth.api_key(weav_api_key),
+                headers=headers, # Pass headers
                 skip_init_checks=True, # Skip checks during retry attempts
             )
             logging.info("Successfully connected to Weaviate Cloud")
@@ -39,6 +49,7 @@ def get_weaviate_client(config=None):
         else:
             logging.info("Connecting to local Weaviate instance")
             client = weaviate.connect_to_local(
+                headers=headers, # Pass headers
                 skip_init_checks=True, # Skip checks during retry attempts
             )
             logging.info("Successfully connected to local Weaviate instance")

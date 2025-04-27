@@ -1,0 +1,15 @@
+name: KnowledgeMain
+description: A collection for storing document chunks.
+properties:
+  - name: text
+    dataType:
+      - TEXT
+  - name: chunk_index
+    dataType:
+      - INT
+  - name: document_id
+    dataType:
+      - TEXT
+vectorizerConfig:
+  text2vec-openai:
+    model: text-embedding-3-large

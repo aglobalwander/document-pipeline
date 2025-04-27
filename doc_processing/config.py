@@ -2,7 +2,7 @@
 import os
 from pathlib import Path
 from typing import Dict, Any, Optional
-from pydantic import Field
+from pydantic import Field, validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
 from dotenv import load_dotenv, find_dotenv
@@ -68,10 +68,10 @@ class Settings(BaseSettings):
     GIT_HUB_TOKEN: Optional[str] = Field(default=os.getenv('GIT_HUB_TOKEN', ''))
     WEAVIATE_GRPC_URL: Optional[str] = Field(default=os.getenv('WEAVIATE_GRPC_URL', ''))
     
-    # Weaviate configuration
-    WEAVIATE_URL: str = Field(default=os.getenv('WEAVIATE_URL', 'http://localhost:8080'))
-    WEAVIATE_API_KEY: str = Field(default=os.getenv('WEAVIATE_API_KEY', ''))
-    WEAVIATE_BATCH_SIZE: int = Field(default=100)
+    # Weaviate configuration (Handled separately in weaviate_layer.config)
+    # WEAVIATE_URL: str = Field(default=os.getenv('WEAVIATE_URL', 'http://localhost:8080')) # Removed
+    # WEAVIATE_API_KEY: str = Field(default=os.getenv('WEAVIATE_API_KEY', '')) # Removed
+    WEAVIATE_BATCH_SIZE: int = Field(default=100) # Keep batch size if used elsewhere
     
     # Processing configuration
     MAX_RETRIES: int = Field(default=3)
@@ -93,16 +93,50 @@ class Settings(BaseSettings):
     LOG_LEVEL: str = Field(default='INFO')
     PROGRESS_FILE: str = Field(default='processing_progress.txt')
     
+    # Remove env_file loading for this specific Settings class
+    # as Weaviate settings are handled in weaviate_layer/config.py
     model_config = SettingsConfigDict(
-        env_file='.env',
-        case_sensitive=True
+        # env_file='.env', # Removed
+        case_sensitive=True,
+        extra='ignore' # Explicitly keep ignore, though it should be default
     )
+
+    # PDF Processor Configuration
+    PDF_PROCESSOR_STRATEGY: str = Field(
+        default="exclusive",
+        description="Processing strategy: 'exclusive' (choose one) or 'fallback_chain'"
+    )
+    ACTIVE_PDF_PROCESSORS: list[str] = Field(
+        default=["docling", "gpt", "gemini"],
+        description="Ordered list of enabled processors: docling, gpt, gemini"
+    )
+    DEFAULT_PDF_PROCESSOR: str = Field(
+        default="docling",
+        description="Default processor for 'exclusive' strategy"
+    )
+    PDF_FALLBACK_ORDER: list[str] = Field(
+        default=["gemini", "gpt"],
+        description="Fallback order for 'fallback_chain' strategy"
+    )
+
+    @validator('PDF_PROCESSOR_STRATEGY')
+    def validate_strategy(cls, v):
+        if v not in ['exclusive', 'fallback_chain']:
+            raise ValueError("Invalid strategy. Choose 'exclusive' or 'fallback_chain'")
+        return v
+
+    @validator('ACTIVE_PDF_PROCESSORS')
+    def validate_active_processors(cls, v):
+        valid = {'docling', 'gpt', 'gemini'}
+        if not set(v).issubset(valid):
+            raise ValueError(f"Invalid processors. Valid options: {valid}")
+        return v
 
 
 @lru_cache()
 def get_settings() -> Settings:
     """Get cached settings instance.
-    
+
     Returns:
         Settings instance
     """
@@ -111,28 +145,35 @@ def get_settings() -> Settings:
 
 def get_file_type_config(file_type: str) -> Dict[str, Any]:
     """Get configuration for specific file type.
-    
+
     Args:
         file_type: File type (pdf, text, markdown, etc.)
-        
+
     Returns:
         Dictionary with file type configuration
     """
     settings = get_settings()
-    
+
     # Common configuration
     config = {
         'max_retries': settings.MAX_RETRIES,
         'concurrent_tasks': settings.CONCURRENT_TASKS,
     }
-    
+
     # File type specific configuration
     if file_type == 'pdf':
         config.update({
             'input_dir': settings.PDF_INPUT_DIR,
             'output_dir': settings.TEXT_OUTPUT_DIR,
-            'vision_model': settings.DEFAULT_VISION_MODEL,
-            'prompt_template': 'pdf_extraction.j2',
+            # Remove vision_model and prompt_template from here,
+            # as they are now handled by the specific PDF processors
+            # 'vision_model': settings.DEFAULT_VISION_MODEL,
+            # 'prompt_template': 'pdf_extraction.j2',
+            # Add new PDF processor specific settings
+            'pdf_processor_strategy': settings.PDF_PROCESSOR_STRATEGY,
+            'active_pdf_processors': settings.ACTIVE_PDF_PROCESSORS,
+            'default_pdf_processor': settings.DEFAULT_PDF_PROCESSOR,
+            'pdf_fallback_order': settings.PDF_FALLBACK_ORDER,
         })
     elif file_type == 'text':
         config.update({
@@ -166,20 +207,20 @@ def get_file_type_config(file_type: str) -> Dict[str, Any]:
             'input_dir': settings.JSON_INPUT_DIR,
             'output_dir': settings.JSON_OUTPUT_DIR,
         })
-    
+
     return config
 
 
 def ensure_directories_exist() -> None:
     """Create all necessary directories if they don't exist."""
     settings = get_settings()
-    
+
     # Create base directories
     os.makedirs(settings.DATA_DIR, exist_ok=True)
     os.makedirs(settings.INPUT_DIR, exist_ok=True)
     os.makedirs(settings.OUTPUT_DIR, exist_ok=True)
     os.makedirs(settings.TEMP_DIR, exist_ok=True)
-    
+
     # Create input subdirectories
     os.makedirs(settings.PDF_INPUT_DIR, exist_ok=True)
     os.makedirs(settings.TEXT_INPUT_DIR, exist_ok=True)
@@ -188,7 +229,7 @@ def ensure_directories_exist() -> None:
     os.makedirs(settings.AUDIO_INPUT_DIR, exist_ok=True)
     os.makedirs(settings.VIDEO_INPUT_DIR, exist_ok=True)
     os.makedirs(settings.JSON_INPUT_DIR, exist_ok=True)
-    
+
     # Create output subdirectories
     os.makedirs(settings.TEXT_OUTPUT_DIR, exist_ok=True)
     os.makedirs(settings.MARKDOWN_OUTPUT_DIR, exist_ok=True)
@@ -196,6 +237,6 @@ def ensure_directories_exist() -> None:
     # Add these new settings to your existing config
 
 DOCLING_ENABLED: bool = Field(default=True)
-DOCLING_USE_EASYOCR: bool = Field(default=True) 
+DOCLING_USE_EASYOCR: bool = Field(default=True)
 DOCLING_EXTRACT_TABLES: bool = Field(default=True)
 DOCLING_EXTRACT_FIGURES: bool = Field(default=True)

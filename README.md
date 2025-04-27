@@ -98,6 +98,12 @@ document-pipeline/
 ├── notebooks/      # Jupyter examples (may need updates)
 ├── scripts/
 │   ├── run_pipeline.py # Main script for running pipelines
+│   ├── check_weaviate_api.py
+│   ├── create_default_template.py
+│   ├── download_nltk_resources.py
+│   ├── download_punkt_tab.py
+│   ├── filesize.py
+│   ├── verify_weaviate_connection.py
 │   └── ...             # Other utility scripts
 └── tests/          # Unit tests
     └── ...

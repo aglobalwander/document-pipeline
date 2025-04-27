@@ -5,19 +5,22 @@ A modular Python document processing pipeline for converting various file types 
 ## 🌟 Features
 
 -   **Modular Architecture**: Easily extendable loaders, processors, and transformers.
--   **Multi-Format Input**: Handles PDF, DOCX, TXT, MD, JSON, Audio, Image, and Video files, **including processing directly from YouTube URLs**. If a YouTube video does not have an available transcript, the video file will be downloaded for post-processing.
+-   **Multi-Format Input**: Handles PDF, DOCX, PPTX, TXT, MD, JSON, Audio, Image, and Video files, **including processing directly from YouTube URLs**. If a YouTube video does not have an available transcript, the video file will be downloaded for post-processing.
 -   **Advanced Processing**:
     -   **PDFs**: Uses **Docling** for layout-aware text extraction (if available), **OpenAI Vision** for image-based OCR, and **Gemini** for native PDF understanding (text and vision). Hybrid mode intelligently selects the best method (or falls back).
+    -   **DOCX**: Uses **Mammoth** to convert Word documents to Markdown with proper formatting.
+    -   **PPTX**: Uses **MarkItDown** to convert PowerPoint presentations to Markdown.
     -   **Audio**: Supports transcription.
     -   **Images**: Supports processing and OCR.
     -   **Video**: Supports processing and extraction of audio tracks.
     -   **YouTube**: Download video content directly from YouTube URLs. If a transcript is not available, the video file is provided for post-processing.
 -   **LLM Integration**: Abstracted client for OpenAI and Gemini (more can be added).
--   **Output Formats**: Convert documents to plain Text, Markdown, or structured JSON.
+-   **Output Formats**: Convert documents to plain Text, Markdown, structured JSON, CSV, or Excel.
 -   **Flexible Execution**: `scripts/run_pipeline.py` for running pipelines on single files, directories, or **YouTube URLs** with various options. If a YouTube video has no transcript, the downloaded video file path is included in the output metadata.
 -   **Weaviate Integration**: Includes a complete modular layer for Weaviate v4 integration, including client connection, collection management, and data ingestion/retrieval. See [docs/weaviate_layer.md](docs/weaviate_layer.md) for detailed documentation.
 -   **Jinja Templates**: Flexible prompt and output formatting.
 -   **Jupyter Notebooks**: Interactive examples (may need updates).
+-   **Command Cheat Sheet**: Quick reference for all pipeline operations available in [COMMANDS.md](docs/COMMANDS.md)
 
 ## 📋 Requirements
 
@@ -27,6 +30,11 @@ A modular Python document processing pipeline for converting various file types 
     -   `openai` (for OpenAI)
     -   `PyMuPDF` (for PDF loading)
     -   `python-docx` (for DOCX loading)
+    -   `mammoth` (for DOCX to Markdown conversion)
+    -   `markdownify` (for HTML to Markdown conversion)
+    -   `markitdown[pptx]` (for PPTX to Markdown conversion)
+    -   `openpyxl` (for Excel output)
+    -   `pandas` (for CSV and Excel processing)
     -   `docling` (Optional, for advanced PDF processing)
     -   `weaviate-client` (Optional, for Weaviate integration)
 -   API Keys:
@@ -136,6 +144,41 @@ python scripts/run_pipeline.py --input_path data/input/pdfs/sample_test.pdf --pi
 ```
 
 If the specified collection does not exist in your Weaviate instance, the pipeline will attempt to create it using the provided YAML schema.
+
+## Word & PowerPoint Support
+
+The pipeline now supports processing Word (DOCX) and PowerPoint (PPTX) files:
+
+```bash
+# Word → Markdown
+python scripts/run_pipeline.py --input_path data/input/docx/sample_word.docx --pipeline_type markdown
+
+# PowerPoint → Weaviate (slide chunks)
+python scripts/run_pipeline.py --input_path data/input/pptx/sample_deck.pptx --pipeline_type weaviate
+```
+
+## JSON to CSV/Excel Conversion
+
+You can now convert JSON data to CSV or Excel formats:
+
+```bash
+# JSON → CSV
+python scripts/run_pipeline.py --input_path data/input/json/sample_data.json --pipeline_type json --output_format csv
+
+# JSON → Excel (with default template)
+python scripts/run_pipeline.py --input_path data/input/json/sample_data.json --pipeline_type json --output_format xlsx
+```
+
+### Excel Templates
+
+You can customize Excel output using templates:
+
+```bash
+# Use a custom Excel template
+python scripts/run_pipeline.py --input_path data/input/json/sample_data.json --pipeline_type json --output_format xlsx --excel_template finance
+```
+
+Templates are stored in the `report_templates/excel/` directory. The default template provides a blank sheet with a bold header row.
 
 ## 🤝 Contributing
 

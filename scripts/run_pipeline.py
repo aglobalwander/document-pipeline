@@ -58,8 +58,20 @@ def parse_arguments():
                         help='Type of pipeline configuration to run.')
     parser.add_argument('--recursive', action='store_true',
                         help='Process directories recursively.')
-    parser.add_argument('--output_format', type=str, choices=['txt', 'md', 'json'],
+    parser.add_argument('--output_format', type=str, choices=['txt', 'md', 'json', 'csv', 'xlsx'],
                         help='Explicit output format (default inferred from pipeline_type).')
+
+    # PPTX Configuration
+    parser.add_argument('--pptx_strategy', type=str, default='hybrid', choices=['hybrid'],
+                        help='Processing strategy for PPTX files (e.g., "hybrid").')
+
+    # Excel and CSV configuration
+    parser.add_argument('--excel_template', type=str, default='default',
+                        help='Name of Excel template in report_templates/excel/ (without .xlsx extension)')
+    parser.add_argument('--excel_template_dir', type=str, default='report_templates/excel',
+                        help='Directory containing Excel templates')
+    parser.add_argument('--merge_csv', action='store_true',
+                        help='Merge multiple CSV outputs into a single file')
 
     # LLM Configuration (used by various processors/transformers)
     parser.add_argument('--llm_provider', type=str, default='openai',
@@ -75,6 +87,10 @@ def parse_arguments():
     # PDF Processing Configuration
     parser.add_argument('--ocr_mode', type=str, default='hybrid', choices=['hybrid', 'docling', 'gpt'],
                         help="OCR mode for PDF processing ('hybrid', 'docling', 'gpt'). Only relevant for PDF inputs.")
+    parser.add_argument('--pdf_processor_strategy', type=str, choices=['exclusive', 'fallback_chain'],
+                        help="Strategy for PDF processing: 'exclusive' (use one processor) or 'fallback_chain' (try multiple in order)")
+    parser.add_argument('--pdf_processor', type=str, choices=['docling', 'gpt', 'gemini'],
+                        help="Default PDF processor to use (for 'exclusive' strategy)")
     parser.add_argument('--gpt_vision_prompt', type=str,
                         help='Path to a custom Jinja2 template file for GPT Vision OCR.')
     parser.add_argument('--no_page_images', action='store_true',
@@ -136,7 +152,7 @@ def main():
             pattern = f"**/*" if args.recursive else "*"
             # Define supported extensions for local file processing
             supported_extensions = [
-                '.pdf', '.txt', '.md', '.json', '.docx',
+                '.pdf', '.txt', '.md', '.json', '.docx', '.pptx',
                 '.jpg', '.jpeg', '.png', '.gif', '.bmp', # Image extensions
                 '.mp3', '.wav', '.aac', '.flac', # Audio extensions
                 '.mp4', '.mov', '.avi', '.mkv', # Video extensions
@@ -198,7 +214,19 @@ def main():
             'weaviate_enabled': args.pipeline_type == 'weaviate', # Explicitly enable weaviate in config
             'weaviate_class_prefix': args.weaviate_class_prefix,
             'collection_name': args.collection, # Pass the collection name from CLI args
+            
+            # Add new configuration options
+            'excel_template': args.excel_template,
+            'excel_template_dir': args.excel_template_dir,
+            'merge_csv': args.merge_csv,
+            'output_format': args.output_format,
         }
+        
+        # Add PDF processor configuration if specified
+        if args.pdf_processor_strategy:
+            pipeline_config['pdf_processor_strategy'] = args.pdf_processor_strategy
+        if args.pdf_processor:
+            pipeline_config['default_pdf_processor'] = args.pdf_processor
 
         # Instantiate DocumentPipeline for each input (to ensure a clean pipeline per document/URL)
         pipeline = DocumentPipeline(config=pipeline_config, weaviate_client=weaviate_client)

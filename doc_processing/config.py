@@ -107,8 +107,8 @@ class Settings(BaseSettings):
         description="Processing strategy: 'exclusive' (choose one) or 'fallback_chain'"
     )
     ACTIVE_PDF_PROCESSORS: list[str] = Field(
-        default=["docling", "enhanced_docling", "gpt", "gemini"],
-        description="Ordered list of enabled processors: docling, enhanced_docling, gpt, gemini"
+        default=["pymupdf", "docling", "enhanced_docling", "gpt", "gemini"],
+        description="Ordered list of enabled processors: pymupdf, docling, enhanced_docling, gpt, gemini"
     )
     DEFAULT_PDF_PROCESSOR: str = Field(
         default="docling",
@@ -127,7 +127,7 @@ class Settings(BaseSettings):
 
     @validator('ACTIVE_PDF_PROCESSORS')
     def validate_active_processors(cls, v):
-        valid = {'docling', 'enhanced_docling', 'gpt', 'gemini'}
+        valid = {'pymupdf', 'docling', 'enhanced_docling', 'gpt', 'gemini'}
         if not set(v).issubset(valid):
             raise ValueError(f"Invalid processors. Valid options: {valid}")
         return v

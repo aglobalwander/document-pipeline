@@ -1,0 +1,3 @@
+## Commitments
+
+Cognitive Coaches are committed to learning. They continually resist complacency, and they share both the humility and the pride of admitting that there is more to learn. They dedicate themselves to serving others, and they set aside their ego needs, devoting their energies to enhancing others' resourcefulness. They commit their time and energies to make a difference by enhancing interdependence, illuminating situations from varied perspectives, and striving to bring consciousness to intentions, thoughts, feelings, and behaviors and their effect on others and the environment.

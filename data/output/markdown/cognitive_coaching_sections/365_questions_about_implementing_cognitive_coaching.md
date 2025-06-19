@@ -1,0 +1,3 @@
+## Questions about Implementing Cognitive Coaching
+
+Researchers could also conduct studies to determine the most effective strategies for implementing Cognitive Coaching. What processes are in place in school districts that implement Cognitive Coaching at the highest levels? In addition to the 12 recommendations that researchers have already identified, what else might be important for districts to consider in order to get the greatest return on their investment?

@@ -1,0 +1,3 @@
+## The Coach's Perspective
+
+This perceptual frame operates whenever we are intensely aware of our own thoughts, feelings, intentions, place on a coaching map, and physical sensations. To be aware of our own boundaries requires egocentricity. Being egocentrically conscious allows us to monitor our own processes. With consciousness, we can recognize that we are doing autobiographical or solution listening and decide to set it aside to better understand the other person. Without consciousness of our own thinking and feeling processes, we have no other choice but to stay stuck in whatever internal reality is happening at the moment. Although egocentric listening may generate sympathy, it is not helpful in mediating thinking.

@@ -1,0 +1,3 @@
+## Recommendation #12: Distinguish between Coaching and Evaluation
+
+Distinctions need to be made between coaching and evaluation if the principal is doing the coaching so that teachers know when they are being coached and when they are being evaluated (Weatherford and Weatherford 1991). Teachers who had taken seven to 12 days of training in Cognitive Coaching indicated that when principals focused on evaluating teachers rather than on supervising them, they created a climate that did not encourage them to develop professionally (Johnson 1997).

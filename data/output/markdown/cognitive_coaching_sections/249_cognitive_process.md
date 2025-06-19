@@ -1,0 +1,7 @@
+## Cognitive Process
+
+With an orientation to cognitive psychology, cognitive processors believe that the central role of schools is to develop rational thought processes, problem-solving abilities, and decision-making capacities. They are drawn
+
+to educational theorists and authors such as John Dewey, Jerome Bruner, Hilda Taba, J. Richard Suchmanm, Caleb Gattegno, Robert Sternberg, Jean Piaget, Reuven Feuerstein, Maria Montessori, Howard Gardner, David Perkins, Edward deBono, and Carol Dweck. They believe that the information explosion is occurring at such a rapid rate that it is no longer possible for experts in any field to keep up with new knowledge. Thus, we no longer know what to teach but instead must help students learn how to continuously learn throughout their lifetimes.
+
+Cognitive processors select instructional strategies that involve problem solving and inquiry. They use concepts like Bloom's taxonomy, intellectual development, habits of mind, metacognition, and thinking skills and dispositions. They organize teaching around the resolution of problems and the Socratic method, and they bring in discrepant events for students to explore and analyze. They assess student growth by how well they perform in problem-solving situations. Their metaphorical model of education is that of information processing: Human beings are meaning makers, and schools and teachers mediate those capacities.

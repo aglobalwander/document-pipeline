@@ -1,0 +1,3 @@
+## Deepening Skills
+
+Skillfulness in Cognitive Coaching takes time and practice beyond reading this book. Other opportunities can help coaches acquire the skills and understanding of this complex process. Several visual aids are available as an introduction to Cognitive Coaching and in skill refinement. Numerous resources and learning opportunities are available and are listed in the preface of this book and in the section in appendix F.

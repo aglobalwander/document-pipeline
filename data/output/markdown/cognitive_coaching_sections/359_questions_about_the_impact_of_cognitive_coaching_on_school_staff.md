@@ -1,0 +1,11 @@
+## Questions about the Impact of Cognitive Coaching on School Staff
+
+More research could be done to investigate the effects of Cognitive Coaching on entire schools. Researchers might examine principal-teacher interactions in the school. For example, what changes might occur in the ways in which the principal interacts with individual staff members? What changes could occur in the ways that the principal interacts with the staff as a group? What might be some changes in the ways that the staff members interact with the principal? What could be some changes in the ways that staff members interact with each other? What changes might occur in weekly staff meetings?
+
+How might Cognitive Coaching help teachers grow in collective efficacy? What might be the results of higher levels of collective efficacy on students and their ability to achieve? Other possibilities could be to investigate how personal relationships between teachers in the school could change. What changes might occur in how teams of teachers interacted with other teams? What could be some of the changes in how teams interacted within their teams? What changes might teachers notice in their friendships with other teachers in the school? Would fewer arguments and disagreements occur?
+
+Further possibilities could include investigations into the impact of Cognitive Coaching on schoolwide problems. When problems occur, what are some of the strategies that teachers and administrators use to resolve them? Might fewer difficulties and issues arise as a result of all staff using Cognitive Coaching? Fewer major problems and conflicts should occur because Cognitive Coaching training and use could provide teachers with the skills to work together and coach each other in an atmosphere of trust and rapport in order to solve problems while they are still small.
+
+Researchers could also examine how Cognitive Coaching might contribute
+
+to schools becoming learning organizations (Senge, Cambron-McCabe, Lucas, Smith, Dutton, and Kleiner 2012). What might happen to teachers' desire to learn? How could that desire be passed on to students?

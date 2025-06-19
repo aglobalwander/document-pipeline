@@ -1,0 +1,5 @@
+## Questions about the Impact of Cognitive Coaching on Supervisory Relationships
+
+Researchers could investigate the use of Cognitive Coaching in supervisory relationships. When principals use Cognitive Coaching in supervisory relationships, how might teachers grow in their proficiency compared with traditional supervision? What might be the outcomes of principals using the calibrating conversation with teachers? How might teacher evaluations differ as a result of principals coaching teachers? What might be some of the effects on school culture, school climate, faculty collegiality, and faculty satisfaction with position and with teaching as a profession?
+
+What percentage of time do principals use the four support functions of coaching, collaborating, consulting, and evaluating? How might principal use of the four support functions influence teacher thinking, teacher selfdirectedness, and teacher growth in the five states of mind? How might that affect teacher assessment of school culture, school climate, and organizational climate?

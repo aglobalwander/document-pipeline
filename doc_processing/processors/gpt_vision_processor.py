@@ -2,10 +2,12 @@
 
 import base64
 import logging
+import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import requests # Keep requests for potential direct image fetching if needed
+from tqdm import tqdm  # Import tqdm for progress bar
 
 from doc_processing.embedding.base import BaseProcessor # Corrected import path
 from doc_processing.config import get_settings
@@ -29,6 +31,9 @@ class GPTPVisionProcessor(BaseProcessor):
         """Initialize the processor."""
         super().__init__(config)
         self.settings = get_settings()
+        
+        # Progress bar configuration
+        self.show_progress_bar = self.config.get('show_progress_bar', True)
 
         # LLM Client Initialization
         self.llm_client: Optional[BaseLLMClient] = None
@@ -84,13 +89,44 @@ class GPTPVisionProcessor(BaseProcessor):
             return document
 
         extracted_content = []
+        total_pages = len(document['pages'])
+        start_time = time.time()
+        processing_times = []
+        
+        logger.info(f"Starting GPT Vision processing for {total_pages} pages...")
+        
+        # Create progress bar if enabled
+        progress_bar = None
+        if self.show_progress_bar:
+            progress_bar = tqdm(total=total_pages, desc="Processing PDF pages", unit="page")
+        
         for i, page_data in enumerate(document['pages']):
-            logger.info(f"Processing page {i+1} with {self.llm_client.__class__.__name__}...")
+            page_num = i + 1
+            page_start_time = time.time()
+            
+            # Calculate progress percentage
+            progress_pct = (i / total_pages) * 100 if total_pages > 0 else 0
+            
+            # Calculate estimated time remaining if we have processed at least one page
+            eta_str = ""
+            if i > 0 and processing_times:
+                avg_time_per_page = sum(processing_times) / len(processing_times)
+                eta_seconds = avg_time_per_page * (total_pages - i)
+                eta_min = int(eta_seconds // 60)
+                eta_sec = int(eta_seconds % 60)
+                eta_str = f", ETA: {eta_min}m {eta_sec}s"
+            
+            logger.info(f"Processing page {page_num}/{total_pages} ({progress_pct:.1f}%{eta_str}) with {self.llm_client.__class__.__name__}...")
             try:
                 image_base64 = self._get_image_base64(page_data)
                 if not image_base64:
                     logger.warning(f"Could not get base64 image for page {i+1}. Skipping.")
                     extracted_content.append(f"[Page {i+1} Image Error]")
+                    
+                    # Update progress bar for skipped pages if enabled
+                    if progress_bar:
+                        progress_bar.update(1)
+                        progress_bar.set_postfix({"Status": "Image Error"})
                     continue
 
                 # Prepare prompt context
@@ -151,6 +187,19 @@ class GPTPVisionProcessor(BaseProcessor):
                         max_tokens=self.config.get('max_tokens', 3000) # Pass relevant kwargs
                         # Add temperature etc. if needed from config
                     )
+                    # Record processing time for this page
+                    page_end_time = time.time()
+                    page_duration = page_end_time - page_start_time
+                    processing_times.append(page_duration)
+                    
+                    # Log completion with timing information
+                    logger.info(f"Completed page {page_num}/{total_pages} in {page_duration:.2f}s")
+                    
+                    # Update progress bar if enabled
+                    if progress_bar:
+                        progress_bar.update(1)
+                        progress_bar.set_postfix({"Time/page": f"{page_duration:.2f}s"})
+                    
                     extracted_content.append(page_text)
                 # --- End OpenAI Specific Handling ---
                 # Removed Gemini specific handling block as it's handled natively in HybridPDFProcessor
@@ -161,13 +210,33 @@ class GPTPVisionProcessor(BaseProcessor):
                      else:
                           # This case should ideally not be reached if init logic is correct
                            logger.error(f"LLM client is None during page processing. Skipping page {i+1}.")
+                     
+                     # Update progress bar for unsupported client if enabled
+                     if progress_bar:
+                         progress_bar.update(1)
+                         progress_bar.set_postfix({"Status": "Unsupported Client"})
+                     
                      extracted_content.append(f"[Page {i+1} LLM Not Supported/Initialized]")
 
 
             except Exception as e:
                 logger.error(f"Error processing page {i+1} with vision model: {e}")
                 extracted_content.append(f"[Page {i+1} Processing Error: {e}]")
+                
+                # Update progress bar even on error if enabled
+                if progress_bar:
+                    progress_bar.update(1)
+                    progress_bar.set_postfix({"Status": "Error"})
 
+        # Close the progress bar if enabled
+        if progress_bar:
+            progress_bar.close()
+        
+        # Calculate and log total processing time
+        total_time = time.time() - start_time
+        avg_time_per_page = total_time / total_pages if total_pages > 0 else 0
+        logger.info(f"Completed processing {total_pages} pages in {total_time:.2f}s (avg: {avg_time_per_page:.2f}s per page)")
+        
         # Combine extracted text (consider adding page breaks)
         full_content = "\n\n--- Page Break ---\n\n".join(extracted_content)
 

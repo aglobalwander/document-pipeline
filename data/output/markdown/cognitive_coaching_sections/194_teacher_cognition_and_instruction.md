@@ -1,0 +1,13 @@
+## Teacher Cognition and Instruction
+
+It is obvious that what teachers do is directed in no small measure by what they think. . . . To the extent that observed or intended teaching behavior is 'thoughtless,' it makes no use of the human teacher's most unique attributes. In so doing, it becomes mechanical and might well be done by a machine. If, however, teaching is done and, in all likelihood, will continue to be done by human teachers, the question of relationships between thought and action becomes crucial.
+
+-National Institute of Education (1975)
+
+L et's take an imaginary tour of a elementary classroom to observe cognition at work during teaching. As you walk in, you are immediately struck by all the activity around you. A group of students works on a papier-mâché relief map. Other students work at the computer. A few students are helping each other with their homework. Still others are working at the science table. The teacher sits at a round table working with a small reading group. She listens to Rebecca read; next she listens to and corrects Diane. She diagnoses Tyrell, then Leroy. At that moment, an office monitor enters and delivers a note. The teacher, still listening to Rebecca, reads the note, commends the monitor for coming in so quietly, composes a response, sends him out, and never misses a beat with Rebecca.
+
+Or consider this high school classroom, where George arrives late,
+
+noisy, and looking very dejected. Glancing at George, the teacher instantly makes an assessment of his emotional state, what's happening with the class discussion, and George's potential for disruption. She tosses George a humorous greeting: 'Hi, George! Good to see you. Make friends with that chair over there and turn to the chart on page 70.' She then locates in her mind some appropriate open-ended questions for students to work on. She instructs the students to think-pair-share about these questions for two minutes. In this way, she has achieved two goals simultaneously: providing George a chance to settle in and offering other students the opportunity to check their understanding of the concept just taught.
+
+Danielson (2007, 2) notes that 'More recent research has confirmed that teaching is also cognitively demanding; a teacher makes hundreds of nontrivial decision daily.' One of the great cognitive capacities of teachers is this ability to simultaneously manage a multitude of activities in the classroom. Professionals have an extensive and continually expanding body of knowledge and skills, and they make decisions about when and how to apply which portions of that knowledge in diverse situations. This is what makes teaching among the most intellectually complex and demanding professions.

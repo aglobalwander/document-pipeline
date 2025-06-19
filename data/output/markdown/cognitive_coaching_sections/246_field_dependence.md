@@ -1,0 +1,13 @@
+## Field Dependence
+
+The field-dependent person needs to perceive the whole context (the 'field') to make meaning. This person enjoys working with others in collaborative relationships. He/she takes in the overall scheme of something and may have difficulty with individual parts. He/she works from intuition and gut reactions but likes and needs concrete experience. Metaphors, analogies, patterns, and relationships appeal to him because he likes to see things holistically.
+
+Field-dependent persons are often oriented toward relationships, even seeking mentors in their lives. They have a sense of the large picture, and they know where they are going for the semester or the year. They often understand what is occurring in their class through intuition, reading subtleties of body language and voice.
+
+The field-dependent teacher in a faculty meeting appreciates the conversation and interaction about ideas. He finds it important and valuable to share feelings on a topic. He/she is more tolerant of ambiguity than his field-independent peers and more skillful in processing.
+
+Field-dependent teachers want a coach to be warm and show personal interest and support. They want guidance and modeling, but they also want the coach to seek their opinion in decisions. They want the coach to have an open door, practice what she preaches, and use voice tones and body language that support her words.
+
+Christina was a field-dependent teacher in the same school as Jan. Her style of teaching focused heavily on the affective domain. She writes that when she encouraged a focus that was often subjective, students learned through exploration, but specific learnings were often sacrificed in attainment of the broader goal. Jan and Christina both believed that Cognitive Coaching helped them access the 'lesser used' sides of their brains. Through self-analysis and 'self-remediation' (their words), they searched every corner of their minds, bringing to the surface feelings and ideas that might have otherwise gone untapped. In becoming more bicognitive, they became better thinkers and better teachers (Garmston, Linder, and Whitaker 1993).
+
+Although it is always possible to err by stereotyping with certain characteristics, the traits of field independence and dependence are useful cues for communication in the coaching relationship. A developmental goal for each person, is to become bicognitive-able to switch according to task, attending to detail and big picture with equal ease.

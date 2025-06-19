@@ -1,0 +1,7 @@
+## Identity
+
+This discussion focuses on personal identity or autobiographical self , which, as we noted above, may sometimes start as role identity but develop into a more consistent expression of self. Identity is about who I sense myself to be. Who I am relates to what mission I perceive is mine and how I go about achieving it. Personal identity is an individual's sense of itself, a conception and expression of one's individuality. It embodies beliefs and values. This level answers the question 'Who am I?' This framework is formed and sustained through social interaction and life experiences. Identity is what makes a person a person; it is the consistently traceable thread that is 'me' over time and that distinguishes me from other people. For a mediator, identity is a framework for understanding oneself as one who supports the development of thinking in others. All our perceptions of ourselves, others, and the environment flow from this sense of identity. A mediator is a facilitator of self-directed learning and is not the solver of the problems of others. This person will enlist his/her cognitive and emotional resources to persevere in mediative behaviors.
+
+And, importantly, identity relates to beliefs about self. Jim Roussin, a strategic change consultant and leadership coach, executive director of Generative Learning, poses this question: What if identity and beliefs were
+
+held as one dimension in this model, reciprocally informing and reinforcing one another? We comment on this later.

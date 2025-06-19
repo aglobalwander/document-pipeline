@@ -1,0 +1,3 @@
+## Questions about the Impact of Cognitive Coaching on the Five States of Mind
+
+Numerous researchers have also studied the effects of Cognitive Coaching training and use on the five states of mind, both as a whole and individually (i.e., efficacy, flexibility, consciousness, craftsmanship, and interdependence). What additional instruments might be developed to measure the five states of mind in various contexts? Researchers could also use instruments that have been developed to measure each of the states of mind. In addition, researchers could correlate teacher growth in the five states of mind with student learning and achievement.

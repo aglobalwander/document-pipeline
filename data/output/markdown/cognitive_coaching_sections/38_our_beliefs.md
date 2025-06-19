@@ -1,0 +1,9 @@
+## OUR BELIEFS
+
+We are pragmatic idealists. Significant advancements in educational knowledge and practice have occurred since the first edition of this book in 1994. In this third edition, we report about the edges of our own learning and how new neuroscientific research and practice can support individuals and schools in reaching higher, more satisfying, and more holistic performance.
+
+Through the work at the Center for Cognitive Coaching and the tireless efforts of many training associates, our knowledge of Cognitive Coaching has expanded over the past 30 years. We have learned more about mediating learning. We have learned more about releasing the electrochemical energies of resourcefulness and what happens emotionally and cognitively as teachers creatively meet the daily challenges of classroom realities. We know more about how people can teach the mediational skills of Cognitive Coaching more efficiently and effectively.
+
+We also know more about supporting new teachers and applying Cognitive Coaching to work with students, parents, and groups of educators.
+
+The enduring thread that has held us together over the course of our careers has been our desire to develop schools as homes for the mind. Throughout the past years we have come to a deep understanding about what this means. This book is an explicit reflection on what we have learned about developing thoughtful professionals and agile schools that foster self-directedness. In fact, it was through the current emphasis on teacher evaluation and external standards that we finally recognized that any attempt to enact change from the outside, with directives, rubrics, judgments, or new evaluation tools, violated one of our core values. If we have learned one lesson in our professional lives it is this: For change to happen, it needs to be understood, practiced, and ultimately owned by those who will act on the knowledge-and this is much easier said than done.

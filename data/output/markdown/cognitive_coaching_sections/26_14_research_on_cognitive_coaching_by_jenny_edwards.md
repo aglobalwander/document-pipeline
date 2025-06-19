@@ -1,0 +1,3 @@
+## 14 Research on Cognitive Coaching by Jenny Edwards
+
+Self-Directed Learning The Five States of Mind The Impact of Cognitive Coaching on Students The Impact of Cognitive Coaching on Teachers and Principals Professionally The Impact of Cognitive Coaching on Staff as a Team Cognitive Coaching and Supervisory Relationships Cognitive Coaching in Mentoring and Teacher Preparation Programs The Impact of Cognitive Coaching on Teachers' Personal Lives Recommendations for Implementing Cognitive Coaching Questions for Additional Research Conclusion Note References

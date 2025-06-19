@@ -1,0 +1,3 @@
+## Questions about the Impact of Cognitive Coaching on Principals
+
+Researchers could investigate the outcomes from principals receiving coaching and coaching each other. How might coaching influence what they do on a daily basis? In what ways might they grow from coaching and being coached? How might the way in which they interact with teachers, parents, and students change? How might parent involvement change? Might student attendance increase as a result of principals being coached and coaching students? What might be some of the effects of principals being coached on teacher collective efficacy, school climate, school culture, and organizational climate? How might teacher implementation of initiatives change?

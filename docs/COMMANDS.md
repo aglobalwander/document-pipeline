@@ -73,7 +73,8 @@ python run_pipeline.py --input_path tests/fixtures/sample.pdf \
 | Markdown → JSON | `python run_pipeline.py --input_path notes/readme.md --pipeline_type json --output_format json` |
 | TXT → Markdown | `python run_pipeline.py --input_path data/txt -r --pipeline_type markdown` |
 | DOCX → Text | `python run_pipeline.py --input_path docs/report.docx --pipeline_type text` |
-| DOCX → Markdown | `python run_pipeline.py --input_path docs/report.docx --pipeline_type markdown` |
+| DOCX → Markdown (pipeline) | `python run_pipeline.py --input_path docs/report.docx --pipeline_type markdown` |
+| DOCX → Markdown (direct MarkitDown) | `python -c "from markitdown import MarkItDown; md = MarkItDown(); result = md.convert('docs/report.docx'); print(result.text_content)"` |
 | PPTX → Weaviate | `python run_pipeline.py --input_path slides/deck.pptx --pipeline_type weaviate --pptx_strategy hybrid` |
 | JSON → CSV | `python run_pipeline.py --input_path data/json/invoice.json --pipeline_type json --output_format csv` |
 | JSON → Excel | `python run_pipeline.py --input_path data/json/invoice.json --pipeline_type json --output_format xlsx` |
@@ -153,6 +154,66 @@ python run_pipeline.py --input_path data/json \
                       --merge_csv
 ```
 
+### Direct MarkitDown Conversion Script
+
+```bash
+# Create a reusable script for direct MarkitDown conversion
+cat << 'EOF' > scripts/direct_markitdown.py
+#!/usr/bin/env python
+"""Convert files to Markdown using MarkitDown library directly."""
+
+import os
+import sys
+from pathlib import Path
+
+def main():
+    """Convert file to Markdown using MarkitDown library directly."""
+    if len(sys.argv) < 2:
+        print("Usage: python direct_markitdown.py <input_file> [output_file]")
+        sys.exit(1)
+        
+    input_path = sys.argv[1]
+    output_path = sys.argv[2] if len(sys.argv) > 2 else None
+    
+    try:
+        # Import MarkitDown
+        from markitdown import MarkItDown
+        
+        # Initialize MarkItDown converter
+        print(f"Converting {input_path} to Markdown...")
+        md = MarkItDown(enable_plugins=False)
+        
+        # Convert the file
+        result = md.convert(input_path)
+        
+        # Save result to file or print to stdout
+        if output_path:
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(result.text_content)
+            print(f"Conversion successful! Output saved to {output_path}")
+        else:
+            print(result.text_content)
+        
+    except ImportError as e:
+        print(f"Error: Required library not found - {e}")
+        print("Try installing with: pip install 'markitdown[all]'")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error during conversion: {e}")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
+EOF
+
+chmod +x scripts/direct_markitdown.py
+
+# Usage examples:
+# python scripts/direct_markitdown.py docs/report.docx output.md
+# python scripts/direct_markitdown.py docs/slides.pptx > slides.md
+```
+
 ## 8. Future Enhancements
 
 - [ ] Add `pipeline weav promote` – copies objects & drops tmp collection
@@ -160,4 +221,4 @@ python run_pipeline.py --input_path data/json \
 - [ ] Auto-infer pipeline type from MIME / extension (pipeline_type auto)
 - [ ] Add `just ingest-youtube <url>` – wrapper for video transcription path
 
-*Last updated: 2025-04-27*
+*Last updated: 2025-05-15*

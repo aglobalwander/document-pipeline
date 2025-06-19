@@ -1,0 +1,23 @@
+## Acknowledgments
+
+W e are indebted to scholars, practitioners, and researchers in many fields whose work has been instrumental in our own development and that has inspired and informed us, raised provocative questions, and guided our search.
+
+The 'gene pool' from which Cognitive Coaching (CC) emerges includes the work of Robert Anderson, Morris Cogan, and Robert Goldhammer (clinical supervision); Gregory Bateson (systems theory and psychology); Richard Bandler, Robert Dilts, and John Grinder (neurolinguistic programming); David Berliner (teacher 'executive processes'); Reuven Feuerstein (mediated learning); Perc Marland (teacher decision making); Tom Sergiovanni (supervision theory); Richard Shavelson (the basic behaviors of teaching); Norman Sprinthall and Lois Thies-Sprinthall (teacher as adult learner); Arthur Koestler (holonomy); Robert Keagan (adult development); Robert Sternberg (metacognition and intelligence); and Antonio Damasio and Candace Pert (neurosciences). For their pioneering work we are indeed grateful. Most notably we would like to thank Carl Glickman (developmental supervision), formerly at the University of Georgia, for his scholarship, inspiration, modeling, encouragement, and friendship.
+
+Cognitive Coaching was conceived in the mid-1980s. From the beginning it was further enhanced by dedicated educators who shaped early forms of coaching practices and seminar design. We, as well as countless educators, will always be extremely grateful to these senior associates of the Institute for Intelligent Behavior for their influence on Cognitive Coaching. We are thankful for Diane Zimmerman, who from the beginning and over the years has helped us refine and test ideas and appreciate the realities of implementation. We are appreciative, too, of the energies and rich contributions of many others associated with the Institute for Intelligent Behavior, especially members of the Institute's 'Leather
+
+Apron Club.' These pioneers include Bill Baker, John Dyer, Laura Lipton, Bruce Wellman, and Diane Zimmerman. Of special mention are Jenny Edwards for her research contributions, and Jane Ellison and Carolee Hayes for their integrity and leadership as co-directors of the Center for Cognitive Coaching, who 15 years ago began a concerted program providing trainers and developing leadership in this discipline. We also celebrate all the training associates who continue to expand and apply these ideas through their work with the Center for Cognitive Coaching.
+
+We are deeply indebted to Carolee Hayes and Jane Ellison for their editorial assistance in this book and their devotion to furthering Cognitive Coaching. They have not only kept us more precise and accurate in our writing, they have also caused us to write with greater consistency and integrity through their exquisite modeling, training, and development of others. They have devoted years to the development, coordination, and refinement of the model of Cognitive Coaching, brought coherence to the training process, and developed vast materials to support an everincreasing number of skillful Cognitive Coaches. We give special thanks to Michael Dolcemascolo and Carolyn McKanders, initially responsible for refining and developing the training activities and materials for the Adaptive Schools, who joined Carolee and Jane in their leadership of the Cognitive Coaching community, contributing to additional refinements in the work. Ultimately the four of them coalesced into a new entity, the Thinking Collaborative, sustaining the work of both programs.
+
+We thank our international ambassadors who have introduced CC throughout the world: Bill and Ochan Powell, Gavin Grift, Father Luis Gonzales, Jenny Edwards, Luci Garza, Bridget Doogan, and David Chojnacki, executive director of Near East South East Asian International Schools.
+
+We also wish to acknowledge and celebrate the growing numbers of dedicated people from whom we are learning as they infuse the principles and practices of Cognitive Coaching in their classrooms, schools, districts, and communities.
+
+Sue Canavan, our editor from Rowman and Littlefield, has worked with and encouraged us and provided sound advice for over 30 years throughout both earlier editions. We are grateful for her patience and skills.
+
+Undoubtedly, the two persons who have been the most patient with us, and have continuously extended their support and love, are our wives, Nancy and Sue.
+
+Arthur L. Costa Granite Bay, California
+
+Robert J. Garmston El Dorado Hills, California

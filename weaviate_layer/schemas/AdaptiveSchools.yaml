@@ -1,0 +1,42 @@
+name: AdaptiveSchools
+description: Collection for storing adaptive schools text with chapters and concept tags.
+properties:
+  - name: text
+    dataType:
+      - TEXT
+    description: Chunk text content
+  - name: chunk_index
+    dataType:
+      - INT
+    description: Index of the chunk within the document
+  - name: document_id
+    dataType:
+      - TEXT
+    description: ID of the parent document
+  - name: title
+    dataType:
+      - TEXT
+    description: Title of the parent document
+  - name: type
+    dataType:
+      - TEXT
+    description: Type of content (chapter, appendix, reference, index)
+  - name: chapterNumber
+    dataType:
+      - INT
+    description: Chapter number (if applicable)
+  - name: tags
+    dataType:
+      - TEXT
+    description: Concept tags extracted from the content (comma-separated)
+  - name: source
+    dataType:
+      - TEXT
+    description: Source document information
+  - name: uniqueId
+    dataType:
+      - TEXT
+    description: Unique identifier for the document
+vectorizerConfig:
+  text2vec-openai:
+    model: text-embedding-3-large

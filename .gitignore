@@ -92,4 +92,6 @@ data/output/ # Usually output isn't committed, unless it's reference data
 .idea/
 
 # Ignored video file
-Gemini 2.5 Flash has insane potential... (Google Keeps WINNING) [CdRzrYAqdnI].webm
+Gemini 2.5 Flash has insane potential... (Google Keeps WINNING) [CdRzrYAqdnI].webmdata/cache/
+
+**/.claude/settings.local.json

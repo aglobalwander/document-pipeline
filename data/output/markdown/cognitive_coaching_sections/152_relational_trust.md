@@ -1,0 +1,40 @@
+## Relational Trust
+
+The most important thing we can do is to trust and love one another.
+
+-George Land and Beth Jarman (1992)
+
+Common facets of trust across the literature include confidence, vulnerability, benevolence, reliability, competence, honesty, and openness (Tschannen-Moran and Hoy 2001). Relational trust, report Bryk and Schneider (2002), is the 'glue' that binds people together when deciding on policies that advance the education and welfare of the students. This finding is echoed elsewhere about dyadic relationships. Rock and Page (2009) report that relationship is responsible for 30 percent of the value in one-on-one relationships. Glaser (2014) reports that trust is essential for transformational conversations.
+
+We've asked thousands of people to describe how they develop trusting
+
+relationships. They report behaviors that are strongly consistent with research on the subject. Among the factors they add to the lists above are being visible and accessible, behaving consistently, keeping commitments, sharing personal information about out-of-school activities, keeping confidences, revealing feelings, expressing personal interest in other people, acting nonjudgmentally, listening reflectively, admitting mistakes, and demonstrating professional knowledge and skills.
+
+Trust grows stronger as long as these behaviors continue, but a relationship can be seriously damaged when someone is discourteous or disrespectful, makes value judgments, overreacts, acts arbitrarily, threatens, or is personally insensitive to another person. Restoring trust should be a skill set for each of us. Senge is a practice in Japanese Buddhism that involves becoming aware of effects one has created and making amends that restore harmony and develop our own wisdom (Rock and Page 2009). They write that, 'Even bad news can be preferable to not knowing and even finding out when we will find out can be calming' (444).
+
+The most effective apologies a) ask forgiveness, b) acknowledge responsibility without 'excuses,' c) express regard for the other person's hurt, and d) either commit to not repeating the behavior or explore ways to prevent it in the future.
+
+Because Cognitive Coaching relies on trust, any manipulation by the coach is incompatible with the mission of Cognitive Coaching. Should an employer have performance concerns about a staff member, those concerns are best communicated directly outside the coaching process. Coaching should never be about 'fixing' another person. Inevitably, that person perceives the motivation to 'fix' and becomes defensive. For example, if you believe that your job is to fix Naseem, mirror neurons guarantee she will accurately read your real intention, no matter how many pleasant conversations you share. Naseem clearly detects that you think something is deficient about her or that she is not cared for. To coach without manipulation, you must change the way in which you see a problem employee. This may be difficult, and it is even more necessary when you have been working overtime with someone whose performance is problematic, who seems to be making limited growth, who isn't making any effort toward growth, or who is resisting assistance. In these cases, coaching is even more important because a natural outgrowth of these processes over time is frustration for the coach.
+
+When coaches remind themselves that all behavior is motivated by positive intentions in the other person's point of view, the coach can let go
+
+of judgment or negative interpretation. Thus the coach is freed from debilitating emotions and better able to work empathically and rationally with the other person.
+
+Now, setting aside this discussion of maintaining trust in the face of performance concerns, let's focus on what hundreds of educators and the literature have to say about the practical realities of creating trust. Four considerations follow: trust in self, trust between individuals, trust in coaching, and trust in the environment.
+
+What is it like to be a teacher in the East Los Angeles middle school where Frances Gipson is principal? In a recent letter to parents, she wrote, 'I believe that parents and community are critical partners in the achievements of our youth.' More than words on paper, Gipson communicates this respect with every parent she encounters, regardless of the reason for meeting. She extends the same respect and trust to teachers and students as she does with parents. As a result, Gipson's school has attained statewide awards, measurements of learning have increased in the two years of her tenure, and teachers trust her. Interpersonal trust requires personal contact, and each day, Gipson is in each classroom, walks the campus, and interacts with students. What teachers can trust with Frances is that she is always authentic, respectful, and passionately committed to the best for students. To successfully cognitively coach another, you must be credible in that person's eyes.
+
+We trust those who are believable, of good character, and sensitive to our interests and styles (Tice 1997). Peg, a kindergarten teacher, once told us the story of how she tried to develop trust with another teacher on the staff. 'It seems the more I tried to express interest in her, reach out to her, let her know I cared for her, the more she put distance between us.' As Peg elaborated on the situation, it became clear that she had an image of how two people behave in a trusting relationship, and she presumed that the other teacher held the same vision . As it turned out, Peg's style of trust included far more intimacy than the other teacher expected. Peg's colleague believed that emotional reserve and only a certain amount of self-disclosure characterized a comfortable, trusting relationship.
+
+To see things from another person's point of view requires cognitive flexibility and is essential to any healthy relationship. Seeking to understand is one of the more important ways in which a coach can communicate that another person is valued, even in a setting in which distrust is present. Maureen, a new personnel director in a California district, met with teacher representatives for contract negotiations. The district laid all its fiscal data on the table. Mistrustful, the teacher
+
+representatives kept saying, 'The district has not done this before. This must be some kind of trick!' Undaunted and without defensiveness, Maureen repeatedly paraphrased these comments. In time, the mood of the entire meeting shifted, and teachers began to believe that the district might be telling the truth, so they started to work collaboratively with district representatives on understanding the figures.
+
+Apart from understanding how the other person processes information, we can attend to four areas.
+
+- What is it that is trustworthy about me? Qualities like dependability, authenticity, honesty, kindness, courtesy, and integrity are found on this list. Keeping people fully informed also generates trust (Freiberg and Freiberg 1996).
+- What is important to the person in the long term-what values, goals, ideals, interests, passions, and hobbies?
+- What are the information-processing patterns the person displays, such as cognitive style, perceptual filters, and modality preferences? In settings where tension exists because people perceive one another as different, they must find a shared language and common reference points in order to value one another and build a common work culture. (See chapter 10 for more information.)
+- What are the person's current reactions, concerns, thoughts, and theories?
+
+An expression of personal regard is also important to interpersonal trust building, especially in a Cognitive Coaching relationship in which praise is withheld because it interferes with thinking (Dweck 2006). While a majority of Americans think it is good to tell their kids they are smart, this behavior has counterproductive results and can even promote underperformance.

@@ -1,0 +1,3 @@
+## COMPONENTS OF THE COGNITIVE COACHING MODEL
+
+Cognitive Coaching comprises a set of: 1) skills, 2) capabilities, 3) mental maps, 4) beliefs, 5) values, and 6) commitments, all of which are practiced, tested over time, and assimilated into a person's day-to-day interactions. They also become part of the coach's identity as a mediator of self-directed learning. Ultimately, Cognitive Coaching's values and beliefs become an outlook on life.

@@ -1,0 +1,3 @@
+## COUCH THE STANDARDS IN PROJECTS OF ACTION RESEARCH
+
+The most convincing data are not reports of distant and historical research but teachers' own results from using new processes and approaches in their classrooms with their own students and subject matter. Help teachers to establish and employ techniques of data collection to assess the results on student behavior and performance when they use new processes or standards.

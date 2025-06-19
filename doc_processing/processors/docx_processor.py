@@ -5,7 +5,6 @@ from typing import Dict, Any, Optional
 
 from doc_processing.embedding.base import PipelineComponent
 from doc_processing.embedding.base import BaseProcessor, PipelineComponent
-
 class MammothDOCXProcessor(BaseProcessor, PipelineComponent):
     """Process DOCX files using Mammoth for Markdown conversion."""
 
@@ -63,15 +62,50 @@ class MammothDOCXProcessor(BaseProcessor, PipelineComponent):
         try:
             # Import here to avoid dependency issues if not installed
             import mammoth
-            from markdownify import markdownify
+            import re # Import re for regex
+
+            # Define custom style map for better Markdown conversion
+            style_map = """
+            p[style-name='Heading 1'] => # $1
+            p[style-name='Heading 2'] => ## $1
+            p[style-name='Heading 3'] => ### $1
+            p[style-name='Heading 4'] => #### $1
+            p[style-name='Heading 5'] => ##### $1
+            p[style-name='Heading 6'] => ###### $1
+            p[style-name='Title'] => # $1
+            p[style-name='Subtitle'] => ## $1
+            r[style-name='Strong'] => **$1**
+            r[style-name='Emphasis'] => *$1*
+            """
             
-            # Extract HTML from DOCX
             with open(docx_path, 'rb') as docx_file:
-                result = mammoth.convert_to_html(docx_file)
-                html = result.value
+                # Use the markdown_options parameter to convert directly to markdown
+                result = mammoth.convert_to_markdown(docx_file, style_map=style_map)
+                markdown = result.value
+
+                # --- Debugging: Save HTML content to a temporary file ---
+                # temp_html_path = "temp_output.html"
+                # try:
+                #     with open(temp_html_path, 'w', encoding='utf-8') as f:
+                #         f.write(html_content)
+                #     self.logger.info(f"Saved temporary HTML output to {temp_html_path}")
+                # except IOError as e:
+                #     self.logger.error(f"Error saving temporary HTML file: {e}")
+                # --- End Debugging ---
                 
-                # Convert HTML to Markdown with GitHub-flavored tables
-                markdown = markdownify(html, convert='github')
+                # Remove Markdown image syntax (e.g., ![alt text](image_url))
+                # This regex looks for ! followed by anything in brackets [] and anything in parentheses ()
+                # Using re.DOTALL to match newlines within the brackets
+                markdown = re.sub(r'!?\[.*?\]\(.*?\)', '', markdown, flags=re.DOTALL)
+
+                # Log any warnings from Mammoth
+                if result.messages:
+                    for message in result.messages:
+                        self.logger.warning(f"Mammoth conversion warning: {message}")
+                
+                # Log the markdown content
+                self.logger.info(f"Generated markdown content length: {len(markdown)}")
+                self.logger.info(f"Markdown content starts with: {markdown[:100]}...")
                 
                 # Update the document
                 processed_doc = document.copy()
@@ -86,7 +120,7 @@ class MammothDOCXProcessor(BaseProcessor, PipelineComponent):
                 return processed_doc
                 
         except ImportError:
-            self.logger.error("Mammoth or markdownify not installed. Install with 'pip install mammoth markdownify'")
+            self.logger.error("Mammoth not installed. Install with 'pip install mammoth'")
             return document
         except Exception as e:
             self.logger.error(f"Error processing DOCX file: {e}")

@@ -1,0 +1,898 @@
+<!-- image -->
+
+## Welcome and Audience Connect
+
+## TRAINERS NOTE:
+
+THE IMAGES USED IN THESE POWERPOINTS HAVE BEEN PURCHASED BY THINKING COLLABORATIVE TO PROVIDE AUTHORIZED TRAINERS THE RIGHT TO USE THESE IMAGES ROYALTY FREE.  IF TRAINERS WISH TO USE THESE IMAGES FOR THEIR OWN PURPOSES, TRAINERS WILL NEED TO PURCHASE THE IMAGES PERSONALLY TO PROVIDE THE TRAINERS' RIGHT TO USE THEM OUTSIDE THINKING COLLABORATIVE ADAPTIVE SCHOOLS FOUNDATION SEMINARS.
+
+Inclusion Activity with shoulder partner:
+
+Plan this 30-second speech:  Somebody just walked in.  Why are you all here?  What is this AS work about?  What speech might you give them?
+
+<!-- image -->
+
+Day 1-reminder: theory--professional communities, adaptivity (changing form while clarifying identity), 2 ways of talking
+
+Day 2- adults taking time to grow themselves
+
+Assessing own personal skills around 7 norms -&gt;deep on 2 -&gt; safely talk about hard stuff.
+
+NOT develop expertise through sitting together--&gt; developed through consciously and deliberately focusing on group's skills, interactions, needs for growth, etc. Group only as strong as each  member-&gt;develop members get more done with shorter amount of time with more pleasure
+
+## WHY?
+
+groups can become better at their work. Individuals and groups need to develop resources for generating, organizing, and analyzing ideas for adapting to change. Necessary knowledge includes norms of collaboration, information about group development, living effectively with conflict, and guiding principles for creating professional community.
+
+- · Individuals and groups need to develop resources for generating, organizing, and analyzing ideas for becoming adaptive to change.
+- · An important presupposition in this domain is that both individual and group orientations are necessary to produce and implement innovations.
+- · Necessary knowledge includes information about group development, and living effectively with conflict,
+- · the importance of professional community, and
+- · guiding principles for creating that community.
+
+<!-- image -->
+
+## Turn to an elbow partner and respond to this question:
+
+Imagine that there is the word 'WHEN' at the end of this quotation, how might you complete the stem?
+
+Closing comment: Group development requires intentionality.
+
+Learnable skill
+
+<!-- image -->
+
+What: expand toolkit
+
+Why: Engage materials directly, meaning making, more engagement in pairs than in groups.
+
+take hold -&gt; integrate into work pattern breaking, making, taking
+
+## How
+
+What strategies need clarification?
+
+10-2 -&gt; 10 limit for mature brains
+
+Lecture processing ratio. 10 minutes before becomes threat. Talking longer -&gt; now talking to yourself
+
+Research-Adults-&gt;10 minutes -&gt; phones, talking, nodding
+
+Less for hormonal adolescents
+
+preparing for college? NO research that says boring heck out of them -&gt; 50 minutes prepares them -&gt; college / helps learning
+
+Invitational language-not noticed, but felt
+
+## Notice difference
+
+- --You need to turn to p. 62
+- --Take this opportunity to turn to p. 62
+
+Psychological, huge difference
+
+- -You have 5 minutes to finish-&gt;threat
+- -Please take 5 minutes-&gt;gift
+
+Brain wired -&gt; detect threat wants to keep you alive.
+
+not care about geometry / chemistry.
+
+language that's brain friendly-&gt;happy, resourceful
+
+Subtle, but brain is subtle. Brain looks for nuances in environment
+
+## Anchor learning in space
+
+Teaching space / Correction space-norms, not rules
+
+Move silently -&gt; correction spot -&gt; get amnesia -&gt; 'next point…' not drag gunk with me
+
+Visual paragraph- brain seeks organization-themes / patterns to remember. put ideas in space -&gt; makes accessible small steps, not out the door.
+
+comma.
+
+<!-- image -->
+
+<!-- image -->
+
+<!-- image -->
+
+## Facilitator Moves
+
+## 1-2-6
+
+Explore and Discover Generate Ideas
+
+## PURPOSE AND INTENTIONS
+
+large groups of sixty to two hundred, engage each member in generating ideas for decision making.
+
+## PROCESS
+
+- Give written task to individuals; such as naming one area to work on this year. hot minutes)
+- Pairs meet, share, and agree to one statement. (6 minutes)
+- Each pair meets with two pairs; shares; and agrees to one statement. (I2minutes) other
+- Each group of six records its one idea on a sentence strip (8-12 words) and posts it in the front ofthe room.
+- The facilitator leads an inquiry session in which members ask questions of clarification. The authors of the item being questioned respond.
+
+CONTINUED
+
+02017 by Thinking Collaborative\_LLCand Robert Garmston Wellman thinkingcollaborative com Brucc
+
+©2025 Adaptive Schools Seminars
+
+©2025 Adaptive Schools Seminars
+
+## Strategies Lists, pp. 124-125
+
+<!-- image -->
+
+## WHAT?
+
+feedback on learning Day 1 NORM--providing data
+
+## WHY?
+
+know feedback taken seriously / support improving learning YOUR data - important / enhance your learning low-tech format received and given / parallel system original form - recognize their feedback organize feedback -&gt; categories / labeling
+
+Models 3 rd point communication
+
+It's DATA, information, not threat
+
+Read Pluses first
+
+find same on pluses and wishes
+
+1 person write for table-diminishes outliers
+
+<!-- image -->
+
+## What
+
+Cartoons like "You are here," or "In deeper" series
+
+## Why
+
+locate yourself in journey
+
+## WHAT?
+
+Cartoons like "You are here," or "In deeper" series
+
+## WHY?
+
+Generate group focus following the processing of strategy harvest items. Return the group to being a group by creating single focus and collective laughing. Transition to today's agenda and work.
+
+## HOW?
+
+Tell a story or show 2 or 3 of the cartoons
+
+in deeper today
+
+<!-- image -->
+
+<!-- image -->
+
+## avoid
+
+in over head, stop me, will meet your needs
+
+Whelm, not overwhelm
+
+<!-- image -->
+
+## journey today
+
+connect with my personal outcomes greatest importance for you and why readings -&gt; skillful group member -&gt; takes work
+
+Showing up / sitting in chair / being nice doesn't make skillful group member
+
+Turn to an elbow partner and each share 'Here's how these connect with my personal outcomes for the day...'
+
+<!-- image -->
+
+2-you / me talking together-&gt; complex social system - team, family, school, classroom, etc.
+
+principles that govern social systems
+
+Why learn about principles that govern systems? -&gt; resourceful, support system, help system grow
+
+- 3-reading -&gt; capabilities are internal (metacognitive) awarenesses help you know what strategies to use / when to use them
+- 4-ways we work with others that are specific to a group, different groups will need different working agreements
+
+5-Norms of collaboration - groups become productive assess selves as individual and group capacity
+
+Will select goals, points of entry as group member and facilitator
+
+- 6-Extended opportunity to learn
+
+## CHARTED AGENDA
+
+Describe agenda, purposes of items and how they relate.
+
+So as you look at the outcomes and agenda, please turn to an elbow partner and share what you're most looking forward to about today/what is most meaningful for you.
+
+<!-- image -->
+
+## Until break
+
+## GOAL OF ADAPTIVE SCHOOLS SEMINARS
+
+LG, p. 16
+
+Regrouping
+
+Read directions on the slide.
+
+<!-- image -->
+
+## WHAT?
+
+goal of AS
+
+## WHY?
+
+## reconnecting to content
+
+more than treasure chest of strategies / moves
+
+-&gt;examine its identity. significance of identity for individuals, groups, organizations
+
+## HOW?
+
+Not focus on traditional, linear challenges, but focus on complex, non-linear, human challenges
+
+Invites to clarify identities as collaborators, inquirers, and leaders while changing form to congruently align with that identity.
+
+About developing strong systems -&gt; collaborative faculties are capable of meeting certain challenges of today / uncertain challenges of tomorrow.
+
+<!-- image -->
+
+<!-- image -->
+
+Share Fullan quotation in two parts on slide. 'All the good work we're doing in schools is just tinkering…'
+
+Pause and share second part, '…unless we clarify our identities as collaborators and inquirers.'
+
+Collaborating and inquiring are critical aspects of creating and sustain Adaptive Schools.
+
+## Form = tinkering
+
+1 -ways structure our organizations
+
+2 -ways do our work
+
+To change form-&gt;need to clarify identity
+
+<!-- image -->
+
+## Form = tinkering
+
+1 -ways structure our organizations
+
+2 -ways do our work
+
+To change form -&gt; need to clarify identity
+
+Collaborating / inquiring - critical aspects AS work
+
+Changing form while clarifying identity
+
+Share Fullan quotation in two parts on slide. 'All the good work we're doing in schools is just tinkering…'
+
+Pause and share second part, '…unless we clarify our identities as collaborators and inquirers.'
+
+<!-- image -->
+
+Process - chunk = each bolded title
+
+Identity, capacity, collaborators, inquirers, leaders
+
+'Something' could be question, summary, assumption, prediction
+
+Pairs Read and Say Something:
+
+Elbow Partners respond to each bolded title in the goal.
+
+Give directions on slide.
+
+<!-- image -->
+
+What: opportunity-new skills taught in isolation used in an integrated, authentic context.
+
+Why: Organize / integrate day's learning
+
+How: 15-20 minutes of dialogue time-pausing every 5 minutes to ask them to internally reflect on the Norms they have been using
+
+## Intellectual humility-suspension
+
+Do I think more like a soldier or a scout?
+
+Do I want to understand or just be right?
+
+Do I seek opposing views?
+
+Do I enjoy the pleasant surprise of discovering I am mistaken?
+
+DIALOGUE PRACTICE OPTIONAL WHAT? Dialogue Practice (Time permitting)
+
+## WHY?
+
+An opportunity to use the new skills that have been taught in isolation in an integrated, authentic context
+
+Organize and integrate the day's learning
+
+HOW?
+
+Provide 15 minutes of dialogue time practicing Pausing and Paraphrasing.
+
+## Suggested Language:
+
+You're going to have an opportunity to integrate the learning you've been doing this afternoon in a dialogue.
+
+<!-- image -->
+
+<!-- image -->
+
+## Dilts' Domains of Influence in Learning, pp. 15-16
+
+<!-- image -->
+
+## Gregory Bateson-Robert Dilts
+
+Identity-sense of self 'WHO do we need to be to live into our mission?' Human beings, not human doings
+
+ASKS WHO AM I / WHO ARE WE?
+
+## Values/beliefs-WHY of the work
+
+Your personal/collective value system 'we believe in developing community' so we value collaboration provide moral imperative for other levels
+
+Capabilities-HOW do we use skills that we have? metacognition - How make choices about strategies, mental maps, 4 group member capabilities- consciousness around capabilities metacognitive awareness and guides behavior did skill not know what to do with it
+
+HOWmetacognitive--planning, monitoring, direction for how I select my behaviors, knowledge, steering wheels, support.
+
+What guides direction of how we do something (paraphrasing-living into capability of it)
+
+Ability how to do it. Capability have power/will to do it
+
+Under what conditions do I do this? Strategies selecting context, timing, etc. Why choose this strategy?
+
+Guides behavioral choice, steering wheel-kill people with these strategies metacognitive ability how to design lessons in expanded time; street skills of PPP / norms mental model in new context (dialogue)
+
+Behaviors-WHAT individuals / groups do WHAT behaviors should we engage? Application of skills /knowledge to actions and reactions Attending, paraphrasing, making meaning, etc.
+
+PD for PBL, hands on, etc.
+
+behaviors effect environment more invested skills of PPP influences how we structure work we do (rapport)
+
+environment-WHERE and WHEN physical surroundings classroom, building, books, time schedules, things, room temperature, lighting Move stuff around HS block scheduling-study ways for extended time models new schedule
+
+Environment more powerful than previously thought attention to social, affective, and cognitive aspects -&gt; perturb, organize, and shape cultural context engagement / success in individual / collective learning, meaning making, leadership, and community building
+
+Environment creates, expands, and sustains the organization's capacity for adaptivity
+
+Climate, culture designing the surround, creating small fires, where we do things; influential value moves stuff around
+
+Unpack the information using a 10:2. The Dilts information may be unpacked from smallest to largest or largest to smallest, depending on trainer preference.
+
+Identity is the WHO of the work and holds the sense of self. Asks, 'Who am I/Who are we?' Asks, 'who do we need to be to live into our mission?'
+
+Values/Beliefs is the WHY of the work. This level provides the moral imperative for the other levels. It's about getting into our value system. It's about seeing powerful results when doing good things for kids. An example of the connection between values and beliefs might be: We believe in developing community so we value collaboration.
+
+Capabilities is HOW we use the skills that we have.
+
+It's about employing strategies, mental maps, and metacognition around the 4 group member capabilities. It's how our metacognition and awareness guides our behavior in planning, monitoring, directing how I select my behaviors.
+
+Behaviors is the WHAT that individuals and groups do by asking what behaviors should they engage in? It's the application of skills and knowledge to actions. It's attending, paraphrasing, making meaning, etc. An example of how we develop behaviors: We provide professional development so people can use a program/process (PBL, hands on, etc.) with high skill.
+
+environment is the physical surroundings. It's the classroom, the building, the books, the time schedules, the room temperature, the lighting. It's the things we use to influence our outcomes. It's about moving stuff around. An example: HS block scheduling to find ways for extended time for student/adult engagement. environment is technical changes.
+
+Environment is more powerful than previously thought. Environment is attention to social, affective, and cognitive aspects that disturb, organize, and shape the cultural context. It is engagement and success in individual and collective learning, meaning making, leadership, and community building. Environment creates, expands, and sustains the organization's capacity for adaptivity.
+
+Dilts' Levels of Influence are a lens for intervening, influencing, sustaining learning that creates change in complex systems.
+
+<!-- image -->
+
+## Suggested Language:
+
+The most powerful ways to change behaviors is to change identity (Costa and Garmston) …who we believe we are in relation to others, tasks, and all situations directly influences our perception, attitude, sense-making decision making, and behavioral choices.
+
+<!-- image -->
+
+<!-- image -->
+
+Pairs process. Respond to question on the slide.
+
+Human beings, not human doings
+
+most powerful way -&gt; change behaviors -&gt; change identity
+
+who we believe we are in relation to others, tasks, situations -&gt; influences our perception, attitude, sense-making, behavioral choices
+
+Identity - container that holds everything!
+
+put PD energies -&gt; changing behaviors now know -&gt; least likely way - build ownership / lasting behavioral change
+
+change identity -&gt; influence behaviors, capabilities, beliefs, values Identity is the container that holds everything!
+
+<!-- image -->
+
+Focusing Questions - designed to support groups in being clear about identity containers and what's inside.
+
+CC SM -&gt; identity container is mediator of thinking
+
+Identity-sense of self  ASKS WHO AM I/WE? 'WHO do we need to be to live into our mission?'
+
+## Values/beliefs-WHY of the work
+
+'we believe in developing community'  so we value collaboration provide moral imperative for other levels
+
+Capabilities-HOW use skills that we have? strategies, mental maps, metacognition 4 group member capabilities guide/direct behavior
+
+Behaviors/Skills-WHAT individuals/groups do WHAT behaviors should we engage? Application of skills
+
+## Environment-physical surroundings WHERE and WHEN
+
+The Focusing Questions you learned on Day 1 are designed to support groups in being clear about their identity containers and what's inside.
+
+In addition to the Focusing Questions you learned yesterday, other supportive questions might be: What beliefs and values might we need to hold (or challenge) to become collaborators and inquirers? What capabilities are important for us to become collaborators, inquirers, and leaders?
+
+Optional: For those of you who know the Cognitive Coaching SM work, the identity container is a mediator of thinking.
+
+Answer questions from large group.
+
+<!-- image -->
+
+## Suggested Language:
+
+Individually think about a group with which you work. How might you influence that group's ownership of its identity as collaborators, inquirers, and leaders?
+
+Share a couple of ideas from your journal with elbow partner.
+
+<!-- image -->
+
+'book end' to goal concept
+
+Using strategies with wrong identity -&gt; torture heck out of people
+
+Debrief: What insights might you be having?
+
+<!-- image -->
+
+## Why Adaptivity is Important: PRINCIPLES OF COMPLEX SYSTEMS
+
+LG, p. 38
+
+## OPTIONAL
+
+## What?
+
+Station-Naming
+
+## Why?
+
+Remind participants where we are on the agenda.
+
+Comes from tradition of conductors on trains announcing the next stops.
+
+## How?
+
+Use charted agenda, or slide
+
+What? Principles that govern complex systems
+
+<!-- image -->
+
+## Form is
+
+1 -ways structure our organizations
+
+2 -ways do our work
+
+B's: bells, buses, beans, bathrooms, behinds in seats
+
+## To change form-&gt;need to clarify identity
+
+WHAT?
+
+The principles of complex systems are the 'Why' of adaptivity.
+
+## Suggested Language:
+
+This is where you have been and this is where you are going…Yesterday you had an opportunity to explore what adaptivity is, to begin to construct meaning for why being adaptive is important, and with the focusing questions, to begin the journey of 'how.' And now you are going to go deeper into the 'WHY.'
+
+<!-- image -->
+
+## WHAT?
+
+from WHAT of adaptivity -&gt; WHY principles of complex systems are 'Why' of adaptivity
+
+## WHY?
+
+big ideas of how complex systems function
+
+WHY?
+
+## Suggested Language:
+
+Whenever people come together, a complex adaptive system is formed. When you are with your family, it is a complex system. When you are with a three-year-old, it is a complex system. When you are in a meeting, it is a complex system. When you are in a classroom, we all know it is a complex system. GLYPH&lt;0&gt; Organizations and communities are complex systems. And you can't opt out.  You are always immersed in a complex system.
+
+<!-- image -->
+
+Some things are complicated…
+
+Have direct cause and effect relationships. The sum of the parts always adds up to the whole.
+
+Run 'like clockwork' or 'a well-oiled machine'
+
+Require technical, managerial, logical/sequential skills.
+
+<!-- image -->
+
+## WHAT?
+
+Bridge, transition to adaptive systems.
+
+## WHY?
+
+## Suggested Language:
+
+When people come together, it is a system. If you are in a community or a family or in a school, you are in a complex system. You can't opt out. Since we are all immersed in a complex system, why not learn about the principles that govern complex systems so we can influence, be adaptive, and support resourcefulness within the system?
+
+## HOW?
+
+In a moment, you will engage in a strategy that exemplifies complex systems. It is a silent activity.
+
+You will stop at a signal and (without talking) assess your success.
+
+So why not learn the principles that govern these systems to influence and support adaptivity and resourcefulness? Adaptive Systems are complex.
+
+## TRAINERS NOTE:
+
+Strategy may be done twice to emphasize 'more data do not lead to better predictions,' depending on trainer's preference.
+
+<!-- image -->
+
+## Silent process
+
+Stop at signal and (without talking) assess your success
+
+## WHAT?
+
+The Triangle strategy
+
+## WHY?
+
+Understand how the big ideas of how complex principles function
+
+## HOW?
+
+Clearly give the participants the directions on the screen.  Unpacking them as needed.
+
+## Optional:
+
+Do the strategy a second time with participants being able to use NONVERBALS only. This offers participants 'more data' to complete their equilateral triangles. This may surface an understanding of principle number one.
+
+## Principles of Complex Systems, p. 38
+
+- 1. More data do not lead to better predictions.
+- 2. Everything influences everything else.
+- 3. Tiny events create major disturbances.
+- 4. You don't have to touch everyone to make a difference.
+- 5. Both things and energy matter.
+
+What connections are you making between this strategy and these complex principles?
+
+©2025 Adaptive Schools Seminars
+
+Groups offer EXAMPLES of each that they experienced
+
+Tables, chairs, just stop, cursing, slows down and takes off
+
+1-digitized Doplar weather systems and still wrong. Meteorologists - more data -&gt; any time in history -&gt; models break down outside 4-day window Changing moment to moment.
+
+Want it to behave, but won't.
+
+## schools
+
+keep gathering data -&gt; Know Johnny couldn't read
+
+Data rich -&gt; interpretation / action poor.
+
+Interpret -&gt; data-driven dialogue and act on in discussion
+
+I did this before and I thought I could predict with more data and it still didn't work.
+
+2 - touch one thing -&gt; touch everything Touch in good way -&gt; echoes fractally in good way through system
+
+Affective climates in school buildings / classrooms influence how adults / students feel about work
+
+In collaborative groups, one person paraphrasing models respectful listening ands influences behavior and thinking;
+
+- 3 - temperature changes affect wind -&gt; affects precipitation -&gt; influences weather patterns
+
+tiny trim tabs - small rudders built onto rudders of large ships that changes direction of ship Who are the trim tabs in your organization?
+
+feel too small to impact big things -&gt; not true
+
+Pick 1 strategy -&gt; work on it -&gt; big disturbance 1 norm / week - paraphrasing everybody
+
+- 4 -Start with people who are ready
+
+-Middle school teachers courtesy
+
+- 5-Things = tasks must get done (books, bells, beans, bathrooms, behinds)
+
+Energy = how you get it done
+
+#1 energy piece is relationship caring / commitment moves minds and produces learning
+
+Can have all technology / resources but what if morale is low?
+
+Choose 1 principle
+
+-how will you use that principle this week / year with adults / students wind / rain = things - their energy moves windmills, sprouts plants
+
+Suggested Language:
+
+As you come back to the tables, consider some of the things that you are noticing and share with your table group.
+
+Give processing time.
+
+Reveal the first principle:
+
+If I had given you more information in the directions or historical background on this strategy, how might that have helped? In principle one, more data will not lead to better prediction or better choices. What would make a difference, if you could have talked to each other - it is Data Driven Dialogue that makes a difference in complex systems.
+
+Continue to reveal the other four principles.
+
+Ask the question about connections and respond to insights.
+
+<!-- image -->
+
+Faith in self-organizing in complex systems
+
+## Choose 1 principle
+
+-howwill you use that principle this week / year with adults / students
+
+Reveal slide and ask participants to respond to the question at the bottom of the slide.
+
+## WHAT?
+
+Stand and Share Strategy - A Response Management Strategy
+
+## WHY?
+
+Participants take ownership of the group.
+
+It removes the attention and focus away from the presenter/facilitator supporting selfdirectedness.
+
+## HOW?
+
+After the presenter poses a question to the group, participants are invited to stand and share their comments whenever they are ready.  If more than one person stands at one time, participants are instructed to negotiate the floor.
+
+<!-- image -->
+
+construct meaning with group capabilities
+
+scaffolded structure -&gt; experience listening to others talking
+
+A Structured Dialogue Experience:
+
+First Turn/Last Turn
+
+LG, pp. 39-41
+
+## OPTIONAL
+
+## What?
+
+Station-Naming
+
+## Why?
+
+Remind participants where we are on the agenda.
+
+Comes from tradition of conductors on trains announcing the next stops.
+
+## How?
+
+Use charted agenda, or slide.
+
+Big picture:  Groups of 4 for First Turn/Last Turn
+
+<!-- image -->
+
+Visual paragraphing model:
+
+1.What's 1 st thing?
+
+2.If can't find partner, go where?
+
+3.Find artichoke partner, do what?
+
+4.After find another pair, do what?
+
+## GROUPING FOR FIRST TURN/LAST TURN
+
+## WHAT?
+
+Groups of 4 with partners selected earlier
+
+## WHY?
+
+An opportunity to hear different perspectives on a topic
+
+## HOW?
+
+Fractal Partners and Pair Square
+
+<!-- image -->
+
+Now talking about the HOW of adaptivity
+
+Capabilities-HOW do we use skills that we have? (Dilts)
+
+Capabilities are strategies, mental maps, metacognition
+
+4 group member capabilities-develop consciousness around these awareness that guides / directs behavior
+
+HOW?
+
+First Turn/Last Turn
+
+Groups of four.
+
+Show Adaptive 'What? Why? How? slide.
+
+Suggested Language:
+
+The Four Group Member Capabilities that you read about support groups in becoming adaptive and sustaining adaptivity. The process we will use also supports that. First Turn/Last Turn is a scaffold for dialogue. The notion of 'scaffold' was given to us by Jerome Bruner as a temporary structure to support learning. Many scaffolds are used in classrooms, for writing a paragraph, lab sheets in science, and protocols for working math problems .
+
+The First Turn, Last Turn scaffold supports groups in breaking unproductive conversation patterns and developing dialogue listening and linguistic patterns. Skilled groups also use it when the topic is hard to talk about. For these reasons it is highly structured.
+
+.
+
+Through First Turn/Last Turn members can experience that it is not necessary to sell an idea to influence, and that listening to understand and learn from others is the work of group members.
+
+WHAT?
+
+Group Member Capabilities text that was read for homework
+
+WHY?
+
+Group-Member Capabilities help people in a complex system become and remain adaptive. They support group members in being skillful and resourceful.
+
+Suggested Language:
+
+The Four Group Member Capabilities that you read about support groups in becoming adaptive and sustaining adaptivity.
+
+<!-- image -->
+
+## What
+
+First Turn/Last Turn around content: Group Member Capabilities
+
+## Why
+
+experience a structured dialogue while learning about capabilities that group members need
+
+How
+
+Tight structures for skilled groups when topic is tough. Also for inexperienced groups, groups who don't know each other, groups who don't like each other
+
+Tight structure and is scaffold for dialogue 'scaffold'-Jerome Bruner-temporary structure to support learning in classrooms-tight structure equates to writing, lab sheets, math protocols Listening (not composing / saying) is THE work of group members.
+
+Not to sell idea or influence not everyone will get turn to be first person, but all have chance to speak
+
+10-12 minutes.
+
+Strategy-start the starter. Geographical starter (can keep eye on progress).
+
+Starters, place idea on table.
+
+In what ways is this different from conversations we are used to?
+
+- •Scaffold is support in learning to dialogue
+- •Dialogue-&gt;understanding-&gt;greatest skill for understanding is listening
+- ·Highly structured-bite marks on tongue? Learning to dialogue, holds us in place
+- •Prevents stepping on other's talk
+- •Everyone has place in scaffold
+- •1st person is listening and then gets to comment
+
+Suggested Language:
+
+## WHY?
+
+First Turn/Last Turn is a scaffold for dialogue. The notion of 'scaffold' was given to us by Jerome Bruner as a temporary structure to support learning.
+
+The First Turn, Last Turn scaffold supports groups in breaking unproductive conversation patterns and developing dialogue listening and linguistic patterns.
+
+Skilled groups also use it when the topic is hard to talk about. For these reasons it is highly structured.
+
+Through First Turn/Last Turn, members recognize that it is not necessary to sell an idea to influence, and that listening to understand and learn from others is the work of group members.
+
+First Turn/Last Turn will allow you to experience a structured dialogue while learning about capabilities that group members need.
+
+HOW?
+
+Give directions on the slide noting the following:
+
+## Tips:
+
+Allow group to take a few minutes to skim the text in case someone didn't read for homework and gives them a few minutes to gather a few items.
+
+In directions, include language like: Because of time, each of you may not initiate an item, but each will participate fully in the round robin process of making comments.
+
+<!-- image -->
+
+Finish round, drop scaffold, turn to question on screen
+
+1-Always have intentions. Get all green lights from brain when set intention. Intentions open up that part of brain. actually scans for intentions. 'Okay, let's do that.'
+
+If said to brain-I'm going to buy a red car because I want an unusual color. When driving, brain will scan for opportunities to see red cars. Called reticular activating system of brain.
+
+Set intention to be bored in meeting. 'I sure hate meetings.' Brain says, me too! will be bored.
+
+Capabilities is the How of Dilts
+
+<!-- image -->
+
+Talk about the first principle, using this as a reference.
+
+## OPTIONAL
+
+## WHAT?
+
+The Pyramid of Influence
+
+## WHY?
+
+It supports understanding and application of the first group member capability.
+
+## HOW?
+
+## Suggested Language:
+
+The first capability is to Know One's Intention and Choose Congruent Behaviors.
+
+Recall that one of the keys to listening for understanding is intention: the intention to understand, rather than respond.
+
+## 1st click
+
+All of what we do, in fact, is driven by intention. The challenge is that some is conscious, some is not.
+
+## 2nd click
+
+Intention focuses our attention: what we focus on.
+
+## 3rd click
+
+…which in turn influences our actions. We call this metacognitive map, 'The Pyramid of Influence.'
+
+<!-- image -->
+
+2-Autobiographical listening-&gt;kindergarten 'me too'.  Time waster.  Stops groups moving forward.
+
+- · Inquisitive.  Soap opera-&gt;personal curiosity.  That kid?  Siblings?  Tired of that family. Stops group moving forward.  Ask: how might we support group in making decisions, create shared meaning, move forward?
+- · Solution listening-&gt;are educators, always solving.  Before understanding, have solution.  Enter room with solution.  Deciding too soon, decisions don't stay made.
+
+3-quiet / speak up.  Silence will help group more?  Speaking up help more?  Impulse control, rehearse / think how impact.  Mature participation
+
+4-'It's the group's group.'-Applying these capabilities actualizes this principle.
+
+What are some implications about group member capabilities for you and work?
+
+## SMALL GROUP PROCESS
+
+Group members offer reflective comments in response to the question on the slide.
+
+## TRAINER NOTE:
+
+Presenter may comment of additional capabilities.
+
+<!-- image -->
+
+<!-- image -->

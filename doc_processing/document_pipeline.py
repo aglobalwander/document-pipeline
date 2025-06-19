@@ -244,13 +244,15 @@ class DocumentPipeline:
             pptx_processor_config['pptx_strategy'] = 'text'
             processing_pipeline.add_component(MarkItDownPPTXProcessor(pptx_processor_config))
         elif source_path_str.lower().endswith('.pdf'):
-             # Add PDFProcessor here if the pipeline type is not 'weaviate' or 'hybrid'
-             # For 'weaviate' and 'hybrid', PDFProcessor is added in _initialize_pipeline_definitions
-             # based on the overall pipeline structure.
-             # This logic might need refinement based on how PDFProcessor is intended to be used
-             # in different pipeline types. For now, keep it simple and assume PDFProcessor
-             # is added in _initialize_pipeline_definitions for relevant pipeline types.
-             pass # PDFProcessor is added in _initialize_pipeline_definitions for 'hybrid' and 'weaviate'
+             # Add PDFProcessor for PDF files
+             from doc_processing.processors.pdf_processor import PDFProcessor
+             
+             # Create PDF processor configuration
+             pdf_processor_config = self.config.copy()  # Start with a copy of the main config
+             
+             # Add the PDFProcessor component to the pipeline
+             self.logger.info(f"Adding PDFProcessor for PDF processing")
+             processing_pipeline.add_component(PDFProcessor(pdf_processor_config))
 
         # The output of the initial loader becomes the input for the rest of the pipeline
         pipeline_input = initial_load_result

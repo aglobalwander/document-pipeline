@@ -1,0 +1,9 @@
+## Religious Orthodoxy
+
+Coming from a Christian tradition and with a firm belief in God, the early Pilgrims in the United States provided an educational policy in which schools were legally mandated to teach biblical literacy. Today, numerous religious schools in the United States-such as Roman Catholic, Church of Christ, Evangelical Christian, Buddhist, Seventh Day, Adventist, Muslim, Jewish, Lutheran-have a common goal: to teach the habits and values that will lead students to live in accordance with their faith.
+
+Proponents of religious orthodoxy in the Christian sects include such groups as the Christian Coalition as well as such orders as the Jesuits, the Christian Brothers, and the Sisters of Mercy. Their metaphors lie in the Bible. Others may draw inspiration from the Qur'an, the Torah, Tao Te Ching, or the Veda. They may model their ways after David, Moses, Jesus, Mohammed, Buddha, or Confucius. They wish to transmit the beliefs, laws, commandments, and truths of their interpretation of their scriptures.
+
+Educators with the orientation of religious orthodoxy enable students to learn appropriate norms of morality. They encourage students to conduct their lives in accordance with those norms. Students are assessed, in part, to the degree that they exhibit the teachings of that religion.
+
+In some of these schools, dialogue, debate, and critical thinking are encouraged. In others, questioning, doubt, and the exploration of competing views are often discouraged. Faith in Allah or in God's word may be held to transcend human thought. Fundamentalist Christian parents, for example, may criticize a public school's efforts to teach 'critical thinking,' questioning, evolution, or other attitudes that might weaken religious commitment. Likewise, such issues as vouchers, school prayer, and dialogues about the separation of church and state often illuminate differing beliefs.

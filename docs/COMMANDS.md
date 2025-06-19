@@ -23,6 +23,8 @@ just ...                            # Optional shortcuts (add to Justfile)
 | Action | Command |
 |--------|---------|
 | Process single PDF → Markdown | `python run_pipeline.py --input_path docs/intro.pdf --pipeline_type markdown` |
+| Process PDF with PyMuPDF (fastest) | `python run_pipeline.py --input_path docs/intro.pdf --pipeline_type text --pdf_processor pymupdf` |
+| Process PDF with fallback chain | `python run_pipeline.py --input_path docs/intro.pdf --pipeline_type text --pdf_processor_strategy fallback_chain` |
 | Chunk + ingest PDF to KB | `python run_pipeline.py --input_path docs/intro.pdf --pipeline_type weaviate` |
 | Process folder (non-recursive) | `python run_pipeline.py --input_path data/pdfs --pipeline_type text` |
 | Process folder recursively | `python run_pipeline.py --input_path data/pdfs -r --pipeline_type text` |
@@ -81,7 +83,43 @@ python run_pipeline.py --input_path tests/fixtures/sample.pdf \
 
 ⸻
 
-## 5. Maintenance & Diagnostics
+## 5. PDF Processing Strategies
+
+### Available PDF Processors
+
+| Processor | Speed | Cost | Best For |
+|-----------|-------|------|----------|
+| PyMuPDF | 50-100x faster | Free | Modern PDFs with embedded text |
+| Docling | Moderate | Free | Complex layouts, mixed content |
+| Enhanced Docling | Moderate | Free | Multi-format output (text/md/json) |
+| Gemini | Fast | ~$0.0002/page | When Docling fails |
+| GPT-4V | Moderate | ~$0.01/page | Handwritten text, poor scans |
+
+### Exclusive Strategy (Use specific processor)
+```bash
+# Use only PyMuPDF (fastest)
+python run_pipeline.py --input_path doc.pdf --pipeline_type text --pdf_processor pymupdf
+
+# Use only Docling
+python run_pipeline.py --input_path doc.pdf --pipeline_type text --pdf_processor docling
+
+# Use only Gemini
+python run_pipeline.py --input_path doc.pdf --pipeline_type text --pdf_processor gemini
+```
+
+### Fallback Chain Strategy (Recommended)
+```bash
+# Try processors in order: PyMuPDF → Docling → Enhanced Docling → Gemini → GPT-4V
+python run_pipeline.py --input_path doc.pdf --pipeline_type text --pdf_processor_strategy fallback_chain
+
+# Configure custom fallback order via environment
+export PDF_FALLBACK_ORDER='["pymupdf", "gemini", "gpt"]'
+python run_pipeline.py --input_path doc.pdf --pipeline_type text --pdf_processor_strategy fallback_chain
+```
+
+⸻
+
+## 6. Maintenance & Diagnostics
 
 ```bash
 # Find large files (10MB or larger)
@@ -99,7 +137,7 @@ just test  # Alias for: pytest -m "not slow"
 
 ⸻
 
-## 6. Justfile Shortcuts
+## 7. Justfile Shortcuts
 
 ```bash
 # View all shortcuts
@@ -117,7 +155,7 @@ just tmp-coll name=tmp_$(date +%s)
 
 ⸻
 
-## 7. Advanced Options
+## 8. Advanced Options
 
 ### PPTX Processing
 
@@ -214,7 +252,7 @@ chmod +x scripts/direct_markitdown.py
 # python scripts/direct_markitdown.py docs/slides.pptx > slides.md
 ```
 
-## 8. Future Enhancements
+## 9. Future Enhancements
 
 - [ ] Add `pipeline weav promote` – copies objects & drops tmp collection
 - [ ] Implement `cleanup_tmp` – nightly job to delete tmp_* older than 14 days

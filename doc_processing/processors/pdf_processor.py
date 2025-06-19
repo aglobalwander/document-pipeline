@@ -13,6 +13,7 @@ from doc_processing.embedding.base import BaseProcessor
 from doc_processing.config import get_settings
 from .gpt_vision_processor import GPTPVisionProcessor
 from .enhanced_docling_processor import EnhancedDoclingPDFProcessor
+from .pymupdf_processor import PyMuPDFProcessor
 from doc_processing.llm.gemini_client import GeminiClient
 from doc_processing.templates.prompt_manager import PromptTemplateManager # Import PromptTemplateManager
 
@@ -262,6 +263,7 @@ class PDFProcessor(BasePDFProcessor):
     def _initialize_processors(self):
         """Initializes the configured PDF processors."""
         processor_map = {
+            'pymupdf': PyMuPDFProcessor,
             'docling': DoclingPDFProcessor,
             'enhanced_docling': EnhancedDoclingPDFProcessor,
             'gpt': GPTPDFProcessor,

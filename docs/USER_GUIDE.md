@@ -1,7 +1,7 @@
 # Document Processing Pipeline User Guide
 
 ## Overview
-The document processing pipeline provides a flexible system for extracting and transforming content from various document formats (PDF, DOCX, PPTX, etc.) into structured outputs. The pipeline leverages Docling's native processing capabilities for enhanced accuracy and now includes caching support for resumable processing.
+The document processing pipeline provides a flexible system for extracting and transforming content from various document formats (PDF, DOCX, PPTX, etc.) into structured outputs. The pipeline now includes PyMuPDF for ultra-fast text extraction from PDFs, alongside Docling's native processing capabilities for enhanced accuracy and caching support for resumable processing.
 
 ## Key Features
 
@@ -37,6 +37,8 @@ python scripts/master_docling.py --input_path data/input/pdfs/cc.pdf --output_fo
 ### PDF Processing Options
 - `--extract_tables`: Enable table extraction (default: true)
 - `--no_extract_tables`: Disable table extraction
+- `--pdf_processor_strategy`: Choose processing strategy (exclusive, fallback_chain)
+- `--pdf_processor`: Specific processor for exclusive strategy (pymupdf, docling, enhanced_docling, gemini, gpt)
 
 ## Output Structure
 ```
@@ -53,9 +55,57 @@ data/cache/
 └── [document_id].json # Cache files for resumable processing
 ```
 
+## PDF Processing Strategies
+
+### Available PDF Processors
+1. **PyMuPDF** (New!) - Ultra-fast text extraction for PDFs with embedded text
+   - Speed: 50-100x faster than OCR methods
+   - Cost: Free
+   - Best for: Modern PDFs, reports, ebooks with selectable text
+
+2. **Docling** - Advanced document understanding with layout preservation
+   - Speed: Moderate
+   - Cost: Free (local processing)
+   - Best for: Complex layouts, mixed content
+
+3. **Enhanced Docling** - Docling with multi-format output and caching
+   - Speed: Moderate
+   - Cost: Free (local processing)
+   - Best for: When you need text, markdown, and JSON outputs
+
+4. **Gemini** - Google's AI for document processing
+   - Speed: Fast
+   - Cost: ~$0.0002 per page
+   - Best for: When Docling fails, complex documents
+
+5. **GPT-4V** - OpenAI's vision model
+   - Speed: Moderate
+   - Cost: ~$0.01 per page
+   - Best for: Handwritten text, poor quality scans
+
+### Processing Strategies
+
+#### Exclusive Strategy (Default)
+Uses only the specified processor:
+```bash
+python scripts/run_pipeline.py --input_path document.pdf --pipeline_type text --pdf_processor pymupdf
+```
+
+#### Fallback Chain Strategy (Recommended)
+Tries processors in order until one succeeds:
+```bash
+python scripts/run_pipeline.py --input_path document.pdf --pipeline_type text --pdf_processor_strategy fallback_chain
+```
+Default order: PyMuPDF → Docling → Enhanced Docling → Gemini → GPT-4V
+
 ## Examples
 
-### Basic Text Output
+### Basic Text Output with PyMuPDF (Fastest)
+```bash
+python scripts/run_pipeline.py --input_path data/input/pdfs/document.pdf --pipeline_type text --pdf_processor pymupdf
+```
+
+### Basic Text Output with Docling
 ```bash
 python scripts/master_docling.py --input_path data/input/pdfs/document.pdf --output_format text
 ```

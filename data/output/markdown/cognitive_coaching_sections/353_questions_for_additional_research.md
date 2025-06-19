@@ -1,0 +1,3 @@
+## QUESTIONS FOR ADDITIONAL RESEARCH
+
+Many areas have been investigated in Cognitive Coaching research, and many areas remain to be investigated. The following sections include ideas for additional studies to investigate its impacts on self-directedness, the five states of mind, students, the professional lives of teachers, school staff, principals, supervisory relationships, mentoring and teacher preparation programs, the personal lives of teachers, and the larger community.

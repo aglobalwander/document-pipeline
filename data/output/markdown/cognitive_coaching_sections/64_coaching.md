@@ -1,0 +1,5 @@
+## Coaching
+
+Cognitive Coaching is the nonjudgmental mediation of thinking. A Cognitive Coach can be anyone who is skillful in using the tools, maps, beliefs, principles, and values of mediation described earlier in this chapter. Many of the tools of Cognitive Coaching can be used in the support functions of consulting, calibrating, and collaboration. However, the greatest distinction of Cognitive Coaching is its focus on cognitive processes, on liberating internal resources, and on accessing the five states of mind as the wellsprings of constructive thought and action. (We discuss these in detail in chapter 6.) Cognitive Coaching has the expressed goal of supporting self-directedness in others. An educator committed to selfdirected learning, when entering a conversation as an evaluator, consultant, or a collaborator, always exits as a Cognitive Coach.
+
+The next section of this chapter deals specifically with an expanded definition of Cognitive Coaching.

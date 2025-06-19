@@ -1,0 +1,3 @@
+## REGIONS OF THE CALIBRATING MAP
+
+Within the territory of the calibrating conversation map, there are six regions that the coach navigates to mediate the coachee's thinking (table 13.1). Each region has a specific purpose, designed to support the coachee in reaching objectives or goal(s) reflected by the document. The coach uses the basic tools of Cognitive Coaching (rapport, pausing, paraphrasing, and posing questions) to mediate the coachee's thinking.

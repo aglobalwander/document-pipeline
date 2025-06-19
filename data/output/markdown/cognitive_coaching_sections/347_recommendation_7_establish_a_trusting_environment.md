@@ -1,0 +1,9 @@
+## Recommendation #7: Establish a Trusting Environment
+
+Tschannen-Moran (2014) and Bryk and Schneider (2002) wrote about the
+
+importance of having trusting environments in schools. Trust between the members of the coaching team is critical to success (Krpan 1997; Weatherford and Weatherford 1991). Johnson found that it is important for teachers to not only establish trusting relationships with their coaching partners but to establish trusting relationships in the larger school organization as well. In another study, the researchers found that nonjudgmental behaviors contributed to the development of trust in coaching relationships (McLymont and da Costa 1998).
+
+Aldrich (2005) conducted a study on online coaching and discovered that in order for Cognitive Coaching to succeed online, participants must have trust and rapport. They must also use the skills of acknowledging, paraphrasing, and asking mediational questions. In addition, participants must engage with each other and with the content.
+
+Reed (2007) found that instructional coaches will benefit from taking time to build relationships of trust with the teachers whom they are coaching. They need to be 'approachable' (197), 'respectful' (197) of the teachers, and 'knowledgeable' (201) about instruction. Teachers need to see them as being able to provide resources, and they need to be 'nonjudgmental' (202). They need to provide 'open communication' (195) so that the teachers do not feel like the coaches are above them. According to Reed, 'Teachers worked closely with the instructional coach when there was a high level of trust' (243).

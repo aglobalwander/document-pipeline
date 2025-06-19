@@ -1,0 +1,5 @@
+## CONCLUSION
+
+Now that we have described the tools of the mediator as they contribute to both cognitive development and trust, you may wish to watch a video of a planning, reflecting, or calibrating conversation listed in appendix G. In the end, trust is cemented when the coach asks the teacher to evaluate the coaching process and recommend refinements. This specifically signals that the exchange was a coaching situation, not an evaluation, and it shows the teacher that the coach is working to refine her own behaviors, too. This kind of ending question also communicates that the teacher is the authority about which coaching behaviors are most appropriate and useful.
+
+One of the first intentional considerations of a coach, therefore, is to establish and then to maintain trust. Hargreaves states, 'Trust in people remains important, but trust in expertise and processes precedes it.' Trust is a fragile commodity that must be constantly nurtured and tended. Once lost, trust is even more difficult to reestablish.

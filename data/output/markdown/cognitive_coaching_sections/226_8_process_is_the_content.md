@@ -1,0 +1,5 @@
+## 8. Process Is the Content
+
+Constructivist curriculum challenges the basic educational views of 'knowledge' and of 'learning' with which most schools are comfortable. It causes us to expand our focus from educational outcomes that are primarily collections of subskills to include successful processes of participation in socially organized activities and the development of students' identities as conscious, flexible, efficacious, interdependent, and
+
+continual learners. A constructivist curriculum lets go of having learners acquire predetermined meaning and has faith in the processes of individuals' construction of shared meanings through social interaction. Constructivists, therefore, inquire about their colleagues' understandings of concepts before sharing their own understandings of those concepts. When constructivists share their ideas and theories before others have an opportunity to develop their own, questioning of their own theories is essentially eliminated. Others assume that the teacher knows more than they do; consequently, most stop thinking about a concept or theory once they hear 'the correct answer.'

@@ -1,0 +1,9 @@
+## CONCLUSION
+
+As a high school English teacher at the American School in Japan puts it, 'In terms of ownership of teaching quality standards, the calibrating conversation is a meaningful and nonthreatening way for these standards to become 'real' for me-the conversation helps generate clear connections between the abstract descriptions and actual practice' (Gotterson 2014). Ed Ladd, head of the school where Gotterson works, observes: 'I think this is the best process for evaluation and growth that I have ever used and it is well respected by our teachers and actually viewed as a helpful process by most' (2014).
+
+Supporting self-directed learning, assisting teachers in gauging current performance with aspirations as noted on locally developed statements of excellence, adopted standards, or rubrics from other sources, the calibrating conversation embodies the values and goals of Cognitive Coaching.
+
+Why is it important to use Cognitive Coaching to support professional performance review? The answers are clear: Cognitive Coaching provides the procedural skills to focus on the thinking that produces behavior, it is a research-based growth model congruent with current neuroscience, and it's grounded in a solid foundation of trust.
+
+The evaluator's primary role, then, is to engage thinking that results in self-modification that will sustain longer-lasting change. Far more important than simply telling people what to do are developing rapport, listening, and posing questions that support thinking. Cognitive Coaching provides evaluators with the conversation structures and skills to engage teachers' thinking so they can be self-managing, self-monitoring, and selfmodifying (Dolcemascolo, Miori-Merola, and Ellison 2014).

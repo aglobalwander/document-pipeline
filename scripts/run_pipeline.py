@@ -85,11 +85,41 @@ def parse_arguments():
                         help='Base name of the prompt template file (e.g., "invoice_extraction" for invoice_extraction.j2).')
 
     # PDF Processing Configuration
-    parser.add_argument('--ocr_mode', type=str, default='hybrid', choices=['hybrid', 'docling', 'gpt'],
-                        help="OCR mode for PDF processing ('hybrid', 'docling', 'gpt'). Only relevant for PDF inputs.")
+    parser.add_argument('--ocr_mode', type=str, default='hybrid', choices=['hybrid', 'docling', 'enhanced_docling', 'gpt'],
+                        help="OCR mode for PDF processing ('hybrid', 'docling', 'enhanced_docling', 'gpt'). Only relevant for PDF inputs.")
+    parser.add_argument('--show_progress_bar', action='store_true', default=True,
+                        help="Show progress bar when processing multi-page documents.")
+    parser.add_argument('--no_progress_bar', action='store_true',
+                        help="Disable progress bar when processing multi-page documents.")
+    
+    # Enhanced Docling Configuration
+    parser.add_argument('--output_all_formats', action='store_true', default=True,
+                        help="Output all available formats (text, markdown, JSON) when using enhanced_docling processor.")
+    parser.add_argument('--no_output_all_formats', action='store_true',
+                        help="Disable multi-format output when using enhanced_docling processor.")
+    parser.add_argument('--use_cache', action='store_true', default=True,
+                        help="Enable processing cache for resumable document processing.")
+    parser.add_argument('--no_cache', action='store_false', dest='use_cache',
+                        help="Disable processing cache.")
+    parser.add_argument('--clear_cache', action='store_true',
+                        help="Clear existing cache before processing.")
+    parser.add_argument('--detect_columns', action='store_true', default=True,
+                        help="Enable column detection for multi-column PDFs (for enhanced_docling processor).")
+    parser.add_argument('--no_detect_columns', action='store_true',
+                        help="Disable column detection for multi-column PDFs (for enhanced_docling processor).")
+    parser.add_argument('--merge_hyphenated_words', action='store_true', default=True,
+                        help="Merge hyphenated words that span multiple lines (for enhanced_docling processor).")
+    parser.add_argument('--no_merge_hyphenated_words', action='store_true',
+                        help="Disable merging of hyphenated words (for enhanced_docling processor).")
+    parser.add_argument('--reconstruct_paragraphs', action='store_true', default=True,
+                        help="Reconstruct paragraphs from individual lines (for enhanced_docling processor).")
+    parser.add_argument('--no_reconstruct_paragraphs', action='store_true',
+                        help="Disable paragraph reconstruction (for enhanced_docling processor).")
+    parser.add_argument('--use_llm_cleaning', action='store_true',
+                        help="Use LLM-based cleaning for improved text flow (for enhanced_docling processor).")
     parser.add_argument('--pdf_processor_strategy', type=str, choices=['exclusive', 'fallback_chain'],
                         help="Strategy for PDF processing: 'exclusive' (use one processor) or 'fallback_chain' (try multiple in order)")
-    parser.add_argument('--pdf_processor', type=str, choices=['docling', 'gpt', 'gemini'],
+    parser.add_argument('--pdf_processor', type=str, choices=['docling', 'enhanced_docling', 'gpt', 'gemini'],
                         help="Default PDF processor to use (for 'exclusive' strategy)")
     parser.add_argument('--gpt_vision_prompt', type=str,
                         help='Path to a custom Jinja2 template file for GPT Vision OCR.')
@@ -220,13 +250,42 @@ def main():
             'excel_template_dir': args.excel_template_dir,
             'merge_csv': args.merge_csv,
             'output_format': args.output_format,
+            
+            # Progress bar configuration
+            'show_progress_bar': args.show_progress_bar if hasattr(args, 'show_progress_bar') else True,
+            
+            # Enhanced Docling configuration
+            'output_all_formats': args.output_all_formats if hasattr(args, 'output_all_formats') else True,
+            'detect_columns': args.detect_columns if hasattr(args, 'detect_columns') else True,
+            'merge_hyphenated_words': args.merge_hyphenated_words if hasattr(args, 'merge_hyphenated_words') else True,
+            'reconstruct_paragraphs': args.reconstruct_paragraphs if hasattr(args, 'reconstruct_paragraphs') else True,
+            'use_llm_cleaning': args.use_llm_cleaning,
+            
+            # Caching configuration
+            'use_cache': args.use_cache if hasattr(args, 'use_cache') else True,
+            'clear_cache': args.clear_cache if hasattr(args, 'clear_cache') else False,
         }
         
-        # Add PDF processor configuration if specified
-        if args.pdf_processor_strategy:
-            pipeline_config['pdf_processor_strategy'] = args.pdf_processor_strategy
+        # Add PDF processor configuration
+        # Map ocr_mode to default_pdf_processor if pdf_processor is not explicitly specified
         if args.pdf_processor:
             pipeline_config['default_pdf_processor'] = args.pdf_processor
+        elif args.ocr_mode:
+            # Map ocr_mode to default_pdf_processor
+            if args.ocr_mode == 'gpt':
+                pipeline_config['default_pdf_processor'] = 'gpt'
+            elif args.ocr_mode == 'docling':
+                pipeline_config['default_pdf_processor'] = 'docling'
+            elif args.ocr_mode == 'enhanced_docling':
+                pipeline_config['default_pdf_processor'] = 'enhanced_docling'
+            elif args.ocr_mode == 'hybrid':
+                # For hybrid mode, use fallback chain strategy with docling as first choice
+                pipeline_config['pdf_processor_strategy'] = 'fallback_chain'
+                pipeline_config['active_pdf_processors'] = ['docling', 'enhanced_docling', 'gpt', 'gemini']
+        
+        # Set pdf_processor_strategy if specified
+        if args.pdf_processor_strategy:
+            pipeline_config['pdf_processor_strategy'] = args.pdf_processor_strategy
 
         # Instantiate DocumentPipeline for each input (to ensure a clean pipeline per document/URL)
         pipeline = DocumentPipeline(config=pipeline_config, weaviate_client=weaviate_client)
@@ -250,23 +309,39 @@ def main():
                 output_extension = ".txt" if output_format == 'text' else f".{output_format}"
 
                 # Ensure output directory exists for the specific format
-                # Use pipeline_type for the subdirectory name, not the output_format
-                format_output_dir = output_dir / args.pipeline_type
-                format_output_dir.mkdir(parents=True, exist_ok=True)
+                # Determine the final output directory
+                # Check if the output_dir already ends with the pipeline_type
+                if output_dir.name.lower() == args.pipeline_type.lower():
+                    # If it does, use the output_dir directly
+                    final_output_dir = output_dir
+                else:
+                    # Otherwise, create a subdirectory with the pipeline_type
+                    final_output_dir = output_dir
+
+                final_output_dir.mkdir(parents=True, exist_ok=True)
 
                 output_filename = f"{original_stem}_output{output_extension}"
-                output_filepath = format_output_dir / output_filename
+                output_filepath = final_output_dir / output_filename
 
                 # Save content based on output format
                 content_to_save = ""
+                # Log document keys to help debug
+                logger.info(f"Document keys: {list(doc.keys())}")
+                if 'content' in doc:
+                    logger.info(f"Content field length: {len(doc['content'])}")
+                    logger.info(f"Content field starts with: {doc['content'][:100]}...")
+                
                 if output_format == 'json':
                     # For JSON output, save the entire document dictionary
                     content_to_save = json.dumps(doc, indent=2)
-                elif output_format == 'markdown' and 'markdown' in doc:
-                    # For Markdown output, prioritize the 'markdown' field if it exists
-                    content_to_save = doc['markdown']
+                elif output_format == 'markdown':
+                    # For Markdown output, use the 'content' field which contains the markdown from MammothDOCXProcessor
+                    if 'content' in doc:
+                        content_to_save = doc['content']
+                    elif 'markdown' in doc:  # Fallback to 'markdown' field if it exists
+                        content_to_save = doc['markdown']
                 elif 'content' in doc:
-                    # Fallback for text or if 'markdown' key is missing for markdown output
+                    # Fallback for text output
                     content_to_save = doc['content']
                 elif 'text' in doc:
                      # Further fallback (e.g., from chunks, though less likely now)
@@ -278,6 +353,10 @@ def main():
                 # Only attempt to write if content was found
                 if content_to_save:
                     try:
+                        # Log what we're about to save
+                        logger.info(f"Saving content to {output_filepath}, content type: {type(content_to_save)}, length: {len(content_to_save)}")
+                        logger.info(f"Content starts with: {content_to_save[:100]}...")
+                        
                         with open(output_filepath, 'w', encoding='utf-8') as f:
                             f.write(content_to_save)
                         logger.info(f"Saved output to {output_filepath}")
@@ -287,6 +366,33 @@ def main():
                         raise
                 elif args.pipeline_type != 'weaviate': # Log warning only if not weaviate pipeline and no content
                      logger.warning(f"No content found to save for {input_item} to {output_filepath}")
+                
+                # Handle multi-format output from EnhancedDoclingPDFProcessor
+                if pipeline_config.get('output_all_formats', False) and doc.get('processing_method') == 'docling':
+                    # Save additional formats if they exist
+                    if 'text_content' in doc and output_format != 'text':
+                        text_output_dir = output_dir / 'text'
+                        text_output_dir.mkdir(parents=True, exist_ok=True)
+                        text_output_path = text_output_dir / f"{original_stem}_output.txt"
+                        logger.info(f"Saving additional text format to {text_output_path}")
+                        with open(text_output_path, 'w', encoding='utf-8') as f:
+                            f.write(doc['text_content'])
+                    
+                    if 'markdown_content' in doc and output_format != 'markdown':
+                        md_output_dir = output_dir / 'markdown'
+                        md_output_dir.mkdir(parents=True, exist_ok=True)
+                        md_output_path = md_output_dir / f"{original_stem}_output.md"
+                        logger.info(f"Saving additional markdown format to {md_output_path}")
+                        with open(md_output_path, 'w', encoding='utf-8') as f:
+                            f.write(doc['markdown_content'])
+                    
+                    if 'json_content' in doc and output_format != 'json':
+                        json_output_dir = output_dir / 'json'
+                        json_output_dir.mkdir(parents=True, exist_ok=True)
+                        json_output_path = json_output_dir / f"{original_stem}_output.json"
+                        logger.info(f"Saving additional JSON format to {json_output_path}")
+                        with open(json_output_path, 'w', encoding='utf-8') as f:
+                            f.write(doc['json_content'])
 
         except Exception as exc:
             logger.error(f"Error processing input {input_item}: {exc}")

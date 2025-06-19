@@ -1,0 +1,3 @@
+## PROMOTE IN-CLASSROOM OBSERVATION OF TEACHING AND LEARNING
+
+Provide release time for all teachers to observe one another as they apply teaching standards in their classrooms. After a conversation in which the standards are selected and operationalized, the observing teachers can collect evidence of indicators of the performance of such standards. During a reflecting conversation, share the data, allow the teacher to selfassess, and plan for achieving the next higher level of performance on the continuum.

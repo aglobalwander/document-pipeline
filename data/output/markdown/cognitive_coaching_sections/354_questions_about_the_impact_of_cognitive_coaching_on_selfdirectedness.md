@@ -1,0 +1,3 @@
+## Questions about the Impact of Cognitive Coaching on Selfdirectedness
+
+Researchers have gathered evidence about the effects of Cognitive Coaching on the self-directedness of educators using various types of data. What additional types of data might be available that would indicate selfdirectedness? How might educators grow on instruments of selfdirectedness as a result of participating in Cognitive Coaching? Do any differences exist in growth in self-directedness between when educators coach others and when they receive coaching? Which aspects of Cognitive Coaching contribute the most to helping teachers grow in selfdirectedness?

@@ -1,0 +1,3 @@
+## 4. It Establishes the Parameters of the Reflecting Conversation
+
+Agreements in the planning conversation establish the coach's role and the data to be collected during the lesson. The teacher sets this agenda, and it provides the context for the reflecting conversation. Without a planning conversation, teachers can evaluate their lesson only in terms of what happened rather than in terms of what their intentions were.

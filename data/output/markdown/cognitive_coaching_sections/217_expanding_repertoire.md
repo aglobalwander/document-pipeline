@@ -1,0 +1,5 @@
+## EXPANDING REPERTOIRE
+
+Master teachers, like concert artists, consciously expand their performance repertoires. They develop and assemble microroutines that can be combined and reconstituted to fit a wide variety of settings. These experts also habitualize many routines to free cognitive space for more complex perceiving and more sophisticated instructional problem solving. This unconscious competence is the hallmark of the expert in the classroom (Garmston and Wellman 2013).
+
+Stanford professor Lee Shulman (1987) defined a special form of craft knowledge as 'pedagogical-content knowledge.' This knowledge is formed from the intersection of knowledge about content and pedagogy. Grimmet and MacKinnon (1992) claim that pedagogical-content knowledge is a different kind of knowing. They agree with Schulman's assertion that it is derived from a considered response to experience in the practice setting, and though it is related to knowledge that can be taught in the lecture hall, it is formed over time in the minds of teachers through reflection.

@@ -1,0 +1,7 @@
+## Recommendation #11: Invite Teachers to Use Their Coaching Skills in Many Contexts
+
+Teachers can use their coaching skills in a variety of contexts, including online exchanges.
+
+Foster (1989) reported no differences in perceptions of impact on thought processes between teachers who were coached by an administrator and teachers who were coached by another teacher. In a study by Alseike (1997), no differences were noted in the impact of Cognitive Coaching on the instructional processes of planning, teaching, analyzing, and applying, nor on the states of mind between teachers who had been coached by the principal, a building resource teacher, another teacher, or a combination of the three.
+
+Participants in an online coaching study said that text-based nonverbal cues, the sharing of asynchronous journal reflections, the ability to send private messages, and 'the invisibility of the use of the maps and sentence stems' (Aldrich 2005, 204) were unique features that they enjoyed as they conducted coaching conversations on the Internet. They also enjoyed the chat capability, the whiteboards, the training they received, the availability of the moderator, and the fact that their coaching sessions were archived. The more people participated in online coaching conversations, including the more messages that they posted and the more sessions they conducted, the more they met the conditions for effective online coaching.

@@ -1,0 +1,5 @@
+## Navigating within and between the Coaching Maps
+
+The mental maps of cognitive coaching are not necessarily intended to be used separately. As the coach interacts with a colleague, the coach may detect that it is an opportunity to switch from a reflecting mode to a planning conversation. For example, in the reflecting conversation with Raul, the coach might seize the opportunity to begin planning: 'So, Raul, you'd like to implement project-based learning with your primary students. What might you do to get started?' Or, during a planning conversation, the vigilant coach might, based on the comments of the planner, find it profitable to switch to a reflecting conversation: 'What was it about some of those projects you saw that you might use in your planning for your students?'
+
+By knowing these mental maps deeply, skillful coaches have the flexibility to maneuver within each map and to draw forth components of each of the maps as the situation demands.

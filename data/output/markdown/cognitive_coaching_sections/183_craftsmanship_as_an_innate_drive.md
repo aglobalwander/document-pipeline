@@ -1,0 +1,3 @@
+## Craftsmanship as an Innate Drive
+
+When the cave people had their bellies full and their fires lit, they turned their attention to decorating the cave walls. Craftsmanship drove them to embellish, hone, refine, and constantly work to improve themselves and their environment. Craftsmanship is the healthy dissatisfaction that humans feel with their own accomplishments. Humans yearn to become clearer, more linguistically precise, congruent in beliefs and actions, and integrated with an aligned work life.

@@ -1,0 +1,3 @@
+## Discovering the Meanings of Cognitive Coaching
+
+'H ypercomplexity-our world is changing at an unprecedented rate, becoming more complex and globally interactive. Clear-cut, unambiguous understandings are no longer an option' (Stelter 2014, 52). Thus, the capacity for self-directed and continuous learning has become the most important capacity needed for survival in the future. Fortunately the brain permits our ability to change, to grow, and to continuously develop our intellectual capacities throughout a lifetime. And that's what Cognitive Coaching is all about: producing self-directed learners and leaders with the disposition for continuous, lifelong learning.

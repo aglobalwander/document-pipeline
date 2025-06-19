@@ -1,0 +1,9 @@
+## Meanings and Manifestations of Interdependence
+
+Interdependent people have a sense of community: 'we-ness' as much as 'meness' (Sergiovanni 1994). They are altruistic. They value consensus, being willing to influence and be influenced by the group in service of group goals. They contribute to a common good, seek collegiality, and draw on the resources of others. They regard conflict as valuable, trusting their ability to manage differences in a group in productive ways. The more highly evolved, the more humility they possess, and the more they view conflict as opportunities to learn about and modify themselves (Kegan and Lahey 2009), the more they exhibit interdependence. They continue to learn from feedback from others and from their consciousness of their own actions and effect on others. They seek collaborative engagement, knowing that we are more effective together than individually.
+
+Interdependence means knowing that we will benefit from participating in and contributing to work. Learning unfolds within social contexts, and hence interdependence increases intelligence. Every function in cultural development appears twice: first, on the social level, and later on the individual level; first between people (interpsychological), and then inside (intrapsychological). This applies equally to voluntary attention, to logical memory, and to the formation of concepts. All the higher functions originate as actual relationships between individuals (Vygotsky 1978). Interdependent people envision the expanding capacities of the group and its members, and they value and draw on the resources of others to enhance their own personal competencies.
+
+Margaret Mead's statement 'Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only
+
+thing that ever has' captures this thought.

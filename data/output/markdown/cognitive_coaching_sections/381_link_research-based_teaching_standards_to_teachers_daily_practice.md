@@ -1,5 +1,0 @@
-## LINK RESEARCH-BASED TEACHING STANDARDS TO TEACHERS' DAILY PRACTICE
-
-The several frameworks listed in the references describe the attributes of effective teaching. They describe a continuum of increasingly more sophisticated competencies, from beginner or novice through intermediate stages to levels of greater experience and mastery. Because these standards are descriptive and nonevaluative, they provide objective, research-based, and theoretically sound descriptors of what constitutes effective teaching.
-
-Such documents suggest processes that are clearly formative in nature. Faculties can use such standards to guide inquiry into local definitions of effective teaching. These local elaborations can be used by teachers to prompt reflection about their own teaching and connections to student learning; to develop professional goals; and to guide, monitor, and selfassess progress of professional growth.

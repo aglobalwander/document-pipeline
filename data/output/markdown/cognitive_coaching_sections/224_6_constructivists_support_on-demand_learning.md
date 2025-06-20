@@ -1,7 +1,0 @@
-## 6. Constructivists Support On-Demand Learning
-
-In the meaning-making process, humans direct the need for information in the moment. Because they feel a need for information or skills to fill the gaps and inadequacies in their process of meaning making, there is a greater openness to learning. (Computers assist in this process as they allow the pursuit of interests through browsing, tapping varied databases in a random and nonlinear way.) Constructivists, therefore, allow others'
-
-responses to drive the interaction, shift the focus, and alter the content.
-
-Being alert to such verbal and nonverbal signals-such as eye movements, facial expressions, postural shifts, gestures, breathing rates, and changes in pitch, speed, and volume of speech, as well as overt expressions of interest and enthusiasms-the teacher may shift the topic or approach. (We all know of the 'teachable moment' when our planned lesson is derailed by an event of greater interest.) Learners' in-the-moment insights, experiences, motivations, and interests may intersect around an urgent theme. When magnetic events exert an irresistible pull on learners' minds, the teacher may hold his or her planned strategy in abeyance and 'go with the flow.'

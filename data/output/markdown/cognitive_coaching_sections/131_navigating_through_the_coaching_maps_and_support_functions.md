@@ -1,3 +1,0 @@
-## Navigating through the Coaching Maps and Support Functions
-
-Four basic coaching maps provide the coach with information about the mental territories of planning, reflecting, problem resolving, and calibrating. Similar to a road map, mental maps provide the coach with directions to destinations as well as options for alternate routes. (See part 3.) The coach selects one or more support functions to guide his/her decisions about how best to support self-directedness. The coach's identity as a mediator of thinking creates consciousness about beginning and ending the conversation as a coach.

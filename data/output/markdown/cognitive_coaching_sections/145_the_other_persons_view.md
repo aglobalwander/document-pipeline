@@ -1,3 +1,0 @@
-## The Other Person's View
-
-Shifting focus from myself to the other person characterizes this perspective. It is the mental resource for rapport. With this point of view, we become aware of how a situation looks, sounds, and feels from the other person's experience. To work within this point of view, the coach must be exactingly attentive to the other person. 'Listen with your eyes' to the physicality of communication, with your ears to the delivery and tone of the words, and with your feelings to what you sense about the other person's state. Allocentricity is the catalyst for empathy.

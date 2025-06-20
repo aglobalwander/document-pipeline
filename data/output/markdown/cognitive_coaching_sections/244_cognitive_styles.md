@@ -1,9 +1,0 @@
-## COGNITIVE STYLES
-
-Two persons looking at the same invitation to a dinner party may literally see something different. Huong will notice the time, date, and location of the affair as well as the recommended dress. John will register with pleasure that a friend has invited him to a party. He notices that the event is planned for Thursday, an evening he's usually free. It wouldn't be unheard of for him to arrive at the party on the wrong Thursday or get lost on the way because he didn't pay attention to details. Huong's and John's readings of the party invitation illustrate differences in cognitive styles.
-
-Cognitive style is the cognitive functioning related to acquiring and processing information. Research on cognitive style was launched with the pioneering work of Herman Witkin's examination of intellectual styles. Research surged and peaked during the period 1940 to 1970. Today numerous models and theories explain stylistic differences (Lozano 2001), yet we have found that Herman Witkin et al.'s field dependenceindependence theory is a simple yet effective construct for learning how teachers' perceptions, intellectual processing, and instructional behaviors differ (Guild and Garger 1985). Currently researchers are examining the neural activities related to cognitive styles (Kozhevnikov 2007). Most of us lean toward one of two poles: exacting attention to detail where perception is not influenced by the background (field independence ) or a strong influence by the context of information (field dependence ). Investigators have explored the relationship of cognitive style to personality (Zhang 2000) and intelligence but found limited correlations to the latter (Kozhevnikov 2007).
-
-Over time, Witkin and his associates became convinced that field dependence- independence influences not only perceptual and intellectual functioning but also personality traits such as social behavior, career
-
-choice, body concept, and defense.

@@ -1,7 +1,0 @@
-## Developing and Maintaining Trust
-
-I n chapter 3, we described a mediator's eight tools, which we clustered in five groups: paralanguage, response behaviors, providing data and resources, structuring, and mediational questioning. In this chapter, we describe how these tools contribute to one of the essential elements of Cognitive Coaching: developing and maintaining trust.
-
-Carol Simoneau, a Cognitive Coach international consultant, told us this story. A person at a school in which Carol served was assigned to coach an experienced teacher. The teacher was not the most effective teacher and had become a real 'loner' in the building, isolating herself from teammates. The coach said that it took her three months of daily checking in and helping the teacher with minor tasks (picking up at the end of the day, setting up for lessons) before the teacher felt comfortable enough to confide in her. Over time, the coach gained the teacher's trust and learned that she felt inadequate with all the mandated changes. Carol realized the teacher's cold exterior was self-protective.
-
-As we look at this event, two ideas stand out. First, that trust is not a thing, an event, or something that just happens; rather, it is a process. Next, this coach devoted energies over a long period of time to befriend and build trust with this teacher. It was trust that gained the teacher's confidence in the coach.

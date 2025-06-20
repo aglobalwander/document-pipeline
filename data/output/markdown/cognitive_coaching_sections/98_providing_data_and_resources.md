@@ -1,3 +1,0 @@
-## PROVIDING DATA AND RESOURCES
-
-One of the main objectives of Cognitive Coaching is to mediate the other person's capacities for processing information by comparing, inferring, or deducing causal relationships. For coaching to be data driven, data must be richly and readily available for the colleague to process. Providing data nonjudgmentally means that the coach makes it possible for the colleague to acquire the data she needs to deduce these relationships. There are several ways to facilitate this process.

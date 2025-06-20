@@ -1,3 +1,0 @@
-## External or Internal Content
-
-External content is what is going on in the environment around, and thus outside, the person. Internal content is what is going on inside the other person's mind and heart: satisfaction, puzzlement, frustration, thinking processes (metacognition), values, intentions, or decisions. Questions that most effectively mediate thinking link internal content with external content.

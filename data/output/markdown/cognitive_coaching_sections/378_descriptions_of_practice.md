@@ -1,7 +1,0 @@
-## Descriptions of Practice
-
-Drawn from the California State Department of Education (1997)
-
-T he following pages include some suggestions for achieving the goal of making student learning central to school conversations.
-
-Student learning is, after all, the end goal of any set of teaching standards. Professional communities focus on student learning as the end and teaching as the means. As teachers from various grade levels and disciplines examine external standards for student learning, invite them to seek agreement on what constitutes good student work in their school in the subject matter they are addressing. If necessary, modify the external standards so that a common version for 'our students' exists. Next, facilitate processes through which teachers can agree on developmental schemes and feedback systems that are coherent and consistent across classrooms. As teachers periodically examine actual student work from various classrooms, they construct practical knowledge about their students related to teaching standards. Three questions drive these collective inquiries: What are our standards for student work? Does this work meet our expectations? If not, what do we need to do to see that students are successful?

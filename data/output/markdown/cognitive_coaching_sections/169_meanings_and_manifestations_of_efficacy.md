@@ -1,9 +1,0 @@
-## Meanings and Manifestations of Efficacy
-
-Particularly catalytic, our sense of efficacy is a determining factor in the resolution of complex problems. Efficacious people are resourceful. They engage in cause-and-effect thinking, devote energy to demanding tasks, set
-
-challenging goals, persevere in the face of barriers, and learn from an occasional failure (Dweck 2006). People with efficacy accurately forecast future performances. They are optimistic and confident, and they feel good about themselves. They push beyond self-doubt when it exists. They have sound self-knowledge, and they control performance anxiety. Effort and persistence, in the face of setbacks, are hallmarks of efficacy. The more efficacious we feel, the more flexibly we can engage in critical and creative work. Developing effective thinking, therefore, requires becoming increasingly self-managing, self-monitoring, and self-modifying.
-
-Charles Garfield's study of peak performers found that their primary locus of control is internal, not external. One element that stands out clearly among peak performers is their virtually unassailable belief in the likelihood of their own success. Their track records reinforced their beliefs. Conversely, they also recognized when a task was unattainable, and they moved their energies elsewhere.
-
-Efficacy transcends race, gender, culture, income level, subject matter, and age of students. It is a predictor of group perseverance on special projects. It correlates with higher math achievement, more science learning, improved language skills, and teachers' increased willingness to implement innovation. Efficacy also correlates with positive teacheradministrator relationships, constructive parent-teacher relations, and reductions in teacher stress.

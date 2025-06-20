@@ -1,5 +1,0 @@
-## Technologism
-
-Influenced by the behavioral psychology of B. F. Skinner, Ivan Pavlov, and Edward Thorndike, technologists may be attracted to such education authors as Robert Mager, Madeline Hunter, Seymour Papert, Arnie Duncan, Raymond Miltenberger, Bill Gates, and Steve Jobs. They place strong emphasis on accountability, test scores, learning specific subskills, and measurable learning. Their metaphor for education is as an 'input, throughput, output system' in which data and opportunities to learn skills are provided.
-
-Technologists are skilled at task analysis and are interested in technology-based learning systems and instruction. They value opportunities to diagnose entry levels and prescribe according to what is known and what is yet to be learned. They are probably more field independent and skilled in detail, with great ability to analyze, project, and plan. They talk about accountability, evaluation, reinforcement, task analysis, time on task, mastery, templates, diagnosis and prescription, interrater reliability, and percentiles. When policymaking bodies adopt this orientation, external assessments and high-stakes testing abound.

@@ -1,5 +1,0 @@
-## HOW WE SEE
-
-Damasio observes, '[The] images you and I see in our minds are not facsimiles of the particular object, but rather images of the interactions between each of us and an object which engaged our organisms, constructed in neural pattern form according to the organism's design' (1999, 321). The object is real, and the images are as real as anything can be. Yet the structure and properties in the image we end up seeing are brain constructions prompted by an object.
-
-As you listen to a person talk, you may discover there are times when a majority of his or her predicates (descriptive words and phrasesprimarily verbs, adverbs, and adjectives) are from one of the modalities or representational systems listed in figure 10.2. This person is choosing, usually at an unconscious level, to isolate one system from his or her ongoing stream of representational system experiences. This is an indicator for you of how this person best understands his or her experiences and how you can best communicate.

@@ -1,5 +1,0 @@
-## THE FIVE STATES OF MIND
-
-A goal of Cognitive Coaching is to help teachers increase their awareness of and skill with the five states of mind: efficacy, flexibility, consciousness, craftsmanship, and interdependence. A number of researchers have measured teacher growth in those areas. Ushijima (1996a) and Alseike (1997) developed instruments to measure the five states of mind. Ellison and Hayes (1998) developed the Energy Sources Team Self-Assessment Survey to measure the five states of mind in a
-
-group setting. González (2009) developed the 'Relaciones con Dios y con el Prójimo' (Relationships with God and with Others) survey to measure the five states of mind related to the spiritual life. Studies that were focused on measuring all of the five states of mind are presented first, followed by studies on specific states of mind.

@@ -1,7 +1,0 @@
-## Adjusting One's Own Style Preferences
-
-Mediators understand a fundamental and common principle: Humans differ. Distinct patterns and cognitive styles of perceiving and processing information are neither good nor bad. They transcend race and culture, characterize males and females equally, and are observable at all age levels (Markus and Conner 2013). A person's style influences not only what information he or she selects to attend to, it also puts it all together into a coherent experience. Style makes your playlists.
-
-Conscious of these differences, Cognitive Coaches strive to be flexible communicators. They recognize their own style preferences and seek to overcome these habits when interacting with someone who operates from a different style.
-
-Setting aside their own style preferences, coaches observe, respect, appreciate, are open and humble, let go of judgment, are authentic, are collaborative, are caring, and are compassionate (Seagal and Horn 1997). To achieve this, coaches constantly sense, search for, and detect linguistic, facial, and bodily cues about the person with whom they are working. Coaches' mirror neurons align themselves naturally with their colleague's. Because of these mirror neurons and understanding the persons they work with, coaches constantly expand their repertoire so they can match their style to a variety of situations and individuals. (Style flexibility is elaborated in chapter 10.)

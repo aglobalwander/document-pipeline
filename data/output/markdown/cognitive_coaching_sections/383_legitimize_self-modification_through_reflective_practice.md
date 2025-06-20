@@ -1,3 +1,0 @@
-## LEGITIMIZE SELF-MODIFICATION THROUGH REFLECTIVE PRACTICE
-
-Teaching frameworks are useful resources for helping teachers reflect on their own practices. After they describe how a standard might sound or look in their classrooms, invite teachers to set goals related to where their teaching fits on the continuum of development. Ask them to consider: What might I do to achieve the next higher level of competency? Expert teachers are never complacent about their performance; they always have more to learn.

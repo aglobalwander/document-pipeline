@@ -1,7 +1,0 @@
-## CONCLUSION
-
-Mediators are clear about their purposes and intentionally employ certain verbal and nonverbal tools with others to help transform and empower their cognitive functioning. In this chapter we have presented the verbal and nonverbal tools that serve a mediator in achieving the goals of helping others to become increasingly more self-directed. Although these skills are presented in the context of Cognitive Coaching, they are useful in any dialogue between two human beings desiring to grow together, to plan, to reflect, to solve problems together, and to create deeper meaning and understanding.
-
-For some, the behaviors described in this chapter come naturally. For others, it will take time and practice to become proficient and comfortable using these tools. We recommend that coaches isolate certain skills and consciously practice them rather than attempt to learn them all at once.
-
-If we choose to intentionally employ, over time, the Cognitive Coaching values described in part 1, the mental maps described in part 3, and the mediative tools described here, we can become increasingly skillful in facilitating the self-actualization of others. As our colleagues assume greater responsibility for coaching themselves, others will come to identify us as mediators of self-directed learning.

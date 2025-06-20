@@ -1,9 +1,0 @@
-## Interindividual Knowers
-
-An additional way of making meaning, occupied by only a few adults, might be summarized as 'There are relationships and I am part of them.' Rather than a pond, this way of knowing might appear as a lively ocean, part of a broader universe of tides, moon, and winds. Adults at this way of knowing live the richest expression of the state of mind of interdependence. They see experiences as opportunities to grow. Conflict
-
-is regarded not only as a valuable source of bringing resolution to problems but also as an opportunity to learn about and change oneself. People at this way of knowing can achieve alignment, even with seeming opposite individuals. Identity continues to develop through reflection and self-modification. Validation comes through openness to questions, possibilities, conflict, and reconstruction of meaning. Continual inquiry and data from outside oneself shape values and beliefs. System thinking may be a part of their way of understanding challenges and working toward goals.
-
-Engage the individuals in multifaceted projects seeking complex goals or in seeking resolution to issues with no clear answers. Foster the understanding of others with different processing styles and capacities. Encourage entrepreneurial efforts. Invite the initiation of action research studies or projects benefitting the school.
-
-A still pond, another disturbed by a fallen leaf, yet another with multiple ripples and varying velocities, until finally a living ocean, dynamic, interacting with the broader environment-these images are intended to convey the increasing complexities of the inner lives of adults on this developmental continuum. The intricacies, although internal, reveal a way of interacting with the surrounding environment. Sensitive coaches, mindful of the developmental nature of human growth, without judgment and with understanding, seek to meet coachees where they are and support them in their developmental journeys.

@@ -1,3 +1,0 @@
-## The Maps of the Planning and Reflecting Conversations
-
-I n this chapter we relate recent findings in cognitive neurology as we describe the basic structures and variations of Cognitive Coaching processes, and we elaborate on two of the four mental maps that guide the coach's interactions. Examples of conversations are presented in videos to illustrate the process in action. We also offer suggestions on how to get started and how to find time to implement the coaching process.

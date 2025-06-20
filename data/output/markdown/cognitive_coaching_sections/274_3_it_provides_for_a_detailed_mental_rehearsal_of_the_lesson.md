@@ -1,3 +1,0 @@
-## 3. It Provides for a Detailed Mental Rehearsal of the Lesson
-
-As teachers talk with coaches about their lessons, they refine strategies, discover potential flaws in their original thinking, and anticipate decisions they may need to make in the heat of the moment. Specific questions in the planning conversation can spark this mental rehearsal, promote metacognition, and prepare teachers with a repertoire of strategies for the lesson ahead-for example, 'How will you know that your strategy is working?' or 'How will you know when it is time to move into the activity portion of the lesson?'

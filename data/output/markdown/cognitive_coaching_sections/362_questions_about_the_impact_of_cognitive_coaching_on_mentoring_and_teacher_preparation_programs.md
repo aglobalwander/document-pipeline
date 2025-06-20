@@ -1,3 +1,0 @@
-## Questions about the Impact of Cognitive Coaching on Mentoring and Teacher Preparation Programs
-
-Researchers could also conduct additional studies on the use of Cognitive Coaching in mentoring and teacher preparation programs. If teacher candidates received Cognitive Coaching training in their teacher training program, how might that enhance their student teaching experience? How might that impact the length of time they remain in the teaching profession? If time were provided for student teachers to coach each other, how might their practice improve? How might the success of student teachers who had Cognitive Coaching training and subsequent coaching compare with the success of student teachers who did not receive training in Cognitive Coaching?

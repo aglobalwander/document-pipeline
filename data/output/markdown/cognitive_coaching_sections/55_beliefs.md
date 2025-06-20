@@ -1,3 +1,0 @@
-## Beliefs
-
-Cognitive Coaches believe that all behavior is determined by a person's perceptions and that a change in perception and thought is a prerequisite to a change in behavior. They also believe that human beings construct their own meaning through reflecting on experience and through interactions with others. They have optimism that all human beings have the capacity to continue developing their intellect throughout their lifetimes.

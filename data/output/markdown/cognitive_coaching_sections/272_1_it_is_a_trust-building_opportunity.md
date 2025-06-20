@@ -1,5 +1,0 @@
-## 1. It Is a Trust-Building Opportunity
-
-Learning cannot occur without a foundation of trust, and establishing and maintaining this trust is one of the coach's primary goals. To this end, the colleague, or teacher, controls the planning conversation agenda. In the planning conversation, the teacher suggests the time for a classroom visit, specifies which data should be collected during the observation, describes how the data should be recorded, and even chooses where the coach will sit, stand, or move about in the classroom. These specifics are especially important in the early stages of a coaching relationship. (The significance and skills of building trust are expanded in chapter 6.) Suffice it to say here that conversations trigger physical and emotional changes in the brain that either open you up or close you down (Glaser 2014). Grimm, Kaufman, and Doty (2014) note that typical approaches to observation often serve the observer, not the teacher. Ideally the teacher identifies the focus of the observation and develops a question about which she/he wants
-
-to know more.

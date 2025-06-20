@@ -1,3 +1,0 @@
-## 2. It Focuses the Coach's Attention on the Teacher's Goals
-
-Art was once leaving a school when he peeked into a classroom where the students were being especially loud. He saw children jumping on the desks, running around the room, and yelling and screaming. Alarmed, he hurried to the principal's office: 'You'd better get down to Room 14! Those kids are going wild and the teacher has lost control!' The principal calmly assured him, 'Don't worry. They're practicing the school play. That's the riot scene.' Without knowing a teacher's objectives or plan, an observer can make entirely incorrect inferences. Coaches cannot know what to look for in an observation unless they have met with the teacher before a classroom visit.

@@ -1,3 +1,0 @@
-## Collaborating
-
-Collaborate comes from 'co-labor.' Collaboration involves people with different resources working together as equals to achieve goals. Thus, teacher and support provider plan, reflect, or problem solve together. Both are learners, offering ideas, listening deeply to one another, and creating new approaches toward student-centered outcomes. Both bring information to the interaction. Goals may come from a coaching question or from the expert perspective of a consulting voice. Because the purposes of collaboration are to learn with and from one another, to create new practices and ideas, and to experiment and share results, collaboration is consistent with the goal of self-directed learning.

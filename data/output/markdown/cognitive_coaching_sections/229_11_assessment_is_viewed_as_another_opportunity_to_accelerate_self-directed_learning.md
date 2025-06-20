@@ -1,7 +1,0 @@
-## 11. Assessment Is Viewed as Another Opportunity to Accelerate Self-Directed Learning
-
-In the constructivist environment, what matters most is whether the inhabitants are learning to become increasingly more self-managing, selfmonitoring, and self-modifying. Constructivists help others design diverse ways of gathering, organizing, and reporting evidence of continual learning and meaning making.
-
-In the current politics of education, the key to school success is higher test scores. Most states in the United States have developed standards for learning. Many have implemented new assessments tied to these standards and linked high school graduation to passage of these new assessments; others are beginning to link teacher evaluation and even merit pay to increases in test scores. These educational practices shift the focus toward the transmission of test-related information and judging teachers on how well their students score. In such a climate, it is difficult to embrace and sustain constructive practices designed for individual meaning making.
-
-The intent of constructivist assessment is to support others in becoming self-managing, self-monitoring, and self-modifying. Self-knowledge is the first step in self-assessment. Much of the work of self-evaluation is developed through the metacognitive process of reflection. This process of self-assessment provides internal and external data that promotes one's own learning and growth (Costa and Kallick 2014, 100-18).

@@ -1,3 +1,0 @@
-## APPENDICES
-
-<!-- image -->

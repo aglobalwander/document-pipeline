@@ -1,9 +1,0 @@
-## Mediator's Questions for Self-Management
-
-Furthermore, the coach poses questions so that during the event, the planner's perceptions will be alerted to cues that would indicate whether the strategic plan is working or not and to assist in the conscious application of metacognitive strategies for deciding to alter the plan and select alternatives (see table 4.2).
-
-Table 4.2. Mediator's Questions for Self-Monitoring
-
-|                                                                                                                                                                                                               | teaching behaviors that you are striving to perfect? guide                                                                                                                                              |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Establish metacognitive strategies to alert the perceptions for in-the-moment indicators of whether the strategic plan is working or not and to assist in the decision-making processes of altering the plan. | What are some of your predictions about how this lesson will turn out? What cues will you be aware of as indicators that this lesson is working? What alternatives do you have in mind for this lesson? |

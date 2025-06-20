@@ -1,3 +1,0 @@
-## Comprehension
-
-The only time one needs to know extensive details about a problem is when one intends to be the problem solver. Since the coach's intentions are to support the other person in clarifying goals and to locate the internal resources to meet those goals, the coach doesn't need to know the history, background, context, and sources of the problem. Process knowledge is paramount for the coach; specific information about the situation is secondary.

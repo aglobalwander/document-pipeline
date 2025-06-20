@@ -1,5 +1,0 @@
-## 12. Modeling
-
-Imitation and emulation are the most basic forms of constructivist learning. Teachers, coaches, parents, and administrators realize the importance of their own display of desirable learning behaviors in the presence of others with whom they work. For example, if coaches want their colleagues to value inquiry, then they must also value it; if teachers pose questions with the orientation that there is only one correct response, then how can students be expected to develop either the interest in or the
-
-analytic skills necessary for more diverse modes of inquiry? In the day-to-day events and when problems arise in schools, classrooms, and homes, the same types of constructivist learning listed above are employed. Without this consistency, there is likely to be a credibility gap (Costa and Kallick 2008, 283-84).

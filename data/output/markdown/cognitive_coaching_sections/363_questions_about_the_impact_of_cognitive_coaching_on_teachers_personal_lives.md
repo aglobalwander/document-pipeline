@@ -1,5 +1,0 @@
-## Questions about the Impact of Cognitive Coaching on Teachers' Personal Lives
-
-Researchers could also conduct studies on the impact of Cognitive Coaching on teachers' personal lives. How might relationships with spouses, partners, or significant others change? In what ways could teachers' relationships with their children change? Might relationships change in different ways depending on the ages of the teachers' children? What could be some trends in how teachers' friendships outside school might change? Which of the Cognitive Coaching maps and tools do teachers use most frequently in their personal lives?
-
-Other researchers might examine the teacher as a person. What impact could Cognitive Coaching have on teacher emotions, such as happiness, sadness, enthusiasm, or anger? How might Cognitive Coaching impact teacher curiosity and creativity? What might be some changes in teacher self-concept? What changes could occur in teacher identity and how teachers see themselves? What might be some possible changes in teachers' abilities, desires, and goal setting?

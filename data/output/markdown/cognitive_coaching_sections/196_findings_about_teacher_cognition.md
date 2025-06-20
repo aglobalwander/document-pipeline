@@ -1,5 +1,0 @@
-## FINDINGS ABOUT TEACHER COGNITION
-
-Many researchers have contributed to an understanding of teacher thought and the stages of cognitive complexity that adults can attain. Cognitive Coaching is a process of engaging, enhancing, mediating, and the intellectual functions of teaching, or, as Marzano (2011, 90-91) would describe it, a cognitive system informing teaching. As we shall see, however, the intellectual interrelates with nonlinguistic ways of knowing, including the emotions, biases, perceptions, and reflexes (Bargh 2014). What teachers think affects how they behave, and their behavior directly affects student achievement. Coaches cannot achieve their goals without some understanding of the processes of teacher thinking: how teachers reason as they plan for, execute, and evaluate instruction.
-
-Through research on teacher cognition, we have gained valuable insights into what teachers think about as they teach. Research on human information processing, emotional intelligence, effective problem solving, human intelligence, brain capacity, and brain function has revealed many

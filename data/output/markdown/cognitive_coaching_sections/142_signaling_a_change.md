@@ -1,9 +1,0 @@
-## Signaling a Change
-
-When the teacher knows which function is driving an interaction, he/she can respond congruently. The greatest risk of confusion comes when a support provider decides to shift from one function to another. Here are
-
-some moves a coach might make. First, seek permission to change functions: 'I've been coaching. I'd like to shift roles and offer some ideas to consider. Then you decide for yourself which might be useful. Okay?'
-
-Then the coach physically moves, in essence creating a visual paragraph for a new beginning of the conversation. She/he pauses and silently uses a frozen gesture, which initiates a neutral zone in which the teacher mentally separates from the coaching function. When the coach sees that the teacher's breathing is regular and unlabored, she/he presumes that the teacher has granted a transition into consulting (Grinder 2001).
-
-Underlying the importance of being sensitive to the teacher, Boyatzis and Jack (2010) and Boyatzis, Smith, and Beveridge (2013) compared coaching that focused on a person's goals to models that were critical and discovered how coaching choices affect teacher cognition. When selfdirected models were used, fMRI results revealed positive emotions and openness to coaching. Neurotransmitters increased the accuracy of perceptions and cognitive functioning. More critical coaching processes showed evidence of the opposite: defensiveness and decreased capacity for visioning and problem solving. Additionally, when the conversations focused on the person's goals rather than on another's judgments, five to seven days later the parts of the brain that are used for perceptual accuracy and emotional openness were activated, even when discussing difficult topics. Our assumption is that consulting can be perceived as critical if the stage is not set for autonomy and respect when entering the process (Rock 2008).

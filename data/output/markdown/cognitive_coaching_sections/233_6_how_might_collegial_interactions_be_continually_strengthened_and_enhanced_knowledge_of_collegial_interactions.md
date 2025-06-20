@@ -1,9 +1,0 @@
-## 6. How Might Collegial Interactions Be Continually Strengthened and Enhanced? (Knowledge of Collegial Interactions)
-
-In high-performing schools, faculty collaboration is the norm (Garmston
-
-and Wellman 2013). Many studies demonstrate the unusual potency of teachers' collaborative action on student learning. Seashore-Lewis, Marks, and Kruse (1996) found that collective responsibility for student learning emerged and schoolwide achievement gains were made when five conditions were present and interacting with one another: (1) a shared sense of purpose, (2) a collective focus on student learning, (3) collaborative activities, (4) 'deprivatized practice,' and (5) reflective dialogue.
-
-Many school renewal efforts today regard trust, collaboration, networking, and disaggregated democratic governance of instructional issues as an important factor in their success. They are committed to shared leadership in determining what students should be able to know and do, how students will demonstrate those competencies, and to continuous action research to test and refine teaching practices. Such agile schools show sustained improvements in student learning over a period of years.
-
-Teaching is one of the most private professions. For most of its history, teaching has been something that a person does in isolation from other teachers. As long as teachers work in isolation, they do not need a high degree of skill in collective problem solving, consensus seeking, or the technical and interpersonal aspects for collectively analyzing student work. This reality is changing. The work of teacher is now being conceived as networking and collaborating with other teachers, support staff, and community members for the benefit of students (Garmston and Wellman 2013).

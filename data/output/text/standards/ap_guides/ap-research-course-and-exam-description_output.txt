@@ -1,0 +1,2478 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+AP ® Research
+COURSE AND EXAM DESCRIPTION
+INCLUDES Curriculum framework Instructional section Assessment overview Student handouts
+Effective
+Fall 2020
+
+=== Page 2 ===
+IMPORTANT INFORMATION ABOUT AP RESEARCH:
+In order to offer AP Research, schools must be authorized
+by the AP Program as a participating AP Capstone school
+and teachers must attend required summer professional
+development. AP Research may only be offered as the second
+course in the AP Capstone sequence, following AP Seminar.
+See collegeboard.org/apcapstone for details.
+Effective Fall 2020
+
+=== Page 3 ===
+THIS PAGE IS INTENTIONALLY LEFT BLANK.
+
+=== Page 4 ===
+AP COURSE AND EXAM DESCRIPTIONS ARE UPDATED PERIODICALLY
+Please visit AP Central (apcentral.collegeboard.org) to determine whether
+a more recent course and exam description is available.
+AP ® Research
+COURSE AND EXAM DESCRIPTION
+Part of the AP Capstone™ Program
+Revised Edition
+Effective
+Fall 2020
+
+=== Page 5 ===
+About College Board
+College Board is a mission-driven not-for-profit organization that connects students to college success and
+opportunity. Founded in 1900, College Board was created to expand access to higher education. Today, the
+membership association is made up of over 6,000 of the world’s leading educational institutions and is dedicated
+to promoting excellence and equity in education. Each year, College Board helps more than seven million students
+prepare for a successful transition to college through programs and services in college readiness and college
+success—including the SAT® and the Advanced Placement® Program. The organization also serves the education
+community through research and advocacy on behalf of students, educators, and schools.
+For further information, visit collegeboard.org.
+AP Equity and Access Policy
+College Board strongly encourages educators to make equitable access a guiding principle for their AP® programs
+by giving all willing and academically prepared students the opportunity to participate in AP. We encourage the
+elimination of barriers that restrict access to AP for students from ethnic, racial, and socioeconomic groups that
+have been traditionally underrepresented. Schools should make every effort to ensure their AP classes reflect
+the diversity of their student population. College Board also believes that all students should have access to
+academically challenging coursework before they enroll in AP classes, which can prepare them for AP success. It is
+only through a commitment to equitable preparation and access that true equity and excellence can be achieved.
+Fourth Edition
+© 2020 College Board. College Board, Advanced Placement, AP, AP Central, and the acorn logo are registered trademarks
+of College Board. All other products and services may be trademarks of their respective owners.
+Visit College Board on the web: collegeboard.org.
+AP Capstone Program
+
+=== Page 6 ===
+Contents
+
+v	 Preface
+
+vi	 Acknowledgments
+
+1	 About AP
+
+1	 AP Course Development
+
+1	 Enrolling Students: Equity and Access
+
+1	 Offering AP Courses: The AP Course Audit
+
+2	 How the AP Program Is Developed
+
+2	 How AP Exams Are Scored
+
+2	 Using and Interpreting AP Scores
+
+4	 AP Classroom, Digital Activation, and AP Digital Portfolio
+
+4	 AP Classroom
+
+4	 Digital Activation
+
+5	 AP Digital Portfolio
+
+5	 Digital Submission for AP Capstone
+
+6	 About the AP Capstone™ Program
+
+6	 Research Base
+
+7	 The AP Capstone Diploma™ and AP Seminar and Research Certificate™
+
+8	 AP Capstone Pedagogical Framework
+
+8	 Overview of the Pedagogical Framework
+
+9	 AP Capstone Reasoning Processes
+
+9	 AP Research Course Transferable Skills and Proficiencies 10	 AP Research Course Description 11	 AP Research Curricular Requirements 12	 AP Research Curriculum Framework 12	 Overview of the Curriculum Framework
+13	 Big Idea 1: Question and Explore
+19	 Big Idea 2: Understand and Analyze
+22	 Big Idea 3: Evaluate Multiple Perspectives
+23	 Big Idea 4: Synthesize Ideas
+27	 Big Idea 5: Team, Transform, and Transmit 33	 AP Research Instructional Approaches 33	 Organizing the Course 37	 Teaching the Skills 41	 Formative Assessments 43	 Selecting and Accessing Resources
+43	 AP Capstone™ Policy on Plagiarism and Falsification or Fabrication of Information 43	 Engaging Community Members
+44	 Reviewing Student Research Proposals for Ethical Considerations
+44	 Participating in External Research Presentations and Competition Platforms
+AP Capstone Program iii
+AP Research Course and Exam Description
+
+=== Page 7 ===
+45	 Preparing the Process and Reflection Portfolio (PREP) 47	 AP Research Assessment Overview 47	 AP Research Through-Course Performance Task 51	 Role of the Teacher in Performance Tasks 52	 Role of Expert Advisers in the Academic Paper 53	 Reproducibles for Students 54	 Inquiry Proposal Form
+56	 AP Research Performance Task: Academic Paper and Presentation and Oral Defense 56	 Task Overview
+56	 Task Directions (Proposal Process, Academic Paper, Presentation and Oral Defense) 59	 Oral Defense Questions 60	 Role of the Teacher in Performance Tasks 61	 Role of Expert Advisers in the Academic Paper
+62	 AP Capstone™ Policy on Plagiarism and Falsification or Fabrication of Information 63	 AP Capstone Tips for Students 64	 AP Research Glossary 66	 About the Appendixes
+67	 Appendix A: AP Research: QUEST Framework Essential Questions
+68	 Appendix B: AP Research Timeline 69	 Contact Us
+AP Capstone Program
+AP Research Course and Exam Description iv
+
+=== Page 8 ===
+Preface
+This version of the AP Research Course and Exam Description is effective beginning in fall 2020.
+v
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 9 ===
+Acknowledgments
+College Board would like to acknowledge the following committee members and reviewers for their assistance with
+and commitment to the development of this curriculum and assessment. All individuals and their affiliations listed were current as of 2014.
+Members of the AP Research Curriculum and Assessment
+Development Committee
+Michael Dorff, Brigham Young University, Provo, UT
+Liz Dawes Duraisingh, Harvard Graduate School of Education, Cambridge, MA
+Greg Henkelman, Strathcona High School, Edmonton, CN
+Ivonne Chand O’Neal, The John F. Kennedy Center for the Performing Arts, Washington, DC
+Lynnette Overby, University of Delaware, Newark, DE
+Kenneth Sacks, Brown University, Providence, RI
+Jenny Olin Shanahan, Bridgewater State University, Bridgewater, MA
+Kelly Stromberg, North Central High School, Spokane, WA
+Gregory Taylor, Purchase College, SUNY, Purchase, NY
+Matthew Krain, The College of Wooster, Wooster, OH
+Members of the AP Research Curriculum Review Committee
+Whitney Arnold, University of California Los Angeles, Los Angeles, CA
+Michael Dorff, Brigham Young University, Provo, UT
+Liz Dawes Duraisingh, Harvard Graduate School of Education, Cambridge, MA
+Greg Henkelman, Strathcona High School, Edmonton, CN
+Dave Hodul, Bishop O’Dowd High School, Oakland, CA
+Carmen Martinet, Barbara Goleman Senior High School, Miami Lakes, FL
+Ivonne Chand O’Neal, The John F. Kennedy Center for the Performing Arts, Washington, DC
+Brian O’Neal, Montgomery College, Rockville, MD
+Sara Orel, Truman State University, Kirksville, MO
+Lynnette Overby, University of Delaware, Newark, DE
+Kenneth Sacks, Brown University, Providence, RI
+Jenny Olin Shanahan, Bridgewater State University, Bridgewater, MA
+Kelly Stromberg, North Central High School, Spokane, WA
+Gregory Taylor, Purchase College, SUNY, Purchase, NY
+Nicole Wallack, Columbia University, New York, NY
+Gregory Young, Montana State University, Bozeman, MT
+AP Capstone Curriculum and Assessment Development Team
+Rachel Bettley, Senior Director, AP Capstone Curriculum Development
+Serena Magrogan, Senior Director, AP Science Curriculum and Content Development
+Bianca Peart, Director, AP Capstone Program
+Rushi Sheth, Executive Director, AP Capstone Program
+SPECIAL THANKS Jill Kushner, Thomas Matts, Kristina Scholz, and John R. Williamson vi
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 10 ===
+About AP
+College Board’s Advanced Placement® Program (AP®)
+enables willing and academically prepared students to
+pursue college-level studies—with the opportunity to
+earn college credit, advanced placement, or both—while
+still in high school. Through AP courses in 38 subjects,
+each culminating in a challenging exam, students learn
+to think critically, construct solid arguments, and see
+many sides of an issue—skills that prepare them for
+college and beyond. Taking AP courses demonstrates
+to college admission officers that students have sought
+the most challenging curriculum available to them, and
+research indicates that students who score a 3 or higher
+on an AP Exam typically experience greater academic
+success in college and are more likely to earn a college degree than non-AP students. Each AP teacher’s
+syllabus is evaluated and approved by faculty from some
+of the nation’s leading colleges and universities, and AP
+Exams are developed and scored by college faculty and
+experienced AP teachers. Most four-year colleges and
+universities in the United States grant credit, advanced
+placement, or both on the basis of successful AP Exam
+scores; more than 3,300 institutions worldwide annually receive AP scores.
+AP Course Development
+In an ongoing effort to maintain alignment with best
+practices in college-level learning, AP courses and
+exams emphasize challenging, research-based curricula aligned with higher education expectations.
+Individual teachers are responsible for designing their
+own curriculum for AP courses, selecting appropriate
+college-level readings, assignments, and resources. This
+course and exam description presents the content and
+skills that are assessed in the AP Research course.
+Enrolling Students: Equity and Access
+College Board strongly encourages educators to
+make equitable access a guiding principle for their
+AP programs by giving all willing and academically prepared students the opportunity to participate in AP. We encourage the elimination of barriers
+that restrict access to AP for students from ethnic, racial, and socioeconomic groups that have been
+traditionally underserved. College Board also believes
+that all students should have access to academically
+challenging coursework before they enroll in AP classes, which can prepare them for AP success. It is only through a commitment to equitable preparation and
+access that true equity and excellence can be achieved.
+Offering AP Courses: The AP
+Course Audit
+The AP Program unequivocally supports the principle
+that each school implements its own curriculum that
+will enable students to develop the understandings and skills described in the course framework.
+The AP Program has a short list of curricular and
+resource requirements that must be fulfilled before a
+school can label a course “Advanced Placement” or “AP.”
+Schools wishing to offer AP courses must participate
+in the AP Course Audit, a process through which AP
+teachers’ course materials are reviewed by college
+faculty. The AP Course Audit was created to provide
+teachers and administrators with clear guidelines on
+curricular and resource requirements for AP courses
+and to help colleges and universities validate courses
+marked “AP” on students’ transcripts. This process
+ensures that AP teachers’ courses meet or exceed the
+curricular and resource expectations that college and
+secondary school faculty have established for college level courses.
+The AP Course Audit form is submitted by the AP teacher
+and the school principal (or designated administrator) to
+confirm awareness and understanding of the curricular
+and resource requirements. A syllabus or course outline,
+detailing how course requirements are met, is submitted by the AP teacher for review by college faculty.
+Please visit collegeboard.org/apcourseaudit for more
+information to support the preparation and submission of materials for the AP Course Audit.
+1
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 11 ===
+How the AP Program
+Is Developed
+The scope of content for an AP course and exam is
+derived from an analysis of hundreds of syllabi and
+course offerings of colleges and universities. Using
+this research and data, a committee of college faculty and expert AP teachers work within the scope of
+the corresponding college course to articulate what students should know and be able to do upon the completion of the AP course. The resulting course framework is the heart of this course and exam
+description and serves as a blueprint of the content and skills that can appear on an AP Exam.
+The AP Test Development Committees are responsible for developing each AP Exam, ensuring the exam
+questions are aligned to the course framework. The AP
+Exam development process is a multiyear endeavor; all
+AP Exams undergo extensive review, revision, piloting,
+and analysis to ensure that questions are accurate, fair,
+and valid, and that there is an appropriate spread of difficulty across the questions.
+Committee members are selected to represent a variety
+of perspectives and institutions (public and private,
+small and large schools and colleges), and a range of
+gender, racial/ethnic, and regional groups. A list of each subject’s current AP Test Development Committee
+members is available on apcentral.collegeboard.org.
+Throughout AP course and exam development, College
+Board gathers feedback from various stakeholders in both secondary schools and higher education
+institutions. This feedback is carefully considered to
+ensure that AP courses and exams are able to provide
+students with a college-level learning experience and
+the opportunity to demonstrate their qualifications for advanced placement or college credit.
+How AP Exams Are Scored
+Please note: The information below is a general overview of how AP Exams are scored. For course specific information, please visit apcentral.
+collegeboard.org/courses.
+The exam scoring process, like the course and exam development process, relies on the expertise of both AP teachers and college faculty. While multiple-choice questions are scored by machine, the free-response questions and through-course
+performance assessments, as applicable, are scored by
+thousands of college faculty and expert AP teachers.
+Most are scored at the annual AP Reading, while a small
+portion is scored online. All AP Readers are thoroughly
+trained, and their work is monitored throughout the
+Reading for fairness and consistency. In each subject, a highly respected college faculty member serves
+as Chief Faculty Consultant and, with the help of AP
+Readers in leadership positions, maintains the accuracy
+of the scoring standards. Scores on the free-response
+questions and performance assessments are weighted
+and combined with the results of the computer-scored multiple-choice questions, and this raw score is
+converted into a composite AP score on a 1–5 scale.
+AP Exams are not norm-referenced or graded on a
+curve. Instead, they are criterion-referenced, which
+means that every student who meets the criteria for
+an AP score of 2, 3, 4, or 5 will receive that score, no
+matter how many students that is. The criteria for the number of points students must earn on the AP
+Exam to receive scores of 3, 4, or 5—the scores that
+research consistently validates for credit and placement
+purposes—include:
+§§ The number of points successful college students earn when their professors administer AP Exam questions to them.
+§§ The number of points researchers have found to
+be predictive that an AP student will succeed when
+placed into a subsequent, higher-level college course.
+§§ Achievement-level descriptions formulated by college faculty who review each AP Exam question.
+Using and Interpreting
+AP Scores
+The extensive work done by college faculty and AP teachers in the development of the course and exam and throughout the scoring process ensures
+that AP Exam scores accurately represent students’
+achievement in the equivalent college course. Frequent
+and regular research studies establish the validity of AP
+scores as follows:
+AP
+Score
+Credit
+Recommendation
+College Grade
+Equivalent 5
+Extremely well qualified
+A 4
+Well qualified
+A–, B+, B 3
+Qualified
+B–, C+, C 2
+Possibly qualified n/a 1
+No recommendation n/a 2
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 12 ===
+While colleges and universities are responsible for
+setting their own credit and placement policies, most
+private colleges and universities award credit and/
+or advanced placement for AP scores of 3 or higher.
+Additionally, most states in the U.S. have adopted
+statewide credit policies that ensure college credit for scores of 3 or higher at public colleges and
+universities. To confirm a specific college’s AP credit/ placement policy, a search engine is available at apstudent.org/creditpolicies.
+BECOMING AN AP READER
+Each June, thousands of AP teachers and college
+faculty members from around the world gather for seven
+days in multiple locations to evaluate and score the
+free-response sections of the AP Exams. Ninety-eight
+percent of surveyed educators who took part in the AP
+Reading say it was a positive experience.
+There are many reasons to consider becoming an AP
+Reader, including opportunities to:
+§§ Bring positive changes to the classroom:
+Surveys show that the vast majority of returning AP
+Readers—both high school and college educators— make improvements to the way they teach or score because of their experience at the AP Reading.
+§§ Gain in-depth understanding of AP Exam and AP
+scoring standards: AP Readers gain exposure to the
+quality and depth of the responses from the entire
+pool of AP Exam takers, and thus are better able to assess their students’ work in the classroom.
+§§ Receive compensation: AP Readers are compensated for their work during the Reading.
+Expenses, lodging, and meals are covered for Readers who travel.
+§§ Score from home: AP Readers have online distributed scoring opportunities for certain subjects. Check collegeboard.org/apreading for details.
+§§ Earn Continuing Education Units (CEUs): AP
+Readers earn professional development hours and CEUs that can be applied to PD requirements by states, districts, and schools.
+How to Apply
+Visit collegeboard.org/apreading for eligibility
+requirements and to start the application process.
+3
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 13 ===
+AP Classroom,
+Digital Activation, and AP Digital Portfolio
+AP Classroom
+AP Classroom is a dedicated online platform designed to support teachers and students throughout
+their AP experience. The platform provides a variety of powerful resources and tools to provide yearlong support to teachers and students.
+REQUIRED ONLINE SCORING TRAINING
+Each year, AP Capstone teachers must take and pass certification tests in order to submit scores for
+the presentation components of the performance tasks. This annual training is found in the Professional
+Learning section of AP Classroom. Optional training modules are also available for other components of the assessment.
+Digital Activation
+AP teachers, students and coordinators must complete the digital activation process at the start of
+the school year, which provides access to all AP resources and gathers students’ exam registration information online.
+While the digital activation process takes a short time for teachers, students, and AP Coordinators to
+complete, overall it helps save time and provides the following additional benefits:
+§§ Access to AP resources and supports: Teachers have access to resources specifically designed to
+support instruction throughout the school year as soon as activation is complete.
+§§ Student registration labels: For each student included in an exam order, schools will receive a set
+of personalized AP ID registration labels, which replaces the AP student pack. The AP ID connects
+a student’s exam materials with the registration information they provided during digital activation,
+eliminating the need for preadministration sessions and reducing time spent bubbling on exam day.
+§§ Targeted Instructional Planning Reports: AP teachers will get Instructional Planning Reports (IPRs)
+that include data on each of their class sections automatically rather than relying on special codes optionally bubbled in on exam day.
+Note: New AP Capstone teachers must attend required summer professional development and have their
+AP Course Audit form approved in order to start the digital activation process and gain access to AP
+Classroom and the AP Digital Portfolio.
+4
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 14 ===
+AP Digital Portfolio
+AP Capstone students must submit written performance tasks as final and teachers must enter presentation scores
+in the AP Digital Portfolio by the April 30 11:59 p.m. ET deadline. These tasks must be completed by the deadline in
+order for student work to be sent to College Board for scoring.
+Students’ submitted performance tasks will be sent for scoring only if the AP coordinator has ordered an AP Seminar
+or AP Research Exam for them. When students enroll in an AP Seminar or AP Research class section as part of the
+digital activation process, their enrollment will automatically carry over to the AP Digital Portfolio.
+Full instructions for navigating the AP Digital Portfolio are available in the AP Capstone teacher and student user
+guides found on AP Central as well as in the Help section within the AP Digital Portfolio.
+Digital Submission for AP Capstone
+AP Capstone teachers, students, and AP coordinators interact with the AP Digital Portfolio throughout the school
+year. The diagram below illustrates the roles and major tasks in the process.
+1 2 6 4 8 9 3 7 5
+Digital Submission for AP Capstone
+Completed in My AP
+Completed in AP Digital Portfolio
+AP coordinator signs in to myap.collegeboard.org at the start of school year
+and creates AP Seminar and AP Research class sections. The coordinator notifies teachers when class sections have been created.
+Teachers sign in to myap.collegeboard.org and get the join code for each class
+section they teach to distribute to students during class.
+Students sign in to myap.collegeboard.org with College Board accounts and
+enroll in an AP Seminar or AP Research class section using the join code provided by
+their teacher or AP coordinator. If instructed to do so by the AP coordinator, students also indicate their exam registration in My AP.
+AP coordinator submits the exam order for all students included in the exam roster in AP Registration and Ordering.
+Teacher creates AP Seminar student teams for team assignments.
+Teacher distributes College Board–provided source material to AP Seminar students.
+Students submit final written performance tasks as final in the AP Digital Portfolio
+no later than April 30 at 11:59 p.m. ET or an earlier deadline set by their teacher.
+Teacher submits scores for student presentations in the AP Digital Portfolio by
+April 30 at 11:59 p.m. ET.
+AP coordinator verifies that all presentations have been scored and that all
+students have submitted their written performance task components as final
+in the AP Digital Portfolio by April 30 at 11:59 p.m. ET.
+Performance tasks and scores for all students that the coordinator has ordered
+an exam for will be automatically transmitted to College Board at the deadline.
+1 2 7 5 9 4 8 6 10 3 5
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 15 ===
+About the AP Capstone™
+Program
+AP Capstone™ is an innovative diploma program from College Board that equips students with the independent
+research, collaborative teamwork, and communication skills that are increasingly valued by colleges. AP Capstone
+is built on the foundation of two AP® courses—AP Seminar and AP Research—and is designed to complement and
+enhance the in-depth, discipline-specific study experienced in other AP courses.
+In AP Seminar, students investigate real-world issues from multiple perspectives, gathering and analyzing information
+from various sources in order to develop credible and valid evidence-based arguments. AP Seminar is a prerequisite
+for AP Research. Completing AP Seminar and all its required assessment components is necessary for students
+to develop the skills to be successful in AP Research. In AP Research, students cultivate the skills and discipline
+necessary to conduct independent research and inquiry in order to produce and defend their scholarly work.
+The AP Capstone program aims to empower students by:
+§§ engaging them with rigorous college-level curricula focused on the skills necessary for successful college completion;
+§§ extending their abilities to synthesize information from multiple perspectives and apply skills in new situations and cross-curricular contexts;
+§§ enabling them to collect and analyze information with accuracy and precision;
+§§ cultivating their abilities to craft, communicate, and defend evidence-based arguments; and
+§§ providing opportunities for them to practice disciplined and scholarly research skills while exploring relevant
+topics that appeal to their interests and curiosity.
+Research Base
+The big ideas and learning objectives in the AP Capstone program reflect the core academic skills needed for college,
+career, and life readiness identified by leading educational organizations and College Board membership, including
+the following:
+§§ The American Association of Colleges and Universities (AAC&U), College Learning for the New Global Century,
+Essential Learning Outcomes
+§§ Advanced Placement Program, skills and practices identified in AP courses
+§§ The Partnership for 21st Century Skills (P21), A Framework for 21st Century Learning
+§§ Association of College and Research Libraries, Information Literacy Competency Standards for Higher Education
+§§ Council of Writing Program Administrators, Framework for Success in Postsecondary Writing 6
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 16 ===
+The AP Capstone Diploma™ and AP Seminar and Research
+Certificate™
+Students who earn scores of 3 or higher in AP Seminar and AP Research and on four additional AP Exams of their choosing will receive the AP Capstone Diploma™.
+Students who earn scores of 3 or higher in AP Seminar and AP Research but not on four additional AP Exams will receive the AP Seminar and Research Certificate™.
+AP Capstone
+DiplomaTM
+AP Seminar
+Year 1
+Earn score of 3 or higher
+AP Research
+Year 2
+Earn score of 3 or higher 4 AP Exams
+Throughout High School
+Earn score of 3 or higher
+AP Seminar and Research
+CertificateTM 7
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 17 ===
+AP Capstone Pedagogical
+Framework
+Overview of the Pedagogical Framework
+Throughout the program, students consider and evaluate multiple points of view to develop their own perspectives
+on complex issues and topics through inquiry and investigation. The AP Capstone program provides students with
+a framework that allows them to develop, practice, and hone their critical and creative thinking skills as they make
+connections between various issues and their own lives. Teachers should help students understand that this process
+is recursive, not linear. The recursive nature of this process allows students to go back and forth between the different
+stages of inquiry as they encounter new information.
+8
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 18 ===
+AP Capstone Reasoning Processes
+The AP Capstone program allows students to develop and practice reasoning processes that help them to make
+intentional, strategic decisions. It is important for teachers to understand these reasoning processes, which are embedded within the learning objectives:
+§§ Situating — being aware of the context of one’s own as well as others’ perspectives, realizing that individual bias can lead to assumptions;
+§§ Choosing — making intentional and purposeful choices, realizing that choices have both intended and unintended consequences;
+§§ Defending — being able to explain and justify personal choices, logic, line of reasoning, and conclusions; and
+§§ Connecting — seeing intersections within and/or across concepts, disciplines, and cultures.
+AP Research Course Transferable Skills and Proficiencies
+The AP Capstone reasoning processes are also embedded in the AP Research course transferable skills and
+proficiencies. The transferable skills and proficiencies are high-level descriptions of the understanding, knowledge,
+and skills that students should be able to apply in novel situations long after completing the AP Research course.
+Transferable
+Skills
+Produce
+Scholarly Work
+Employ
+Research
+Practices
+Analyze
+Sources and Evidence
+Understand
+Context and Perspective
+Communicate (interpersonal and intrapersonal)
+Reasoning
+Processes
+Choose
+Connect
+Defend
+Choose
+Situate
+Choose
+Situate
+Connect
+Situate
+Choose
+Defend
+Proficiencies
+ESA  Establish
+Argument
+Demonstrating the significance of one’s research by explaining the rationale behind the choices made in the research process and logically connecting the findings to one’s conclusions or new understandings
+SUE  Select and Use
+Evidence
+Evaluating the significance of the findings, results, or product to the purpose or goal of one’s inquiry and strategically choosing such evidence to effectively support claims
+RED
+Research
+Design
+Narrowing a focus of inquiry and identifying an aligned, ethical, feasible approach or method to accomplish the purpose of the research question and/or project goal
+UAA  Understand and Analyze
+Argument
+Analyzing evidence for what is known about one’s topic of inquiry to further narrow (focus) and situate one’s research question or project goal
+ESE  Evaluate
+Sources and Evidence
+Evaluating the credibility, relevance, and significance of sources and evidence to the choices made in the inquiry process
+UAC
+Understand and Analyze
+Context
+Contextualizing the purpose and significance of one’s topic of inquiry within a broader field or discipline
+ENA  Engage Audience
+Choosing and employing effective written and oral communication techniques, considering audience, context and purpose to convey and defend conclusions or new understandings
+APC  Apply Conventions
+Choosing and consistently applying an appropriate citation style and effective conventions of writing
+REF  Reflect
+Identifying challenges, successes, and moments of insight throughout one’s inquiry, which transformed one’s own thinking and reasoning 9
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 19 ===
+AP Research Course Description
+(Note: AP Seminar is a prerequisite for AP Research. Completing AP Seminar and all its required assessment
+components is necessary for students to develop the skills to be successful in AP Research.)
+AP Research, the second course in the AP Capstone experience, allows students to deeply explore an academic
+topic, problem, issue, or idea of individual interest. Students design, plan, and implement a yearlong investigation to
+address a research question. Through this inquiry, they further the skills they acquired in the AP Seminar course by
+learning research methodology, employing ethical research practices, and accessing, analyzing, and synthesizing
+information. Students reflect on their skill development, document their processes, and curate the artifacts of
+their scholarly work through a process and reflection portfolio. The course culminates in an academic paper of
+4,000–5,000 words (accompanied by a performance, exhibit, or product where applicable) and a presentation with an oral defense.
+10
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 20 ===
+AP Research Curricular
+Requirements
+The curricular requirements are the core elements of an AP course. The curriculum framework and supporting
+documents provided during professional development serve as resources to assist teachers in determining the
+appropriate level of evidence to include within their syllabi to meet or exceed the requirements. (All AP Research
+teachers must attend College Board AP Research intensive training prior to their first year of teaching the AP
+Research course.)
+Evidence of the following curricular requirements should be included in the course syllabus developed by the
+teacher and submitted to College Board for review and approval.
+§§ Students develop and apply discrete skills identified in the learning objectives of the enduring understandings within the following five big ideas:
+››
+Question and Explore ››
+Understand and Analyze ››
+Evaluate Multiple Perspectives ››
+Synthesize Ideas ››
+Team, Transform, and Transmit
+§§ Students develop an understanding of ethical research practices and the AP Capstone™ Policy on Plagiarism and Falsification or Fabrication of Information.
+§§ In the classroom and independently (while possibly consulting any expert advisers), students learn and employ
+research and inquiry methods to develop, manage, and conduct an in-depth investigation of an area of personal
+interest, culminating in an academic paper of 4,000–5,000 words that includes the following elements:
+››
+Introduction and Literature Review ››
+Method, Process, or Approach ››
+Results, Product, or Findings ››
+Discussion, Analysis, and/or Evaluation ››
+Conclusion and Future Directions ››
+Bibliography
+§§ Using a process and reflection portfolio (PREP), students document their inquiry processes, communication with
+their teachers and any expert advisers as needed, and reflections on their thought processes. Students have
+regular work-in-progress interviews with their teachers to review their progress and to receive feedback on their scholarly work.
+§§ Students develop and deliver a presentation (using an appropriate medium) and an oral defense to a panel on their research processes, method, and findings.
+11
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 21 ===
+AP Research Curriculum
+Framework
+Overview of the Curriculum Framework
+Based on the Understanding by Design (Wiggins and McTighe) model, this curriculum framework is intended
+to provide a clear and detailed description of the course requirements necessary for student success. This
+conceptualization will guide the development and organization of learning outcomes from general to specific,
+resulting in focused statements about content knowledge and skills needed for success in the course. The
+curriculum framework contains the following structural components:
+§§ The course is organized around five big ideas. Tied to each big idea are several essential questions. These
+are open-ended questions that encourage students to think deeply about a topic, ask additional questions and
+investigate solutions, and develop the deeper conceptual understanding that the course seeks to foster. Teachers
+should communicate to students that these big ideas are not meant to represent a linear progression of research
+processes but instead are a recursive set of ideas and skills that the student researcher will strengthen by the end of the research process.
+§§ Within each big idea are several enduring understandings. These are the long-term takeaways related to the
+big ideas that a student should have after exploring the content and skills. These understandings are expressed
+as generalizations that specify what students will come to understand about the key concepts in the course.
+Enduring understandings are numbered to correspond to each big idea. The enduring understandings for the
+AP Seminar and AP Research courses are the same.
+§§ Linked to each enduring understanding are the corresponding learning objectives. The learning objectives
+articulate what students need to be able to do in order to develop the enduring understandings. The learning
+objectives will become targets of assessment for the course. Learning objectives are numbered to correspond
+with the appropriate big ideas and enduring understandings.
+››
+Learning objectives in italics with a blue shaded background represent those from the AP Seminar course that are not assessed in the AP Research course.
+››
+Learning objectives with a green shaded background are those that do carry over from the AP Seminar
+course and should be used to develop instructional strategies and/or will be formally assessed by the
+summative assessment task components of the AP Research course.
+››
+Learning objectives without a shaded background are unique to the AP Research course.
+§§ For each of the learning objectives, essential knowledge statements describe the facts and basic concepts that
+a student should know and be able to recall in order to demonstrate mastery of the learning objective. Essential
+knowledge components are numbered to correspond with the appropriate big ideas, enduring understandings, and learning objectives.
+››
+Essential knowledge statements in italics with a blue shaded background are those from the AP Seminar
+course that do not carry over into the AP Research course.
+››
+Essential knowledge statements with a green shaded background are those that do carry over from the
+AP Seminar course into the AP Research course.
+››
+Essential knowledge statements without a shaded background are unique to the AP Research course.
+12
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 22 ===
+Big Idea 1: Question and Explore
+Inquiry and investigation begin when students encounter information about ideas, complex issues, and problems
+that stimulates their intellectual curiosity. They then continue the research process by developing a critical question
+about one or more of those complex issues or ideas. Seeking answers to such questions requires exploration of
+numerous, often competing perspectives; the context surrounding those perspectives; and the reliability and
+credibility of the perspectives. Through this exploration, students begin to develop their own perspectives, rather
+than simply accepting those of others. They consider the purpose of their research — what is supposed to be
+achieved and why. Ideally, they also develop additional questions that lead to further inquiry. The intrinsic value of
+asking and answering questions cannot be overstated. Giving students the opportunity to dig deeper and feed their
+curiosity makes for meaningful discoveries and discussions.
+ESSENTIAL QUESTIONS §§ What do I want to know, learn, or understand?
+§§ What questions have yet to be asked?
+§§ How does my research question shape how I go about trying to answer it?
+§§ How does my project goal shape the research or inquiry I engage in to achieve it?
+§§ What information/evidence do I need to answer my research question?
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 1.1: Personal interest and intellectual curiosity inspire investigation of topics or issues that may or may not be clearly defined. A well crafted investigation explores the complexity of an issue or topic. Further inquiry can lead to unexpected conclusions, resolutions, innovations, or solutions.
+LO 1.1A: Contextualizing and identifying the complexities of a problem or issue.
+EK 1.1A1: Examining the perspectives and ideas of others often leads to questions for further investigation. Inquiry begins with narrowing scope of interest, identifying a problem or issue and its origins within that scope, and situating the problem or issue in a larger context.
+LO 1.1B: Posing questions and seeking out answers that reflect multiple, divergent, or contradictory perspectives.
+EK 1.1B1: Effective research questions lead to an examination taking into account the complexity of a problem or issue.
+EK 1.1B2: The inquiry process allows one to draw upon curiosity and imagination to engage with ideas or explore approaches to complex issues.
+Note: The first time words from the glossary are used in the curriculum framework tables, they appear in bold blue text.
+The glossary begins on page 64.
+13
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 23 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 1.1: Personal interest and intellectual curiosity inspire investigation of topics or issues that may or may not be clearly defined. A well crafted investigation explores the complexity of an issue or topic. Further inquiry can lead to unexpected conclusions, resolutions, innovations, or solutions.
+(continued)
+LO 1.1C: Identifying a topic of inquiry.
+EK 1.1C1: Topics of inquiry may come from
+personal interest, passion for a discipline/field, desire to better understand a topic, or desire to address an issue in the world.
+EK 1.1C2: The inquiry process involves exploring the knowledge base associated with the topic of interest, including a variety of perspectives, and adjusting the scope of the topic to the parameters, requirements, and resources available for the project.
+EK 1.1C3: Inquiry allows for the discovery of connections that can increase curiosity or understanding and lead to further questions.
+LO 1.1D: Articulating the purpose and significance of the scholarly inquiry.
+EK 1.1D1: Scholars explore, explain, and create.
+EK 1.1D2: The purpose of scholarly inquiry is to address various kinds of problems (e.g., practical, theoretical, interpretive, aesthetic) and/or corroborate, challenge, or extend an existing idea.
+EK 1.1D3: Scholarly inquiry should be situated within a broader understanding of the scholarly community and of importance and relevance to that community.
+LO 1.1E: Developing and revising a focused research question/project goal.
+EK 1.1E1: A research question/project goal emerges from the scholar’s purpose (i.e., to explore, explain, and create).
+EK 1.1E2: A research question/project goal often requires multiple revisions to ensure it is appropriate in terms of scope and feasibility (time, resources).
+EU 1.2: Strengthening understanding of a concept or issue requires questioning existing ideas, using what is known to discover what is not known, and making connections to prior knowledge.
+LO 1.2A: Retrieving, questioning, organizing, and using prior knowledge about a topic.
+EK 1.2A1: Understanding comes not only through collection of information but also from a
+variety of other factors (e.g., experience, external sources, cultural context, assumptions).
+EK 1.2A2: A variety of strategies (e.g., brainstorming, concept mapping, prewriting, exploration of space, drafting) can be used to illustrate, organize, and connect ideas.
+EK 1.2A3: Inquiry confirms or challenges one’s existing understandings, assumptions, beliefs, and/or knowledge.
+14
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 24 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 1.3: The investigative process is aided by the effective organization, management, and selection of resources and information.
+Appropriate technologies and tools enable the scholar to become more efficient, productive, and credible.
+LO 1.3A: Accessing and managing information using effective strategies.
+EK 1.3A1: Information used to address a problem may come from various secondary sources (e.g., articles, other studies, analyses, reports) and/or primary sources (e.g., original texts and works, material culture, or personally collected data such as from experiments, surveys, questionnaires, interviews, observations, personal narratives).
+EK 1.3A2: Online databases (e.g., EBSCO,
+ProQuest, JSTOR, Google Scholar) and libraries catalog and house secondary and some primary sources.
+EK 1.3A3: Advanced search tools, Boolean logic, and key words allow scholars to refine, focus, and/or limit their searches based on a variety of factors (e.g., date, peer-review status, type of publication).
+EK 1.3A4: Consulting the bibliographies of other sources may provide additional ideas or resources.
+EK 1.3A5: Social media may be used as a potential source of information, but an understanding of its limitations is necessary to maintain credibility.
+EK 1.3A6: Software (e.g., Microsoft Word,
+EndNote) and online tools (e.g., citation generators, WorldCat) are used by scholars to manage and catalog sources and produce bibliographies.
+EK 1.3A7: Software and online tools (e.g.,
+SurveyMonkey, SPSS) can be used to survey participants and analyze large data sets.
+EU 1.4: The relevance and credibility of the source of information is determined by the context of its use.
+LO 1.4A: Evaluating the relevance and credibility of the source of information and data in relation to the inquiry.
+EK 1.4A1: The scope and purpose of one’s research and the credibility of sources affects the generalizability and the reliability of the conclusions.
+EK 1.4A2: Credibility of evidence depends on use of sources and data that are relevant and reliable (current, authoritative).
+15
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 25 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 1.4: The relevance and credibility of the source of information is determined by the context of its use.
+(continued)
+LO 1.4A: Evaluating the relevance and credibility of the source of information and data in relation to the inquiry.
+(continued)
+EK 1.4A3: Determining the credibility of a source requires considering and evaluating the reputation and credentials of the author, publisher, site owner, and/or sponsor;
+understanding and evaluating the author’s perspective and research methods; and considering how others respond to their work.
+Scholarly articles are often peer-reviewed, meaning the research has been reviewed and accepted by disciplinary experts.
+EK 1.4A4: When gathering data on individuals’ behaviors, attitudes, and preferences, the accuracy and validity of such data depends on the honesty, memory, and reliability of the respondents and/or observers as well as the design of the data collection instrument.
+EU 1.5: There are multiple ways to investigate questions, problems, and issues. Methods should be aligned with the purpose of the inquiry.
+LO 1.5A: Identifying the information needed for the context of the inquiry.
+EK 1.5A1: The way the problem is posed, situated, framed, or contextualized will guide the inquiry process and influence the type of information needed and appropriate method of gathering it.
+LO 1.5B: Designing, planning, and implementing a scholarly inquiry.
+EK 1.5B1: Methods for data collection, analysis, innovation, and/or interpretation should be aligned with the research question/project goal.
+EK 1.5B2: Methods of inquiry may include research methods (e.g., qualitative, quantitative, or mixed) or artistic processes (e.g., generating, conceptualizing, testing, and then refining aesthetic approaches).
+EK 1.5B3: Throughout the process of determining scope and feasibility, the scholar may, where appropriate, adjust the course of inquiry and/or develop different tools, methods, and processes.
+EK 1.5B4: Artistic processes can include elements of research methods as well as the exploration and shaping/reshaping of media and form through activities such as workshopping, storyboarding, composing, choreographing, staging, and model-making.
+16
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 26 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 1.5: There are multiple ways to investigate questions, problems, and issues. Methods should be aligned with the purpose of the inquiry.
+(continued)
+LO 1.5B: Designing, planning, and implementing a scholarly inquiry.
+(continued)
+EK 1.5B5: Based on the research question or project goal, methods of data or information collection may be qualitative (e.g., open-ended survey questions, interviews, observational notes, interpretation of texts); may be quantitative (e.g., precise measurements, modeling, using structured and validated data collection instruments and procedures); or could include a combination of both qualitative and quantitative (mixed).
+EK 1.5B6: Scholars analyze data or information in a variety of ways appropriate to the inquiry.
+EK 1.5B7: Scholars identify reasons for choosing a sample of information, a population, or artifacts and understand the limits of the inferences or conclusions made based on the sample chosen.
+EK 1.5B8: Descriptive or inferential statistics can be used to display and/or analyze data.
+EK 1.5B9: Scholars often organize and categorize (or code) data/information to identify patterns or themes.
+EK 1.5B10: Scholars can combine qualitative and quantitative data/information to triangulate and corroborate trends, patterns, correlations, and/or themes.
+LO 1.5C: Demonstrating perseverance through setting goals, managing time, and working independently on a long-term project.
+EK 1.5C1: Scholars carefully plan methods of inquiry, analysis, and other feasible research activities, taking into account deadlines, priorities, risks, setbacks, and the availability of others.
+EK 1.5C2: Scholars learn that setbacks are inevitable; they need to focus on the essential goals of the inquiry or project and be prepared to try alternate approaches or look to other disciplines in order to achieve them.
+EK 1.5C3: Experts in the field may provide guidance and/or discipline-specific knowledge or perspective. Scholars must understand how
+to seek advice while maintaining self-sufficiency.
+17
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 27 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 1.5: There are multiple ways to investigate questions, problems, and issues. Methods should be aligned with the purpose of the inquiry.
+(continued)
+LO 1.5D: Employing ethical research practices.
+EK 1.5D1: Scholars have ethical and moral responsibilities when they conduct research.
+EK 1.5D2: There are laws, rules, and guidelines that govern the conduct of researchers, in particular when studies involve humans and animals. Accordingly, scholars gain approval to conduct research with humans through an institutional review board (IRB).
+EK 1.5D3: There are copyright and patent laws and guidelines that govern the use and reproduction of others’ instruments, work, personal information, and intellectual property.
+18
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 28 ===
+Big Idea 2: Understand and Analyze
+Developing understanding starts with comprehension of the concepts and perspectives under examination. Being
+able to summarize by identifying and explaining the salient ideas in a text is foundational. When students summarize
+and explain an author’s perspective to others, they are building understanding. Students must comprehend a
+perspective or argument in order to be able to analyze it. That analysis — including consideration of the author’s
+point of view and purpose, the reasoning and details the author selects, develops, and conveys, and the way the
+author chooses to situate those details — in turn leads to greater understanding of the topic or concept being
+explored. Students evaluate the validity of an argument by examining the strength of the line of reasoning and the
+quality of the evidence the author uses. This level of understanding allows students to recognize the implications and predict the consequences of an argument.
+ESSENTIAL QUESTIONS
+§§ What strategies will help me comprehend a text?
+§§ What is the main idea of the argument or artistic work and what reasoning does the author use to develop it?
+§§ What biases may the author have that influence his or her perspective?
+§§ Does this argument acknowledge other perspectives?
+§§ How can I assess the quality or strength of others’ research, products, or artistic works?
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 2.1: Authors express their ideas, perspectives, and/or arguments through their works.
+The first step in evaluating an author’s perspective or argument is to comprehend it. Such comprehension requires reading, viewing, listening, and thinking critically.
+LO 2.1A: Employing appropriate reading strategies and reading critically for a specific purpose.
+EK 2.1A1: Reading critically means reading closely to identify the main idea, tone, assumptions, context, perspective, line of reasoning, and evidence used.
+EK 2.1A2: Strategies active readers use to preview and prioritize a written text include skimming, scanning, rereading, and questioning.
+EK 2.1A3: Strategies active readers use to make meaning from texts include annotating, note-taking, highlighting, and reading aloud.
+EK 2.1A4: Perspectives are shared through written, spoken, visual, or performance texts.
+A perspective includes the writer’s attitude/ tone regarding the subject and is expressed through an argument.
+LO 2.1B: Summarizing and explaining a text’s main idea or aim while avoiding faulty generalizations and oversimplification.
+EK 2.1B1: The main idea of an argument is often expressed in the thesis statement, claim, or conclusion, or implied throughout a work.
+EK 2.1B2: Artistic works (e.g., painting, film, music, dance) convey a perspective.
+Analysis of a work’s context, subject, structure, style, and aesthetic is critical to understanding its aims.
+19
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 29 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 2.2: Authors choose evidence to shape and support their arguments. Individuals evaluate the line of reasoning and evidence to determine to what extent they believe or accept an argument.
+LO 2.2A: Explaining and analyzing the logic and line of reasoning of an argument.
+EK 2.2A1: Authors use reasons to support their arguments. The line of reasoning is composed of one or more claims justified through evidence.
+EK 2.2A2: An argument’s line of reasoning is organized based on the argument’s purpose (e.g., to show causality, to define, to propose a solution).
+EK 2.2A3: Inductive reasoning uses specific observations and/or data points to identify trends, make generalizations, and draw conclusions. Deductive reasoning uses broad facts or generalizations to generate additional, more specific conclusions about a phenomenon.
+EK 2.2A4: A lack of understanding of the complexities of an argument (tone, implications, limitations, nuance, context) can lead to oversimplification and/or generalization.
+EK 2.2A5: Effective arguments acknowledge other arguments and/or respond to them with counterarguments (e.g., concession, refutation, rebuttal).
+LO 2.2B: Evaluating the relevance and credibility of evidence used to support an argument, taking context into consideration.
+EK 2.2B1: An argument’s context (time and purpose) and situation (in relation to other arguments) inform its interpretation.
+EK 2.2B2: Writers use qualitative and/ or quantitative evidence (e.g., facts, data, observations, predictions, analogies, explanations, opinions) to support their claims. Evidence has varying degrees of validity.
+EK 2.2B3: Authors strategically include evidence to support their claims.
+EK 2.2B4: Writers appeal to (or possibly manipulate) readers through a variety of strategies and techniques (e.g., language, authority, qualifiers, fallacies, emphasis).
+EK 2.2B5: Evidence may be used to identify and explain relationships (comparative, causal, or correlational) and/or patterns and trends.
+20
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 30 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 2.2: Authors choose evidence to shape and support their arguments. Individuals evaluate the line of reasoning and evidence to determine to what extent they believe or accept an argument.
+(continued)
+LO 2.2B: Evaluating the relevance and credibility of evidence used to support an argument, taking context into consideration.
+(continued)
+EK 2.2B6: Credibility is compromised when authors fail to acknowledge and/or consider the limitations of their conclusions, opposing views or perspectives, and/or their own biases.
+LO 2.2C: Evaluating the validity of an argument.
+EK 2.2C1: An argument is valid when there is logical alignment between the line of reasoning and the conclusion.
+EK 2.2C2: Validity is most often achieved when the presented evidence is aligned with the conclusions. The strength of an argument depends upon an author acknowledging and/or considering the limitations of his or her conclusions, opposing views or perspectives, and/or his or her own biases.
+EK 2.2C3: Conclusions are contextual and their validity must be affirmed, qualified, or refuted.
+LO 2.2D: Evaluating and critiquing others’ inquiries, studies, artistic works, and/or perspectives.
+EK 2.2D1: Scholars analyze and evaluate others’ studies and artistic works in terms of internal coherence and alignment of the purposes, goals, and methods of inquiry.
+EU 2.3: Arguments have implications and consequences.
+LO 2.3A: Connecting an argument to broader issues by examining the implications of the author’s claim.
+EK 2.3A1: The implications and consequences of arguments may be intended or unintended.
+LO 2.3B: Evaluating potential resolutions, conclusions, or solutions to problems or issues raised by an argument.
+EK 2.3B1: Arguments are significant and have real-world impact because they can influence behavior (e.g., call one to action, suggest logical next steps).
+21
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 31 ===
+Big Idea 3: Evaluate Multiple Perspectives
+Understanding the complexity of an issue, idea, or problem requires students to compare and contrast different
+perspectives. These multiple perspectives, which may support, oppose, compete with, or otherwise vary from
+one another, come together to create the conversation on the issue. Students must consider the biases and
+assumptions behind those perspectives in order to evaluate their relevance and importance in the conversation.
+Evaluating multiple perspectives and arguments allows students to better understand the complexities of an issue or topic.
+ESSENTIAL QUESTIONS
+§§ How might others see a problem or issue differently?
+§§ What patterns or trends can be identified among the arguments about this issue?
+§§ What are the implications and/or consequences of accepting or rejecting a particular argument?
+§§ How can I connect the multiple arguments? What other issues, questions, or topics do they relate to?
+§§ How can I explain contradictions within or between arguments?
+§§ From whose perspective is this information being presented, and how does that affect my evaluation?
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 3.1: Different perspectives often lead to competing and alternative arguments. The complexity of an issue emerges when people bring these differing, multiple perspectives to the conversation.
+LO 3.1A: Identifying, comparing, and interpreting multiple perspectives on or arguments about an issue.
+EK 3.1A1: An individual’s perspective is influenced by his or her background (e.g., experiences, culture, education), assumptions, and worldview, as well as by external sources.
+EK 3.1A2: Perspectives are not always oppositional; they may be concurring, complementary, or competing.
+EK 3.1A3: Some ideas/ perspectives are ambiguous or not well defined. The process of identification and interpretation may not lead to a definitive answer.
+EU 3.2: Not all arguments are equal; some arguments are more credible/valid than others.
+Through evaluating others’ arguments, one’s own argument can be situated within a larger conversation.
+LO 3.2A: Evaluating alternate, opposing, or competing perspectives or arguments, by considering their implications and limitations.
+EK 3.2A1: Critical thinkers are aware that some arguments may appeal to emotions, core values, personal biases and assumptions, and logic.
+EK 3.2A2: When evaluating multiple perspectives or arguments, consideration must be given to how one’s own personal biases and assumptions can influence one’s judgment.
+22
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 32 ===
+Big Idea 4: Synthesize Ideas
+Once enough information is gathered and evaluated, students synthesize their accumulated knowledge, emerging
+ideas, and perspectives to form conclusions of their own. Students must consider other points of view but also
+analyze material to develop their own perspectives and scholarly works. The goal is for students to think critically
+about the information and then add to, not simply repeat, the ideas of others. In this way, students establish a
+unique, creative voice within the larger conversation.
+ESSENTIAL QUESTIONS
+§§ How do I connect and analyze the evidence in order to develop an argument and support a conclusion?
+§§ Are there other conclusions I should consider?
+§§ How does my scholarly work emerge from my perspective, design choices, or aesthetic rationale?
+§§ How do I acknowledge and account for my own biases and assumptions?
+§§ What is the most appropriate way to acknowledge and attribute the work of others that was used to support my
+argument? How do I ensure the conclusions I present are my own?
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 4.1: Scholarly works convey perspectives and demonstrate effective reasoning that have been selected for the intended audience, purpose, and situation.
+LO 4.1A: Formulating a well reasoned argument, taking the complexities of the problem or issue into consideration.
+EK 4.1A1: Effective arguments use reason and evidence to convey a perspective, point of view, or some version of the truth that is stated or implied in the thesis and/or conclusion.
+EK 4.1A2: Effective arguments are supported and unified by carefully chosen and connected claims, reasons, and evidence.
+EK 4.1A3: Qualifiers place limits on how far a claim may be carried. Effective arguments acknowledge these limits, increasing credibility by reducing overgeneralization or oversimplification.
+EK 4.1A4: Effective arguments may acknowledge other arguments and/or respond to them with counterarguments (e.g., concession, refutation, rebuttal).
+EK 4.1A5: The line of reasoning is a clear, logical path leading the audience through the reasons to a conclusion.
+EK 4.1A6: The logic and reasoning of an argument may be deductive (claim followed by evidence) or inductive (evidence leads to a conclusion).
+23
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 33 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 4.1: Scholarly works convey perspectives and demonstrate effective reasoning that have been selected for the intended audience, purpose, and situation.
+(continued)
+LO 4.1A: Formulating a well reasoned argument, taking the complexities of the problem or issue into consideration.
+(continued)
+EK 4.1A7: A line of reasoning is organized based on the argument’s purpose (e.g., to show causality, to evaluate, to define, to propose a solution).
+EK 4.1A8: Claims and supporting evidence are arranged (e.g., spatially, chronologically, order of importance) to convey reasoning and relationship (e.g., comparative, causal, correlational).
+EK 4.1A9: The same argument may be organized, arranged, or supported in multiple ways depending on audience and context.
+EK 4.1A10: Whether developing an argument or conceptualizing an idea or work of art, scholars thoughtfully choose and implement a process aligned with the inquiry or project goal.
+EK 4.1A11: Scholars need to articulate their choices, even when those choices deliberately or inadvertently result in ambiguity or lack of clarity.
+EK 4.1A12: An aesthetic rationale is an argument in that it is a reasoned articulation of specific formal and stylistic choices made in the course of devising the artistic work.
+LO 4.1B: Selecting and consistently applying an appropriate disciplinary or interdisciplinary approach to form a scholarly argument or aesthetic rationale.
+EK 4.1B1: Each discipline has its own conventions and ways of knowing, questioning, and communicating.
+EK 4.1B2: Scholars apply discipline-specific terminology in the analysis of scholarly works.
+EK 4.1B3: The different disciplines and associated ways of knowing and valuing information are discovered in part through engaging with discipline-specific foundational texts and works.
+EK 4.1B4: Disciplines may be broadly or narrowly defined. Disciplines can intersect or be combined to provide new understandings or perspectives.
+24
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 34 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 4.2: Scholars responsibly and purposefully engage with the evidence to develop a compelling argument or aesthetic rationale.
+LO 4.2A: Interpreting, using, and synthesizing qualitative and/or quantitative data/information from various perspectives and sources (e.g., primary, secondary, print, nonprint) to develop and support an argument.
+EK 4.2A1: Evidence can be collected from print and nonprint sources (e.g., libraries, museums, archives), experts, or data gathered in the field (e.g., interviews, questionnaires, observations).
+EK 4.2A2: Evidence is used to support the claims and reasoning of an argument.
+Compelling evidence is sufficient, accurate, relevant, current, and credible to support the conclusion.
+EK 4.2A3: Evidence is strategically chosen based on context, purpose, and audience.
+Evidence may be used to align an argument with authority; to define a concept, illustrate a process, or clarify a statement; to set a mood; to provide an example; to amplify or qualify a point.
+EK 4.2A4: The evidence selected and attributed contributes to establishing the credibility of one’s own argument.
+LO 4.2B: Providing insightful and cogent commentary that links evidence with claims.
+EK 4.2B1: Commentary connects the chosen evidence to the claim through interpretation or inference, identifying patterns, describing trends, and/or explaining relationships (e.g., comparative, causal, correlational).
+EU 4.3: Responsible participation in the scholarly community requires acknowledging and respecting the prior findings and contributions of others.
+LO 4.3A: Attributing knowledge and ideas accurately and ethically, using an appropriate citation style.
+EK 4.3A1: Accurate and ethical attribution enhances one’s credibility.
+EK 4.3A2: Plagiarism is a serious offense that occurs when a person presents another’s ideas or words as his or her own. Plagiarism may be avoided by acknowledging sources thoroughly and accurately.
+EK 4.3A3: Source material should be introduced, integrated, or embedded into the text of an argument.
+EK 4.3A4: Quoted and paraphrased material must be properly attributed, credited, and cited following a style manual.
+Quoting is using the exact words of others;
+paraphrasing is restating an idea in one’s own words.
+25
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 35 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 4.3: Responsible participation in the scholarly community requires acknowledging and respecting the prior findings and contributions of others.
+(continued)
+LO 4.3A: Attributing knowledge and ideas accurately and ethically, using an appropriate citation style.
+(continued)
+EK 4.3A5: Academic disciplines use specific style guides for citing and attributing sources (e.g., APA, MLA, Chicago, AMA).
+EK 4.3A6: Appropriation in works of art has potential legal and ethical implications that scholars need to consider (e.g., scholars must credit works that are used in visual/ audio sampling, parody, choreography).
+EU 4.4: Forming one’s own perspective and reaching new understandings involve innovative thinking and synthesis of existing knowledge with personally generated evidence.
+LO 4.4A: Extending an idea, question, process, or product to innovate or create new understandings.
+EK 4.4A1: Innovative solutions and arguments identify and challenge assumptions, acknowledge the importance of content, imagine and explore alternatives, and engage in reflective skepticism.
+EU 4.5: Arguments, choices, and solutions present intended and unintended opportunities and consequences.
+LO 4.5A: Offering resolutions, conclusions, and/or solutions based on evidence considering limitations and implications.
+EK 4.5A1: When making choices and proposing solutions, the advantages and disadvantages of the options should be weighed against the goal within its context.
+26
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 36 ===
+Big Idea 5: Team, Transform, and Transmit
+Collaboration, communication, and reflection are skills that provide opportunities for students to develop their
+learning. When collaborating, students draw upon their own strengths and the strengths of a team of peers, expert
+advisers, and teachers to achieve their best possible work. Students should engage in peer review and personal revision to refine and tailor their arguments.
+An argument is effectively communicated when its purpose is clear, it is tailored to a specific audience and context,
+and it is conveyed through a medium appropriate and appealing to the intended audience. Adhering to standard
+language conventions and engaging delivery techniques establishes a writer’s or speaker’s credibility with his or her
+audience. Sometimes arguments or perspectives are associated with and accompanied by an innovation or artistic
+work. These works should make clear the artistic choices for the aesthetic rationale or focus on one perspective over another.
+Whether working alone or in a group, students reflect on their work and learning processes, which can lead to
+personal growth as well as even more effective inquiry, learning, and collaboration.
+ESSENTIAL QUESTIONS
+§§ How can I best appeal to and engage my audience?
+§§ What is the best medium or genre through which to reach my audience?
+§§ How might I adapt my written and oral presentations for different audiences and situations?
+§§ How might my communication choices affect my credibility with my audience?
+§§ Which revision strategies are most appropriate to developing and refining my project at different stages?
+§§ How do I provide feedback that is valuable to others? How do I act upon feedback I have received?
+§§ How can I benefit from reflecting on my own work?
+Note: LO 5.1A and EK 5.1A1 are different for AP Seminar [S] and AP Research [R].
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 5.1: How a perspective or argument is presented affects how people interpret or react to it. The same perspective or argument may be developed or presented differently depending on audience, purpose, and context.
+LO 5.1A[S]: Planning, producing, and presenting a cohesive argument, considering audience, context, and purpose.
+EK 5.1A1[S]: An argument may include the following elements:
+›› Introduction: engages the audience by providing background and/or context
+›› Thesis: conveys the main idea of an argument ›› Reasons, evidence, and commentary:
+provide support for the argument ›› Counterargument, concession, refutation, and rebuttal: acknowledge and/or respond to opposing arguments
+›› Conclusion: synthesizes reasoning, considers possible implications for the future, and ties back to the introduction
+›› Bibliography: identifies works cited 27
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 37 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 5.1: How a perspective or argument is presented affects how people interpret or react to it. The same perspective or argument may be developed or presented differently depending on audience, purpose, and context.
+(continued)
+LO 5.1A[R]: Planning and producing a cohesive academic paper, considering audience, context, and purpose.
+EK 5.1A1[R]: Inquiries result in conclusions that can be presented in different formats and that typically have the following elements:
+›› Introduction: provides background and contextualizes the research question/project goal, reviews previous work in the field related to the research question/project goal, and identifies the gap in the current field of knowledge to be addressed ›› Method, Process, or Approach:
+explains and provides justification for the chosen method, process, or approach ›› Results, Product, or Findings:
+presents the results, product, evidence, or findings ›› Discussion, Analysis, and/or
+Evaluation: interprets the significance of the results, product, or findings;
+explores connections to original research question/project goal;
+discusses the implications and limitations of the research or creative work ›› Conclusion and Future Directions:
+reflects on the process and how this project could impact the field;
+discusses possible next steps
+›› Bibliography: provides a complete list of sources cited and consulted in the appropriate disciplinary style
+EK 5.1A2: Coherence is achieved when the elements and ideas in an argument flow logically and smoothly. Transitions are used to move the audience from one element or idea to another by illustrating the relationship between the elements or ideas.
+LO 5.1B: Adhering to established conventions of grammar, usage, style, and mechanics.
+EK 5.1B1: A writer expresses tone or attitude about a topic through word choice, sentence structure, and imagery.
+EK 5.1B2: Effective sentences create variety, emphasis, and interest through structure, agreement of elements, placement of modifiers, and consistency of tense.
+28
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 38 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 5.1: How a perspective or argument is presented affects how people interpret or react to it. The same perspective or argument may be developed or presented differently depending on audience, purpose, and context.
+(continued)
+LO 5.1B: Adhering to established conventions of grammar, usage, style, and mechanics.
+(continued)
+EK 5.1B3: Precision in word choice reduces confusion, wordiness, and redundancy.
+EK 5.1B4: Spelling and grammar errors detract from credibility.
+LO 5.1C: Communicating information through appropriate media using effective techniques of design.
+EK 5.1C1: Effective organizational and design elements (e.g., headings, layout, illustrations, pull quotes, captions, lists) may aid in audience engagement and understanding by calling attention to important information and/or creating emotional responses in the audience.
+Ineffective use or overuse of these elements disrupts audience engagement and understanding.
+EK 5.1C2: Data and other information can be presented graphically (e.g., infographics, graphs, tables, models) to aid audience understanding and interpretation.
+EK 5.1C3: Effective communication requires choosing appropriate media (e.g., essay, poster, oral presentation, documentary, research report/thesis) according to context, purpose, and audience.
+LO 5.1D: Adapting an argument for context, purpose, and/or audience.
+EK 5.1D1: Arguments can be adapted by strategically selecting and emphasizing information considering audience, situation, medium, and purpose.
+EK 5.1D2: Scholars should articulate their choices and content in a language that is not discipline-specific to communicate effectively to nonexperts or people outside the discipline.
+LO 5.1E: Engaging an audience by employing effective techniques of delivery or performance.
+EK 5.1E1: Speakers vary elements of delivery (e.g., volume, tempo, movement, eye contact, vocal variety, energy) to emphasize information, convey tone, and engage their audience.
+29
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 39 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 5.1: How a perspective or argument is presented affects how people interpret or react to it. The same perspective or argument may be developed or presented differently depending on audience, purpose, and context.
+(continued)
+LO 5.1E: Engaging an audience by employing effective techniques of delivery or performance.
+(continued)
+EK 5.1E2: Scholars present, perform, and/or produce their work in multiple ways. This may take discipline-specific forms (e.g., portfolios, exhibits, performances, showcases, premieres, posters), but may also cross disciplinary boundaries.
+EK 5.1E3: Scholars present, perform, and/or produce their completed work after multiple revisions or rehearsals (e.g., responding to audience feedback, self critique of recorded performance) and polishing.
+LO 5.1F: Defending inquiry choices and final product with clarity, consistency, and conviction.
+EK 5.1F1: Scholars effectively articulate the rationale for inquiry choices in relation to the completed work.
+EK 5.1F2: Scholars engage thoughtfully with their audiences’ critiques and questions.
+EU 5.2: Teams are most effective when they draw on the diverse perspectives, skills, and backgrounds of team members to address complex, open-ended problems.
+LO 5.2A: Providing individual contributions to overall collaborative effort to accomplish a task or a goal.
+EK 5.2A1: Knowing and communicating one’s strengths and challenges to a group allows one’s contributions to be more effective.
+LO 5.2B: Fostering constructive team climate, resolving conflicts, and facilitating the contributions of all team members to address complex, open-ended problems.
+EK 5.2B1: Teams are built around tasks. Low-risk teambuilding activities and simulations enhance a team’s performance.
+EK 5.2B2: Teams function at their best when they understand the diversity of their social–cultural perspectives, talents, and skills.
+EK 5.2B3: Teams function at their best when they practice effective interpersonal communication, consensus building, conflict resolution, and negotiation.
+EK 5.2B4: Effective teams consider the use of online collaborative tools.
+30
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 40 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 5.3: Reflection increases learning, self-awareness, and personal growth through identification and evaluation of personal conclusions and their implications.
+LO 5.3A: Reflecting on and revising their own writing, thinking, and creative processes.
+EK 5.3A1: Reflection is an ongoing and recursive process in inquiry, often leading to changes in understanding. Strategies for reflection may include journal writing, self-questioning, drawing, exploration of space, and/or guided contemplation.
+EK 5.3A2: Learning requires practice through an iterative process of thinking/ rethinking, vision/revision, and writing/ rewriting.
+EK 5.3A3: Scholars are mindful of the rationale behind the chosen method for data collection, information gathering, analysis, production, and presentation.
+EK 5.3A4: Scholars reflect on how the inquiry process helped them deepen their understanding, make important connections, and develop greater self-direction.
+LO 5.3B: Reflecting on experiences of collaborative effort.
+EK 5.3B1: Reflection acknowledges the impact of actions on both the group and individual contributions, noting the reasons for such actions, assumptions made, and whether or not such actions and assumptions hindered or helped the achievement of the group’s and individuals’ tasks.
+LO 5.3C: Reflecting on the larger significance of engaging in the overall inquiry process and producing a completed scholarly work.
+EK 5.3C1: Reflective scholars explore potential future directions for their inquiries and the development of their own scholarship or bodies of work.
+EK 5.3C2: Reflective scholars acknowledge how their inquiry processes and resulting works can be transformational for their own and others’ understanding as well as for their personal identities as scholars.
+31
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 41 ===
+Enduring Understandings (Students will understand that . . . )
+Learning Objectives (Students will be skilled at . . . )
+Essential Knowledge (Students will know that . . . )
+EU 5.4: Scholars perform, present, and/or produce their work within a larger community. Throughout the inquiry process, scholars interact with and benefit from the scholarly community through thoughtful engagement with the opinions and critiques of others.
+LO 5.4A: Engaging in peer review to provide constructive responses to one another’s work, appropriate to the stage of a project’s development.
+EK 5.4A1: Peer review should be based on guidelines and defined criteria appropriate to the work.
+LO 5.4B: Engaging in peer review to receive and consider responses to their work.
+EK 5.4B1: Peer review is an effective way for scholars to strengthen their critical eye as well as strengthen their own work.
+EK 5.4B2: Communities of scholars produce, present, and perform effectively when participants actively seek and provide feedback.
+32
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 42 ===
+AP Research Instructional
+Approaches
+Organizing the Course
+INQUIRY AND THE ACADEMIC CONVERSATION
+Critical inquiry focuses on the creation of new ideas, perspectives, and arguments. Teachers must help students
+understand that the research process is not simply about collecting evidence or facts and then piecing them
+together. Instead, the research process is about inquiry — asking questions and coming to solutions and
+conclusions through serious thinking and reflection. The researcher seeks relevant information in articles, books,
+and other sources and develops an informed perspective built upon, but not merely derivative of, the ideas in the
+examined material. As a result, the research process is recursive, meaning that the researcher regularly revisits
+ideas, seeks new information when necessary, and reconsiders and refines the research questions, topic, and/or
+approach. Additionally, students should understand that sometimes the inquiry leads to the development of an
+additional piece of scholarly work (e.g., product, exhibit, performance).
+Facilitating students’ entrance into academic or real-world conversations about complex issues is a key goal
+of both the AP Seminar and AP Research courses. The AP Seminar course aims to build independent, critical
+thinkers by empowering students to develop the skills and traits necessary for future academic study through the
+examination of multiple perspectives, evaluation of credibility of sources, and construction of arguments. The AP
+Research course provides students the opportunity to build upon these skills by choosing and deeply exploring
+a topic or question of personal interest and developing and defending a more comprehensive argument and
+conclusion. Throughout the research or inquiry process, students document and reflect on feedback received and
+on their own thinking, writing, and creative processes through a process and reflection portfolio. The AP Research
+course culminates in the students’ presentation and oral defense of their academic paper.
+ORGANIZATIONAL MODELS
+AP Research can be organized in a variety of ways to best address student interests, state and/or country and
+district goals and requirements, and local school traditions and culture. Four examples are illustrated in the table on the next page.
+33
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 43 ===
+AP Research
+Model
+Description
+Example Courses
+Disciplinary Focus
+The course content is grounded in a specific discipline.
+AP Research: STEM Inquiries
+This course is offered as an elective in science or math. The units of study focus on developing students’ understanding and implementation of research methods in STEM fields for an inquiry investigation of the students’ choice.
+AP Research: Performing and Visual Arts
+This course is offered as an elective for students with an interest in the various arts disciplines.
+The units of study focus on developing students’ understanding and implementation of inquiry in the arts with an emphasis on developing a product, performance, or exhibit alongside the academic paper, presentation, and oral defense.
+Internship
+The course provides a framework for students in extracurricular internships of any discipline to receive credit for their research as long as it adheres to the AP
+Research course assessment task descriptions and scoring guidelines.
+AP Research: Independent Study
+This course is intended for students who are already working with a discipline-specific expert adviser to conduct independent study in research of the student’s choosing. The teacher must act as the course facilitator in ensuring the expert adviser and student are aware of the course curricula, assessments, and timeline. The teacher
+of record will still be responsible for scoring and uploading the students’ work.
+Thematic Survey
+Linked to AP Course
+AP Research students are concurrently enrolled in another common AP course, allowing for team teaching and connecting of AP course-specific content with AP
+Research skills and culminating in an academic paper, presentation, and oral defense.
+AP Research: Biology
+Students are concurrently enrolled in AP Biology allowing for cross-curricular connections between the two courses. Inquiry topics chosen by students are researched using the methods common to the field of biology.
+General
+The course focuses on research methods of two or more disciplines rather than any one specific field.
+Research Methods
+Students develop an understanding of the different disciplines’ paradigms, ways of knowing, and inquiry methods for the purpose of determining which method best fits their chosen topic of inquiry/research question. Each student then uses a selected method to complete his or her investigation.
+34
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 44 ===
+BRIDGING FROM THE AP SEMINAR COURSE TO THE AP RESEARCH COURSE
+To prepare AP Seminar students to enter AP Research, the next course in the AP Capstone program, teachers
+should provide students with a preview of the skills, goals, and timelines of the AP Research course and how it
+builds upon yet differs from AP Seminar. In AP Research, students further the skills they acquired in AP Seminar by
+learning research methodology, employing ethical research practices, and generating, analyzing, and synthesizing evidence to come to a new understanding.
+Upon completion of the AP Seminar End-of-Course Exam, students who will continue on to the AP Research course may also be given the opportunity to:
+§§ Consider potential topics and questions to spark their interest in engaging in an individual research project
+§§ Research potential expert advisers to guide them in the planning and development of their research project
+§§ Engage in summer experiences that provide exposure to their research interests
+In schools that permit students to begin the AP Research course in the summer, the AP Seminar and AP Research
+course instructors should provide AP Research students with additional instruction, assignments, and avenues for
+continued communication to guide them through the research planning process during the summer months.
+A SAMPLE TIMELINE
+Students’ online proposal forms for the Academic Paper must be approved by the course instructor by November 30.
+The scores for the AP Research Academic Paper and Presentation and Oral Defense must be uploaded by April 30,
+11:59 p. m., ET. AP Research teachers should devise a timeline to ensure adherence to these due dates and to
+reflect the needs of the students, the culture of the school, and students who may begin research in the summer via
+internships. A sample timeline follows on the next page.
+35
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 45 ===
+Month
+Task
+May (End of AP Seminar Course)
+AP Seminar students consider topics, problems, or ideas for inquiry and practice developing research questions.
+June–September
+Students choose a topic/issue, carry out preliminary research, develop an
+annotated bibliography, and finalize a research question and proposal.
+September–October
+Students present a preliminary inquiry proposal for peer review; identify the
+need for, recruit, and begin communication with expert advisers; finalize and
+submit a proposal; and reflect on feedback received.
+October–November
+Students complete the background component of their inquiry and finalize the
+choice and design of their inquiry method. If necessary, they submit a revised
+version of their proposal for final approval. Proposals should be approved by the teacher no later than November 30.
+November–January
+Students implement their inquiry methods while engaging in progress and
+reflection interviews with the teacher to ensure challenges with methods and
+time management are addressed. Students curate the inquiry process, writing,
+and reflection artifacts from September to March in their process and reflection portfolios (PREP).
+January–March
+Students write, proofread, peer review, and submit their academic papers,
+ensuring all components are present and meet rubric criteria. Students finalize
+additional scholarly work or product if such was required as a result of their inquiry.
+March–April
+Teachers score and students present their work.
+›› March 15–30: Students complete papers.
+›› April 1–15: Students prepare, practice, and deliver presentations with oral
+defense. Students must arrange for viewing of additional scholarly work by
+teacher and panelists prior to giving their presentations and oral defense (where applicable).
+›› April 15–30: Teachers finalize and upload scores for presentations with oral
+defense in the AP Digital Portfolio. Students finalize and upload academic paper in the AP Digital Portfolio.
+›› Submission Deadline: April 30, 11:59 p. m., ET
+April–May
+AP Research students present summary of work and lessons learned to AP
+Seminar students.
+36
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 46 ===
+Teaching the Skills
+The focus of the AP Capstone Program courses is on skill development: students practice, refine, and master the skills
+critical for academic success. The curriculum framework identifies the learning objectives and essential knowledge that
+address the core skills listed below in more detail. As teachers create instructional units, they should carefully plan so that
+such skills are developmentally sequenced and appropriate scaffolding is provided. Using the representative instructional
+strategies illustrated in the table below, teachers should provide AP Research students with multiple opportunities to engage in the core skills of the course.
+Core Skill Area
+Description
+Representative Instructional
+Strategies
+Identifying and Refining
+Research Questions
+The process of narrowing a scope of interest into a research question to serve as the foundation of a long-term investigation or inquiry.
+Graphic Organizers
+Teachers provide a visual system for organizing multiple ideas, perspectives, and/or arguments and their supporting evidence for the purpose of narrowing a field of interest into a focused problem, topic of inquiry, or research question. Examples include Venn diagrams, flow-charts, and mind maps.
+Question Formulation Technique
+Teachers provide a stimulus from which students openly brainstorm questions, categorize questions as open or closed, and work on improving them.
+I-Search
+Students perform a quick search and complete a quickwrite that identifies the research questions within three to five published research studies and lists the criteria that make these research questions capable of sustaining a long-term scholarly study.
+Peer Review
+Students work with peers and expert advisers to critique and revise research questions to be focused, open-ended, and capable of sustaining a long-term investigation.
+Elevator Pitch
+Students present a 2-minute summary of the chosen topic of inquiry, research question, and purpose of the study to determine whether or not others clearly understand the focus of the study.
+37
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 47 ===
+Core Skill Area
+Description
+Representative Instructional
+Strategies
+Seeking and Synthesizing
+Background
+Information
+The process of becoming familiar with and synthesizing what others have discovered about the topic so that the scholar can verify the existence of a problem or gap in the knowledge base to form the basis of a long-term investigation.
+Working with LEADS
+Students identify others’ studies and findings in order to:
+›› Lay the foundation for their own study ›› Elucidate the selected problem or topic of inquiry ›› Analyze why their study is appropriate ›› Describe why their study is capable of solving a problem or producing a work ›› Show studies similar to theirs
+Annotated Bibliography of Context and Background
+Students perform a review of the literature of the field. For each source/article students write a brief summary of a text and a commentary on its usefulness to the inquiry along with the citation.
+Source Mining
+Students review the bibliographies of research studies or articles on a topic to see which names or works appear repeatedly to get an overview of key scholars in the field.
+Aligning Study Design
+The process of identifying an aligned, feasible research or inquiry design to accomplish the purpose of the research question and/or project goal while taking into consideration time constraints, availability of resources, participant accessibility, and paperwork due to ethics guidelines.
+Annotated Bibliography of Methods
+Students write citations and brief summaries of the research questions and methods of scholarly, peer-reviewed studies on their chosen topic along with commentaries on those methods’ alignment with their own chosen study design or approach.
+Poster Presentation and Peer Review
+Students present a poster showing the research question, purpose of study, background and context information, and chosen or designed method for collecting information to engage others in peer reviewing the feasibility and alignment of the study design, approach, or method.
+38
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 48 ===
+Core Skill Area
+Description
+Representative Instructional
+Strategies
+Analyzing and Evaluating Findings
+The process of interpreting the significance of the findings, results, or product and exploring connections to the original research question and project goal.
+Flow Chart
+Students present the connections between the research question and information collected and rank the significance or importance of the findings to the purpose of the study.
+Statistical Analyses
+Students use descriptive or inferential statistics to categorize and summarize large data sets to determine the significance of the data to the research question and purpose of the study.
+Data Table and Graphical Analyses
+Students plot or categorize images, graphs, and/or other visual presentations of data or information into chunks for the purpose of determining the significance of the findings or results to the research question and purpose of the study.
+Engaging with Discipline-Specific
+Expert Advisers
+The process of communicating with experts in the discipline or field of study to obtain guidance and feedback on one’s research question, study purpose, interpretation of findings, or extended piece of scholarly work.
+Online File Access and Feedback
+Students use online word processors (e.g., Google Docs) and storage systems (e.g., DropBox) to share documents and get feedback from experts in the field or discipline of study.
+Email or Video Chat
+Students schedule regular communication via text or video platform with an expert in the discipline or field of study.
+Peer Review
+The process of providing and receiving timely, constructive feedback according to a set of guidelines in order to improve one’s critical eye and scholarly work.
+Rubric Review
+Students identify and comment on aspects of sample student work that align with a designated rubric’s criteria.
+Compliments and Suggestions
+Using peer-editing guidelines, students provide three positive notes and three revision suggestions on peers’ scholarly work.
+Showcasing Scholarly
+Work
+The process of conveying a clear message in a way that engages and appeals to a specific audience.
+Public Practice and Peer review
+Students provide structured reviews of one another’s presentations according to a set of established guidelines (e.g., must not be personal, must be constructive with suggestions for improvement).
+39
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 49 ===
+Core Skill Area
+Description
+Representative Instructional
+Strategies
+Showcasing Scholarly
+Work (continued)
+The process of conveying a clear message in a way that engages and appeals to a specific audience.
+(continued)
+Videotaping: Self-Evaluation and Reflection
+Students review recordings of their own presentations with guided reflection questions focusing on specific techniques.
+Practice Modeling
+Teachers model for students the different techniques for emphasizing ideas and engaging an audience (e.g., eye contact, vocal variety, emphatic gestures).
+Defending Inquiry
+Outcomes
+The process of demonstrating the significance of one’s research by explaining the research process, findings, conclusions, and reflections to those in attendance.
+Peanut Gallery
+Students deliver short presentations to their peers, with their peers asking critical questions and providing constructive feedback on the clarity, validity, and coherence of the scholarly work.
+Reflecting
+The process of making learning goals, assessing one’s achievement toward such goals, and identifying both challenges that hindered and effective strategies that helped one achieve the goals.
+Research Process and Reflection Portfolio
+Students document and curate scholarly work with reflective commentary on the artifacts they’ve chosen to reflect moments of insight, clarity, and growth. Students record documentation of daily work, questions, and challenges pertaining to the development and completion of the scholarly inquiry, including responses to such guiding reflection questions as:
+›› Identify personal insights, moments of critical questioning, and comments or ideas from today’s work that have impacted you.
+›› Describe why these insights, questions, and ideas are important to you. What effect do they have and what dilemmas, questions, or possibilities do they raise?
+›› How do these issues affect the clarity, order, confusion, or chaos of your thinking?
+Strengthening Self-
+Directedness and Time
+Management
+The process of personally identifying tasks, setting deadlines, and holding oneself accountable to achieve a learning goal or create a scholarly product.
+Biweekly WIPs
+Teachers provide opportunities for scholars to present their work in progress (WIP) to their peers and to receive feedback on addressing challenges, time management, or even data interpretation.
+40
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 50 ===
+Formative Assessments
+In addition to developing instructional activities and units of study that engage students in the AP Research course
+content, teachers should develop formative assessments to effectively prepare students for the AP Research
+through-course performance task components: the Academic Paper and the Presentation and Oral Defense.
+Examples of formative assessments and suggestions for when to implement them are described in the table below.
+These are not meant to be graded assessments; they are intended as opportunities for students and teachers to
+evaluate student progress, address problems or misconceptions, and improve student learning.
+Timeline
+Formative Assessment
+Purpose
+September–October
+Rubric and Evaluation of Papers
+Apply assessment rubric components for the academic paper to sample student papers and identify the different levels of achievement evidenced in those samples.
+Annotated Bibliography I: Topic of Inquiry Background
+Effectively search for and identify a broad range of perspectives and scholarly sources of information for the chosen field of study.
+Focused Topic of Inquiry
+Exhibit knowledge of the field of interest and develop a narrow, novel, researchable problem, topic, or idea.
+October–November
+Peer Review of Research Questions
+Differentiate between well- and poorly formed research questions, and offer/receive feedback on research question drafts.
+Finalization of Research Question and Purpose of Inquiry
+Develop a clearly articulated research question that is capable of being researched at this level and clearly articulate the purpose/goals of the inquiry.
+Annotated Bibliography II: Discipline-
+Specific Style with Literature Review
+Perform an in-depth literature review that outlines the scholarly source materials used and how the materials offer information and views relating to the question. Demonstrate comprehensiveness of the literature review as exhibited by breadth, relevance, currency, availability, and authority within chosen resources, using the discipline-specific style common to the field of study.
+Annotated Bibliography III: Inquiry
+Methods of the Field of Study
+Identify the research question, variables, measurements, and limitations within published quantitative, qualitative, and mixed-methods research studies.
+Differentiate between the purpose and components of quantitative, qualitative, and mixed-methods studies.
+41
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 51 ===
+Timeline
+Formative Assessment
+Purpose
+October–November (continued)
+Poster Presentation of Research
+Proposal
+Effectively articulate the focused topic of inquiry, research question, overview of the knowledge of the field, gap the chosen inquiry fills, and selected or designed method of inquiry to collect data to address research question or inquiry topic.
+November–March
+Inquiry Method Design
+Describe procedures used for analysis in sufficient detail to permit understanding of how the data were analyzed and the processes and assumptions underlying specific techniques. Evaluate the fit between the purpose of the proposal, its research design, and its data collection strategy.
+Biweekly Work in Progress Interview
+Exhibit regular maintenance of a research portfolio to record revisions, amendments, and reflections during the inquiry process.
+Prepare and periodically update timetable or project plan that clearly outlines what activities must be accomplished and the deadlines by which the objectives of the course must be achieved.
+Biweekly Peer Review
+Review and revise the elements of the academic paper with attention paid to the purpose, research question, and research method to ensure clarity and alignment and to address peer, teacher, and expert adviser feedback.
+March–April
+Practice Presentations
+Exhibit polished articulation and effective presentation of the inquiry performed.
+Peer Panels
+Exhibit depth of knowledge of topic of inquiry and articulation of choices made in design and interpretation/synthesis of evidence through the research project through responses to feedback and suggestions for revision.
+May–End of School
+Process and Reflection Portfolio: Exit
+Interview
+Articulate moments of insight, challenge, and change in thought processes as exhibited by the curation of the inquiry process in the portfolio.
+42
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 52 ===
+Selecting and Accessing Resources
+When selecting texts for study, teachers should challenge students to engage with and analyze complex and
+scholarly sources. Helping students with the identification of scholarly materials requires a discussion of peer review,
+which differentiates scholarly from nonscholarly sources in an academic research community. Students should be
+invited to find and contribute texts for study, providing them opportunities to make connections of their own.
+Access to a variety of print and online style guides, writing and argumentation handbooks, databases, and
+other reference materials is essential to equip students and teachers with the tools necessary for research and
+communication. To supplement the access to scholarly source databases that teachers provide to students,
+College Board will provide both teachers and students free access to EBSCOhost. More information about
+gaining access will be given to teachers during the mandatory professional development.
+AP Capstone™ Policy on Plagiarism and Falsification or Fabrication of Information
+Participating teachers shall inform students of the consequences of plagiarism and instruct students to ethically
+use and acknowledge the ideas and work of others throughout their course work. The student’s individual voice
+should be clearly evident, and the ideas of others must be acknowledged, attributed, and/or cited.
+A student who fails to acknowledge the source or author of any and all information or evidence taken from the work
+of someone else through citation, attribution or reference in the body of the work, or through a bibliographic entry,
+will receive a score of 0 on that particular component of the AP Seminar and/or AP Research Performance Task.
+In AP Seminar, a team of students that fails to properly acknowledge sources or authors on the Team Multimedia
+Presentation will receive a group score of 0 for that component of the Team Project and Presentation.
+A student who incorporates falsified or fabricated information (e.g. evidence, data, sources, and/or authors) will
+receive a score of 0 on that particular component of the AP Seminar and/or AP Research Performance Task.
+In AP Seminar, a team of students that incorporates falsified or fabricated information in the Team Multimedia
+Presentation will receive a group score of 0 for that component of the Team Project and Presentation.
+Engaging Community Members
+Community members can play an integral role in students’ experiences with scholarly research. Discipline-specific
+expert advisers can guide students’ formulation of research questions, interpretation of data, and the academic
+paper or presentation revision process as well as provide critical, constructive feedback to strengthen students’
+voices in the academic conversation. Institutional review boards can provide guidance on students’ designs and
+approve students’ implementation of ethical research practices. Additional resources for training external expert
+advisers on the assessment tasks and timeline for the AP Research course will be provided to teachers during the mandatory professional development.
+A designated staff member may also coordinate a pool of expert advisers for the AP Research course and assist in
+matching students with outside experts. AP Research teachers and school administrators should identify school
+and district policies pertaining to students engaging virtually or face-to-face with external expert advisers and
+communicate such policies to parents, students, and potential expert advisers.
+43
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 53 ===
+Reviewing Student Research Proposals for Ethical Considerations
+All research proposals should be reviewed by the classroom teacher for ethical considerations prior to data
+collection. Multiple student revisions may be required before teacher approval is granted. In particular, research
+with human subjects, animal subjects, harmful microorganisms, or hazardous materials requires special consideration by the teacher.
+Research involving human subjects must be evaluated for:
+a.	 potential harm to subjects that may result from their participation;
+b.	 potential benefits of the research for the subject and the community as a whole;
+c.	 procedures used to ensure the informed and voluntary participation of research subjects;
+d.	 procedures used to ensure the confidentiality of research subjects.
+Accordingly, the teacher must review any surveys, interview questions, questionnaires, or other interventions to
+be used in a project, as well as student plans for protecting animal and human subjects’ well-being and human
+subjects’ anonymity and/or confidentiality. Proposals that pose more than minimal risk to participants cannot be approved.
+If students do not plan to present their findings on human subject research in a competition setting, and/or
+disseminate their findings by publishing or publicly presenting their findings, teacher approval is sufficient.
+However, there are two general circumstances in which additional review is necessary:
+1.	 Students whose projects involve animal subjects, harmful microorganisms, or hazardous materials may require
+additional review or approval by school or district processes.
+2.	 Students who want to publish and/or publicly present their findings regarding human subjects research will
+require an additional review and approval process by a federally registered Institutional Review Board (IRB).
+Many communities have IRBs in local organizations such as high schools, science and engineering competition
+organizations, community colleges, universities, and medical centers.
+Teachers may work with school administrators to establish and register an IRB to evaluate research projects using
+human subjects. The IRB registration process can be found at the link below or by searching “IRB registration instructions on hhs.gov:
+https://www.hhs.gov/ohrp/register-irbs-and-obtain-fwas/forms/irb-registration-instructions/index.html.
+Participating in External Research Presentations and Competition Platforms
+Students who choose to participate in any high school academic competitions (e.g., Regeneron Science Talent
+Search, National History Day, Davidson Fellows, Stemanities Competition), should ensure that they, their faculty
+advisers, and, if applicable, their external expert advisers are familiar with the rules and timetables for both the
+relevant competition and the AP Research course. If students are submitting their AP Research work to competitions
+prior to submitting to the AP Digital Portfolio for scoring, teachers should work with students on strategies on how to
+receive feedback from competition judges without violating the AP Research rules on engaging with expert advisers
+outlined on page 52. Specifically, students must make sure judges are aware that students are not allowed to receive
+specific, directive feedback about their work prior to the final AP Digital Portfolio submission.
+44
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 54 ===
+Preparing the Process and Reflection Portfolio (PREP)
+The primary purpose of the process and reflection portfolio (PREP) is to inspire, support, and document the
+students’ development throughout their research process. This portfolio should be reviewed throughout the year
+as a formative assessment component of the course and should be maintained by the student as evidence of
+participating in research to show to academic counselors, college admission officers, and faculty members.
+Throughout the inquiry process, students will document their research and/or artistic processes and
+communications with their expert advisers, pose questions they want to explore, and reflect on the decisions made
+throughout the iterative research process. Students should also examine their strengths and weaknesses with
+regard to implementing such processes and developing their arguments or aesthetic rationales.
+Through the professional development experience, teachers will be provided with a list of optional questions and
+tasks to help them guide students through the inquiry process. These questions help students in the early months
+of the academic year as they begin the inquiry process and throughout the year as they examine, and reexamine,
+their chosen areas of study and the process by which they engage in research. Teachers can also design their own questions and tasks.
+The combined group of questions and tasks in the PREP document should address all five big ideas in the
+curriculum framework (QUEST), with specific attention paid to the following:
+§§ Choice of the research question and interest in the subject matter
+§§ Directions in which the inquiry or project seemed to lead and changes to initial topic, question, assumptions, and research method
+§§ Research method, including resources used (documents, people, multimedia, measurement instruments etc.) §§ Compilation and analysis of evidence
+§§ Ways in which students have worked both on their own and as part of a larger scholarly community
+§§ Challenges and solutions encountered throughout the research process
+Teachers should regularly engage students in individual discussions or interviews to help them reflect on and
+document their work, organize their time, and reach appropriate milestones. Teachers should also use these
+discussions as opportunities to formatively assess students’ progress. The PREP should be used to inform regular
+progress reviews throughout the year. Teacher and student preference can determine the format of the portfolio (electronic or hard copy).
+In addition to responses to questions and tasks provided by teachers, the final form of the PREP should have a clear organizational structure and include:
+§§ Annotated bibliography of any source important to the student’s work §§ A completed and approved Inquiry Proposal Form
+§§ Documentation of permission(s) and approval(s), if required — for example, permission(s) from an IRB or
+other agreements with individuals, institutions, or organizations that provide primary and private data such as interviews, surveys, or investigations
+§§ Documentation or log of the student’s interaction with expert adviser(s) and the role the expert adviser(s) played in the student’s learning and inquiry process 45
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 55 ===
+§§ Feedback from peer and adult reviewers both in the initial stages and at key points in the research process;
+reflection on whether or not this feedback was accepted or rejected and why
+§§ Photographs, charts, spreadsheets, and/or links to videos or other relevant visual research/project artifacts
+§§ Draft versions of selected sections of the academic paper
+§§ Specific pieces of work selected by the student to represent what they consider to be the best showcase for their work
+§§ Notes taken in preparation for presentation and oral defense
+§§ Attestation signed by the student which states, “I hereby affirm that the work contained in this Process and
+Reflection Portfolio is my own and that I have read and understand the AP Capstone™ Policy on Plagiarism and Falsification or Fabrication of Information” 46
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 56 ===
+AP Research Assessment
+Overview
+Students are assessed with one through-course performance task consisting of two distinct components. Both
+components will be included in the calculation of students’ final AP scores.
+§§ Academic Paper — 75% §§ Presentation and Oral Defense — 25%
+AP Research Through-Course Performance Task
+Weight: 100% of the AP Research score
+Recommended Completion Date for Both Components: April 15
+Submission Deadline: April 30, 11:59 p.m. ET
+For this task, by April 30, 11:59 PM ET, teachers must:
+§§ ensure each student has submitted their Academic Paper (AP) as final in the AP Digital Portfolio
+§§ submit scores for the Presentation and Oral Defense (POD) in the AP Digital Portfolio
+Note: Teachers must carefully plan a calendar that provides time for the task to be completed, scored (POD only),
+and uploaded by April 30, 11:59 p.m. ET. Only the Academic Paper is uploaded to the AP Digital Portfolio.
+RETENTION OF PERFORMANCE TASK PRESENTATION AND ORAL DEFENSE VIDEOS
+AP Research teachers are required to keep video files of all performance task presentations and oral defenses
+for a minimum of one academic year because College Board may request to review the scoring for these
+components to identify samples for scoring training and to ensure scoring quality.
+TASK OVERVIEW
+Students design, plan, and implement a yearlong, in-depth study or investigation in an area of personal interest through
+a chosen or designed inquiry method and develop a well-reasoned argument based on the evidence collected in an
+academic paper of 4,000–5,000 words. As a culmination of their research, students deliver (using appropriate media) a
+presentation and orally defend their research design, approach, and findings. Students whose academic paper
+is accompanied by an additional piece of scholarly work (e.g., performance, exhibit, product) must arrange for the
+teacher and panelists to view this work prior to the presentation and oral defense. Throughout the inquiry process,
+students communicate regularly with their teacher and, when appropriate, consult with an internal or external expert.
+COMPONENTS
+The following components are formally assessed:
+Component
+Scoring Method
+Weight
+Academic Paper (AP) 4,000–5,000 words
+College Board scored 75%
+Presentation and Oral Defense (POD)
+(15–20 minutes total for presentation followed by three or four questions from a panel of three evaluators).
+Teacher scored 25% 47
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 57 ===
+TASK GUIDELINES
+Students develop a research question/project goal on a topic of their own choosing in an area of personal interest.
+They submit an inquiry proposal (see Inquiry Proposal Form, p. 54) for the teacher’s approval, and teachers provide
+feedback that helps students refine their research question/project goals.
+With assistance from the teacher, students may identify one or more expert adviser(s) — internal or external to the
+school — to serve as an additional resource. These individuals should be experts in the chosen discipline or field
+that the student is investigating or in the research method that the student chooses to employ.
+Under the teacher’s guidance — and using the expert advisers’ knowledge base as needed — students design
+or choose a method to collect data and information and then analyze, evaluate, and select relevant and credible
+evidence to develop a logical, well-reasoned argument or aesthetic rationale that results in an academic paper
+of 4,000–5,000 words. The argument or aesthetic rationale must directly address the research question/project
+goal. Upon completion of the academic paper, students will present their research question/project goal, method/
+process, and conclusions to an oral defense panel. If the academic paper is accompanied by an additional piece of
+scholarly work (e.g., performance, exhibit, product), this work is not formally assessed but is viewed by the teacher
+and oral defense panelists to contextualize the student’s research.
+Academic Paper (AP)
+The body of the academic paper must contain the elements listed in the following table. These elements should be
+presented in a style and structure appropriate to the discipline in which the topic resides (e.g., psychology, science,
+music). Abstracts, if included, are not considered part of the body of the academic paper and are not assessed. The
+academic paper must be written for an educated, non-expert audience.
+Required Element
+Description
+Introduction and Literature Review
+Introduces research question/project goal and reviews previous work in the field.
+Synthesizes the varying perspectives in the scholarly literature to situate the research
+question/project goal within a gap in the current field of knowledge.
+Method, Process, or Approach
+Explains and provides justification for the chosen method, process, or approach and its alignment with the research question.
+Results, Product, or Findings
+Presents the findings, evidence, results, or performance/exhibit/product generated by the research method.
+Discussion, Analysis, and/or Evaluation
+Interprets the significance of the results, performance/exhibit/product, or findings; explores
+connections to original research question/project goal.
+Conclusion and Future
+Directions
+Articulates the new understanding generated through the research process and the limitations of the conclusion or creative work.
+Discusses the implications to the community of practice.
+Identifies areas for future research.
+Bibliography
+Provides a complete list of sources cited and consulted in the appropriate disciplinary style.
+The nature of students’ inquiries is open-ended in that students’ approaches to their investigations and the
+type of research they conduct may vary widely. Students must avoid plagiarism by acknowledging, attributing,
+and/or citing sources throughout the paper and by including a bibliography. Throughout the year and prior to
+submission, teachers and students should constantly check work for plagiarism. Students must also observe
+ethical practices when gathering information through means such as surveys, interviews, or focus groups, and
+be prepared to sign agreements with individuals, institutions, or organizations that provide primary and private
+data. Students should also be prepared to obtain Institutional Review Board (IRB) approval if engaging in research 48
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 58 ===
+involving human subjects when required. Graphs, figures, data tables, images, footnoted citations, appendices,
+abstract, and the bibliography are not part of the total word count for the academic paper. Word count does include titles, sub-headings, and in-text citations.
+Presentation and Oral Defense (POD)
+All students will develop a 15–20 minute presentation (using appropriate media) and deliver it to an oral defense
+panel of three evaluators. It is suggested that students’ oral presentation be no longer than 15 minutes to ensure at
+least 5 minutes for the oral defense. The presentation and oral defense should take no longer than 15–20 minutes
+total. Like the academic paper, the presentation provides an opportunity for students to showcase their research
+by communicating effectively and succinctly to an audience of educated, non-experts. Students whose academic
+paper is accompanied by an additional piece of scholarly work (e.g., performance, exhibit, product) must arrange for
+the teacher and panelists to view this work prior to the presentation and oral defense.
+The presentation should distill the student’s argument by:
+§§ identifying the research question/project goal
+§§ describing and explaining initial assumptions and hypotheses/ideas and their relation to the student’s personal conclusion
+§§ providing the rationale for choices made during the research process (cite or attribute sources or evidence as needed)
+§§ explaining the research process/method, evidence generated, conclusions, and implications
+§§ engaging the audience through a dynamic use of design, delivery, and performance techniques
+Following the presentation, an oral defense panel will ask three questions of the student. The panel must consist
+of the AP Research teacher and two additional adult panel members (preferably expert advisers or discipline specific experts) chosen by the AP Research teacher. This evaluative component is designed to assess a student’s
+articulation of the inquiry process, understanding of results and conclusions, and reflection on the research experience.
+Three of these questions must be chosen from the oral defense question list, which is provided to students in
+advance. The oral defense panel should ask one question pertaining to the student’s research or inquiry process,
+one question focused on the student’s depth of understanding, and one question about the student’s reflection
+throughout the inquiry process as evidenced in their process and reflection portfolio (PREP). The wording of the
+questions may be tailored to a student’s specific project. In addition, a fourth question is permitted to clarify one
+of the student’s answers to a previous question. Any additional questions beyond the fourth question are at the
+discretion of the teacher but should not be used in scoring the oral defense.
+Teachers should offer students presentation guidelines including best practices for delivering information (e.g.,
+vocal and movement techniques, use of multimedia or visual aids). It is strongly suggested that students be given
+opportunities to practice in front of their peers to gather feedback and learn how to respond succinctly to questions
+and critiques. Such practice is important to assist students in preparing for their presentations and oral defense.
+Oral Defense Questions
+Research/Inquiry Process [choices made throughout the research process]
+1.	 How did your initial exploration of the scholarly conversation lead to your final research question/project goal?
+2.	 How did your review of the methods used by scholars in the field inform your selection of a research method/
+process that is aligned with your research question/project goal?
+3.	 How did the choices you made when designing or implementing your research method impact your research process?
+4.	 How did you determine which results generated by your research method were most important in informing your new understanding?
+49
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 59 ===
+Depth of Understanding [relating student data/results to the new understanding]
+1.	 How does your new understanding address a gap in the scholarly conversation?
+2.	 How did the limitations of your method or data influence your new understanding?
+3.	 What are the real-world implications or consequences related to your findings?
+4.	 How do your findings provide directions for future research in the field?
+Reflection Throughout the Inquiry Process [how the inquiry process informs growth and self-awareness as a researcher]
+1.	 Think back to the initial curiosity that sparked your inquiry. What other curiosities do you have and how has this process prepared you to explore them?
+2.	 How did you handle the uncertainty of the research process?
+3.	 If you could revisit your research process, what would you do differently and why?
+4.	 What was the most important research skill you developed as a result of this process, and how might you apply it to your future endeavors?
+5.	 How did your expert adviser facilitate your deeper understanding of the research process?
+Note: This question should only be asked if the student engaged with an expert adviser.
+50
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 60 ===
+Role of the Teacher in Performance Tasks
+Performance Tasks in the AP Capstone courses are summative assessments and contribute to the AP score.
+Teachers must adhere to the following rules when students are working on these tasks. Teachers of the
+AP Capstone courses manage the assessment components and all related processes. Teachers should be
+transparent with students about the role of the teacher, other staff, and/or expert advisers in these courses and
+what individuals providing guidance to students should and should not do.
+AP Research: Role of the Teacher
+DO
+DO NOT
+Make sure students, expert advisors, and panel members
+are aware of the timeline, assessment task components, and scoring criteria/rubrics.
+Assign, provide, distribute, or generate research questions or project goals for students.
+Hold work-in-progress meetings with students to ask
+questions, monitor, discuss, and provide guidance on progress.
+Direct the students to the areas of the rubrics where their work may need improvement.
+Write, revise, amend, or correct anything that is part of, or
+contributes to, the final work submitted for assessment.
+Engage in whole class teaching of skills pertinent to
+the performance task as students are working on their research and/or presentations.
+Provide specific, directive feedback to individuals or
+groups (teachers must not tell students what to do).
+Suggest possible resources that can help students further
+their research (e.g., additional data bases, local expert
+advisers, library assistance) – so that students are not disadvantaged in their exploration.
+Conduct research or provide specific sources, articles or evidence for students.
+Provide effective guidelines for peer-to-peer review and feedback.
+Co-ordinate opportunities for students to engage in peer review.
+Proofread or copyedit student work for students.
+Provide students with the list of possible oral defense questions.
+Identify the exact questions a student will be asked prior to
+his or her defense. Students should be prepared to answer every one of the oral defense questions.
+Provide any necessary assistance to students in finding
+external expert advisers if warranted (experts in the field or discipline).
+Violate local, district, state and/or country policies regarding student engagement with external expert advisers.
+Check AP deadline and monitor student submissions in
+the digital portfolio. Ensure students meet deadlines,
+work is submitted to the correct place for the Academic
+Paper (AP), and has been checked for plagiarism.
+Leave students to submit work unsupervised.
+Score student presentations and oral defense (POD) and
+submit the scores in the AP Digital Portfolio prior to the
+April 30 at 11:59 p.m. ET submission deadline.
+Release these scores to students.
+51
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 61 ===
+Role of Expert Advisers in the Academic Paper
+Should a student require such, they may engage in communication with one or more expert advisers. Expert advisers may be drawn from §§ the faculty §§ the community §§ local or nonlocal businesses and industries §§ higher education institutions
+Expert advisers represent a resource for teachers and students in a variety of areas (i.e., expertise in specific
+disciplines, fields, or methods). Teachers must ensure students are transparent with any expert advisers about what they should and should not do.
+AP Research: Role of Expert Advisers
+DO
+DO NOT
+Engage in conversation with guiding questions and
+provide general feedback to students regarding their
+choice of research questions/project goals, data- or
+information-collection methods, and analysis strategies.
+Generate research questions/project goals for students.
+Provide unsolicited help (i.e., students must initiate
+conversations that call for expert adviser feedback, such
+as asking a question to which the expert adviser can then respond).
+May hold work-in-progress meetings with students to
+ask questions, monitor, discuss, and provide guidance on progress.
+Write, revise, amend, or correct anything that is part of, or
+contributes to, the final work submitted for assessment.
+Provide specific, directive feedback to individuals (expert advisers must not tell students what to do).
+Suggest possible resources that can help students further
+their research (e.g., additional data bases, local expert
+advisers, library assistance) – so that students are not disadvantaged in their exploration.
+Conduct research or provide specific sources, articles or evidence for students.
+Help students with the mechanics of the research process
+(e.g., strategizing to find answers to questions or helping them understand how to access resources).
+Provide unsolicited help (i.e., students must initiate
+conversations that call for expert adviser feedback, such
+as asking a question to which the expert adviser can then respond).
+Provide general feedback to students about elements of
+their papers or presentations that need improvement.
+Direct the students to the areas of the rubrics where their work may need improvement.
+Write, revise, amend, or correct student work (anything
+that is part of, or contributes to, the final work submitted for assessment).
+Provide or identify the exact questions a
+student will be asked prior to his or her defense (i.e.,
+students should be prepared to answer every one of the
+oral defense questions that have already been provided to the students in advance).
+52
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 62 ===
+Reproducibles for Students
+The following ten pages contain reproducible versions of the inquiry proposal form, performance task description, and advising tips for AP Capstone.
+53
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 63 ===
+Handout effective Fall 2020
+AP Capstone Program
+Inquiry Proposal Form
+1.	 State your research question and/or project goal.
+2.	 Describe three key studies that have informed your understanding of the scholarly conversation surrounding your topic.
+3.	 Identify the gap addressed by your proposed research, and explain how the gap
+is situated into the scholarly conversation. Provide sources to justify the gap your proposed research is addressing.
+4.	 Describe your chosen or developed research method and defend its alignment with your research question.
+5.	 Identify additional approval processes (check all that apply):
+Human subjects [requires additional IRB review and approval if student wants to publish and/ or publicly present]
+Animal subjects [requires additional review or approval by school or district processes]
+Harmful microorganisms [requires additional review or approval by school or district processes]
+Hazardous materials [requires additional review or approval by school or district processes]
+No additional review or approvals required
+6.	 Explain how your proposed method complies with ethical research practices.
+7.	 Describe the data or additional scholarly work that will be generated to answer your
+proposed research question or achieve your project goal.
+(continues) 54
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 64 ===
+Handout effective Fall 2020
+AP Capstone Program
+8.	 Describe the way you will analyze the data or additional scholarly work generated by
+your method and justify its alignment with your research question or project goal.
+9.	 List any equipment, resources, and permissions needed to collect data or information.
+Attach the initial drafts that apply to your proposal if engaged in human subject research:
+informed consent forms; surveys, interview questions, questionnaires, or other data
+gathering forms; or letters/flyers that will be distributed to study subjects.
+10.	Describe the anticipated logistical and personnel challenges for your research project
+(to collect and analyze data or to pursue research methods appropriate to a paper that supports a performance/exhibit/product).
+11.	Provide a brief timeline that outlines your process from now through project completion.
+12.	Discuss the anticipated value and/or broader implications of your research project.
+Teacher’s feedback:
+Teacher’s Approval (signature):
+55
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 65 ===
+Handout effective Fall 2020
+AP Capstone Program
+AP Research Performance
+Task: Academic Paper and Presentation and Oral Defense
+Task Overview
+In AP Research, you will further the skills you acquired in the AP Seminar course by learning
+research methodology, employing ethical research practices, and accessing, analyzing, and
+synthesizing information as you address a research question/project goal. To that end, you will
+develop a research question/project goal on a topic of your choosing in an area of personal
+interest. You will submit an inquiry proposal (see Inquiry Proposal Form, pp. 54-55) for the
+teacher’s feedback to help you refine your research question/project goal/method and ultimately
+approve your proposal prior to you engaging in the work.
+With assistance from the teacher, you may identify one or more expert adviser(s) — internal or
+external to the school — to serve as an additional resource. These individuals should be experts
+in the chosen discipline or field that you are investigating or in the research method that you choose to employ.
+Under the teacher’s guidance — and using the expert advisers’ knowledge base as needed —
+you will design or choose a method to collect data and information and then analyze, evaluate,
+and select relevant and credible evidence to develop a logical, well-reasoned argument or
+aesthetic rationale (directly addressing your research question/project goal) that results in an academic paper of 4,000–5,000 words.
+In addition to completing your research paper, you will:
+§§ arrange for a viewing of additional scholarly work (where applicable)
+§§ deliver a presentation (using appropriate media)
+§§ defend your research design, approach, and findings to an oral defense panel
+Task Directions (Proposal Process, Academic Paper,
+Presentation and Oral Defense)
+1.	 Question, Proposal, and Research
+›› Identify a research question/project goal of your own choosing in an area of personal interest.
+›› Gather initial information for background and context on your research question/ project goal and area of personal interest.
+›› Choose or design a research method and identify resources to develop your research proposal.
+›› Submit a proposal form to receive approval prior to starting your inquiry.
+(continues) 56
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 66 ===
+Handout effective Fall 2020
+AP Capstone Program
+›› Be prepared to obtain Institutional Review Board (IRB) approval if engaging in research involving human subjects when required.
+›› Gather additional information, data, and evidence through a carefully chosen and aligned research method.
+›› Describe what you hope to learn, achieve, and/or create as a result of your inquiry.
+With your teacher’s assistance, connect with one or more discipline-specific expert advisers
+(internal or external to the school) to advise you through the development of your inquiry
+processes (if your inquiry warrants the use of a field expert or discipline-specific expert adviser).
+Maintain a portfolio of your inquiry processes, your communication with your teacher and expert
+adviser(s), and reflections on your thought processes and any successes and challenges you encounter.
+2.	 Academic Paper (75% of the AP Research score)
+›› Analyze, evaluate, and select evidence to develop a logical, well-reasoned argument
+or aesthetic rationale and conclusion in an academic paper of 4,000–5,000 words that
+addresses the research question/project goal and conveys your perspective and new
+understanding as a result of engaging in your research process.
+›› You must avoid plagiarism by acknowledging, attributing, and/or citing sources throughout
+the paper and by including a bibliography. Throughout the year and prior to submission,
+teachers and you should constantly check work for plagiarism.
+›› Students must also observe ethical practices when gathering information through means
+such as surveys, interviews, or focus groups, and be prepared to sign agreements with
+individuals, institutions, or organizations that provide primary and private data.
+›› The body of the academic paper must contain the elements listed in the following table.
+These elements should be presented in a style and structure appropriate to the discipline in
+which the topic resides (e.g., psychology, science, music).
+›› Graphs, figures, data tables, images, appendices, abstract, footnoted citations, and the
+bibliography are not part of the total word count for the academic paper. Word count does
+include titles, sub-headings, and in-text citations.
+›› Abstracts, if included, are not considered part of the body of the academic paper and are not
+assessed. The academic paper must be written for an educated, non-expert audience.
+›› Once your paper is completed, remove any references to your name, school, and teacher,
+and upload your document to the AP Digital Portfolio as directed by your teacher.
+Required Element Description
+Introduction and Literature Review
+Introduces research question/project goal and reviews previous work in the field.
+Synthesizes the varying perspectives in the scholarly literature to situate
+the research question/project goal within a gap in the current field of knowledge.
+Method, Process, or Approach
+Explains and provides justification for the chosen method, process, or
+approach and its alignment with the research question.
+Results, Product, or Findings
+Presents the findings, evidence, results, or performance/exhibit/product generated by the research method.
+(continues) 57
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 67 ===
+Handout effective Fall 2020
+AP Capstone Program
+Required Element Description
+Discussion, Analysis, and/or Evaluation
+Interprets the significance of the results, performance/exhibit/product, or
+findings; explores connections to original research question/project goal.
+Conclusion and Future
+Directions
+Articulates the new understanding generated through the research process
+and the limitations of the conclusion or creative work.
+Discusses the implications to the community of practice.
+Identifies areas for future research.
+Bibliography
+Provides a complete list of sources cited and consulted in the appropriate disciplinary style.
+3.	 Presentation and Oral Defense (25% of the AP Research score)
+Upon completion of your Academic Paper, you will develop a 15–20 minute presentation
+(using appropriate media) and deliver it to an oral defense panel of three evaluators. Like the
+academic paper, the presentation provides an opportunity for you to showcase your research
+by communicating effectively and succinctly to an audience of educated, non-experts. If your
+academic paper is accompanied by an additional piece of scholarly work (e.g., performance,
+exhibit, product), you must arrange for the teacher and panelists to view this work prior to the
+presentation and oral defense. Your oral presentation should be no longer than 15 minutes to ensure at least 5 minutes for your oral defense.
+The presentation should distill your research by:
+›› Identifying your research question/project goal
+›› describing and explaining initial assumptions and hypotheses/ideas and their relation to the your personal conclusion
+›› providing the rationale for choices made during the research process (cite or attribute sources or evidence as needed)
+›› explaining the research process/method, evidence generated, conclusions, and implications
+›› engaging the audience through a dynamic use of design, delivery, and performance techniques
+›› using a medium and design specifically tailored to engage your audience and illustrate your points
+Following the presentation, an oral defense panel will ask three questions of the student.
+The panel will consist of the AP Research teacher and two additional adult panel members
+(preferably expert advisers or discipline-specific experts) chosen by the AP Research
+teacher. This evaluative component is designed to assess your articulation of the inquiry
+process, understanding of your results and conclusions, and reflection on your research experience.
+Three of these questions will be chosen from the following oral defense question list. The
+oral defense panel will ask one question pertaining to your research or inquiry process, one
+question focused on your depth of understanding, and one question about your reflection
+throughout the inquiry process as evidenced in your process and reflection portfolio (PREP).
+The wording of the questions may be tailored to your specific project. In addition, a fourth
+question is permitted if a panel member wants you to clarify one of your answers to a
+previous question. Any additional questions beyond the fourth question are at the discretion
+of the teacher but will not be used in scoring the oral defense.
+(continues) 58
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 68 ===
+Handout effective Fall 2020
+AP Capstone Program
+Oral Defense Questions
+Research/Inquiry Process [choices made throughout the research process]
+1.	 How did your initial exploration of the scholarly conversation lead to your final research question/project goal?
+2.	 How did your review of the methods used by scholars in the field inform your selection of a
+research method/process that is aligned with your research question/project goal?
+3.	 How did the choices you made when designing or implementing your research method impact your research process?
+4.	 How did you determine which results generated by your research method were most important in informing your new understanding?
+Depth of Understanding [relating student data/results to the new understanding]
+1.	 How does your new understanding address a gap in the scholarly conversation?
+2.	 How did the limitations of your method or data influence your new understanding?
+3.	 What are the real-world implications or consequences related to your findings?
+4.	 How do your findings provide directions for future research in the field?
+Reflection Throughout the Inquiry Process [how the inquiry process informs growth and self awareness as a researcher]
+1.	 Think back to the initial curiosity that sparked your inquiry. What other curiosities do you have
+and how has this process prepared you to explore them?
+2.	 How did you handle the uncertainty of the research process?
+3.	 If you could revisit your research process, what would you do differently and why?
+4.	 What was the most important research skill you developed as a result of this process, and how might you apply it to your future endeavors?
+5.	 How did your expert adviser facilitate your deeper understanding of the research process?
+Note: This question should only be asked if the student engaged with an expert adviser.
+(continues) 59
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 69 ===
+Handout effective Fall 2020
+AP Capstone Program
+Role of the Teacher in Performance Tasks
+Performance Tasks in the AP Capstone courses are summative assessments and contribute to
+the AP score. Submissions must be entirely the student's own work. Teachers must adhere to the
+following rules when students are working on these tasks. Teachers of the AP Capstone courses
+manage the assessment components and all related processes. Teachers should be transparent
+with students about the role of the teacher, other staff, and/or expert advisers in these courses
+and what individuals providing guidance to students should and should not do.
+AP Research: Role of the Teacher
+DO
+DO NOT
+Make sure students, expert advisors, and panel
+members are aware of the timeline, assessment task components, and scoring criteria/rubrics.
+Assign, provide, distribute, or generate research questions or project goals for students.
+Hold work-in-progress meetings with students to ask
+questions, monitor, discuss, and provide guidance on progress.
+Direct the students to the areas of the rubrics where their work may need improvement.
+Write, revise, amend, or correct anything that is part of, or contributes to, the final work submitted for assessment.
+Engage in whole class teaching of skills pertinent to
+the performance task as students are working on their research and/or presentations.
+Provide specific, directive feedback to individuals or groups (teachers must not tell students what to do).
+Suggest possible resources that can help students
+further their research (e.g., additional data bases, local
+expert advisers, library assistance) – so that students are not disadvantaged in their exploration.
+Conduct research or provide specific sources, articles or evidence for students.
+Provide effective guidelines for peer-to-peer review and feedback.
+Co-ordinate opportunities for students to engage in peer review.
+Proofread or copyedit student work for students.
+Provide students with the list of possible oral defense questions.
+Identify the exact questions a student will be asked prior to his or her defense. Students should be prepared to answer every one of the oral defense questions.
+Provide any necessary assistance to students in finding
+external expert advisers if warranted (experts in the field or discipline).
+Violate local, district, state and/or country policies regarding student engagement with external expert advisers.
+Check AP deadline and monitor student submissions
+in the digital portfolio. Ensure students meet deadlines,
+work is submitted to the correct place for the Academic
+Paper (AP), and has been checked for plagiarism.
+Leave students to submit work unsupervised.
+Score student presentations and oral defense (POD)
+and submit the scores in the AP Digital Portfolio prior to
+the April 30 at 11:59 p.m. ET submission deadline.
+Release these scores to students.
+(continues) 60
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 70 ===
+Handout effective Fall 2020
+AP Capstone Program
+Role of Expert Advisers in the Academic Paper
+Should a student require such, they may engage in communication with one or more expert advisers. Expert advisers may be drawn from §§ the faculty §§ the community §§ local or nonlocal businesses and industries §§ higher education institutions
+Expert advisers represent a resource for teachers and students in a variety of areas (i.e., expertise
+in specific disciplines, fields, or methods). Teachers must ensure students are transparent with
+any expert advisers about what they should and should not do.
+AP Research: Role of Expert Advisers
+DO
+DO NOT
+Engage in conversation with guiding questions and provide general feedback to students regarding their choice of research questions/ project goals, data- or information-collection methods, and analysis strategies.
+Generate research questions/project goals for students.
+Provide unsolicited help (i.e., students must
+initiate conversations that call for expert adviser feedback, such as asking a question to which the expert adviser can then respond).
+May hold work-in-progress meetings with students to ask questions, monitor, discuss, and provide guidance on progress.
+Write, revise, amend, or correct anything that is
+part of, or contributes to, the final work submitted for assessment.
+Provide specific, directive feedback to individuals
+(expert advisers must not tell students what to do).
+Suggest possible resources that can help students further their research (e.g., additional data bases, local expert advisers, library assistance) – so that students are not disadvantaged in their exploration.
+Conduct research or provide specific sources, articles or evidence for students.
+Help students with the mechanics of the research process (e.g., strategizing to find answers to questions or helping them understand how to access resources).
+Provide unsolicited help (i.e., students must
+initiate conversations that call for expert adviser feedback, such as asking a question to which the expert adviser can then respond).
+Provide general feedback to students about elements of their papers or presentations that need improvement.
+Direct the students to the areas of the rubrics where their work may need improvement.
+Write, revise, amend, or correct student work (anything that is part of, or contributes to, the final work submitted for assessment).
+Provide or identify the exact questions a student will be asked prior to his or her defense (i.e., students should be prepared to answer every one of the oral defense questions that have already been provided to the students in advance).
+61
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 71 ===
+Handout effective Fall 2020
+AP Capstone Program
+AP Capstone™ Policy on Plagiarism and Falsification or Fabrication of Information
+A student who fails to acknowledge the source or author of any and all information or evidence
+taken from the work of someone else through citation, attribution or reference in the body of the
+work, or through a bibliographic entry, will receive a score of 0 on that particular component of the
+AP Seminar and/or AP Research Performance Task. In AP Seminar, a team of students that fails
+to properly acknowledge sources or authors on the Team Multimedia Presentation will receive a
+group score of 0 for that component of the Team Project and Presentation.
+A student who incorporates falsified or fabricated information (e.g. evidence, data, sources, and/
+or authors) will receive a score of 0 on that particular component of the AP Seminar and/or AP
+Research Performance Task. In AP Seminar, a team of students that incorporates falsified or
+fabricated information in the Team Multimedia Presentation will receive a group score of 0 for that component of the Team Project and Presentation.
+62
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 72 ===
+Handout effective Fall 2020
+AP Capstone Program
+AP Capstone Tips for Students
+1.	 Be prepared to perform your best on your assessment! Your academic performance provides
+evidence of your academic achievements as a result of hard work in AP.
+2.	 Send your AP scores! During AP Exam registration, be sure to indicate the code for the
+colleges you want to receive your scores. This alerts them of your interest as a potential
+applicant and invites college recruiters to reach out to you to learn more about your AP
+Capstone experience and future research interests. The volume of AP scores received by
+postsecondary campuses helps drive support for credit and placement policies.
+3.	 Indicate your participation in AP Capstone and your future research interests in college
+applications. It might prompt further consideration of your application and may even yield a scholarship possibility.
+4.	 Be prepared to succinctly describe your AP Capstone experience and give a summary of
+your research and findings. This brief conceptual summary will help you advocate for college
+credit/placement and allow you to capture the attention of colleges offering undergraduate
+research opportunities that you may want to explore.
+5.	 Check the AP Capstone website for more information about the colleges and universities
+that support the AP Capstone program and offer credit/placement for qualifying scores in AP Seminar and AP Research.
+63
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+
+=== Page 73 ===
+AP Research Glossary
+alignment — Cohesion between the focus of an inquiry, the method of collecting information, the process of
+analysis of the information, and the conclusions made to increase understanding of that focus
+argument — A claim or thesis that conveys a perspective developed through a line of reasoning and supported by evidence
+assumption — A belief regarded as true and often unstated
+author — One who creates a work (e.g., article; research study; foundational, literary, or philosophical text; speech,
+broadcast, or personal account; artistic work or performance) that conveys a perspective and can be examined
+bias — A personal opinion, belief, or value that may influence one’s judgment, perspective, or claim
+claim — A statement made about an issue that asserts a perspective
+coding — A method for reducing data sets into categories or numbers for the purpose of analyzing emerging themes, patterns, or trends
+commentary — Discussion and analysis of evidence in relation to the claim that may identify patterns, describe trends, and/or explain relationships
+complex issue — Issue involving many facets or perspectives that must be understood in order to address it
+concession — Acknowledgment and acceptance of an opposing or different view
+conclusion — Understanding resulting from analysis of evidence
+context — The intent, audience, purpose, bias, situatedness, and/or background (larger environment) of a source or reference
+conventions — The stylistic features of writing (e.g., grammar, usage, mechanics)
+counterargument — An opposing perspective, idea, or theory supported by evidence
+credibility — The degree to which a source is believable and trustworthy
+cross-curricular — Goes beyond the traditional boundary of a single content area or discipline
+deductive — A type of reasoning that constructs general propositions that are supported with evidence or cases
+evidence — Information (e.g., data, quotations, excerpts from texts) used as proof to support a claim or thesis
+fallacy — Evidence or reasoning that is false or in error
+feasible — Able to be accomplished within the time, resources, and processes available implication — A possible future effect or result
+inductive — A type of reasoning that presents cases or evidence that lead to a logical conclusion
+inquiry — A process for seeking truth, information, or knowledge through a study, research investigation, or artistic endeavor/work
+interdisciplinary — Involving two or more areas of knowledge
+lens — Filter through which an issue or topic is considered or examined 64
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 74 ===
+limitation — A boundary or point at which an argument or generalization is no longer valid
+line of reasoning — Arrangement of claims and evidence that leads to a conclusion
+literature — The foundational and current texts of a field or discipline of study
+material culture — Physical objects, resources, and spaces that people use to define their culture
+perspective — A point of view conveyed through an argument
+plagiarism — Failure to acknowledge, attribute, and/or cite any ideas or evidence taken from another source
+point of view — A position or standpoint on a topic or issue
+primary research — The planning and implementation of an inquiry to gather firsthand data or information pertaining to a topic of interest
+primary source — An original source of information about a topic (e.g., study, artifact, data set, interview, article) qualification — A condition or exception
+qualitative — Having to do with text, narrative, or descriptions
+quantitative — Having to do with numbers, amounts, or quantities
+rebuttal — Contradicting an opposing perspective by providing alternate, more convincing evidence
+refutation — Disproving an opposing perspective by providing counterclaims or counterevidence
+reliability — The extent to which something can be trusted to be accurate
+resolution — The act of solving a problem or dispute
+secondary research — The process of gathering data or information about a topic of interest from previously published sources
+secondary source — A commentary about one or more primary sources that provides additional insight, opinions,
+and/or interpretation about the primary source data, study, or artifacts
+solution — A means of answering a question or addressing a problem or issue
+text — Something composed (e.g., articles; research studies; foundational, literary, and philosophical texts;
+speeches, broadcasts, and personal accounts; artistic works and performances) that conveys a perspective and can be examined
+thesis — A claim or position on an issue or topic put forward and supported by evidence
+tone — The way in which an author expresses an attitude about his or her topic or subject through rhetorical choices
+triangulation — Implementing more than one research method and/or gathering more than one type of data set to
+strengthen the depth of understanding and validity of the findings pertaining to a phenomenon or observation
+validity (argument) — The extent to which an argument or claim is logical
+validity (research) — The extent to which conclusions of an inquiry accurately address the variables to be
+measured or align with the authenticity of the observations made
+vocal variety — Changing vocal characteristics (e.g., pitch, volume, speed) in order to emphasize ideas, convey
+emotion or opinion, or achieve other specific purposes
+workshopping — Presenting scholarly works to peers for feedback to inform or guide revisions 65
+AP Research Course and Exam Description
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+
+=== Page 75 ===
+About the Appendixes
+The following pages include useful information and references for students, parents, educators, expert advisers,
+and colleges:
+§§ Appendix A: AP Research: QUEST Framework Essential Questions
+A quick-reference list of the overarching AP Research Curriculum Framework big ideas and the essential questions associated with each.
+§§ Appendix B: AP Research Timeline
+A timeline for teachers and school administrators showing key dates and activities.
+66
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+About the Appendixes
+
+=== Page 76 ===
+AP Research: QUEST Framework
+Essential Questions
+Question and Explore
+Challenge and expand the boundaries of your current knowledge.
+§§
+What do I want to know, learn, or understand?
+§§
+What questions have yet to be asked?
+§§
+How does my research question shape how I go about trying to answer it?
+§§
+How does my project goal shape the research or inquiry I engage in to achieve it?
+§§
+What information/evidence do I need to answer my research question?
+Understand and Analyze
+Contextualize arguments and comprehend authors’ claims.
+§§
+What strategies will help me comprehend a text?
+§§
+What is the main idea of the argument or artistic work, and what reasoning does the author use to develop it?
+§§
+What biases may the author have that influence his or her perspective?
+§§
+Does this argument acknowledge other perspectives?
+§§
+How can I assess the quality or strength of others’ research, products, or artistic works?
+Evaluate Multiple Perspectives
+Consider individual perspectives and the larger conversation of varied points of view.
+§§
+How might others see a problem or issue differently?
+§§
+What patterns or trends can be identified among the arguments about this issue?
+§§
+What are the implications and/or consequences of accepting or rejecting a particular argument?
+§§
+How can I connect the multiple arguments? What other issues, questions, or topics do they relate to?
+§§
+How can I explain contradictions within or between arguments?
+§§
+From whose perspective is this information being presented, and how does that affect my evaluation?
+Synthesize Ideas
+Combine knowledge, ideas, and your own perspective into an argument.
+§§
+How do I connect and analyze the evidence in order to develop an argument and support a conclusion?
+§§
+Are there other conclusions I should consider?
+§§
+How does my scholarly work emerge from my perspective, design choices, or aesthetic rationale?
+§§
+How do I acknowledge and account for my own biases and assumptions?
+§§
+What is the most appropriate way to acknowledge and attribute the work of others that was used to support my argument?
+How do I ensure the conclusions I present are my own?
+Team, Transform, and Transmit
+Collaborate, reflect, and communicate your argument in a method suited to your audience.
+§§
+How can I best appeal to and engage my audience?
+§§
+What is the best medium or genre through which to reach my audience?
+§§
+How might I adapt my written and oral presentations for different audiences and situations?
+§§
+How might my communication choices affect my credibility with my audience?
+§§
+Which revision strategies are most appropriate to developing and refining my project at different stages?
+§§
+How do I provide feedback that is valuable to others? How do I act upon feedback I have received?
+§§
+How can I benefit from reflecting on my own work?
+Q
+U
+E
+S
+T 67
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+Appendix A
+
+=== Page 77 ===
+AP Research Timeline
+Academic Year 1
+AP Seminar instruction begins in the fall
+Academic Year 2
+AP Research instruction begins in the fall
+DATE
+ACTIVITY
+June–August
+AP Research professional development.
+Summer
+AP Classroom (myap.collegeboard.org) opens.
+August–September
+AP Research instruction begins. Students can access EBSCO and Turnitin through
+the AP Digital Portfolio once they have enrolled in their AP Research class section in My AP.
+October 1
+Deadline for new teachers to complete the AP Course Audit form and submit course
+syllabi. Designated administrators must approve Course Audit forms prior to this date.
+Administrators must renew previously authorized courses.
+October
+Preferred deadline for AP coordinators to order AP Exams through AP Registration
+and Ordering. See AP Central for current deadline.
+November
+Final deadline for the AP coordinator to submit the exam order through AP Registration
+and Ordering. No payment is due to College Board until June. Exams ordered or
+canceled after this date may incur a fee. See AP Central for current deadline.
+November 30
+Recommended deadline for students to submit and teachers to approve AP Research
+Proposal Forms.
+December
+Required online scoring training for AP Research launches.
+January–March
+Begin scheduling current AP Seminar students for AP Research.
+March
+Spring course orders and fall order changes deadline for AP coordinators to make
+final updates to the school’s order through AP Registration and Ordering, if needed.
+Fees may apply. See AP Central for current deadline.
+March
+Recommended deadline for all AP Research teachers to complete required online scoring training modules.
+April 30 at
+11:59 p.m. ET
+Deadline for all student work to be submitted as final in the AP Digital Portfolio and
+for teachers to submit scores for all presentations in the AP Digital Portfolio.
+May–June
+AP Research teachers should meet AP Seminar students to discuss the course, get
+students ready to work with an expert adviser, identify a topic of interest, and develop a research question.
+July
+AP score reports, including AP Capstone awards, released online.
+68
+Return to Table of Contents © 2020 College Board
+AP Capstone Program
+Appendix B
+
+=== Page 78 ===
+Contact Us
+NEW YORK OFFICE 250 Vesey Street
+New York, NY 10281 212-713-8000 212-713-8277/55 (fax)
+AP SERVICES FOR EDUCATORS
+P.O. Box 6671
+Princeton, NJ 08541-6671 212-632-1781 877-274-6474 (toll free in the U.S. and Canada) 610-290-8979 (fax)
+Email: apexams@info.collegeboard.org
+AP CANADA OFFICE 2950 Douglas Street, Suite 550
+Victoria, BC, Canada V8T 4N4 250-472-8561 800-667-4548 (toll free in Canada only)
+Email: gewonus@ap.ca
+COLLEGE BOARD INTERNATIONAL
+Serving all countries outside the U.S. and Canada 250 Vesey Street
+New York, NY 10281 212-373-8738 646-417-7350 (fax)
+Email: international@collegeboard.org
+MIDDLE STATES REGIONAL OFFICE
+Serving Delaware, District of Columbia,
+Maryland, New Jersey, New York,
+Pennsylvania, Puerto Rico, and the
+U.S. Virgin Islands
+Three Bala Plaza East, Suite 501
+Bala Cynwyd, PA 19004-1501 866-392-3019 610-227-2580 (fax)
+Email: middlestates@collegeboard.org
+MIDWESTERN REGIONAL OFFICE
+Serving Illinois, Indiana, Iowa, Kansas,
+Michigan, Minnesota, Missouri, Nebraska,
+North Dakota, Ohio, South Dakota, West
+Virginia, and Wisconsin 8700 West Bryn Mawr Avenue, Suite 900N
+Chicago, IL 60631-3512 866-392-4086 847-653-4528 (fax)
+Email: ROMWRO@collegeboard.org
+NEW ENGLAND REGIONAL OFFICE
+Serving Connecticut, Maine, Massachusetts,
+New Hampshire, Rhode Island, and Vermont 1601 Trapelo Road, Suite 12
+Waltham, MA 02451-7333 866-392-4089 781-663-2743 (fax)
+Email: newengland@collegeboard.org
+SOUTHERN REGIONAL OFFICE
+Serving Alabama, Florida, Georgia, Kentucky,
+Louisiana, Mississippi, North Carolina, South
+Carolina, Tennessee, and Virginia 3700 Crestwood Parkway, Suite 700
+Duluth, GA 30096-7155 866-392-4088 770-225-4062 (fax)
+Email: sro@info.collegeboard.org
+SOUTHWESTERN REGIONAL OFFICE
+Serving Arkansas, New Mexico, Oklahoma, and Texas 4330 Gaines Ranch Loop, Suite 200
+Austin, TX 78735-6735 866-392-3017 512-721-1841 (fax)
+Email: southwestern@collegeboard.org
+WESTERN REGIONAL OFFICE
+Serving Alaska, Arizona, California, Colorado,
+Hawaii, Idaho, Montana, Nevada, Oregon,
+Utah, Washington, and Wyoming 2001 Gateway Place, Suite 220W
+San Jose, CA 95110-1038 866-392-4078 408-367-1459 (fax)
+Email: western@collegeboard.org 69
+Return to Table of Contents © 2020 College Board
+
+=== Page 79 ===
+collegeboard.org
+© 2020 College Board       01670-070       200080648

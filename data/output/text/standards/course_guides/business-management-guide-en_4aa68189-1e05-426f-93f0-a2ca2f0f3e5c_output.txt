@@ -1,0 +1,2947 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+Business management guide
+First assessment 2024
+
+=== Page 2 ===
+Business management guide
+First assessment 2024
+
+=== Page 3 ===
+Published February 2022
+Updated May 2022
+Published on behalf of the International Baccalaureate Organization, a not-for-profit
+educational foundation of 15 Route des Morillons, 1218 Le Grand-Saconnex, Geneva,
+Switzerland by the
+International Baccalaureate Organization (UK) Ltd
+Peterson House, Malthouse Avenue, Cardiff Gate
+Cardiff, Wales CF23 8GL
+United Kingdom
+Website: ibo.org © International Baccalaureate Organization 2022
+The International Baccalaureate Organization (known as the IB) offers four high-quality
+and challenging educational programmes for a worldwide community of schools, aiming
+to create a better, more peaceful world. This publication is one of a range of materials produced to support these programmes.
+The IB may use a variety of sources in its work and check information to verify accuracy
+and authenticity, particularly when using community-based knowledge sources such as
+Wikipedia. The IB respects the principles of intellectual property and makes strenuous
+efforts to identify and obtain permission before publication from rights holders of all
+copyright material used. The IB is grateful for permissions received for material used
+in this publication and will be pleased to correct any errors or omissions at the earliest opportunity.
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval
+system, or transmitted, in any form or by any means, without the IB’s prior written
+permission, or as expressly permitted by the Rules for use of IB Intellectual Property.
+IB merchandise and publications can be purchased through the IB Store
+
+(email: sales@ibo.org). Any commercial use of IB publications (whether fee-covered or
+commercial) by third parties acting in the IB’s ecosystem without a formal relationship
+with the IB (including but not limited to tutoring organizations, professional development
+providers, educational publishers and operators of curriculum mapping or teacher
+resource digital platforms, etc.) is prohibited and requires a subsequent written licence
+from the IB. Licence requests should be sent to copyright@ibo.org. More information can be obtained on the IB public website.
+Diploma Programme
+Business management guide
+International Baccalaureate, Baccalauréat International, Bachillerato Internacional
+and IB logos are registered trademarks of the International Baccalaureate Organization.
+
+=== Page 4 ===
+IB mission statement
+The International Baccalaureate aims to develop inquiring, knowledgeable and caring young people who
+help to create a better and more peaceful world through intercultural understanding and respect.
+To this end the organization works with schools, governments and international organizations to develop
+challenging programmes of international education and rigorous assessment.
+These programmes encourage students across the world to become active, compassionate and lifelong
+learners who understand that other people, with their differences, can also be right.
+
+=== Page 5 ===
+IB learner profile profile IB learner arner profile IB le ile IB learner prof
+IB learner profile er profile IB learn © International Baccalaureate Organization 2017
+International Baccalaureate® | Baccalauréat International® | Bachillerato Internacional®
+The IB learner proﬁle represents 10 attributes valued by IB World Schools. We believe these attributes, and others
+like them, can help individuals and groups become responsible members of local, national and global communities.
+We nurture our curiosity, developing skills for inquiry and
+research. We know how to learn independently and with others.
+We learn with enthusiasm and sustain our love of learning throughout life.
+We develop and use conceptual understanding, exploring
+knowledge across a range of disciplines. We engage with issues and ideas that have local and global signiﬁcance.
+We use critical and creative thinking skills to analyse and take
+responsible action on complex problems. We exercise initiative in making reasoned, ethical decisions.
+We express ourselves conﬁdently and creatively in more than one
+language and in many ways.  We collaborate eﬀectively, listening
+carefully to the perspectives of other individuals and groups.
+We act with integrity and honesty, with a strong sense of
+fairness and justice, and with respect for the dignity and rights
+of people everywhere. We take responsibility for our actions and their consequences.
+We critically appreciate our own cultures and personal histories,
+as well as the values and traditions of others. We seek and evaluate
+a range of points of view, and we are willing to grow from the experience.
+We show empathy, compassion and respect. We have a
+commitment to service, and we act to make a positive diﬀerence
+in the lives of others and in the world around us.
+We understand the importance of balancing diﬀerent aspects of
+our lives—intellectual, physical, and emotional—to achieve
+well-being for ourselves and others. We recognize our interde pendence with other people and with the world in which we live.
+We thoughtfully consider the world and our own ideas and expe rience. We work to understand our strengths and weaknesses in
+order to support our learning and personal development.
+We approach uncertainty with forethought and determination;
+we work independently and cooperatively to explore new ideas
+and innovative strategies. We are resourceful and resilient in the face of challenges and change.
+IB learner profile
+The aim of all IB programmes is to develop internationally minded people who, recognizing their common
+humanity and shared guardianship of the planet, help to create a better and more peaceful world.
+As IB learners we strive to be:
+T
+H
+E
+
+I
+B
+
+L
+E
+A
+R
+N
+E
+R
+
+P
+R
+O
+F
+I
+L
+E
+
+=== Page 6 ===
+Introduction 1
+Purpose of this document 1
+The Diploma Programme 2
+Nature of the subject 6
+Approaches to the teaching and learning in business management 11
+Aims 17
+Assessment objectives 18
+Assessment objectives in practice 19
+Syllabus 21
+Syllabus outline 21
+Syllabus content 23
+Assessment 37
+Assessment in the Diploma Programme and Career-related Programme 37
+Assessment outline—SL 39
+Assessment outline—HL 40
+External assessment 41
+Internal assessment 51
+Appendices 59
+Presentation of financial statements 59
+Formulae 64
+Discount tables (HL only) 66
+Glossary of command terms 67
+Glossary of subject-specific terms 69
+Bibliography 70
+Contents
+Business management guide
+
+=== Page 7 ===
+This publication is intended to guide the planning, teaching and assessment of the subject in schools.
+Subject teachers are the primary audience, although it is expected that teachers will use the guide to inform students and parents about the subject.
+This guide can be found on the subject page of the programme resource centre at resources.ibo.org, a
+password-protected IB website designed to support IB teachers. It can also be purchased from the IB store at store.ibo.org.
+Additional resources
+Additional publications such as specimen papers and markschemes, teacher support materials, subject
+reports and grade descriptors can also be found on the programme resource centre. Past examination
+papers as well as markschemes can be purchased from the IB store.
+Teachers are encouraged to check the programme resource centre for additional resources created or used
+by other teachers. Teachers can provide details of useful resources, for example: websites, books, videos, journals or teaching ideas.
+Acknowledgment
+The IB wishes to thank the educators and associated schools for generously contributing time and resources to the production of this guide.
+First assessment 2024
+Introduction
+Purpose of this document 1
+Business management guide
+
+=== Page 8 ===
+The Diploma Programme (DP) is a rigorous pre-university course of study designed for students in the
+16 to 19 age range. It is a broad-based two-year course that aims to encourage students to be
+knowledgeable and inquiring, but also caring and compassionate. There is a strong emphasis on
+encouraging students to develop intercultural understanding, open-mindedness, and the attitudes
+necessary for them to respect and evaluate a range of points of view.
+The Diploma Programme model
+The course is presented as six academic areas enclosing a central core (see figure 1). It encourages the
+concurrent study of a broad range of academic areas. Students study two modern languages (or a modern
+language and a classical language), a humanities or social science subject, an experimental science,
+mathematics and one of the creative arts. It is this comprehensive range of subjects that makes the Diploma
+Programme a demanding course of study designed to prepare students effectively for university entrance.
+In each of the academic areas students have flexibility in making their choices, which means they can
+choose subjects that particularly interest them and that they may wish to study further at university.
+Figure 1
+Diploma Programme model
+Introduction
+The Diploma Programme 2
+Business management guide
+
+=== Page 9 ===
+Choosing the right combination
+Students are required to choose one subject from each of the six academic areas, although they can,
+instead of an arts subject, choose two subjects from another area. Normally, three subjects (and not
+more than four) are taken at higher level (HL), and the others are taken at standard level (SL). The IB
+recommends 240 teaching hours for HL subjects and 150 hours for SL. Subjects at HL are studied in greater depth and breadth than at SL.
+At both levels, many skills are developed, especially those of critical thinking and analysis. At the end of the
+course, students’ abilities are measured by means of external assessment. Many subjects contain some element of coursework assessed by teachers.
+The core of the Diploma Programme model
+All DP students participate in the three course elements that make up the core of the model.
+The theory of knowledge (TOK) course engages students in reflection on the nature of knowledge and on
+how we know what we claim to know. It encourages students to become more aware of their own
+perspectives, and to reflect critically on their own beliefs and assumptions.
+In TOK, students explore the means of producing knowledge within the core theme of “knowledge and the
+knower” as well as within various optional themes (knowledge and technology, knowledge and politics,
+knowledge and language, knowledge and religion, and knowledge and indigenous societies) and areas of
+knowledge (the arts, natural sciences, human sciences, history, and mathematics). The course also
+encourages students to make comparisons between different areas of knowledge and reflect on how
+knowledge is arrived at in the various disciplines, what the disciplines have in common, and the differences between them.
+Creativity, activity, service (CAS) is at the heart of the DP. The emphasis in CAS is on helping students to
+develop their own identities, in accordance with the ethical principles embodied in the IB mission
+statement and the IB learner profile. It involves students in a range of activities alongside their academic
+studies throughout the DP. The three strands of CAS are creativity (arts, and other experiences that involve
+creative thinking), activity (physical exertion contributing to a healthy lifestyle) and service (an unpaid and
+voluntary exchange that has a learning benefit for the student). Possibly, more than any other component
+in the DP, CAS contributes to the IB’s mission to create a better and more peaceful world through intercultural understanding and respect.
+The extended essay (EE), including the world studies EE, offers the opportunity for IB students to investigate
+a topic of special interest, in the form of a 4,000-word piece of independent research. The area of research
+undertaken is chosen from one of the students’ six DP subjects, or in the case of the interdisciplinary world
+studies essay, two subjects. The essay also acquaints students with the independent research and writing
+skills expected at university. This leads to a major piece of formally presented, structured writing, in which
+ideas and findings are communicated in a reasoned and coherent manner, appropriate to the subject or
+subjects chosen. It is intended to promote high-level research and writing skills, intellectual discovery and
+creativity. An authentic learning experience it provides students with an opportunity to engage in personal
+research on a topic of choice, under the guidance of a supervisor.
+Approaches to teaching and approaches to learning
+Approaches to teaching and approaches to learning across the DP refers to deliberate strategies, skills and
+attitudes which permeate the teaching and learning environment. These approaches and tools, intrinsically
+linked with the learner profile attributes, enhance student learning and assist student preparation for the
+Diploma Programme assessment and beyond. The aims of approaches to teaching and learning in the
+Diploma Programme are to:
+•
+empower teachers as teachers of learners as well as teachers of content
+The Diploma Programme 3
+Business management guide
+
+=== Page 10 ===
+•
+empower teachers to create clearer strategies for facilitating learning experiences in which students
+are more meaningfully engaged in structured inquiry and greater critical and creative thinking •
+promote both the aims of individual subjects (making them more than course aspirations) and linking
+previously isolated knowledge (concurrency of learning) •
+encourage students to develop an explicit variety of skills that will equip them to continue to be
+actively engaged in learning after they leave school, and to help them not only obtain university
+admission through better grades but also prepare for success during tertiary education and beyond •
+enhance further the coherence and relevance of the students’ DP experience •
+allow schools to identify the distinctive nature of an IB Diploma Programme education, with its blend of idealism and practicality.
+The five approaches to learning (developing thinking skills, social skills, communication skills, self management skills and research skills) along with the six approaches to teaching (teaching that is inquiry based, conceptually focused, contextualized, collaborative, differentiated and informed by assessment)
+encompass the key values and principles that underpin IB pedagogy.
+Further details can be found on the DP Approaches to teaching and learning website on the programme resource centre.
+The IB mission statement and the IB learner profile
+The DP aims to develop in students the knowledge, skills and attitudes they will need to fulfill the aims of
+the IB, as expressed in the organization’s mission statement and the learner profile. Teaching and learning
+in the DP represent the reality in daily practice of the organization’s educational philosophy.
+Academic integrity
+Academic integrity in the Diploma Programme is a set of values and behaviours informed by the attributes
+of the learner profile. In teaching, learning and assessment, academic integrity serves to promote personal
+integrity, engender respect for the integrity of others and their work, and ensure that all students have an
+equal opportunity to demonstrate the knowledge and skills they acquire during their studies.
+All coursework—including work submitted for assessment—is to be authentic, based on the student’s
+individual and original ideas with the ideas and work of others fully acknowledged. Assessment tasks that
+require teachers to provide guidance to students or that require students to work collaboratively must be
+completed in full compliance with the detailed guidelines provided by the IB for the relevant subjects.
+For further information on academic integrity in the IB and the DP, please consult the IB publications
+Academic integrity, Effective citing and referencing, Diploma Programme: From principles into practice and the
+relevant articles in the “General regulations: Diploma Programme” section in Diploma Programme
+Assessment procedures. Specific information regarding academic integrity as it pertains to external and
+internal assessment components of this DP subject can be found in this guide.
+Acknowledging the ideas or work of another person
+Coordinators and teachers are reminded that candidates must acknowledge all sources used in work
+submitted for assessment. The following is intended as a clarification of this requirement.
+Diploma Programme candidates submit work for assessment in a variety of media that may include audio visual material, text, graphs, images and/or data published in print or electronic sources. If a candidate uses
+the work or ideas of another person, the candidate must acknowledge the source using a standard style of
+referencing in a consistent manner. A candidate’s failure to acknowledge a source will be investigated by
+the IB as a potential breach of regulations that may result in a penalty imposed by the IB final award committee.
+The Diploma Programme 4
+Business management guide
+
+=== Page 11 ===
+The IB does not prescribe which style(s) of referencing or in-text citation should be used by candidates; this
+is left to the discretion of appropriate faculty/staff in the candidate’s school. The wide range of subjects,
+three response languages and the diversity of referencing styles make it impractical and restrictive to insist
+on particular styles. In practice, certain styles may prove most commonly used, but schools are free to
+choose a style that is appropriate for the subject concerned and the language in which candidates’ work is
+written. Regardless of the reference style adopted by the school for a given subject, it is expected that the
+minimum information given includes: name of author, date of publication, title of source, and page numbers as applicable.
+Candidates are expected to use a standard style and use it consistently so that credit is given to all sources
+used, including sources that have been paraphrased or summarized. When writing text candidates must
+clearly distinguish between their words and those of others by the use of quotation marks (or other
+method, such as indentation) followed by an appropriate citation that denotes an entry in the bibliography.
+If an electronic source is cited, the date of access must be indicated. Candidates are not expected to show
+faultless expertise in referencing, but are expected to demonstrate that all sources have been
+acknowledged. Candidates must be advised that audio-visual material, text, graphs, images and/or data
+published in print or in electronic sources that is not their own must also attribute the source. Again, an
+appropriate style of referencing/citation must be used.
+Learning diversity and learning support requirements
+Schools must ensure that equal access arrangements and reasonable adjustments are provided to
+candidates with learning support requirements that are in line with the IB documents Access and inclusion
+policy and Learning diversity and inclusion in IB programmes: Removing barriers to learning.
+The documents Meeting student learning diversity in the classroom and The IB guide to inclusive education: a
+resource for whole school development are available to support schools in the ongoing process of increasing
+access and engagement by removing barriers to learning.
+The Diploma Programme 5
+Business management guide
+
+=== Page 12 ===
+Figure 2
+Overview of the curriculum model
+The business management course is designed to meet the current and future needs of students who want
+to develop their knowledge of business content, concepts and tools to assist with business decision making. Future employees, business leaders, entrepreneurs or social entrepreneurs need to be confident,
+creative and compassionate as change agents for business in an increasingly interconnected global
+marketplace. The business management course is designed to encourage the development of these attributes.
+Through the exploration of four interdisciplinary concepts—creativity, change, ethics and sustainability
+—this course empowers students to explore these concepts from a business perspective. Business
+management focuses on business functions, management processes and decision-making in contemporary contexts of strategic uncertainty.
+Students examine how business decisions are influenced by factors that are internal and external to an
+organization and how these decisions impact upon a range of internal and external stakeholders. Emphasis
+is placed on strategic decision-making and the operational business functions of human resource
+management, finance and accounts, marketing, and operations management.
+Introduction
+Nature of the subject 6
+Business management guide
+
+=== Page 13 ===
+The business management course encourages the application of local, national and global examples to
+content and concepts; the internal assessment (IA) for both SL and HL is an individual business research
+project that allows greater analysis and evaluation of content, concepts and context. Students can develop
+a deeper understanding of an organization by studying its processes through the lenses of creativity, change, ethics and sustainability.
+For the external assessment (paper 1 SL and HL), students will be assessed on their knowledge of important
+contemporary business topics through their analysis of a fictitious business. Paper 2 (SL and HL) has a
+greater focus on developing students’ analytical and financial quantitative skills. This will allow students to
+combine their qualitative writing as business communicators with deeper financial analysis. In paper 3 (HL
+only) students apply their knowledge of business tools and content through an innovative and potentially
+disruptive social enterprise. This paper will allow business students to demonstrate their empathetic,
+creative, analytical and evaluative skills. It will allow students to make ethical strategic decisions for their
+stakeholders on a disruptive good or service; in the process, changing the lives of their stakeholders for the better.
+Business management is a challenging and dynamic discipline that more than meets the needs of our
+students growing and developing in a complex business environment. This course prepares students to be
+global citizens ready to face up to the challenges and opportunities awaiting them in our ever-changing world.
+Distinction between SL and HL
+The SL course in business management differs from the HL course in terms of the:
+•
+recommended hours devoted to teaching (150 hours for SL compared to 240 hours for HL) •
+extra depth and breadth required (extension material for HL only) •
+nature of the examination questions in papers 2 and 3.
+◦
+Paper 2 for both SL and HL focuses on developing quantitative skills; however, HL students will need to develop these further in greater depth.
+◦
+Paper 3 is an HL-only paper based on a social enterprise, where students identify and describe a
+human need and the potential organizational challenges facing the social entrepreneur. Further
+to this, students are required to write a decision-making document that includes a business recommendation.
+Business management and the core
+Business management and theory of knowledge
+Theory of knowledge (TOK) explores questions about knowledge and the process of knowing. TOK
+emphasizes comparisons and connections between areas of knowledge and encourages students to
+become more aware of their perspectives and the perspectives of others.
+There are potential TOK connections throughout the business management syllabus. For example, there is
+a particularly strong synergy between the business management topic of management information
+systems and the optional TOK theme of “knowledge and technology”. Both consider the impact of today's
+“information age”, its scope and ethical considerations concerning innovations such as artificial intelligence and data mining.
+In TOK, students study a core theme, optional themes and areas of knowledge using a tool called the
+“knowledge framework”. This framework consists of four elements: scope, perspectives, methods and tools,
+and ethics. The links between business management and the TOK knowledge framework elements are explored briefly under the following headings.
+Nature of the subject 7
+Business management guide
+
+=== Page 14 ===
+Scope
+How do we decide whether a particular discipline should be regarded as a human science? Do the
+disciplines in the human sciences diverge from each other more fundamentally than disciplines in other
+areas of knowledge? Are some types of knowledge more useful than others?
+This element explores how the discipline and practice of business management fits within the totality of
+human knowledge. It encourages discussion of how business management relates to other academic
+disciplines, and how the human sciences compare and contrast with other areas of knowledge. Students
+could also reflect on how business organizations support almost every aspect of human endeavour from
+public universities and private pharmaceutical companies working together to develop new vaccines, to
+non-government organizations (NGOs) providing primary education to the rural poor in developing
+countries. The scope of business organizations to develop knowledge and ideas is only limited by
+entrepreneurs' collective imaginations. Discussions of scope also allow students to explore the limitations
+and potential applications of new knowledge that is generated by business organizations.
+Perspectives
+Are some types of knowledge less open to interpretation than others? Why do facts sometimes not change
+our minds? How can we decide between the views of experts when they disagree with each other?
+This element focuses on the importance of context and different perspectives. Perspectives are a crucial
+aspect of all IB courses—the IB mission statement closes with the aim of developing “… learners who
+understand that other people, with their differences, can also be right”. There are many ways to make
+exciting and compelling links to perspectives in the business management course. For example, a recurring
+topic throughout the business management syllabus is stakeholders, their differing viewpoints, conflicting
+objectives and how they are affected by change. Considering the differing perspectives of stakeholder
+groups allows students to gain a greater understanding of issues as diverse as financial accounts and
+workforce participation. Linking to TOK discussions about perspectives can help students to deepen
+understanding of their own perspectives as well as making them more aware of the perspectives of others.
+Methods and tools
+To what extent are the methods used in the human sciences “scientific”? To what extent can human
+scientists use mathematical techniques to make accurate predictions? How can we judge when evidence is adequate?
+This element focuses on exploring the methods, tools and practices that we use to produce knowledge.
+Woven into every unit is the business management toolkit. This suite of decision-making tools is designed
+to help business leaders assess their current situation and implement strategies for the future. To evaluate
+these tools, students must consider the reliability of the data fed into these tools and the subjectivity of
+their outcomes. This evaluative approach also fits with the fourth aim of the business management course,
+which helps students to engage with decision-making as a process and a skill.
+Ethics
+In what ways do ethical judgments differ from other kinds of decisions? To what extent are the methods of
+the human sciences limited by the ethical considerations involved in studying human beings? Does all
+knowledge impose moral obligations on those who know it?
+Ethics is both part of the TOK knowledge framework and one of the concepts in business management. The
+first aim of this course is “to develop as confident, creative and compassionate business leaders,
+entrepreneurs, social entrepreneurs, and as change agents”. Students can consider ethical decision-making
+within every unit, whether it be privacy issues relating to big data and consumer profiling or the moral
+objectives of social enterprises. When making links to TOK and ethics, the focus should be clearly on ethics
+concerning knowledge. So, for example, rather than merely debating whether a controversial issue is right
+or wrong, in TOK, students would consider what criteria we could use to make such judgments, who
+decides, or where our values and moral beliefs come from.
+Nature of the subject 8
+Business management guide
+
+=== Page 15 ===
+The DP business management course has multiple opportunities for teachers and students to explore TOK
+connections and the nature of knowledge. Sample questions in each unit are included to ignite classroom discussion and student interest.
+Note: These suggestions are not prescriptive, and teachers are encouraged to follow their interests and those of their class.
+Business management and the extended essay
+An extended essay (EE) in business management provides students with an opportunity to undertake in depth research in a certain area or topic in the subject. The world of business management offers potential
+for creative EEs. Students have a diverse range of areas to conduct their independent research from human
+resource management, to finance, to operations, to marketing.
+While undertaking the business management course, students develop essential skills that can enable them
+to produce a well-balanced EE. Although students are expected to base their EE on secondary resources,
+primary research can be used as well, where appropriate. Students may wish to use secondary material such
+as company data, which is often accessible due to the reporting requirements of businesses.
+To develop and support their arguments, students should apply relevant business theory and conduct
+through analysis and evaluation in an effort to answer the research question.
+The EE in business management is not an extension of the internal assessment (IA) task for the subject.
+Students must have a clear understanding of the distinction between the IA and the EE.
+For more information refer to the “Business management: Subject-specific guidance” section of the EE website, found on the programme resource centre.
+Business management and creativity, activity, service
+In the business management course students explore interactions between humans and their environment
+in their own context and learn to reflect on their own identity, and potential roles in society. They are
+encouraged to contribute to positive change in their communities. Students develop awareness and
+knowledge of how certain businesses work, through in-depth research of case studies, including an IA
+component that deepens their understanding of the complexities in business.
+This knowledge is extended through creativity, activity, service (CAS), where students are motivated to act
+as responsible global citizens. By acquiring skills, they learn about strategic thinking and setting objectives,
+acquire planning skills and develop an appreciation for different cultural perspectives within organizations.
+These skills support their CAS activities and help the students to choose CAS activities with significance or meaning for their communities.
+Business management and the IB learner profile
+The business management course helps to meet the demands of the IB mission statement that “aims to
+develop inquiring, knowledgeable and caring young people who help to create a better and more peaceful
+world through intercultural understanding and respect” (IB mission statement). This mission is further
+delineated through the attributes of the IB learner profile, and the business management curriculum allows
+students opportunities to demonstrate and develop these attributes through the implicit and explicit content of the course.
+IB learners are:
+Business management students will:
+inquirers
+undertake independent and collaborative investigations into real-world business case
+studies, for example, through the IA research project where they develop overarching
+concept-driven questions and gather relevant data to address these.
+knowledgeable
+utilize business concepts, theories and models with confidence to gain a more
+sophisticated understanding of current strategic decision-making even under conditions of uncertainty.
+Nature of the subject 9
+Business management guide
+
+=== Page 16 ===
+IB learners are:
+Business management students will:
+thinkers
+synthesize and evaluate business information and data to draw conclusions and
+develop balanced, well-supported arguments including recommending suitable courses of action.
+communicators
+compose clear and concise analytical responses utilizing the terminology and tools of business, especially in the written assessments.
+principled
+act with integrity, critically evaluating statistical data and evidence, understanding that
+the possession of knowledge carries with it an ethical responsibility.
+open-minded
+understand that decision-making involves the consideration of different causes, effects
+and perspectives and therefore the need to offer a range of solutions to business problems/issues.
+caring
+appreciate that business management is a social science that has a human impact,
+influencing the well-being of individuals and societies.
+risk-takers
+utilize business knowledge and understanding to develop and present creative
+business conclusions/recommendations for real-world organizations in local, national and global contexts balanced
+understand the importance of considering different perspectives when making
+business decisions, including evaluating their impact on various stakeholders reflective
+acknowledge their own inherent bias when making decisions with an awareness of
+their own strengths and weaknesses; hence, seek out new further sources of
+information to ensure that solutions are as effective as they can be given prevailing strategic uncertainty.
+Business management and international mindedness
+Developing international-mindedness is essential to the business management course. Many businesses
+operate across national borders and even seemingly local businesses are influenced by international
+competition. The business management course helps students to understand and evaluate the implications
+of business activity in an interconnected, global market.
+The course encourages the use of inquiries, contemporary examples and case studies at a variety of levels,
+from the local to the global, as well as from smaller scale businesses to multinational ones. Throughout the
+course, teachers can choose case studies that reflect the context that they are teaching as well as case
+studies that allow for comparisons across contexts. The four key concepts underpinning the course create a
+framework for these discussions. The course is designed to give students an international perspective and
+to encourage their appreciation of cultural diversity among different types of business organizations, and individuals and groups within them.
+The course promotes the ideals of international cooperation and responsible citizenship. Students are
+encouraged to make sense of the forces and circumstances that drive and restrain change in an interdependent and multicultural world.
+Nature of the subject 10
+Business management guide
+
+=== Page 17 ===
+Conceptually focused and contextualized teaching and learning is important for business management.
+Case studies and real-world examples help to keep the right focus within the course.
+Figure 3
+The relationship between inquiries, concepts, content and contexts in business management
+As indicated in figure 3, the three components of concepts, content and contexts are of equal relevance
+and teachers may choose any one as a starting point for their teaching. Concepts are anchored in the
+content of business management—its tools and theories—and are given context through the study of
+case studies and real-world examples. Together these components help students to acquire a holistic and
+integrated understanding of business management as a discipline.
+The business management course is focused on inquiry-based teaching and learning, where students are
+given the opportunity to explore business tools and theories using case studies and create their own
+questions and formulate their own solutions to problems or issues facing an organization. This inquiry
+approach can be used, for example, in paper 1 and the concept-based business research project IA for both
+SL and HL. The teaching of the business management content should, therefore, be supported by focusing
+on case studies and applying real-world examples. In some of the assessments, students will be expected to
+demonstrate their understanding of business management through the lens of a case study rather than the
+response being purely theoretical. In doing this, the students will go beyond their comprehension of just
+theory and clearly analyse or evaluate the situation highlighted in the different case studies.
+While inquiry permeates the whole course, the assessment objective 3 (AO3) topics that require more
+depth are considered areas that lend themselves particularly well to this approach. However, it is important
+that teachers know that inquiry as a teaching and learning strategy is not only applicable to AO3 topics.
+Introduction
+Approaches to the teaching and learning in business management 11
+Business management guide
+
+=== Page 18 ===
+Teachers need to see the value of this approach in terms of allowing students to develop and demonstrate
+higher-order thinking skills. It is important to highlight that inquiry needs to be taking place to ensure
+students are actively involved in researching business issues. This inquiry approach will aid students in
+developing critical thinking and problem-solving skills, an appreciation of different viewpoints, collaboration and reflective discussion.
+Business skills are important to the study of business management and reflect the subject’s distinctive
+approach. The teaching and learning of these skills enriches the students’ understanding of business and
+enables them to apply these to various business theories and tools. It is essential that the skills should be
+covered throughout the course and that they are introduced and integrated where appropriate in relation
+to the concepts, content and contexts at both SL and HL. Students are expected to demonstrate
+competence in the use of business skills in both the external assessment and internal assessment.
+Formative assessment, as a central part of learning and teaching, helps students to build up the primary
+and secondary skills required to reach their learning objectives in the subject and beyond.
+Primary skills refer to those key constructs that we want to assess and are usually stated explicitly in the
+learning objectives or the assessment objectives of the final assessment components. For example,
+students’ abilities to apply business management tools and theories in case studies.
+Secondary skills, however, are not explicit in the key learning objectives or assessment objectives in that
+subject but are necessary skills for the students to perform effectively in the subject and beyond. These are
+usually implicit skills that are transdisciplinary and transferrable to other subjects. For example, research
+skills, reading comprehension skills, summarizing and synthesis skills.
+These skills are further explored in the Business management teacher support material (TSM).
+The four concepts that underpin the business management course (change, creativity, ethics and
+sustainability) are integrated into the conceptual understandings of all the units to ensure that a conceptual thread is woven throughout the course.
+Conceptually focused teaching helps learners to:
+•
+organize new information by categorizing groups of facts, ideas, theories and tools according to patterns of similarity or difference •
+deepen their understanding of the complex and dynamic business world •
+approach concepts and content in different ways through multiple perspectives •
+make connections with other subjects to enhance interdisciplinary learning •
+design overarching inquiry questions or statements that link concepts to content and to contexts.
+Conceptual understanding therefore enhances the student’s overall understanding of the course, making
+the subject more meaningful. This understanding assists students in showing clear evidence of synthesis
+and evaluation in their responses to questions asked in the external assessment (even though the questions
+may not be explicitly concept based). In the internal assessment, however, students must use a concept as a
+lens through which to analyse their research project.
+The definition, relative importance and relationship to the subject of business management of each of the
+four key concepts may be the subject of debate. Teachers should explore how these concepts may be
+understood and applied differently in different contexts. Figure 4 provides brief understandings of how the
+key concepts may be initially understood in relation to the course.
+Figure 4
+The relationship between the key concepts and the business management course
+Key concept
+Understanding in relation to the course
+Change
+This concept is explored from several perspectives since businesses operate in a
+dynamic world that is subject to constant change. Change may be a conversion,
+transformation, or movement from one form, state or value to another. Inquiry
+into the concept of change involves understanding and evaluating causes,
+processes and consequences. Due to increasing competition, new technologies
+and markets as well as changing trends in consumer behaviour, business
+Approaches to the teaching and learning in business management 12
+Business management guide
+
+=== Page 19 ===
+Key concept
+Understanding in relation to the course
+organizations need to adapt their objectives, strategies and operations if they are
+to succeed. This success emerges from their ability to research and respond to
+signals in both the internal and external environment.
+Creativity
+Creativity is the process of generating new ideas and considering existing ideas
+from new perspectives. Creativity includes the ability to recognize the value of
+ideas when developing innovative responses to problems; it may be evident in
+the process as well as outcomes, products or solutions. The creation of ideas and
+solutions involves a process of synthesizing and evaluating in response to surrounding changes.
+Ethics
+Ethics refers to moral principles, code or morals that govern the behaviour of a
+person or group of people. In understanding ethics, it is important to note that
+every business decision has moral implications. These decision-making processes
+are based on moral philosophies or guidelines that influence the way a business
+conducts itself. The consequences of these implications can be significant for
+internal and external stakeholders and the natural environment.
+Sustainability
+Sustainability is “meeting the needs of the present without compromising the
+ability of future generations to meet their own needs” (United Nations 1987).
+Sustainability can be enhanced by conserving resources or finding more efficient
+ways to produce or discover new resources. Business decisions should consider
+the impacts of their results on people, planet and profit (this is termed the “triple bottom line”).
+•
+Cultural/social sustainability (people): businesses are encouraged to be
+aware of their cultural and community settings. Within this mindset
+businesses focus not only on the local community but also consider the
+cultural norms and values within the external environment.
+•
+Environmental sustainability (planet): this demands that enterprises work
+on minimizing their negative environmental impact through different
+practices such as reusing, recycling or reducing waste.
+•
+Economic sustainability (profit): businesses/entrepreneurs are risk-takers
+and strive to make a profit, which is part of their economic responsibility.
+However, this also translates into employment opportunities and tax
+revenue to allow for further development of the community.
+Specific examples of how these key concepts can be integrated into the teaching and learning of the course can be found in the TSM.
+Business management toolkit
+The business management toolkit is a set of situational, planning and decision-making tools. These tools
+should be used by students to analyse and evaluate the syllabus content and can be applied in different
+disciplinary and interdisciplinary contexts; teachers should integrate the tools while teaching the course.
+Suggestions for usage are included in figure 5 and in every unit. A visual business management toolkit is available in the TSM.
+Note: The suggested areas of tool integration are indicative only and teachers should feel free to integrate
+the tools in other unit areas where appropriate. All of these tools must be taught (at AO2 and AO4 level) alongside the syllabus content.
+Note: All tools are SL and HL unless otherwise stated. HL only tools are in bold.
+Approaches to the teaching and learning in business management 13
+Business management guide
+
+=== Page 20 ===
+Figure 5
+The business management toolkit
+Business management tools
+Suggested unit areas for integration of tools (not exhaustive)
+SWOT analysis 1, 2, 3, 4, 5
+Ansoff matrix 1, 4
+STEEPLE analysis 1, 2, 4
+Boston Consulting Group (BCG) matrix 3, 4
+Business plan 1, 2, 3, 4, 5
+Decision trees 1, 5
+Descriptive statistics
+These include the following.
+•
+Mean •
+Mode •
+Median •
+Bar charts •
+Pie charts •
+Infographics •
+Quartiles •
+Standard deviation 2, 3, 4, 5
+Circular business models
+These include the following.
+•
+Circular supply models •
+Resource recovery models •
+Product life extension models •
+Sharing models •
+Product service system models 1, 5
+Force field analysis (HL only) 2, 5
+Gantt chart (HL only) 4, 5
+Hofstede’s cultural dimensions (HL only) 2, 4, 5
+Porter's generic strategies (HL only) 1, 4
+Contribution (HL only)
+Includes the following.
+•
+Make or buy analysis •
+Contribution costing •
+Absorption costing 3, 4, 5
+Critical path analysis (HL only)
+Includes the following.
+•
+Completion and analyses of a critical path diagram (drawing of the diagram is not expected) •
+Identification of the critical path 4, 5
+Approaches to the teaching and learning in business management 14
+Business management guide
+
+=== Page 21 ===
+Business management tools
+Suggested unit areas for integration of tools (not exhaustive) •
+Calculation of free and total float
+Simple linear regression (HL only)
+Includes the following.
+•
+Scatter diagrams •
+Line of best fit •
+Correlation/Extrapolation 1, 4, 5
+The TSM provides further guidance on the application of this toolkit including additional support on the
+approaches to teaching and learning in the course.
+Engaging with sensitive topics
+The study of business management provides students with an opportunity to engage with exciting,
+stimulating and personally relevant business topics and issues. However, it should be noted that often such
+topics and issues can also be sensitive and personally challenging. Teachers should be aware of this and
+provide guidance to students on how to approach and engage with such topics and issues in a responsible
+and inclusive manner, providing due consideration to questions and issues that may arise.
+Prior learning
+The business management course requires no specific prior learning of business management or business
+studies. No particular background in terms of specific subjects for national or international qualifications is
+expected or required. However, a familiarity with business concepts and theories would be an advantage,
+as would completing the individuals and societies course in the Middle Years Programme (MYP).
+Links to the Middle Years Programme
+The MYP individuals and societies subject group involves inquiry into historical, contemporary, political,
+social, economic, cultural, technological and environmental contexts that impact on, and are influenced by,
+individuals and societies. This is a very useful foundation for students who go on to study the DP business management course.
+Students who have studied through the MYP are familiar with a conceptual approach to learning. For
+example, the concepts of change, creativity, ethics and sustainability (within MYP individual and
+societies courses) are further developed in the DP business management course. Conceptual analysis in the
+business management course is expected to have an increasing degree of sophistication and disciplinary specificity.
+The development of certain skills in the MYP individuals and societies subject group is also excellent
+preparation for a DP course in business management, which requires the student to inquire, demonstrate
+knowledge and understanding of content and concepts, and exhibit the capacity to think critically in a
+given contextual setting. This learning process supports higher-level mastery of the approaches to teaching and learning skills.
+Links to the Career-related Programme
+In the Career-related Programme (CP), students study at least two DP subjects, a core consisting of four
+components and a career-related study, which is determined by the local context and aligned with student
+needs. Courses can be chosen from any group of the DP, and it is possible to study more than one course
+from the same group (for example, business management and economics).
+Approaches to the teaching and learning in business management 15
+Business management guide
+
+=== Page 22 ===
+Business management develops the student’s creative, critical thinking and decision-making skills, which
+are highly desired across a range of career-related pursuits. Business management is an ideal choice for CP
+students considering careers in investment banking, chartered accounting, finance, corporate law, research,
+leisure and tourism, government and non-governmental organizations, project management, and so on.
+The DP business management course emphasizes the development of: strong written, verbal and visual
+communication skills; critical thinking; problem-solving and ethical considerations that will assist students
+in preparing for the future global workplace. This in turn fosters the IB learner profile attributes that are
+transferable to the entire CP, providing relevance and support for the student’s learning.
+For CP students, DP courses can be studied at SL or HL. Schools can explore opportunities to integrate CP students with DP students.
+Approaches to the teaching and learning in business management 16
+Business management guide
+
+=== Page 23 ===
+Individuals and societies aims
+Individuals and societies subjects help young people to develop a connection to our shared planet,
+exploring how to live sustainably and promoting the well-being of all people in our pursuit of a more peaceful world.
+The aims of all the individuals and societies subjects are to equip young people to:
+1.
+explore and critically engage with multiple perspectives and ways of thinking 2.
+investigate and evaluate the interactions between individuals and societies 3.
+think and act as informed and principled individuals in societies 4.
+understand and value the variety and diversity of the human experience across time and place.
+Business management aims
+The aims of the business management course at SL and HL are to enable students to:
+1.
+develop as confident, creative and compassionate business leaders, entrepreneurs, social entrepreneurs and as change agents 2.
+foster an informed understanding of ethical and sustainable business practices 3.
+explore the connections between individuals, businesses and society 4.
+engage with decision-making as a process and a skill.
+Introduction
+Aims 17
+Business management guide
+
+=== Page 24 ===
+By the end of the business management course, students are expected to achieve the following assessment objectives.
+AO1: Knowledge and understanding
+Demonstrate knowledge and understanding of:
+• business management tools and theories • course topics and concepts • business problems, issues and decisions •
+HL extension topics (HL only).
+AO2: Application and analysis
+Apply and analyse:
+• business management tools and theories • course topics and concepts • business problems, issues and decisions •
+business decisions and issues through the selection and use of appropriate data •
+HL extension topics (HL only).
+AO3: Synthesis and evaluation
+Synthesize and evaluate:
+• business management tools and theories • course topics and concepts • business problems, issues and decisions •
+stakeholder interests to reach informed business decisions •
+recommendations for competing future strategic options (HL only) •
+HL extension topics (HL only).
+AO4: Use and application of appropriate skills •
+Select and apply relevant business management tools, theories and concepts to support research into a business issue or problem.
+•
+Select, interpret and analyse business materials from a range of primary and secondary sources.
+•
+Create well-structured materials using business management terminology.
+•
+Communicate analysis, evaluation and conclusions of research effectively.
+Introduction
+Assessment objectives 18
+Business management guide
+
+=== Page 25 ===
+Assessment objective
+Paper 1 (SL and HL)
+Paper 2 (SL and HL)
+Paper 3 (HL only)
+Internal assessment (SL and HL)
+Section A
+Section B
+Section A
+Section B
+AO1
+Knowledge and understanding √ √ √ √ √ √
+AO2
+Application and analysis √ √ √ √ √ √
+AO3
+Synthesis and evaluation √ √ √ √
+AO4
+Use and application of appropriate skills √ √ √ √ √ √
+Command terms
+Command terms are classified according to the AO levels.
+Command terms related to cognitive demand progress from AO1 to AO3, while AO4 command terms are
+specific to particular skills. Teachers and students must be familiar with the assessment objectives and the
+command terms in order to understand the depth of treatment required in teaching and in examination questions.
+For use of command terms in examination questions, please refer to the “Assessment” section of this guide.
+The command terms within each assessment objective are listed in alphabetical order in the following
+table. Definitions of the command terms are listed in the “Glossary of command terms” in the appendices to this guide.
+Assessment objective
+Key command term
+Depth
+AO1—knowledge and understanding
+Define
+Describe
+Identify
+List
+Outline
+State
+These terms require students to learn and comprehend the meaning of information.
+AO2—application and analysis
+Analyse
+Apply
+These terms require students to use their knowledge and skills to Introduction
+Assessment objectives in practice 19
+Business management guide
+
+=== Page 26 ===
+Assessment objective
+Key command term
+Depth
+Comment
+Demonstrate
+Distinguish
+Explain
+Suggest break down ideas into simpler parts and to see how the parts relate.
+AO3—synthesis and evaluation
+Compare
+Compare and contrast
+Contrast
+Discuss
+Evaluate
+Examine
+Justify
+Recommend
+To what extent
+These terms require students to rearrange component ideas into a new whole and make judgments based on evidence or a set of criteria.
+AO4—use and application of appropriate skills
+Annotate
+Calculate
+Complete
+Construct
+Determine
+Draw
+Label
+Plot
+Prepare
+These terms require students to demonstrate the selection and use of subject-specific skills and techniques.
+Assessment objectives in practice 20
+Business management guide
+
+=== Page 27 ===
+Syllabus component
+Recommended teaching hours
+SL
+HL
+Unit 1: Introduction to business management 1.1 What is a business?
+1.2 Types of business entities 1.3 Business objectives 1.4 Stakeholders 1.5 Growth and evolution 1.6 Multinational companies (MNCs) 20 20
+Unit 2: Human resource management 2.1 Introduction to human resource management 2.2 Organizational structure 2.3 Leadership and management 2.4 Motivation and demotivation 2.5 Organizational (corporate) culture (HL only) 2.6 Communication 2.7 Industrial/employee relations (HL only) 20 35
+Unit 3: Finance and accounts 3.1 Introduction to finance 3.2 Sources of finance 3.3 Costs and revenues 3.4 Final accounts 3.5 Profitability and liquidity ratio analysis 3.6 Efficiency ratio analysis (HL only) 3.7 Cash flow 3.8 Investment appraisal 3.9 Budgets (HL only) 30 45
+Unit 4: Marketing 4.1 Introduction to marketing 4.2 Marketing planning 4.3 Sales forecasting (HL only) 4.4 Market research 4.5 The seven Ps of the marketing mix 4.6 International marketing (HL only) 30 35
+Unit 5: Operations management 5.1 Introduction to operations management 15 45
+Syllabus
+Syllabus outline 21
+Business management guide
+
+=== Page 28 ===
+Syllabus component
+Recommended teaching hours
+SL
+HL 5.2 Operations methods
+5.3 Lean production and quality management (HL only) 5.4 Location 5.5 Break-even analysis 5.6 Production planning (HL only)
+5.7 Crisis management and contingency planning (HL only) 5.8 Research and development (HL only) 5.9 Management information systems (HL only)
+Business management toolkit 10 35
+Research time allocated for the pre-released statement in paper 1 5 5
+Internal assessment 20 20
+Total teaching hours 150 240
+Syllabus outline 22
+Business management guide
+
+=== Page 29 ===
+Unit 1: Introduction to business management
+Conceptual understandings •
+Change is essential for businesses to achieve their desired aims •
+Creative business planning can lead to organizational success •
+Ethical business behaviour improves a business’ image as well as customer loyalty •
+Sustainable business practices can enhance a business’ existence
+Suggested business management tools to integrate (other tools may also be integrated)
+SWOT analysis, Ansoff Matrix, STEEPLE analysis, business plan, decision trees, circular business models,
+Porter’s generic strategies (HL only), simple linear regression (HL only)
+Note: All content is SL and HL unless otherwise stated. HL only content is in bold.
+1.1 What is a business?
+Depth of teaching
+The nature of business
+AO1
+Primary, secondary, tertiary and quaternary sectors
+AO2
+Entrepreneurship
+AO2
+Challenges and opportunities for starting up a business
+AO2 1.2 Types of business entities
+Depth of teaching
+Distinction between the private and the public sectors
+AO2
+The main features of the following types of organizations.
+•
+Sole traders •
+Partnerships •
+Privately held companies •
+Publicly held companies
+AO3
+The main features of the following types of for-profit social enterprises.
+•
+Private sector companies •
+Public sector companies •
+Cooperatives
+AO3
+The main features of the following type of non-profit social enterprise.
+•
+Non-governmental organizations (NGOs)
+AO3 1.3 Business objectives
+Depth of teaching
+Vision statement and mission statement
+AO2
+Syllabus
+Syllabus content 23
+Business management guide
+
+=== Page 30 ===
+1.3 Business objectives
+Depth of teaching
+Common business objectives including growth, profit, protecting shareholder value and ethical objectives
+AO2
+Strategic and tactical objectives
+AO3
+Corporate social responsibility (CSR)
+AO3 1.4 Stakeholders
+Depth of teaching
+Internal and external stakeholders
+AO2
+Conflict between stakeholders
+AO2 1.5 Growth and evolution
+Depth of teaching
+Internal and external economies and diseconomies of scale
+AO2
+The difference between internal and external growth
+AO2
+Reasons for businesses to grow
+AO3
+Reasons for businesses to stay small
+AO3
+External growth methods.
+•
+Mergers and acquisitions (M&As) •
+Takeovers •
+Joint ventures •
+Strategic alliances •
+Franchising
+AO3 1.6 Multinational companies (MNCs)
+Depth of teaching
+The impact of MNCs on the host countries
+AO3
+Suggested inquiry statements to explore •
+How corporate social responsibility (CSR) could impact business creativity.
+•
+Why business objectives might change over time.
+•
+How ethical behaviour contributes to business sustainability.
+•
+Why change could bring conflict among stakeholders.
+•
+How businesses could benefit from adopting circular business models.
+Suggested theory of knowledge questions •
+Is the depiction of “business management” in this guide an accurate model of the contemporary
+academic discipline of business management and today’s business environment?
+•
+If the effects of a mission statement cannot be easily measured, does this mean that they are worthless?
+•
+Do CEOs have different ethical obligations and responsibilities compared to their employees?
+•
+Does competition between companies help or hinder the production of knowledge?
+•
+Is it possible to discover laws of business in the same way that the natural sciences discover laws of nature?
+Syllabus content 24
+Business management guide
+
+=== Page 31 ===
+Unit 2: Human resource management
+Conceptual understandings •
+People play a major role in driving organizational change •
+Creative employees could be essential for business success •
+Ethical human resource systems may positively affect employee performance •
+Sustainable human behaviour can bring positive change in a business
+Suggested business management tools to integrate (other tools may also be integrated)
+Force field analysis (HL only), descriptive statistics, SWOT analysis, STEEPLE analysis, Hofstede’s cultural dimensions (HL only)
+Note: All content is SL and HL unless otherwise stated. HL only content is in bold.
+2.1 Introduction to human resource management
+Depth of teaching
+Role of human resource management
+AO2
+Internal and external factors that influence human resource planning (for example,
+demographic change, change in labour mobility, immigration, flexi-time, gig economy)
+AO2
+Reasons for resistance to change in the workplace
+AO2
+Human resource strategies for reducing the impact of change and resistance to change
+AO3 2.2 Organizational structure
+Depth of teaching
+The following terminology in relation to different types of organizational structures.
+•
+Delegation •
+Span of control •
+Levels of the hierarchy •
+Chain of command •
+Bureaucracy •
+Centralization •
+Decentralization •
+Delayering •
+Matrix structure
+AO2
+The following types of organization charts.
+•
+Flat or horizontal •
+Tall or vertical •
+By product, by function or by region
+AO2, AO4
+Appropriateness of different organizational structures given a change in external factors
+AO3
+Changes in organizational structures (for example, project-based organization,
+Charles Handy’s “Shamrock Organization”) (HL only)
+AO3
+Syllabus content 25
+Business management guide
+
+=== Page 32 ===
+2.3 Leadership and management
+Depth of teaching
+Scientific and intuitive thinking/management (HL only)
+AO2
+Management and leadership
+AO2
+The following leadership styles.
+•
+Autocratic •
+Paternalistic •
+Democratic •
+Laissez-faire •
+Situational
+AO3 2.4 Motivation and demotivation
+Depth of teaching
+The following motivation theories.
+•
+Taylor •
+Maslow •
+Herzberg (motivation–hygiene theory)
+AO3
+The following motivation theories.
+•
+McClelland’s acquired needs theory (HL only) •
+Deci and Ryan’s self-determination theory (HL only) •
+Equity and expectancy theory (HL only)
+AO3
+Labour turnover (HL only)
+AO2, AO4
+The following types of appraisal (HL only).
+•
+Formative •
+Summative • 360-degree feedback •
+Self-appraisal
+AO2
+Methods of recruitment (HL only)
+AO2
+Internal and external recruitment (HL only)
+AO3
+The following types of financial rewards.
+•
+Salary •
+Wages (time and piece rates) •
+Commission •
+Performance-related pay (PRP) •
+Profit-related pay •
+Employee share ownership schemes •
+Fringe payments
+AO2
+The following types of non-financial rewards.
+•
+Job enrichment •
+Job rotation •
+Job enlargement •
+Empowerment •
+Purpose/the opportunity to make a difference
+AO2
+Syllabus content 26
+Business management guide
+
+=== Page 33 ===
+2.4 Motivation and demotivation
+Depth of teaching •
+Teamwork
+The following types of training.
+•
+Induction •
+On the job •
+Off the job
+AO2 2.5 Organizational (corporate) culture (HL only)
+Depth of teaching
+Organizational culture (HL only)
+AO1
+Types of organizational culture, for example, Charles Handy's “Gods of management” (HL only)
+AO2
+Cultural clashes when organizations change, including but not limited to, when
+organizations grow and merge and when leadership styles change (HL only)
+AO3 2.6 Communication
+Depth of teaching
+Formal and informal methods of communication for an organization in a given situation
+AO3
+Barriers to communication
+AO2 2.7 Industrial/employee relations (HL only)
+Depth of teaching
+Sources of conflict in the workplace
+AO2
+Approaches to conflict in the workplace by:
+•
+employees—collective bargaining, work-to-rule and strike action •
+employers—collective bargaining, threats of redundancies, changes of contract, closure and lockouts.
+AO3
+The following approaches to conflict resolution.
+•
+Conciliation and arbitration •
+Employee participation and industrial democracy •
+No-strike agreement •
+Single-union agreement
+AO3
+Suggested inquiry statements to explore •
+How technological advancement could help businesses manage their human resources department in a more efficient way.
+•
+How creative organizational structures can be more suitable in the dynamic business world.
+•
+Why a democratic style of leadership is one way of encouraging creativity in a business.
+•
+The impact of financial motivation on employees’ sustainable behaviour.
+•
+How effective communication could impact business success.
+•
+Why ethical and sustainable organizations are more likely to recruit top talent and have higher employee retention.
+Suggested theory of knowledge questions •
+Is it inevitable that the implicit biases of the interviewer will influence the outcome of interviews?
+•
+Is being knowledgeable an essential quality in a manager?
+Syllabus content 27
+Business management guide
+
+=== Page 34 ===
+•
+How might emotive language and faulty reasoning be used in collective bargaining negotiations?
+•
+In what ways can language be used to influence, persuade or manipulate employees?
+•
+Should critical events in the historical development of the industrial/employee relations always be judged by the standards of their time?
+•
+Can we ever really know what motivates an employee?
+Unit 3: Finance and accounts
+Conceptual understandings •
+Change in the business structure can impact a business’ financial resources •
+Creativity in financial reporting can have diverse impacts in a business •
+Ethical financial and accounting practices can be a form of sustainable business behaviour
+Suggested business management tools to integrate (other tools may also be integrated)
+Boston Consulting Group (BCG) matrix, descriptive statistics, SWOT analysis, contribution (HL only)
+Note: All content is SL and HL unless otherwise stated. HL only content is in bold.
+3.1 Introduction to finance
+Depth of teaching
+Role of finance for businesses.
+•
+Capital expenditure •
+Revenue expenditure
+AO2 3.2 Sources of finance
+Depth of teaching
+The following internal sources of finance.
+•
+Personal funds (for sole traders) •
+Retained profit •
+Sale of assets
+AO2
+The following external sources of finance.
+•
+Share capital •
+Loan capital •
+Overdrafts •
+Trade credit •
+Crowdfunding •
+Leasing •
+Microfinance providers •
+Business angels
+AO2
+Appropriateness of short- or long-term sources of finance for a given situation
+AO3 3.3 Costs and revenues
+Depth of teaching
+The following types of cost, using examples.
+•
+Fixed •
+Variable •
+Direct
+AO2
+Syllabus content 28
+Business management guide
+
+=== Page 35 ===
+3.3 Costs and revenues
+Depth of teaching •
+Indirect/overhead
+Total revenue and revenue streams, using examples
+AO2 3.4 Final accounts
+Depth of teaching
+The purpose of accounts to different stakeholders
+AO2
+Final accounts •
+Profit and loss account •
+Balance sheet
+AO2, AO4
+Different types of intangible assets
+AO2
+Depreciation using the following methods (HL only).
+•
+Straight line method •
+Units of production method
+AO2, AO4
+Appropriateness of each depreciation method (HL only)
+AO3 3.5 Profitability and liquidity ratio analysis
+Depth of teaching
+The following profitability ratios.
+•
+Gross profit margin •
+Profit margin •
+Return on capital employed (ROCE)
+AO2, AO4
+Possible strategies to improve these ratios
+AO3
+The following liquidity ratios.
+•
+Current ratio •
+Acid test (quick) ratio
+AO2, AO4
+Possible strategies to improve these ratios
+AO3 3.6 Efficiency ratio analysis (HL only)
+Depth of teaching
+The following efficiency ratios.
+•
+Stock turnover •
+Debtor days •
+Creditor days •
+Gearing ratio
+AO2, AO4
+Possible strategies to improve these ratios
+AO3
+Insolvency versus bankruptcy
+AO2 3.7 Cash flow
+Depth of teaching
+The difference between profit and cash flow
+AO2
+Working capital
+AO2, AO4
+Liquidity position
+AO2
+Cash flow forecasts
+AO2, AO4
+The relationship between investment, profit and cash flow
+AO2
+Syllabus content 29
+Business management guide
+
+=== Page 36 ===
+3.7 Cash flow
+Depth of teaching
+Strategies for dealing with cash flow problems
+AO3 3.8 Investment appraisal
+Depth of teaching
+Investment opportunities using payback period, average rate of return (ARR) and NPV (HL only)
+AO3, AO4 3.9 Budgets (HL only)
+Depth of teaching
+The difference between cost and profit centres
+AO2
+The roles of cost and profit centres
+AO2
+Constructing a budget
+AO2, AO4
+Variances
+AO2, AO4
+The importance of budgets and variances in decision-making
+AO2
+Suggested inquiry statements to explore •
+How cost and revenue management could ensure sustainability.
+•
+Why final accounts analysis could be essential in changing stakeholder perspectives.
+•
+Why profitable businesses may face insolvency.
+•
+How time value of money affects future consumer choice.
+•
+How triple bottom line accounting can support the shift towards more ethical business practices.
+Suggested theory of knowledge questions •
+Are objective facts or appeals to emotion more effective when applying for an external source of finance?
+•
+How do our expectations and assumptions have an impact on how we read company accounts?
+•
+What roles do reason and emotion play when analysing financial performance?
+•
+Are the results of some types of ratio analysis less open to interpretation than others?
+•
+To what extent are the methods used to gain knowledge in investment appraisal “scientific”?
+•
+What assumptions underlie the techniques used when budgeting?
+Unit 4: Marketing
+Conceptual understandings •
+Social, cultural and technological change can impact the language and medium of marketing •
+Creative ways of informing stakeholders can lead to positive business outcomes •
+Ethical marketing practices can enhance a business’ brand image •
+Sustainable marketing practices can be effective for business success
+Suggested business management tools to integrate (other tools may also be integrated)
+Ansoff matrix, SWOT analysis, STEEPLE analysis, Boston Consulting Group (BCG) matrix, descriptive
+statistics, Gantt chart (HL only), simple linear regression (HL only), critical path analysis (HL only),
+contribution (HL only), Hofstede’s cultural dimensions (HL only)
+Note: All content is SL and HL unless otherwise stated. HL only content is in bold.
+Syllabus content 30
+Business management guide
+
+=== Page 37 ===
+4.1 Introduction to marketing
+Depth of teaching
+Market orientation versus product orientation
+AO2
+Market share
+AO2, AO4
+Market growth
+AO2, AO4
+The importance of market share and market leadership (HL only)
+AO3 4.2 Marketing planning
+Depth of teaching
+The role of marketing planning
+AO2
+Segmentation, targeting (target market) and positioning (position maps)
+AO2, AO4
+The difference between niche market and mass market
+AO2
+The importance of having a unique selling point/proposition (USP)
+AO2
+How organizations can differentiate themselves and their products from competitors AO3 4.3 Sales forecasting (HL only)
+Depth of teaching
+The benefits and limitations of sales forecasting
+AO3 4.4 Market research
+Depth of teaching
+Why and how organizations carry out market research
+AO3
+The following methods/techniques of primary market research.
+•
+Surveys •
+Interviews •
+Focus groups •
+Observations
+AO2
+The following methods/techniques of secondary market research.
+•
+Market analyses •
+Academic journals •
+Government publications •
+Media articles •
+Online content
+AO2
+The difference between qualitative and quantitative research
+AO2
+The following methods of sampling.
+•
+Quota •
+Random •
+Convenience
+AO2 4.5 The seven Ps of the marketing mix
+Depth of teaching
+Product
+The relationship between the product life cycle, product portfolio and the marketing mix
+AO2
+Extension strategies
+AO3
+The relationship between the product life cycle, investment, profit and cash flow
+AO2
+Syllabus content 31
+Business management guide
+
+=== Page 38 ===
+4.5 The seven Ps of the marketing mix
+Depth of teaching
+The following aspects of branding.
+•
+Awareness •
+Development •
+Loyalty •
+Value
+AO2
+The importance of branding
+AO2
+Price
+The appropriateness of the following pricing methods.
+•
+Cost-plus (mark-up) pricing •
+Penetration pricing •
+Loss leader •
+Predatory pricing •
+Premium pricing •
+Dynamic pricing (HL only) •
+Competitive pricing (HL only) •
+Contribution pricing (HL only) •
+Price elasticity of demand (HL only)
+AO3
+Promotion
+The following aspects of promotion.
+•
+Above the line promotion •
+Below the line promotion •
+Through the line promotion
+AO2
+Social media marketing as a promotional strategy
+AO3
+Place
+The importance of different types of distribution channels
+AO3
+People
+The importance of employee–customer relationships in marketing a service and cultural variation in these relationships
+AO3
+Processes
+The importance of delivery processes in marketing a service and changes in these processes
+AO3
+Physical evidence
+The importance of tangible physical evidence in marketing a service
+AO3
+Appropriate marketing mixes
+Appropriate marketing mixes for particular products or businesses
+AO3 4.6 International marketing (HL only)
+Depth of teaching
+The opportunities and threats posed by entering and operating internationally
+AO3
+Syllabus content 32
+Business management guide
+
+=== Page 39 ===
+Suggested inquiry statements to explore •
+How marketing strategies may evolve in response to changeable customer preferences.
+•
+Why effective market research may bring about creative business practice.
+•
+How social media development could change an organization’s marketing strategies.
+•
+Why globalization can bring many changes to business activity.
+•
+Why successful marketing campaigns are increasingly being built around the ethical and sustainable practices of a business.
+Suggested theory of knowledge questions •
+Can companies know us better than we know ourselves?
+•
+How might a company protect against sample error and bias when designing primary market research?
+•
+Are there different criteria for ethical standards for online services compared to physical products?
+•
+Are consumers rational?
+•
+Are predictions in the human sciences inevitably unreliable?
+•
+How might the language used in focus groups influence the conclusions that are reached?
+•
+Are consumers too unpredictable to study scientifically?
+•
+Is it possible to eliminate the effect of researcher bias when conducting market research?
+•
+What impact has social media had on how consumers acquire and share knowledge of products?
+Unit 5: Operations management
+Conceptual understandings •
+Change in operations impacts other business activities •
+Creative production process can disrupt the market •
+Operational business changes may affect its ethical stance •
+Sustainability ensures efficiency in business operations
+Suggested business management tools to integrate (other tools may also be integrated)
+Decision trees, descriptive statistics, circular business models, Gantt chart (HL only), critical path
+analysis (HL only), contribution (HL only), simple linear regression (HL only), Hofstede’s cultural dimensions (HL only)
+Note: All content is SL and HL unless otherwise stated. HL only content is in bold.
+5.1 Introduction to operations management
+Depth of teaching
+The role of operations management
+AO2 5.2 Operations methods
+Depth of teaching
+The following operations methods.
+•
+Job production •
+Batch production •
+Mass/flow production •
+Mass customization
+AO3
+Syllabus content 33
+Business management guide
+
+=== Page 40 ===
+5.3 Lean production and quality management (HL only)
+Depth of teaching
+The following features of lean production.
+•
+Less waste •
+Greater efficiency
+AO1
+The following methods of lean production.
+•
+Continuous improvement (kaizen) •
+Just-in-time (JIT)
+AO2
+Features of cradle to cradle design and manufacturing
+AO2
+Features of quality control and quality assurance
+AO2
+The following methods of managing quality.
+•
+Quality circle •
+Benchmarking •
+Total quality management (TQM)
+AO2
+The impact of lean production and TQM on an organization
+AO3
+The importance of national and international quality standards
+AO2 5.4 Location
+Depth of teaching
+The reasons for a specific location of production
+AO2
+The following ways of reorganizing production, both nationally and internationally.
+•
+Outsourcing/subcontracting •
+Offshoring •
+Insourcing •
+Reshoring
+AO3 5.5 Break-even analysis
+Depth of teaching
+Total contribution versus contribution per unit
+AO2
+A break-even chart and the following aspects of break-even analysis.
+•
+Break-even quantity/point •
+Profit or loss •
+Margin of safety •
+Target profit output •
+Target profit •
+Target price
+AO2, AO4
+The effects of changes in price or cost on the break-even quantity, profit and margin
+of safety, using graphical and quantitative methods
+AO2, AO4
+Limitations of break-even as a decision-making tool
+AO3 5.6 Production planning (HL only)
+Depth of teaching
+The local and global supply chain process
+AO2
+The difference between JIT and just-in-case (JIC)
+AO3
+Stock control charts based on the following.
+AO2, AO4
+Syllabus content 34
+Business management guide
+
+=== Page 41 ===
+5.6 Production planning (HL only)
+Depth of teaching •
+Lead time •
+Buffer stock •
+Reorder level •
+Reorder quantity
+Capacity utilization rate
+AO2, AO4
+Defect rate
+AO2, AO4
+Labour productivity, capital productivity, productivity rate, operating leverage AO2, AO4
+Cost to buy (CTB)
+AO3, AO4
+Cost to make (CTM)
+AO3, AO4
+5.7 Crisis management and contingency planning (HL only)
+Depth of teaching
+The difference between crisis management and contingency planning
+AO2
+The factors that affect effective crisis management.
+•
+Transparency •
+Communication •
+Speed •
+Control
+AO2
+The impact of contingency planning for a given organization or situation in
+terms of:
+• cost • time • risks • safety.
+AO3 5.8 Research and development (HL only)
+Depth of teaching
+The importance of research and development for a business
+AO3
+The importance of developing goods and services that address customers’
+unmet needs (of which the customers may or may not be aware)
+AO2
+Intellectual property protection; copyrights, patents, trademarks
+AO2
+Innovation: incremental and disruptive
+AO2 5.9 Management information systems (HL only)
+Depth of teaching
+Data analytics
+AO1
+Database
+AO1
+Cybersecurity and cybercrime
+AO1
+Critical infrastructures, including artificial neural networks, data centres, and cloud computing
+AO2
+Virtual reality
+AO2
+The internet of things
+AO2
+Artificial intelligence
+AO2
+Syllabus content 35
+Business management guide
+
+=== Page 42 ===
+5.9 Management information systems (HL only)
+Depth of teaching
+Big data
+AO2
+Customer loyalty programmes
+AO3
+The use of data to manage and monitor employees; Digital Taylorism
+AO3
+The use of data mining to inform decision-making
+AO3
+The benefits, risks and ethical implications of advanced computer technologies
+(collectively referred to here as “management information systems”) and
+technological innovation on business decision-making and stakeholders
+AO3
+Suggested inquiry statements to explore •
+How high standards in operations management could make a business more sustainable.
+•
+Why outsourcing could result in lower quality.
+•
+Why research and development (R&D) could enhance creativity in a business.
+•
+How technology may improve business productivity.
+•
+How digital technology enables new business models to flourish.
+•
+How circular business models can lead to greater resource efficiency.
+Suggested theory of knowledge questions •
+To what extent are our ideas dependent on our interactions with other people?
+•
+To what extent can the human sciences provide accurate predictions?
+•
+How might the methods used in R&D be limited by ethical considerations?
+•
+Should we hold companies responsible for the applications of products they create?
+•
+Are there new ethical challenges emerging from the increased use of data analytics in business decision-making?
+•
+To what extent do the classification systems we use in data analytics affect the conclusions that we reach?
+•
+How might personal prejudices, biases and inequality become “coded into” customer loyalty programmes?
+•
+To what extent is big data changing what it means to know your customers?
+•
+Does artificial intelligence allow knowledge to reside outside of human knowers?
+•
+What are the moral implications of possessing large amounts of information about consumer behaviour?
+Syllabus content 36
+Business management guide
+
+=== Page 43 ===
+General
+Assessment is an integral part of teaching and learning. The most important aims of assessment are that it
+should support curricular goals and encourage appropriate student learning. Both external and internal
+assessments are used in the Diploma Programme and Career-related Programme. IB examiners mark work
+produced for external assessment, while work produced for internal assessment is marked by teachers and externally moderated by the IB.
+There are two main types of assessment identified by the IB.
+•
+Formative assessment informs both teaching and learning. It is concerned with providing accurate and
+helpful feedback to students and teachers on the kind of learning taking place and the nature of
+students’ strengths and weaknesses in order to help develop students’ understanding and capabilities.
+Formative assessment can also help to improve teaching quality, as it can provide information to
+monitor progress towards meeting the course aims and objectives.
+•
+Summative assessment gives an overview of previous learning and is concerned with measuring
+student achievement at, or towards the end, of the course of study.
+A comprehensive assessment plan is viewed as being integral with teaching, learning and course
+organization. For further information, see the IB Programme standards and practices document.
+The approach to assessment used by the IB is criterion-related, not norm-referenced. This approach to
+assessment judges students’ work by their performance in relation to identified levels of attainment, and
+not in relation to the work of other students. For further information on assessment within the Diploma
+Programme please refer to the publication Assessment: principles and practice—Quality assessments in a digital age.
+To support teachers in the planning, delivery and assessment of the DP or CP courses, a variety of resources
+can be found on the programme resource centre or purchased from the IB store (store.ibo.org). Additional
+publications such as specimen papers and markschemes, teacher support materials, subject reports and
+grade descriptors can also be found on the programme resource centre. Past examination papers as well as markschemes can be purchased from the IB store.
+Methods of assessment
+The IB uses several methods to assess work produced by students.
+Assessment criteria
+Assessment criteria are used when the assessment task is open-ended. Each criterion concentrates on a
+particular skill that students are expected to demonstrate. An assessment objective describes what
+students should be able to do, and assessment criteria describe how well they should be able to do it. Using
+assessment criteria allows discrimination between different answers and encourages a variety of responses.
+Each criterion comprises a set of hierarchically ordered level descriptors. Each level descriptor is worth one
+or more marks. Each criterion is applied independently using a best-fit model. The maximum marks for each
+criterion may differ according to the criterion’s importance. The marks awarded for each criterion are added
+together to give the total mark for the piece of work.
+Markbands
+Markbands are a comprehensive statement of expected performance against which responses are judged.
+They represent a single holistic criterion divided into level descriptors. Each level descriptor corresponds to Assessment
+Assessment in the Diploma Programme and Career related Programme 37
+Business management guide
+
+=== Page 44 ===
+a range of marks to differentiate student performance. A best-fit approach is used to ascertain which
+particular mark to use from the possible range for each level descriptor.
+Analytic markschemes
+Analytic markschemes are prepared for those examination questions that expect a particular kind of
+response and/or a given final answer from students. They give detailed instructions to examiners on how to
+break down the total mark for each question for different parts of the response.
+Marking notes
+For some assessment components marked using assessment criteria, marking notes are provided. Marking
+notes give guidance on how to apply assessment criteria to the particular requirements of a question.
+Inclusive access arrangements
+Inclusive access arrangements are available for candidates with access requirements. Standard assessment
+conditions may put candidates with assessment access requirements at a disadvantage by preventing them
+from demonstrating their attainment level. Inclusive access arrangements enable candidates to
+demonstrate their ability under assessment conditions that are as fair as possible.
+The IB publication Access and inclusion policy provides details on all the inclusive access arrangements
+available to candidates. The IB publication Learning diversity and inclusion in IB programmes: Removing
+barriers to learning outlines the position of the IB with regard to candidates with diverse learning needs in
+the IB programmes. For candidates affected by adverse circumstances, the IB publication Diploma
+Programme Assessment procedures (updated annually), which includes the general regulations, provides details on access consideration.
+Responsibilities of the school
+The school is required to ensure that equal access arrangements and reasonable adjustments are provided
+to candidates with learning support requirements that are in line with the IB documents Access and
+inclusion policy and Learning diversity and inclusion in IB programmes: Removing barriers to learning.
+Assessment in the Diploma Programme and Career-related Programme 38
+Business management guide
+
+=== Page 45 ===
+First assessment 2024
+Assessment component
+Weighting
+External assessment (3 hours)
+Paper 1: (1 hour and 30 minutes)
+Based on a pre-released statement that specifies the context and background for the unseen case study
+Assessment objectives: AO1, AO2, AO3, AO4 (30 marks)
+Section A
+Syllabus content: Units 1–5 excluding HL extension topics
+Students answer all structured questions in this section based on the case study (20 marks)
+Section B
+Syllabus content: Units 1–5 excluding HL extension topics
+Students answer one out of two extended response questions based on the case study (10 marks) 70% 35%
+Paper 2: (1 hour and 30 minutes)
+Based on unseen stimulus material with a quantitative focus
+Assessment objectives: AO1, AO2, AO3, AO4 (40 marks)
+Section A
+Syllabus content: Units 1–5 excluding HL extension topics
+Students answer all structured questions in this section based on the unseen stimulus material (20 marks)
+Section B
+Syllabus content: Units 1–5 excluding HL extension topics
+Students answer one out of two questions comprised of some structured questions and an
+extended response question based on the unseen stimulus material (20 marks) 35%
+Internal assessment (20 hours)
+This component is internally assessed by the teacher and externally moderated by the IB at the end of the course.
+Business research project
+Students produce a research project about a real business issue or problem facing a
+particular organization using a conceptual lens. Maximum 1,800 words. (25 marks) 30%
+Assessment
+Assessment outline—SL 39
+Business management guide
+
+=== Page 46 ===
+First assessment 2024
+Assessment component
+Weighting
+External assessment (4 hours and 30 minutes)
+Paper 1 (1 hour and 30 minutes)
+Based on a pre-released statement that specifies the context and background for the unseen case study
+Assessment objectives: AO1, AO2, AO3, AO4 (30 marks)
+Section A
+Syllabus content: Units 1–5 excluding HL extension topics
+Students answer all structured questions in this section based on the case study (20 marks)
+Section B
+Syllabus content: Units 1–5 excluding HL extension topics
+Students answer one out of two extended response questions based on the case study (10 marks) 80% 25%
+Paper 2 (1 hour and 45 minutes)
+Based on the unseen stimulus material with a quantitative focus
+Assessment objectives: AO1, AO2, AO3, AO4 (50 marks)
+Section A
+Syllabus content: Units 1–5 including HL extension topics
+Students answer all structured questions in this section based on the unseen stimulus material (30 marks)
+Section B
+Syllabus content: Units 1–5 including HL extension topics
+Students answer one out of two questions comprised of some structured questions and an
+extended response question based on the unseen stimulus material (20 marks) 30%
+Paper 3 (1 hour and 15 minutes)
+Based on unseen stimulus material about a social enterprise
+Syllabus content: Unit 1–5 including HL extension topics
+Assessment objectives: AO1, AO2, AO3, AO4 (25 marks)
+Students answer one compulsory question based on the unseen stimulus material (25 marks) 25%
+Internal assessment (20 hours)
+This component is internally assessed by the teacher and externally moderated by the IB at the end of the course.
+Business research project
+Students produce a research project about a real business issue or problem facing a
+particular organization using a conceptual lens. Maximum 1,800 words. (25 marks) 20%
+Assessment
+Assessment outline—HL 40
+Business management guide
+
+=== Page 47 ===
+Three different methods are used to assess students.
+•
+Analytic markschemes specific to each examination paper •
+Markbands •
+Assessment criteria
+The markbands and assessment criteria are published in this guide.
+•
+For paper 1, there are markbands and markschemes.
+•
+For paper 2, there are markbands and markschemes.
+•
+For paper 3, there are assessment criteria and markschemes
+The markbands and assessment criteria are related to the assessment objectives established for the
+business management course and the individuals and societies grade descriptors. The markschemes are specific to each examination.
+Written papers
+The external assessment of the business management course consists of two examination papers at SL and
+three examination papers at HL that are externally set and externally marked. They are designed to allow
+students to demonstrate their competencies in relation to the business management assessment
+objectives. All questions on the examination papers are based on specifications in this guide.
+The external components contribute 70% to the final assessment at SL and 80% to the final assessment at
+HL.
+In common with all DP examination papers, students at SL and HL are given five minutes of reading time before they begin answering the papers.
+Paper 1 overview
+Paper 1 is the same for SL and HL students. Three months prior to the examination the IB will release a
+statement with two elements. The first element will be a small number of topics that provide context to the
+case study. These topics will not be topics that are in the guide but ones that students are asked to research
+for approximately five hours. Topics in the pre-released statement will build on topics contained in the
+syllabus. The aim is to assess students’ knowledge around important contemporary business topics that
+could not have been anticipated when the guide was written.
+The second element will be the first 200 words, approximately, of the case study itself. The release of this
+portion of the case study will provide additional context and will reduce the number of words to be read
+during the examination period. The aim of the paper is to assess students’ knowledge of the business
+management syllabus. The examination is based upon one case study, of approximately 800 to 1,000
+words, that students do not see before the examination. Most questions will be qualitative, although some
+minor calculations could be part of the assessment.
+Paper 2 overview
+Paper 2 will be based on stimulus material. SL and HL students will sit different examinations, but these will
+be similar in intent and form. The aim of the examination is to assess students’ knowledge of the business
+management syllabus. Most questions will be quantitative, though some questions may not have a
+quantitative element. Students will receive an examination booklet with questions based on the stimulus
+material seen for the first time during the examination. The stimulus material will be presented in parts.
+Each part has a question; students will read each part and answer the question before reading the next part
+Assessment
+External assessment 41
+Business management guide
+
+=== Page 48 ===
+and answering the question, and so on. The stimulus material will be a combination of written and
+diagrammatic stimulus such as charts and infographics. For SL only, one of the stimulus options in section B
+of the examination may be on a social enterprise. HL students will be assessed on a social enterprise in
+paper 3. Section A will be assessed against AO1, AO2 and AO4 levels whereas Section B will be assessed against all four levels including AO3.
+Paper 3 overview
+Paper 3 will be about a social enterprise and requires students to identify and describe a human need and
+the potential organizational challenges facing the social entrepreneur wanting to meet this need. Further
+to this, students are required to write a decision-making document that includes a business
+recommendation. Only HL students will sit this examination. The paper will consist of stimulus followed by
+questions. The stimulus material will consist of a short introduction to an organization, supported by a
+visual representation of a product, and five or six excerpts from various documents (such as emails, Twitter feeds, newspaper articles, and so on).
+The paper will have the following three tiers of questions.
+•
+AO1 questions—assesses students’ ability to describe the human need in the stimulus material.
+•
+AO2 questions—assesses students’ ability to explain the key challenges facing the social entrepreneur
+or social enterprise in the setting of the stimulus material.
+•
+AO3/AO4 questions—assesses students’ ability to recommend a plan for the organization in meeting
+the identified human need. In doing so, students will be required to demonstrate knowledge and
+understanding, and their ability to explain, synthesize and evaluate evidence, and formulate a recommendation.
+Please refer to the Business management teacher support material for further guidance on how to prepare for the external assessments.
+Command terms
+Teachers and students must be familiar with the command terms used at each assessment objective level
+to understand the depth of treatment required in examination questions. Cognitive demands progress
+from AO1 to AO3, while AO4 terms are specific to particular skills.
+Examination questions may use any command term from the assessment objective level specified in the
+“Syllabus content” section, or a less demanding command term from a lower level. For example, if the
+assessment objective level for a topic is AO2, an examination question could contain any of the command
+terms for AO2, such as “explain”, “distinguish”, and so on. Alternatively, the examination question could
+contain a command term from AO1, such as “describe”. However, a more demanding command term, such
+as “evaluate”, from a higher level (AO3 in this case) cannot be used.
+The command terms used in each question, or part thereof, indicate the depth required. The command
+terms are organized by assessment objective level in the “Assessment objectives” section earlier in the
+guide and defined in the “Glossary of command terms” in the appendices.
+Use of examples and case studies
+In order to be awarded marks in the higher markbands and levels of assessment criteria, students are
+expected, where appropriate, to refer to the stimulus material provided in examinations, use case studies
+explored in class and illustrate their answers with examples. In this way, students highlight their
+understanding of how business management tools and theories operate in practice. Where the stimulus
+material, case studies and examples are referred to, students should not simply state the information, but
+rather offer some explanation of how it relates to the question asked.
+Use of business management terms
+Students are expected to demonstrate the ability to appropriately define, use and apply the business
+management terms included in the “Syllabus” section.
+External assessment 42
+Business management guide
+
+=== Page 49 ===
+Use of calculators
+While all questions requiring a calculator can be answered fully using a four-function (plus, minus, multiply,
+divide) calculator, graphic display calculators (GDCs) are allowed during the examination.
+Teachers and schools must adhere to the regulations regarding the use of electronic calculators in
+examinations, and students must be made aware of these. This information can be found in the annually
+revised version of Calculators guidance for examinations booklet.
+External assessment details—SL
+Paper 1
+Duration: 1 hour 30 minutes
+Weighting: 35%
+This paper is the same for both SL and HL. It is divided into two sections with questions based on the pre released statement issued to students three months before the examination and the unseen case study
+issued during the examination. Section A has structured questions while section B has extended response questions.
+Students are expected to demonstrate the following assessment objectives.
+Assessment objective
+Section A
+Section B
+AO1—knowledge and understanding √ √
+AO2—application and analysis √ √
+AO3—synthesis and evaluation √
+AO4—use and application of appropriate skills √ √
+Marks (maximum per section) 20 10
+Maximum marks for paper 1 30
+Questions in this paper are drawn from units 1 to 5 of the syllabus excluding the HL extension material and topics studied at HL only.
+Section A •
+Students answer all structured questions in this section.
+•
+The command terms used in each part indicate the depth required.
+•
+The marks available for each part are indicated on the examination paper.
+•
+Marks are allocated using an analytic markscheme.
+•
+This section is worth a total of 20 marks.
+Section B •
+Students answer one question from a choice of two.
+•
+The command terms used in each part indicate the depth required.
+•
+The marks available for each part are indicated on the examination paper.
+•
+Each question is worth a total of 10 marks.
+•
+Marks are allocated using a combination of an analytic markscheme and markbands.
+•
+This section is worth a total of 10 marks.
+Paper 2
+Duration: 1 hour 30 minutes
+External assessment 43
+Business management guide
+
+=== Page 50 ===
+Weighting: 35%
+The structure of this paper is the same as HL paper 2. However, questions may be the same as, or different
+from, the HL paper 2 questions. SL students answer fewer questions.
+Students are expected to demonstrate the following assessment objectives.
+Assessment objective
+Section A
+Section B
+AO1—knowledge and understanding √ √
+AO2—application and analysis √ √
+AO3—synthesis and evaluation √
+AO4—use and application of appropriate skills √ √
+Marks (maximum per section) 20 20
+Maximum marks for paper 2 40
+Questions in this paper are drawn from units 1 to 5 of the syllabus excluding the HL extension material and topics studied at HL only.
+Section A •
+The questions have a quantitative focus.
+•
+Students answer all structured questions in this section.
+•
+The questions are subdivided into parts.
+•
+The command terms used in each part indicate the depth required.
+•
+The marks available for each part are indicated on the examination paper.
+•
+Marks are allocated using an analytic markscheme.
+•
+This section is worth a total of 20 marks.
+Section B •
+Students answer one question from a choice of two.
+•
+The question is subdivided into parts; structured questions and an extended response question.
+•
+The command terms used in each part indicate the depth required.
+•
+The structured questions are worth a total of 10 marks.
+•
+Each extended response question is worth 10 marks.
+•
+The marks available for each part are indicated on the examination paper.
+•
+Marks are allocated using a combination of an analytic markscheme and markbands.
+•
+This section is worth a total of 20 marks.
+External assessment markbands—SL
+Papers 1 and 2
+In addition to an analytic markscheme specific to the question papers, markbands are used to allocate
+marks in section B in papers 1 and 2 for the 10-mark extended response question.
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptor.
+1–2 •
+Little understanding of the demands of the question.
+External assessment 44
+Business management guide
+
+=== Page 51 ===
+Marks
+Level descriptor •
+Little use of business management tools and theories; any tools and theories that are used are irrelevant or used inaccurately.
+•
+Little or no reference to the stimulus material.
+•
+No arguments are made.
+3–4 •
+Some understanding of the demands of the question.
+•
+Some use of business management tools and theories, but these are mostly lacking in accuracy and relevance.
+•
+Superficial use of information from the stimulus material, often not going beyond the
+name of the person(s) or name of the organization.
+•
+Any arguments made are mostly unsubstantiated.
+5–6 •
+The response indicates an understanding of the demands of the question, but these demands are only partially addressed.
+•
+Some relevant and accurate use of business management tools and theories.
+•
+Some relevant use of information from the stimulus material that goes beyond the
+name of the person(s) or name of the organization but does not effectively support the argument.
+•
+Arguments are substantiated but are mostly one-sided.
+7–8 •
+Mostly addresses the demands of the question.
+•
+Mostly relevant and accurate use of business management tools and theories.
+•
+Information from the stimulus material is generally used to support the argument,
+although there is some lack of clarity or relevance in some places.
+•
+Arguments are substantiated and have some balance.
+9–10 •
+Clear focus on addressing the demands of the question.
+•
+Relevant and accurate use of business management tools and theories.
+•
+Relevant information from the stimulus material is integrated effectively to support the argument.
+•
+Arguments are substantiated and balanced, with an explanation of the limitations of the case study or stimulus material.
+External assessment details—HL
+Paper 1
+Duration: 1 hour 30 minutes
+Weighting: 25%
+This paper is the same for both SL and HL. It is divided into two sections with questions based on the pre released statement issued to students three months before the examination and the unseen case study
+issued during the examination. Section A has structured questions while section B has extended response questions.
+Students are expected to demonstrate the following assessment objectives.
+Assessment objective
+Section A
+Section B
+AO1—knowledge and understanding √ √
+AO2—application and analysis √ √
+AO3—synthesis and evaluation √
+External assessment 45
+Business management guide
+
+=== Page 52 ===
+Assessment objective
+Section A
+Section B
+AO4—use and application of appropriate skills √ √
+Marks (maximum per section) 20 10
+Maximum marks for paper 1 30
+Questions in this paper are drawn from units 1 to 5 of the syllabus excluding the HL extension material and topics studied at HL only.
+Section A •
+Students answer all structured questions in this section.
+•
+The command terms used in each part indicate the depth required.
+•
+The marks available for each part are indicated on the examination paper.
+•
+Marks are allocated using an analytic markscheme.
+•
+This section is worth a total of 20 marks.
+Section B •
+Students answer one question from a choice of two.
+•
+The command terms used in each part indicate the depth required.
+•
+The marks available for each part are indicated on the examination paper.
+•
+Each question is worth a total of 10 marks.
+•
+Marks are allocated using a combination of an analytic markscheme and markbands.
+•
+This section is worth a total of 10 marks.
+Paper 2
+Duration: 1 hour 45 minutes
+Weighting: 30%
+The structure of this paper is the same as SL paper 2. However, questions may be the same as, or different
+from, the SL paper 2 questions. HL students answer more questions.
+Students are expected to demonstrate the following assessment objectives.
+Assessment objective
+Section A
+Section B
+AO1—knowledge and understanding √ √
+AO2—application and analysis √ √
+AO3—synthesis and evaluation √
+AO4—use and application of appropriate skills √ √
+Marks (maximum per section) 30 20
+Maximum marks for paper 2 50
+Questions in this paper are drawn from units 1 to 5 of the syllabus including the HL extension material and topics studied at HL only.
+Section A •
+The questions have a quantitative focus.
+•
+Students answer all structured questions in this section.
+•
+The questions are subdivided into parts.
+External assessment 46
+Business management guide
+
+=== Page 53 ===
+•
+The command terms used in each part indicate the depth required.
+•
+The marks available for each part are indicated on the examination paper.
+•
+Marks are allocated using an analytic markscheme.
+•
+This section is worth a total of 30 marks.
+Section B •
+Students answer one question from a choice of two.
+•
+The question is subdivided into parts; structured questions and an extended response question.
+•
+The command terms used in each part indicate the depth required.
+•
+The structured questions are worth a total of 10 marks.
+•
+Each extended response question is worth 10 marks.
+•
+The marks available for each part are indicated on the examination paper.
+•
+Marks are allocated using a combination of an analytic markscheme and markbands.
+•
+This section is worth a total of 20 marks.
+Paper 3
+Duration: 1 hour 15 minutes
+Weighting: 25%
+This is an HL only paper.
+Students are expected to demonstrate the following assessment objectives.
+Assessment objective
+Question 1
+Question 2
+Question 3
+AO1—knowledge and understanding √ √ √
+AO2—application and analysis √ √
+AO3—synthesis and evaluation √
+AO4—use and application of appropriate skills √
+Marks (maximum per question) 2 6 17
+Maximum marks for paper 3 25
+The question in this paper is drawn from units 1 to 5 of the syllabus including the HL extension material and topics studied at HL only.
+•
+Students answer the three compulsory questions given based on the stimulus material.
+•
+The command terms used in each question indicate the depth required.
+•
+The marks available for each question are indicated on the examination paper.
+•
+Marks are allocated using a combination of an analytic markscheme and the assessment criteria.
+External assessment markbands—HL
+Papers 1 and 2
+In addition to an analytic markscheme specific to the question papers, markbands are used to allocate
+marks in section B in papers 1 and 2 for the 10-mark extended response question.
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptor.
+External assessment 47
+Business management guide
+
+=== Page 54 ===
+Marks
+Level descriptor 1–2 •
+Little understanding of the demands of the question.
+•
+Little use of business management tools and theories; any tools and theories that are used are irrelevant or used inaccurately.
+•
+Little or no reference to the stimulus material.
+•
+No arguments are made.
+3–4 •
+Some understanding of the demands of the question.
+•
+Some use of business management tools and theories, but these are mostly lacking in accuracy and relevance.
+•
+Superficial use of information from the stimulus material, often not going beyond the
+name of the person(s) or name of the organization.
+•
+Any arguments made are mostly unsubstantiated.
+5–6 •
+The response indicates an understanding of the demands of the question, but these demands are only partially addressed.
+•
+Some relevant and accurate use of business management tools and theories.
+•
+Some relevant use of information from the stimulus material that goes beyond the
+name of the person(s) or name of the organization but does not effectively support the argument.
+•
+Arguments are substantiated but are mostly one-sided.
+7–8 •
+Mostly addresses the demands of the question.
+•
+Mostly relevant and accurate use of business management tools and theories.
+•
+Information from the stimulus material is generally used to support the argument,
+although there is some lack of clarity or relevance in some places.
+•
+Arguments are substantiated and have some balance.
+9–10 •
+Clear focus on addressing the demands of the question.
+•
+Relevant and accurate use of business management tools and theories.
+•
+Relevant information from the stimulus material is integrated effectively to support the argument.
+•
+Arguments are substantiated and balanced, with an explanation of the limitations of the case study or stimulus material.
+External assessment criteria—HL
+Paper 3
+For question 1 and question 2 an analytic markscheme will be used. For question 3 the following assessment criteria will be used.
+Criterion A: Use of resource materials
+To what extent does the student use the resource materials provided to effectively support the recommended plan of action?
+Marks
+Level descriptor 0
+The response does not reach a standard described by the descriptors below.
+1
+The response makes limited reference to the resource materials provided or the resources
+identified have been used ineffectively to support the recommended plan of action.
+External assessment 48
+Business management guide
+
+=== Page 55 ===
+Marks
+Level descriptor 2
+The response makes some reference to the resource materials provided or the resources
+identified have been used in a superficial way to support the recommended plan of action.
+3
+The response makes reference to most of the resource materials provided to support the recommended plan of action.
+4
+The response makes reference to all resource materials provided to effectively support the recommended plan of action.
+Criterion B: Business management tools and theories
+To what extent does the student’s plan of action effectively apply appropriate business management tools and theories?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1
+The response demonstrates limited application of appropriate business management tools and theories.
+2
+The response superficially applies appropriate business management tools and theories.
+3
+The response satisfactorily applies appropriate business management tools and theories.
+4
+The response effectively applies appropriate business management tools and theories.
+Criterion C: Evaluation
+To what extent does the student effectively evaluate the expected impact of their plan of action on the relevant areas of the business?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1–2
+The response is largely descriptive with limited analysis or evaluation of the expected
+impact of their plan of action. There is limited reference to the relevant areas of the business.
+3–4
+The response analyses the expected impact of their plan of action with some reference to
+the relevant areas of the business. There is some evidence of evaluation but it is not sustained.
+5–6
+The student effectively evaluates the expected impact of their plan of action on the
+relevant areas of the business and considers the trade-offs between those areas.
+Criterion D: Sequencing of ideas and plan of action
+To what extent are the student’s ideas and plan of action sequenced in a clear and coherent manner?
+Marks
+Level descriptor 0
+The response does not reach a standard described by the descriptors below.
+1
+The response is limited in its sequencing of ideas and plan of action.
+2
+The response consists of ideas and a plan of action but these are not always sequenced in a clear manner.
+External assessment 49
+Business management guide
+
+=== Page 56 ===
+Marks
+Level descriptor 3
+The response effectively sequences appropriate ideas and a plan of action in a clear and coherent manner.
+External assessment 50
+Business management guide
+
+=== Page 57 ===
+Purpose of internal assessment
+Internal assessment (IA) is an integral part of the course and is compulsory for both SL and HL students. It
+enables students to demonstrate the application of their skills and knowledge and to pursue their personal
+interests, without the time limitations and other constraints that are associated with written examinations.
+The internal assessment should, as far as possible, be woven into normal classroom teaching and not be a
+separate activity conducted after a course has been taught.
+The IA requirements at SL and at HL are the same. Students are expected to produce a business research
+project about a real issue or problem facing a particular organization using a conceptual lens.
+Guidance and authenticity
+The business research project (SL/HL) submitted for the IA must be the student’s own work. However, it is
+not the intention that students should decide upon a title or topic and be left to work on the IA component
+without any further support from the teacher. The teacher should play an important role during both the
+planning stage and the period when the student is working on the internally assessed work. It is the
+responsibility of the teacher to ensure that students are familiar with:
+•
+the requirements of the type of work to be internally assessed •
+the assessment criteria; students must understand that the work submitted for assessment must address these criteria effectively.
+Teachers and students must discuss the internally assessed work. Students should be encouraged to initiate
+discussions with the teacher to obtain advice and information; students must not be penalized for seeking
+guidance. As part of the learning process, teachers should read and give advice to students on one draft of
+the work. The teacher should provide oral or written advice on how the work could be improved, but not
+edit the draft. The next version handed to the teacher must be the final version for submission.
+It is the responsibility of teachers to ensure that all students understand the basic meaning and significance
+of concepts that relate to academic integrity, especially authenticity and intellectual property. Teachers
+must ensure that all student work for assessment is prepared according to the requirements and must
+explain clearly to students that the internally assessed work must be entirely their own. Where
+collaboration between students is permitted, the difference between collaboration and collusion must be clear to all students.
+All work submitted to the IB for moderation or assessment must be authenticated by a teacher, and must
+not include any known instances of suspected or confirmed malpractice. Each student must confirm that
+the work is his or her authentic work and constitutes the final version of that work. Once a student has
+officially submitted the final version of the work it cannot be retracted. The requirement to confirm the
+authenticity of work applies to the work of all students, not just the sample work that will be submitted to
+the IB for the purpose of moderation. For further details refer to the IB publications Academic integrity,
+Diploma Programme: From principles into practice and the relevant articles in the “General regulations”
+section in Diploma Programme Assessment procedures.
+Authenticity may be checked by discussion with the student on the content of the work, and scrutiny of one or more of the following.
+•
+The student’s initial proposal •
+The first draft of the written work •
+The references cited
+Assessment
+Internal assessment 51
+Business management guide
+
+=== Page 58 ===
+•
+The style of writing compared with work known to be that of the student •
+The analysis of the work by a web-based plagiarism detection service such as www.turnitin.com
+The same piece of work cannot be submitted to meet the requirements of both the IA and the EE.
+Time allocation
+IA is an integral part of the business management course, contributing 30% to the final assessment in the
+SL course and 20% to the final assessment in the HL course. This weighting should be reflected in the time
+that is allocated to teaching the knowledge, skills and understanding required to undertake the work, as
+well as the total time allocated to carry out the work.
+It is recommended that a total of approximately 20 hours (SL/HL) of teaching time should be allocated to the work. This should include:
+•
+time for the teacher to explain to students the requirements of the IA •
+class time for students to work on the IA component and ask questions •
+time for consultation between the teacher and each student •
+time to review, monitor progress and to check authenticity.
+Requirements and recommendations
+It is important for the integrity of the moderation process that the IA by the teacher is based on the same
+evidence as that available to the moderator. When there is more than one teacher teaching students in this
+component, internal standardization must take place.
+Using assessment criteria for internal assessment
+For the IA, a number of assessment criteria have been identified. Each assessment criterion has level
+descriptors describing specific achievement levels, together with an appropriate range of marks. The level
+descriptors concentrate on positive achievement, although for the lower levels failure to achieve may be included in the description.
+Teachers must judge the internally assessed work at SL and at HL against the criteria using the level descriptors.
+•
+The same assessment criteria are provided for SL and HL.
+•
+The aim is to find, for each criterion, the descriptor that conveys most accurately the level attained by
+the student, using the best-fit model. A best-fit approach means that compensation should be made
+when a piece of work matches different aspects of a criterion at different levels. The mark awarded
+should be one that most fairly reflects the balance of achievement against the criterion. It is not
+necessary for every single aspect of a level descriptor to be met for that mark to be awarded.
+•
+When assessing a student’s work, teachers should read the level descriptors for each criterion until
+they reach a descriptor that most appropriately describes the level of the work being assessed. If a
+piece of work seems to fall between two descriptors, both descriptors should be read again and the
+one that more appropriately describes the student’s work should be chosen.
+•
+Where there are two or more marks available within a level, teachers should award the upper marks if
+the student’s work demonstrates the qualities described to a great extent; the work may be close to
+achieving marks in the level above. Teachers should award the lower marks if the student’s work
+demonstrates the qualities described to a lesser extent; the work may be close to achieving marks in the level below.
+•
+Only whole numbers should be recorded; partial marks (fractions and decimals) are not acceptable.
+•
+Teachers should not think in terms of a pass or fail boundary but should concentrate on identifying the
+appropriate descriptor for each assessment criterion.
+Internal assessment 52
+Business management guide
+
+=== Page 59 ===
+•
+The highest-level descriptors do not imply faultless performance but should be achievable by a
+student. Teachers should not hesitate to use the extremes if they are appropriate descriptions of the work being assessed.
+•
+A student who attains a high achievement level in relation to one criterion will not necessarily attain
+high achievement levels in relation to the other criteria. Similarly, a student who attains a low
+achievement level for one criterion will not necessarily attain low achievement levels for the other
+criteria. Teachers should not assume that the overall assessment of the students will produce any particular distribution of marks.
+•
+It is recommended that the assessment criteria be made available to students.
+Internal assessment details—SL and HL
+Business research project
+Duration: 20 hours
+Weighting: 30% SL and 20% HL
+Introduction
+The IA is a research project in which students apply appropriate business management tools and theories
+to a real organizational issue or problem using a conceptual lens.
+Requirements
+The students are required to:
+•
+select a real business issue or problem for their business research project that relates to any part of the syllabus •
+refer directly to a single business organization but may consider industry-wide issues that impact on that organization •
+provide a research question for the business research project that could either be forward looking or backward looking •
+base their research on primary and/or secondary research, selected for its suitability, depth and breadth •
+attach to the business research project three to five supporting documents from which the majority of the information for the project has been obtained •
+produce a business research project that does not exceed 1,800 words •
+fully reference all supporting documents and additional sources and include them in a bibliography.
+Key concept
+The business research project must use only one of the four key concepts (change, creativity, ethics or
+sustainability) as a lens through which to analyse the IA. This key concept may or may not be stated in the
+research question; however, it must be clearly indicated on the title page which key concept was used. Five
+marks are available for the identification and use of a relevant key concept; for these marks to be awarded,
+students must make explicit the conceptual lens they are applying to their work.
+Role of teacher’s guidance
+With the teacher’s support, students should choose an issue or problem for investigation, and develop a title in the form of a research question.
+The teacher should approve students’ questions before work is started, to ensure that they are suitable for
+investigation and allow access to all levels of the assessment criteria. It is highly advisable that every
+student is supplied with a copy of the assessment criteria. The teacher should also guide students in the selection of appropriate supporting documents.
+Internal assessment 53
+Business management guide
+
+=== Page 60 ===
+Throughout the IA process, students and the teacher should engage in dialogue supportive of the students’
+work. The teacher should comment on the students’ work plans and first draft of the project as part of the learning process.
+If more than one student chooses the same organization for their research, it is the responsibility of the
+teacher to ensure that the business research projects reflect the students’ own individual research, interpretation and analysis.
+If a student also writes an EE in business management, it is the responsibility of the teacher to ensure that
+the student’s IA and EE are distinct pieces of work using different research approaches. As there are
+different requirements and assessment criteria, students should choose different organizations for these different tasks.
+Examples of appropriate questions
+Examples of appropriate questions for the business research project might be as follows.
+•
+Should company Y change its manufacturing to outsourcing?
+The project could then examine areas within business management such as operations management
+and human resource management using change as a conceptual lens.
+•
+How can airline X successfully target segment Y?
+The project could then examine business management topics such as market segmentation,
+promotion, and measure of financial success using sustainability as a conceptual lens.
+Supporting documents
+The selection of supporting documents is very important. To achieve the highest levels of each assessment
+criterion, it is strongly recommended that the supporting documents present a range of ideas and views.
+For example, the selection of three to five documents published by a single company, or three to five
+surveys of similar populations, would not provide balance or objectivity.
+Relevant supporting documents must be contemporary in nature and published within a maximum of
+three years prior to the submission of the business research project to the IB. Submission of the business
+research project occurs in April or October of the final year of the course, depending on the examination session of the school.
+A maximum of one of the supporting documents may be a transcript of video or audio material. The
+transcript must provide the essential points of the video or audio file used for the purposes of the project.
+Only video or audio material published by a reliable organization should be used (such as the business
+organization itself, an organization commissioned by the business or an NGO). Particular attention needs to
+be paid to referencing the original video or audio file so that this may be traced.
+The project can be based on primary and/or secondary sources that will form the basis of the supporting documents.
+Primary sources provide first-hand information or direct evidence for the research. Examples of primary
+sources include:
+•
+face-to-face and online surveys/questionnaires; students should include a blank copy of the questionnaire and a tally/summary of responses •
+face-to-face and online interviews; students should include a copy of the interview questions and summary of the responses •
+focus group discussions; students should include a copy of the focus group questions and summary of the findings.
+Secondary sources provide second-hand information or already existing data for the research. Examples of secondary sources include:
+•
+articles from the local, national or international press • business accounts • business plans
+Internal assessment 54
+Business management guide
+
+=== Page 61 ===
+• extracts from company websites • transcripts of a relevant audio-visual file • financial reports • government and other statistics • journal publications • market research surveys • mission statements.
+Students must select three to five of their own supporting documents, which must not be provided to the
+student by the teacher. Providing supporting documents with many pages is highly discouraged and hence
+it is recommended that no one supporting document should exceed the equivalent of five A4 pages.
+Students must highlight the parts of each supporting document that relate directly to their project. Any
+highlighted parts of supporting documents that are not in the language for which the student is registered must be translated.
+Students should label each supporting document clearly, such as “Supporting document 1”, “Supporting
+document 2”, and so on. This will help with referencing in the project. These should be located at the appropriate section at the end of the document.
+It is expected that students will include in-text citations/references of the supporting documents and a
+bibliography, which should be formatted in an appropriate way. Refer to the IB publication Effective citing and referencing for further guidance.
+Any additional sources such as textbooks and class notes must be referenced but will not be accepted as supporting documents.
+Structure
+The business research project is intended to be a structured piece of well-organized writing that effectively
+presents findings and conclusions. There are many different ways that a student might approach the
+project, but students should ensure that the submitted business research project evidences the following elements.
+•
+An introduction that sets the context. The introduction should briefly demonstrate some background
+information about the business organization, give a clear outline of the issue or problem under
+investigation and explain the methodology used to investigate this issue or problem.
+•
+The main body of the project in which findings from the supporting documents should be presented
+and analysed with the help of relevant business management tools and theories including integrating
+the key concept. The findings should also be interpreted: what main themes emerge from the analysis
+of the supporting documents, and why and how are they helpful (or not) to answering the research
+question? An evaluative approach to this discussion of findings should be pursued, for example, what
+are the strengths and weaknesses of the various positions on the issue or problem and what are their implications?
+•
+A conclusion that answers the research question. In the conclusion, the research question should be
+explicitly answered. The conclusion should not introduce facts or arguments that have not been
+discussed in previous sections of the project. Rather, it is good practice to include those aspects of the
+research question that have not been fully answered in the project or that might need further
+investigation in order to be judged more effectively.
+Presentation
+Effectively presented projects require a title page, an accurate table of contents page, appropriate headings and sub-headings and numbered pages.
+For the presentation of references and bibliography, please see the information on acknowledging the
+ideas or work of another person in the “The Diploma Programme” section of this subject guide.
+Internal assessment 55
+Business management guide
+
+=== Page 62 ===
+Word count
+The business research project must not exceed 1,800 words. The word count must be included on the cover
+page of the project. If the word limit is exceeded, the teacher’s assessment must be based on the first 1,800 words.
+Note: Moderators will not read beyond 1,800 words for the project.
+The following are not included in the word count.
+•
+Acknowledgments •
+Contents page •
+Tables of statistical data •
+Diagrams or figures •
+Equations, formulae and calculations •
+Supporting documents •
+Citations (which, if used, must be in the body of the project) •
+References (which, if used, must be in the footnotes/endnotes) •
+Bibliography
+Please note that footnotes or endnotes may be used for references only. Definitions of business
+management terms and quotations, if used, must be in the body of the work and are included in the word
+count. Please note that citation is a shorthand method of making a reference in the body of the project,
+which is then linked to the full reference in the bibliography.
+Please refer to the Business management teacher support material (TSM) for further guidance on how to prepare for the IA.
+Internal assessment criteria
+The business research project is assessed against seven criteria that are related to the assessment objectives for the business management course.
+When the work to be assessed has been read, the descriptors for each criterion should be studied until a
+descriptor is reached that most appropriately describes the achievement level. If a piece of work seems to
+fall between two descriptors, both descriptors should be read again and the one that more appropriately describes the student’s work chosen.
+There are seven assessment criteria for the business research project.
+•
+Criterion A: Integration of a key concept •
+Criterion B: Supporting documents •
+Criterion C: Selection and application of tools and theories •
+Criterion D: Analysis and evaluation •
+Criterion E: Conclusions •
+Criterion F: Structure •
+Criterion G: Presentation
+Criterion A: Integration of a key concept
+To what extent does the student effectively integrate the analysis of the connection between the key
+concept and the organization under study throughout the internal assessment?
+Marks
+Level descriptor 0
+Either the work does not reach a standard described by the descriptors below or the key
+concept identified is neither change, creativity, ethics nor sustainability.
+Internal assessment 56
+Business management guide
+
+=== Page 63 ===
+Marks
+Level descriptor 1
+The student demonstrates knowledge of the key concept.
+2
+The student describes the connection between the key concept and the organization under study.
+3
+The student analyses the connection between the key concept and the organization under study.
+4
+The student partially integrates the analysis of the connection between the key concept
+and the organization under study in the internal assessment.
+5
+The student effectively integrates the analysis of the connection between the key concept
+and the organization under study throughout the internal assessment.
+Criterion B: Supporting documents
+To what extent does the student select three to five relevant supporting documents that address the
+research question in appropriate depth and breadth?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1
+There are only one or two, or more than five, supporting documents or they are of marginal relevance.
+2
+There are three to five supporting documents that are generally relevant but some lack depth.
+3
+There are three to five supporting documents that are relevant and sufficiently in-depth.
+4
+There are three to five supporting documents that are relevant, sufficiently in-depth and provide a range of ideas and views.
+Criterion C: Selection and application of tools and theories
+To what extent does the student effectively select and apply business management tools and theories that are relevant to the research question?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1
+There is a limited selection and application of business management tools and theories or
+these business management tools and theories are not relevant to the research question.
+2
+There are some business management tools and theories selected and applied to the
+research question. Their relevance to the research question is superficial.
+3
+The business management tools and theories are adequately selected and applied to the
+research question. Their relevance to the research question is not always clear.
+4
+The business management tools and theories are effectively selected and applied with clear relevance to the research question.
+Criterion D: Analysis and evaluation
+To what extent does the student effectively select and use data from the supporting documents in their analysis and evaluation of the research question?
+Internal assessment 57
+Business management guide
+
+=== Page 64 ===
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1
+There is limited selection and use of data from the supporting documents with no analysis and evaluation of the research question.
+2
+The selection and use of data from the supporting documents is superficial, leading to
+limited analysis and evaluation of the research question.
+3
+The selection and use of data from the supporting documents is adequate with some analysis and evaluation of the research question.
+4
+The selection and use of data from the supporting documents is sufficient, leading to a
+mostly effective analysis and evaluation of the research question with some integration of ideas.
+5
+The selection and use of data from the supporting documents is effective, leading to a
+thorough analysis and evaluation of the research question. There is a sustained
+integration of ideas with consideration of the assumptions underpinning the arguments and implications.
+Criterion E: Conclusions
+To what extent is the student’s conclusion consistent with the evidence presented and explicitly answers the research question?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1
+Conclusions are inconsistent with the evidence presented, or conclusions are superficial.
+2
+Some conclusions are consistent with the evidence presented.
+3
+Conclusions are consistent with the evidence presented and explicitly answer the research question.
+Criterion F: Structure
+To what extent is the student’s research project organized using an appropriate structure?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1
+Limited structure.
+2
+Appropriate structure.
+Criterion G: Presentation
+To what extent is the student’s business research project effectively presented with the use of required
+elements including a title page, an accurate table of contents, appropriate headings and sub-headings, and numbered pages?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1
+One or more of the required elements of a well-presented research project is missing.
+2
+All of the required elements of a well-presented research project are included.
+Internal assessment 58
+Business management guide
+
+=== Page 65 ===
+Where profit and loss accounts, balance sheets, cash flow forecasts and budgets are given in case studies or
+examination questions, they will be presented in the format shown in figure 6–11. Students should be
+familiar with these layouts. Please note that a profit and loss account is also known as an income statement.
+The term to be used in assessment in the presentation of the profit and loss account should be statement of profit or loss.
+The term to be used in assessment in the presentation of the balance sheet should be statement of financial position.
+Figure 6
+Statement of profit or loss: Profit-making entity
+Appendices
+Presentation of financial statements 59
+Business management guide
+
+=== Page 66 ===
+Figure 7
+Statement of profit or loss: Non-profit entity
+Presentation of financial statements 60
+Business management guide
+
+=== Page 67 ===
+Figure 8
+Statement of financial position: Profit-making entity
+Presentation of financial statements 61
+Business management guide
+
+=== Page 68 ===
+Figure 9
+Statement of financial position: Non-profit entity
+Presentation of financial statements 62
+Business management guide
+
+=== Page 69 ===
+Figure 10
+Cash flow forecast: Profit and non-profit entity
+Figure 11
+Budget: Profit and non-profit entity
+Presentation of financial statements 63
+Business management guide
+
+=== Page 70 ===
+The following formulae will be used in business management external assessment. A copy of the formulae will be provided to students for the examination.
+Formulae for ratio analysis (SL/HL)
+Profitability ratios (SL/HL)
+Liquidity ratios (SL/HL)
+Efficiency ratios (HL only)
+Appendices
+Formulae 64
+Business management guide
+
+=== Page 71 ===
+Other formulae (SL/HL)
+Investment appraisal
+SL/HL
+HL only
+Capacity utilization and productivity (HL only)
+Formulae 65
+Business management guide
+
+=== Page 72 ===
+A discount table will be provided for students within the examination paper when required to answer the question.
+Years
+Discount rate 4% 6% 8% 10% 20% 1 0.9615 0.9434 0.9259 0.9091 0.8333 2 0.9246 0.8900 0.8573 0.8264 0.6944 3 0.8890 0.8396 0.7938 0.7513 0.5787 4 0.8548 0.7921 0.7350 0.6830 0.4823 5 0.8219 0.7473 0.6806 0.6209 0.4019 6 0.7903 0.7050 0.6302 0.5645 0.3349 7 0.7599 0.6651 0.5835 0.5132 0.2791 8 0.7307 0.6271 0.5403 0.4665 0.2326 9 0.7026 0.5919 0.5002 0.4241 0.1938 10 0.6756 0.5584 0.4632 0.3855 0.1615
+Appendices
+Discount tables (HL only) 66
+Business management guide
+
+=== Page 73 ===
+Students should be familiar with the following key terms and phrases used in examination questions, which
+are to be understood as described below. Although these terms will be used frequently in examination
+questions, other terms may be used to direct students to present an argument in a specific way.
+Command term
+Assessment objective level
+Definition
+Analyse
+AO2
+Break down in order to bring out the essential elements or structure.
+Annotate
+AO4
+Add brief notes to a diagram or graph.
+Apply
+AO2
+Use an idea, equation, principle, theory or law in relation to a given problem or issue.
+Calculate
+AO4
+Obtain a numerical answer showing the relevant stages in the working.
+Comment
+AO2
+Give a judgment based on a given statement or result of a calculation.
+Compare
+AO3
+Give an account of the similarities between two (or more) items or
+situations, referring to both (all) of them throughout.
+Compare and contrast
+AO3
+Give an account of similarities and differences between two (or more)
+items or situations, referring to both (all) of them throughout.
+Complete
+AO4
+Add missing information/data.
+Construct
+AO4
+Display information in a diagrammatic or logical form.
+Contrast
+AO3
+Give an account of the differences between two (or more) items or
+situations, referring to both (all) of them throughout.
+Define
+AO1
+Give the precise meaning of a word, phrase, concept or physical quantity.
+Demonstrate
+AO2
+Make clear by reasoning or evidence, illustrating with examples or practical application.
+Describe
+AO1
+Give a detailed account.
+Determine
+AO4
+Obtain the only possible answer.
+Discuss
+AO3
+Offer a considered and balanced review that includes a range of
+arguments, factors or hypotheses. Opinions or conclusions should be
+presented clearly and supported by appropriate evidence.
+Distinguish
+AO2
+Make clear the differences between two or more concepts or items.
+Draw
+AO4
+Represent by means of a labelled, accurate diagram or graph, using a
+pencil. A ruler (straight edge) should be used for straight lines.
+Diagrams should be drawn to scale. Graphs should have points
+correctly plotted (if appropriate) and joined in a straight line or smooth curve.
+Evaluate
+AO3
+Make an appraisal by weighing up the strengths and limitations.
+Examine
+AO3
+Consider an argument or concept in a way that uncovers the assumptions and interrelationships of the issue.
+Appendices
+Glossary of command terms 67
+Business management guide
+
+=== Page 74 ===
+Command term
+Assessment objective level
+Definition
+Explain
+AO2
+Give a detailed account including reasons or causes.
+Identify
+AO1
+Provide an answer from a number of possibilities.
+Justify
+AO3
+Give valid reasons or evidence to support an answer or conclusion.
+Label
+AO4
+Add labels to a diagram.
+List
+AO1
+Give a sequence of brief answers with no explanation.
+Outline
+AO1
+Give a brief account or summary.
+Plot
+AO4
+Mark the position of points on a diagram.
+Prepare
+AO4
+Put given data or information from a stimulus/source into a suitable format.
+Recommend
+AO3
+Present an advisable course of action with appropriate supporting
+evidence/reason in relation to a given situation, problem or issue.
+State
+AO1
+Give a specific name, value or other brief answer without explanation or calculation.
+Suggest
+AO2
+Propose a solution, hypothesis or other possible answer.
+To what extent
+AO3
+Consider the merits or otherwise of an argument or concept. Opinions
+and conclusions should be presented clearly and supported with appropriate evidence and sound argument.
+Glossary of command terms 68
+Business management guide
+
+=== Page 75 ===
+Refer to the “Glossary” section in the Business management teacher support material.
+Appendices
+Glossary of subject-specific terms 69
+Business management guide
+
+=== Page 76 ===
+This bibliography lists the principal works used to inform the curriculum review. It is not an exhaustive list
+and does not include all the literature available: judicious selection was made in order to better advise and
+guide teachers. This bibliography is not a list of recommended textbooks.
+Backström-Widjeskog, B. 2010. “Teachers’ thoughts on entrepreneurship education”. In Skogen, K and
+Sjøvoll, J (Eds), Creativity and innovation: Preconditions for Entrepreneurial Education. Pp 107–120. Trondheim,
+Norway. Tapir Academic Press.
+Barrett, T. 2005. “What is problem-based learning?” In O’Neill, G, Moore, S and McMullin, B (Eds). Emerging
+Issues in the Practice of University Learning and Teaching. Pp 55–66. Dublin, Ireland. All Ireland Society for Higher Education (AISHE).
+Bhuyan, MS, Raju, V and Phung, SP. 2019. “Social Business and Entrepreneurship Development: A Critical
+Analysis”. International Journal of Psychosocial Rehabilitation. Vol. 23, issue 4. Pp 680–688.
+Borja de Mozota, B. 2006. “The Four Powers of Design: A Value Model in Design Management”. Design
+Management Review. Vol 17, issue 2. Pp 44–53.
+Bucolo, S and Matthews, JH. 2010. “Using a design led disruptive innovation approach to develop new
+services: Practicing innovation in times of discontinuity”. In Kobe, C & Goller, I (Eds.) Proceedings of the 11th
+International CINet Conference. The Netherlands. Pp 176–187.
+Camillus, JC. 2008. “Strategy as a Wicked Problem”. Harvard Business Review. Vol 86, number 5. Pp 99–110.
+Carlopio, J. 2009. “Creating Strategy by Design”. Design Principles and Practices: An International Journal. Vol 3, number 5. Pp 155–166.
+Congdon Jr, MJ and Herakova, L. 2020. “Envisioning Critical Social Entrepreneurship Education: Possibilities,
+Questions, and Guiding Commitments”. Partnerships: A Journal of Service-Learning & Civic Engagement. Vol.
+11, number 1. Pp 287–306.
+Davidson, P, Tsakissiris, J and Guo, Y. 2016. “Education for management: Australian and Chinese
+perspectives”. 30th Australian and New Zealand Academy of Management (ANZAM) Conference.
+Deuchar, R. 2006. “‘Not only this, but also that!’ Translating the social and political motivations
+underpinning enterprise and citizenship education into Scottish schools”. Cambridge Journal of Education.
+Vol 36, number 4. Pp 533–547.
+European Commission. 2010. Europe 2020: A European strategy for smart, sustainable and inclusive growth.
+Brussels, Belgium. European Commission.
+European Commission. 2013. Entrepreneurship 2020 Action Plan. Brussels, Belgium. European Commission.
+Gibb, A. 2002. “In Pursuit of a New ‘Enterprise’ and ‘Entrepreneurship’ Paradigm for Learning: Creative
+Destruction, New Values, New Ways of Doing Things and New Combinations of Knowledge”. International
+Journal of Management Reviews. Vol 4, number 3. Pp 233–269.
+Hallinger, P and Bridges, EM. 2007. A Problem-based Approach for Management Education: Preparing
+Managers for Action. Dordrecht, The Netherlands. Springer.
+Holmgren, CA. 2012. “Translating entrepreneurship into the education setting—a case of societal
+entrepreneurship”. In Berglund, K, Johannisson, B and Schwartz, B (Eds). Societal Entrepreneurship:
+Positioning, Penetrating, Promoting. Cheltenham, UK. Edward Elgar. Pp 214–237.
+Hughes, T, Webber, D and O'Regan, N. 2019. “Achieving wider impact in business and management:
+analysing the case studies from REF 2014”. Studies in Higher Education. Vol 44, issue 4. Pp 628–642.
+Hung, W, Jonassen, DH and Liu, R. 2008. “Problem-Based Learning”. In Handbook of Research on Educational
+Communications and Technology (third edition). New York, USA. Taylor & Francis. Pp 485–506.
+Appendices
+Bibliography 70
+Business management guide
+
+=== Page 77 ===
+Johnson, L, Adams Becker, S, Estrada, V and Freeman, A. 2014. NMC Horizon Report: 2014 Higher Education
+Edition. Austin, Texas, USA. The New Media Consortium.
+Keegan, A and Turner, JR. 2001. “Quantity versus Quality in Project-Based Learning Practices”. Management
+Learning. Vol 32, number 1. Pp 77–98.
+Lackéus, M. 2015. Entrepreneurship in education: What, why, when, how. Entrepreneurship360
+[Background paper]. Paris, France. OECD Publishing.
+Lackéus, M. 2016. Value Creation as Educational Practice: Towards a new Educational Philosophy grounded in
+Entrepreneurship? (Doctoral thesis). Gothenburg, Sweden. Chalmers University of Technology.
+Lamy, E. 2019. “How to Make Social Entrepreneurship Sustainable? A Diagnosis and a Few Elements of a
+Response”. Journal of Business Ethics. Vol 155, number 3. Pp 645–662.
+Leffler, E. 2009. “The Many Faces of Entrepreneurship: A Discursive Battle for the School Arena”. European
+Educational Research Journal. Vol 8, number 1. Pp 104–116.
+Leffler, E and Näsström, G. 2014. “Entrepreneurial Learning and School Improvement: ASwedish Case”.
+International Journal of Social Sciences and Education. Vol 1, number 11. Pp 243–254.
+Matthews, JH and Wrigley, C. 2017. “Design and Design Thinking in Business and Management Higher
+Education”. Journal of Learning Design. Vol 10, number 1. Pp 41–54.
+Martin, R. 2007. The Opposable Mind. Boston, MA, USA. Harvard Business School Press.
+Martin, R. 2009. The Design of Business. Boston, MA, USA. Harvard Business School Press.
+Moberg, K. 2014. Assessing the Impact of Entrepreneurial Education: From ABC to PhD. Copenhagen, Denmark.
+Copenhagen Business School. (PhD thesis)
+Nisula, K and Pekkola, S. 2018. “How to move away from the silos of business management education?”
+Journal of Education for Business. Vol. 93, number 3. Pp 97–111.
+Nussbaum, B. 2009. “Latest Trends in Design and Innovation—And Why The Debate Over Design Thinking
+Is Moot”. Business Week Online. Accessed 10 February 2019. http://www.businessweek.com.
+Organisation for Economic Co-operation and Development (OECD). 2018. Business Models for the Circular
+Economy: Opportunities and Challenges from a Policy Perspective. Accessed 15 April 2020. https:// www.oecd.org.
+Rae, D. 2000. “Understanding entrepreneurial learning: A question of how?” International Journal of
+Entrepreneurial Behaviour & Research. Vol 6, number 3. Pp 145–159.
+Riese, H. 2010. “Pedagogic entrepreneurship—An educational ideal for the school of the future”. In Skogen,
+K and Sjøvoll, J. (Eds). Creativity and Innovation: Preconditions for entrepreneurial education. Trondheim,
+Norway. Tapir Academic Press. Pp 79–88.
+Sage, SM. 2000. “A Natural Fit: Problem-based Learning and Technology Standards”. Learning & Leading with Technology. Vol 28, number 1. Pp 6–12.
+Stepien, WJ. 2002. Problem-Based Learning with the Internet, Grades 3–6. Arizona, USA. Zephyr Press.
+Torp, L, and Sage, S. 2002. Problems as Possibilities: Problem-Based Learning for K–12 Education (second edition). Alexandria, VA, USA. ASCD.
+United Nations. 1987. Our Common Future: Report of the World Commission on Environment and Development.
+New York, NY, USA. United Nations.
+Bibliography 71
+Business management guide

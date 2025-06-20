@@ -1,0 +1,1201 @@
+{
+  "directory": "/Volumes/PortableSSD/data/input/standards_frameworks",
+  "total_files": 132,
+  "analysis_date": "1750337623.6673167",
+  "documents": [
+    {
+      "filename": "Math_Standards1.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core Math/Math_Standards1.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "may2012item12catt2.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core Math/may2012item12catt2.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ACTFLPerformance_Descriptors-Presentational.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/ACTFLPerformance_Descriptors-Presentational.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Intercultural-Can-Dos_Reflections-Scenarios.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/Intercultural-Can-Dos_Reflections-Scenarios.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Intercultural-Can-Do_Statements.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/Intercultural-Can-Do_Statements.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Novice-Can-Do_Statements.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/Novice-Can-Do_Statements.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ACTFLPerformance_Descriptors.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/ACTFLPerformance_Descriptors.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ACTFLPerformance_Descriptors-Interpersonal.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/ACTFLPerformance_Descriptors-Interpersonal.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Can-Do-Introduction-2020.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/Can-Do-Introduction-2020.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Can-Do_Benchmarks_Indicators.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/Can-Do_Benchmarks_Indicators.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ACTFLPerformance_Descriptors-Interpretive.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/ACTFLPerformance_Descriptors-Interpretive.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Advanced-Can-Do_Statements.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/Advanced-Can-Do_Statements.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Superior-Distinguished-Can-Do_Statements.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/Superior-Distinguished-Can-Do_Statements.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Intermediate-Can-Do-Statements.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/Intermediate-Can-Do-Statements.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "World-ReadinessStandardsforLearningLanguages.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ACTFUL/World-ReadinessStandardsforLearningLanguages.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "KeyPointsELA.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core ELA/KeyPointsELA.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "CoreFAQ.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core ELA/CoreFAQ.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ccssi-introduction.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core ELA/ccssi-introduction.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "CoreFacts.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core ELA/CoreFacts.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "CCSSI_ELA Standards.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core ELA/CCSSI_ELA Standards.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix_A.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core ELA/Appendix_A.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix_C.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core ELA/Appendix_C.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix_B.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Common Core ELA/Appendix_B.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Grade-Level-Outcomes-for-K-12-Physical-Education.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/P.E_/Grade-Level-Outcomes-for-K-12-Physical-Education.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/P.E_/SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "shape_hs.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/P.E_/shape_hs.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Media Arts at a Glance.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Media Arts at a Glance.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Music at a Glance.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Music at a Glance.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Dance at a Glance.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Dance at a Glance.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Theatre at a Glance.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Theatre at a Glance.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Music at a Glance rev 12-1-16.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Music at a Glance rev 12-1-16.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Music Tech Strand at a Glance.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Music Tech Strand at a Glance.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Music Theory and Composition Strand at a Glance.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Music Theory and Composition Strand at a Glance.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Visual Arts at a Glance rev.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Visual Arts at a Glance rev.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Media Arts at a Glance - new copyright info.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Media Arts at a Glance - new copyright info.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Visual Arts at a Glance - new copyright info.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Visual Arts at a Glance - new copyright info.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Music Harmonizing Instruments at a Glance.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Music Harmonizing Instruments at a Glance.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Music Traditional and Emerging Ensembles at a Glance.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NCAS/Music Traditional and Emerging Ensembles at a Glance.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "13165.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/13165.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix K_Revised 8.30.13.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix K_Revised 8.30.13.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "APPENDIX J_0.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/APPENDIX J_0.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "How to Read NGSS - Final 08.19.13_0.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/How to Read NGSS - Final 08.19.13_0.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix G - Crosscutting Concepts FINAL edited 4.10.13.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix G - Crosscutting Concepts FINAL edited 4.10.13.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix B - Responses to the Public Drafts.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix B - Responses to the Public Drafts.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "3dimensions.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/3dimensions.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "AppendixE-ProgressionswithinNGSS-061617.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/AppendixE-ProgressionswithinNGSS-061617.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix D Diversity and Equity 6-14-13.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix D Diversity and Equity 6-14-13.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix F  Science and Engineering Practices in the NGSS - FINAL 060513.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix F  Science and Engineering Practices in the NGSS - FINAL 060513.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix M Connections to the CCSS for Literacy_061213.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix M Connections to the CCSS for Literacy_061213.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix A - 4.11.13 Conceptual Shifts in the Next Generation Science Standards.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix A - 4.11.13 Conceptual Shifts in the Next Generation Science Standards.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix-L_CCSS Math Connections 06_03_13.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix-L_CCSS Math Connections 06_03_13.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "NGSS Appendix C Final 072613.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/NGSS Appendix C Final 072613.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Appendix I - Engineering Design in NGSS - FINAL_V2.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/NGSS/Appendix I - Engineering Design in NGSS - FINAL_V2.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "Copy of C3-Framework-for-Social-Studies.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Social Studies C3/Copy of C3-Framework-for-Social-Studies.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-us-history-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides DL/ap-us-history-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "0686b83cee11492660d78f7b7c687266dff51b87.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/0686b83cee11492660d78f7b7c687266dff51b87.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-comparative-government-and-politics-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-comparative-government-and-politics-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-biology-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-biology-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-us-history-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-us-history-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-english-language-and-composition-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-english-language-and-composition-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-german-language-and-culture-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-german-language-and-culture-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-music-theory-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-music-theory-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-biology-equations-and-formulas-sheet.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-biology-equations-and-formulas-sheet.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-precalculus-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-precalculus-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-latin-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-latin-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-chinese-language-and-culture-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-chinese-language-and-culture-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-spanish-language-and-culture-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-spanish-language-and-culture-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-computer-science-principles-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-computer-science-principles-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-english-literature-and-composition-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-english-literature-and-composition-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-physics-c-mechanics-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-physics-c-mechanics-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-physics-c-electricity-and-magnetism-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-physics-c-electricity-and-magnetism-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-seminar-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-seminar-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-japanese-language-and-culture-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-japanese-language-and-culture-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-art-history-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-art-history-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-statistics-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-statistics-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-macroeconomics-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-macroeconomics-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "17ed730d80d554de6efcb235b465c2c740af2f69.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/17ed730d80d554de6efcb235b465c2c740af2f69.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-italian-language-and-culture-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-italian-language-and-culture-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-microeconomics-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-microeconomics-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-physics-2-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-physics-2-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-environmental-science-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-environmental-science-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "19-1392_6j37.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/19-1392_6j37.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-psychology-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-psychology-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-research-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-research-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-french-language-and-culture-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-french-language-and-culture-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-world-history-modern-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-world-history-modern-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-spanish-literature-and-culture-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-spanish-literature-and-culture-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-computer-science-a-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-computer-science-a-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-european-history-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-european-history-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-human-geography-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-human-geography-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-chemistry-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-chemistry-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-physics-1-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-physics-1-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "8e121483f401b3669128f868c08a9eb1f5546405.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/8e121483f401b3669128f868c08a9eb1f5546405.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "c3e8c92c5d3c78622b95c0832c2bd9db594011fc.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/c3e8c92c5d3c78622b95c0832c2bd9db594011fc.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-us-government-and-politics-course-and-exam-description.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/ap-us-government-and-politics-course-and-exam-description.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-compscia-elevens-lab-student-guide.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/student guides/ap-compscia-elevens-lab-student-guide.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-compscia-magpie-lab-student-guide.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/student guides/ap-compscia-magpie-lab-student-guide.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ap-compscia-picture-lab-student-guide.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/Advanced Placement/AP Guides/student guides/ap-compscia-picture-lab-student-guide.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ISTE-Standards-One-Sheet_Combined_11-22-2021_vF4-1-4.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ISTE/ISTE-Standards-One-Sheet_Combined_11-22-2021_vF4-1-4.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_4_biolo_gui_1402_7_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_4_biolo_gui_1402_7_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "theatre-guide-en_403aca1d-663c-4387-a8b1-c54e39cd1ae0.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/theatre-guide-en_403aca1d-663c-4387-a8b1-c54e39cd1ae0.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "economics-guide-en_f527c535-cbfb-4567-815d-f93fbbdea80b.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/economics-guide-en_f527c535-cbfb-4567-815d-f93fbbdea80b.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "music-guide-en_3fb8cd59-e3b1-4f14-a944-d3cf338ade04.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/music-guide-en_3fb8cd59-e3b1-4f14-a944-d3cf338ade04.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "language-a-literature-guide-first-assessment-2021-en_363bb83c-30e6-49d1-b2ba-10db82f16e31.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/language-a-literature-guide-first-assessment-2021-en_363bb83c-30e6-49d1-b2ba-10db82f16e31.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "chemistry-guide-en_27d9a623-d741-4646-a331-1510ce0723b4.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/chemistry-guide-en_27d9a623-d741-4646-a331-1510ce0723b4.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "mathematics-applications-and-interpretation-guide-en_5659ecbf-2f8b-4873-8075-c931f676e101.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/mathematics-applications-and-interpretation-guide-en_5659ecbf-2f8b-4873-8075-c931f676e101.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "biology-guide-en_f7d35c6c-2148-40fc-afab-b0e3cc4333f1.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/biology-guide-en_f7d35c6c-2148-40fc-afab-b0e3cc4333f1.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_4_ecoso_gui_1505_4_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_4_ecoso_gui_1505_4_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_2_anlan_gui_1802_3_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_2_anlan_gui_1802_3_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_3_histx_gui_1806_3_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_3_histx_gui_1806_3_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_2_ablan_gui_1802_4_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_2_ablan_gui_1802_4_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_4_sport_gui_1601_5_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_4_sport_gui_1601_5_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "business-management-guide-en_4aa68189-1e05-426f-93f0-a2ca2f0f3e5c.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/business-management-guide-en_4aa68189-1e05-426f-93f0-a2ca2f0f3e5c.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_6_visar_gui_1702_1_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_6_visar_gui_1702_1_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_3_philo_gui_1401_1_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_3_philo_gui_1401_1_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "philosophyhl2016englishw.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/philosophyhl2016englishw.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "global-politics-hl-2016-en.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/global-politics-hl-2016-en.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "6_dancehl.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/6_dancehl.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_3_gplts_gui_1502_2_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_3_gplts_gui_1502_2_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_4_physi_gui_1402_6_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_4_physi_gui_1402_6_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "philosophysl2016englishw.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/philosophysl2016englishw.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_6_filmx_gui_2104_3a_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_6_filmx_gui_2104_3a_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "d_4_chemi_gui_1402_8_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/course guides/d_4_chemi_gui_1402_8_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "subject-brief-dp-math-analysis-and-approaches-en.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/Briefs/subject-brief-dp-math-analysis-and-approaches-en.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "environmental-systems-and-societies-subject-brief-en.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/Briefs/environmental-systems-and-societies-subject-brief-en.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "dp_sciences_chemistry_subject-brief_jan_2022_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/Briefs/dp_sciences_chemistry_subject-brief_jan_2022_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "dp_sciences_physics_subject-brief_jan_2022_e.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/Briefs/dp_sciences_physics_subject-brief_jan_2022_e.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "curriculum.brief-languagea.literature-eng.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/Briefs/curriculum.brief-languagea.literature-eng.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "dp-subject-brief-music-2020-en.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/IB/Briefs/dp-subject-brief-music-2020-en.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    },
+    {
+      "filename": "ISCA Student Standards June 2022.pdf",
+      "path": "/Volumes/PortableSSD/data/input/standards_frameworks/ISCA/ISCA Student Standards June 2022.pdf",
+      "error": "document closed",
+      "recommended_processor": "fallback_chain",
+      "notes": [
+        "Error during analysis: document closed"
+      ]
+    }
+  ],
+  "summary": {
+    "simple": 0,
+    "medium": 0,
+    "complex": 0,
+    "errors": 132
+  }
+}

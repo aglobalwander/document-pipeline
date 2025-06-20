@@ -1,0 +1,1159 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+
+April 2013
+NGSS Release
+Page 1 of 33
+APPENDIX F – Science and Engineering Practices in the NGSS
+
+A Science Framework for K-12 Science Education provides the blueprint for developing the Next
+Generation Science Standards (NGSS). The Framework expresses a vision in science education that
+requires students to operate at the nexus of three dimensions of learning:  Science and Engineering
+Practices, Crosscutting Concepts, and Disciplinary Core Ideas. The Framework identified a small number
+of disciplinary core ideas that all students should learn with increasing depth and sophistication, from
+Kindergarten through grade twelve. Key to the vision expressed in the Framework is for students to learn
+these disciplinary core ideas in the context of science and engineering practices. The importance of
+combining science and engineering practices and disciplinary core ideas is stated in the Framework as
+follows:
+Standards and performance expectations that are aligned to the framework must take into
+account that students cannot fully understand scientific and engineering ideas without
+engaging in the practices of inquiry and the discourses by which such ideas are
+developed and refined. At the same time, they cannot learn or show competence in
+practices except in the context of specific content. (NRC Framework, 2012, p. 218)
+The Framework specifies that each performance expectation must combine a relevant practice of science
+or engineering, with a core disciplinary idea and crosscutting concept, appropriate for students of the
+designated grade level. That guideline is perhaps the most significant way in which the NGSS differs
+from prior standards documents. In the future, science assessments will not assess students’ understanding
+of core ideas separately from their abilities to use the practices of science and engineering. They will be
+assessed together, showing students not only “know” science concepts; but also, students can use their
+understanding to investigate the natural world through the practices of science inquiry, or solve
+meaningful problems through the practices of engineering design. The Framework uses the term
+“practices,” rather than “science processes” or “inquiry” skills for a specific reason:
+We use the term “practices” instead of a term such as “skills” to emphasize that
+engaging in scientific investigation requires not only skill but also knowledge that is
+specific to each practice. (NRC Framework, 2012, p. 30)
+The eight practices of science and engineering that the Framework identifies as essential for all students
+to learn and describes in detail are listed below:
+1.  Asking questions (for science) and defining problems (for engineering)
+2.  Developing and using models
+3.  Planning and carrying out investigations
+4.  Analyzing and interpreting data
+5.  Using mathematics and computational thinking
+6.  Constructing explanations (for science) and designing solutions (for engineering)
+7.  Engaging in argument from evidence
+8.  Obtaining, evaluating, and communicating information
+
+Rationale
+Chapter 3 of the Framework describes each of the eight practices of science and engineering and presents
+the following rationale for why they are essential.
+
+Engaging in the practices of science helps students understand how scientific knowledge
+develops; such direct involvement gives them an appreciation of the wide range of
+approaches that are used to investigate, model, and explain the world. Engaging in the
+practices of engineering likewise helps students understand the work of engineers, as
+well as the links between engineering and science. Participation in these practices also
+
+=== Page 2 ===
+
+April 2013
+NGSS Release
+Page 2 of 33
+helps students form an understanding of the crosscutting concepts and disciplinary ideas
+of science and engineering; moreover, it makes students’ knowledge more meaningful and embeds it more deeply into their worldview.
+The actual doing of science or engineering can also pique students’ curiosity, capture
+their interest, and motivate their continued study; the insights thus gained help them
+recognize that the work of scientists and engineers is a creative endeavor—one that has
+deeply affected the world they live in. Students may then recognize that science and
+engineering can contribute to meeting many of the major challenges that confront society
+today, such as generating sufficient energy, preventing and treating disease, maintaining
+supplies of fresh water and food, and addressing climate change.
+Any education that focuses predominantly on the detailed products of scientific labor—
+the facts of science—without developing an understanding of how those facts were
+established or that ignores the many important applications of science in the world
+misrepresents science and marginalizes the importance of engineering. (NRC
+Framework 2012, pp. 42-43)
+As suggested in the rationale, above, Chapter 3 derives the eight practices based on an analysis of what
+professional scientists and engineers do. It is recommended that users of the NGSS read that chapter
+carefully, as it provides valuable insights into the nature of science and engineering, as well as the
+connections between these two closely allied fields. The intent of this section of the NGSS appendices is
+more limited—to describe what each of these eight practices implies about what students can do. Its
+purpose is to enable readers to better understand the performance expectations. The “Practices Matrix” is
+included, which lists the specific capabilities included in each practice for each grade band (K-2, 3-5, 6-8, 9-12).
+
+Guiding Principles
+The development process of the standards provided insights into science and engineering practices.
+These insights are shared in the following guiding principles:
+Students in grades K-12 should engage in all eight practices over each grade band. All eight
+practices are accessible at some level to young children; students’ abilities to use the practices
+grow over time. However, the NGSS only identifies the capabilities students are expected to
+acquire by the end of each grade band (K-2, 3-5, 6-8, and 9-12). Curriculum developers and
+teachers determine strategies that advance students’ abilities to use the practices.
+Practices grow in complexity and sophistication across the grades. The Framework suggests
+how students’ capabilities to use each of the practices should progress as they mature and engage
+in science learning. For example, the practice of “planning and carrying out investigations”
+begins at the kindergarten level with guided situations in which students have assistance in
+identifying phenomena to be investigated, and how to observe, measure, and record outcomes. By
+upper elementary school, students should be able to plan their own investigations. The nature of
+investigations that students should be able to plan and carry out is also expected to increase as
+students mature, including the complexity of questions to be studied, the ability to determine what
+kind of investigation is needed to answer different kinds of questions, whether or not variables
+need to be controlled and if so, which are most important, and at the high school level, how to
+take measurement error into account. As listed in the tables in this chapter, each of the eight
+practices has its own progression, from kindergarten to grade 12. While these progressions are
+derived from Chapter 3 of the Framework, they are refined based on experiences in crafting the
+NGSS and feedback received from reviewers.
+Each practice may reflect science or engineering. Each of the eight practices can be used in the
+service of scientific inquiry or engineering design. The best way to ensure a practice is being used
+
+=== Page 3 ===
+
+April 2013
+NGSS Release
+Page 3 of 33
+for science or engineering is to ask about the goal of the activity. Is the goal to answer a question?
+If so, students are doing science. Is the purpose to define and solve a problem? If so, students are
+doing engineering. Box 3-2 on pages 50-53 of the Framework provides a side-by-side comparison
+of how scientists and engineers use these practices. This chapter briefly summarizes what it
+“looks like” for a student to use each practice for science or engineering.
+Practices represent what students are expected to do, and are not teaching methods or
+curriculum. The Framework occasionally offers suggestions for instruction, such as how a
+science unit might begin with a scientific investigation, which then leads to the solution of an
+engineering problem. The NGSS avoids such suggestions since the goal is to describe what
+students should be able to do, rather than how they should be taught. For example, it was
+suggested for the NGSS to recommend certain teaching strategies such as using biomimicry—the
+application of biological features to solve engineering design problems. Although instructional
+units that make use of biomimicry seem well-aligned with the spirit of the Framework to
+encourage integration of core ideas and practices, biomimicry and similar teaching approaches
+are more closely related to curriculum and instruction than to assessment. Hence, the decision was made not to include biomimicry in the NGSS.
+The eight practices are not separate; they intentionally overlap and interconnect. As
+explained by Bell, et al. (2012), the eight practices do not operate in isolation. Rather, they tend to
+unfold sequentially, and even overlap. For example, the practice of “asking questions” may lead
+to the practice of “modeling” or “planning and carrying out an investigation,” which in turn may
+lead to “analyzing and interpreting data.”  The practice of “mathematical and computational
+thinking” may include some aspects of “analyzing and interpreting data.” Just as it is important
+for students to carry out each of the individual practices, it is important for them to see the connections among the eight practices.
+Performance expectations focus on some but not all capabilities associated with a practice.
+The Framework identifies a number of features or components of each practice. The practices
+matrix, described in this section, lists the components of each practice as a bulleted list within
+each grade band. As the performance expectations were developed, it became clear that it’s too
+much to expect each performance to reflect all components of a given practice. The most
+appropriate aspect of the practice is identified for each performance expectation.
+Engagement in practices is language intensive and requires students to participate in
+classroom science discourse. The practices offer rich opportunities and demands for language
+learning while advancing science learning for all students (Lee, Quinn, & Valdés, in press).
+English language learners, students with disabilities that involve language processing, students
+with limited literacy development, and students who are speakers of social or regional varieties of
+English that are generally referred to as “non-Standard English” stand to gain from science
+learning that involves language-intensive scientific and engineering practices. When supported
+appropriately, these students are capable of learning science through their emerging language and
+comprehending and carrying out sophisticated language functions (e.g., arguing from evidence,
+providing explanations, developing models) using less-than-perfect English. By engaging in such
+practices, moreover, they simultaneously build on their understanding of science and their
+language proficiency (i.e., capacity to do more with language).
+On the following pages, each of the eight practices is briefly described. Each description ends with a table
+illustrating the components of the practice that students are expected to master at the end of each grade
+band. All eight tables comprise the practices matrix. During development of the NGSS, the practices
+matrix was revised several times to reflect improved understanding of how the practices connect with the disciplinary core ideas.
+
+=== Page 4 ===
+
+April 2013
+NGSS Release
+Page 4 of 33
+Practice 1  Asking Questions and Defining Problems
+Students at any grade level should be able to ask questions of each other about the texts
+they read, the features of the phenomena they observe, and the conclusions they draw
+from their models or scientific investigations. For engineering, they should ask questions
+to define the problem to be solved and to elicit ideas that lead to the constraints and
+specifications for its solution. (NRC Framework 2012, p. 56)
+Scientific questions arise in a variety of ways. They can be driven by curiosity about the world, inspired
+by the predictions of a model, theory, or findings from previous investigations, or they can be stimulated
+by the need to solve a problem. Scientific questions are distinguished from other types of questions in that
+the answers lie in explanations supported by empirical evidence, including evidence gathered by others or through investigation.
+While science begins with questions, engineering begins with defining a problem to solve. However,
+engineering may also involve asking questions to define a problem, such as:  What is the need or desire
+that underlies the problem? What are the criteria for a successful solution? Other questions arise when
+generating ideas, or testing possible solutions, such as:  What are the possible trade-offs? What evidence is necessary to determine which solution is best?
+Asking questions and defining problems also involves asking questions about data, claims that are made,
+and proposed designs. It is important to realize that asking a question also leads to involvement in another
+practice. A student can ask a question about data that will lead to further analysis and interpretation. Or a
+student might ask a question that leads to planning and design, an investigation, or the refinement of a design.
+Whether engaged in science or engineering, the ability to ask good questions and clearly define problems
+is essential for everyone. The following progression of Practice 1 summarizes what students should be
+able to do by the end of each grade band. Each of the examples of asking questions below leads to students engaging in other scientific practices.
+
+Grades K-2
+Grades 3-5
+Grades 6-8
+Grades 9-12
+Asking questions and defining problems in K–2 builds on prior experiences and progresses to simple descriptive questions that can be tested.
+ Ask questions based on observations to find more information about the natural and/or designed world(s).
+ Ask and/or identify questions that can be answered by an investigation.
+ Define a simple problem that can be solved through the development of a new or improved object or tool.
+
+Asking questions and defining problems in 3–5 builds on K–2 experiences and progresses to specifying qualitative relationships.
+ Ask questions about what would happen if a variable is changed.
+ Identify scientific (testable) and non-scientific (non testable) questions.
+ Ask questions that can be investigated and predict reasonable outcomes based on patterns such as cause and effect relationships.
+ Use prior knowledge to describe problems that can be solved.
+ Define a simple design problem that can be solved through the development of an object, tool, process, or system and includes several criteria for success and constraints on materials, time, or cost.
+Asking questions and defining problems in 6–8 builds on K–5 experiences and progresses to specifying relationships between variables, and clarifying arguments and models.
+ Ask questions o that arise from careful observation of phenomena, models, or unexpected results, to clarify and/or seek additional information.
+o to identify and/or clarify evidence and/or the premise(s) of an argument.
+o to determine relationships between independent and dependent variables and relationships in models.
+o to clarify and/or refine a model, an explanation, or an engineering problem.
+o that require sufficient and appropriate empirical evidence to answer.
+o that can be investigated within the scope of the classroom, outdoor environment, and museums and other public facilities with available resources and, when
+Asking questions and defining problems in 9–12 builds on K–8 experiences and progresses to formulating, refining, and evaluating empirically testable questions and design problems using models and simulations.
+ Ask questions o that arise from careful observation of phenomena, or unexpected results, to clarify and/or seek additional information.
+o that arise from examining models or a theory, to clarify and/or seek additional information and relationships.
+o to determine relationships, including quantitative relationships, between independent and dependent variables.
+o to clarify and refine a model, an explanation, or an engineering problem.
+ Evaluate a question to determine if it is testable and
+
+=== Page 5 ===
+
+April 2013
+NGSS Release
+Page 5 of 33 appropriate, frame a hypothesis based on observations and scientific principles.
+o that challenge the premise(s) of an argument or the interpretation of a data set.
+ Define a design problem that can be solved through the development of an object, tool, process or system and includes multiple criteria and constraints, including scientific knowledge that may limit possible solutions.
+
+relevant.
+ Ask questions that can be investigated within the scope of the school laboratory, research facilities, or field (e.g., outdoor environment) with available resources and, when appropriate, frame a hypothesis based on a model or theory.
+ Ask and/or evaluate questions that challenge the premise(s) of an argument, the interpretation of a data set, or the suitability of a design.
+ Define a design problem that involves the development of a process or system with interacting components and criteria and constraints that may include social, technical, and/or environmental considerations.
+
+=== Page 6 ===
+
+April 2013
+NGSS Release
+Page 6 of 33
+Practice 2  Developing and Using Models
+Modeling can begin in the earliest grades, with students’ models progressing from
+concrete “pictures” and/or physical scale models (e.g., a toy car) to more abstract
+representations of relevant relationships in later grades, such as a diagram representing
+forces on a particular object in a system. (NRC Framework, 2012, p. 58)
+Models include diagrams, physical replicas, mathematical representations, analogies, and computer
+simulations. Although models do not correspond exactly to the real world, they bring certain features into
+focus while obscuring others. All models contain approximations and assumptions that limit the range of
+validity and predictive power, so it is important for students to recognize their limitations.
+In science, models are used to represent a system (or parts of a system) under study, to aid in the
+development of questions and explanations, to generate data that can be used to make predictions, and to
+communicate ideas to others. Students can be expected to evaluate and refine models through an iterative
+cycle of comparing their predictions with the real world and then adjusting them to gain insights into the
+phenomenon being modeled. As such, models are based upon evidence. When new evidence is uncovered
+that the models can’t explain, models are modified.
+In engineering, models may be used to analyze a system to see where or under what conditions flaws
+might develop, or to test possible solutions to a problem. Models can also be used to visualize and refine a
+design, to communicate a design’s features to others, and as prototypes for testing design performance.
+
+Grades K-2
+Grades 3-5
+Grades 6-8
+Grades 9-12
+Modeling in K–2 builds on prior experiences and progresses to include using and developing models (i.e., diagram, drawing, physical replica, diorama, dramatization, or storyboard) that represent concrete events or design solutions.
+ Distinguish between a model and the actual object, process, and/or events the model represents.
+ Compare models to identify common features and differences.
+ Develop and/or use a model to represent amounts, relationships, relative scales (bigger, smaller), and/or patterns in the natural and designed world(s).
+ Develop a simple model based on evidence to represent a proposed object or tool.
+
+Modeling in 3–5 builds on K–2 experiences and progresses to building and revising simple models and using models to represent events and design solutions.
+ Identify limitations of models.
+ Collaboratively develop and/or revise a model based on evidence that shows the relationships among variables for frequent and regular occurring events.
+ Develop a model using an analogy, example, or abstract representation to describe a scientific principle or design solution.
+ Develop and/or use models to describe and/or predict phenomena.
+ Develop a diagram or simple physical prototype to convey a proposed object, tool, or process.
+ Use a model to test cause and effect relationships or interactions concerning the functioning of a natural or designed system.
+Modeling in 6–8 builds on K–5 experiences and progresses to developing, using, and revising models to describe, test, and predict more abstract phenomena and design systems.
+ Evaluate limitations of a model for a proposed object or tool.
+ Develop or modify a model— based on evidence – to match what happens if a variable or component of a system is changed.
+ Use and/or develop a model of simple systems with uncertain and less predictable factors.
+ Develop and/or revise a model to show the relationships among variables, including those that are not observable but predict observable phenomena.
+ Develop and/or use a model to predict and/or describe phenomena.
+ Develop a model to describe unobservable mechanisms.
+ Develop and/or use a model to generate data to test ideas about phenomena in natural or designed systems, including those representing inputs and outputs, and those at unobservable scales.
+Modeling in 9–12 builds on K–8 experiences and progresses to using, synthesizing, and developing models to predict and show relationships among variables between systems and their components in the natural and designed worlds.
+ Evaluate merits and limitations of two different models of the same proposed tool, process, mechanism or system in order to select or revise a model that best fits the evidence or design criteria.
+ Design a test of a model to ascertain its reliability.
+ Develop, revise, and/or use a model based on evidence to illustrate and/or predict the relationships between systems or between components of a system.
+ Develop and/or use multiple types of models to provide mechanistic accounts and/or predict phenomena, and move flexibly between model types based on merits and limitations.
+ Develop a complex model that allows for manipulation and testing of a proposed process or system.
+ Develop and/or use a model (including mathematical and computational) to generate data to support explanations, predict phenomena, analyze systems, and/or solve problems.
+
+=== Page 7 ===
+
+April 2013
+NGSS Release
+Page 7 of 33
+Practice 3  Planning and Carrying Out Investigations
+Students should have opportunities to plan and carry out several different kinds of
+investigations during their K-12 years. At all levels, they should engage in investigations that
+range from those structured by the teacher—in order to expose an issue or question that they
+would be unlikely to explore on their own (e.g., measuring specific properties of materials)—
+to those that emerge from students’ own questions. (NRC Framework, 2012, p. 61)
+Scientific investigations may be undertaken to describe a phenomenon, or to test a theory or model for
+how the world works. The purpose of engineering investigations might be to find out how to fix or
+improve the functioning of a technological system or to compare different solutions to see which best
+solves a problem. Whether students are doing science or engineering, it is always important for them to
+state the goal of an investigation, predict outcomes, and plan a course of action that will provide the best
+evidence to support their conclusions. Students should design investigations that generate data to provide
+evidence to support claims they make about phenomena. Data aren’t evidence until used in the process of
+supporting a claim. Students should use reasoning and scientific ideas, principles, and theories to show why data can be considered evidence.
+Over time, students are expected to become more systematic and careful in their methods. In laboratory
+experiments, students are expected to decide which variables should be treated as results or outputs,
+which should be treated as inputs and intentionally varied from trial to trial, and which should be
+controlled, or kept the same across trials. In the case of field observations, planning involves deciding
+how to collect different samples of data under different conditions, even though not all conditions are
+under the direct control of the investigator. Planning and carrying out investigations may include elements of all of the other practices.
+
+Grades K-2
+Grades 3-5
+Grades 6-8
+Grades 9-12
+Planning and carrying out investigations to answer questions or test solutions to problems in K–2 builds on prior experiences and progresses to simple investigations, based on fair tests, which provide data to support explanations or design solutions.
+ With guidance, plan and conduct an investigation in collaboration with peers (for
+K).
+ Plan and conduct an investigation collaboratively to produce data to serve as the basis for evidence to answer a question.
+ Evaluate different ways of observing and/or measuring a phenomenon to determine which way can answer a question.
+ Make observations (firsthand or from media) and/or measurements to collect data that can be used to make comparisons.
+ Make observations (firsthand or from media) and/or measurements of a proposed object or tool or solution to determine if it
+Planning and carrying out investigations to answer questions or test solutions to problems in 3–5 builds on K– 2 experiences and progresses to include investigations that control variables and provide evidence to support explanations or design solutions.
+ Plan and conduct an investigation collaboratively to produce data to serve as the basis for evidence, using fair tests in which variables are controlled and the number of trials considered.
+ Evaluate appropriate methods and/or tools for collecting data.
+ Make observations and/or measurements to produce data to serve as the basis for evidence for an explanation of a phenomenon or test a design solution.
+ Make predictions about what would happen if a variable changes.
+ Test two different models of the same proposed object, tool, or process to Planning and carrying out investigations in 6-8 builds on
+K-5 experiences and progresses to include investigations that use multiple variables and provide evidence to support explanations or solutions.
+ Plan an investigation individually and collaboratively, and in the
+design: identify independent and dependent variables and controls, what tools are needed to do the gathering, how measurements will be recorded, and how many data are needed to support a claim.
+ Conduct an investigation and/or evaluate and/or revise the experimental design to produce data to serve as the basis for evidence that meet the goals of the investigation.
+ Evaluate the accuracy of various methods for collecting data.
+ Collect data to produce data to serve as the basis for evidence to answer scientific questions or test
+Planning and carrying out investigations in 9-12 builds on K-8 experiences and progresses to include investigations that provide evidence for and test conceptual, mathematical, physical, and empirical models.
+ Plan an investigation or test a design individually and collaboratively to produce data to serve as the basis for evidence as part of building and revising models, supporting explanations for phenomena, or testing solutions to problems. Consider possible confounding variables or effects and evaluate the investigation’s design to ensure variables are controlled.
+ Plan and conduct an investigation individually and collaboratively to produce data to serve as the basis for evidence, and in the design: decide on types, how much, and accuracy of data needed to produce reliable measurements and consider limitations on the precision of the data (e.g., number of trials, cost, risk, time), and refine the design accordingly.
+ Plan and conduct an investigation or test a design solution in a safe and ethical manner including considerations of environmental, social, and personal impacts.
+ Select appropriate tools to collect, record, analyze, and evaluate data.
+
+=== Page 8 ===
+
+April 2013
+NGSS Release
+Page 8 of 33 solves a problem or meets a goal.
+ Make predictions based on prior experiences.
+determine which better meets criteria for success.
+design solutions under a range of conditions.
+ Collect data about the performance of a proposed object, tool, process or system under a range of conditions.
+ Make directional hypotheses that specify what happens to a dependent variable when an independent variable is manipulated.
+ Manipulate variables and collect data about a complex model of a proposed process or system to identify failure points or improve performance relative to criteria for success or other variables.
+
+=== Page 9 ===
+
+April 2013
+NGSS Release
+Page 9 of 33
+Practice 4  Analyzing and Interpreting Data
+Once collected, data must be presented in a form that can reveal any patterns and
+relationships and that allows results to be communicated to others. Because raw data as
+such have little meaning, a major practice of scientists is to organize and interpret data
+through tabulating, graphing, or statistical analysis. Such analysis can bring out the
+meaning of data—and their relevance—so that they may be used as evidence.
+Engineers, too, make decisions based on evidence that a given design will work; they
+rarely rely on trial and error. Engineers often analyze a design by creating a model or
+prototype and collecting extensive data on how it performs, including under extreme
+conditions. Analysis of this kind of data not only informs design decisions and enables the
+prediction or assessment of performance but also helps define or clarify problems,
+determine economic feasibility, evaluate alternatives, and investigate failures. (NRC
+Framework, 2012, p. 61-62)
+As students mature, they are expected to expand their capabilities to use a range of tools for tabulation,
+graphical representation, visualization, and statistical analysis. Students are also expected to improve their
+abilities to interpret data by identifying significant features and patterns, use mathematics to represent
+relationships between variables, and take into account sources of error. When possible and feasible,
+students should use digital tools to analyze and interpret data. Whether analyzing data for the purpose of
+science or engineering, it is important students present data as evidence to support their conclusions.
+
+Grades K-2
+Grades 3-5
+Grades 6-8
+Grades 9-12
+Analyzing data in K–2 builds on prior experiences and progresses to collecting, recording, and sharing observations.
+ Record information (observations, thoughts, and ideas).
+ Use and share pictures, drawings, and/or writings of observations.
+ Use observations (firsthand or from media) to describe patterns and/or relationships in the natural and designed world(s) in order to answer scientific questions and solve problems.
+ Compare predictions (based on prior experiences) to what occurred (observable events).
+ Analyze data from tests of an object or tool to determine if it works as intended.
+Analyzing data in 3–5 builds on K–2 experiences and progresses to introducing quantitative approaches to collecting data and conducting multiple trials of qualitative observations.
+When possible and feasible, digital tools should be used.
+ Represent data in tables and/or various graphical displays (bar graphs, pictographs and/or pie charts) to reveal patterns that indicate relationships.
+ Analyze and interpret data to make sense of phenomena, using logical reasoning, mathematics, and/or computation.
+ Compare and contrast data collected by different groups in order to discuss similarities and differences in their findings.
+ Analyze data to refine a problem statement or the design of a proposed object, tool, or process.
+ Use data to evaluate and refine design solutions.
+
+Analyzing data in 6–8 builds on K–5 experiences and progresses to extending quantitative analysis to investigations, distinguishing between correlation and causation, and basic statistical techniques of data and error analysis.
+ Construct, analyze, and/or interpret graphical displays of data and/or large data sets to identify linear and nonlinear relationships.
+ Use graphical displays (e.g., maps, charts, graphs, and/or tables) of large data sets to identify temporal and spatial relationships.
+ Distinguish between causal and correlational relationships in data.
+ Analyze and interpret data to provide evidence for phenomena.
+ Apply concepts of statistics and probability (including mean, median, mode, and variability) to analyze and characterize data, using digital tools when feasible.
+ Consider limitations of data analysis (e.g., measurement error), and/or seek to improve precision and accuracy of data with better technological tools and methods (e.g., multiple trials).
+ Analyze and interpret data to determine similarities and differences in findings.
+ Analyze data to define an optimal operational range for a proposed object, tool, process or system that best meets criteria for success.
+Analyzing data in 9–12 builds on K–8 experiences and progresses to introducing more detailed statistical analysis, the comparison of data sets for consistency, and the use of models to generate and analyze data.
+ Analyze data using tools, technologies, and/or models (e.g., computational, mathematical) in order to make valid and reliable scientific claims or determine an optimal design solution.
+ Apply concepts of statistics and probability (including determining function fits to data, slope, intercept, and correlation coefficient for linear fits) to scientific and engineering questions and problems, using digital tools when feasible.
+ Consider limitations of data analysis (e.g., measurement error, sample selection) when analyzing and interpreting data.
+ Compare and contrast various types of data sets (e.g., self-generated, archival) to examine consistency of measurements and observations.
+ Evaluate the impact of new data on a working explanation and/or model of a proposed process or system.
+ Analyze data to identify design features or characteristics of the components of a proposed process or system to optimize it relative to criteria for success.
+
+=== Page 10 ===
+
+April 2013
+NGSS Release
+Page 10 of 33
+Practice 5  Using Mathematics and Computational Thinking
+Although there are differences in how mathematics and computational thinking are applied
+in science and in engineering, mathematics often brings these two fields together by
+enabling engineers to apply the mathematical form of scientific theories and by enabling
+scientists to use powerful information technologies designed by engineers. Both kinds of
+professionals can thereby accomplish investigations and analyses and build complex
+models, which might otherwise be out of the question. (NRC Framework, 2012, p. 65)
+Students are expected to use mathematics to represent physical variables and their relationships, and to
+make quantitative predictions. Other applications of mathematics in science and engineering include
+logic, geometry, and at the highest levels, calculus. Computers and digital tools can enhance the power of
+mathematics by automating calculations, approximating solutions to problems that cannot be calculated
+precisely, and analyzing large data sets available to identify meaningful patterns. Students are expected to
+use laboratory tools connected to computers for observing, measuring, recording, and processing data.
+Students are also expected to engage in computational thinking, which involves strategies for organizing
+and searching data, creating sequences of steps called algorithms, and using and developing new
+simulations of natural and designed systems. Mathematics is a tool that is key to understanding science.
+As such, classroom instruction must include critical skills of mathematics. The NGSS displays many of
+those skills through the performance expectations, but classroom instruction should enhance all of science
+through the use of quality mathematical and computational thinking.
+Grades K-2
+Grades 3-5
+Grades 6-8
+Grades 9-12
+Mathematical and computational thinking in K–2 builds on prior experience and progresses to recognizing that mathematics can be used to describe the natural and designed world(s).
+ Decide when to use qualitative vs.
+quantitative data.
+ Use counting and numbers to identify and describe patterns in the natural and designed world(s).
+ Describe, measure, and/or compare quantitative attributes of different objects and display the data using simple graphs.
+ Use quantitative data to compare two alternative solutions to a problem.
+
+Mathematical and computational thinking in 3–5 builds on K–2 experiences and progresses to extending quantitative measurements to a variety of physical properties and using computation and mathematics to analyze data and compare alternative design solutions.
+ Decide if qualitative or quantitative data are best to determine whether a proposed object or tool meets criteria for success.
+ Organize simple data sets to reveal patterns that suggest relationships.
+ Describe, measure, estimate, and/or graph quantities (e.g., area, volume, weight, time) to address scientific and engineering questions and problems.
+ Create and/or use graphs and/or charts generated from simple algorithms to compare alternative solutions to an engineering problem.
+Mathematical and computational thinking in 6–8 builds on K–5 experiences and progresses to identifying patterns in large data sets and using mathematical concepts to support explanations and arguments.
+ Use digital tools (e.g., computers) to analyze very large data sets for patterns and trends.
+ Use mathematical representations to describe and/or support scientific conclusions and design solutions.
+ Create algorithms (a series of ordered steps) to solve a problem.
+ Apply mathematical concepts and/or processes  (e.g., ratio, rate, percent, basic operations, simple algebra) to scientific and engineering questions and problems.
+ Use digital tools and/or mathematical concepts and arguments to test and compare proposed solutions to an engineering design problem.
+
+Mathematical and computational thinking in 9 12 builds on K-8 experiences and progresses to using algebraic thinking and analysis, a range of linear and nonlinear functions including trigonometric functions, exponentials and logarithms, and computational tools for statistical analysis to analyze, represent, and model data. Simple computational simulations are created and used based on mathematical models of basic assumptions.
+ Create and/or revise a computational model or simulation of a phenomenon, designed device, process, or system.
+ Use mathematical, computational, and/or algorithmic representations of phenomena or design solutions to describe and/or support claims and/or explanations.
+ Apply techniques of algebra and functions to represent and solve scientific and engineering problems.
+ Use simple limit cases to test mathematical expressions, computer programs, algorithms, or simulations of a process or system to see if a model “makes sense” by comparing the outcomes with what is known about the real world.
+ Apply ratios, rates, percentages, and unit conversions in the context of complicated measurement problems involving quantities with derived or compound units (such as mg/mL, kg/m3, acre-feet, etc.).
+
+=== Page 11 ===
+
+April 2013
+NGSS Release
+Page 11 of 33
+Practice 6  Constructing Explanations and Designing Solutions
+The goal of science is to construct explanations for the causes of phenomena. Students are
+expected to construct their own explanations, as well as apply standard explanations they learn
+about from their teachers or reading. The Framework states the following about explanation:
+“The goal of science is the construction of theories that provide explanatory accounts of the
+world. A theory becomes accepted when it has multiple lines of empirical evidence and greater
+explanatory power of phenomena than previous theories.”(NRC Framework, 2012, p. 52)
+An explanation includes a claim that relates how a variable or variables relate to another variable
+or a set of variables. A claim is often made in response to a question and in the process of
+answering the question, scientists often design investigations to generate data.
+The goal of engineering is to solve problems. Designing solutions to problems is a systematic
+process that involves defining the problem, then generating, testing, and improving solutions.
+This practice is described in the Framework as follows.
+Asking students to demonstrate their own understanding of the implications of a scientific idea
+by developing their own explanations of phenomena, whether based on observations they have
+made or models they have developed, engages them in an essential part of the process by which conceptual change can occur.
+In engineering, the goal is a design rather than an explanation. The process of developing a
+design is iterative and systematic, as is the process of developing an explanation or a theory in
+science. Engineers’ activities, however, have elements that are distinct from those of scientists.
+These elements include specifying constraints and criteria for desired qualities of the solution,
+developing a design plan, producing and testing models or prototypes, selecting among
+alternative design features to optimize the achievement of design criteria, and refining design
+ideas based on the performance of a prototype or simulation. (NRC Framework, 2012, p. 68-69)
+
+Grades K-2
+Grades 3-5
+Grades 6-8
+Grades 9-12
+Constructing explanations and designing solutions in K–2 builds on prior experiences and progresses to the use of evidence and ideas in constructing evidence based accounts of natural phenomena and designing solutions.
+ Make observations (firsthand or from media) to construct an evidence-based account for natural phenomena.
+ Use tools and/or materials to design and/or build a device that solves a specific problem or a solution to a specific problem.
+ Generate and/or compare multiple solutions to a problem.
+
+Constructing explanations and designing solutions in 3–5 builds on K–2 experiences and progresses to the use of evidence in constructing explanations that specify variables that describe and predict phenomena and in designing multiple solutions to design problems.
+ Construct an explanation of observed relationships (e.g., the distribution of plants in the back yard).
+ Use evidence (e.g., measurements, observations, patterns) to construct or support an explanation or design a solution to a problem.
+ Identify the evidence that supports particular points in an explanation.
+ Apply scientific ideas to solve design problems.
+ Generate and compare multiple solutions to a problem based on how
+Constructing explanations and designing solutions in 6–8 builds on K– 5 experiences and progresses to include constructing explanations and designing solutions supported by multiple sources of evidence consistent with scientific ideas, principles, and theories.
+ Construct an explanation that includes qualitative or quantitative relationships between variables that predict(s) and/or describe(s) phenomena.
+ Construct an explanation using models or representations.
+ Construct a scientific explanation based on valid and reliable evidence obtained from sources (including the students’ own experiments) and the assumption that theories and laws that describe the natural world operate today as they did in the past and will continue to do so in the future.
+ Apply scientific ideas, principles, and/or evidence to construct, revise and/or use an explanation for real world phenomena, examples, or events.
+ Apply scientific reasoning to show why the data or evidence is adequate for the explanation or conclusion.
+Constructing explanations and designing solutions in 9–12 builds on K–8 experiences and progresses to explanations and designs that are supported by multiple and independent student-generated sources of evidence consistent with scientific ideas, principles, and theories.
+ Make a quantitative and/or qualitative claim regarding the relationship between dependent and independent variables.
+ Construct and revise an explanation based on valid and reliable evidence obtained from a variety of sources (including students’ own investigations, models, theories, simulations, peer review) and the assumption that theories and laws that describe the natural world operate today as they did in the past and will continue to do so in the future.
+ Apply scientific ideas, principles, and/or evidence to provide an explanation of phenomena and solve design problems, taking into account possible unanticipated effects.
+ Apply scientific reasoning, theory, and/or models to link evidence to the claims to assess the extent to which the reasoning and data support the explanation or conclusion.
+
+=== Page 12 ===
+
+April 2013
+NGSS Release
+Page 12 of 33 well they meet the criteria and constraints of the design solution.
+ Apply scientific ideas or principles to design, construct, and/or test a design of an object, tool, process or system.
+ Undertake a design project, engaging in the design cycle, to construct and/or implement a solution that meets specific design criteria and constraints.
+ Optimize performance of a design by prioritizing criteria, making tradeoffs, testing, revising, and re testing.
+ Design, evaluate, and/or refine a solution to a complex real-world problem, based on scientific knowledge, student-generated sources of evidence, prioritized criteria, and tradeoff considerations.
+
+=== Page 13 ===
+
+April 2013
+NGSS Release
+Page 13 of 33
+Practice 7  Engaging in Argument from Evidence
+The study of science and engineering should produce a sense of the process of argument
+necessary for advancing and defending a new idea or an explanation of a phenomenon and
+the norms for conducting such arguments. In that spirit, students should argue for the
+explanations they construct, defend their interpretations of the associated data, and advocate
+for the designs they propose. (NRC Framework, 2012, p. 73)
+Argumentation is a process for reaching agreements about explanations and design solutions. In science,
+reasoning and argument based on evidence are essential in identifying the best explanation for a natural
+phenomenon. In engineering, reasoning and argument are needed to identify the best solution to a design
+problem. Student engagement in scientific argumentation is critical if students are to understand the
+culture in which scientists live, and how to apply science and engineering for the benefit of society. As
+such, argument is a process based on evidence and reasoning that leads to explanations acceptable by the
+scientific community and design solutions acceptable by the engineering community.
+Argument in science goes beyond reaching agreements in explanations and design solutions. Whether
+investigating a phenomenon, testing a design, or constructing a model to provide a mechanism for an
+explanation, students are expected to use argumentation to listen to, compare, and evaluate competing
+ideas and methods based on their merits. Scientists and engineers engage in argumentation when
+investigating a phenomenon, testing a design solution, resolving questions about measurements, building
+data models, and using evidence to evaluate claims.
+
+Grades K-2
+Grades 3-5
+Grades 6-8
+Grades 9-12
+Engaging in argument from evidence in K–2 builds on prior experiences and progresses to comparing ideas and representations about the natural and designed world(s).
+ Identify arguments that are supported by evidence.
+ Distinguish between explanations that account for all gathered evidence and those that do not.
+ Analyze why some evidence is relevant to a scientific question and some is not.
+ Distinguish between opinions and evidence in one’s own explanations.
+ Listen actively to arguments to indicate agreement or disagreement based on evidence, and/or to retell the main points of the argument.
+ Construct an argument with evidence to support a claim.
+ Make a claim about the effectiveness of an object, tool, or solution that is supported by relevant evidence.
+
+Engaging in argument from evidence in 3–5 builds on K–2 experiences and progresses to critiquing the scientific explanations or solutions proposed by peers by citing relevant evidence about the natural and designed world(s).
+ Compare and refine arguments based on an evaluation of the evidence presented.
+ Distinguish among facts, reasoned judgment based on research findings, and speculation in an explanation.
+ Respectfully provide and receive critiques from peers about a proposed procedure, explanation, or model by citing relevant evidence and posing specific questions.
+ Construct and/or support an argument with evidence, data, and/or a model.
+ Use data to evaluate claims about cause and effect.
+ Make a claim about the merit of a solution to a problem by citing relevant evidence about how it meets the criteria and constraints of the problem.
+Engaging in argument from evidence in 6–8 builds on K–5 experiences and progresses to constructing a convincing argument that supports or refutes claims for either explanations or solutions about the natural and designed world(s).
+ Compare and critique two arguments on the same topic and analyze whether they emphasize similar or different evidence and/or interpretations of facts.
+ Respectfully provide and receive critiques about one’s explanations, procedures, models, and questions by citing relevant evidence and posing and responding to questions that elicit pertinent elaboration and detail.
+ Construct, use, and/or present an oral and written argument supported by empirical evidence and scientific reasoning to support or refute an explanation or a model for a phenomenon or a solution to a problem.
+ Make an oral or written argument that supports or refutes the advertised performance of a device, process, or system based on empirical evidence concerning whether or not the technology meets relevant criteria and constraints.
+Engaging in argument from evidence in 9–12 builds on K–8 experiences and progresses to using appropriate and sufficient evidence and scientific reasoning to defend and critique claims and explanations about the natural and designed world(s). Arguments may also come from current scientific or historical episodes in science.
+ Compare and evaluate competing arguments or design solutions in light of currently accepted explanations, new evidence, limitations (e.g., trade-offs), constraints, and ethical issues.
+ Evaluate the claims, evidence, and/or reasoning behind currently accepted explanations or solutions to determine the merits of arguments.
+ Respectfully provide and/or receive critiques on scientific arguments by probing reasoning and evidence, challenging ideas and conclusions, responding thoughtfully to diverse perspectives, and determining additional information required to resolve contradictions.
+ Construct, use, and/or present an oral and written argument or counter-arguments based on data and evidence.
+ Make and defend a claim based on evidence about the natural world or the effectiveness of a design solution that reflects scientific knowledge and student-generated evidence.
+ Evaluate competing design solutions to a real-world problem based on scientific ideas and principles,
+
+=== Page 14 ===
+
+April 2013
+NGSS Release
+Page 14 of 33  Evaluate competing design solutions based on jointly developed and agreed-upon design criteria.
+
+empirical evidence, and/or logical arguments regarding relevant factors (e.g. economic, societal, environmental, ethical considerations).
+
+=== Page 15 ===
+
+April 2013
+NGSS Release
+Page 15 of 33
+Practice 8  Obtaining, Evaluating, and Communicating Information
+Any education in science and engineering needs to develop students’ ability to read and
+produce domain-specific text. As such, every science or engineering lesson is in part a
+language lesson, particularly reading and producing the genres of texts that are intrinsic
+to science and engineering. (NRC Framework, 2012, p. 76)
+
+Being able to read, interpret, and produce scientific and technical text are fundamental practices of
+science and engineering, as is the ability to communicate clearly and persuasively. Being a critical
+consumer of information about science and engineering requires the ability to read or view reports of
+scientific or technological advances or applications (whether found in the press, the Internet, or in a town
+meeting) and to recognize the salient ideas, identify sources of error and methodological flaws,
+distinguish observations from inferences, arguments from explanations, and claims from evidence.
+Scientists and engineers employ multiple sources to obtain information used to evaluate the merit and
+validity of claims, methods, and designs. Communicating information, evidence, and ideas can be done in
+multiple ways:  using tables, diagrams, graphs, models, interactive displays, and equations as well as
+orally, in writing, and through extended discussions.
+
+Grades K-2
+Grades 3-5
+Grades 6-8
+Grades 9-12
+Obtaining, evaluating, and communicating information in K–2 builds on prior experiences and uses observations and texts to communicate new information.
+ Read grade-appropriate texts and/or use media to obtain scientific and/or technical information to determine patterns in and/or evidence about the natural and designed world(s).
+ Describe how specific images (e.g., a diagram showing how a machine works) support a scientific or engineering idea.
+ Obtain information using various texts, text features (e.g., headings, tables of contents, glossaries, electronic menus, icons), and other media that will be useful in answering a scientific question and/or supporting a scientific claim.
+ Communicate information or design ideas and/or solutions with others in oral and/or written forms using models, drawings, writing, or numbers that provide detail about scientific ideas, practices, and/or design ideas.
+
+Obtaining, evaluating, and communicating information in 3–5 builds on K–2 experiences and progresses to evaluating the merit and accuracy of ideas and methods.
+ Read and comprehend grade appropriate complex texts and/or other reliable media to summarize and obtain scientific and technical ideas and describe how they are supported by evidence.
+ Compare and/or combine across complex texts and/or other reliable media to support the engagement in other scientific and/or engineering practices.
+ Combine information in written text with that contained in corresponding tables, diagrams, and/or charts to support the engagement in other scientific and/or engineering practices.
+ Obtain and combine information from books and/or other reliable media to explain phenomena or solutions to a design problem.
+ Communicate scientific and/or technical information orally and/or in written formats, including various forms of media as well as tables, diagrams, and charts.
+Obtaining, evaluating, and communicating information in 6–8 builds on K–5 experiences and progresses to evaluating the merit and validity of ideas and methods.
+ Critically read scientific texts adapted for classroom use to determine the central ideas and/or obtain scientific and/or technical information to describe patterns in and/or evidence about the natural and designed world(s).
+ Integrate qualitative and/or quantitative scientific and/or technical information in written text with that contained in media and visual displays to clarify claims and findings.
+ Gather, read, and synthesize information from multiple appropriate sources and assess the credibility, accuracy, and possible bias of each publication and methods used, and describe how they are supported or not supported by evidence.
+ Evaluate data, hypotheses, and/or conclusions in scientific and technical texts in light of competing information or accounts.
+ Communicate scientific and/or technical information (e.g. about a proposed object, tool, process, system) in writing and/or through oral presentations.
+
+Obtaining, evaluating, and communicating information in 9–12 builds on K–8 experiences and progresses to evaluating the validity and reliability of the claims, methods, and designs.
+ Critically read scientific literature adapted for classroom use to determine the central ideas or conclusions and/or to obtain scientific and/or technical information to summarize complex evidence, concepts, processes, or information presented in a text by paraphrasing them in simpler but still accurate terms.
+ Compare, integrate and evaluate sources of information presented in different media or formats (e.g., visually, quantitatively) as well as in words in order to address a scientific question or solve a problem.
+ Gather, read, and evaluate scientific and/or technical information from multiple authoritative sources, assessing the evidence and usefulness of each source.
+ Evaluate the validity and reliability of and/or synthesize multiple claims, methods, and/or designs that appear in scientific and technical texts or media reports, verifying the data when possible.
+ Communicate scientific and/or technical information or ideas (e.g.
+about phenomena and/or the process of development and the design and performance of a proposed process or system) in multiple formats (i.e., orally, graphically, textually, mathematically).
+
+=== Page 16 ===
+
+April 2013
+NGSS Release
+Page 16 of 33
+Reflecting on the Practices of Science and Engineering
+Engaging students in the practices of science and engineering outlined in this section is not
+sufficient for science literacy. It is also important for students to stand back and reflect on how
+these practices have contributed to their own development, and to the accumulation of scientific
+knowledge and engineering accomplishments over the ages. Accomplishing this is a matter for
+curriculum and instruction, rather than standards, so specific guidelines are not provided in this
+document. Nonetheless, this section would not be complete without an acknowledgment that
+reflection is essential if students are to become aware of themselves as competent and confident
+learners and doers in the realms of science and engineering.
+References
+Bell, P., Bricker, L., Tzou, Carrie, Lee., T., and Van Horne, K. (2012). Exploring the science
+framework; Engaging learners in science practices related to obtaining, evaluating, and
+communicating information. Science Scope, 36(3), 18-22.
+
+=== Page 17 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 17 of 33
+
+Science and Engineering Practices
+K–2 Condensed Practices 3–5 Condensed Practices 6–8 Condensed Practices 9–12 Condensed Practices
+Asking Questions and Defining Problems
+
+A practice of science is to ask and refine questions that lead to descriptions and explanations of how the natural and designed world(s) works and which can be empirically tested.
+
+Engineering questions clarify problems to determine criteria for successful solutions and identify constraints to solve problems about the designed world.
+
+Both scientists and engineers also ask questions to clarify ideas.
+Asking questions and defining problems in K–2 builds on prior experiences and progresses to simple descriptive questions that can be tested.
+
+Asking questions and defining problems in 3–5 builds on K–2 experiences and progresses to specifying qualitative relationships.
+Asking questions and defining problems in 6–8 builds on K–5 experiences and progresses to specifying relationships between variables, and clarifying arguments and models.
+Asking questions and defining problems in 9–12 builds on K–8 experiences and progresses to formulating, refining, and evaluating empirically testable questions and design problems using models and simulations.
+ Ask questions based on observations to find more information about the natural and/or designed world(s).
+
+ Ask questions about what would happen if a variable is changed.
+
+ Ask questions o that arise from careful observation of phenomena, models, or unexpected results, to clarify and/or seek additional information.
+o to identify and/or clarify evidence and/or the premise(s) of an argument.
+o to determine relationships between independent and dependent variables and relationships in models..
+o to clarify and/or refine a model, an explanation, or an engineering problem.
+
+ Ask questions o that arise from careful observation of phenomena, or unexpected results, to clarify and/or seek additional information.
+o that arise from examining models or a theory, to clarify and/or seek additional information and relationships.
+o to determine relationships, including quantitative relationships, between independent and dependent variables.
+o to clarify and refine a model, an explanation, or an engineering problem.
+ Ask and/or identify questions that can be answered by an investigation.
+
+ Identify scientific (testable) and non-scientific (non testable) questions.
+ Ask questions that can be investigated and predict reasonable outcomes based on patterns such as cause and effect relationships.
+ Ask questions that require sufficient and appropriate empirical evidence to answer.
+ Ask questions that can be investigated within the scope of the classroom, outdoor environment, and museums and other public facilities with available resources and, when appropriate, frame a hypothesis based on observations and scientific principles.
+ Evaluate a question to determine if it is testable and relevant.
+ Ask questions that can be investigated within the scope of the school laboratory, research facilities, or field (e.g., outdoor environment) with available resources and, when appropriate, frame a hypothesis based on a model or theory.
+
+ Ask questions that challenge the premise(s) of an argument or the interpretation of a data set.
+
+ Ask and/or evaluate questions that challenge the premise(s) of an argument, the interpretation of a data set, or the suitability of
+
+=== Page 18 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 18 of 33 a design.
+ Define a simple problem that can be solved through the development of a new or improved object or tool.
+
+ Use prior knowledge to describe problems that can be solved.
+ Define a simple design problem that can be solved through the development of an object, tool, process, or system and includes several criteria for success and constraints on materials, time, or cost.
+
+ Define a design problem that can be solved through the development of an object, tool, process or system and includes multiple criteria and constraints, including scientific knowledge that may limit possible solutions.
+
+ Define a design problem that involves the development of a process or system with interacting components and criteria and constraints that may include social, technical and/or environmental considerations.
+
+=== Page 19 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 19 of 33
+
+Science and Engineering Practices
+K–2 Condensed Practices 3–5 Condensed Practices 6–8 Condensed Practices 9–12 Condensed Practices
+Developing and Using
+Models
+
+A practice of both science and engineering is to use and construct models as helpful tools for representing ideas and explanations.
+These tools include diagrams, drawings, physical replicas, mathematical representations, analogies, and computer simulations.
+
+Modeling tools are used to develop questions, predictions and explanations;
+analyze and identify flaws in systems; and communicate ideas. Models are used to build and revise scientific explanations and proposed engineered systems.
+Measurements and observations are used to revise models and designs.
+Modeling in K–2 builds on prior experiences and progresses to include using and developing models (i.e., diagram, drawing, physical replica, diorama, dramatization, or storyboard) that represent concrete events or design solutions.
+Modeling in 3–5 builds on K–2 experiences and progresses to building and revising simple models and using models to represent events and design solutions.
+Modeling in 6–8 builds on K–5 experiences and progresses to developing, using, and revising models to describe, test, and predict more abstract phenomena and design systems.
+Modeling in 9–12 builds on K–8 experiences and progresses to using, synthesizing, and developing models to predict and show relationships among variables between systems and their components in the natural and designed world(s).
+ Distinguish between a model and the actual object, process, and/or events the model represents.
+ Compare models to identify common features and differences.
+ Identify limitations of models.
+ Evaluate limitations of a model for a proposed object or tool.
+ Evaluate merits and limitations of two different models of the same proposed tool, process, mechanism, or system in order to select or revise a model that best fits the evidence or design criteria.
+ Design a test of a model to ascertain its reliability.
+ Develop and/or use a model to represent amounts, relationships, relative scales (bigger, smaller), and/or patterns in the natural and designed world(s).
+
+ Collaboratively develop and/or revise a model based on evidence that shows the relationships among variables for frequent and regular occurring events.
+ Develop a model using an analogy, example, or abstract representation to describe a scientific principle or design solution.
+ Develop and/or use models to describe and/or predict phenomena.
+ Develop or modify a model—based on evidence – to match what happens if a variable or component of a system is changed.
+ Use and/or develop a model of simple systems with uncertain and less predictable factors.
+ Develop and/or revise a model to show the relationships among variables, including those that are not observable but predict observable phenomena.
+ Develop and/or use a model to predict and/or describe phenomena.
+ Develop a model to describe unobservable mechanisms.
+
+ Develop, revise, and/or use a model based on evidence  to illustrate and/or predict the relationships between systems or between components of a system.
+ Develop and/or use multiple types of models to provide mechanistic accounts and/or predict phenomena, and move flexibly between model types based on merits and limitations.
+
+=== Page 20 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 20 of 33  Develop a simple model based on evidence to represent a proposed object or tool.
+
+ Develop a diagram or simple physical prototype to convey a proposed object, tool, or process.
+ Use a model to test cause and effect relationships or interactions concerning the functioning of a natural or designed system.
+ Develop and/or use a model to generate data to test ideas about phenomena in natural or designed systems, including those representing inputs and outputs, and those at unobservable scales.
+ Develop a complex model that allows for manipulation and testing of a proposed process or system.
+ Develop and/or use a model (including mathematical and computational) to generate data to support explanations, predict phenomena, analyze systems, and/or solve problems.
+
+=== Page 21 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 21 of 33
+
+Science and Engineering Practices
+K–2 Condensed Practices 3–5 Condensed Practices 6–8 Condensed Practices 9–12 Condensed Practices
+Planning and Carrying
+Out Investigations
+
+Scientists and engineers plan and carry out investigations in the field or laboratory, working collaboratively as well as individually. Their investigations are systematic and require clarifying what counts as data and identifying variables or parameters.
+
+Engineering investigations identify the effectiveness, efficiency, and durability of designs under different conditions.
+Planning and carrying out investigations to answer questions or test solutions to problems in K– 2 builds on prior experiences and progresses to simple investigations, based on fair tests, which provide data to support explanations or design solutions.
+
+Planning and carrying out investigations to answer questions or test solutions to problems in 3–5 builds on K–2 experiences and progresses to include investigations that control variables and provide evidence to support explanations or design solutions.
+Planning and carrying out investigations in 6-8 builds on K-5 experiences and progresses to include investigations that use multiple variables and provide evidence to support explanations or solutions.
+
+Planning and carrying out investigations in 9-12 builds on K-8 experiences and progresses to include investigations that provide evidence for and test conceptual, mathematical, physical, and empirical models.
+
+ With guidance, plan and conduct an investigation in collaboration with peers (for K).
+ Plan and conduct an investigation collaboratively to produce data to serve as the basis for evidence to answer a question.
+
+ Plan and conduct an investigation collaboratively to produce data to serve as the basis for evidence, using fair tests in which variables are controlled and the number of trials considered.
+
+ Plan an investigation individually and collaboratively, and in the
+design: identify independent and dependent variables and controls, what tools are needed to do the gathering, how measurements will be recorded, and how many data are needed to support a claim.
+ Conduct an investigation and/or evaluate and/or revise the experimental design to produce data to serve as the basis for evidence that meet the goals of the investigation.
+
+ Plan an investigation or test a design individually and collaboratively to produce data to serve as the basis for evidence as part of building and revising models, supporting explanations for phenomena, or testing solutions to problems. Consider possible confounding variables or effects and evaluate the investigation’s design to ensure variables are controlled.
+ Plan and conduct an investigation individually and collaboratively to produce data to serve as the basis for evidence,
+and in the design: decide on types, how much, and accuracy of data needed to produce reliable measurements and consider limitations on the precision of the data (e.g., number of trials, cost, risk, time), and refine the design accordingly.
+ Plan and conduct an investigation or test a design solution in a safe and ethical manner including considerations of environmental, social, and personal impacts.
+ Evaluate different ways of observing and/or measuring a phenomenon to determine which way can answer a question.
+ Evaluate appropriate methods and/or tools for collecting data.
+ Evaluate the accuracy of various methods for collecting data.
+ Select appropriate tools to collect, record, analyze, and evaluate data.
+ Make observations (firsthand or from media) and/or measurements to collect data  Make observations and/or measurements to produce data to serve as the basis for  Collect data to produce data to serve as the basis for evidence to answer scientific questions or test  Make directional hypotheses that specify what happens to a dependent variable when an independent variable is
+
+=== Page 22 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 22 of 33 that can be used to make comparisons.
+ Make observations (firsthand or from media) and/or measurements of a proposed object or tool or solution to determine if it solves a problem or meets a goal.
+ Make predictions based on prior experiences.
+evidence for an explanation of a phenomenon or test a design solution.
+ Make predictions about what would happen if a variable changes.
+ Test two different models of the same proposed object, tool, or process to determine which better meets criteria for success.
+design solutions under a range of conditions.
+ Collect data about the performance of a proposed object, tool, process, or system under a range of conditions.
+manipulated.
+ Manipulate variables and collect data about a complex model of a proposed process or system to identify failure points or improve performance relative to criteria for success or other variables.
+
+=== Page 23 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 23 of 33
+
+Science and Engineering
+Practices
+K–2 Condensed Practices 3–5 Condensed Practices 6–8 Condensed Practices 9–12 Condensed Practices
+Analyzing and Interpreting
+Data
+
+Scientific investigations produce data that must be analyzed in order to derive meaning. Because data patterns and trends are not always obvious, scientists use a range of tools—including tabulation, graphical interpretation, visualization, and statistical analysis—to identify the significant features and patterns in the data. Scientists identify sources of error in the investigations and calculate the degree of certainty in the results.
+Modern technology makes the collection of large data sets much easier, providing secondary sources for analysis.
+
+Engineering investigations include analysis of data collected in the tests of designs. This allows comparison of different solutions and determines how well each meets specific design criteria—that is, which design best solves the problem within given constraints.
+Like scientists, engineers require a range of tools to identify patterns within data and interpret the results. Advances in science make analysis of proposed solutions more efficient and effective.
+Analyzing data in K–2 builds on prior experiences and progresses to collecting, recording, and sharing observations.
+
+Analyzing data in 3–5 builds on
+K–2 experiences and progresses to introducing quantitative approaches to collecting data and conducting multiple trials of qualitative observations.
+When possible and feasible, digital tools should be used.
+Analyzing data in 6–8 builds on K–5 experiences and progresses to extending quantitative analysis to investigations, distinguishing between correlation and causation, and basic statistical techniques of data and error analysis.
+
+Analyzing data in 9–12 builds on K–8 experiences and progresses to introducing more detailed statistical analysis, the comparison of data sets for consistency, and the use of models to generate and analyze data.
+
+ Record information (observations, thoughts, and ideas).
+ Use and share pictures, drawings, and/or writings of observations.
+ Use observations (firsthand or from media) to describe patterns and/or relationships in the natural and designed world(s) in order to answer scientific questions and solve problems.
+ Compare predictions (based on prior experiences) to what occurred (observable events).
+
+ Represent data in tables and/or various graphical displays (bar graphs, pictographs, and/or pie charts) to reveal patterns that indicate relationships.
+ Construct, analyze, and/or interpret graphical displays of data and/or large data sets to identify linear and nonlinear relationships.
+ Use graphical displays (e.g., maps, charts, graphs, and/or tables) of large data sets to identify temporal and spatial relationships.
+ Distinguish between causal and correlational relationships in data.
+ Analyze and interpret data to provide evidence for phenomena.
+ Analyze data using tools, technologies, and/or models (e.g., computational, mathematical) in order to make valid and reliable scientific claims or determine an optimal design solution.
+
+ Analyze and interpret data to make sense of phenomena, using logical reasoning, mathematics, and/or computation.
+ Apply concepts of statistics and probability (including mean, median, mode, and variability) to analyze and characterize data, using digital tools when feasible.
+ Apply concepts of statistics and probability (including determining function fits to data, slope, intercept, and correlation coefficient for linear fits) to scientific and engineering questions and problems, using digital tools when feasible.
+
+ Consider limitations of data analysis (e.g., measurement error), and/or seek to improve precision and accuracy of data with better technological tools and methods (e.g., multiple trials).
+ Consider limitations of data analysis (e.g., measurement error, sample selection) when analyzing and interpreting data.
+
+=== Page 24 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 24 of 33
+
+ Compare and contrast data collected by different groups in order to discuss similarities and differences in their findings.
+∙ Analyze and interpret data to determine similarities and differences in findings.
+
+ Compare and contrast various types of data sets (e.g., self generated, archival) to examine consistency of measurements and observations.
+ Analyze data from tests of an object or tool to determine if it works as intended.
+
+ Analyze data to refine a problem statement or the design of a proposed object, tool, or process.
+ Use data to evaluate and refine design solutions.
+
+ Analyze data to define an optimal operational range for a proposed object, tool, process or system that best meets criteria for success.
+
+ Evaluate the impact of new data on a working explanation and/or model of a proposed process or system.
+ Analyze data to identify design features or characteristics of the components of a proposed process or system to optimize it relative to criteria for success.
+
+=== Page 25 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 25 of 33
+
+Science and Engineering
+Practices
+K–2 Condensed Practices 3–5 Condensed Practices 6–8 Condensed Practices 9–12 Condensed Practices
+Using Mathematics and Computational Thinking
+
+In both science and engineering, mathematics and computation are fundamental tools for representing physical variables and their relationships. They are used for a range of tasks such as constructing simulations; solving equations exactly or approximately; and recognizing, expressing, and applying quantitative relationships.
+
+Mathematical and computational approaches enable scientists and engineers to predict the behavior of systems and test the validity of such predictions.
+
+Mathematical and computational thinking in K–2 builds on prior experience and progresses to recognizing that mathematics can be used to describe the natural and designed world(s).
+
+Mathematical and computational thinking in 3–5 builds on K–2 experiences and progresses to extending quantitative measurements to a variety of physical properties and using computation and mathematics to analyze data and compare alternative design solutions.
+
+Mathematical and computational thinking in 6–8 builds on K–5 experiences and progresses to identifying patterns in large data sets and using mathematical concepts to support explanations and arguments.
+
+Mathematical and computational thinking in 9-12 builds on K-8 and experiences and  progresses to using algebraic thinking and analysis, a range of linear and nonlinear functions including trigonometric functions, exponentials and logarithms, and computational tools for statistical analysis to analyze, represent, and model data. Simple computational simulations are created and used based on mathematical models of basic assumptions.
+ Decide when to use qualitative vs. quantitative data.
+ Decide if qualitative or quantitative data are best to determine whether a proposed object or tool meets criteria for success.
+
+ Use counting and numbers to identify and describe patterns in the natural and designed world(s).
+ Organize simple data sets to reveal patterns that suggest relationships.
+ Use digital tools (e.g., computers) to analyze very large data sets for patterns and trends.
+ Create and/or revise a computational model or simulation of a phenomenon, designed device, process, or system.
+ Describe, measure, and/or compare quantitative attributes of different objects and display the data using simple graphs.
+ Describe, measure, estimate, and/or graph quantities such as area, volume, weight, and time to address scientific and engineering questions and problems.
+ Use mathematical representations to describe and/or support scientific conclusions and design solutions.
+ Use mathematical, computational, and/or algorithmic representations of phenomena or design solutions to describe and/or support claims and/or explanations.
+ Use quantitative data to compare two alternative solutions to a problem.
+
+ Create and/or use graphs and/or charts generated from simple algorithms to compare alternative solutions to an engineering problem.
+
+ Create algorithms (a series of ordered steps) to solve a problem.
+ Apply mathematical concepts and/or processes  (such as ratio, rate, percent, basic operations, and simple algebra) to scientific and engineering questions and problems.
+ Use digital tools and/or mathematical concepts and arguments to test and compare  Apply techniques of algebra and functions to represent and solve scientific and engineering problems.
+ Use simple limit cases to test mathematical expressions, computer programs, algorithms, or simulations of a process or system to see if a model “makes sense” by comparing the outcomes with what is known about the real world.
+ Apply ratios, rates, percentages, and unit conversions in the context of
+
+=== Page 26 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 26 of 33 proposed solutions to an engineering design problem.
+complicated measurement problems involving quantities with derived or compound units (such as mg/mL, kg/m3, acre-feet, etc.).
+
+=== Page 27 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 27 of 33
+
+Science and Engineering
+Practices
+K–2 Condensed
+Practices 3–5 Condensed
+Practices 6–8 Condensed Practices 9–12 Condensed Practices
+Constructing Explanations and Designing Solutions
+
+The end-products of science are explanations and the end products of engineering are solutions.
+
+The goal of science is the construction of theories that provide explanatory accounts of the world. A theory becomes accepted when it has multiple lines of empirical evidence and greater explanatory power of phenomena than previous theories.
+
+The goal of engineering design is to find a systematic solution to problems that is based on scientific knowledge and models of the material world. Each proposed solution results from a process of balancing competing criteria of desired functions, technical feasibility, cost, safety, aesthetics, and compliance with legal requirements. The optimal choice depends on how well the proposed solutions meet criteria and constraints.
+Constructing explanations and designing solutions in K–2 builds on prior experiences and progresses to the use of evidence and ideas in constructing evidence-based accounts of  natural phenomena and designing solutions.
+
+Constructing explanations and designing solutions in 3–5 builds on K–2 experiences and progresses to the use of evidence in constructing explanations that specify variables that describe and predict phenomena and in designing multiple solutions to design problems.
+Constructing explanations and designing solutions in 6–8 builds on K– 5 experiences and progresses to include constructing explanations and designing solutions supported by multiple sources of evidence consistent with scientific ideas, principles, and theories.
+
+Constructing explanations and designing solutions in 9–12 builds on K– 8 experiences and progresses to explanations and designs that are supported by multiple and independent student-generated sources of evidence consistent with scientific ideas, principles, and theories.
+ Use information from observations (firsthand and from media) to construct an evidence-based account for natural phenomena.
+
+ Construct an explanation of observed relationships (e.g., the distribution of plants in the back yard).
+
+ Construct an explanation that includes qualitative or quantitative relationships between variables that predict(s) and/or describe(s) phenomena.
+ Construct an explanation using models or representations.
+ Make a quantitative and/or qualitative claim regarding the relationship between dependent and independent variables.
+
+ Use evidence (e.g., measurements, observations, patterns) to construct or support an explanation or design a solution to a problem.
+
+ Construct a scientific explanation based on valid and reliable evidence obtained from sources (including the students’ own experiments) and the assumption that theories and laws that describe the natural world operate today as they did in the past and will continue to do so in the future.
+ Apply scientific ideas, principles, and/or evidence to construct, revise and/or use an explanation for real world phenomena, examples, or events.
+ Construct and revise an explanation based on valid and reliable evidence obtained from a variety of sources (including students’ own investigations, models, theories, simulations, peer review) and the assumption that theories and laws that describe the natural world operate today as they did in the past and will continue to do so in the future.
+ Apply scientific ideas, principles, and/or evidence to provide an explanation of phenomena and solve design problems, taking into account possible unanticipated effects.
+ Identify the evidence that supports particular points in an explanation.
+ Apply scientific reasoning to show why the data or evidence is adequate for the explanation or conclusion.
+
+ Apply scientific reasoning, theory, and/or models to link evidence to the claims to assess the extent to which the reasoning and data support the explanation or conclusion.
+ Use tools and/or materials to design and/or build a  Apply scientific ideas to solve design problems.
+ Apply scientific ideas or principles to design, construct, and/or test a  Design, evaluate, and/or refine a solution to a complex real-world
+
+=== Page 28 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 28 of 33 device that solves a specific problem or a solution to a specific problem.
+ Generate and/or compare multiple solutions to a problem.
+
+ Generate and compare multiple solutions to a problem based on how well they meet the criteria and constraints of the design solution.
+design of an object, tool, process or system.
+ Undertake a design project, engaging in the design cycle, to construct and/or implement a solution that meets specific design criteria and constraints.
+ Optimize performance of a design by prioritizing criteria, making tradeoffs, testing, revising, and re testing.
+problem, based on scientific knowledge, student-generated sources of evidence, prioritized criteria, and tradeoff considerations.
+
+=== Page 29 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 29 of 33
+
+Science and Engineering
+Practices
+K–2 Condensed Practices 3–5 Condensed Practices 6–8 Condensed Practices 9–12 Condensed Practices
+Engaging in Argument from
+Evidence
+
+Argumentation is the process by which evidence-based conclusions and solutions are reached.
+
+In science and engineering, reasoning and argument based on evidence are essential to identifying the best explanation for a natural phenomenon or the best solution to a design problem.
+
+Scientists and engineers use argumentation to listen to, compare, and evaluate competing ideas and methods based on merits.
+
+Scientists and engineers engage in argumentation when investigating a phenomenon, testing a design solution, resolving questions about measurements, building data models, and using evidence to evaluate claims.
+Engaging in argument from evidence in K–2 builds on prior experiences and progresses to comparing ideas and representations about the natural and designed world(s).
+
+Engaging in argument from evidence in 3–5 builds on K–2 experiences and progresses to critiquing the scientific explanations or solutions proposed by peers by citing relevant evidence about the natural and designed world(s).
+
+Engaging in argument from evidence in 6–8 builds on K–5 experiences and progresses to constructing a convincing argument that supports or refutes claims for either explanations or solutions about the natural and designed world(s).
+
+Engaging in argument from evidence in 9–12 builds on K–8 experiences and progresses to using appropriate and sufficient evidence and scientific reasoning to defend and critique claims and explanations about the natural and designed world(s). Arguments may also come from current scientific or historical episodes in science.
+ Identify arguments that are supported by evidence.
+ Distinguish between explanations that account for all gathered evidence and those that do not.
+ Analyze why some evidence is relevant to a scientific question and some is not.
+ Distinguish between opinions and evidence in one’s own explanations.
+ Compare and refine arguments based on an evaluation of the evidence presented.
+ Distinguish among facts, reasoned judgment based on research findings, and speculation in an explanation.
+
+ Compare and critique two arguments on the same topic and analyze whether they emphasize similar or different evidence and/or interpretations of facts.
+
+ Compare and evaluate competing arguments or design solutions in light of currently accepted explanations, new evidence, limitations (e.g., trade-offs), constraints, and ethical issues.
+ Evaluate the claims, evidence, and/or reasoning behind currently accepted explanations or solutions to determine the merits of arguments.
+ Listen actively to arguments to indicate agreement or disagreement based on evidence, and/or to retell the main points of the argument.
+
+ Respectfully provide and receive critiques from peers about a proposed procedure, explanation or model.by citing relevant evidence and posing specific questions.
+ Respectfully provide and receive critiques about one’s explanations, procedures, models and questions by citing relevant evidence and posing and responding to questions that elicit pertinent elaboration and detail.
+ Respectfully provide and/or receive critiques on scientific arguments by probing reasoning and evidence and challenging ideas and conclusions, responding thoughtfully to diverse perspectives, and determining what additional information is required to resolve contradictions.
+ Construct an argument with evidence to support a claim.
+
+ Construct and/or support an argument with evidence, data, and/or a model.
+ Use data to evaluate claims about cause and effect.
+
+ Construct, use, and/or present an oral and written argument supported by empirical evidence and scientific reasoning to support or refute an explanation or a model for a phenomenon or a solution to a problem.
+ Construct, use, and/or present an oral and written argument or counter-arguments based on data and evidence.
+
+=== Page 30 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 30 of 33
+
+ Make a claim about the effectiveness of an object, tool, or solution that is supported by relevant evidence.
+
+ Make a claim about the merit of a solution to a problem by citing relevant evidence about how it meets the criteria and constraints of the problem.
+
+ Make an oral or written argument that supports or refutes the advertised performance of a device, process, or system, based on empirical evidence concerning whether or not the technology meets relevant criteria and constraints.
+ Evaluate competing design solutions based on jointly developed and agreed-upon design criteria.
+ Make and defend a claim based on evidence about the natural world or the effectiveness of a design solution that reflects scientific knowledge, and student-generated evidence.
+ Evaluate competing design solutions to a real-world problem based on scientific ideas and principles, empirical evidence, and/or logical arguments regarding relevant factors (e.g. economic, societal, environmental, ethical considerations).
+
+=== Page 31 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 31 of 33
+
+Science and Engineering
+Practices
+K–2 Condensed Practices 3–5 Condensed Practices 6–8 Condensed Practices 9–12 Condensed Practices
+Obtaining, Evaluating, and Communicating Information
+
+Scientists and engineers must be able to communicate clearly and persuasively the ideas and methods they generate.
+Critiquing and communicating ideas individually and in groups is a critical professional activity.
+
+Communicating information and ideas can be done in multiple
+ways: using tables, diagrams, graphs, models, and equations as well as orally, in writing, and through extended discussions.
+Scientists and engineers employ multiple sources to obtain information that is used to evaluate the merit and validity of claims, methods, and designs.
+
+Obtaining, evaluating, and communicating information in K–2 builds on prior experiences and uses observations and texts to communicate new information.
+
+Obtaining, evaluating, and communicating information in 3–5 builds on K–2 experiences and progresses to evaluating the merit and accuracy of ideas and methods.
+Obtaining, evaluating, and communicating information in 6–8 builds on K–5 experiences and progresses to evaluating the merit and validity of ideas and methods.
+
+Obtaining, evaluating, and communicating information in 9–12 builds on K–8 experiences and progresses to evaluating the validity and reliability of the claims, methods, and designs.
+ Read grade-appropriate texts and/or use media to obtain scientific and/or technical information to determine patterns in and/or evidence about the natural and designed world(s).
+
+ Read and comprehend grade appropriate complex texts and/or other reliable media to summarize and obtain scientific and technical ideas and describe how they are supported by evidence.
+ Compare and/or combine across complex texts and/or other reliable media to support the engagement in other scientific and/or engineering practices.
+ Critically read scientific texts adapted for classroom use to determine the central ideas and/or obtain scientific and/or technical information to describe patterns in and/or evidence about the natural and designed world(s).
+
+ Critically read scientific literature adapted for classroom use to determine the central ideas or conclusions and/or to obtain scientific and/or technical information to summarize complex evidence, concepts, processes, or information presented in a text by paraphrasing them in simpler but still accurate terms.
+
+ Describe how specific images (e.g., a diagram showing how a machine works) support a scientific or engineering idea.
+ Combine information in written text with that contained in corresponding tables, diagrams, and/or charts to support the engagement in other scientific and/or engineering practices.
+ Integrate qualitative and/or quantitative scientific and/or technical information in written text with that contained in media and visual displays to clarify claims and findings.
+ Compare, integrate and evaluate sources of information presented in different media or formats (e.g., visually, quantitatively) as well as in words in order to address a scientific question or solve a problem.
+ Obtain information using various texts, text features (e.g., headings, tables of contents, glossaries, electronic menus, icons), and other media that will be useful in answering a scientific question and/or supporting a scientific claim.
+
+ Obtain and combine information from books and/or other reliable media to explain phenomena or solutions to a design problem.
+
+ Gather, read, synthesize information from multiple appropriate sources and assess the credibility, accuracy, and possible bias of each publication and methods used, and describe how they are supported or not supported by evidence.
+ Evaluate data, hypotheses, and/or conclusions in scientific and technical texts in light of competing information or accounts.
+ Gather, read, and evaluate scientific and/or technical information from multiple authoritative sources, assessing the evidence and usefulness of each source.
+ Evaluate the validity and reliability of and/or synthesize multiple claims, methods, and/or designs that appear in scientific and technical texts or media reports, verifying the data when possible.
+
+=== Page 32 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 32 of 33  Communicate information or design ideas and/or solutions with others in oral and/or written forms using models, drawings, writing, or numbers that provide detail about scientific ideas, practices, and/or design ideas.
+
+ Communicate scientific and/or technical information orally and/or in written formats, including various forms of media as well as tables, diagrams, and charts.
+ Communicate scientific and/or technical information (e.g.
+about a proposed object, tool, process, system) in writing and/or through oral presentations.
+
+ Communicate scientific and/or technical information  or ideas (e.g. about phenomena and/or the process of development and the design and performance of a proposed process or system) in multiple formats (including orally, graphically, textually, and mathematically).
+
+=== Page 33 ===
+NGSS Science and Engineering Practices* (March 2013 Draft)
+
+April 2013
+NGSS Release
+Page 33 of 33
+References
+Lee, O., Quinn, H., & Valdés, G. (2013). Science and language for English language learners in relation to Next Generation Science
+
+Standards and with implications for Common Core State Standards for English language arts and mathematics. Educational Researcher.
+

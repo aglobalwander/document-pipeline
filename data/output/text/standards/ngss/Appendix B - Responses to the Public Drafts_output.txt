@@ -1,0 +1,367 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+
+April 2013
+NGSS Release
+Page 1 of 9
+APPENDIX B – Responses to the Public Drafts
+
+Executive Summary
+Several rounds of review were built into the development process of the Next Generation
+Science Standards (NGSS) to make sure that all educators and stakeholders would have
+opportunities to provide feedback.  The first public draft of the NGSS was posted online from
+May 11 to June 1, 2012, and the second public draft was posted online from January 8 to January
+29, 2013.  The draft received comments from over 10,000 individuals during each of the two
+public review periods, including those in lead state review teams, school and school district
+discussion groups, and scientific societies.  The writers then used this feedback to make substantial revisions to the draft standards.
+
+Overall, the feedback received on both public drafts of the NGSS was very positive.  Almost all
+reviewers indicated that they liked the pedagogical vision, the integration of the three dimensions
+in the NGSS and the structure of the NGSS itself.  Most reviewers scored the performance
+expectations highly, but some also critiqued specific issues and suggested improvements.  The
+following themes emerged from the comments on how to improve the first public draft:
+ Concern that there was too much material  Suggestions for additional topics  Lack of language clarity
+ Concern about how engineering and technology was included and addressed
+ Confusion about the role of the one practice specified in each performance expectation
+ Lack of guidance for incorporating crosscutting concepts
+ Lack of specificity in connections to other standards and other subjects  Concern about the organization of the standards
+ Concern about the amount of support needed for implementation of the standards
+
+Based on the feedback, the following changes were made between the first and second public
+drafts:
+ 95% of the Performance Expectations (PEs) were rewritten based on feedback, with more specific and consistent language used
+ After a college- and career-readiness review, some content was removed  Some content shifted grade levels in elementary
+ Engineering was  integrated into the traditional science disciplines
+ More math expectations were added to the performance expectations
+ Course models were drafted for middle and high school
+ “Nature of science” concepts were highlighted throughout the document  The practices matrix was revised
+ A new chapter was added to describe the intent and use of crosscutting concepts
+ A new chapter on equity was drafted about implementation of the NGSS with diverse student groups  A glossary of terms was added
+ More flexibility in viewing the standards was provided by arranging the performance
+expectations according to both topic and Disciplinary Core Idea (DCI)
+
+=== Page 2 ===
+
+April 2013
+NGSS Release
+Page 2 of 9
+Additional flexibility was added to the website, allowing users to turn off pop up description boxes
+The feedback on the second public draft indicated that changes had completely addressed some
+issues, and the percentage of reviewers concerned about the remaining issues was greatly reduced.  Those remaining issues included:
+
+ Concern that there was still too much material  Suggestions for a few additional topics  Lack of language clarity
+ Concern about including and addressing engineering and technology
+ Confusion about the role of the one practice specified in each performance expectation
+ Concern about the amount of support needed for implementation of the standards
+ Confusion about the coding/naming of performance expectations
+
+Based on the feedback, the following changes were made between the second public draft and the final release of the NGSS:
+ 75% of the PEs were edited to increase clarity, consistency, and specific feedback.
+ A review of the central focus of each DCI from the Framework resulted in the removal
+of about 33% of the PEs and associated DCIs while retaining the progression of DCIs across the grade bands
+ Separate ETS1: Engineering Design performance expectations were added to each grade
+band to supplement performance expectations that had integrated engineering design into the traditional science disciplines
+ “Storylines” with essential questions were added to the beginning of each grade band
+and section to describe the context and rationale for the performance expectations
+ The “All Standards, All Students” appendix was expanded to include several vignettes
+about implementation of the NGSS with diverse student groups
+ Performance expectations names were changed from lowercase letters to numbers to
+avoid confusion with the DCI names.  For example, MS-LS1-a became MS-LS1-1
+
+=== Page 3 ===
+
+April 2013
+NGSS Release
+Page 3 of 9
+Introduction
+
+Several rounds of review were built into the development process of the NGSS to make sure that
+all educators and stakeholders would have opportunities to provide feedback.  The first public
+draft of the NGSS was posted online from May 11 to June 1, 2012, and the second public draft
+was posted online from January 8 to January 29, 2013.  The draft received comments from over
+10,000 individuals during each of the two public review periods, including those working
+together in lead state review teams, school and school district discussion groups, and scientific society commenters.
+
+Feedback on the public drafts was reviewed, coded into sortable spreadsheets and summarized
+for state and writing team consideration.  Where feedback was unclear or conflicting, lead state
+teams engaged in additional discussions.  The writers then used this feedback, along with that of
+the college- and career-readiness reviews, to make substantial revisions to the draft standards.
+As a result of the first public review and subsequent state review, 95% of the performance
+expectations were rewritten.  After the second public draft review period, 75% of the
+performance expectations were edited to add clarity and consistency across the document. .
+
+Overall, the feedback received on both public drafts of the NGSS was overwhelmingly positive.
+Almost all reviewers indicated that they liked the pedagogical vision described in the National
+Research Council document A Framework for K-12 Science Education, and the integration of the
+three dimensions in the NGSS: Science and Engineering Practices, Crosscutting Concepts and
+Disciplinary Core Ideas.  The structure of the NGSS received high praise, including the
+foundation boxes that show the source of the language and ideas in the performance
+expectations.  The presence of clarification statements, assessment boundaries, as well as
+connections to other standards and the Common Core State Standards, were also almost
+universally approved of. While these elements were applauded, some commenters suggested
+improvements regarding specific wording and foundation box connections.
+
+In addition to the overall positive feedback the first draft received, there were also critiques of
+specific issues.  The following themes emerged from the comments about ways to improve the
+first public draft:
+ Concern that there was too much material  Suggestions for additional topics  Lack of language clarity
+ Concern about how engineering and technology was included and addressed
+ Confusion about the role of the one practice specified in each performance expectation
+ Lack of guidance for incorporating crosscutting concepts
+ Lack of specificity in connections to other standards and other subjects  Concern about the organization of the standards
+ Concern about the amount of support needed for implementation of the standards 
+
+Based on this feedback and on additional interim reviews of the standards by the lead states,
+many changes were made to the standards between the first and second public drafts. The
+feedback on the second public draft indicated that the changes to the draft had completely
+
+=== Page 4 ===
+
+April 2013
+NGSS Release
+Page 4 of 9
+addressed some of the issues, and had greatly reduced the percentage of reviewers that had
+concerns about the remaining issues.  Those remaining issues included:
+
+ Concerns that there was still too much material
+ Suggestions for a few additional topics to include  Lack of language clarity
+ Concerns about including and addressing engineering and technology
+ Confusion about the role of the one practice specified in each performance expectation
+ Concern about the amount of support that will be needed for implementation of the standards.
+
+Below is a representative sampling of how each issue identified above was addressed, after a thorough review of the feedback:
+
+Too Much Material
+The Framework and the NGSS set out to define a small set of core ideas that build on each other
+coherently through the grade levels.  While most reviewers of both the first and second public
+drafts indicated that proficiency in the standards was sufficient for student success at the next
+level, they also noted that practical classroom time constraints could prevent many students from
+getting to the depth of skills and knowledge required by the standards.
+
+In the first public draft, several topics, such as nuclear processes, were identified as being beyond
+the scope of knowledge necessary for college and career readiness.  These topics, for example,
+were deemed important only for those students who planned to continue in STEM career paths.
+Similarly, some topics in the elementary levels were deemed more appropriate at either a higher or lower grade level.
+
+To address these issues, the standards underwent extensive review to ensure that all content is
+both necessary and sufficient for student success after high school in the 21st century.  In the K-5
+standards, several performance expectations were shifted from one grade level to the next based on the feedback.
+
+In June 2012, university and community college faculty met with workforce readiness experts to
+examine all of the standards in depth.  Their feedback, together with that from the first public
+draft review, led to a deletion of many performance expectations and a greater focus in many
+discipline areas.  In addition, reviews from cross-disciplinary teams of higher education faculty
+and the Lead State Review in September led to a further reduction in the content designated in the Disciplinary Core Ideas.
+
+Feedback on the January 2013 draft indicated that the previous reductions in content were not
+sufficient to allow for the instruction time necessary to build student proficiency in all of the
+practices, core ideas, and crosscutting concepts.  Therefore, additional content was removed by
+deleting both the performance expectations and associated disciplinary core idea (DCI) endpoints
+that covered content beyond the central focus of each core idea.  For example, the central focus
+of HS.LS2.B is the effect of cell division and differentiation on growth, so the DCI endpoints
+that described the details of cellular differentiation were deleted from the expectations of the
+
+=== Page 5 ===
+
+April 2013
+NGSS Release
+Page 5 of 9
+standards.  The teachers on the NGSS writing team then performed a validity check with the
+performance expectations to ensure that the scope of the expectations was practical within the
+realities of a typical school year.  In many cases, the deleted endpoints could serve as the
+beginnings of instructional extensions when time allows.
+
+In addition, changes were made to ensure that the practice and core idea pairings for each
+performance expectation were appropriate for all students at each grade level.  Writers ensured
+that all the K-12 performance expectations would be implementable within realistic timeframes.
+The knowledge and skills required by particular performance expectations are not intended to be
+taught independently of others at the same grade level, and should take into account student
+knowledge and skills learned at previous grade levels.  For instance, in high school physical
+sciences, one would not teach about chemical reactions without also addressing the law of
+conservation of mass, and these skills should build on associated middle school endpoints.
+
+Suggestions on inclusion/exclusion of certain topics
+While recognizing the sizable amount of content mastery expected of all students in the NGSS
+draft, many reviewers of both public drafts voiced concerns about the omission of particular
+areas of content. As writers were tasked with creating a set of standards faithful to the
+Framework, many of these concerns paralleled those raised during the Framework development
+process.  Major themes from the feedback on the first public draft included requests for more
+ocean science context to be used in examples, for computer science concepts to be added, and for
+“nature of science” concepts to be made more explicit.
+
+One of the important components to the vision of the Framework and the NGSS is the focus on a
+smaller set of core ideas that build over time.  With the practical constraints of class time
+availability and the commitment to remain within the scope of the NRC Framework, the NGSS
+writers were not able to add new core ideas to the standards.  They were, however, able to add
+more context and examples demonstrating potential connections to ocean science and computer
+science between the first and second public drafts.  In addition, where nature of science
+connections already existed in the standards, they were made more explicit in the second public
+draft and called out in the appropriate foundation boxes.  This addition received very positive feedback from most reviewers.
+
+In both the first and second public drafts, many reviewers expressed concern that specific content
+normally included in high school elective courses was not in the NGSS, including
+thermodynamics, stoichiometry, solution chemistry and nitrogen cycles.  Much of this feedback
+indicated a misunderstanding of the purpose of the NGSS.  In contrast to many current state
+standards, the NGSS specify content and skills required of all students, and are not intended to
+replace high school course standards.  The NGSS are meant to specify the knowledge and skills
+that will provide a thorough foundation for student success in any chosen field, and can be
+supplemented with further in-depth study in particular upper-level science courses.
+
+A key consideration with regard to missing or additional content was its relation to college and
+career readiness in science.  As described, a large team of postsecondary faculty and hiring
+managers from across the country met to review the May draft specifically to determine if the
+content represented, as understood by high school graduates, would allow for success in
+
+=== Page 6 ===
+
+April 2013
+NGSS Release
+Page 6 of 9
+postsecondary education and training. In each of the disciplines, (Earth/space, biology/life,
+chemistry, and physics), the outcome did not support adding additional content.  In some cases,
+like stoichiometry, the conceptual understanding for why chemists do stoichiometry was already
+in the standards.  The teams wanted to make the mathematical practice more explicit through the
+clarification statements, without having a separate performance expectation requiring that all students do gram to gram calculations.
+
+A small number of reviewers in both public draft review periods asked that evolution not be
+included in the standards.  However, an understanding of evolution was identified in the
+Framework as the basis for understanding all the natural sciences.  As such, it was included in the NGSS.
+
+In their feedback on the first public draft, several commenters perceived that “inquiry” was
+missing from the standards.  A few emphasized the importance of students’ joy and passion for
+learning, indicating that this should be made explicit in the standards documents.
+The concept and practice of “inquiry” has not been omitted from the NGSS – instead, it is now
+specified in the eight practices throughout every performance expectation.
+
+In addition, many reviewers requested more guidance for implementation with diverse student
+groups. A thorough discussion of equity and diversity issues had been planned for inclusion in
+the standards.  A draft version was included in the second public draft of the NGSS, and an
+expanded version with several vignettes is included in the final release.  Each performance
+expectation and associated examples have been reviewed for appropriateness with all student
+groups and for relevance to student interests.  The writers were committed to the creation of a
+document that will help encourage all students to engage in and enjoy the study of science.
+
+Some reviewers of both public drafts requested that the standards specify the intermediate
+knowledge necessary for scaffolding toward eventual student outcomes.  However, the NGSS are
+a set of goals, performance expectations for the end of instruction; they are not a curriculum.
+Many different methods and examples could be used to help support student understanding of the
+disciplinary core ideas and science and engineering practices, and the writers did not want to
+prescribe any curriculum or constrain any instruction.  It is therefore outside the scope of the
+standards to specify intermediate knowledge and instructional steps.  For example, MS-LS3-1
+includes, as a student outcome, some general knowledge of the role of gene mutations.  No part
+of the NGSS specifies the student outcome of defining a gene – it is instead implicit that in order
+to demonstrate proficiency on MS-LS3-1, students will have to be introduced to the concept of a gene through curriculum and instruction.
+
+Clarity of Language
+Many reviewers of the first public draft remarked that the language in the performance
+expectations was unclear and not user-friendly enough to support consistent implementation—
+that multiple users would have different interpretations of the same language. More examples
+and guidance for instruction, assessment, and curriculum development were requested.  Requests
+for clarification were particularly abundant in the feedback describing the practices; the feedback
+
+=== Page 7 ===
+
+April 2013
+NGSS Release
+Page 7 of 9
+suggested confusion about the meaning and scope of certain practices—particularly “developing and using models.”
+
+In early drafts of the standards, the writers purposefully did not control for consistent language,
+in order to provide several different writing styles as models.  Based on the public draft feedback
+and additional feedback from lead states, the different writing styles were assessed and the
+highest-rated writing style was then adapted for all of the standards.  All performance
+expectations were carefully reviewed for clarity of language.  Although some examples were
+added, the writers were careful to use language that was general enough to avoid prescribing
+curriculum and to ensure that performance expectations could be met in multiple ways.  To help
+clarify the meaning of each practice, a separate chapter on the practices was added to this draft of the NGSS.
+
+The percentage of people with concerns about language clarity was much lower when reviewing
+the second public draft. Since some concerns still remained, however, the performance
+expectations that received the highest scores for clarity were used as models for editing most of
+the other performance expectations. This created clearer and more consistent language, more closely aligned to that in the Framework.
+
+Inclusion of Engineering and Technology
+The initial inclusion of engineering practices and core ideas in the May 2012 draft NGSS
+generated a large number of comments.  Most reviewers responded positively to the inclusion.
+Others indicated that engineering shouldn’t be in the science standards because of the total
+amount of content already present in the traditional disciplines and the scarcity of teachers with
+training in this subject.  Still others requested that additional engineering content be added to the
+NGSS.  Of those who liked the inclusion of engineering, many voiced concern that having
+separate engineering performance expectations, especially in middle school and high school,
+would either lead to instruction separated from science content or to an omission of the engineering components altogether.
+
+Upon direction from the lead states, writers integrated the ETS1 (Engineering Design) core ideas
+into the other disciplines for the January 2013 draft.  For example, some performance
+expectations described the outcomes from both physical science core ideas and from engineering
+design core ideas.  This integration resulted in a reduction of the total number of performance
+expectations.  In the January 2013 draft, there were two different ways to view these same
+integrated performance expectations: listed within the traditional disciplines, and also listed in separate Engineering Design standards.
+
+Feedback on the integration of engineering in the January 2013 draft was mixed.  Reviewers
+enthusiastically praised the idea of integration as a way to help ensure that engineering design
+core ideas would be incorporated into science instruction, but commented that the intended
+engineering design core ideas were not always explicit.  The feedback indicated that the integration was not consistently successful.
+
+=== Page 8 ===
+
+April 2013
+NGSS Release
+Page 8 of 9
+The writers therefore reintroduced a small set of separate performance expectations addressing
+ETS1 core ideas at each grade band, to ensure that the engineering design core ideas from the
+Framework would be clearly represented.  In addition, some of the successfully-integrated
+disciplinary core ideas are still present throughout the other disciplinary standards.
+
+In addition to this core idea integration, the ETS ideas from the Framework are included in the
+other two dimensions of the draft NGSS.  Engineering practices are incorporated into
+performance expectations at every grade level.  Due to their crosscutting nature, ETS2 (Links
+among Engineering, Technology, Science, and Society) core ideas have been integrated
+throughout the standards in a manner similar to that of crosscutting concepts.  A thorough
+discussion of the inclusion of engineering in the NGSS is in Appendices I and J.
+
+Specifying one Practice in each Performance Expectation
+While the NGSS draft was widely praised for integrating practices throughout the standards,
+many reviewers in both the first and second public drafts remarked that specifying a particular
+practice in each performance expectation was too restrictive and that it would be interpreted as prescribing instruction.
+
+Response
+The writers, upon direction from the lead states, have revised the front matter documents to
+provide a more detailed explanation of the nature of performance expectations – that they specify
+student outcomes and not instruction.  To help support student learning, all practices should be
+used in instruction throughout each discipline and each year.
+
+It is important to note that the Scientific and Engineering Practices are not teaching strategies - they are indicators of achievement as well as important learning goals in their own right. As
+such, the Framework and NGSS ensure the Practices are not treated as afterthoughts. Coupling
+practice with content gives the learning context, whereas practices alone are activities and
+content alone is memorization. It is through integration that science begins to make sense and allows student to apply the material.
+
+State standards have traditionally represented Practices and Core Ideas as two separate entities.
+However, observations from science education researchers have indicated that the result of
+having these two dimensions separate is that they are either taught separately or the Practices are not taught at all.
+
+Implementation Support Needed
+Almost every reviewer in both public drafts noted that the vision laid out in the NRC Framework
+and embodied by the NGSS will likely require additional professional development and possibly
+large-scale changes in education systems, to ensure that all students can meet all of these
+standards.  For example, it was noted that science is not currently taught at the K-3 level in many
+schools, and that many students don’t take chemistry, physics and earth science classes at the
+high school level.  To help them fully understand the vision of the NGSS, reviewers requested
+vignettes of classroom instruction showing integration of the three dimensions and inclusion of
+
+=== Page 9 ===
+
+April 2013
+NGSS Release
+Page 9 of 9
+engineering practices and concepts.  Many reviewers also commented that implementation of the
+standards will, in practice, be impossible until aligned assessments are proposed.
+
+Response
+The NGSS writers recognize the differences between current education practice and that
+envisioned by the Framework.  Many organizations, including the National Science Teachers
+Association, are currently planning for programs and support for teachers and states that adopt
+and implement the standards.  The National Research Council is now researching ways to assess
+the kind of science education envisioned in the Framework.  Ultimately, the decision of what
+assessment to use or develop will be up to each state choosing to adopt the NGSS.
+

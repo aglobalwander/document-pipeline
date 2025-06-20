@@ -1,0 +1,552 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+
+April 2013
+NGSS Release
+Page 1 of 10
+APPENDIX H – Understanding the Scientific Enterprise: The Nature of Science in the Next Generation Science Standards
+
+Scientists and science teachers agree that science is a way of explaining the
+natural world. In common parlance, science is both a set of practices and the historical
+accumulation of knowledge. An essential part of science education is learning science
+and engineering practices and developing knowledge of the concepts that are
+foundational to science disciplines. Further, students should develop an understanding of
+the enterprise of science as a whole—the wondering, investigating, questioning, data
+collecting and analyzing. This final statement establishes a connection between the Next
+Generation Science Standards (NGSS) and the nature of science.  Public comments on
+previous drafts of the NGSS called for more explicit discussion of how students can learn about the nature of science.
+
+This chapter presents perspectives, a rationale and research supporting an
+emphasis on the nature of science in the context of the NGSS. Additionally, eight
+understandings with appropriate grade-level outcomes are included as extensions of the
+science and engineering practices and crosscutting concepts, not as a fourth dimension of
+standards. Finally, we discuss how to emphasize the nature of science in school programs.
+
+The Framework for K-12 Science Education
+
+A Framework for K-12 Science Education: Practices, Crosscutting Concepts, and
+Core Ideas (NRC, 2012) acknowledged the importance of the nature of science in the
+statement “…there is a strong consensus about characteristics of the scientific enterprise
+that should be understood by an educated citizen” (NRC, 2012, page 78). The Framework
+reflected on the practices of science and returned to the nature of science in the following
+statement: “Epistemic knowledge is knowledge of the constructs and values that are
+intrinsic to science. Students need to understand what is meant, for example, by an
+observation, a hypothesis, an inference, a model, a theory, or a claim and be able to
+distinguish among them” (NRC, 2012, page 79). This quotation presents a series of
+
+=== Page 2 ===
+
+April 2013
+NGSS Release
+Page 2 of 10
+concepts and activities important to understanding the nature of science as a complement
+to the practices imbedded in investigations, field studies, and experiments.
+
+Nature of Science: A Perspective for the NGSS
+
+The integration of scientific and engineering practices, disciplinary core ideas,
+and crosscutting concepts sets the stage for teaching and learning about the nature of
+science. This said, learning about the nature of science requires more than engaging in activities and conducting investigations.
+
+When the three dimensions of the science standards are combined, one can ask
+what is central to the intersection of the scientific and engineering practices, disciplinary
+core ideas, and crosscutting concepts? Or, what is the relationship among the three basic
+elements of A Framework for K-12 Science Education? Humans have a need to know and
+understand the world around them. And they have the need to change their environment
+using technology in order to accommodate what they understand or desire. In some cases,
+the need to know originates in satisfying basic needs in the face of potential dangers.
+Sometimes it is a natural curiosity and, in other cases, the promise of a better, more
+comfortable life. Science is the pursuit of explanations of the natural world, and
+technology and engineering are means of accommodating human needs, intellectual curiosity and aspirations.
+
+One fundamental goal for K-12 science education is a scientifically literate person
+who can understand the nature of scientific knowledge. Indeed, the only consistent
+characteristic of scientific knowledge across the disciplines is that scientific knowledge
+itself is open to revision in light of new evidence.
+
+In K-12 classrooms, the issue is how to explain both the natural world and what
+constitutes the formation of adequate, evidence-based scientific explanations. To be clear,
+this perspective complements but is distinct from students engaging in scientific and
+engineering practices in order to enhance their knowledge and understanding of the natural world.
+
+=== Page 3 ===
+
+April 2013
+NGSS Release
+Page 3 of 10
+A Rationale and Research
+
+Addressing the need for students to understand both the concepts and practices of
+science and the nature of science is not new in American education. The writings of
+James B. Conant in the 1940s and 50s, for example, argue for a greater understanding of
+science by citizens (Conant, 1947). In Science and Common Senses (1951), Conant
+discusses the “bewilderment of laymen” when it comes to understanding what science
+can and cannot accomplish, both in the detailed context of investigations and larger
+perspective of understanding science. Conant says: “…The remedy does not lie in a
+greater dissemination of scientific information among nonscientists. Being well informed
+about science is not the same thing as understanding science, though the two propositions
+are not antithetical. What is needed is methods for importing some knowledge of the
+tactics and strategy of science to those who are not scientists” (Conant, 1951, page 4). In
+the context of the discussion here, tactics are analogous to science and engineering
+practices, as well as to the nature of scientific explanations.
+
+The present discussion recommends the aforementioned “tactics of science and
+engineering practices and crosscutting concepts” to develop students’ understanding of
+the larger strategies of the scientific enterprise—the nature of scientific explanations. One
+should note that Conant and colleagues went on to develop Harvard Cases in History of
+Science, a historical approach to understanding science. An extension of the nature of
+science as a learning goal for education soon followed the original work at Harvard. In
+the late 1950s, Leo Klopfer adapted the Harvard Cases for use in high schools (Klopfer
+& Cooley, 1963). Work on the nature of science has continued with lines of research by
+Lederman (1992), Lederman and colleagues (Lederman et al., 2002), and Duschl (1990;
+2000; 2008). One should note that one aspect of this research base addresses the teaching
+of the nature of science (see, e.g., Lederman & Lederman, 2004; Flick & Lederman,
+2004; Duschl, 1990; McComas, 1998; Osborne et al., 2003; Duschl & Grandy, 2008).
+
+Further support for teaching about the nature of science can be seen in 40 years of
+Position Statements from the National Science Teachers Association (NSTA). In the late
+1980s, Science for All Americans (Rutherford & Ahlgren, 1989), the 1990s policy
+statement Benchmarks for Science Literacy (AAAS, 1993), and National Science
+
+=== Page 4 ===
+
+April 2013
+NGSS Release
+Page 4 of 10
+Education Standards (NRC, 1996) clearly set the understanding of the nature of science as a learning outcome in science education.
+
+Recently, discussions of A Framework for K-12 Science Education (NRC, 2012)
+and implications for teaching science have provided background for instructional
+strategies that connect specific practices and the nature of scientific explanations (Duschl,
+2012; Krajcik & Merritt, 2012; Reiser, Berland, & Kenyon, 2012).
+
+The Nature of Science and NGSS
+
+The nature of science is included in the Next Generation Science Standards. Here
+we present the NOS Matrix. The basic understandings about the nature of science are:
+ Scientific Investigations Use a Variety of Methods
+ Scientific Knowledge is Based on Empirical Evidence
+ Scientific Knowledge is Open to Revision in Light of New Evidence
+ Scientific Models, Laws, Mechanisms, and Theories Explain Natural Phenomena  Science is a Way of Knowing
+ Scientific Knowledge Assumes an Order and Consistency in Natural Systems  Science is a Human Endeavor
+ Science Addresses Questions About the Natural and Material World
+
+The first four of these understandings are closely associated with practices and the
+second four with crosscutting concepts. The NOS Matrix presents specific content for K 2, 3-5, middle school and high school. Appropriate learning outcomes for the nature of
+science are expressed in the performance expectations, and presented in either the
+foundations column for practices or crosscutting concepts of the DCI standard pages.
+
+Again, one should note that the inclusion of nature of science in NGSS does not
+constitute a fourth dimension of standards. Rather, the grade level representations of the
+eight understandings have been incorporated in the practices and crosscutting concepts,
+as seen in the performance expectations and represented in the foundation boxes.
+
+=== Page 5 ===
+
+April 2013
+NGSS Release
+Page 5 of 10
+Overview
+One goal of science education is to help students understand the nature of scientific knowledge. This matrix presents eight major themes and grade level
+understandings about the nature of science. Four themes extend the scientific and engineering practices and four themes extend the crosscutting concepts. These
+eight themes are presented in the left column. The matrix describes learning outcomes for the themes at grade bands for K-2, 3-5, middle school, and high
+school. Appropriate learning outcomes are expressed in selected performance expectations and presented in the foundation boxes throughout the standards.
+Understandings about the Nature of Science
+Categories
+K-2 3-5
+Middle School
+High School
+Scientific
+Investigations Use a
+Variety of Methods
+
+ Science investigations begin with a question.
+ Scientist use different ways to study the world.
+
+ Science methods are determined by questions.
+ Science investigations use a variety of methods, tools, and techniques.
+
+ Science investigations use a variety of methods and tools to make measurements and observations.
+ Science investigations are guided by a set of values to ensure accuracy of measurements, observations, and objectivity of findings.
+ Science depends on evaluating proposed explanations.
+ Scientific values function as criteria in distinguishing between science and non-science.
+
+ Science investigations use diverse methods and do not always use the same set of procedures to obtain data.
+ New technologies advance scientific knowledge.
+ Scientific inquiry is characterized by a common set of values that
+include:  logical thinking, precision, open-mindedness, objectivity,
+skepticism, replicability of results, and honest and ethical reporting of findings.
+ The discourse practices of science are organized around disciplinary
+domains that share exemplars for making decisions regarding the
+values, instruments, methods, models, and evidence to adopt and use.
+ Scientific investigations use a variety of methods, tools, and techniques to revise and produce new knowledge.
+Scientific Knowledge is Based on Empirical
+Evidence  Scientists look for patterns and order when making observations about the world.
+ Science findings are based on recognizing patterns.
+ Scientists use tools and technologies to make accurate measurements and observations.
+ Science knowledge is based upon logical and conceptual connections between evidence and explanations.
+ Science disciplines share common rules of obtaining and evaluating empirical evidence.
+
+ Science knowledge is based on empirical evidence.
+ Science disciplines share common rules of evidence used to evaluate explanations about natural systems.
+ Science includes the process of coordinating patterns of evidence with current theory.
+ Science arguments are strengthened by multiple lines of evidence supporting a single explanation.
+Scientific Knowledge is Open to Revision in Light of New Evidence
+
+ Science knowledge can change when new information is found.
+ Science explanations can change based on new evidence.
+ Scientific explanations are subject to revision and improvement in light of new evidence.
+ The certainty and durability of science findings varies.
+ Science findings are frequently revised and/or reinterpreted based on new evidence.
+
+ Scientific explanations can be probabilistic.
+ Most scientific knowledge is quite durable but is, in principle, subject
+to change based on new evidence and/or reinterpretation of existing evidence.
+ Scientific argumentation is a mode of logical discourse used to clarify
+the strength of relationships between ideas and evidence that may result in revision of an explanation.
+Science Models, Laws,
+Mechanisms, and Theories Explain
+Natural Phenomena  Scientists use drawings, sketches, and models as a way to communicate ideas.
+ Scientists search for cause and effect relationships to explain natural events.
+ Science theories are based on a body of evidence and many tests.
+ Science explanations describe the mechanisms for natural events.
+
+ Theories are explanations for observable phenomena.
+ Science theories are based on a body of evidence developed over time.
+ Laws are regularities or mathematical descriptions of natural phenomena.
+ A hypothesis is used by scientists as an idea that may contribute important new knowledge for the evaluation of a scientific theory.
+ The term "theory" as used in science is very different from the common use outside of science.
+ Theories and laws provide explanations in science, but theories do not with time become laws or facts.
+ A scientific theory is a substantiated explanation of some aspect of the
+natural world, based on a body of facts that has been repeatedly
+confirmed through observation and experiment, and the science
+community validates each theory before it is accepted. If new
+evidence is discovered that the theory does not accommodate, the
+theory is generally modified in light of this new evidence.
+ Models, mechanisms, and explanations collectively serve as tools in the development of a scientific theory.
+ Laws are statements or descriptions of the relationships among observable phenomena.
+ Scientists often use hypotheses to develop and test theories and explanations.
+
+=== Page 6 ===
+
+April 2013
+NGSS Release
+Page 6 of 10
+Understandings about the Nature of Science
+Categories
+K-2 3-5
+Middle School
+High School
+Science is a Way of Knowing  Science knowledge helps us know about the world.
+ Science is both a body of knowledge and processes that add new knowledge.
+ Science is a way of knowing that is used by many people.
+
+ Science is both a body of knowledge and the processes
+and practices used to add to that body of knowledge.
+ Science knowledge is cumulative and many people,
+from many generations and nations, have contributed to science knowledge.
+ Science is a way of knowing used by many people, not just scientists.
+
+ Science is both a body of knowledge that represents a current
+understanding of natural systems and the processes used to refine, elaborate, revise, and extend this knowledge.
+ Science is a unique way of knowing and there are other ways of knowing.
+ Science distinguishes itself from other ways of knowing through use of
+empirical standards, logical arguments, and skeptical review.
+ Science knowledge has a history that includes the refinement of, and
+changes to, theories, ideas, and beliefs over time.
+Scientific Knowledge
+Assumes an Order and Consistency in Natural
+Systems  Science assumes natural events happen today as they happened in the past.
+ Many events are repeated.
+ Science assumes consistent patterns in natural systems.
+ Basic laws of nature are the same everywhere in the universe.
+ Science assumes that objects and events in natural systems occur in consistent patterns that are
+understandable through measurement and observation.
+ Science carefully considers and evaluates anomalies in data and evidence.
+ Scientific knowledge is based on the assumption that natural laws
+operate today as they did in the past and they will continue to do so in the future.
+ Science assumes the universe is a vast single system in which basic laws are consistent.
+
+Science is a Human
+Endeavor
+
+ People have practiced science for a long time.
+ Men and women of diverse backgrounds are scientists and engineers.
+ Men and women from all cultures and backgrounds choose careers as scientists and engineers.
+ Most scientists and engineers work in teams.
+ Science affects everyday life.
+ Creativity and imagination are important to science.
+ Men and women from different social, cultural, and
+ethnic backgrounds work as scientists and engineers.
+ Scientists and engineers rely on human qualities such
+as persistence, precision, reasoning, logic, imagination and creativity.
+ Scientists and engineers are guided by habits of mind
+such as intellectual honesty, tolerance of ambiguity, skepticism and openness to new ideas.
+ Advances in technology influence the progress of science and science has influenced advances in technology.
+ Scientific knowledge is a result of human endeavor, imagination, and creativity.
+ Individuals and teams from many nations and cultures have
+contributed to science and to advances in engineering.
+ Scientists’ backgrounds, theoretical commitments, and fields of endeavor influence the nature of their findings.
+ Technological advances have influenced the progress of science and science has influenced advances in technology.
+ Science and engineering are influenced by society and society is influenced by science and engineering.
+Science Addresses
+Questions About the
+Natural and Material
+World.
+ Scientists study the natural and material world.
+ Science findings are limited to what can be answered with empirical evidence.
+ Scientific knowledge is constrained by human capacity, technology, and materials.
+ Science limits its explanations to systems that lend themselves to observation and empirical evidence.
+ Science knowledge can describe consequences of
+actions but is not responsible for society’s decisions.
+ Not all questions can be answered by science.
+ Science and technology may raise ethical issues for which science, by itself, does not provide answers and solutions.
+ Science knowledge indicates what can happen in natural systems—not
+what should happen. The latter involves ethics, values, and human decisions about the use of knowledge.
+ Many decisions are not made using science alone, but rely on social and cultural contexts to resolve issues.
+Nature of Science understandings most closely associated with Practices
+Nature of Science understandings most closely associated with Crosscutting Concepts
+
+=== Page 7 ===
+
+April 2013
+NGSS Release
+Page 7 of 10
+Implementing Instruction to Facilitate Understanding of the Nature of Science
+
+Now, the science teacher’s question: How do I put the elements of practices and
+crosscutting concepts together to help students understand the nature of science? Suppose
+students observe the moon’s movements in the sky, changes in seasons, phase changes in water,
+or life cycles of organisms. One can have them observe patterns and propose explanations of
+cause-effect. Then, the students can develop a model of the system based on their proposed
+explanation. Next, they design an investigation to test the model. In designing the investigation,
+they have to gather data and analyze data. Next, they construct an explanation using an evidence based argument. These experiences allow students to use their knowledge of the practices and
+crosscutting concepts to understand the nature of science. This is possible when students have
+instruction that emphasizes why explanations are based on evidence, that the phenomena they
+observe are consistent with the way the entire universe continues to operate, and that we can use multiple ways to investigate these phenomena.
+The Framework emphasizes that students must have the opportunity to stand back and
+reflect on how the practices contribute to the accumulation of scientific knowledge. This means,
+for example, that when students carry out an investigation, develop models, articulate questions,
+or engage in arguments, they should have opportunities to think about what they have done and
+why. They should be given opportunities to compare their own approaches to those of other
+students or professional scientists. Through this kind of reflection they can come to understand
+the importance of each practice and develop a nuanced appreciation of the nature of science.
+
+Using examples from the history of science is another method for presenting the nature of
+science. It is one thing to develop the practices and crosscutting concepts in the context of core
+disciplinary ideas; it is another aim to develop an understanding of the nature of science within
+those contexts. The use of case studies from the history of science provides contexts in which to
+develop students’ understanding of the nature of science. In the middle and high school grades,
+for example, case studies on the following topics might be used to broaden and deepen understanding about the nature of science.
+ Copernican Resolution  Newtonian Mechanics  Lyell’s Study of Patterns of Rocks and Fossils
+ Progression from Continental Drift to Plate Tectonics
+
+=== Page 8 ===
+
+April 2013
+NGSS Release
+Page 8 of 10  Lavoisier/Dalton and Atomic Structure
+ Darwin Theory of Biological Evolution and the Modern Synthesis  Pasteur and the Germ Theory of Disease
+ James Watson and Francis Crick and the Molecular Model of Genetics
+
+These explanations could be supplemented with other cases from history. The point is to
+provide an instructional context that bridges tactics and strategies with practices and the nature of
+science, through understanding the role of systems, models, patterns, cause and effect, the
+analysis and interpretations of data, the importance of evidence with scientific arguments, and
+the construction of scientific explanations of the natural world. Through the use of historical and
+contemporary case studies, students can understand the nature of explanations in the larger
+context of scientific models, laws, mechanisms, and theories.
+In designing instruction, deliberate choices will need to be made about when it is
+sufficient to build students’ understanding of the scientific enterprise through reflection on their
+own investigations, and when it is necessary and productive to have students analyze historical case studies.
+
+Conclusion
+
+This discussion addressed how to support the development of an understanding of the
+nature of science in the context of the Next Generation Science Standards. The approach
+centered on eight understandings for the nature of science and the intersection of those
+understandings with science and engineering practices, disciplinary core ideas, and crosscutting
+concepts. The nature of the scientific explanations is an idea central to standards-based science
+programs. Beginning with the practices, core ideas, and crosscutting concepts, science teachers
+can progress to the regularities of laws, the importance of evidence, and the formulation of
+theories in science. With the addition of historical examples, the nature of scientific explanations
+assumes a human face and is recognized as an ever-changing enterprise.
+
+=== Page 9 ===
+
+April 2013
+NGSS Release
+Page 9 of 10
+References
+American Association for the Advancement of Science (1993). Benchmarks for Science Literacy.
+New York: Oxford University Press.
+
+Conant, J. (1947). On Understanding Science: A Historical Approach. Cambridge, MA: Harvard
+University Press.
+
+Conant, J.B. (1951). Science and Common Sense. New Haven: Yale University Press.
+
+Duschl, R. (2012). The Second Dimension – Crosscutting Concepts: Understanding A
+Framework for K-12 Science Education.  The Science Teacher, 79, 34-38.
+
+Duschl, R. (2008). Science Education in 3-part Harmony: Balancing Conceptual, Epistemic, and
+Social Learning Goals. In J. Green, A. Luke, & G. Kelly, Eds., Review of Research in
+Education, 32 (pp. 268-291), Washington, DC: AERA.
+
+Duschl, R. (2000). Making the Nature of Science Explicit. In R. Millar, J. Leech & J. Osborne
+(Eds.), Improving Science Education: The Contribution of Research. Philadelphia, PA:
+Open University Press.
+
+Duschl, R. (1990). Restructuring Science Education: The Role of Theories and Their
+Importance. New York: Teachers College Press,
+
+Duschl, R., & Grandy, R. (Eds.). (2008). Teaching Scientific Inquiry: Recommendations for
+Research and Implementation. Rotterdam, Netherlands: Sense Publishers.
+
+Flick, L., & Lederman, M. (2004). Scientific Inquiry and Nature of Science. Boston, MA:
+Kluwer Academic Publishers.
+
+Klopfer, L., & Cooley, W. (1963). The History of Science Cases for High Schools in the
+Development of Student Understanding of Science and Scientists. Journal of Research in Science Teaching, 1(1), 33-47.
+
+Krajcik, J., & Merritt,J. (2012). Engaging Students in Scientific Practices: What Does
+Constructing and Revising Models Look Like in the Science Classroom? Understanding
+A Framework for K-12 Science Education. The Science Teacher, 79, 38-41.
+
+Lederman, N.G. (1992). Students’ and Teachers’ Conceptions of the Nature of Science: A
+Review of the Research. Journal of Research in Science Teaching, 29(4), 331-359.
+
+Lederman, N., Abd-El-Khalick, F., Bell, R.L., & Schwartz, R.S. (2002). View of Nature of
+Science Questionnaire: Toward Valid and Meaningful Assessment of Learners’
+Conceptions of Nature of Science. Journal of Research in Science Teaching, 39(6): 497 521.
+
+=== Page 10 ===
+
+April 2013
+NGSS Release
+Page 10 of 10
+Lederman, N., & Lederman, J. (2004). Revising Instruction to Teach Nature of Science:
+Modifying Activities to Enhance Students’ Understanding of Science. The Science
+Teacher, 71(9), 36-39.
+
+McComas, W. (Ed.). (1998). The Nature of Science in Science Education: Rationales and
+Strategies. Dordrecht: Kluwer Academic Publishers..
+
+National Research Council (2012). A Framework for K-12 Science Education: Practices,
+Crosscutting Concepts, and Core Ideas. Washington, DC: The National Academy Press.
+
+National Research Council (1996). National Science Education Standards. Washington, DC: The
+National Academy Press.
+
+Osborne, J.F., Ratcliffe, M., Collins, S., Millar, R., & Duschl, R. (2003). What ‘Ideas about
+Science’ Should Be Taught in School Science? A Delphi Study of the ‘Expert’
+Community. Journal of Research in Science Teaching, 40(7), 692-720.
+
+Reiser, B., Berland, L, & Kenyon, L. (2012). Engaging Students in the Scientific Practices of
+Explanation and Argumentation: Understanding A Framework for K-12 Science
+Education. The Science Teacher, 79(4), 8-13.
+
+Rutherford, F.J., & Ahlgren, A. (1989). Science for All Americans. New York: Oxford
+University Press, Inc.
+
+=== EXTRACTED TABLES ===
+
+--- Table 1 on Page 5 ---
+Overview
+One goal of science education is to help students understand the nature of scientific knowledge. This matrix presents eight major themes and grade level
+understandings about the nature of science. Four themes extend the scientific and engineering practices and four themes extend the crosscutting concepts. These
+eight themes are presented in the left column. The matrix describes learning outcomes for the themes at grade bands for K-2, 3-5, middle school, and high
+school. Appropriate learning outcomes are expressed in selected performance expectations and presented in the foundation boxes throughout the standards. |  |  |  |  |  |  |  |  |  |  |  |  |  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | Understandings about the Nature of Science |  |  |  |  |  |  |  |  |  |  |  |  |
+| Categories |  |  | K-2 |  |  | 3-5 |  |  | Middle School |  |  | High School | | Scientific |  |   | Science investigations |  |   | Science methods are determined |  |   
+ | Science investigations use a variety of methods and |  |    
+ | Science investigations use diverse methods and do not always use the |
+| Investigations Use a |  |  | begin with a question. |  |  | by questions. |  |  | tools to make measurements and observations. |  |  | same set of procedures to obtain data. |
+| Variety of Methods |  |  | Scientist use different |  |  | Science investigations use a |  |  | Science investigations are guided by a set of values |  |  | New technologies advance scientific knowledge. |
+|  |  |  | ways to study the world. |  |  | variety of methods, tools, and |  |  | to ensure accuracy of measurements, observations, |  |  | Scientific inquiry is characterized by a common set of values that |
+|  |  |  |  |  |  | techniques. |  |  | and objectivity of findings. |  |  | include: logical thinking, precision, open-mindedness, objectivity, |
+|  |  |  |  |  |  |  |  |  | Science depends on evaluating proposed |  |  | skepticism, replicability of results, and honest and ethical reporting of |
+|  |  |  |  |  |  |  |  |  | explanations. |  |  | findings. |
+|  |  |  |  |  |  |  |  |  | Scientific values function as criteria in distinguishing |  |  | The discourse practices of science are organized around disciplinary |
+|  |  |  |  |  |  |  |  |  | between science and non-science. |  |  | domains that share exemplars for making decisions regarding the |
+|  |  |  |  |  |  |  |  |  |  |  |  | values, instruments, methods, models, and evidence to adopt and use. |
+|  |  |  |  |  |  |  |  |  |  |  |  | Scientific investigations use a variety of methods, tools, and |
+|  |  |  |  |  |  |  |  |  |  |  |  | techniques to revise and produce new knowledge. |
+| Scientific Knowledge |  |  | Scientists look for |  |   | Science findings are based on |  | 
+ | Science knowledge is based upon logical and |  |   
+ | Science knowledge is based on empirical evidence. |
+| is Based on Empirical |  |  | patterns and order when |  |  | recognizing patterns. |  |  | conceptual connections between evidence and |  |  | Science disciplines share common rules of evidence used to evaluate |
+| Evidence |  |  | making observations |  |  | Scientists use tools and |  |  | explanations. |  |  | explanations about natural systems. |
+|  |  |  | about the world. |  |  | technologies to make accurate |  |  | Science disciplines share common rules of obtaining |  |  | Science includes the process of coordinating patterns of evidence with |
+|  |  |  |  |  |  | measurements and |  |  | and evaluating empirical evidence. |  |  | current theory. |
+|  |  |  |  |  |  | observations. |  |  |  |  |  | Science arguments are strengthened by multiple lines of evidence |
+|  |  |  |  |  |  |  |  |  |  |  |  | supporting a single explanation. |
+| Scientific Knowledge |  |  | Science knowledge can |  |  | Science explanations can change |  |  
+ | Scientific explanations are subject to revision and |  |  
+ | Scientific explanations can be probabilistic. |
+| is Open to Revision in |  |  | change when new |  |  | based on new evidence. |  |  | improvement in light of new evidence. |  |  | Most scientific knowledge is quite durable but is, in principle, subject |
+| Light of New Evidence |  |  | information is found. |  |  |  |  |  | The certainty and durability of science findings |  |  | to change based on new evidence and/or reinterpretation of existing |
+|  |  |  |  |  |  |  |  |  | varies. |  |  | evidence. |
+|  |  |  |  |  |  |  |  |  | Science findings are frequently revised and/or |  |  | Scientific argumentation is a mode of logical discourse used to clarify |
+|  |  |  |  |  |  |  |  |  | reinterpreted based on new evidence. |  |  | the strength of relationships between ideas and evidence that may |
+|  |  |  |  |  |  |  |  |  |  |  |  | result in revision of an explanation. | | Science Models, Laws, |  |   | Scientists use drawings, |  |   | Science theories are based on a |  |    
+ | Theories are explanations for observable |  |    
+ | Theories and laws provide explanations in science, but theories do not |
+| Mechanisms, and |  |  | sketches, and models as |  |  | body of evidence and many |  |  | phenomena. |  |  | with time become laws or facts. |
+| Theories Explain |  |  | a way to communicate |  |  | tests. |  |  | Science theories are based on a body of evidence |  |  | A scientific theory is a substantiated explanation of some aspect of the |
+| Natural Phenomena |  |  | ideas. |  |  | Science explanations describe |  |  | developed over time. |  |  | natural world, based on a body of facts that has been repeatedly |
+|  |  |  | Scientists search for |  |  | the mechanisms for natural |  |  | Laws are regularities or mathematical descriptions of |  |  | confirmed through observation and experiment, and the science |
+|  |  |  | cause and effect |  |  | events. |  |  | natural phenomena. |  |  | community validates each theory before it is accepted. If new |
+|  |  |  | relationships to explain |  |  |  |  |  | A hypothesis is used by scientists as an idea that |  |  | evidence is discovered that the theory does not accommodate, the |
+|  |  |  | natural events. |  |  |  |  |  | may contribute important new knowledge for the |  |  | theory is generally modified in light of this new evidence. |
+|  |  |  |  |  |  |  |  |  | evaluation of a scientific theory. |  |  | Models, mechanisms, and explanations collectively serve as tools in |
+|  |  |  |  |  |  |  |  |  | The term "theory" as used in science is very different |  |  | the development of a scientific theory. |
+|  |  |  |  |  |  |  |  |  | from the common use outside of science. |  |  | Laws are statements or descriptions of the relationships among |
+|  |  |  |  |  |  |  |  |  |  |  |  | observable phenomena. |
+|  |  |  |  |  |  |  |  |  |  |  |  | Scientists often use hypotheses to develop and test theories and |
+|  |  |  |  |  |  |  |  |  |  |  |  | explanations. |
+
+--- Table 1 on Page 6 -- | Understandings about the Nature of Science |  |  |  |  |  |  |  |  |  |  |  |  |
+----------------------------------------------------------------------------------- | Categories |  |  | K-2 |  |  | 3-5 |  |  | Middle School |  |  | High School |
+| Science is a Way of |  |  | Science knowledge helps |  |   | Science is both a body of |  |  
+ | Science is both a body of knowledge and the processes |  |   
+ | Science is both a body of knowledge that represents a current |
+| Knowing |  |  | us know about the world. |  |  | knowledge and processes |  |  | and practices used to add to that body of knowledge. |  |  | understanding of natural systems and the processes used to refine, |
+|  |  |  |  |  |  | that add new knowledge. |  |  | Science knowledge is cumulative and many people, |  |  | elaborate, revise, and extend this knowledge. |
+|  |  |  |  |  |  | Science is a way of knowing |  |  | from many generations and nations, have contributed |  |  | Science is a unique way of knowing and there are other ways of |
+|  |  |  |  |  |  | that is used by many people. |  |  | to science knowledge. |  |  | knowing. |
+|  |  |  |  |  |  |  |  |  | Science is a way of knowing used by many people, not |  |  | Science distinguishes itself from other ways of knowing through use of |
+|  |  |  |  |  |  |  |  |  | just scientists. |  |  | empirical standards, logical arguments, and skeptical review. |
+|  |  |  |  |  |  |  |  |  |  |  |  | Science knowledge has a history that includes the refinement of, and |
+|  |  |  |  |  |  |  |  |  |  |  |  | changes to, theories, ideas, and beliefs over time. | | Scientific Knowledge |  |   | Science assumes natural |  |   | Science assumes consistent |  | 
+ | Science assumes that objects and events in natural |  | 
+ | Scientific knowledge is based on the assumption that natural laws |
+| Assumes an Order and |  |  | events happen today as |  |  | patterns in natural systems. |  |  | systems occur in consistent patterns that are |  |  | operate today as they did in the past and they will continue to do so in |
+| Consistency in Natural |  |  | they happened in the |  |  | Basic laws of nature are the |  |  | understandable through measurement and observation. |  |  | the future. |
+| Systems |  |  | past. |  |  | same everywhere in the |  |  | Science carefully considers and evaluates anomalies in |  |  | Science assumes the universe is a vast single system in which basic |
+|  |  |  | Many events are |  |  | universe. |  |  | data and evidence. |  |  | laws are consistent. | |  |  |  | repeated. |  |  |  |  |  |  |  |  |  | | Science is a Human |  |   | People have practiced |  |     | Men and women from all |  |   
+ | Men and women from different social, cultural, and |  |    
+ | Scientific knowledge is a result of human endeavor, imagination, and |
+| Endeavor |  |  | science for a long time. |  |  | cultures and backgrounds |  |  | ethnic backgrounds work as scientists and engineers. |  |  | creativity. |
+|  |  |  | Men and women of |  |  | choose careers as scientists |  |  | Scientists and engineers rely on human qualities such |  |  | Individuals and teams from many nations and cultures have |
+|  |  |  | diverse backgrounds are |  |  | and engineers. |  |  | as persistence, precision, reasoning, logic, imagination |  |  | contributed to science and to advances in engineering. |
+|  |  |  | scientists and engineers. |  |  | Most scientists and engineers |  |  | and creativity. |  |  | Scientists’ backgrounds, theoretical commitments, and fields of |
+|  |  |  |  |  |  | work in teams. |  |  | Scientists and engineers are guided by habits of mind |  |  | endeavor influence the nature of their findings. |
+|  |  |  |  |  |  | Science affects everyday life. |  |  | such as intellectual honesty, tolerance of ambiguity, |  |  | Technological advances have influenced the progress of science and |
+|  |  |  |  |  |  | Creativity and imagination are |  |  | skepticism and openness to new ideas. |  |  | science has influenced advances in technology. |
+|  |  |  |  |  |  | important to science. |  |  | Advances in technology influence the progress of |  |  | Science and engineering are influenced by society and society is |
+|  |  |  |  |  |  |  |  |  | science and science has influenced advances in |  |  | influenced by science and engineering. |
+|  |  |  |  |  |  |  |  |  | technology. |  |  |  |
+| Science Addresses |  |  | Scientists study the |  |  | Science findings are limited to |  |  
+ | Scientific knowledge is constrained by human capacity, |  |   
+ | Not all questions can be answered by science. |
+| Questions About the |  |  | natural and material |  |  | what can be answered with |  |  | technology, and materials. |  |  | Science and technology may raise ethical issues for which science, by |
+| Natural and Material |  |  | world. |  |  | empirical evidence. |  |  | Science limits its explanations to systems that lend |  |  | itself, does not provide answers and solutions. |
+| World. |  |  |  |  |  |  |  |  | themselves to observation and empirical evidence. |  |  | Science knowledge indicates what can happen in natural systems—not |
+|  |  |  |  |  |  |  |  |  | Science knowledge can describe consequences of |  |  | what should happen. The latter involves ethics, values, and human |
+|  |  |  |  |  |  |  |  |  | actions but is not responsible for society’s decisions. |  |  | decisions about the use of knowledge. |
+|  |  |  |  |  |  |  |  |  |  |  |  | Many decisions are not made using science alone, but rely on social |
+|  |  |  |  |  |  |  |  |  |  |  |  | and cultural contexts to resolve issues. |
+Nature of Science understandings most closely associated with Practices
+Nature of Science understandings most closely associated with Crosscutting Concepts |  |  |  |  |  |  |  |  |  |  |  |  |  |

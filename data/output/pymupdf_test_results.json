@@ -1,0 +1,14 @@
+{
+  "total": 132,
+  "successful": 131,
+  "failed": 1,
+  "failed_pdfs": [
+    {
+      "path": "data/input/pdfs/standards/course_guides/d_3_gplts_gui_1502_2_e.pdf",
+      "name": "d_3_gplts_gui_1502_2_e.pdf",
+      "framework": "course_guides",
+      "error": "Insufficient text extracted",
+      "text_length": 0
+    }
+  ]
+}

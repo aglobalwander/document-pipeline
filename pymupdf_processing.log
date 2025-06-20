@@ -1,0 +1,1728 @@
+2025-06-19 14:26:02,805 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-06-19 14:26:03,047 - DEBUG - Creating converter from 7 to 5
+2025-06-19 14:26:03,048 - DEBUG - Creating converter from 5 to 7
+2025-06-19 14:26:03,048 - DEBUG - Creating converter from 7 to 5
+2025-06-19 14:26:03,048 - DEBUG - Creating converter from 5 to 7
+2025-06-19 14:26:03,835 - DEBUG - matplotlib data path: /Users/scottwilliams/micromamba/envs/unified/lib/python3.11/site-packages/matplotlib/mpl-data
+2025-06-19 14:26:03,839 - DEBUG - CONFIGDIR=/Users/scottwilliams/.matplotlib
+2025-06-19 14:26:03,839 - DEBUG - interactive is False
+2025-06-19 14:26:03,840 - DEBUG - platform is darwin
+2025-06-19 14:26:03,872 - DEBUG - CACHEDIR=/Users/scottwilliams/.matplotlib
+2025-06-19 14:26:03,874 - DEBUG - Using fontManager instance from /Users/scottwilliams/.matplotlib/fontlist-v390.json
+2025-06-19 14:26:04,979 - INFO - Input is a directory: data/input/pdfs/standards
+2025-06-19 14:26:04,982 - INFO - Found 133 input(s) to process.
+2025-06-19 14:26:04,982 - INFO - Processing input: data/input/pdfs/standards/README.md
+2025-06-19 14:26:04,982 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:04,982 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:04,983 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:04,983 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:04,983 - INFO - Processing source path: data/input/pdfs/standards/README.md
+2025-06-19 14:26:04,983 - INFO - VideoLoader initialized.
+2025-06-19 14:26:04,983 - INFO - Detected text/document file: data/input/pdfs/standards/README.md. Using TextLoader.
+2025-06-19 14:26:04,983 - INFO - Selected loader: TextLoader
+2025-06-19 14:26:04,983 - INFO - Loading text file from: data/input/pdfs/standards/README.md
+2025-06-19 14:26:04,983 - INFO - Successfully loaded text file: README.md
+2025-06-19 14:26:04,983 - INFO - Running pipeline with 0 components
+2025-06-19 14:26:04,983 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:04,983 - INFO - Document keys: ['source_path', 'content', 'metadata', 'id']
+2025-06-19 14:26:04,983 - INFO - Content field length: 781
+2025-06-19 14:26:04,983 - INFO - Content field starts with: # Standards Framework PDFs
+
+This directory contains organized standards framework PDFs.
+
+## Structur...
+2025-06-19 14:26:04,983 - INFO - Saving content to data/output/text/standards_pymupdf_only/README_output.txt, content type: <class 'str'>, length: 781
+2025-06-19 14:26:04,983 - INFO - Content starts with: # Standards Framework PDFs
+
+This directory contains organized standards framework PDFs.
+
+## Structur...
+2025-06-19 14:26:04,983 - INFO - Saved output to data/output/text/standards_pymupdf_only/README_output.txt
+2025-06-19 14:26:04,983 - INFO - Processing input: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Presentational.pdf
+2025-06-19 14:26:04,983 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:04,983 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:04,983 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:04,983 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:04,983 - INFO - Processing source path: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Presentational.pdf
+2025-06-19 14:26:04,983 - INFO - VideoLoader initialized.
+2025-06-19 14:26:04,983 - INFO - Detected PDF file: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Presentational.pdf. Using PDFLoader.
+2025-06-19 14:26:04,983 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:04,983 - INFO - Loading PDF from data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Presentational.pdf
+2025-06-19 14:26:05,006 - INFO - Generating base64 images for 2 pages...
+2025-06-19 14:26:05,176 - INFO - Finished generating page images.
+2025-06-19 14:26:05,176 - INFO - Extracting text from 2 pages...
+2025-06-19 14:26:05,183 - INFO - Finished extracting text. Total length: 5257 chars.
+2025-06-19 14:26:05,184 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:05,184 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:05,184 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:05,184 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:05,843 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:05,844 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:05,844 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:05,850 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:05,850 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:05,850 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:05,850 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:05,850 - INFO - Processing PDF with strategy 'exclusive': ACTFLPerformance_Descriptors-Presentational.pdf
+2025-06-19 14:26:05,850 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:06,082 - INFO - PyMuPDF: Successfully extracted 5256 characters from ACTFLPerformance_Descriptors-Presentational.pdf
+2025-06-19 14:26:06,082 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:06,084 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:06,084 - INFO - Content field length: 10488
+2025-06-19 14:26:06,084 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ACTFL Performance Descriptors for Language Learners
+18
+Domain...
+2025-06-19 14:26:06,084 - INFO - Saving content to data/output/text/standards_pymupdf_only/ACTFLPerformance_Descriptors-Presentational_output.txt, content type: <class 'str'>, length: 10488
+2025-06-19 14:26:06,084 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ACTFL Performance Descriptors for Language Learners
+18
+Domain...
+2025-06-19 14:26:06,084 - INFO - Saved output to data/output/text/standards_pymupdf_only/ACTFLPerformance_Descriptors-Presentational_output.txt
+2025-06-19 14:26:06,084 - INFO - Processing input: data/input/pdfs/standards/actful/Intercultural-Can-Dos_Reflections-Scenarios.pdf
+2025-06-19 14:26:06,084 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:06,084 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:06,084 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:06,084 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:06,084 - INFO - Processing source path: data/input/pdfs/standards/actful/Intercultural-Can-Dos_Reflections-Scenarios.pdf
+2025-06-19 14:26:06,084 - INFO - VideoLoader initialized.
+2025-06-19 14:26:06,084 - INFO - Detected PDF file: data/input/pdfs/standards/actful/Intercultural-Can-Dos_Reflections-Scenarios.pdf. Using PDFLoader.
+2025-06-19 14:26:06,084 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:06,084 - INFO - Loading PDF from data/input/pdfs/standards/actful/Intercultural-Can-Dos_Reflections-Scenarios.pdf
+2025-06-19 14:26:06,087 - INFO - Generating base64 images for 9 pages...
+2025-06-19 14:26:06,559 - INFO - Finished generating page images.
+2025-06-19 14:26:06,559 - INFO - Extracting text from 9 pages...
+2025-06-19 14:26:06,582 - INFO - Finished extracting text. Total length: 22682 chars.
+2025-06-19 14:26:06,583 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:06,583 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:06,583 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:06,584 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:06,590 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:06,591 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:06,591 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:06,597 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:06,597 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:06,597 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:06,597 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:06,597 - INFO - Processing PDF with strategy 'exclusive': Intercultural-Can-Dos_Reflections-Scenarios.pdf
+2025-06-19 14:26:06,597 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:08,190 - INFO - PyMuPDF: Successfully extracted 22674 characters from Intercultural-Can-Dos_Reflections-Scenarios.pdf
+2025-06-19 14:26:08,190 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:08,192 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:08,192 - INFO - Content field length: 45251
+2025-06-19 14:26:08,192 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+    
+  Reflection 
+                           Intercultural C...
+2025-06-19 14:26:08,192 - INFO - Saving content to data/output/text/standards_pymupdf_only/Intercultural-Can-Dos_Reflections-Scenarios_output.txt, content type: <class 'str'>, length: 45251
+2025-06-19 14:26:08,192 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+    
+  Reflection 
+                           Intercultural C...
+2025-06-19 14:26:08,192 - INFO - Saved output to data/output/text/standards_pymupdf_only/Intercultural-Can-Dos_Reflections-Scenarios_output.txt
+2025-06-19 14:26:08,192 - INFO - Processing input: data/input/pdfs/standards/actful/Intercultural-Can-Do_Statements.pdf
+2025-06-19 14:26:08,192 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:08,192 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:08,192 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:08,192 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:08,192 - INFO - Processing source path: data/input/pdfs/standards/actful/Intercultural-Can-Do_Statements.pdf
+2025-06-19 14:26:08,192 - INFO - VideoLoader initialized.
+2025-06-19 14:26:08,192 - INFO - Detected PDF file: data/input/pdfs/standards/actful/Intercultural-Can-Do_Statements.pdf. Using PDFLoader.
+2025-06-19 14:26:08,192 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:08,192 - INFO - Loading PDF from data/input/pdfs/standards/actful/Intercultural-Can-Do_Statements.pdf
+2025-06-19 14:26:08,195 - INFO - Generating base64 images for 14 pages...
+2025-06-19 14:26:08,713 - INFO - Finished generating page images.
+2025-06-19 14:26:08,713 - INFO - Extracting text from 14 pages...
+2025-06-19 14:26:08,746 - INFO - Finished extracting text. Total length: 46461 chars.
+2025-06-19 14:26:08,746 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:08,747 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:08,747 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:08,747 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:08,753 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:08,753 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:08,753 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:08,759 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:08,759 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:08,759 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:08,759 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:08,759 - INFO - Processing PDF with strategy 'exclusive': Intercultural-Can-Do_Statements.pdf
+2025-06-19 14:26:08,759 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:12,002 - INFO - PyMuPDF: Successfully extracted 46448 characters from Intercultural-Can-Do_Statements.pdf
+2025-06-19 14:26:12,002 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:12,003 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:12,003 - INFO - Content field length: 96890
+2025-06-19 14:26:12,003 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+NOVICE
+PROFICIENCY BENCHMARK
+INTERMEDIATE
+PROFICIENCY BENCHMA...
+2025-06-19 14:26:12,003 - INFO - Saving content to data/output/text/standards_pymupdf_only/Intercultural-Can-Do_Statements_output.txt, content type: <class 'str'>, length: 96890
+2025-06-19 14:26:12,003 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+NOVICE
+PROFICIENCY BENCHMARK
+INTERMEDIATE
+PROFICIENCY BENCHMA...
+2025-06-19 14:26:12,003 - INFO - Saved output to data/output/text/standards_pymupdf_only/Intercultural-Can-Do_Statements_output.txt
+2025-06-19 14:26:12,003 - INFO - Processing input: data/input/pdfs/standards/actful/Novice-Can-Do_Statements.pdf
+2025-06-19 14:26:12,003 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:12,003 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:12,003 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:12,003 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:12,003 - INFO - Processing source path: data/input/pdfs/standards/actful/Novice-Can-Do_Statements.pdf
+2025-06-19 14:26:12,003 - INFO - VideoLoader initialized.
+2025-06-19 14:26:12,003 - INFO - Detected PDF file: data/input/pdfs/standards/actful/Novice-Can-Do_Statements.pdf. Using PDFLoader.
+2025-06-19 14:26:12,003 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:12,003 - INFO - Loading PDF from data/input/pdfs/standards/actful/Novice-Can-Do_Statements.pdf
+2025-06-19 14:26:12,010 - INFO - Generating base64 images for 16 pages...
+2025-06-19 14:26:12,536 - INFO - Finished generating page images.
+2025-06-19 14:26:12,536 - INFO - Extracting text from 16 pages...
+2025-06-19 14:26:12,568 - INFO - Finished extracting text. Total length: 49845 chars.
+2025-06-19 14:26:12,569 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:12,569 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:12,569 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:12,569 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:12,574 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:12,574 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:12,574 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:12,580 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:12,580 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:12,580 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:12,580 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:12,580 - INFO - Processing PDF with strategy 'exclusive': Novice-Can-Do_Statements.pdf
+2025-06-19 14:26:12,580 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:16,342 - INFO - PyMuPDF: Successfully extracted 49830 characters from Novice-Can-Do_Statements.pdf
+2025-06-19 14:26:16,342 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:16,343 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:16,343 - INFO - Content field length: 92957
+2025-06-19 14:26:16,343 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+NCSSFL-ACTFL CAN-DO STATEMENTS: PERFORMANCE INDICATORS FOR LA...
+2025-06-19 14:26:16,344 - INFO - Saving content to data/output/text/standards_pymupdf_only/Novice-Can-Do_Statements_output.txt, content type: <class 'str'>, length: 92957
+2025-06-19 14:26:16,344 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+NCSSFL-ACTFL CAN-DO STATEMENTS: PERFORMANCE INDICATORS FOR LA...
+2025-06-19 14:26:16,344 - INFO - Saved output to data/output/text/standards_pymupdf_only/Novice-Can-Do_Statements_output.txt
+2025-06-19 14:26:16,344 - INFO - Processing input: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors.pdf
+2025-06-19 14:26:16,344 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:16,344 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:16,344 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:16,344 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:16,344 - INFO - Processing source path: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors.pdf
+2025-06-19 14:26:16,344 - INFO - VideoLoader initialized.
+2025-06-19 14:26:16,344 - INFO - Detected PDF file: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors.pdf. Using PDFLoader.
+2025-06-19 14:26:16,344 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:16,344 - INFO - Loading PDF from data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors.pdf
+2025-06-19 14:26:16,347 - INFO - Generating base64 images for 22 pages...
+2025-06-19 14:26:17,275 - INFO - Finished generating page images.
+2025-06-19 14:26:17,275 - INFO - Extracting text from 22 pages...
+2025-06-19 14:26:17,309 - INFO - Finished extracting text. Total length: 49968 chars.
+2025-06-19 14:26:17,310 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:17,310 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:17,310 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:17,310 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:17,320 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:17,321 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:17,321 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:17,328 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:17,328 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:17,328 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:17,328 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:17,328 - INFO - Processing PDF with strategy 'exclusive': ACTFLPerformance_Descriptors.pdf
+2025-06-19 14:26:17,328 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:18,682 - INFO - PyMuPDF: Successfully extracted 49947 characters from ACTFLPerformance_Descriptors.pdf
+2025-06-19 14:26:18,682 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:18,682 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:18,682 - INFO - Content field length: 71884
+2025-06-19 14:26:18,682 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ACTFL 
+Performance  
+Descriptors for  
+Language Learners
+
+
+==...
+2025-06-19 14:26:18,682 - INFO - Saving content to data/output/text/standards_pymupdf_only/ACTFLPerformance_Descriptors_output.txt, content type: <class 'str'>, length: 71884
+2025-06-19 14:26:18,682 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ACTFL 
+Performance  
+Descriptors for  
+Language Learners
+
+
+==...
+2025-06-19 14:26:18,683 - INFO - Saved output to data/output/text/standards_pymupdf_only/ACTFLPerformance_Descriptors_output.txt
+2025-06-19 14:26:18,683 - INFO - Processing input: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Interpersonal.pdf
+2025-06-19 14:26:18,683 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:18,683 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:18,683 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:18,683 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:18,683 - INFO - Processing source path: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Interpersonal.pdf
+2025-06-19 14:26:18,683 - INFO - VideoLoader initialized.
+2025-06-19 14:26:18,683 - INFO - Detected PDF file: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Interpersonal.pdf. Using PDFLoader.
+2025-06-19 14:26:18,683 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:18,683 - INFO - Loading PDF from data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Interpersonal.pdf
+2025-06-19 14:26:18,687 - INFO - Generating base64 images for 2 pages...
+2025-06-19 14:26:18,764 - INFO - Finished generating page images.
+2025-06-19 14:26:18,764 - INFO - Extracting text from 2 pages...
+2025-06-19 14:26:18,768 - INFO - Finished extracting text. Total length: 5904 chars.
+2025-06-19 14:26:18,769 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:18,769 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:18,769 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:18,769 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:18,774 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:18,774 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:18,774 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:18,779 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:18,779 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:18,780 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:18,780 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:18,780 - INFO - Processing PDF with strategy 'exclusive': ACTFLPerformance_Descriptors-Interpersonal.pdf
+2025-06-19 14:26:18,780 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:18,980 - INFO - PyMuPDF: Successfully extracted 5903 characters from ACTFLPerformance_Descriptors-Interpersonal.pdf
+2025-06-19 14:26:18,980 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:18,981 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:18,981 - INFO - Content field length: 12530
+2025-06-19 14:26:18,981 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ACTFL Performance Descriptors for Language Learners
+14
+Domain...
+2025-06-19 14:26:18,981 - INFO - Saving content to data/output/text/standards_pymupdf_only/ACTFLPerformance_Descriptors-Interpersonal_output.txt, content type: <class 'str'>, length: 12530
+2025-06-19 14:26:18,981 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ACTFL Performance Descriptors for Language Learners
+14
+Domain...
+2025-06-19 14:26:18,981 - INFO - Saved output to data/output/text/standards_pymupdf_only/ACTFLPerformance_Descriptors-Interpersonal_output.txt
+2025-06-19 14:26:18,981 - INFO - Processing input: data/input/pdfs/standards/actful/Can-Do-Introduction-2020.pdf
+2025-06-19 14:26:18,981 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:18,981 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:18,981 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:18,981 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:18,981 - INFO - Processing source path: data/input/pdfs/standards/actful/Can-Do-Introduction-2020.pdf
+2025-06-19 14:26:18,981 - INFO - VideoLoader initialized.
+2025-06-19 14:26:18,981 - INFO - Detected PDF file: data/input/pdfs/standards/actful/Can-Do-Introduction-2020.pdf. Using PDFLoader.
+2025-06-19 14:26:18,982 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:18,982 - INFO - Loading PDF from data/input/pdfs/standards/actful/Can-Do-Introduction-2020.pdf
+2025-06-19 14:26:18,984 - INFO - Generating base64 images for 11 pages...
+2025-06-19 14:26:19,363 - INFO - Finished generating page images.
+2025-06-19 14:26:19,363 - INFO - Extracting text from 11 pages...
+2025-06-19 14:26:19,380 - INFO - Finished extracting text. Total length: 20612 chars.
+2025-06-19 14:26:19,381 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:19,381 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:19,381 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:19,381 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:19,387 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:19,387 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:19,387 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:19,393 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:19,393 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:19,393 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:19,393 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:19,393 - INFO - Processing PDF with strategy 'exclusive': Can-Do-Introduction-2020.pdf
+2025-06-19 14:26:19,393 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:19,762 - INFO - PyMuPDF: Successfully extracted 20602 characters from Can-Do-Introduction-2020.pdf
+2025-06-19 14:26:19,762 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:19,763 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:19,763 - INFO - Content field length: 24650
+2025-06-19 14:26:19,763 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+WHAT ARE THE NCSSFL-ACTFL CAN-DO STATEMENTS? 
+The 2017 NCSSFL...
+2025-06-19 14:26:19,763 - INFO - Saving content to data/output/text/standards_pymupdf_only/Can-Do-Introduction-2020_output.txt, content type: <class 'str'>, length: 24650
+2025-06-19 14:26:19,763 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+WHAT ARE THE NCSSFL-ACTFL CAN-DO STATEMENTS? 
+The 2017 NCSSFL...
+2025-06-19 14:26:19,763 - INFO - Saved output to data/output/text/standards_pymupdf_only/Can-Do-Introduction-2020_output.txt
+2025-06-19 14:26:19,763 - INFO - Processing input: data/input/pdfs/standards/actful/Can-Do_Benchmarks_Indicators.pdf
+2025-06-19 14:26:19,763 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:19,763 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:19,763 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:19,763 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:19,763 - INFO - Processing source path: data/input/pdfs/standards/actful/Can-Do_Benchmarks_Indicators.pdf
+2025-06-19 14:26:19,763 - INFO - VideoLoader initialized.
+2025-06-19 14:26:19,763 - INFO - Detected PDF file: data/input/pdfs/standards/actful/Can-Do_Benchmarks_Indicators.pdf. Using PDFLoader.
+2025-06-19 14:26:19,763 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:19,763 - INFO - Loading PDF from data/input/pdfs/standards/actful/Can-Do_Benchmarks_Indicators.pdf
+2025-06-19 14:26:19,765 - INFO - Generating base64 images for 16 pages...
+2025-06-19 14:26:20,303 - INFO - Finished generating page images.
+2025-06-19 14:26:20,303 - INFO - Extracting text from 16 pages...
+2025-06-19 14:26:20,329 - INFO - Finished extracting text. Total length: 38872 chars.
+2025-06-19 14:26:20,330 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:20,330 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:20,330 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:20,330 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:20,335 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:20,335 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:20,335 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:20,341 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:20,341 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:20,341 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:20,341 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:20,341 - INFO - Processing PDF with strategy 'exclusive': Can-Do_Benchmarks_Indicators.pdf
+2025-06-19 14:26:20,341 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:23,248 - INFO - PyMuPDF: Successfully extracted 38857 characters from Can-Do_Benchmarks_Indicators.pdf
+2025-06-19 14:26:23,248 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:23,249 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:23,249 - INFO - Content field length: 72205
+2025-06-19 14:26:23,249 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+NCSSFL-ACTFL CAN-DO STATEMENTS: PERFORMANCE INDICATORS FOR LA...
+2025-06-19 14:26:23,249 - INFO - Saving content to data/output/text/standards_pymupdf_only/Can-Do_Benchmarks_Indicators_output.txt, content type: <class 'str'>, length: 72205
+2025-06-19 14:26:23,249 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+NCSSFL-ACTFL CAN-DO STATEMENTS: PERFORMANCE INDICATORS FOR LA...
+2025-06-19 14:26:23,249 - INFO - Saved output to data/output/text/standards_pymupdf_only/Can-Do_Benchmarks_Indicators_output.txt
+2025-06-19 14:26:23,249 - INFO - Processing input: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Interpretive.pdf
+2025-06-19 14:26:23,249 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:23,249 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:23,249 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:23,249 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:23,249 - INFO - Processing source path: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Interpretive.pdf
+2025-06-19 14:26:23,249 - INFO - VideoLoader initialized.
+2025-06-19 14:26:23,249 - INFO - Detected PDF file: data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Interpretive.pdf. Using PDFLoader.
+2025-06-19 14:26:23,249 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:23,249 - INFO - Loading PDF from data/input/pdfs/standards/actful/ACTFLPerformance_Descriptors-Interpretive.pdf
+2025-06-19 14:26:23,252 - INFO - Generating base64 images for 2 pages...
+2025-06-19 14:26:23,336 - INFO - Finished generating page images.
+2025-06-19 14:26:23,336 - INFO - Extracting text from 2 pages...
+2025-06-19 14:26:23,340 - INFO - Finished extracting text. Total length: 5863 chars.
+2025-06-19 14:26:23,340 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:23,340 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:23,341 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:23,341 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:23,347 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:23,347 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:23,347 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:23,352 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:23,352 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:23,352 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:23,352 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:23,352 - INFO - Processing PDF with strategy 'exclusive': ACTFLPerformance_Descriptors-Interpretive.pdf
+2025-06-19 14:26:23,352 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:23,548 - INFO - PyMuPDF: Successfully extracted 5862 characters from ACTFLPerformance_Descriptors-Interpretive.pdf
+2025-06-19 14:26:23,548 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:23,549 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:23,549 - INFO - Content field length: 11696
+2025-06-19 14:26:23,549 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ACTFL Performance Descriptors for Language Learners
+16
+Domain...
+2025-06-19 14:26:23,549 - INFO - Saving content to data/output/text/standards_pymupdf_only/ACTFLPerformance_Descriptors-Interpretive_output.txt, content type: <class 'str'>, length: 11696
+2025-06-19 14:26:23,549 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ACTFL Performance Descriptors for Language Learners
+16
+Domain...
+2025-06-19 14:26:23,550 - INFO - Saved output to data/output/text/standards_pymupdf_only/ACTFLPerformance_Descriptors-Interpretive_output.txt
+2025-06-19 14:26:23,550 - INFO - Processing input: data/input/pdfs/standards/actful/Advanced-Can-Do_Statements.pdf
+2025-06-19 14:26:23,550 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:23,550 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:23,550 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:23,550 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:23,550 - INFO - Processing source path: data/input/pdfs/standards/actful/Advanced-Can-Do_Statements.pdf
+2025-06-19 14:26:23,550 - INFO - VideoLoader initialized.
+2025-06-19 14:26:23,550 - INFO - Detected PDF file: data/input/pdfs/standards/actful/Advanced-Can-Do_Statements.pdf. Using PDFLoader.
+2025-06-19 14:26:23,550 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:23,550 - INFO - Loading PDF from data/input/pdfs/standards/actful/Advanced-Can-Do_Statements.pdf
+2025-06-19 14:26:23,552 - INFO - Generating base64 images for 16 pages...
+2025-06-19 14:26:24,159 - INFO - Finished generating page images.
+2025-06-19 14:26:24,159 - INFO - Extracting text from 16 pages...
+2025-06-19 14:26:24,198 - INFO - Finished extracting text. Total length: 60407 chars.
+2025-06-19 14:26:24,198 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:24,198 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:24,199 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:24,199 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:24,205 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:24,205 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:24,205 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:24,210 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:24,210 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:24,210 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:24,210 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:24,210 - INFO - Processing PDF with strategy 'exclusive': Advanced-Can-Do_Statements.pdf
+2025-06-19 14:26:24,210 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:28,831 - INFO - PyMuPDF: Successfully extracted 60392 characters from Advanced-Can-Do_Statements.pdf
+2025-06-19 14:26:28,831 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:28,832 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:28,832 - INFO - Content field length: 112762
+2025-06-19 14:26:28,832 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ADVANCED
+PROFICIENCY BENCHMARK
+SUPERIOR
+PROFICIENCY BENCHMARK...
+2025-06-19 14:26:28,832 - INFO - Saving content to data/output/text/standards_pymupdf_only/Advanced-Can-Do_Statements_output.txt, content type: <class 'str'>, length: 112762
+2025-06-19 14:26:28,832 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ADVANCED
+PROFICIENCY BENCHMARK
+SUPERIOR
+PROFICIENCY BENCHMARK...
+2025-06-19 14:26:28,832 - INFO - Saved output to data/output/text/standards_pymupdf_only/Advanced-Can-Do_Statements_output.txt
+2025-06-19 14:26:28,832 - INFO - Processing input: data/input/pdfs/standards/actful/Superior-Distinguished-Can-Do_Statements.pdf
+2025-06-19 14:26:28,833 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:28,833 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:28,833 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:28,833 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:28,833 - INFO - Processing source path: data/input/pdfs/standards/actful/Superior-Distinguished-Can-Do_Statements.pdf
+2025-06-19 14:26:28,833 - INFO - VideoLoader initialized.
+2025-06-19 14:26:28,833 - INFO - Detected PDF file: data/input/pdfs/standards/actful/Superior-Distinguished-Can-Do_Statements.pdf. Using PDFLoader.
+2025-06-19 14:26:28,833 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:28,833 - INFO - Loading PDF from data/input/pdfs/standards/actful/Superior-Distinguished-Can-Do_Statements.pdf
+2025-06-19 14:26:28,835 - INFO - Generating base64 images for 18 pages...
+2025-06-19 14:26:29,422 - INFO - Finished generating page images.
+2025-06-19 14:26:29,422 - INFO - Extracting text from 18 pages...
+2025-06-19 14:26:29,463 - INFO - Finished extracting text. Total length: 56688 chars.
+2025-06-19 14:26:29,464 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:29,464 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:29,464 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:29,464 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:29,470 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:29,470 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:29,470 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:29,476 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:29,476 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:29,476 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:29,476 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:29,476 - INFO - Processing PDF with strategy 'exclusive': Superior-Distinguished-Can-Do_Statements.pdf
+2025-06-19 14:26:29,476 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:33,427 - INFO - PyMuPDF: Successfully extracted 56671 characters from Superior-Distinguished-Can-Do_Statements.pdf
+2025-06-19 14:26:33,427 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:33,428 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:33,428 - INFO - Content field length: 111411
+2025-06-19 14:26:33,428 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ADVANCED
+PROFICIENCY BENCHMARK
+SUPERIOR
+PROFICIENCY BENCHMARK...
+2025-06-19 14:26:33,428 - INFO - Saving content to data/output/text/standards_pymupdf_only/Superior-Distinguished-Can-Do_Statements_output.txt, content type: <class 'str'>, length: 111411
+2025-06-19 14:26:33,428 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ADVANCED
+PROFICIENCY BENCHMARK
+SUPERIOR
+PROFICIENCY BENCHMARK...
+2025-06-19 14:26:33,429 - INFO - Saved output to data/output/text/standards_pymupdf_only/Superior-Distinguished-Can-Do_Statements_output.txt
+2025-06-19 14:26:33,429 - INFO - Processing input: data/input/pdfs/standards/actful/Intermediate-Can-Do-Statements.pdf
+2025-06-19 14:26:33,429 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:33,429 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:33,429 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:33,429 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:33,429 - INFO - Processing source path: data/input/pdfs/standards/actful/Intermediate-Can-Do-Statements.pdf
+2025-06-19 14:26:33,429 - INFO - VideoLoader initialized.
+2025-06-19 14:26:33,429 - INFO - Detected PDF file: data/input/pdfs/standards/actful/Intermediate-Can-Do-Statements.pdf. Using PDFLoader.
+2025-06-19 14:26:33,429 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:33,429 - INFO - Loading PDF from data/input/pdfs/standards/actful/Intermediate-Can-Do-Statements.pdf
+2025-06-19 14:26:33,431 - INFO - Generating base64 images for 16 pages...
+2025-06-19 14:26:33,974 - INFO - Finished generating page images.
+2025-06-19 14:26:33,974 - INFO - Extracting text from 16 pages...
+2025-06-19 14:26:34,011 - INFO - Finished extracting text. Total length: 57301 chars.
+2025-06-19 14:26:34,012 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:34,012 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:34,012 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:34,012 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:34,018 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:34,018 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:34,018 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:34,024 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:34,024 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:34,024 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:34,024 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:34,024 - INFO - Processing PDF with strategy 'exclusive': Intermediate-Can-Do-Statements.pdf
+2025-06-19 14:26:34,024 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:38,575 - INFO - PyMuPDF: Successfully extracted 57286 characters from Intermediate-Can-Do-Statements.pdf
+2025-06-19 14:26:38,576 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:38,577 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:38,577 - INFO - Content field length: 105990
+2025-06-19 14:26:38,577 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+NOVICE
+PROFICIENCY BENCHMARK
+INTERMEDIATE
+PROFICIENCY BENCHMA...
+2025-06-19 14:26:38,577 - INFO - Saving content to data/output/text/standards_pymupdf_only/Intermediate-Can-Do-Statements_output.txt, content type: <class 'str'>, length: 105990
+2025-06-19 14:26:38,577 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+NOVICE
+PROFICIENCY BENCHMARK
+INTERMEDIATE
+PROFICIENCY BENCHMA...
+2025-06-19 14:26:38,577 - INFO - Saved output to data/output/text/standards_pymupdf_only/Intermediate-Can-Do-Statements_output.txt
+2025-06-19 14:26:38,577 - INFO - Processing input: data/input/pdfs/standards/actful/World-ReadinessStandardsforLearningLanguages.pdf
+2025-06-19 14:26:38,577 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:38,577 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:38,577 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:38,577 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:38,577 - INFO - Processing source path: data/input/pdfs/standards/actful/World-ReadinessStandardsforLearningLanguages.pdf
+2025-06-19 14:26:38,577 - INFO - VideoLoader initialized.
+2025-06-19 14:26:38,577 - INFO - Detected PDF file: data/input/pdfs/standards/actful/World-ReadinessStandardsforLearningLanguages.pdf. Using PDFLoader.
+2025-06-19 14:26:38,577 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:38,578 - INFO - Loading PDF from data/input/pdfs/standards/actful/World-ReadinessStandardsforLearningLanguages.pdf
+2025-06-19 14:26:38,579 - INFO - Generating base64 images for 2 pages...
+2025-06-19 14:26:38,654 - INFO - Finished generating page images.
+2025-06-19 14:26:38,654 - INFO - Extracting text from 2 pages...
+2025-06-19 14:26:38,658 - INFO - Finished extracting text. Total length: 5848 chars.
+2025-06-19 14:26:38,659 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:38,659 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:38,659 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:38,659 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:38,665 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:38,665 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:38,665 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:38,672 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:38,672 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:38,672 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:38,672 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:38,672 - INFO - Processing PDF with strategy 'exclusive': World-ReadinessStandardsforLearningLanguages.pdf
+2025-06-19 14:26:38,672 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:39,252 - INFO - PyMuPDF: Successfully extracted 5847 characters from World-ReadinessStandardsforLearningLanguages.pdf
+2025-06-19 14:26:39,253 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:39,253 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:39,253 - INFO - Content field length: 8622
+2025-06-19 14:26:39,253 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+GOAL AREAS
+STANDARDS
+COMMUNICATION
+Communicate effectively in...
+2025-06-19 14:26:39,254 - INFO - Saving content to data/output/text/standards_pymupdf_only/World-ReadinessStandardsforLearningLanguages_output.txt, content type: <class 'str'>, length: 8622
+2025-06-19 14:26:39,254 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+GOAL AREAS
+STANDARDS
+COMMUNICATION
+Communicate effectively in...
+2025-06-19 14:26:39,254 - INFO - Saved output to data/output/text/standards_pymupdf_only/World-ReadinessStandardsforLearningLanguages_output.txt
+2025-06-19 14:26:39,254 - INFO - Processing input: data/input/pdfs/standards/p.e_/Grade-Level-Outcomes-for-K-12-Physical-Education.pdf
+2025-06-19 14:26:39,254 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:39,254 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:39,254 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:39,254 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:39,254 - INFO - Processing source path: data/input/pdfs/standards/p.e_/Grade-Level-Outcomes-for-K-12-Physical-Education.pdf
+2025-06-19 14:26:39,254 - INFO - VideoLoader initialized.
+2025-06-19 14:26:39,254 - INFO - Detected PDF file: data/input/pdfs/standards/p.e_/Grade-Level-Outcomes-for-K-12-Physical-Education.pdf. Using PDFLoader.
+2025-06-19 14:26:39,254 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:39,254 - INFO - Loading PDF from data/input/pdfs/standards/p.e_/Grade-Level-Outcomes-for-K-12-Physical-Education.pdf
+2025-06-19 14:26:39,257 - INFO - Generating base64 images for 45 pages...
+2025-06-19 14:26:40,644 - INFO - Finished generating page images.
+2025-06-19 14:26:40,644 - INFO - Extracting text from 45 pages...
+2025-06-19 14:26:40,711 - INFO - Finished extracting text. Total length: 96394 chars.
+2025-06-19 14:26:40,712 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:40,712 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:40,712 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:40,712 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:40,724 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:40,725 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:40,725 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:40,731 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:40,731 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:40,731 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:40,731 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:40,731 - INFO - Processing PDF with strategy 'exclusive': Grade-Level-Outcomes-for-K-12-Physical-Education.pdf
+2025-06-19 14:26:40,731 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:43,718 - INFO - PyMuPDF: Successfully extracted 96300 characters from Grade-Level-Outcomes-for-K-12-Physical-Education.pdf
+2025-06-19 14:26:43,718 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:43,719 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:43,719 - INFO - Content field length: 174951
+2025-06-19 14:26:43,719 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 2 ===
+Grade-Level Outcomes for K-12 Physical Education
+Created by:
+...
+2025-06-19 14:26:43,719 - INFO - Saving content to data/output/text/standards_pymupdf_only/Grade-Level-Outcomes-for-K-12-Physical-Education_output.txt, content type: <class 'str'>, length: 174951
+2025-06-19 14:26:43,719 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 2 ===
+Grade-Level Outcomes for K-12 Physical Education
+Created by:
+...
+2025-06-19 14:26:43,719 - INFO - Saved output to data/output/text/standards_pymupdf_only/Grade-Level-Outcomes-for-K-12-Physical-Education_output.txt
+2025-06-19 14:26:43,719 - INFO - Processing input: data/input/pdfs/standards/p.e_/SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2.pdf
+2025-06-19 14:26:43,720 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:43,720 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:43,720 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:43,720 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:43,720 - INFO - Processing source path: data/input/pdfs/standards/p.e_/SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2.pdf
+2025-06-19 14:26:43,720 - INFO - VideoLoader initialized.
+2025-06-19 14:26:43,720 - INFO - Detected PDF file: data/input/pdfs/standards/p.e_/SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2.pdf. Using PDFLoader.
+2025-06-19 14:26:43,720 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:43,720 - INFO - Loading PDF from data/input/pdfs/standards/p.e_/SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2.pdf
+2025-06-19 14:26:43,722 - INFO - Generating base64 images for 9 pages...
+2025-06-19 14:26:43,948 - INFO - Finished generating page images.
+2025-06-19 14:26:43,948 - INFO - Extracting text from 9 pages...
+2025-06-19 14:26:43,963 - INFO - Finished extracting text. Total length: 9790 chars.
+2025-06-19 14:26:43,964 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:43,964 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:43,964 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:43,964 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:43,969 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:43,970 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:43,970 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:43,975 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:43,975 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:43,975 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:43,975 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:43,975 - INFO - Processing PDF with strategy 'exclusive': SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2.pdf
+2025-06-19 14:26:43,975 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:44,311 - INFO - PyMuPDF: Successfully extracted 9782 characters from SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2.pdf
+2025-06-19 14:26:44,311 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:44,312 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:44,312 - INFO - Content field length: 17704
+2025-06-19 14:26:44,312 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+National Physical Edu...
+2025-06-19 14:26:44,312 - INFO - Saving content to data/output/text/standards_pymupdf_only/SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2_output.txt, content type: <class 'str'>, length: 17704
+2025-06-19 14:26:44,312 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+National Physical Edu...
+2025-06-19 14:26:44,312 - INFO - Saved output to data/output/text/standards_pymupdf_only/SHAPE_America_National _PE_Standards_Public_Review_and_Comment_Round_2_output.txt
+2025-06-19 14:26:44,312 - INFO - Processing input: data/input/pdfs/standards/p.e_/shape_hs.pdf
+2025-06-19 14:26:44,313 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:44,313 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:44,313 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:44,313 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:44,313 - INFO - Processing source path: data/input/pdfs/standards/p.e_/shape_hs.pdf
+2025-06-19 14:26:44,313 - INFO - VideoLoader initialized.
+2025-06-19 14:26:44,313 - INFO - Detected PDF file: data/input/pdfs/standards/p.e_/shape_hs.pdf. Using PDFLoader.
+2025-06-19 14:26:44,313 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:44,313 - INFO - Loading PDF from data/input/pdfs/standards/p.e_/shape_hs.pdf
+2025-06-19 14:26:44,315 - INFO - Generating base64 images for 6 pages...
+2025-06-19 14:26:44,506 - INFO - Finished generating page images.
+2025-06-19 14:26:44,506 - INFO - Extracting text from 6 pages...
+2025-06-19 14:26:44,515 - INFO - Finished extracting text. Total length: 11644 chars.
+2025-06-19 14:26:44,517 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:44,517 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:44,517 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:44,517 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:44,525 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:44,525 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:44,525 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:44,532 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:44,532 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:44,532 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:44,532 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:44,532 - INFO - Processing PDF with strategy 'exclusive': shape_hs.pdf
+2025-06-19 14:26:44,532 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:44,972 - INFO - PyMuPDF: Successfully extracted 11639 characters from shape_hs.pdf
+2025-06-19 14:26:44,972 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:44,973 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:44,973 - INFO - Content field length: 21737
+2025-06-19 14:26:44,973 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+© 2013, SHAPE America. All rights reserved. For individual us...
+2025-06-19 14:26:44,973 - INFO - Saving content to data/output/text/standards_pymupdf_only/shape_hs_output.txt, content type: <class 'str'>, length: 21737
+2025-06-19 14:26:44,973 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+© 2013, SHAPE America. All rights reserved. For individual us...
+2025-06-19 14:26:44,974 - INFO - Saved output to data/output/text/standards_pymupdf_only/shape_hs_output.txt
+2025-06-19 14:26:44,974 - INFO - Processing input: data/input/pdfs/standards/ncas/Media Arts at a Glance.pdf
+2025-06-19 14:26:44,974 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:44,974 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:44,974 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:44,974 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:44,974 - INFO - Processing source path: data/input/pdfs/standards/ncas/Media Arts at a Glance.pdf
+2025-06-19 14:26:44,974 - INFO - VideoLoader initialized.
+2025-06-19 14:26:44,974 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Media Arts at a Glance.pdf. Using PDFLoader.
+2025-06-19 14:26:44,974 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:44,974 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Media Arts at a Glance.pdf
+2025-06-19 14:26:44,976 - INFO - Generating base64 images for 9 pages...
+2025-06-19 14:26:45,572 - INFO - Finished generating page images.
+2025-06-19 14:26:45,572 - INFO - Extracting text from 9 pages...
+2025-06-19 14:26:45,606 - INFO - Finished extracting text. Total length: 41611 chars.
+2025-06-19 14:26:45,607 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:45,608 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:45,608 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:45,608 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:45,621 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:45,622 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:45,626 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:45,633 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:45,633 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:45,633 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:45,633 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:45,633 - INFO - Processing PDF with strategy 'exclusive': Media Arts at a Glance.pdf
+2025-06-19 14:26:45,633 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:47,032 - INFO - PyMuPDF: Successfully extracted 41603 characters from Media Arts at a Glance.pdf
+2025-06-19 14:26:47,032 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:47,035 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:47,035 - INFO - Content field length: 84924
+2025-06-19 14:26:47,035 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:47,035 - INFO - Saving content to data/output/text/standards_pymupdf_only/Media Arts at a Glance_output.txt, content type: <class 'str'>, length: 84924
+2025-06-19 14:26:47,035 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:47,035 - INFO - Saved output to data/output/text/standards_pymupdf_only/Media Arts at a Glance_output.txt
+2025-06-19 14:26:47,035 - INFO - Processing input: data/input/pdfs/standards/ncas/Music at a Glance.pdf
+2025-06-19 14:26:47,036 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:47,036 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:47,036 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:47,036 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:47,036 - INFO - Processing source path: data/input/pdfs/standards/ncas/Music at a Glance.pdf
+2025-06-19 14:26:47,036 - INFO - VideoLoader initialized.
+2025-06-19 14:26:47,037 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Music at a Glance.pdf. Using PDFLoader.
+2025-06-19 14:26:47,037 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:47,037 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Music at a Glance.pdf
+2025-06-19 14:26:47,044 - INFO - Generating base64 images for 11 pages...
+2025-06-19 14:26:47,746 - INFO - Finished generating page images.
+2025-06-19 14:26:47,746 - INFO - Extracting text from 11 pages...
+2025-06-19 14:26:47,790 - INFO - Finished extracting text. Total length: 52008 chars.
+2025-06-19 14:26:47,791 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:47,792 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:47,792 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:47,792 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:47,797 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:47,797 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:47,798 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:47,803 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:47,803 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:47,803 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:47,803 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:47,803 - INFO - Processing PDF with strategy 'exclusive': Music at a Glance.pdf
+2025-06-19 14:26:47,803 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:49,536 - INFO - PyMuPDF: Successfully extracted 51998 characters from Music at a Glance.pdf
+2025-06-19 14:26:49,537 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:49,538 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:49,538 - INFO - Content field length: 107041
+2025-06-19 14:26:49,538 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:49,538 - INFO - Saving content to data/output/text/standards_pymupdf_only/Music at a Glance_output.txt, content type: <class 'str'>, length: 107041
+2025-06-19 14:26:49,538 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:49,538 - INFO - Saved output to data/output/text/standards_pymupdf_only/Music at a Glance_output.txt
+2025-06-19 14:26:49,538 - INFO - Processing input: data/input/pdfs/standards/ncas/Dance at a Glance.pdf
+2025-06-19 14:26:49,538 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:49,538 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:49,538 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:49,538 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:49,538 - INFO - Processing source path: data/input/pdfs/standards/ncas/Dance at a Glance.pdf
+2025-06-19 14:26:49,538 - INFO - VideoLoader initialized.
+2025-06-19 14:26:49,539 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Dance at a Glance.pdf. Using PDFLoader.
+2025-06-19 14:26:49,539 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:49,539 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Dance at a Glance.pdf
+2025-06-19 14:26:49,541 - INFO - Generating base64 images for 11 pages...
+2025-06-19 14:26:50,253 - INFO - Finished generating page images.
+2025-06-19 14:26:50,253 - INFO - Extracting text from 11 pages...
+2025-06-19 14:26:50,299 - INFO - Finished extracting text. Total length: 59160 chars.
+2025-06-19 14:26:50,300 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:50,300 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:50,300 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:50,300 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:50,307 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:50,307 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:50,307 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:50,313 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:50,313 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:50,313 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:50,313 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:50,313 - INFO - Processing PDF with strategy 'exclusive': Dance at a Glance.pdf
+2025-06-19 14:26:50,313 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:52,640 - INFO - PyMuPDF: Successfully extracted 59150 characters from Dance at a Glance.pdf
+2025-06-19 14:26:52,640 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:52,641 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:52,641 - INFO - Content field length: 121160
+2025-06-19 14:26:52,641 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:52,641 - INFO - Saving content to data/output/text/standards_pymupdf_only/Dance at a Glance_output.txt, content type: <class 'str'>, length: 121160
+2025-06-19 14:26:52,641 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:52,642 - INFO - Saved output to data/output/text/standards_pymupdf_only/Dance at a Glance_output.txt
+2025-06-19 14:26:52,642 - INFO - Processing input: data/input/pdfs/standards/ncas/Theatre at a Glance.pdf
+2025-06-19 14:26:52,642 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:52,642 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:52,642 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:52,642 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:52,642 - INFO - Processing source path: data/input/pdfs/standards/ncas/Theatre at a Glance.pdf
+2025-06-19 14:26:52,642 - INFO - VideoLoader initialized.
+2025-06-19 14:26:52,642 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Theatre at a Glance.pdf. Using PDFLoader.
+2025-06-19 14:26:52,642 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:52,642 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Theatre at a Glance.pdf
+2025-06-19 14:26:52,644 - INFO - Generating base64 images for 10 pages...
+2025-06-19 14:26:53,282 - INFO - Finished generating page images.
+2025-06-19 14:26:53,282 - INFO - Extracting text from 10 pages...
+2025-06-19 14:26:53,320 - INFO - Finished extracting text. Total length: 47288 chars.
+2025-06-19 14:26:53,321 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:53,321 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:53,321 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:53,321 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:53,328 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:53,328 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:53,328 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:53,334 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:53,334 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:53,334 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:53,334 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:53,334 - INFO - Processing PDF with strategy 'exclusive': Theatre at a Glance.pdf
+2025-06-19 14:26:53,334 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:54,832 - INFO - PyMuPDF: Successfully extracted 47279 characters from Theatre at a Glance.pdf
+2025-06-19 14:26:54,832 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:54,833 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:54,833 - INFO - Content field length: 95824
+2025-06-19 14:26:54,833 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:54,833 - INFO - Saving content to data/output/text/standards_pymupdf_only/Theatre at a Glance_output.txt, content type: <class 'str'>, length: 95824
+2025-06-19 14:26:54,833 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:54,834 - INFO - Saved output to data/output/text/standards_pymupdf_only/Theatre at a Glance_output.txt
+2025-06-19 14:26:54,834 - INFO - Processing input: data/input/pdfs/standards/ncas/Music at a Glance rev 12-1-16.pdf
+2025-06-19 14:26:54,834 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:54,834 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:54,834 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:54,834 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:54,834 - INFO - Processing source path: data/input/pdfs/standards/ncas/Music at a Glance rev 12-1-16.pdf
+2025-06-19 14:26:54,834 - INFO - VideoLoader initialized.
+2025-06-19 14:26:54,834 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Music at a Glance rev 12-1-16.pdf. Using PDFLoader.
+2025-06-19 14:26:54,834 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:54,834 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Music at a Glance rev 12-1-16.pdf
+2025-06-19 14:26:54,836 - INFO - Generating base64 images for 11 pages...
+2025-06-19 14:26:55,521 - INFO - Finished generating page images.
+2025-06-19 14:26:55,521 - INFO - Extracting text from 11 pages...
+2025-06-19 14:26:55,564 - INFO - Finished extracting text. Total length: 51828 chars.
+2025-06-19 14:26:55,566 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:55,566 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:55,566 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:55,566 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:55,571 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:55,571 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:55,571 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:55,577 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:55,577 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:55,577 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:55,577 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:55,577 - INFO - Processing PDF with strategy 'exclusive': Music at a Glance rev 12-1-16.pdf
+2025-06-19 14:26:55,577 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:57,254 - INFO - PyMuPDF: Successfully extracted 51818 characters from Music at a Glance rev 12-1-16.pdf
+2025-06-19 14:26:57,254 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:57,255 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:57,255 - INFO - Content field length: 106859
+2025-06-19 14:26:57,255 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:57,255 - INFO - Saving content to data/output/text/standards_pymupdf_only/Music at a Glance rev 12-1-16_output.txt, content type: <class 'str'>, length: 106859
+2025-06-19 14:26:57,255 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:57,256 - INFO - Saved output to data/output/text/standards_pymupdf_only/Music at a Glance rev 12-1-16_output.txt
+2025-06-19 14:26:57,256 - INFO - Processing input: data/input/pdfs/standards/ncas/Music Tech Strand at a Glance.pdf
+2025-06-19 14:26:57,256 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:57,256 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:57,256 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:57,256 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:57,256 - INFO - Processing source path: data/input/pdfs/standards/ncas/Music Tech Strand at a Glance.pdf
+2025-06-19 14:26:57,256 - INFO - VideoLoader initialized.
+2025-06-19 14:26:57,256 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Music Tech Strand at a Glance.pdf. Using PDFLoader.
+2025-06-19 14:26:57,256 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:57,256 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Music Tech Strand at a Glance.pdf
+2025-06-19 14:26:57,258 - INFO - Generating base64 images for 4 pages...
+2025-06-19 14:26:57,501 - INFO - Finished generating page images.
+2025-06-19 14:26:57,501 - INFO - Extracting text from 4 pages...
+2025-06-19 14:26:57,514 - INFO - Finished extracting text. Total length: 15580 chars.
+2025-06-19 14:26:57,515 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:57,515 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:57,515 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:57,515 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:57,520 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:57,520 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:57,520 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:57,526 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:57,526 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:57,526 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:57,526 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:57,526 - INFO - Processing PDF with strategy 'exclusive': Music Tech Strand at a Glance.pdf
+2025-06-19 14:26:57,526 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:58,030 - INFO - PyMuPDF: Successfully extracted 15577 characters from Music Tech Strand at a Glance.pdf
+2025-06-19 14:26:58,031 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:58,031 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:58,031 - INFO - Content field length: 31534
+2025-06-19 14:26:58,031 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:58,031 - INFO - Saving content to data/output/text/standards_pymupdf_only/Music Tech Strand at a Glance_output.txt, content type: <class 'str'>, length: 31534
+2025-06-19 14:26:58,031 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:58,032 - INFO - Saved output to data/output/text/standards_pymupdf_only/Music Tech Strand at a Glance_output.txt
+2025-06-19 14:26:58,032 - INFO - Processing input: data/input/pdfs/standards/ncas/Music Theory and Composition Strand at a Glance.pdf
+2025-06-19 14:26:58,032 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:58,032 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:58,032 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:58,032 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:58,032 - INFO - Processing source path: data/input/pdfs/standards/ncas/Music Theory and Composition Strand at a Glance.pdf
+2025-06-19 14:26:58,032 - INFO - VideoLoader initialized.
+2025-06-19 14:26:58,032 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Music Theory and Composition Strand at a Glance.pdf. Using PDFLoader.
+2025-06-19 14:26:58,032 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:58,032 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Music Theory and Composition Strand at a Glance.pdf
+2025-06-19 14:26:58,034 - INFO - Generating base64 images for 4 pages...
+2025-06-19 14:26:58,298 - INFO - Finished generating page images.
+2025-06-19 14:26:58,298 - INFO - Extracting text from 4 pages...
+2025-06-19 14:26:58,313 - INFO - Finished extracting text. Total length: 18838 chars.
+2025-06-19 14:26:58,314 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:58,314 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:58,314 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:58,314 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:58,320 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:58,320 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:58,320 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:58,325 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:58,325 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:58,325 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:58,325 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:58,325 - INFO - Processing PDF with strategy 'exclusive': Music Theory and Composition Strand at a Glance.pdf
+2025-06-19 14:26:58,325 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:26:59,408 - INFO - PyMuPDF: Successfully extracted 18835 characters from Music Theory and Composition Strand at a Glance.pdf
+2025-06-19 14:26:59,408 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:26:59,409 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:26:59,409 - INFO - Content field length: 37947
+2025-06-19 14:26:59,409 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:59,409 - INFO - Saving content to data/output/text/standards_pymupdf_only/Music Theory and Composition Strand at a Glance_output.txt, content type: <class 'str'>, length: 37947
+2025-06-19 14:26:59,409 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:26:59,410 - INFO - Saved output to data/output/text/standards_pymupdf_only/Music Theory and Composition Strand at a Glance_output.txt
+2025-06-19 14:26:59,410 - INFO - Processing input: data/input/pdfs/standards/ncas/Visual Arts at a Glance rev.pdf
+2025-06-19 14:26:59,410 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:26:59,410 - INFO - Configuring pipeline for type: text
+2025-06-19 14:26:59,410 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:26:59,410 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:26:59,410 - INFO - Processing source path: data/input/pdfs/standards/ncas/Visual Arts at a Glance rev.pdf
+2025-06-19 14:26:59,410 - INFO - VideoLoader initialized.
+2025-06-19 14:26:59,410 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Visual Arts at a Glance rev.pdf. Using PDFLoader.
+2025-06-19 14:26:59,410 - INFO - Selected loader: PDFLoader
+2025-06-19 14:26:59,410 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Visual Arts at a Glance rev.pdf
+2025-06-19 14:26:59,415 - INFO - Generating base64 images for 8 pages...
+2025-06-19 14:26:59,885 - INFO - Finished generating page images.
+2025-06-19 14:26:59,885 - INFO - Extracting text from 8 pages...
+2025-06-19 14:26:59,911 - INFO - Finished extracting text. Total length: 32735 chars.
+2025-06-19 14:26:59,912 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:26:59,912 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:26:59,912 - INFO - Initialized docling PDF processor.
+2025-06-19 14:26:59,912 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:26:59,918 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:26:59,918 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:26:59,918 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:26:59,924 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:26:59,924 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:26:59,924 - INFO - Running pipeline with 1 components
+2025-06-19 14:26:59,924 - DEBUG - Executing PDFProcessor
+2025-06-19 14:26:59,924 - INFO - Processing PDF with strategy 'exclusive': Visual Arts at a Glance rev.pdf
+2025-06-19 14:26:59,924 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:00,996 - INFO - PyMuPDF: Successfully extracted 32728 characters from Visual Arts at a Glance rev.pdf
+2025-06-19 14:27:00,996 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:00,997 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:00,997 - INFO - Content field length: 67735
+2025-06-19 14:27:00,997 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:00,997 - INFO - Saving content to data/output/text/standards_pymupdf_only/Visual Arts at a Glance rev_output.txt, content type: <class 'str'>, length: 67735
+2025-06-19 14:27:00,997 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:00,998 - INFO - Saved output to data/output/text/standards_pymupdf_only/Visual Arts at a Glance rev_output.txt
+2025-06-19 14:27:00,998 - INFO - Processing input: data/input/pdfs/standards/ncas/Media Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:00,998 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:00,998 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:00,998 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:00,998 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:00,998 - INFO - Processing source path: data/input/pdfs/standards/ncas/Media Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:00,998 - INFO - VideoLoader initialized.
+2025-06-19 14:27:00,998 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Media Arts at a Glance - new copyright info.pdf. Using PDFLoader.
+2025-06-19 14:27:00,998 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:00,998 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Media Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:01,000 - INFO - Generating base64 images for 9 pages...
+2025-06-19 14:27:01,608 - INFO - Finished generating page images.
+2025-06-19 14:27:01,608 - INFO - Extracting text from 9 pages...
+2025-06-19 14:27:01,665 - INFO - Finished extracting text. Total length: 42412 chars.
+2025-06-19 14:27:01,666 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:01,666 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:01,666 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:01,666 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:01,673 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:01,674 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:01,674 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:01,680 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:01,680 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:01,680 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:01,680 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:01,680 - INFO - Processing PDF with strategy 'exclusive': Media Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:01,680 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:03,002 - INFO - PyMuPDF: Successfully extracted 42404 characters from Media Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:03,002 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:03,003 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:03,003 - INFO - Content field length: 85852
+2025-06-19 14:27:03,003 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:03,003 - INFO - Saving content to data/output/text/standards_pymupdf_only/Media Arts at a Glance - new copyright info_output.txt, content type: <class 'str'>, length: 85852
+2025-06-19 14:27:03,003 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:03,003 - INFO - Saved output to data/output/text/standards_pymupdf_only/Media Arts at a Glance - new copyright info_output.txt
+2025-06-19 14:27:03,003 - INFO - Processing input: data/input/pdfs/standards/ncas/Visual Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:03,003 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:03,003 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:03,003 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:03,003 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:03,003 - INFO - Processing source path: data/input/pdfs/standards/ncas/Visual Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:03,004 - INFO - VideoLoader initialized.
+2025-06-19 14:27:03,004 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Visual Arts at a Glance - new copyright info.pdf. Using PDFLoader.
+2025-06-19 14:27:03,004 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:03,004 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Visual Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:03,006 - INFO - Generating base64 images for 8 pages...
+2025-06-19 14:27:03,471 - INFO - Finished generating page images.
+2025-06-19 14:27:03,471 - INFO - Extracting text from 8 pages...
+2025-06-19 14:27:03,497 - INFO - Finished extracting text. Total length: 33540 chars.
+2025-06-19 14:27:03,499 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:03,499 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:03,499 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:03,499 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:03,504 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:03,504 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:03,504 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:03,510 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:03,510 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:03,510 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:03,510 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:03,510 - INFO - Processing PDF with strategy 'exclusive': Visual Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:03,510 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:04,575 - INFO - PyMuPDF: Successfully extracted 33533 characters from Visual Arts at a Glance - new copyright info.pdf
+2025-06-19 14:27:04,575 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:04,576 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:04,576 - INFO - Content field length: 68540
+2025-06-19 14:27:04,576 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:04,576 - INFO - Saving content to data/output/text/standards_pymupdf_only/Visual Arts at a Glance - new copyright info_output.txt, content type: <class 'str'>, length: 68540
+2025-06-19 14:27:04,576 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:04,577 - INFO - Saved output to data/output/text/standards_pymupdf_only/Visual Arts at a Glance - new copyright info_output.txt
+2025-06-19 14:27:04,577 - INFO - Processing input: data/input/pdfs/standards/ncas/Music Harmonizing Instruments at a Glance.pdf
+2025-06-19 14:27:04,577 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:04,577 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:04,577 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:04,577 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:04,577 - INFO - Processing source path: data/input/pdfs/standards/ncas/Music Harmonizing Instruments at a Glance.pdf
+2025-06-19 14:27:04,577 - INFO - VideoLoader initialized.
+2025-06-19 14:27:04,577 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Music Harmonizing Instruments at a Glance.pdf. Using PDFLoader.
+2025-06-19 14:27:04,577 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:04,577 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Music Harmonizing Instruments at a Glance.pdf
+2025-06-19 14:27:04,579 - INFO - Generating base64 images for 5 pages...
+2025-06-19 14:27:04,907 - INFO - Finished generating page images.
+2025-06-19 14:27:04,907 - INFO - Extracting text from 5 pages...
+2025-06-19 14:27:04,929 - INFO - Finished extracting text. Total length: 26407 chars.
+2025-06-19 14:27:04,930 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:04,930 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:04,930 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:04,930 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:04,935 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:04,935 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:04,935 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:04,941 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:04,941 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:04,941 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:04,941 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:04,941 - INFO - Processing PDF with strategy 'exclusive': Music Harmonizing Instruments at a Glance.pdf
+2025-06-19 14:27:04,941 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:05,764 - INFO - PyMuPDF: Successfully extracted 26403 characters from Music Harmonizing Instruments at a Glance.pdf
+2025-06-19 14:27:05,764 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:05,765 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:05,765 - INFO - Content field length: 53084
+2025-06-19 14:27:05,765 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:05,765 - INFO - Saving content to data/output/text/standards_pymupdf_only/Music Harmonizing Instruments at a Glance_output.txt, content type: <class 'str'>, length: 53084
+2025-06-19 14:27:05,765 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:05,765 - INFO - Saved output to data/output/text/standards_pymupdf_only/Music Harmonizing Instruments at a Glance_output.txt
+2025-06-19 14:27:05,765 - INFO - Processing input: data/input/pdfs/standards/ncas/Music Traditional and Emerging Ensembles at a Glance.pdf
+2025-06-19 14:27:05,765 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:05,765 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:05,765 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:05,765 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:05,765 - INFO - Processing source path: data/input/pdfs/standards/ncas/Music Traditional and Emerging Ensembles at a Glance.pdf
+2025-06-19 14:27:05,765 - INFO - VideoLoader initialized.
+2025-06-19 14:27:05,765 - INFO - Detected PDF file: data/input/pdfs/standards/ncas/Music Traditional and Emerging Ensembles at a Glance.pdf. Using PDFLoader.
+2025-06-19 14:27:05,765 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:05,765 - INFO - Loading PDF from data/input/pdfs/standards/ncas/Music Traditional and Emerging Ensembles at a Glance.pdf
+2025-06-19 14:27:05,768 - INFO - Generating base64 images for 5 pages...
+2025-06-19 14:27:06,081 - INFO - Finished generating page images.
+2025-06-19 14:27:06,081 - INFO - Extracting text from 5 pages...
+2025-06-19 14:27:06,107 - INFO - Finished extracting text. Total length: 22075 chars.
+2025-06-19 14:27:06,109 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:06,109 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:06,109 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:06,109 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:06,115 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:06,116 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:06,116 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:06,122 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:06,122 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:06,122 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:06,122 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:06,122 - INFO - Processing PDF with strategy 'exclusive': Music Traditional and Emerging Ensembles at a Glance.pdf
+2025-06-19 14:27:06,122 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:06,879 - INFO - PyMuPDF: Successfully extracted 22071 characters from Music Traditional and Emerging Ensembles at a Glance.pdf
+2025-06-19 14:27:06,879 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:06,880 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:06,880 - INFO - Content field length: 44643
+2025-06-19 14:27:06,880 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:06,880 - INFO - Saving content to data/output/text/standards_pymupdf_only/Music Traditional and Emerging Ensembles at a Glance_output.txt, content type: <class 'str'>, length: 44643
+2025-06-19 14:27:06,880 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+Anchor Standard 1:  Generate and conceptualize artistic ideas...
+2025-06-19 14:27:06,881 - INFO - Saved output to data/output/text/standards_pymupdf_only/Music Traditional and Emerging Ensembles at a Glance_output.txt
+2025-06-19 14:27:06,881 - INFO - Processing input: data/input/pdfs/standards/ngss/Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13.pdf
+2025-06-19 14:27:06,881 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:06,881 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:06,881 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:06,881 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:06,881 - INFO - Processing source path: data/input/pdfs/standards/ngss/Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13.pdf
+2025-06-19 14:27:06,881 - INFO - VideoLoader initialized.
+2025-06-19 14:27:06,881 - INFO - Detected PDF file: data/input/pdfs/standards/ngss/Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13.pdf. Using PDFLoader.
+2025-06-19 14:27:06,881 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:06,881 - INFO - Loading PDF from data/input/pdfs/standards/ngss/Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13.pdf
+2025-06-19 14:27:06,883 - INFO - Generating base64 images for 10 pages...
+2025-06-19 14:27:07,210 - INFO - Finished generating page images.
+2025-06-19 14:27:07,210 - INFO - Extracting text from 10 pages...
+2025-06-19 14:27:07,234 - INFO - Finished extracting text. Total length: 27157 chars.
+2025-06-19 14:27:07,235 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:07,235 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:07,235 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:07,235 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:07,240 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:07,240 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:07,241 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:07,246 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:07,246 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:07,246 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:07,246 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:07,246 - INFO - Processing PDF with strategy 'exclusive': Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13.pdf
+2025-06-19 14:27:07,246 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:08,310 - INFO - PyMuPDF: Successfully extracted 27148 characters from Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13.pdf
+2025-06-19 14:27:08,310 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:08,311 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:08,311 - INFO - Content field length: 40988
+2025-06-19 14:27:08,311 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013 
+NGSS Release 
+Page 1 of 10 
+APPENDIX H – Unders...
+2025-06-19 14:27:08,311 - INFO - Saving content to data/output/text/standards_pymupdf_only/Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13_output.txt, content type: <class 'str'>, length: 40988
+2025-06-19 14:27:08,311 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013 
+NGSS Release 
+Page 1 of 10 
+APPENDIX H – Unders...
+2025-06-19 14:27:08,311 - INFO - Saved output to data/output/text/standards_pymupdf_only/Appendix H - The Nature of Science in the Next Generation Science Standards 4.15.13_output.txt
+2025-06-19 14:27:08,311 - INFO - Processing input: data/input/pdfs/standards/ngss/13165.pdf
+2025-06-19 14:27:08,311 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:08,312 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:08,312 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:08,312 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:08,312 - INFO - Processing source path: data/input/pdfs/standards/ngss/13165.pdf
+2025-06-19 14:27:08,312 - INFO - VideoLoader initialized.
+2025-06-19 14:27:08,312 - INFO - Detected PDF file: data/input/pdfs/standards/ngss/13165.pdf. Using PDFLoader.
+2025-06-19 14:27:08,312 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:08,312 - INFO - Loading PDF from data/input/pdfs/standards/ngss/13165.pdf
+2025-06-19 14:27:08,326 - INFO - Generating base64 images for 401 pages...
+2025-06-19 14:27:21,420 - INFO - Finished generating page images.
+2025-06-19 14:27:21,421 - INFO - Extracting text from 401 pages...
+2025-06-19 14:27:22,034 - INFO - Finished extracting text. Total length: 956133 chars.
+2025-06-19 14:27:22,038 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:22,038 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:22,038 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:22,038 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:22,046 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:22,046 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:22,047 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:22,052 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:22,053 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:22,053 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:22,053 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:22,053 - INFO - Processing PDF with strategy 'exclusive': 13165.pdf
+2025-06-19 14:27:22,053 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:40,628 - INFO - PyMuPDF: Successfully extracted 955733 characters from 13165.pdf
+2025-06-19 14:27:40,628 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:40,629 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:40,629 - INFO - Content field length: 984809
+2025-06-19 14:27:40,629 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+CONTRIBUTORS
+DETAILS
+All downloadable National Academies titl...
+2025-06-19 14:27:40,629 - INFO - Saving content to data/output/text/standards_pymupdf_only/13165_output.txt, content type: <class 'str'>, length: 984809
+2025-06-19 14:27:40,629 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+CONTRIBUTORS
+DETAILS
+All downloadable National Academies titl...
+2025-06-19 14:27:40,630 - INFO - Saved output to data/output/text/standards_pymupdf_only/13165_output.txt
+2025-06-19 14:27:40,630 - INFO - Processing input: data/input/pdfs/standards/ngss/Appendix K_Revised 8.30.13.pdf
+2025-06-19 14:27:40,631 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:40,631 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:40,631 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:40,631 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:40,631 - INFO - Processing source path: data/input/pdfs/standards/ngss/Appendix K_Revised 8.30.13.pdf
+2025-06-19 14:27:40,631 - INFO - VideoLoader initialized.
+2025-06-19 14:27:40,631 - INFO - Detected PDF file: data/input/pdfs/standards/ngss/Appendix K_Revised 8.30.13.pdf. Using PDFLoader.
+2025-06-19 14:27:40,631 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:40,631 - INFO - Loading PDF from data/input/pdfs/standards/ngss/Appendix K_Revised 8.30.13.pdf
+2025-06-19 14:27:40,637 - INFO - Generating base64 images for 40 pages...
+2025-06-19 14:27:42,123 - INFO - Finished generating page images.
+2025-06-19 14:27:42,123 - INFO - Extracting text from 40 pages...
+2025-06-19 14:27:42,211 - INFO - Finished extracting text. Total length: 98978 chars.
+2025-06-19 14:27:42,213 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:42,213 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:42,213 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:42,213 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:42,221 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:42,221 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:42,221 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:42,227 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:42,227 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:42,227 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:42,227 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:42,227 - INFO - Processing PDF with strategy 'exclusive': Appendix K_Revised 8.30.13.pdf
+2025-06-19 14:27:42,227 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:45,902 - INFO - PyMuPDF: Successfully extracted 98939 characters from Appendix K_Revised 8.30.13.pdf
+2025-06-19 14:27:45,902 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:45,903 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:45,903 - INFO - Content field length: 115658
+2025-06-19 14:27:45,903 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+August 2013 
+NGSS Release 
+Page 1 of 40 
+Appendix K 
+ 
+Mode...
+2025-06-19 14:27:45,903 - INFO - Saving content to data/output/text/standards_pymupdf_only/Appendix K_Revised 8.30.13_output.txt, content type: <class 'str'>, length: 115658
+2025-06-19 14:27:45,903 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+August 2013 
+NGSS Release 
+Page 1 of 40 
+Appendix K 
+ 
+Mode...
+2025-06-19 14:27:45,903 - INFO - Saved output to data/output/text/standards_pymupdf_only/Appendix K_Revised 8.30.13_output.txt
+2025-06-19 14:27:45,903 - INFO - Processing input: data/input/pdfs/standards/ngss/APPENDIX J_0.pdf
+2025-06-19 14:27:45,903 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:45,903 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:45,903 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:45,903 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:45,903 - INFO - Processing source path: data/input/pdfs/standards/ngss/APPENDIX J_0.pdf
+2025-06-19 14:27:45,903 - INFO - VideoLoader initialized.
+2025-06-19 14:27:45,903 - INFO - Detected PDF file: data/input/pdfs/standards/ngss/APPENDIX J_0.pdf. Using PDFLoader.
+2025-06-19 14:27:45,903 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:45,904 - INFO - Loading PDF from data/input/pdfs/standards/ngss/APPENDIX J_0.pdf
+2025-06-19 14:27:45,906 - INFO - Generating base64 images for 6 pages...
+2025-06-19 14:27:46,110 - INFO - Finished generating page images.
+2025-06-19 14:27:46,110 - INFO - Extracting text from 6 pages...
+2025-06-19 14:27:46,123 - INFO - Finished extracting text. Total length: 14556 chars.
+2025-06-19 14:27:46,123 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:46,123 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:46,123 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:46,123 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:46,130 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:46,130 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:46,130 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:46,135 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:46,135 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:46,135 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:46,135 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:46,135 - INFO - Processing PDF with strategy 'exclusive': APPENDIX J_0.pdf
+2025-06-19 14:27:46,135 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:46,472 - INFO - PyMuPDF: Successfully extracted 14551 characters from APPENDIX J_0.pdf
+2025-06-19 14:27:46,472 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:46,472 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:46,472 - INFO - Content field length: 19224
+2025-06-19 14:27:46,473 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013 
+NGSS Release 
+Page 1 of 6 
+APPENDIX J – Science...
+2025-06-19 14:27:46,473 - INFO - Saving content to data/output/text/standards_pymupdf_only/APPENDIX J_0_output.txt, content type: <class 'str'>, length: 19224
+2025-06-19 14:27:46,473 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013 
+NGSS Release 
+Page 1 of 6 
+APPENDIX J – Science...
+2025-06-19 14:27:46,473 - INFO - Saved output to data/output/text/standards_pymupdf_only/APPENDIX J_0_output.txt
+2025-06-19 14:27:46,473 - INFO - Processing input: data/input/pdfs/standards/ngss/How to Read NGSS - Final 08.19.13_0.pdf
+2025-06-19 14:27:46,473 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:46,473 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:46,473 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:46,473 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:46,473 - INFO - Processing source path: data/input/pdfs/standards/ngss/How to Read NGSS - Final 08.19.13_0.pdf
+2025-06-19 14:27:46,473 - INFO - VideoLoader initialized.
+2025-06-19 14:27:46,473 - INFO - Detected PDF file: data/input/pdfs/standards/ngss/How to Read NGSS - Final 08.19.13_0.pdf. Using PDFLoader.
+2025-06-19 14:27:46,473 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:46,473 - INFO - Loading PDF from data/input/pdfs/standards/ngss/How to Read NGSS - Final 08.19.13_0.pdf
+2025-06-19 14:27:46,476 - INFO - Generating base64 images for 5 pages...
+2025-06-19 14:27:46,710 - INFO - Finished generating page images.
+2025-06-19 14:27:46,710 - INFO - Extracting text from 5 pages...
+2025-06-19 14:27:46,723 - INFO - Finished extracting text. Total length: 16559 chars.
+2025-06-19 14:27:46,724 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:46,724 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:46,724 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:46,724 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:46,730 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:46,730 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:46,730 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:46,735 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:46,735 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:46,735 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:46,735 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:46,735 - INFO - Processing PDF with strategy 'exclusive': How to Read NGSS - Final 08.19.13_0.pdf
+2025-06-19 14:27:46,735 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:46,982 - INFO - PyMuPDF: Successfully extracted 16555 characters from How to Read NGSS - Final 08.19.13_0.pdf
+2025-06-19 14:27:46,982 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:46,983 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:46,983 - INFO - Content field length: 18795
+2025-06-19 14:27:46,983 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013 
+NGSS Release 
+Page 1 of 5 
+How to Read the Next...
+2025-06-19 14:27:46,983 - INFO - Saving content to data/output/text/standards_pymupdf_only/How to Read NGSS - Final 08.19.13_0_output.txt, content type: <class 'str'>, length: 18795
+2025-06-19 14:27:46,983 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013 
+NGSS Release 
+Page 1 of 5 
+How to Read the Next...
+2025-06-19 14:27:46,983 - INFO - Saved output to data/output/text/standards_pymupdf_only/How to Read NGSS - Final 08.19.13_0_output.txt
+2025-06-19 14:27:46,983 - INFO - Processing input: data/input/pdfs/standards/ngss/Appendix G - Crosscutting Concepts FINAL edited 4.10.13.pdf
+2025-06-19 14:27:46,983 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:46,983 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:46,983 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:46,983 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:46,983 - INFO - Processing source path: data/input/pdfs/standards/ngss/Appendix G - Crosscutting Concepts FINAL edited 4.10.13.pdf
+2025-06-19 14:27:46,983 - INFO - VideoLoader initialized.
+2025-06-19 14:27:46,983 - INFO - Detected PDF file: data/input/pdfs/standards/ngss/Appendix G - Crosscutting Concepts FINAL edited 4.10.13.pdf. Using PDFLoader.
+2025-06-19 14:27:46,983 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:46,983 - INFO - Loading PDF from data/input/pdfs/standards/ngss/Appendix G - Crosscutting Concepts FINAL edited 4.10.13.pdf
+2025-06-19 14:27:46,985 - INFO - Generating base64 images for 17 pages...
+2025-06-19 14:27:47,608 - INFO - Finished generating page images.
+2025-06-19 14:27:47,609 - INFO - Extracting text from 17 pages...
+2025-06-19 14:27:47,659 - INFO - Finished extracting text. Total length: 61476 chars.
+2025-06-19 14:27:47,660 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:47,660 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:47,660 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:47,660 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:47,666 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:47,666 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:47,666 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:47,671 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:47,671 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:47,671 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:47,671 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:47,671 - INFO - Processing PDF with strategy 'exclusive': Appendix G - Crosscutting Concepts FINAL edited 4.10.13.pdf
+2025-06-19 14:27:47,671 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:49,545 - INFO - PyMuPDF: Successfully extracted 61460 characters from Appendix G - Crosscutting Concepts FINAL edited 4.10.13.pdf
+2025-06-19 14:27:49,545 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:49,546 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:49,546 - INFO - Content field length: 95905
+2025-06-19 14:27:49,546 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013                     
+ NGSS Release              ...
+2025-06-19 14:27:49,546 - INFO - Saving content to data/output/text/standards_pymupdf_only/Appendix G - Crosscutting Concepts FINAL edited 4.10.13_output.txt, content type: <class 'str'>, length: 95905
+2025-06-19 14:27:49,546 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013                     
+ NGSS Release              ...
+2025-06-19 14:27:49,546 - INFO - Saved output to data/output/text/standards_pymupdf_only/Appendix G - Crosscutting Concepts FINAL edited 4.10.13_output.txt
+2025-06-19 14:27:49,546 - INFO - Processing input: data/input/pdfs/standards/ngss/Appendix B - Responses to the Public Drafts.pdf
+2025-06-19 14:27:49,547 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:49,547 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:49,547 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:49,547 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:49,547 - INFO - Processing source path: data/input/pdfs/standards/ngss/Appendix B - Responses to the Public Drafts.pdf
+2025-06-19 14:27:49,547 - INFO - VideoLoader initialized.
+2025-06-19 14:27:49,547 - INFO - Detected PDF file: data/input/pdfs/standards/ngss/Appendix B - Responses to the Public Drafts.pdf. Using PDFLoader.
+2025-06-19 14:27:49,547 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:49,547 - INFO - Loading PDF from data/input/pdfs/standards/ngss/Appendix B - Responses to the Public Drafts.pdf
+2025-06-19 14:27:49,548 - INFO - Generating base64 images for 9 pages...
+2025-06-19 14:27:49,848 - INFO - Finished generating page images.
+2025-06-19 14:27:49,848 - INFO - Extracting text from 9 pages...
+2025-06-19 14:27:49,867 - INFO - Finished extracting text. Total length: 25645 chars.
+2025-06-19 14:27:49,868 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:49,868 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:49,868 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:49,868 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:49,874 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:49,874 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:49,874 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:49,880 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:49,880 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:49,880 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:49,880 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:49,880 - INFO - Processing PDF with strategy 'exclusive': Appendix B - Responses to the Public Drafts.pdf
+2025-06-19 14:27:49,880 - INFO - Using exclusive processor: pymupdf
+2025-06-19 14:27:50,291 - INFO - PyMuPDF: Successfully extracted 25637 characters from Appendix B - Responses to the Public Drafts.pdf
+2025-06-19 14:27:50,291 - INFO - Pipeline run completed. Result type: <class 'dict'>
+2025-06-19 14:27:50,292 - INFO - Document keys: ['source_path', 'metadata', 'content', 'pages', 'processor_used', 'extraction_successful', 'id']
+2025-06-19 14:27:50,292 - INFO - Content field length: 25812
+2025-06-19 14:27:50,292 - INFO - Content field starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013 
+NGSS Release 
+Page 1 of 9 
+APPENDIX B – Respons...
+2025-06-19 14:27:50,292 - INFO - Saving content to data/output/text/standards_pymupdf_only/Appendix B - Responses to the Public Drafts_output.txt, content type: <class 'str'>, length: 25812
+2025-06-19 14:27:50,292 - INFO - Content starts with: === DOCUMENT TEXT ===
+
+
+=== Page 1 ===
+ 
+April 2013 
+NGSS Release 
+Page 1 of 9 
+APPENDIX B – Respons...
+2025-06-19 14:27:50,292 - INFO - Saved output to data/output/text/standards_pymupdf_only/Appendix B - Responses to the Public Drafts_output.txt
+2025-06-19 14:27:50,292 - INFO - Processing input: data/input/pdfs/standards/ngss/3dimensions.pdf
+2025-06-19 14:27:50,292 - INFO - Initializing pipeline component definitions...
+2025-06-19 14:27:50,292 - INFO - Configuring pipeline for type: text
+2025-06-19 14:27:50,292 - INFO - Pipeline type 'text': No additional components added after initial loader.
+2025-06-19 14:27:50,292 - INFO - Pipeline definitions initialized with 0 components for type 'text'.
+2025-06-19 14:27:50,292 - INFO - Processing source path: data/input/pdfs/standards/ngss/3dimensions.pdf
+2025-06-19 14:27:50,293 - INFO - VideoLoader initialized.
+2025-06-19 14:27:50,293 - INFO - Detected PDF file: data/input/pdfs/standards/ngss/3dimensions.pdf. Using PDFLoader.
+2025-06-19 14:27:50,293 - INFO - Selected loader: PDFLoader
+2025-06-19 14:27:50,293 - INFO - Loading PDF from data/input/pdfs/standards/ngss/3dimensions.pdf
+2025-06-19 14:27:50,294 - INFO - Generating base64 images for 1 pages...
+2025-06-19 14:27:50,325 - INFO - Finished generating page images.
+2025-06-19 14:27:50,325 - INFO - Extracting text from 1 pages...
+2025-06-19 14:27:50,326 - INFO - Finished extracting text. Total length: 1631 chars.
+2025-06-19 14:27:50,329 - INFO - Adding PDFProcessor for PDF processing
+2025-06-19 14:27:50,329 - INFO - Initialized pymupdf PDF processor.
+2025-06-19 14:27:50,329 - INFO - Initialized docling PDF processor.
+2025-06-19 14:27:50,329 - INFO - Initialized enhanced_docling PDF processor.
+2025-06-19 14:27:50,336 - DEBUG - Patching `client.chat.completions.create` with mode=<Mode.TOOLS_STRICT: 'tools_strict'>
+2025-06-19 14:27:50,337 - DEBUG - Instructor client initialized successfully.
+2025-06-19 14:27:50,337 - INFO - Initialized gpt PDF processor.
+2025-06-19 14:27:50,343 - DEBUG - Gemini client initialized successfully using google-genai SDK.
+2025-06-19 14:27:50,343 - INFO - Initialized gemini PDF processor.
+2025-06-19 14:27:50,343 - INFO - Running pipeline with 1 components
+2025-06-19 14:27:50,343 - DEBUG - Executing PDFProcessor
+2025-06-19 14:27:50,343 - INFO - Processing PDF with strategy 'exclusive': 3dimensions.pdf
+2025-06-19 14:27:50,343 - INFO - Using exclusive processor: pymupdf

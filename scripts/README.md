@@ -1,127 +1,109 @@
-# Scripts Directory
+# Pipeline Documents - Scripts Directory
 
-This directory contains command-line tools and utilities for the Document Processing Pipeline. Scripts are organized by their primary function.
+This directory contains all scripts for the document processing pipeline, organized by functionality.
 
-## Core Pipeline Scripts
+## Directory Structure
 
-These are the main entry points for document processing:
+### 📁 `pdf_processing/`
+Scripts for processing PDF files using PyMuPDF and other PDF tools.
+- PDF analysis and OCR detection
+- Batch PDF processing
+- PyMuPDF utilities and benchmarks
 
-### `run_pipeline.py`
-The primary pipeline execution script with comprehensive options for processing documents.
-- Supports all input formats (PDF, DOCX, PPTX, images, audio, video)
-- Multiple pipeline types (text, markdown, json, weaviate)
-- Batch processing with recursive directory support
+### 📁 `document_processing/`
+Core document processing scripts using various processors.
+- `run_pipeline.py` - Main pipeline execution script
+- `master_docling.py` - Enhanced Docling processor
+- `batch_process.py` - Batch document processing
+- MarkItDown processors for DOCX files
 
-### `master_docling.py`
-Enhanced Docling processor specifically optimized for PDF processing.
-- Uses Docling's native processing capabilities
-- Supports multi-format output (text, markdown, JSON)
-- Includes caching for resumable operations
+### 📁 `weaviate/`
+Scripts for Weaviate vector database operations.
+- Collection management (create, delete, verify)
+- Document ingestion (Adaptive Schools content)
+- Query and search operations
+- Connection verification
 
-### `batch_process.py`
-Batch processing utility for handling multiple files with Weaviate integration.
-- Process entire directories
-- Automatic Weaviate collection management
-- Progress tracking and error handling
+### 📁 `content_processing/`
+Scripts for processing and organizing document content.
+- Split documents by headings or chapters
+- Content summarization
+- Specialized processors (e.g., Cognitive Coaching)
 
-## Utility Scripts
+### 📁 `standards/`
+Educational standards extraction scripts.
+- Extract standards from various frameworks (NCAS, Common Core, C3, NGSS)
+- Map standards to Drupal hierarchy
+- Extract related entities (EUs, EQs, Big Ideas)
 
-### Testing & Demo Scripts
-- `test_youtube_loader.py` - Test YouTube content extraction
-- `test_yt_dlp_standalone.py` - Test YouTube downloader functionality
-- `direct_markitdown.py` - Direct MarkitDown conversion demo
-- `direct_docx_markitdown.py` - DOCX-specific MarkitDown conversion
-- `create_dummy_pptx.py` - Generate test PowerPoint files
+### 📁 `standards_org/`
+Scripts for organizing standards files and directories.
+- Analyze and organize standards PDFs
+- Process standards by framework
+- Test standards processing
 
-### Maintenance & Setup Scripts
-- `download_nltk_resources.py` - Download required NLTK dependencies
-- `download_punkt_tab.py` - Download specific NLTK tokenizer
-- `create_default_template.py` - Create Excel output templates
-- `filesize.py` - Find large files in the repository
-- `git_lfs_migrate.py` - Migrate large files to Git LFS
-- `verify_weaviate_connection.py` - Test Weaviate connectivity
-- `check_weaviate_api.py` - Check Weaviate API health
-- `setup_weaviate_mcp.py` - Configure Weaviate MCP server
+### 📁 `utilities/`
+Helper scripts and utilities.
+- NLTK resource downloads
+- File size management
+- Git LFS migration
+- Template creation
 
-## Project-Specific Scripts
+### 📁 `media/`
+Scripts for processing media files.
+- YouTube video processing
+- Audio/video extraction utilities
 
-### Adaptive Schools Project
-Located in the main scripts directory (consider moving to `projects/adaptive_schools/`):
-- `ingest_adaptive_school.py` - Standard pipeline ingestion
-- `direct_ingest_adaptive_school.py` - Direct ingestion approach
-- `query_adaptive_schools.py` - Query the AdaptiveSchools collection
-- `verify_adaptive_schools_collection.py` - Verify collection setup
-- `delete_adaptive_schools_collection.py` - Clean up collection
-- `summarize_adaptive_schools.py` - Generate collection summaries
-- `split_chapters.py` - Split book into chapter files
-- `split_cognitive_coaching.py` - Split Cognitive Coaching content
-- `split_by_headings.py` - Generic heading-based content splitter
+### 📁 `archive/`
+Deprecated or old scripts kept for reference.
 
-## Usage Examples
+## Main Entry Points
 
-### Basic Document Processing
-```bash
-# Process a single PDF to text
-python scripts/run_pipeline.py --input_path document.pdf --pipeline_type text
+1. **Document Processing Pipeline**
+   ```bash
+   python document_processing/run_pipeline.py --input_path <file> --pipeline_type <type> --output_format <format>
+   ```
 
-# Process with enhanced Docling
-python scripts/master_docling.py --input_path document.pdf --output_format markdown
+2. **Enhanced Docling Processing**
+   ```bash
+   python document_processing/master_docling.py --input_path <pdf> --output_format <format>
+   ```
 
-# Process a directory recursively
-python scripts/run_pipeline.py --input_path /path/to/docs --pipeline_type markdown --recursive
-```
-
-### Weaviate Integration
-```bash
-# Ingest documents to Weaviate
-python scripts/batch_process.py --input_dir /path/to/docs --collection MyDocuments
-
-# Verify Weaviate connection
-python scripts/verify_weaviate_connection.py
-
-# Query a collection
-python scripts/query_adaptive_schools.py --query "search term"
-```
-
-### Setup and Maintenance
-```bash
-# Download required NLTK resources
-python scripts/download_nltk_resources.py
-
-# Find large files that should use Git LFS
-python scripts/filesize.py
-
-# Set up Weaviate MCP server
-python scripts/setup_weaviate_mcp.py
-```
+3. **Batch PDF Processing**
+   ```bash
+   python pdf_processing/batch_process_pymupdf.py
+   ```
 
 ## Script Categories
 
-| Category | Purpose | Examples |
-|----------|---------|----------|
-| **Core** | Main pipeline functionality | `run_pipeline.py`, `master_docling.py` |
-| **Testing** | Test specific features | `test_youtube_loader.py`, `direct_markitdown.py` |
-| **Maintenance** | Setup and repository maintenance | `download_nltk_resources.py`, `git_lfs_migrate.py` |
-| **Weaviate** | Vector database operations | `verify_weaviate_connection.py`, `batch_process.py` |
-| **Project-Specific** | Custom workflows for specific projects | `ingest_adaptive_school.py`, `split_chapters.py` |
+### Core Processing
+- `run_pipeline.py` - Main pipeline orchestrator
+- `master_docling.py` - Enhanced PDF processing
+- `batch_process.py` - Batch file processing
 
-## Adding New Scripts
+### Standards Extraction
+- See `/standards/README.md` for detailed information
 
-When adding new scripts, please:
-1. Choose the appropriate category
-2. Include a docstring describing the script's purpose
-3. Add command-line help using `typer` or `argparse`
-4. Update this README with the new script's description
-5. Consider if it belongs in a subdirectory for better organization
+### Database Operations
+- Weaviate collection management
+- Document ingestion and retrieval
+- Vector search operations
 
-## Future Organization
+### Content Organization
+- Document splitting by structure
+- Content summarization
+- Chapter/section extraction
 
-The scripts directory is planned to be reorganized into subdirectories:
-```
-scripts/
-├── core/           # Main pipeline scripts
-├── utilities/      # General utilities
-├── testing/        # Test and demo scripts
-├── maintenance/    # Setup and maintenance
-└── projects/       # Project-specific scripts
-```
+## Usage Notes
+
+1. Most scripts should be run from the project root directory
+2. Check individual script headers for specific requirements
+3. Ensure environment variables are set for API keys (OpenAI, Weaviate, etc.)
+4. See `../docs/` for detailed documentation
+
+## Recent Updates
+
+- Reorganized all scripts into categorical directories (2024-06-20)
+- Moved standards extraction scripts to dedicated directory
+- Cleaned up root scripts directory
+- Added comprehensive documentation

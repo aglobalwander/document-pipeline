@@ -1,0 +1,217 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+
+April 2013
+NGSS Release
+Page 1 of 5
+
+APPENDIX A – Conceptual Shifts in the Next Generation Science Standards
+
+The Next Generation Science Standards (NGSS) provide an important opportunity to improve
+not only science education but also student achievement.  Based on the Framework for K–12
+Science Education, the NGSS are intended to reflect a new vision for American science
+education.  The following conceptual shifts in the NGSS demonstrate what is new and different
+about the NGSS:
+
+1. K-12 Science Education Should Reflect the Interconnected Nature of Science as it is
+Practiced and Experienced in the Real World.
+“The framework is designed to help realize a vision for education in the sciences and
+engineering in which students, over multiple years of school, actively engage in scientific
+and engineering practices and apply crosscutting concepts to deepen their understanding of the core ideas in these fields.”1
+
+The vision represented in the Framework is new in that students must be engaged at the nexus of the three dimensions:
+1. Science and Engineering Practices,
+2. Crosscutting Concepts, and
+3. Disciplinary Core Ideas.
+
+Currently, most state and district standards express these dimensions as separate entities, leading
+to their separation in both instruction and assessment.  Given the importance of science and
+engineering in the 21st century, students require a sense of contextual understanding with regard
+to scientific knowledge, how it is acquired and applied, and how science is connected through a
+series of concepts that help further our understanding of the world around us.  Student
+performance expectations have to include a student’s ability to apply a practice to content
+knowledge.  Performance expectations thereby focus on understanding and application as
+opposed to memorization of facts devoid of context.  The Framework goes on to emphasize that:
+
+“…learning about science and engineering involves integration of the knowledge of
+scientific explanations (i.e., content knowledge) and the practices needed to engage in
+scientific inquiry and engineering design. Thus the framework seeks to illustrate how
+knowledge and practice must be intertwined in designing learning experiences in K–12 science education.”2
+
+1 (2011). A Framework for K-12 Science Education: Practices, crosscutting concepts, and core ideas. (p. 10). Washington, DC: The National
+Academies Press. Retrieved from http://www.nap.edu/catalog.php?record_id=13165
+2 (2011). A Framework for K-12 Science Education: Practices, crosscutting concepts, and core ideas. (p. 11). Washington, DC: The National
+Academies Press. Retrieved from http://www.nap.edu/catalog.php?record_id=13165
+
+=== Page 2 ===
+
+April 2013
+NGSS Release
+Page 2 of 5
+
+2. The Next Generation Science Standards are student performance expectations – NOT
+curriculum.  Even though within each performance expectation Science and Engineering
+Practices (SEP) are partnered with a particular Disciplinary Core Idea (DCI) and Crosscutting
+Concept (CC) in the NGSS, these intersections do not predetermine how the three are linked in
+curriculum, units, or lessons. Performance expectations simply clarify the expectations of what
+students will know and be able to do be the end of the grade or grade band.  Additional work will
+be needed to create coherent instructional programs that help students achieve these standards.
+
+As stated previously, past science standards at both the state and district levels have treated the
+three dimensions of science as separate and distinct entities leading to preferential treatment in
+assessment or instruction.  It is essential to understand that the emphasis placed on a particular
+Science and Engineering Practice or Crosscutting Concept in a performance expectation is not
+intended to limit instruction, but to make clear the intent of the assessments.
+
+An example of this is illustrated in two performance expectations in high school physical
+sciences that use the practice of modeling.  Models are basically used for three reasons: 1) to
+represent or describe; 2) to collect data; or 3) to predict.  The first use is typical in schools since
+models and representations are usually synonymous.  However, the use of models to collect data or to predict phenomena is new, for example:
+
+Construct models to explain changes in nuclear energies during the processes of fission,
+fusion, and radioactive decay and the nuclear interactions that determine nuclear stability.
+and
+
+Use system models (computer or drawings) to construct molecular-level explanations to
+predict the behavior of systems where a dynamic and condition-dependent balance
+between a reaction and the reverse reaction determines the numbers of all types of molecules present.
+
+In the first performance expectation, models are used with nuclear processes to explain changes.
+A scientific explanation requires evidence to support the explanation, so students will be called
+upon to construct a model for the purpose of gathering evidence to explain these changes.
+Additionally, they will be required to use models to both explain and predict the behavior of
+systems in equilibrium.  Again, the models will have to be used to collect data, but they will be
+further validated in their ability to predict the state of a system.  In both cases, students will need
+a deep understanding of the content, as well as proficiency in the ability to construct and use
+models for various applications.  The practice of modeling will need to be taught throughout the
+
+=== Page 3 ===
+
+April 2013
+NGSS Release
+Page 3 of 5
+
+year—and indeed throughout the entire K–12 experience—as opposed to during one two-week unit of instruction.
+
+The goal of the NGSS is to be clear about which practice students are responsible for in terms of
+assessment, but these practices and crosscutting concepts should occur throughout each school year.
+
+3. The Science Concepts in the NGSS Build Coherently from K–12.
+The focus on a few Disciplinary Core Ideas is a key aspect of a coherent science education.  The
+Framework identified a basic set of core ideas that are meant to be understood by the time a student completes high school:
+
+“To develop a thorough understanding of scientific explanations of the world, students
+need sustained opportunities to work with and develop the underlying ideas and to
+appreciate those ideas’ interconnections over a period of years rather than weeks or
+months [1]. This sense of development has been conceptualized in the idea of learning
+progressions [1, 25, 26]. If mastery of a core idea in a science discipline is the ultimate
+educational destination, then well-designed learning progressions provide a map of the
+routes that can be taken to reach that destination.  Such progressions describe both how
+students’ understanding of the idea matures over time and the instructional supports and
+experiences that are needed for them to make progress.”3
+
+There are two key points that are important to understand:
+ First, focus and coherence must be a priority.  What this means to teachers and
+curriculum developers is that the same ideas or details are not covered each year.  Rather,
+a progression of knowledge occurs from grade band to grade band that gives students the
+opportunity to learn more complex material, leading to an overall understanding of
+science by the end of high school. Historically, science education was taught as a set of
+disjointed and isolated facts.  The Framework and the NGSS provide a more coherent
+progression aimed at overall scientific literacy with instruction focused on a smaller set
+of ideas and an eye on what the student should have already learned and what they will learn at the next level.
+
+ Second, the progressions in the NGSS automatically assume that previous material has
+been learned by the student.  Choosing to omit content at any grade level or band will
+impact the success of the student in understanding the core ideas and put additional
+responsibilities on teachers later in the process.
+
+3 (2011). A Framework for K-12 Science Education: Practices, crosscutting concepts, and core ideas. (p. 26). Washington, DC: The National
+Academies Press. Retrieved from http://www.nap.edu/catalog.php?record_id=13165
+
+=== Page 4 ===
+
+April 2013
+NGSS Release
+Page 4 of 5
+
+4. The NGSS Focus on Deeper Understanding of Content as well as Application of Content.
+The Framework identified a smaller set of Disciplinary Core Ideas that students should know by
+the time they graduate from high school, and the NGSS are written to focus on the same.  It is
+important that teachers and curriculum/assessment developers understand that the focus is on the
+core ideas—not necessarily the facts that are associated with them.  The facts and details are
+important evidence, but not the sole focus of instruction.  The Framework states:
+
+“The core ideas also can provide an organizational structure for the acquisition of new
+knowledge. Understanding the core ideas and engaging in the scientific and engineering
+practices helps to prepare students for broader understanding, and deeper levels of
+scientific and engineering investigation, later on—in high school, college, and beyond.
+One rationale for organizing content around core ideas comes from studies comparing
+experts and novices in any field. Experts understand the core principles and theoretical
+constructs of their field, and they use them to make sense of new information or tackle
+novel problems. Novices, in contrast, tend to hold disconnected and even contradictory
+bits of knowledge as isolated facts and struggle to find a way to organize and integrate
+them [24]. The assumption, then, is that helping students learn the core ideas through
+engaging in scientific and engineering practices will enable them to become less like novices and more like experts.”4
+
+5. Science and Engineering are Integrated in the NGSS, from K–12.
+The idea of integrating technology and engineering into science standards is not new.  Chapters
+on the nature of technology and the human-built world were included in Science for All
+Americans (AAAS 1989) and Benchmarks for Science Literacy (AAAS 1993, 2008).  Standards
+for “Science and Technology” were included for all grade spans in the National Science
+Education Standards (NRC 1996).
+
+Despite these early efforts, however, engineering and technology have not received the same
+level of attention in science curricula, assessments, or the education of new science teachers as
+the traditional science disciplines have.  A significant difference in the Next Generation Science
+Standards (NGSS) is the integration of engineering and technology into the structure of science
+education. This integration is achieved by raising engineering design to the same level as
+scientific inquiry in classroom instruction when teaching science disciplines at all levels and by
+giving core ideas of engineering and technology the same status as those in other major science disciplines.
+
+4 (2011). A Framework for K-12 Science Education: Practices, crosscutting concepts, and core ideas. (p. 25). Washington, DC: The National
+Academies Press. Retrieved from http://www.nap.edu/catalog.php?record_id=13165
+
+=== Page 5 ===
+
+April 2013
+NGSS Release
+Page 5 of 5
+
+The rationale for this increased emphasis on engineering and technology rests on two positions
+taken in A Framework for K–12 Science Education (NRC 2011).  One position is aspirational, the other practical.
+
+From an aspirational standpoint, the Framework points out that science and engineering are
+needed to address major world challenges such as generating sufficient clean energy, preventing
+and treating diseases, maintaining supplies of food and clean water, and solving the problems of
+global environmental change that confront society today. These important challenges will
+motivate many students to continue or initiate their study of science and engineering.
+
+From a practical standpoint, the Framework notes that engineering and technology provide
+opportunities for students to deepen their understanding of science by applying their developing
+scientific knowledge to the solution of practical problems.  Both positions converge on the
+powerful idea that by integrating technology and engineering into the science curriculum,
+teachers can empower their students to use what they learn in their everyday lives.
+
+6. The NGSS are designed to prepare students for college, career, and citizenship.
+There is no doubt that science and science education are central to the lives of all Americans.
+Never before has our world been so complex and science knowledge so critical to making sense
+of it all. When comprehending current events, choosing and using technology, or making
+informed decisions about one’s healthcare, understanding science is key. Science is also at the
+heart of the United States’ ability to continue to innovate, lead, and create the jobs of the future.
+All students no matter what their future education and career path must have a solid K–12
+science education in order to be prepared for college, careers, and citizenship.
+
+7. The NGSS and Common Core State Standards (English Language Arts and Mathematics) are Aligned.
+The timing of the release of NGSS comes as most states are implementing the Common Core
+State Standards (CCSS) in English Language Arts and Mathematics.  This is important to science
+for a variety of reasons.  First, there is an opportunity for science to be part of a child’s
+comprehensive education.  The NGSS are aligned with the CCSS to ensure a symbiotic pace of
+learning in all content areas.  The three sets of standards overlap in meaningful and substantive
+ways and offer an opportunity to give all students equitable access to learning standards.
+
+Some important work is already in progress regarding the implications and advantages to the
+CCSS and NGSS.  Stanford University recently released 13 papers on a variety of issues related
+to language and literacy in the content areas of the CCSS and NGSS.5
+
+5 Stanford University. (2012). Understanding language. Retrieved from http://ell.stanford.edu/papers.

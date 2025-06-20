@@ -1,0 +1,1669 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+common core state STANDARDS FOR English Language Arts &
+Literacy in History/Social Studies,
+Science, and Technical Subjects
+Appendix A:
+Research Supporting
+Key Elements of the Standards
+Glossary of Key Terms
+
+=== Page 2 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   2
+Reading
+One of the key requirements of the Common Core State Standards for Reading is that all students must be able to
+comprehend texts of steadily increasing complexity as they progress through school. By the time they complete the
+core, students must be able to read and comprehend independently and proficiently the kinds of complex texts com monly found in college and careers. The first part of this section makes a research-based case for why the complex ity of what students read matters. In brief, while reading demands in college, workforce training programs, and life in
+general have held steady or increased over the last half century, K–12 texts have actually declined in sophistication,
+and relatively little attention has been paid to students’ ability to read complex texts independently. These conditions
+have left a serious gap between many high school seniors’ reading ability and the reading requirements they will face
+after graduation. The second part of this section addresses how text complexity can be measured and made a regular
+part of instruction. It introduces a three-part model that blends qualitative and quantitative measures of text com plexity with reader and task considerations. The section concludes with three annotated examples showing how the
+model can be used to assess the complexity of various kinds of texts appropriate for different grade levels.
+Why Text Complexity Matters
+In 2006, ACT, Inc., released a report called Reading Between the Lines that showed which skills differentiated those
+students who equaled or exceeded the benchmark score (21 out of 36) in the reading section of the ACT college ad missions test from those who did not. Prior ACT research had shown that students achieving the benchmark score or
+better in reading—which only about half (51 percent) of the roughly half million test takers in the 2004–2005 academ ic year had done—had a high probability (75 percent chance) of earning a C or better in an introductory, credit-bear ing course in U.S. history or psychology (two common reading-intensive courses taken by first-year college students)
+and a 50 percent chance of earning a B or better in such a course.1
+Surprisingly, what chiefly distinguished the performance of those students who had earned the benchmark score or
+better from those who had not was not their relative ability in making inferences while reading or answering questions
+related to particular cognitive processes, such as determining main ideas or determining the meaning of words and
+phrases in context. Instead, the clearest differentiator was students’ ability to answer questions associated with com plex texts. Students scoring below benchmark performed no better than chance (25 percent correct) on four-option
+multiple-choice questions pertaining to passages rated as “complex” on a three-point qualitative rubric described in
+the report. These findings held for male and female students, students from all racial/ethnic groups, and students from
+families with widely varying incomes. The most important implication of this study was that a pedagogy focused only
+on “higher-order” or “critical” thinking was insufficient to ensure that students were ready for college and careers:
+what students could read, in terms of its complexity, was at least as important as what they could do with what they read.
+The ACT report is one part of an extensive body of research attesting to the importance of text complexity in reading
+achievement. The clear, alarming picture that emerges from the evidence, briefly summarized below2, is that while the
+reading demands of college, workforce training programs, and citizenship have held steady or risen over the past fifty
+years or so, K–12 texts have, if anything, become less demanding. This finding is the impetus behind the Standards’
+strong emphasis on increasing text complexity as a key requirement in reading.
+College, Careers, and Citizenship: Steady or Increasing Complexity of Texts and Tasks
+Research indicates that the demands that college, careers, and citizenship place on readers have either held steady or
+increased over roughly the last fifty years. The difficulty of college textbooks, as measured by Lexile scores, has not
+decreased in any block of time since 1962; it has, in fact, increased over that period (Stenner, Koons, & Swartz, in press).
+The word difficulty of every scientific journal and magazine from 1930 to 1990 examined by Hayes and Ward (1992)
+had actually increased, which is important in part because, as a 2005 College Board study (Milewski, Johnson, Glazer, &
+Kubota, 2005) found, college professors assign more readings from periodicals than do high school teachers. Work place reading, measured in Lexiles, exceeds grade 12 complexity significantly, although there is considerable variation
+(Stenner, Koons, & Swartz, in press). The vocabulary difficulty of newspapers remained stable over the 1963–1991 period
+Hayes and his colleagues (Hayes, Wolfer, & Wolfe, 1996) studied.
+Furthermore, students in college are expected to read complex texts with substantially greater independence (i.e.,
+much less scaffolding) than are students in typical K–12 programs. College students are held more accountable for
+what they read on their own than are most students in high school (Erickson & Strommer, 1991; Pritchard, Wilson, &
+Yamnitz, 2007). College instructors assign readings, not necessarily explicated in class, for which students might be
+held accountable through exams, papers, presentations, or class discussions. Students in high school, by contrast, are
+1In the 2008–2009 academic year, only 53 percent of students achieved the reading benchmark score or higher; the increase
+from 2004–2005 was not statistically significant. See ACT, Inc. (2009).
+2Much of the summary found in the next two sections is heavily influenced by Marilyn Jager Adams’s painstaking review of the relevant literature. See Adams (2009).
+
+=== Page 3 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   3
+rarely held accountable for what they are able to read independently (Heller & Greenleaf, 2007). This discrepancy in
+task demand, coupled with what we see below is a vast gap in text complexity, may help explain why only about half
+of the students taking the ACT Test in the 2004–2005 academic year could meet the benchmark score in reading
+(which also was the case in 2008–2009, the most recent year for which data are available) and why so few students
+in general are prepared for postsecondary reading (ACT, Inc., 2006, 2009).
+K–12 Schooling: Declining Complexity of Texts
+and a Lack of Reading of Complex Texts Independently
+Despite steady or growing reading demands from various sources, K–12 reading texts have actually trended downward
+in difficulty in the last half century. Jeanne Chall and her colleagues (Chall, Conard, & Harris, 1977) found a thirteen year decrease from 1963 to 1975 in the difficulty of grade 1, grade 6, and (especially) grade 11 texts. Extending the
+period to 1991, Hayes, Wolfer, and Wolfe (1996) found precipitous declines (relative to the period from 1946 to 1962) in
+average sentence length and vocabulary level in reading textbooks for a variety of grades. Hayes also found that while
+science books were more difficult to read than literature books, only books for Advanced Placement (AP) classes had
+vocabulary levels equivalent to those of even newspapers of the time (Hayes & Ward, 1992). Carrying the research
+closer to the present day, Gary L. Williamson (2006) found a 350L (Lexile) gap between the difficulty of end-of-high
+school and college texts—a gap equivalent to 1.5 standard deviations and more than the Lexile difference between
+grade 4 and grade 8 texts on the National Assessment of Educational Progress (NAEP). Although legitimate questions
+can be raised about the tools used to measure text complexity (e.g., Mesmer, 2008), what is relevant in these numbers
+is the general, steady decline—over time, across grades, and substantiated by several sources—in the difficulty and
+likely also the sophistication of content of the texts students have been asked to read in school since 1962.
+There is also evidence that current standards, curriculum, and instructional practice have not done enough to foster
+the independent reading of complex texts so crucial for college and career readiness, particularly in the case of infor mational texts. K–12 students are, in general, given considerable scaffolding—assistance from teachers, class discus sions, and the texts themselves (in such forms as summaries, glossaries, and other text features)—with reading  that is
+already less complex overall than that typically required of students prior to 1962.3 What is more, students today are
+asked to read very little expository text—as little as 7 and 15 percent of elementary and middle school instructional
+reading, for example, is expository (Hoffman, Sabo, Bliss, & Hoy, 1994; Moss & Newton, 2002; Yopp & Yopp, 2006)—
+yet much research supports the conclusion that such text is harder for most students to read than is narrative text
+(Bowen & Roth, 1999; Bowen, Roth, & McGinn, 1999, 2002; Heller & Greenleaf, 2007; Shanahan & Shanahan, 2008),
+that students need sustained exposure to expository text to develop important reading strategies (Afflerbach, Pear son, & Paris, 2008; Kintsch, 1998, 2009; McNamara, Graesser, & Louwerse, in press; Perfetti, Landi, & Oakhill, 2005;
+van den Broek, Lorch, Linderholm, & Gustafson, 2001; van den Broek, Risden, & Husebye-Hartmann, 1995), and that
+expository text makes up the vast majority of the required reading in college and the workplace (Achieve, Inc., 2007).
+Worse still, what little expository reading students are asked to do is too often of the superficial variety that involves
+skimming and scanning for particular, discrete pieces of information; such reading is unlikely to prepare students for
+the cognitive demand of true understanding of complex text.
+The Consequences: Too Many Students Reading at Too Low a Level
+The impact that low reading achievement has on students’ readiness for college, careers, and life in general is signifi cant. To put the matter bluntly, a high school graduate who is a poor reader is a postsecondary student who must
+struggle mightily to succeed. The National Center for Education Statistics (NCES) (Wirt, Choy, Rooney, Provasnik, Sen,
+& Tobin, 2004) reports that although needing to take one or more remedial/developmental courses of any sort low ers a student’s chance of eventually earning a degree or certificate, “the need for remedial reading appears to be the
+most serious barrier to degree completion” (p. 63). Only 30 percent of 1992 high school seniors who went on to enroll
+in postsecondary education between 1992 and 2000 and then took any remedial reading course went on to receive a
+degree or certificate, compared to 69 percent of the 1992 seniors who took no postsecondary remedial courses and
+57 percent of those who took one remedial course in a subject other than reading or mathematics. Considering that 11
+percent of those high school seniors required at least one remedial reading course, the societal impact of low reading
+achievement is as profound as its impact on the aspirations of individual students.
+Reading levels among the adult population are also disturbingly low. The 2003 National Assessment of Adult Literacy
+(Kutner, Greenberg, Jin, Boyle, Hsu, & Dunleavy, 2007) reported that 14 percent of adults read prose texts at “below
+basic” level, meaning they could exhibit “no more than the most simple and concrete literacy skills”; a similarly small
+number (13 percent) could read prose texts at the “proficient level,” meaning they could perform “more complex
+and challenging literacy activities” (p. 4). The percent of “proficient” readers had actually declined in a statistically
+significant way from 1992 (15 percent). This low and declining achievement rate may be connected to a general lack
+of reading. As reported by the National Endowment for the Arts (2004), the percent of U.S. adults reading literature
+dropped from 54.0 in 1992 to 46.7 in 2002, while the percent of adults reading any book also declined by 7 percent
+3As also noted in “Key Considerations in Implementing Text Complexity,” below, it is important to recognize that scaffolding
+often is entirely appropriate. The expectation that scaffolding will occur with particularly challenging texts is built into the
+Standards’ grade-by-grade text complexity expectations, for example. The general movement, however, should be toward de creasing scaffolding and increasing independence both within and across the text complexity bands defined in the Standards.
+
+=== Page 4 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   4
+during the same time period. Although the decline occurred in all demographic groups, the steepest decline by far
+was among 18-to-24- and 25-to-34-year-olds (28 percent and 23 percent, respectively). In other words, the problem
+of lack of reading is not only getting worse but doing so at an accelerating rate. Although numerous factors likely
+contribute to the decline in reading, it is reasonable to conclude from the evidence presented above that the deterio ration in overall reading ability, abetted by a decline in K–12 text complexity and a lack of focus on independent read ing of complex texts, is a contributing factor.
+Being able to read complex text independently and proficiently is essential for high achievement in college and
+the workplace and important in numerous life tasks. Moreover, current trends suggest that if students cannot read
+challenging texts with understanding—if they have not developed the skill, concentration, and stamina to read such
+texts—they will read less in general. In particular, if students cannot read complex expository text to gain informa tion, they will likely turn to text-free or text-light sources, such as video, podcasts, and tweets. These sources, while
+not without value, cannot capture the nuance, subtlety, depth, or breadth of ideas developed through complex text.
+As Adams (2009) puts it, “There may one day be modes and methods of information delivery that are as efficient
+and powerful as text, but for now there is no contest. To grow, our students must read lots, and more specifically they
+must read lots of ‘complex’ texts—texts that offer them new language, new knowledge, and new modes of thought”
+(p. 182). A turning away from complex texts is likely to lead to a general impoverishment of knowledge, which, be cause knowledge is intimately linked with reading comprehension ability, will accelerate the decline in the ability to
+comprehend complex texts and the decline in the richness of text itself. This bodes ill for the ability of Americans to
+meet the demands placed upon them by citizenship in a democratic republic and the challenges of a highly competi tive global marketplace of goods, services, and ideas.
+It should be noted also that the problems with reading achievement are not “equal opportunity” in their effects:
+students arriving at school from less-educated families are disproportionately represented in many of these statis tics (Bettinger & Long, 2009). The consequences of insufficiently high text demands and a lack of accountability for
+independent reading of complex texts in K–12 schooling are severe for everyone, but they are disproportionately so for
+those who are already most isolated from text before arriving at the schoolhouse door.
+The Standards’ Approach to Text Complexity
+To help redress the situation described above, the Standards define a three-part model for determining how easy or
+difficult a particular text is to read as well as grade-by-grade specifications for increasing text complexity in suc cessive years of schooling (Reading standard 10). These are to be used together with grade-specific standards that
+require increasing sophistication in students’ reading comprehension ability (Reading standards 1–9). The Standards
+thus approach the intertwined issues of what and how student read.
+A Three-Part Model for Measuring Text Complexity
+As signaled by the graphic at right, the Standards’ model of
+text complexity consists of three equally important parts.
+(1) Qualitative dimensions of text complexity. In the Stan dards, qualitative dimensions and qualitative factors refer
+to those aspects of text complexity best measured or only
+measurable by an attentive human reader, such as levels of
+meaning or purpose; structure; language conventionality and clarity; and knowledge demands.
+(2) Quantitative dimensions of text complexity. The terms
+quantitative dimensions and quantitative factors refer to
+those aspects of text complexity, such as word length or fre quency, sentence length, and text cohesion, that are difficult
+if not impossible for a human reader to evaluate efficiently,
+especially in long texts, and are thus today typically mea sured by computer software.
+(3) Reader and task considerations. While the prior two
+elements of the model focus on the inherent complexity of
+text, variables specific to particular readers (such as motiva tion, knowledge, and experiences) and to particular tasks
+(such as purpose and the complexity of the task assigned
+and the questions posed) must also be considered when determining whether a text is appropriate for a given stu dent. Such assessments are best made by teachers employing their professional judgment, experience, and knowl edge of their students and the subject.
+Figure 1: The Standards’ Model of Text Complexity
+
+=== Page 5 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   5
+The Standards presume that all three elements will come into play when text complexity and appropriateness are
+determined. The following pages begin with a brief overview of just some of the currently available tools, both quali tative and quantitative, for measuring text complexity, continue with some important considerations for using text
+complexity with students, and conclude with a series of examples showing how text complexity measures, balanced
+with reader and task considerations, might be used with a number of different texts.
+Qualitative and Quantitative Measures of Text Complexity
+The qualitative and quantitative measures of text complexity described below are representative of the best tools
+presently available. However, each should be considered only provisional; more precise, more accurate, and easier to-use tools are urgently needed to help make text complexity a vital, everyday part of classroom instruction and curriculum planning.
+Qualitative Measures of Text Complexity
+Using qualitative measures of text complexity involves making an informed decision about the difficulty of a text in
+terms of one or more factors discernible to a human reader applying trained judgment to the task. In the Standards,
+qualitative measures, along with professional judgment in matching a text to reader and task, serve as a necessary
+complement and sometimes as a corrective to quantitative measures, which, as discussed below, cannot (at least at
+present) capture all of the elements that make a text easy or challenging to read and are not equally successful in rat ing the complexity of all categories of text.
+Built on prior research, the four qualitative factors described below are offered here as a first step in the development
+of robust tools for the qualitative analysis of text complexity. These factors are presented as continua of difficulty
+rather than as a succession of discrete “stages” in text complexity. Additional development and validation would be
+needed to translate these or other dimensions into, for example, grade-level- or grade-band-specific rubrics. The
+qualitative factors run from easy (left-hand side) to difficult (right-hand side). Few, if any, authentic texts will be low
+or high on all of these measures, and some elements of the dimensions are better suited to literary or to informational texts.
+(1) Levels of Meaning (literary texts) or Purpose (informational texts). Literary texts with a single level of meaning tend
+to be easier to read than literary texts with multiple levels of meaning (such as satires, in which the author’s literal mes sage is intentionally at odds with his or her underlying message). Similarily, informational texts with an explicitly stated
+purpose are generally easier to comprehend than informational texts with an implicit, hidden, or obscure purpose.
+(2) Structure. Texts of low complexity tend to have simple, well-marked, and conventional structures, whereas texts
+of high complexity tend to have complex, implicit, and (particularly in literary texts) unconventional structures. Simple
+literary texts tend to relate events in chronological order, while complex literary texts make more frequent use of
+flashbacks, flash-forwards, and other manipulations of time and sequence. Simple informational texts are likely not to
+deviate from the conventions of common genres and subgenres, while complex informational texts are more likely to
+conform to the norms and conventions of a specific discipline. Graphics tend to be simple and either unnecessary or
+merely supplementary to the meaning of texts of low complexity, whereas texts of high complexity tend to have simi larly complex graphics, graphics whose interpretation is essential to understanding the text, and graphics that provide
+an independent source of information within a text. (Note that many books for the youngest students rely heavily on
+graphics to convey meaning and are an exception to the above generalization.)
+(3) Language Conventionality and Clarity. Texts that rely on literal, clear, contemporary, and conversational language tend
+to be easier to read than texts that rely on figurative, ironic, ambiguous, purposefully misleading, archaic or otherwise unfa miliar language or on general academic and domain-specific vocabulary.
+(4) Knowledge Demands. Texts that make few assumptions about the extent of readers’ life experiences and the
+depth of their cultural/literary and content/discipline knowledge are generally less complex than are texts that make many assumptions in one or more of those areas.
+
+=== Page 6 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   6
+Figure 2: Qualitative Dimensions of Text Complexity
+Levels of Meaning (literary texts) or Purpose (informational texts) •
+Single level of meaning  Multiple levels of meaning •
+Explicitly stated purpose  Implicit purpose, may be hidden or obscure
+Structure •
+Simple  Complex •
+Explicit  Implicit •
+Conventional  Unconventional (chiefly literary texts) •
+Events related in chronological order  Events related out of chronological order (chiefly literary texts) •
+Traits of a common genre or subgenre  Traits specific to a particular discipline (chiefly informational texts) •
+Simple graphics  Sophisticated graphics •
+Graphics unnecessary or merely supplementary to understanding the text  Graphics essential to understanding the text
+and may provide information not otherwise conveyed in the text
+Language Conventionality and Clarity •
+Literal  Figurative or ironic •
+Clear  Ambiguous or purposefully misleading •
+Contemporary, familiar  Archaic or otherwise unfamiliar •
+Conversational  General academic and domain-specific
+Knowledge Demands: Life Experiences (literary texts) •
+Simple theme  Complex or sophisticated themes •
+Single themes  Multiple themes •
+Common, everyday experiences or clearly fantastical situations  Experiences distinctly different from one’s own •
+Single perspective  Multiple perspectives •
+Perspective(s) like one’s own  Perspective(s) unlike or in opposition to one’s own
+Knowledge Demands: Cultural/Literary Knowledge (chiefly literary texts) •
+Everyday knowledge and familiarity with genre conventions required  Cultural and literary knowledge useful •
+Low intertextuality (few if any references/allusions to other texts)  High intertextuality (many references/allusions to other texts)
+Knowledge Demands: Content/Discipline Knowledge (chiefly informational texts) •
+Everyday knowledge and familiarity with genre conventions required  Extensive, perhaps specialized discipline-specific content knowledge required •
+Low intertextuality (few if any references to/citations of other texts)  High intertextuality (many references to/citations of other texts)
+Adapted from ACT, Inc. (2006). Reading between the lines: What the ACT reveals about college readiness in reading. Iowa City, IA: Author; Carnegie
+Council on Advancing Adolescent Literacy. (2010). Time to act: An agenda for advancing adolescent literacy for college and career success.
+New York: Carnegie Corporation of New York; Chall, J. S., Bissex, G. L., Conrad, S. S., & Harris-Sharples, S. (1996). Qualitative assessment of text
+difficulty: A practical guide for teachers and writers. Cambridge, UK: Brookline Books; Hess, K., & Biggam, S. (2004). A discussion of “increasing
+text complexity.” Published by the New Hampshire, Rhode Island, and Vermont departments of education as part of the New England Common
+Assessment Program (NECAP). Retrieved from www.nciea.org/publications/TextComplexity_KH05.pdf
+
+=== Page 7 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   7
+Quantitative Measures of Text Complexity
+A number of quantitative tools exist to help educators assess aspects of text complexity that are better measured
+by algorithm than by a human reader. The discussion is not exhaustive, nor is it intended as an endorsement of one
+method or program over another. Indeed, because of the limits of each of the tools, new or improved ones are needed
+quickly if text complexity is to be used effectively in the classroom and curriculum.
+Numerous formulas exist for measuring the readability of various types of texts. Such formulas, including the widely
+used Flesch-Kincaid Grade Level test, typically use word length and sentence length as proxies for semantic and
+syntactic complexity, respectively (roughly, the complexity of the meaning and sentence structure). The assump tion behind these formulas is that longer words and longer sentences are more difficult to read than shorter ones; a
+text with many long words and/or sentences is thus rated by these formulas as harder to read than a text with many
+short words and/or sentences would be. Some formulas, such as the Dale-Chall Readability Formula, substitute word
+frequency for word length as a factor, the assumption here being that less familiar words are harder to comprehend
+than familiar words. The higher the proportion of less familiar words in a text, the theory goes, the harder that text is
+to read. While these readability formulas are easy to use and readily available—some are even built into various word
+processing applications—their chief weakness is that longer words, less familiar words, and longer sentences are not
+inherently hard to read. In fact, series of short, choppy sentences can pose problems for readers precisely because
+these sentences lack the cohesive devices, such as transition words and phrases, that help establish logical links
+among ideas and thereby reduce the inference load on readers.
+Like Dale-Chall, the Lexile Framework for Reading, developed by MetaMetrics, Inc., uses word frequency and sentence
+length to produce a single measure, called a Lexile, of a text’s complexity. The most important difference between the
+Lexile system and traditional readability formulas is that traditional formulas only assign a score to texts, whereas the
+Lexile Framework can place both readers and texts on the same scale. Certain reading assessments yield Lexile scores
+based on student performance on the instrument; some reading programs then use these scores to assign texts to
+students. Because it too relies on word familiarity and sentence length as proxies for semantic and syntactic complex ity, the Lexile Framework, like traditional formulas, may underestimate the difficulty of texts that use simple, familiar
+language to convey sophisticated ideas, as is true of much high-quality fiction written for adults and appropriate for
+older students. For this reason and others, it is possible that factors other than word familiarity and sentence length
+contribute to text difficulty. In response to such concerns, MetaMetrics has indicated that it will release the qualita tive ratings it assigns to some of the texts it rates and will actively seek to determine whether one or more additional
+factors can and should be added to its quantitative measure. Other readability formulas also exist, such as the ATOS
+formula associated with the Accelerated Reader program developed by Renaissance Learning. ATOS uses word dif ficulty (estimated grade level), word length, sentence length, and text length (measured in words) as its factors. Like
+the Lexile Framework, ATOS puts students and texts on the same scale.
+A nonprofit service operated at the University of Memphis, Coh-Metrix attempts to account for factors in addition to
+those measured by readability formulas. The Coh-Metrix system focuses on the cohesiveness of a text—basically, how
+tightly the text holds together. A high-cohesion text does a good deal of the work for the reader by signaling relation ships among words, sentences, and ideas using repetition, concrete language, and the like; a low-cohesion text, by
+contrast, requires the reader him- or herself to make many of the connections needed to comprehend the text. High cohesion texts are not necessarily “better” than low-cohesion texts, but they are easier to read.
+The standard Coh-Metrix report includes information on more than sixty indices related to text cohesion, so it can be
+daunting to the layperson or even to a professional educator unfamiliar with the indices. Coh-Metrix staff have worked
+to isolate the most revealing, informative factors from among the many they consider, but these “key factors” are not
+yet widely available to the public, nor have the results they yield been calibrated to the Standards’ text complexity
+grade bands. The greatest value of these factors may well be the promise they offer of more advanced and usable tools yet to come.
+Reader and Task Considerations
+The use of qualitative and quantitative measures to assess text complexity is balanced in the Standards’ model by the
+expectation that educators will employ professional judgment to match texts to particular students and tasks. Numer ous considerations go into such matching. For example, harder texts may be appropriate for highly knowledgeable or
+skilled readers, and easier texts may be suitable as an expedient for building struggling readers’ knowledge or reading
+skill up to the level required by the Standards. Highly motivated readers are often willing to put in the extra effort re quired to read harder texts that tell a story or contain information in which they are deeply interested. Complex tasks
+may require the kind of information contained only in similarly complex texts.
+Numerous factors associated with the individual reader are relevant when determining whether a given text is ap propriate for him or her. The RAND Reading Study Group identified many such factors in the 2002 report Reading for
+Understanding:
+The reader brings to the act of reading his or her cognitive capabilities (attention, memory, critical analytic
+ability, inferencing, visualization); motivation (a purpose for reading, interest in the content, self-efficacy as
+a reader); knowledge (vocabulary and topic knowledge, linguistic and discourse knowledge, knowledge of
+
+=== Page 8 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   8 comprehension strategies); and experiences.
+As part of describing the activity of reading, the RAND group also named important task-related variables, includ ing the reader’s purpose (which might shift over the course of reading), “the type of reading being done, such as
+skimming (getting the gist of the text) or studying (reading the text with the intent of retaining the information for a
+period of time),” and the intended outcome, which could include “an increase in knowledge, a solution to some real world problem, and/or engagement with the text.”4
+Key Considerations in Implementing Text Complexity
+Texts and Measurement Tools
+The tools for measuring text complexity are at once useful and imperfect. Each of the qualitative and quantitative
+tools described above has its limitations, and none is completely accurate. The development of new and improved
+text complexity tools should follow the release of the Standards as quickly as possible. In the meantime, the Stan dards recommend that multiple quantitative measures be used whenever possible and that their results be confirmed
+or overruled by a qualitative analysis of the text in question.
+Certain measures are less valid or inappropriate for certain kinds of texts. Current quantitative measures are suitable
+for prose and dramatic texts. Until such time as quantitative tools for capturing poetry’s difficulty are developed, de termining whether a poem is appropriately complex for a given grade or grade band will necessarily be a matter of a
+qualitative assessment meshed with reader-task considerations. Furthermore, texts for kindergarten and grade 1 may
+not be appropriate for quantitative analysis, as they often contain difficult-to-assess features designed to aid early
+readers in acquiring written language. The Standards’ poetry and K–1 text exemplars were placed into grade bands by expert teachers drawing on classroom experience.
+Many current quantitative measures underestimate the challenge posed by complex narrative fiction. Quantitative
+measures of text complexity, particularly those that rely exclusively or in large part on word- and sentence-level fac tors, tend to assign sophisticated works of literature excessively low scores. For example, as illustrated in example 2
+below, some widely used quantitative measures, including the Flesch-Kincaid Grade Level test and the Lexile Frame work for Reading, rate the Pulitzer Prize–winning novel Grapes of Wrath as appropriate for grades 2–3. This coun terintuitive result emerges because works such as Grapes often express complex ideas in relatively commonplace
+language (familiar words and simple syntax), especially in the form of dialogue that mimics everyday speech. Until
+widely available quantitative tools can better account for factors recognized as making such texts challenging, includ ing multiple levels of meaning and mature themes, preference should likely be given to qualitative measures of text
+complexity when evaluating narrative fiction intended for students in grade 6 and above.
+Measures of text complexity must be aligned with college and career readiness expectations for all students. Qualita tive scales of text complexity should be anchored at one end by descriptions of texts representative of those re quired in typical first-year credit-bearing college courses and in workforce training programs. Similarly, quantitative
+measures should identify the college- and career-ready reading level as one endpoint of the scale. MetaMetrics, for
+example, has realigned its Lexile ranges to match the Standards’ text complexity grade bands and has adjusted up ward its trajectory of reading comprehension development through the grades to indicate that all students should be
+reading at the college and career readiness level by no later than the end of high school.
+Figure 3: Text Complexity Grade Bands and Associated Lexile Ranges (in Lexiles)
+Text Complexity Grade
+Band in the Standards
+Old Lexile Ranges
+Lexile Ranges Aligned to CCR expectations
+K–1
+N/A
+N/A 2–3 450–725 450–790 4–5 645–845 770–980 6–8 860–1010 955–1155 9–10 960–1115 1080–1305
+11–CCR 1070–1220 1215–1355
+4RAND Reading Study Group. (2002). Reading for understanding: Toward an R&D program in reading comprehension. Santa
+Monica, CA: RAND. The quoted text appears in pages xiii–xvi.
+
+=== Page 9 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   9
+Readers and Tasks
+Students’ ability to read complex text does not always develop in a linear fashion. Although the progression of Read ing standard 10 (see below) defines required grade-by-grade growth in students’ ability to read complex text, the
+development of this ability in individual students is unlikely to occur at an unbroken pace. Students need opportuni ties to stretch their reading abilities but also to experience the satisfaction and pleasure of easy, fluent reading within
+them, both of which the Standards allow for. As noted above, such factors as students’ motivation, knowledge, and
+experiences must also come into play in text selection. Students deeply interested in a given topic, for example, may
+engage with texts on that subject across a range of complexity. Particular tasks may also require students to read
+harder texts than they would normally be required to. Conversely, teachers who have had success using particular
+texts that are easier than those required for a given grade band should feel free to continue to use them so long as
+the general movement during a given school year is toward texts of higher levels of complexity.
+Students reading well above and well below grade-band level need additional support. Students for whom texts within
+their text complexity grade band (or even from the next higher band) present insufficient challenge must be given the
+attention and resources necessary to develop their reading ability at an appropriately advanced pace. On the other
+hand, students who struggle greatly to read texts within (or even below) their text complexity grade band must be
+given the support needed to enable them to read at a grade-appropriate level of complexity.
+Even many students on course for college and career readiness are likely to need scaffolding as they master higher
+levels of text complexity. As they enter each new grade band, many students are likely to need at least some extra
+help as they work to comprehend texts at the high end of the range of difficulty appropriate to the band. For ex ample, many students just entering grade 2 will need some support as they read texts that are advanced for the
+grades 2–3 text complexity band. Although such support is educationally necessary and desirable, instruction must
+move generally toward decreasing scaffolding and increasing independence, with the goal of students reading in dependently and proficiently within a given grade band by the end of the band’s final year (continuing the previous example, the end of grade 3).
+
+=== Page 10 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   10
+The Standards’ Grade-Specific Text Complexity Demands
+As illustrated in figure 4, text complexity in the Standards is defined in grade bands: grades 2–3, 4–5, 6–8, 9–10, and
+11–CCR.5 Students in the first year(s) of a given band are expected by the end of the year to read and comprehend
+proficiently within the band, with scaffolding as needed at the high end of the range. Students in the last year of a
+band are expected by the end of the year to read and comprehend independently and proficiently within the band.
+Figure 4: The Progression of Reading Standard 10
+Grade(s)
+Reading Standard 10 (individual text types omitted)
+K
+Actively engage in group reading activities with purpose and understanding.
+1
+With prompting and support, read prose and poetry [informational texts] of appropriate complexity for grade 1.
+2
+By the end of the year, read and comprehend literature [informational texts] in the grades 2–3 text
+complexity band proficiently, with scaffolding as needed at the high end of the range.
+3
+By the end of the year, read and comprehend literature [informational texts] at the high end of the
+grades 2–3 text complexity band independently and proficiently.
+4
+By the end of the year, read and comprehend literature [informational texts] in the grades 4–5 text
+complexity band proficiently, with scaffolding as needed at the high end of the range.
+5
+By the end of the year, read and comprehend literature [informational texts] at the high end of the
+grades 4–5 text complexity band independently and proficiently.
+6
+By the end of the year, read and comprehend literature [informational texts, history/social studies
+texts, science/technical texts] in the grades 6–8 text complexity band proficiently, with scaffolding as needed at the high end of the range.
+7
+By the end of the year, read and comprehend literature [informational texts, history/social studies
+texts, science/technical texts] in the grades 6–8 text complexity band proficiently, with scaffolding as needed at the high end of the range.
+8
+By the end of the year, read and comprehend literature [informational texts, history/social studies
+texts, science/technical texts] at the high end of the grades 6–8 text complexity band independently and proficiently.
+9–10
+By the end of grade 9, read and comprehend literature [informational texts, history/social studies
+texts, science/technical texts] in the grades 9–10 text complexity band proficiently, with scaffolding as needed at the high end of the range.
+
+By the end of grade 10, read and comprehend literature [informational texts, history/social studies
+texts, science/technical texts] at the high end of the grades 9–10 text complexity band independently and proficiently.
+11–12
+By the end of grade 11, read and comprehend literature [informational texts, history/social studies
+texts, science/technical texts] in the grades 11–CCR text complexity band proficiently, with scaffolding as needed at the high end of the range.
+
+By the end of grade 12, read and comprehend literature [informational texts, history/social studies
+texts, science/technical texts] at the high end of the grades 11–CCR text complexity band indepen dently and proficiently.
+5As noted above in “Key Considerations in Implementing Text Complexity,” K–1 texts are not amenable to quantitative meas ure. Furthermore, students in those grades are acquiring the code at varied rates. Hence, the Standards’ text complexity requirements begin formally with grade 2.
+
+=== Page 11 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   11
+The Model in Action: Sample Annotated Reading Texts
+The following examples demonstrate how qualitative and quantitative measures of text complexity can be used along
+with reader and task considerations to make informed decisions about whether a particular text is an appropriate
+challenge for particular students. The cases below illustrate some of the possibilities that can arise when multiple
+measures are used to assess text complexity and how discrepancies among those measures might be resolved. It
+is important to note that the conclusions offered below concerning the texts’ appropriateness for particular grade
+bands are informed judgments based on qualitative and quantitative assessments of text complexity. Different
+conclusions could reasonably be drawn from the same data, and reader and task considerations may also warrant a higher or lower placement.
+Example 1: Narrative of the Life of Frederick Douglass (Grades 6–8 Text Complexity Band)
+Excerpt
+The plan which I adopted, and the one by which I was most successful, was that of making friends
+of all the little white boys whom I met in the street. As many of these as I could, I converted into
+teachers. With their kindly aid, obtained at different times and in different places, I finally succeed ed in learning to read. When I was sent of errands, I always took my book with me, and by going
+one part of my errand quickly, I found time to get a lesson before my return. I used also to carry
+bread with me, enough of which was always in the house, and to which I was always welcome; for I
+was much better off in this regard than many of the poor white children in our neighborhood. This
+bread I used to bestow upon the hungry little urchins, who, in return, would give me that more valu able bread of knowledge. I am strongly tempted to give the names of two or three of those little
+boys, as a testimonial of the gratitude and affection I bear them; but prudence forbids;—not that
+it would injure me, but it might embarrass them; for it is almost an unpardonable offence to teach
+slaves to read in this Christian country. It is enough to say of the dear little fellows, that they lived
+on Philpot Street, very near Durgin and Bailey’s ship-yard. I used to talk this matter of slavery over
+with them. I would sometimes say to them, I wished I could be as free as they would be when they
+got to be men. “You will be free as soon as you are twenty-one, but I am a slave for life! Have not I
+as good a right to be free as you have?” These words used to trouble them; they would express for
+me the liveliest sympathy, and console me with the hope that something would occur by which I might be free.
+I was now about twelve years old, and the thought of being a slave for life began to bear heavily
+upon my heart. Just about this time, I got hold of a book entitled “The Columbian Orator.” Every
+opportunity I got, I used to read this book. Among much of other interesting matter, I found in it a
+dialogue between a master and his slave. The slave was represented as having run away from his
+master three times. The dialogue represented the conversation which took place between them,
+when the slave was retaken the third time. In this dialogue, the whole argument in behalf of slavery
+was brought forward by the master, all of which was disposed of by the slave. The slave was made
+to say some very smart as well as impressive things in reply to his master—things which had the
+desired though unexpected effect; for the conversation resulted in the voluntary emancipation of the slave on the part of the master.
+In the same book, I met with one of Sheridan’s mighty speeches on and in behalf of Catholic
+emancipation. These were choice documents to me. I read them over and over again with unabated
+interest. They gave tongue to interesting thoughts of my own soul, which had frequently flashed
+through my mind, and died away for want of utterance. The moral which I gained from the dialogue
+was the power of truth over the conscience of even a slaveholder. What I got from Sheridan was
+a bold denunciation of slavery, and a powerful vindication of human rights. The reading of these
+documents enabled me to utter my thoughts, and to meet the arguments brought forward to sus tain slavery; but while they relieved me of one difficulty, they brought on another even more painful
+than the one of which I was relieved. The more I read, the more I was led to abhor and detest my
+enslavers. I could regard them in no other light than a band of successful robbers, who had left
+their homes, and gone to Africa, and stolen us from our homes, and in a strange land reduced us
+to slavery. I loathed them as being the meanest as well as the most wicked of men. As I read and
+contemplated the subject, behold! that very discontentment which Master Hugh had predicted
+would follow my learning to read had already come, to torment and sting my soul to unutterable
+anguish. As I writhed under it, I would at times feel that learning to read had been a curse rather
+than a blessing. It had given me a view of my wretched condition, without the remedy. It opened
+my eyes to the horrible pit, but to no ladder upon which to get out. In moments of agony, I envied
+my fellow-slaves for their stupidity. I have often wished myself a beast. I preferred the condition of
+the meanest reptile to my own. Any thing, no matter what, to get rid of thinking! It was this ever lasting thinking of my condition that tormented me. There was no getting rid of it. It was pressed
+
+=== Page 12 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   12
+upon me by every object within sight or hearing, animate or inanimate. The silver trump of freedom
+had roused my soul to eternal wakefulness. Freedom now appeared, to disappear no more forever.
+It was heard in every sound, and seen in every thing. It was ever present to torment me with a sense
+of my wretched condition. I saw nothing without seeing it, I heard nothing without hearing it, and
+felt nothing without feeling it. It looked from every star, it smiled in every calm, breathed in every wind, and moved in every storm.
+Douglass, Frederick. Narrative of the Life of Frederick Douglass, an American Slave. Written by Himself.
+Boston: Anti-Slavery Office, 1845.
+Figure 5: Annotation of Narrative of the Life of Frederick Douglass
+Qualitative Measures
+Quantitative Measures
+Levels of Meaning
+While the apparent aim of the text is to convince readers
+of the day of the evils of slavery, there are other aims as
+well; among the latter, not fully revealed in the excerpt,
+are Douglass’s efforts to assert his own manhood (and
+that of other black men) and to create an extended
+analogy between his own literal rise to freedom and a spiritual awakening.
+Structure
+The Narrative uses a fairly simple, explicit, and conven tional story structure, with events largely related chrono logically by a narrator recounting his past. There are
+some philosophical discussions that may, to the reader just looking for a story, seem like digressions.
+Language Conventionality and Clarity
+Douglass’s language is largely clear and meant to be ac cessible. He does, however, use some figurative language
+(e.g., juxtaposing literal bread with the metaphorical
+bread of knowledge) and literary devices (e.g., personi fying freedom). There are also some now-archaic and
+unusual words and phrasings (e.g., choice documents).
+
+Knowledge Demands
+The Narrative discusses moderately sophisticated
+themes. The experiences of slavery Douglass describes
+are obviously outside students’ own experiences, but
+Douglass renders them vivid. The text is bound by Dou glass’s authoritative perspective. General background
+knowledge about slavery and race in mid-nineteenth century America is helpful, as is knowledge of Christiani ty, to which Douglass makes frequent reference through out the excerpt and the work as a whole.
+Various readability measures of the Narrative are largely
+in agreement that it is of appropriate complexity for
+grades 6–8. A Coh-Metrix analysis calls attention to this
+excerpt’s complex syntax and the abstractness of some
+of the language (e.g., hard-to-define concepts such
+as slavery and freedom). Helping to balance out that
+challenge are the text’s storylike structure and the way
+the text draws clear connections between words and
+sentences. Readers will still have to make many infer ences to interpret and connect the text’s central ideas, however.
+Reader-Task Considerations
+These are to be determined locally with reference to
+such variables as a student’s motivation, knowledge, and
+experiences as well as purpose and the complexity of the task assigned and the questions posed.
+Recommended Placement
+Both the qualitative and quantitative measures support
+the Standards’ inclusion of the Narrative in the grades
+6–8 text complexity band, with the understanding that
+the text sits at the high end of the range and that it
+can be reread profitably in later years by more mature
+students capable of appreciating the deeper messages embedded in the story .
+
+=== Page 13 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   13
+Example 2: The Grapes of Wrath (Grades 9–10 Text Complexity Band)
+Excerpt
+The man took off his dark, stained hat and stood with a curious humility in front of the screen.
+“Could you see your way to sell us a loaf of bread, ma’am?”
+Mae said, “This ain’t a grocery store. We got bread to make san’widges.”
+“I know, ma’am.” His humility was insistent. “We need bread and there ain’t nothin’ for quite a piece, they say.”
+“’F we sell bread we gonna run out.” Mae’s tone was faltering.
+“We’re hungry,” the man said.
+“Whyn’t you buy a san’widge? We got nice san’widges, hamburgs.”
+“We’d sure admire to do that, ma’am. But we can’t. We got to make a dime do all of us.” And he said embarrassedly, “We ain’t got but a little.”
+Mae said, “You can’t get no loaf a bread for a dime. We only got fifteen-cent loafs.”
+From behind her Al growled, “God Almighty, Mae, give ‘em bread.” “We’ll run out ‘fore the bread truck comes.”
+“Run out then, goddamn it,” said Al. He looked sullenly down at the potato salad he was mixing.
+Mae shrugged her plump shoulders and looked to the truck drivers to show them what she was up against.
+She held the screen door open and the man came in, bringing a smell of sweat with him. The boys
+edged behind him and they went immediately to the candy case and stared in—not with craving or
+with hope or even with desire, but just with a kind of wonder that such things could be. They were
+alike in size and their faces were alike. One scratched his dusty ankle with the toe nails of his other
+foot. The other whispered some soft message and then they straightened their arms so that their
+clenched fists in the overall pockets showed through the thin blue cloth.
+Mae opened a drawer and took out a long waxpaper-wrapped loaf. “This here is a fifteen-cent loaf.”
+The man put his hat back on his head. He answered with inflexible humility, “Won’t you—can’t you see your way to cut off ten cents’ worth?”
+Al said snarlingly, “Goddamn it, Mae. Give ‘em the loaf.”
+The man turned toward Al. “No, we want ta buy ten cents’ worth of it. We got it figgered awful close, mister, to get to California.”
+Mae said resignedly, “You can have this for ten cents.” “That’d be robbin’ you, ma’am.”
+“Go ahead—Al says to take it.” She pushed the waxpapered loaf across the counter. The man took
+a deep leather pouch from his rear pocket, untied the strings, and spread it open. It was heavy with silver and with greasy bills.
+“May soun’ funny to be so tight,” he apologized. “We got a thousan’ miles to go, an’ we don’ know
+if we’ll make it.” He dug in the pouch with a forefinger, located a dime, and pinched in for it. When
+he put it down on the counter he had a penny with it. He was about to drop the penny back into
+the pouch when his eye fell on the boys frozen before the candy counter. He moved slowly down
+to them. He pointed in the case at big long sticks of striped peppermint. “Is them penny candy, ma’am?”
+
+=== Page 14 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   14
+Mae moved down and looked in. “Which ones?” “There, them stripy ones.”
+The little boys raised their eyes to her face and they stopped breathing; their mouths were partly opened, their half-naked bodies were rigid.
+“Oh—them. Well, no—them’s two for a penny.”
+“Well, gimme two then, ma’am.” He placed the copper cent carefully on the counter. The boys ex pelled their held breath softly. Mae held the big sticks out.
+Steinbeck, John. The Grapes of Wrath.
+New York: Viking, 1967 (1939).
+Figure 6: Annotation of The Grapes of Wrath
+Qualitative Measures
+Quantitative Measures
+Levels of Meaning
+There are multiple and often implicit levels of meaning
+within the excerpt and the novel as a whole. The surface
+level focuses on the literal journey of the Joads, but the
+novel also works on metaphorical and philosophical levels.
+Structure
+The text is relatively simple, explicit, and conventional in
+form. Events are largely related in chronological order.
+Language Conventionality and Clarity
+Although the language used is generally familiar, clear,
+and conversational, the dialect of the characters may
+pose a challenge for some readers. Steinbeck also puts a
+great deal of weight on certain less familiar words, such
+as faltering. In various portions of the novel not fully rep resented in the excerpt, the author combines rich, vivid,
+and detailed description with an economy of words that requires heavy inferencing.
+
+Knowledge Demands
+The themes are sophisticated. The experiences and per spective conveyed will be different from those of many
+students. Knowledge of the Great Depression, the “Okie
+Migration” to California, and the religion and music of
+the migrants is helpful, but the author himself provides much of the context needed for comprehension.
+The quantitative assessment of The Grapes of Wrath
+demonstrates the difficulty many currently existing
+readability measures have in capturing adequately the
+richness of sophisticated works of literature, as vari ous ratings suggest a placement within the grades 2–3
+text complexity band. A Coh-Metrix analysis also tends
+to suggest the text is an easy one since the syntax is uncomplicated and the author uses a conventional
+story structure and only a moderate number of abstract
+words. (The analysis does indicate, however, that a great
+deal of inferencing will be required to interpret and con nect the text’s words, sentences, and central ideas.)
+Reader-Task Considerations
+These are to be determined locally with reference to
+such variables as a student’s motivation, knowledge, and
+experiences as well as purpose and the complexity of the task assigned and the questions posed.
+Recommended Placement
+Though considered extremely easy by many quantitative
+measures, The Grapes of Wrath has a sophistication of
+theme and content that makes it more suitable for early
+high school (grades 9–10), which is where the Standards
+have placed it. In this case, qualitative measures have overruled the quantitative measures.
+
+=== Page 15 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   15
+Example 3: The Longitude Prize (Grades 9–10 Text Complexity Band)
+Excerpt
+From Chapter 1: “A Most Terrible Sea”
+At six in the morning I was awaked by a great shock, and a confused noise of the men on
+deck. I ran up, thinking some ship had run foul of us, for by my own reckoning, and that of
+every other person in the ship, we were at least thirty-five leagues distant from land; but,
+before I could reach the quarter-deck, the ship gave a great stroke upon the ground, and the
+sea broke over her. Just after this I could perceive the land, rocky, rugged and uneven, about
+two cables’ length from us . . . the masts soon went overboard, carrying some men with them
+. . . notwithstanding a most terrible sea, one of the [lifeboats] was launched, and eight of the
+best men jumped into her; but she had scarcely got to the ship’s stern when she was hurled
+to the bottom, and every soul in her perished. The rest of the boats were soon washed to
+pieces on the deck. We then made a raft . . . and waited with resignation for Providence to assist us.
+—From an account of the wreck of HMS Litchfield off the coast of North Africa, 1758
+The Litchfield came to grief because no one aboard knew where they were. As the narrator tells us,
+by his own reckoning and that of everyone else they were supposed to be thirty-five leagues, about
+a hundred miles, from land. The word “reckoning” was short for “dead reckoning”—the system
+used by ships at sea to keep track of their position, meaning their longitude and latitude. It was an
+intricate system, a craft, and like every other craft involved the mastery of certain tools, in this case
+such instruments as compass, hourglass, and quadrant. It was an art as well.
+Latitude, the north-south position, had always been the navigator’s faithful guide. Even in ancient
+times, a Greek or Roman sailor could tell how far north of the equator he was by observing the
+North Star’s height above the horizon, or the sun’s at noon. This could be done without instruments,
+trusting in experience and the naked eye, although it is believed that an ancestor of the quadrant
+called the astrolabe—“star-measurer”—was known to the ancients, and used by them to measure
+the angular height of the sun or a star above the horizon.
+Phoenicians, Greeks, and Romans tended to sail along the coasts and were rarely out of sight of
+land. As later navigators left the safety of the Mediterranean to plunge into the vast Atlantic—far
+from shore, and from the shorebirds that led them to it—they still had the sun and the North Star.
+And these enabled them to follow imagined parallel lines of latitude that circle the globe. Follow ing a line of latitude—“sailing the parallel”—kept a ship on a steady east-west course. Christopher
+Columbus, who sailed the parallel in 1492, held his ships on such a safe course, west and west again,
+straight on toward Asia. When they came across an island off the coast of what would later be
+called America, Columbus compelled his crew to sign an affidavit stating that this island was no island but mainland Asia.
+Dash, Joan. The Longitude Prize.
+New York: Farrar, Straus and Giroux, 2000. (2000)
+
+=== Page 16 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   16
+Figure 7: Annotation of The Longitude Prize
+Qualitative Measures
+Quantitative Measures
+Purpose
+The single, relatively clear purpose of the text (not fully
+apparent in the excerpt but signaled by the title) is to
+recount the discovery of the concept of longitude.
+Structure
+The text is moderately complex and subtle in structure.
+Although the text may appear at first glance to be a
+conventional narrative, Dash mainly uses narrative ele ments in the service of illustrating historical and techni cal points.
+Language Conventionality and Clarity
+Language is used literally and is relatively clear, but numerous archaic, domain-specific, and otherwise
+unfamiliar terms are introduced in the course of citing
+primary historical sources and discussing the craft, art, and science of navigation.
+Knowledge Demands
+The text assumes relatively little prior knowledge
+regarding seafaring and navigation, but some general
+sense of the concepts of latitude and longitude, the
+nature of sailing ships, and the historical circumstances
+that promoted exploration and trade is useful to com prehending the text.
+Various readability measures of The Longitude Prize
+are largely in agreement that the text is appropriate for
+the grades 9–10 text complexity band. The Coh-Metrix
+analysis notes that the text is primarily informational in
+structure despite the narrative opening. (Recall from
+“Why Text Complexity Matters,” above, that research
+indicates that informational texts are generally harder to
+read than narratives.) While the text relies on concrete
+language and goes to some effort to connect central
+ideas for the reader, it also contains complex syntax and
+few explicit connections between words and sentences.
+Reader-Task Considerations
+These are to be determined locally with reference to
+such variables as a student’s motivation, knowledge, and
+experiences as well as purpose and the complexity of the task assigned and the questions posed.
+Recommended Placement
+The qualitative and quantitative measures by and large
+agree on the placement of The Longitude Prize into the
+grades 9–10 text complexity band, which is where the
+Standards have it.
+
+=== Page 17 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   17
+Reading Foundational Skills
+The following supplements the Reading Standards: Foundational Skills (K–5) in the main document (pp. 15–17). See
+page 37 in the bibliography of this appendix for sources used in helping construct the foundational skills and the material below.
+Phoneme-Grapheme Correspondences
+Consonants
+Common graphemes (spellings) are listed in the following table for each of the consonant sounds. Note that the term
+grapheme refers to a letter or letter combination that corresponds to one speech sound.
+Figure 8: Consonant Phoneme-Grapheme Correspondences in English
+Phoneme
+Word Examples
+Common Graphemes (Spellings) for the Phoneme* /p/ pit, spider, stop p /b/ bit, brat, bubble b /m/ mitt, comb, hymn m, mb, mn /t/ tickle, mitt, sipped t, tt, ed /d/ die, loved d, ed /n/ nice, knight, gnat n, kn, gn /k/ cup, kite, duck, chorus, folk, quiet k, c, ck, ch, lk, q /g/ girl, Pittsburgh g, gh /ng/ sing, bank ng, n /f/ fluff, sphere, tough, calf f, ff, gh, ph, lf /v/ van, dove v, ve /s/ sit, pass, science, psychic s, ss, sc, ps /z/ zoo, jazz, nose, as, xylophone z, zz, se, s, x /th/ thin, breath, ether th /th/ this, breathe, either th /sh/
+shoe, mission, sure, charade, precious, notion, mission, special sh, ss, s, ch, sc, ti, si, ci /zh/ measure, azure s, z /ch/ cheap, future, etch ch, tch /j/ judge, wage j, dge, ge /l/ lamb, call, single l, ll, le /r/ reach, wrap, her, fur, stir r, wr, er/ur/ir /y/ you, use, feud, onion y, (u, eu), i /w/ witch, queen w, (q)u /wh/ where wh /h/ house, whole h, wh
+*Graphemes in the word list are among the most common spellings, but the list does not include all possible graph emes for a given consonant. Most graphemes are more than one letter.
+
+=== Page 18 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   18
+Vowels
+Common graphemes (spellings) are listed in the following table for each of the vowel sounds. Note that the term
+grapheme refers to a letter or letter combination that corresponds to one speech sound.
+Figure 9: Vowel Phoneme-Grapheme Correspondences in English
+Phoneme
+Word Examples
+Common Graphemes (Spellings) for the Phoneme* /ē/ see, these, me, eat, key, happy, chief, either ee, e_e, -e, ea, ey, -y, ie, ei /ĭ/ sit, gym i, y /ā/ make, rain, play, great, baby, eight, vein, they a_e, ai, ay, ea, -y, eigh, ei, ey /ĕ/ bed, breath e, ea /ă/ cat a /ī/ time, pie, cry, right, rifle i_e, ie, -y, igh, -i /ŏ/ fox, swap, palm o, wa, al /ŭ/ cup, cover, flood, tough u, o, oo, ou /aw/ saw, pause, call, water, bought aw, au, all, wa, ough /ō.
+vote, boat, toe, snow, open o_e, oa, oe, ow, o-, /oo/ took, put, could oo, u, ou /ū/ [oo] moo, tube, blue, chew, suit, soup oo, u_e, ue, ew, ui, ou /y//ū/ use, few, cute u, ew, u_e /oi/ boil, boy oi, oy /ow/ out, cow ou, ow er her, fur, sir er, ur, ir ar cart ar or sport or
+* Graphemes in the word list are among the most common spellings, but the list does not include all possible graph emes for a given vowel. Many graphemes are more than one letter.
+Phonological Awareness
+General Progression of Phonological Awareness Skills (PreK–1)
+Word Awareness (Spoken Language)
+Move a chip or marker to stand for each word in a spoken sentence.
+
+The dog barks.  (3)
+
+The brown dog barks.  (4)
+
+The brown dog barks loudly.  (5)
+Rhyme Recognition during Word Play
+Say “yes” if the words have the same last sounds (rhyme):
+
+clock/dock  (y)
+
+red/said  (y)
+
+down/boy  (n)
+Repetition and Creation of Alliteration during Word Play
+
+Nice, neat Nathan
+
+Chewy, chunky chocolate ¯ ˘
+
+=== Page 19 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   19
+Syllable Counting or Identification (Spoken Language)
+A spoken syllable is a unit of speech organized around a vowel sound.
+Repeat the word, say each syllable loudly, and feel the jaw drop on the vowel sound:
+
+chair (1)    table (2)    gymnasium (4)
+Onset and Rime Manipulation (Spoken Language)
+Within a single syllable, onset is the consonant sound or sounds that may precede the vowel; rime is the vowel and all other consonant sounds that may follow the vowel.
+Say the two parts slowly and then blend into a whole word:
+
+school
+
+onset - /sch/;   rime - /ool/
+
+star
+
+onset - /st/;   rime - /ar/
+
+place
+
+onset - /pl/;   rime - /ace/
+
+all
+
+onset (none);   rime - /all/
+General Progression of Phoneme Awareness Skills (K–2)
+Phonemes are individual speech sounds that are combined to create words in a language system. Phoneme aware ness requires progressive differentiation of sounds in spoken words and the ability to think about and manipulate
+those sounds. Activities should lead to the pairing of phonemes (speech sounds) with graphemes (letters and letter
+combinations that represent those sounds) for the purposes of word recognition and spelling.
+Phoneme Identity
+Say the sound that begins these words. What is your mouth doing when you make that sound?
+
+milk, mouth, monster  /m/ — The lips are together, and the sound goes through the nose.
+
+thick, thimble, thank  /th/ — The tongue is between the teeth, and a hissy sound is produced.
+
+octopus, otter, opposite  /o/  — The mouth is wide open, and we can sing that sound.
+Phoneme Isolation
+What is the first speech sound in this word?
+
+ship /sh/
+
+van /v/
+
+king /k/
+
+echo /e/
+What is the last speech sound in this word?
+
+comb /m/
+
+sink /k/
+
+rag /g/
+
+go /o/
+Phoneme Blending (Spoken Language)
+Blend the sounds to make a word:
+
+(Provide these sounds slowly.) /s/ /ay/ say /ou/ /t/ out /sh/ /ar/ /k/ shark /p/ /o/ /s/ /t/      	post
+Phoneme Segmentation (Spoken Language)
+Say each sound as you move a chip onto a line or sound box:
+
+no
+
+/n/ /o/
+
+rag
+
+/r/ /a/ /g/
+
+socks
+
+/s/ /o/ /k/ /s/
+
+float
+
+/f/ /l/ /oa/ /t/
+
+=== Page 20 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   20
+Phoneme Addition (Spoken Language)
+What word would you have if you added /th/ to the beginning of “ink”?  (think)
+What word would you have if you added /d/ to the end of the word “fine”?  (find)
+What word would you have if you added /z/ to the end of the word “frog”?  (frogs)
+Phoneme Substitution (Spoken Language)
+Say “rope.” Change /r/ to /m/. What word would you get?  (mope)
+Say “chum.” Change /u/ to /ar/. What word would you get?  (charm)
+Say “sing.” Change /ng/ to /t/. What word would you get?  (sit)
+Phoneme Deletion (Spoken Language)
+Say “park.” Now say “park” without /p/.  (ark)
+Say “four.” Now say “four” without /f/.  (or)
+Orthography
+Categories of Phoneme-Grapheme Correspondences
+Figure 10: Consonant Graphemes with Definitions and Examples
+Grapheme Type
+Definition
+Examples
+Single letters
+A single consonant letter can represent a conso nant phoneme.
+b, d, f, g, h, j, k, l, m, n, p, r, s, t, v, w, y, z
+Doublets
+A doublet uses two of the same letter to spell one consonant phoneme.
+ff, ll, ss, zz
+Digraphs
+A digraph is a two- (di-) letter combination that stands for one phoneme; neither letter acts alone to represent the sound.
+th, sh, ch, wh ph, ng (sing) gh (cough) [ck is a guest in this category]
+Trigraphs
+A trigraph is a three- (tri-) letter combination that stands for one phoneme; none of the letters acts alone to represent the sound.
+-tch -dge
+Consonants in blends
+A blend contains two or three graphemes be cause the consonant sounds are separate and identifiable. A blend is not “one sound.” s-c-r (scrape)     th-r (thrush) c-l (clean)          f-t (sift) l-k (milk)           s-t (most) and many more
+Silent letter combinations
+Silent letter combinations use two letters: one represents the phoneme, and the other is silent.
+Most of these are from Anglo-Saxon or Greek.
+kn (knock), wr (wrestle), gn (gnarl), ps (psychology), rh (rhythm), -mb (crumb), -lk (folk), -mn (hymn), -st (listen)
+Combination qu
+These two letters, always together, usually stand for two sounds, /k/ /w/.
+quickly
+
+=== Page 21 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   21
+Figure 11: Vowel Graphemes with Definitions and Examples
+Grapheme Type
+Definition
+Examples
+Single letters
+A single vowel letter stands for a vowel sound.
+(short vowels) cap, hit, gem, clod, muss (long vowels) me, no, music
+Vowel teams
+A combination of two, three, or four letters stands for a vowel.
+(short vowels) head, hook (long vowels) boat, sigh, weigh (diphthongs) toil, bout
+Vowel-r combinations
+A vowel, followed by r, works in combination with /r/ to make a unique vowel sound.
+car, sport, her, burn, first
+Vowel-consonant-e (VCe)
+The vowel–consonant–silent e pattern is common for spelling a long vowel sound.
+gate, eve, rude, hope, five
+Figure 12: Six Types of Written Syllable Patterns
+Syllable Type
+Definition
+Examples
+Closed
+A syllable with a short vowel spelled with a single vowel letter ending in one or more con sonants dap-ple hos-tel bev-erage
+Vowel-C-e (“Magic e”)
+A syllable with a long vowel spelled with one vowel + one consonant + silent e compete despite
+Open
+A syllable that ends with a long vowel sound, spelled with a single vowel letter program table recent
+Vowel Team
+Syllables that use two to four letters to spell the vowel beau-ti-ful train-er con-geal spoil-age
+Vowel-r (r-controlled)
+A syllable with er, ir, or, ar, or ur
+Vowel pronunciation often changes before /r/.
+in-jur-ious con-sort char-ter
+Consonant-le
+An unaccented final syllable containing a conso nant before /l/ followed by a silent e dribble beagle little
+Three Useful Principles for Chunking Longer Words into Syllables
+1. VC-CV: Two or more consonants between two vowels
+When syllables have two or more adjacent consonants between them, we divide between the consonants. The first syllable will be closed (with a short vowel).
+sub-let nap-kin pen-ny emp-ty
+2. V-CV and VC-V: One consonant between two vowels
+a) First try dividing before the consonant. This makes the first syllable open and the vowel long. This strategy will
+work 75 percent of the time with VCV syllable division.
+e-ven ra-bies de-cent ri-val
+
+=== Page 22 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   22
+b) If the word is not recognized, try dividing after the consonant. This makes the first syllable closed and the vowel
+sound short. This strategy will work 25 percent of the time with VCV syllable division.
+ev-er rab-id dec-ade riv-er
+3. Consonant blends usually stick together. Do not separate digraphs when using the first two principles for decod ing.
+e-ther spec-trum se-quin
+Morphemes Represented in English Orthography
+Figure 13: Examples of Inflectional Suffixes in English
+Inflection
+Example -s plural noun
+I had two eggs for breakfast.
+-s third person singular verb
+She gets what she wants.
+-ed past tense verb
+We posted the notice.
+-ing progressive tense verb
+We will be waiting a long time.
+-en past participle
+He had eaten his lunch.
+’s possessive singular
+The frog’s spots were brown.
+-er comparative adjective
+He is taller than she is.
+-est superlative adjective
+Tom is the tallest of all.
+Examples of Derivational Suffixes in English
+Derivational suffixes, such as -ful, -ation, and -ity, are more numerous than inflections and work in ways that inflec tional suffixes do not. Most derivational suffixes in English come from the Latin layer of language. Derivational suffixes
+mark or determine part of speech (verb, noun, adjective, adverb) of the suffixed word. Suffixes such as -ment, -ity,
+and -tion turn words into nouns; -ful, -ous, and -al turn words into adjectives; -ly turns words into adverbs.
+
+nature (n. — from nat, birth) permit  (n. or v.)
+
+natural (adj.) permission  (n.)
+
+naturalize (v.) permissive   (adj.)
+
+naturalizing (v.) permissible   (adj.)
+
+naturalistic (adj.) permissibly (adv.)
+
+=== Page 23 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   23
+Writing
+Definitions of the Standards’ Three Text Types
+Argument
+Arguments are used for many purposes—to change the reader’s point of view, to bring about some action on the
+reader’s part, or to ask the reader to accept the writer’s explanation or evaluation of a concept, issue, or problem.
+An argument is a reasoned, logical way of demonstrating that the writer’s position, belief, or conclusion is valid. In
+English language arts, students make claims about the worth or meaning of a literary work or works. They defend
+their interpretations or judgments with evidence from the text(s) they are writing about. In history/social studies,
+students analyze evidence from multiple primary and secondary sources to advance a claim that is best supported by
+the evidence, and they argue for a historically or empirically situated interpretation. In science, students make claims
+in the form of statements or conclusions that answer questions or address problems. Using data in a scientifically ac ceptable form, students marshal evidence and draw on their understanding of scientific concepts to argue in support
+of their claims. Although young children are not able to produce fully developed logical arguments, they develop a
+variety of methods to extend and elaborate their work by providing examples, offering reasons for their assertions,
+and explaining cause and effect. These kinds of expository structures are steps on the road to argument. In grades
+K–5, the term “opinion” is used to refer to this developing form of argument.
+Informational/Explanatory Writing
+Informational/explanatory writing conveys information accurately. This kind of writing serves one or more closely
+related purposes: to increase readers’ knowledge of a subject, to help readers better understand a procedure or pro cess, or to provide readers with an enhanced comprehension of a concept. Informational/explanatory writing address es matters such as types (What are the different types of poetry?) and components (What are the parts of a motor?);
+size, function, or behavior (How big is the United States? What is an X-ray used for? How do penguins find food?);
+how things work (How does the legislative branch of government function?); and why things happen (Why do some
+authors blend genres?). To produce this kind of writing, students draw from what they already know and from primary
+and secondary sources. With practice, students become better able to develop a controlling idea and a coherent fo cus on a topic and more skilled at selecting and incorporating relevant examples, facts, and details into their writing.
+They are also able to use a variety of techniques to convey information, such as naming, defining, describing, or dif ferentiating different types or parts; comparing or contrasting ideas or concepts; and citing an anecdote or a scenario
+to illustrate a point. Informational/explanatory writing includes a wide array of genres, including academic genres
+such as literary analyses, scientific and historical reports, summaries, and précis writing as well as forms of workplace
+and functional writing such as instructions, manuals, memos, reports, applications, and résumés. As students advance
+through the grades, they expand their repertoire of informational/explanatory genres and use them effectively in a variety of disciplines and domains.
+Although information is provided in both arguments and explanations, the two types of writing have different aims.
+Arguments seek to make people believe that something is true or to persuade people to change their beliefs or be havior. Explanations, on the other hand, start with the assumption of truthfulness and answer questions about why or
+how. Their aim is to make the reader understand rather than to persuade him or her to accept a certain point of view.
+In short, arguments are used for persuasion and explanations for clarification.
+Like arguments, explanations provide information about causes, contexts, and consequences of processes, phenom ena, states of affairs, objects, terminology, and so on. However, in an argument, the writer not only gives information
+but also presents a case with the “pros” (supporting ideas) and “cons” (opposing ideas) on a debatable issue. Be cause an argument deals with whether the main claim is true, it demands empirical descriptive evidence, statistics, or
+definitions for support. When writing an argument, the writer supports his or her claim(s) with sound reasoning and relevant and sufficient evidence.
+Narrative Writing
+Narrative writing conveys experience, either real or
+imaginary, and uses time as its deep structure. It can be used for many purposes, such as to inform,
+instruct, persuade, or entertain. In English language
+arts, students produce narratives that take the form
+of creative fictional stories, memoirs, anecdotes, and autobiographies. Over time, they learn to provide
+visual details of scenes, objects, or people; to depict
+specific actions (for example, movements, gestures,
+Creative Writing beyond Narrative
+The narrative category does not include all of the pos sible forms of creative writing, such as many types of
+poetry. The Standards leave the inclusion and evaluation of other such forms to teacher discretion.
+
+=== Page 24 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   24
+postures, and expressions); to use dialogue and interior monologue that provide insight into the narrator’s and char acters’ personalities and motives; and to manipulate pace to highlight the significance of events and create tension
+and suspense. In history/social studies, students write narrative accounts about individuals. They also construct event
+models of what happened, selecting from their sources only the most relevant information. In science, students write
+narrative descriptions of the step-by-step procedures they follow in their investigations so that others can replicate
+their procedures and (perhaps) reach the same results. With practice, students expand their repertoire and control of different narrative strategies.
+Texts that Blend Types
+Skilled writers many times use a blend of these three text types to accomplish their purposes. For example, The Longitude
+Prize, included above and in Appendix B, embeds narrative elements within a largely expository structure. Effective stu dent writing can also cross the boundaries of type, as does the grade 12 student sample “Fact vs. Fiction and All the Grey
+Space In Between” found in Appendix C.
+The Special Place of Argument in the Standards
+While all three text types are important, the Standards put
+particular emphasis on students’ ability to write sound argu ments on substantive topics and issues, as this ability is critical
+to college and career readiness. English and education professor
+Gerald Graff (2003) writes that “argument literacy” is fundamen tal to being educated. The university is largely an “argument cul ture,” Graff contends; therefore, K–12 schools should “teach the
+conflicts” so that students are adept at understanding and en gaging in argument (both oral and written) when they enter col lege. He claims that because argument is not standard in most
+school curricula, only 20 percent of those who enter college are
+prepared in this respect. Theorist and critic Neil Postman (1997)
+calls argument the soul of an education because argument
+forces a writer to evaluate the strengths and weaknesses of mul tiple perspectives. When teachers ask students to consider two
+or more perspectives on a topic or issue, something far beyond
+surface knowledge is required: students must think critically and
+deeply, assess the validity of their own thinking, and anticipate
+counterclaims in opposition to their own assertions.
+The unique importance of argument in college and careers is as serted eloquently by Joseph M. Williams and Lawrence McEner ney (n.d.) of the University of Chicago Writing Program. As part
+of their attempt to explain to new college students the major
+differences between good high school and college writing, Wil liams and McEnerney define argument not as “wrangling” but as “a serious and focused conversation among people
+who are intensely interested in getting to the bottom of things cooperatively”:
+Those values are also an integral part of your education in college. For four years, you are asked to
+read, do research, gather data, analyze it, think about it, and then communicate it to readers in a
+form . . . which enables them to assess it and use it. You are asked to do this not because we expect
+you all to become professional scholars, but because in just about any profession you pursue, you
+will do research, think about what you find, make decisions about complex matters, and then ex plain those decisions—usually in writing—to others who have a stake in your decisions being sound
+ones. In an Age of Information, what most professionals do is research, think, and make arguments.
+(And part of the value of doing your own thinking and writing is that it makes you much better at
+evaluating the thinking and writing of others.) (ch. 1)
+In the process of describing the special value of argument in college- and career-ready writing, Williams and McEner ney also establish argument’s close links to research in particular and to knowledge building in general, both of which are also heavily emphasized in the Standards.
+Much evidence supports the value of argument generally and its particular importance to college and career readi ness. A 2009 ACT national curriculum survey of postsecondary instructors of composition, freshman English, and sur vey of American literature courses (ACT, Inc., 2009) found that “write to argue or persuade readers” was virtually tied
+with “write to convey information” as the most important type of writing needed by incoming college students. Other
+curriculum surveys, including those conducted by the College Board (Milewski, Johnson, Glazer, & Kubota, 2005) and “Argument” and “Persuasion”
+When writing to persuade, writers employ a variety of persuasive strategies. One common strategy is an appeal to the credibility, char acter, or authority of the writer (or speaker).
+When writers establish that they are knowl edgeable and trustworthy, audiences are more likely to believe what they say. Another is an appeal to the audience’s self-interest, sense of identity, or emotions, any of which can sway an audience. A logical argument, on the other hand, convinces the audience be cause of the perceived merit and reasonable ness of the claims and proofs offered rather than either the emotions the writing evokes in the audience or the character or credentials of the writer. The Standards place special emphasis on writing logical arguments as a particularly important form of college- and career-ready writing.
+
+=== Page 25 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   25
+the states of Virginia and Florida6, also found strong support for writing arguments as a key part of instruction. The
+2007 writing framework for the National Assessment of Educational Progress (NAEP) (National Assessment Gov erning Board, 2006) assigns persuasive writing the single largest targeted allotment of assessment time at grade 12
+(40 percent, versus 25 percent for narrative writing and 35 percent for informative writing). (The 2011 prepublication
+framework [National Assessment Governing Board, 2007] maintains the 40 percent figure for persuasive writing at
+grade 12, allotting 40 percent to writing to explain and 20 percent to writing to convey experience.) Writing argu ments or writing to persuade is also an important element in standards frameworks for numerous high-performing nations.7
+Specific skills central to writing arguments are also highly valued by postsecondary educators. A 2002 survey of
+instructors of freshman composition and other introductory courses across the curriculum at California’s community
+colleges, California State University campuses, and University of California campuses (Intersegmental Committee of
+the Academic Senates of the California Community Colleges, the California State University, and the University of
+California, 2002) found that among the most important skills expected of incoming students were articulating a clear
+thesis; identifying, evaluating, and using evidence to support or challenge the thesis; and considering and incorporat ing counterarguments into their writing. On the 2009 ACT national curriculum survey (ACT, Inc., 2009), postsecond ary faculty gave high ratings to such argument-related skills as “develop ideas by using some specific reasons, details,
+and examples,” “take and maintain a position on an issue,” and “support claims with multiple and appropriate sources of evidence.”
+The value of effective argument extends well beyond the classroom or workplace, however. As Richard Fulkerson
+(1996) puts it in Teaching the Argument in Writing, the proper context for thinking about argument is one “in which
+the goal is not victory but a good decision, one in which all arguers are at risk of needing to alter their views, one in
+which a participant takes seriously and fairly the views different from his or her own” (pp. 16–17). Such capacities are
+broadly important for the literate, educated person living in the diverse, information-rich environment of the twenty first century.
+6Unpublished data collected by Achieve, Inc.
+7See, for example, frameworks from Finland, Hong Kong, and Singapore as well as Victoria and New South Wales in Australia.
+
+=== Page 26 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   26
+Speaking and Listening
+The Special Role of Speaking and Listening in K–5 Literacy
+If literacy levels are to improve, the aims of the English language arts classroom, especially in the earliest grades, must
+include oral language in a purposeful, systematic way, in part because it helps students master the printed word. Be sides having intrinsic value as modes of communication, listening and speaking are necessary prerequisites of reading
+and writing (Fromkin, Rodman, & Hyams, 2006; Hulit, Howard, & Fahey, 2010; Pence & Justice, 2007; Stuart, Wright,
+Grigor, & Howey, 2002). The interrelationship between oral and written language is illustrated in the table below, using
+the distinction linguists make between receptive language (language that is heard, processed, and understood by an
+individual) and expressive language (language that is generated and produced by an individual).
+Figure 14: Receptive and Expressive Oral and Written Language
+Receptive Language
+Expressive Language
+Oral
+Language
+Listening
+Speaking
+Written
+Language
+Reading (decoding + comprehension)
+Writing (handwriting, spelling, written composition)
+Oral language development precedes and is the foundation for written language development; in other words, oral
+language is primary and written language builds on it. Children’s oral language competence is strongly predictive of
+their facility in learning to read and write: listening and speaking vocabulary and even mastery of syntax set boundar ies as to what children can read and understand no matter how well they can decode (Catts, Adolf, & Weismer, 2006;
+Hart & Risley, 1995; Hoover & Gough, 1990: Snow, Burns, & Griffin, 1998).
+For children in preschool and the early grades, receptive and expressive abilities do not develop simultaneously or at
+the same pace: receptive language generally precedes expressive language. Children need to be able to understand words before they can produce and use them.
+Oral language is particularly important for the youngest students. Hart and Risley (1995), who studied young children
+in the context of their early family life and then at school, found that the total number of words children had heard
+as preschoolers predicted how many words they understood and how fast they could learn new words in kindergar ten. Preschoolers who had heard more words had larger vocabularies once in kindergarten. Furthermore, when the
+students were in grade 3, their early language competence from the preschool years still accurately predicted their
+language and reading comprehension. The preschoolers who had heard more words, and subsequently had learned
+more words orally, were better readers. In short, early language advantage persists and manifests itself in higher lev els of literacy. A meta-analysis by Sticht and James (1984) indicates that the importance of oral language extends well
+beyond the earliest grades. As illustrated in the graphic below, Sticht and James found evidence strongly suggesting
+that children’s listening comprehension outpaces reading comprehension until the middle school years (grades 6–8).
+Figure 15: Listening and Reading Comprehension, by Age
+
+=== Page 27 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   27
+The research strongly suggests that the English language arts classroom should explicitly address the link between
+oral and written language, exploiting the influence of oral language on a child’s later ability to read by allocating in structional time to building children’s listening skills, as called for in the Standards. The early grades should not focus
+on decoding alone, nor should the later grades pay attention only to building reading comprehension. Time should be
+devoted to reading fiction and content-rich selections aloud to young children, just as it is to providing those same
+children with the skills they will need to decode and encode.
+This focus on oral language is of greatest importance for the children most at risk—children for whom English is a
+second language and children who have not been exposed at home to the kind of language found in written texts
+(Dickinson & Smith, 1994). Ensuring that all children in the United States have access to an excellent education re quires that issues of oral language come to the fore in elementary classrooms.
+Read-Alouds and the Reading-Speaking-Listening Link
+Generally, teachers will encourage children in the upper elementary grades to read texts independently and reflect
+on them in writing. However, children in the early grades—particularly kindergarten through grade 3—benefit from
+participating in rich, structured conversations with an adult in response to written texts that are read aloud, orally
+comparing and contrasting as well as analyzing and synthesizing (Bus, Van Ijzendoorn, & Pellegrini, 1995; Feitelstein,
+Goldstein, Iraqui, & Share, 1993; Feitelstein, Kita, & Goldstein, 1986; Whitehurst et al., 1988). The Standards acknowl edge the importance of this aural dimension of early learning by including a robust set of K–3 Speaking and Listening
+standards and by offering in Appendix B an extensive number of read-aloud text exemplars appropriate for K–1 and for grades 2–3.
+Because, as indicated above, children’s listening comprehension likely outpaces reading comprehension until the
+middle school years, it is particularly important that students in the earliest grades build knowledge through being
+read to as well as through reading, with the balance gradually shifting to reading independently. By reading a story
+or nonfiction selection aloud, teachers allow children to experience written language without the burden of decod ing, granting them access to content that they may not be able to read and understand by themselves. Children are
+then free to focus their mental energy on the words and ideas presented in the text, and they will eventually be better
+prepared to tackle rich written content on their own. Whereas most titles selected for kindergarten and grade 1 will
+need to be read aloud exclusively, some titles selected for grades 2–5 may be appropriate for read-alouds as well as
+for reading independently. Reading aloud to students in the upper grades should not, however, be used as a substitute
+for independent reading by students; read-alouds at this level should supplement and enrich what students are able to read by themselves.
+
+=== Page 28 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   28
+Language
+Overview
+The Standards take a hybrid approach to matters of conventions, knowledge of language, and vocabulary. As noted
+in the table below, certain elements important to reading, writing, and speaking and listening are included in those
+strands to help provide a coherent set of expectations for those modes of communication.
+Figure 16: Elements of the Language Standards
+in the Reading, Writing, and Speaking and Listening Strands
+Strand
+Standard
+Reading
+R.CCR.4. Interpret words and phrases as they are
+used in a text, including determining technical, con notative, and figurative meanings, and analyze how specific word choices shape meaning or tone.
+Writing
+W.CCR.5. Develop and strengthen writing as
+needed by planning, revising, editing, rewriting, or trying a new approach.
+Speaking and Listening
+SL.CCR.6. Adapt speech to a variety of contexts and communicative tasks, demonstrating com mand of formal English when indicated or appro priate.
+In many respects, however, conventions, knowledge of language, and vocabulary extend across reading, writing,
+speaking, and listening. Many of the conventions-related standards are as appropriate to formal spoken English as
+they are to formal written English. Language choice is a matter of craft for both writers and speakers. New words and
+phrases are acquired not only through reading and being read to but also through direct vocabulary instruction and
+(particularly in the earliest grades) through purposeful classroom discussions around rich content.
+The inclusion of Language standards in their own strand should not be taken as an indication that skills related to
+conventions, knowledge of language, and vocabulary are unimportant to reading, writing, speaking, and listening;
+indeed, they are inseparable from such contexts.
+Conventions and Knowledge of Language
+Teaching and Learning the Conventions of Standard English
+Development of Grammatical Knowledge
+Grammar and usage development in children and in adults rarely follows a linear path. Native speakers and language
+learners often begin making new errors and seem to lose their mastery of particular grammatical structures or print
+conventions as they learn new, more complex grammatical structures or new usages of English, such as in college level persuasive essays (Bardovi-Harlig, 2000; Bartholomae, 1980; DeVilliers & DeVilliers, 1973; Shaughnessy, 1979).
+These errors are often signs of language development as learners synthesize new grammatical and usage knowledge
+with their current knowledge. Thus, students will often need to return to the same grammar topic in greater complex ity as they move through K–12 schooling and as they increase the range and complexity of the texts and communica tive contexts in which they read and write. The Standards account for the recursive, ongoing nature of grammatical
+knowledge in two ways. First, the Standards return to certain important language topics in higher grades at greater
+levels of sophistication. For instance, instruction on verbs in early elementary school (K–3) should address simple
+present, past, and future tenses; later instruction should extend students’ knowledge of verbs to other tenses (pro gressive and perfect tenses8 in grades 4 and 5), mood (modal auxiliaries in grade 4 and grammatical mood in grade
+8) and voice (active and passive voice in grade 8). Second, the Standards identify with an asterisk (*) certain skills and
+understandings that students are to be introduced to in basic ways at lower grades but that are likely in need of being
+8Though progressive and perfect are more correctly aspects of verbs rather than tenses, the Standards use the more familiar
+notion here and throughout for the sake of accessibility.
+
+=== Page 29 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   29
+retaught and relearned in subsequent grades as students’ writing and speaking matures and grows more complex.
+(See “Progressive Language Skills in the Standards,” below.)
+Making Appropriate Grammar and Usage Choices in Writing and Speaking
+Students must have a strong command of the grammar and usage of spoken and written standard English to succeed
+academically and professionally. Yet there is great variety in the language and grammar features of spoken and writ ten standard English (Biber, 1991; Krauthamer, 1999), of academic and everyday standard English, and of the language
+of different disciplines (Schleppegrell, 2001). Furthermore, in the twenty-first century, students must be able to com municate effectively in a wide range of print and digital texts, each of which may require different grammatical and
+usage choices to be effective. Thus, grammar and usage instruction should acknowledge the many varieties of English
+that exist and address differences in grammatical structure and usage between these varieties in order to help stu dents make purposeful language choices in their writing and speaking (Fogel & Ehri, 2000; Wheeler & Swords, 2004).
+Students must also be taught the purposes for using particular grammatical features in particular disciplines or texts;
+if they are taught simply to vary their grammar and language to keep their writing “interesting,” they may actually
+become more confused about how to make effective language choices (Lefstein, 2009). The Standards encourage
+this sort of instruction in a number of ways, most directly through a series of grade-specific standards associated with
+Language CCR standard 3 that, beginning in grade 1, focuses on making students aware of language variety.
+Using Knowledge of Grammar and Usage for Reading and Listening Comprehension
+Grammatical knowledge can also aid reading comprehension and interpretation (Gargani, 2006; Williams, 2000,
+2005). Researchers recommend that students be taught to use knowledge of grammar and usage, as well as knowl edge of vocabulary, to comprehend complex academic texts (García & Beltrán, 2003; Short & Fitzsimmons, 2007;
+RAND Reading Study Group, 2002). At the elementary level, for example, students can use knowledge of verbs to
+help them understand the plot and characters in a text (Williams, 2005). At the secondary level, learning the gram matical structures of nonstandard dialects can help students understand how accomplished writers such as Harper
+Lee, Langston Hughes, and Mark Twain use various dialects of English to great advantage and effect, and can help
+students analyze setting, character, and author’s craft in great works of literature. Teaching about the grammatical
+patterns found in specific disciplines has also been shown to help English language learners’ reading comprehension
+in general and reading comprehension in history classrooms in particular (Achugar, Schleppegrell, & Oteíza, 2007;
+Gargani, 2006).
+As students learn more about the patterns of English grammar in different communicative contexts throughout their
+K–12 academic careers, they can develop more complex understandings of English grammar and usage. Students can
+use this understanding to make more purposeful and effective choices in their writing and speaking and more accu rate and rich interpretations in their reading and listening.
+Progressive Language Skills in the Standards
+While all of the Standards are cumulative, certain Language skills and understandings are more likely than others to
+need to be retaught and relearned as students advance through the grades. Beginning in grade 3, the Standards note
+such “progressive” skills and understandings with an asterisk (*) in the main document; they are also summarized in
+the table on pages 29 and 55 of that document as well as on page 34 of this appendix. These skills and understand ings should be mastered at a basic level no later than the end of the grade in which they are introduced in the Stan dards. In subsequent grades, as their writing and speaking become more sophisticated, students will need to learn to
+apply these skills and understandings in more advanced ways.
+The following example shows how one such task—ensuring subject-verb agreement, formally introduced in the Stan dards in grade 3—can become more challenging as students’ writing matures. The sentences in the table below are
+taken verbatim from the annotated writing samples found in Appendix C. The example is illustrative only of a general
+development of sophistication and not meant to be exhaustive, to set firm grade-specific expectations, or to establish
+a precise hierarchy of increasing difficulty in subject-verb agreement.
+
+=== Page 30 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   30
+Figure 17: Example of Subject-Verb Agreement Progression across Grades
+Example
+Condition
+Horses are so beautiful and fun to ride.
+[Horses, grade 3]
+Subject and verb next to each other
+When I started out the door, I noticed that Tigger and Max were follow ing me to school.
+[Glowing Shoes, grade 4]
+Compound subject joined by and A mother or female horse is called a mare.
+[Horses, grade 3]
+Compound subject joined by or; each subject takes a singular verb1
+The first thing to do is research, research, research!
+[Zoo Field Trip, grade 4]
+Intervening phrase between subject and verb
+If the watershed for the pools is changed, the condition of the pools changes.
+[A Geographical Report, grade 7]
+Intervening phrase between each subject and verb suggesting a different number for the verb than the subject calls for Another was the way to the other evil places.
+[Getting Shot and Living Through It, grade 5]
+All his stories are the same type.
+[Author Response: Roald Dahl, grade 5]
+All the characters that Roald Dahl ever made were probably fake charac ters.
+[Author Response: Roald Dahl, grade 5]
+One of the reasons why my cat Gus is the best pet is because he is a cuddle bug.
+[A Pet Story About My Cat . . . Gus, grade 6]
+Indefinite pronoun as subject, with increasing distance between subject and verb
+1In this particular example, or female horse should have been punctuated by the student as a nonrestrictive appositive, but the
+sentence as is illustrates the notion of a compound subject joined by or.
+
+=== Page 31 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   31
+Figure 18: Language Progressive Skills, by Grade
+The following standards, marked with an asterisk (*) in the main Standards document, are particularly likely to require
+continued attention in higher grades as they are applied to increasingly sophisticated writing and speaking.
+Standard
+Grade(s) 3 4 5 6 7 8 9–10 11–12
+L.3.1f. Ensure subject-verb and pronoun antecedent agreement.
+L.3.3a. Choose words and phrases for effect.
+L.4.1f. Produce complete sentences, recognizing and correcting inappropriate fragments and run ons.
+L.4.1g. Correctly use frequently confused words (e.g., to/too/two; there/their).
+L.4.3a. Choose words and phrases to convey ideas precisely.*
+L.4.3b. Choose punctuation for effect.
+L.5.1d. Recognize and correct inappropriate shifts in verb tense.
+L.5.2a. Use punctuation to separate items in a series.†
+L.6.1c. Recognize and correct inappropriate shifts in pronoun number and person.
+L.6.1d. Recognize and correct vague pronouns (i.e., ones with unclear or ambiguous antecedents).
+L.6.1e. Recognize variations from standard English
+in their own and others’ writing and speaking, and identify and use strategies to improve expression in conventional language.
+L.6.2a. Use punctuation (commas, parentheses, dashes) to set off nonrestrictive/parenthetical elements.
+L.6.3a. Vary sentence patterns for meaning, reader/listener interest, and style.‡
+L.6.3b. Maintain consistency in style and tone.
+L.7.1c. Place phrases and clauses within a sentence, recognizing and correcting misplaced and dangling modifiers.
+L.7.3a. Choose language that expresses ideas precisely and concisely, recognizing and eliminating wordiness and redundancy.
+L.8.1d. Recognize and correct inappropriate shifts in verb voice and mood.
+L.9–10.1a. Use parallel structure.
+* Subsumed by L.7.3a † Subsumed by L.9–10.1a ‡ Subsumed by L.11–12.3a
+
+=== Page 32 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   32
+Vocabulary
+Acquiring Vocabulary
+Words are not just words. They are the nexus—the interface—between communication and thought.
+When we read, it is through words that we build, refine, and modify our knowledge. What makes
+vocabulary valuable and important is not the words themselves so much as the understandings they afford.
+Marilyn Jager Adams (2009, p. 180)
+The importance of students acquiring a rich and varied vocabulary cannot be overstated. Vocabulary has been em pirically connected to reading comprehension since at least 1925 (Whipple, 1925) and had its importance to compre hension confirmed in recent years (National Institute of Child Health and Human Development, 2000). It is widely ac cepted among researchers that the difference in students’ vocabulary levels is a key factor in disparities in academic
+achievement (Baumann & Kameenui, 1991; Becker, 1977; Stanovich, 1986) but that vocabulary instruction has been
+neither frequent nor systematic in most schools (Biemiller, 2001; Durkin, 1978; Lesaux, Kieffer, Faller, & Kelley, 2010;
+Scott & Nagy, 1997).
+Research suggests that if students are going to grasp and retain words and comprehend text, they need incremen tal, repeated exposure in a variety of contexts to the words they are trying to learn. When students make multiple
+connections between a new word and their own experiences, they develop a nuanced and flexible understanding of
+the word they are learning. In this way, students learn not only what a word means but also how to use that word in a
+variety of contexts, and they can apply appropriate senses of the word’s meaning in order to understand the word in
+different contexts (Landauer & Dumais, 1997; Landauer, McNamara, Dennis, & Kintsch, 2007; Nagy, Herman, & Ander son, 1985).
+Initially, children readily learn words from oral conversation because such conversations are context rich in ways that
+aid in vocabulary acquisition: in discussions, a small set of words (accompanied by gesture and intonation) is used
+with great frequency to talk about a narrow range of situations children are exposed to on a day-to-day basis. Yet as
+children reach school age, new words are introduced less frequently in conversation, and consequently vocabulary
+acquisition eventually stagnates by grade 4 or 5 unless students acquire additional words from written context (Hayes & Ahrens, 1988).
+Written language contains literally thousands of words more than are typically used in conversational language. Yet
+writing lacks the interactivity and nonverbal context that make acquiring vocabulary through oral conversation rela tively easy, which means that purposeful and ongoing concentration on vocabulary is needed (Hayes & Ahrens, 1988).
+In fact, at most between 5 and 15 percent of new words encountered upon first reading are retained, and the weaker a
+student’s vocabulary is the smaller the gain (Daneman & Green, 1986; Hayes & Ahrens, 1988; Herman, Anderson, Pear son, & Nagy, 1987; Sternberg & Powell, 1983). Yet research shows that if students are truly to understand what they
+read, they must grasp upward of 95 percent of the words (Betts, 1946; Carver, 1994; Hu & Nation, 2000; Laufer, 1988).
+The challenge in reaching what we might call “lexical dexterity” is that, in any given instance, it is not the entire spec trum of a word’s history, meanings, usages, and features that matters but only those aspects that are relevant at that
+moment. Therefore, for a reader to grasp the meaning of a word, two things must happen: first, the reader’s internal
+representation of the word must be sufficiently complete and well articulated to allow the intended meaning to be
+known to him or her; second, the reader must understand the context well enough to select the intended meaning
+from the realm of the word’s possible meanings (which in turn depends on understanding the surrounding words of the text).
+Key to students’ vocabulary development is building rich and flexible word knowledge. Students need plentiful op portunities to use and respond to the words they learn through playful informal talk, discussion, reading or being read
+to, and responding to what is read. Students benefit from instruction about the connections and patterns in language.
+Developing in students an analytical attitude toward the logic and sentence structure of their texts, alongside an
+awareness of word parts, word origins, and word relationships, provides students with a sense of how language works
+such that syntax, morphology, and etymology can become useful cues in building meaning as students encounter
+new words and concepts (Beck, McKeown, & Kucan, 2008). Although direct study of language is essential to student
+progress, most word learning occurs indirectly and unconsciously through normal reading, writing, listening, and
+speaking (Miller, 1999; Nagy, Anderson, & Herman, 1987).
+As students are exposed to and interact with language throughout their school careers, they are able to acquire un derstandings of word meanings, build awareness of the workings of language, and apply their knowledge to compre hend and produce language.
+
+=== Page 33 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   33
+Three Tiers of Words
+Isabel L. Beck, Margaret G. McKeown, and Linda Kucan (2002, 2008) have outlined a useful model for conceptual izing categories of words readers encounter in texts and for understanding the instructional and learning challenges
+that words in each category present. They describe three levels, or tiers, of words in terms of the words’ commonality
+(more to less frequently occurring) and applicability (broader to narrower).
+While the term tier may connote a hierarchy, a ranking of words from least to most important, the reality is that all
+three tiers of words are vital to comprehension and vocabulary development, although learning tier two and three
+words typically requires more deliberate effort (at least for students whose first language is English) than does learn ing tier one words.
+•
+Tier One words are the words of everyday speech usually learned in the early grades, albeit not at the same
+rate by all children. They are not considered a challenge to the average native speaker, though English language
+learners of any age will have to attend carefully to them. While Tier One words are important, they are not the focus of this discussion.
+•
+Tier Two words (what the Standards refer to as general academic words) are far more likely to appear in written
+texts than in speech. They appear in all sorts of texts: informational texts (words such as relative, vary, formulate,
+specificity, and accumulate), technical texts (calibrate, itemize, periphery), and literary texts (misfortune,
+dignified, faltered, unabashedly). Tier Two words often represent subtle or precise ways to say relatively simple
+things—saunter instead of walk, for example. Because Tier Two words are found across many types of texts, they are highly generalizable.
+•
+Tier Three words (what the Standards refer to as domain-specific words) are specific to a domain or field of
+study (lava, carburetor, legislature, circumference, aorta) and key to understanding a new concept within a
+text. Because of their specificity and close ties to content knowledge, Tier Three words are far more common
+in informational texts than in literature. Recognized as new and “hard” words for most readers (particularly
+student readers), they are often explicitly defined by the author of a text, repeatedly used, and otherwise heavily scaffolded (e.g., made a part of a glossary).
+Tier Two Words and Access to Complex Texts
+Because Tier Three words are obviously unfamiliar to most students, contain the ideas necessary to a new topic, and
+are recognized as both important and specific to the subject area in which they are instructing students, teachers of ten define Tier Three words prior to students encountering them in a text and then reinforce their acquisition through out a lesson. Unfortunately, this is not typically the case with Tier Two words, which by definition are not unique to a
+particular discipline and as a result are not the clear responsibility of a particular content area teacher. What is more,
+many Tier Two words are far less well defined by contextual clues in the texts in which they appear and are far less
+likely to be defined explicitly within a text than are Tier Three words. Yet Tier Two words are frequently encountered
+in complex written texts and are particularly powerful because of their wide applicability to many sorts of reading.
+Teachers thus need to be alert to the presence of Tier Two words and determine which ones need careful attention.
+Tier Three Words and Content Learning
+This normal process of word acquisition occurs up to four times faster for Tier Three words when students have
+become familiar with the domain of the discourse and encounter the word in different contexts (Landauer & Dumais,
+1997). Hence, vocabulary development for these words occurs most effectively through a coherent course of study
+in which subject matters are integrated and coordinated across the curriculum and domains become familiar to the student over several days or weeks.
+Examples of Tier Two and Tier Three Words in Context
+The following annotated samples call attention to Tier Two and Tier Three words in particular texts and, by singling
+them out, foreground the importance of these words to the meaning of the texts in which they appear. Both samples appear without annotations in Appendix B.
+Example 1: Volcanoes (Grades 4–5 Text Complexity Band
+Excerpt
+In early times, no one knew how volcanoes formed or why they spouted red-hot molten rock. In
+modern times, scientists began to study volcanoes. They still don’t know all the answers, but they know much about how a volcano works.
+
+=== Page 34 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   34
+Our planet made up of many layers of rock. The top layers of solid rock are called the crust. Deep
+beneath the crust is the mantle, where it is so hot that some rock melts. The melted, or molten, rock is called magma.
+Volcanoes are formed when magma pushes its way up through the crack in Earth’s crust. This is
+called a volcanic eruption. When magma pours forth on the surface, it is called lava.
+Simon, Seymour. Volcanoes. New York: HarperCollins, 2006. (2006)
+Of the Tier Two words, among the most important to the overall meaning of the excerpt is layers. An understanding
+of the word layers is necessary both to visualize the structure of the crust (“the top layers of solid rock are called the
+crust”) and to grasp the notion of the planet being composed of layers, of which the crust and the mantle are upper most. Perhaps equally important are the word spouted and the phrase pours forth; an understanding of each of these
+is needed to visualize the action of a volcano. The same could be said of the word surface. Both layers and surface
+are likely to reappear in middle and high school academic texts in both literal and figurative contexts (“this would
+seem plausible on the surface”; “this story has layers of meaning”), which would justify more intensive instruction in them in grades 4–5.
+Tier Three words often repeat; in this excerpt, all of the Tier Three words except mantle and lava appear at least twice.
+Volcano(es) appears four times—five if volcanic is counted. As is also typical with Tier Three words, the text provides
+the reader with generous support in determining meaning, including explicit definitions (e.g., “the melted, or molten,
+rock is called magma”) and repetition and overlapping sentences (e.g., . . . called the crust. Deep beneath the crust . . .).
+Example 2: Freedom Walkers (Grades 6–8 Text Complexity Band)
+Excerpt
+From the Introduction: “Why They Walked”
+Not so long ago in Montgomery, Alabama, the color of your skin determined where you could sit on
+a public bus. If you happened to be an African American, you had to sit in the back of the bus, even if there were empty seats up front.
+Back then, racial segregation was the rule throughout the American South. Strict laws—called “Jim
+Crow” laws—enforced a system of white supremacy that discriminated against blacks and kept them in their place as second-class citizens.
+People were separated by race from the moment they were born in segregated hospitals until the
+day they were buried in segregated cemeteries. Blacks and whites did not attend the same schools,
+worship in the same churches, eat in the same restaurants, sleep in the same hotels, drink from the
+same water fountains, or sit together in the same movie theaters.
+In Montgomery, it was against the law for a white person and a Negro to play checkers on public property or ride together in a taxi.
+Most southern blacks were denied their right to vote. The biggest obstacle was the poll tax, a
+special tax that was required of all voters but was too costly for many blacks and for poor whites as
+well. Voters also had to pass a literacy test to prove that they could read, write, and understand the
+U.S. Constitution. These tests were often rigged to disqualify even highly educated blacks. Those
+who overcame the obstacles and insisted on registering as voters faced threats, harassment and
+even physical violence. As a result, African Americans in the South could not express their griev ances in the voting booth, which for the most part, was closed to them. But there were other ways
+to protest, and one day a half century ago, the black citizens in Montgomery rose up in protest and
+united to demand their rights—by walking peacefully.
+It all started on a bus.
+Freedman, Russell. Freedom Walkers: The Story of the Montgomery Bus Boycott.
+New York: Holiday House, 2006. (2006)
+The first Tier Two word encountered in the excerpt, determined, is essential to understanding the overall meaning of
+the text. The power of determined here lies in the notion that skin color in Montgomery, Alabama, at that time was
+the causal agent for all that follows. The centrality of determined to the topic merits the word intensive attention. Its
+study is further merited by the fact that it has multiple meanings, is likely to appear in future literary and informational
+texts, and is part of a family of related words (determine, determination, determined, terminate, terminal).
+
+=== Page 35 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   35
+Understanding the excerpt’s Tier Three words is also necessary to comprehend the text fully. As was the case in ex ample 1, these words are often repeated and defined in context. Segregation, for example, is introduced in the second
+paragraph, and while determining its meaning from the sentence in which it appears might be difficult, several closely
+related concepts (white supremacy, discriminated, second-class) appears in the next sentence to provide more con text.
+
+=== Page 36 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   36
+Bibliography
+Reading
+Achieve, Inc. (2007). Closing the expectations gap 2007: An annual 50-state progress report on the alignment of high
+school policies with the demands of college and work. Washington, DC: Author. Retrieved from http://www.achieve.
+org/files/50-state-07-Final.pdf
+ACT, Inc. (2006). Reading between the lines: What the ACT reveals about college readiness in reading. Iowa City, IA:
+Author.
+ACT, Inc. (2009). The condition of college readiness 2009. Iowa City, IA: Author.
+Adams, M. J. (2009). The challenge of advanced texts: The interdependence of reading and learning. In E. H. Hiebert
+(Ed.), Reading more, reading better: Are American students reading enough of the right stuff? (pp. 163–189). New
+York, NY: Guilford.
+Afflerbach, P., Pearson, P. D., & Paris, S. G. (2008). Clarifying differences between reading skills and reading strategies.
+The Reading Teacher, 61, 364–373.
+Bettinger, E., & Long, B. T. (2009). Addressing the needs of underprepared students in higher education: Does college
+remediation work? Journal of Human Resources, 44, 736–771.
+Bowen, G. M., & Roth, W.-M. (1999, March). “Do-able” questions, covariation, and graphical representation: Do we
+adequately prepare perservice science teachers to teach inqury? Paper presented at the annual conference of the
+National Association for Research in Science Teaching, Boston, MA.
+Bowen, G. M., Roth, W.-M., & McGinn, M. K. (1999). Interpretations of graphs by university biology students and prac-
+ticing scientists: Towards a social practice view of scientific re-presentation practices. Journal of Research in Science
+Teaching, 36, 1020–1043.
+Bowen, G. M., Roth, W.-M., & McGinn, M. K. (2002). Why students may not learn to interpret scientific inscriptions.
+Research in Science Education, 32, 303–327.
+Chall, J. S., Conard, S., & Harris, S. (1977). An analysis of textbooks in relation to declining SAT scores. Princeton, NJ:
+College Entrance Examination Board.
+Erickson, B. L., & Strommer, D. W. (1991). Teaching college freshmen. San Francisco, CA: Jossey-Bass.
+Hayes, D. P., & Ward, M. (1992, December). Learning from texts: Effects of similar and dissimilar features of analogies in
+study guides. Paper presented at the 42nd Annual Meeting of the National Reading Conference, San Antonio, TX.
+Hayes, D. P., Wolfer, L. T., & Wolfe, M. F. (1996). Sourcebook simplification and its relation to the decline in SAT-Verbal
+scores. American Educational Research Journal, 33, 489–508.
+Heller, R., & Greenleaf, C. (2007). Literacy instruction in the content areas: Getting to the core of middle and high
+school improvement. Washington, DC: Alliance for Excellent Education.
+Hoffman, J., Sabo, D., Bliss, J., & Hoy, W. (1994). Building a culture of trust. Journal of School Leadership, 4, 484–501.
+Kintsch, W. (1998). Comprehension: A paradigm for cognition. New York, NY: Cambridge University Press.
+Kintsch, W. (2009). Learning and constructivism. In S. Tobias & M. Duffy (Eds.), Constructivist instruction: Success or failure? (pp. 223–241). New York, NY: Routledge.
+Kutner, M., Greenberg, E., Jin, Y., Boyle, B., Hsu, Y., & Dunleavy, E. (2007). Literacy in everyday life: Results from
+the 2003 National Assessment of Adult Literacy (NCES 2007–480). U.S. Department of Education. Washington,
+DC:National Center for Education Statistics.
+McNamara, D. S., Graesser, A. C., & Louwerse, M. M. (in press). Sources of text difficulty: Across the ages and genres.
+In J. P. Sabatini & E. Albro (Eds.), Assessing reading in the 21st century: Aligning and applying advances in the reading
+and measurement sciences. Lanham, MD: R&L Education.
+Mesmer, H. A. E. (2008). Tools for matching readers to texts: Research-based practices. New York, NY: Guilford.
+
+=== Page 37 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   37
+Milewski, G. B., Johnson, D., Glazer, N., & Kubota, M. (2005). A survey to evaluate the alignment of the new SAT Writing
+and Critical Reading sections to curricula and instructional practices (College Board Research Report No. 2005-1 /
+ETS RR-05-07). New York, NY: College Entrance Examination Board.
+Moss, B., & Newton, E. (2002). An examination of the informational text genre in basal readers. Reading Psychology, 23(1), 1–13.
+National Endowment for the Arts. (2004). Reading at risk: A survey of literary reading in America. Washington, DC:
+Author.
+Perfetti, C. A., Landi, N., & Oakhill, J. (2005). The acquisition of reading comprehension skill. In M. J. Snowling & C.
+Hulme (Eds.), The science of reading: A handbook (pp. 227–247). Oxford, England: Blackwell.
+Pritchard, M. E., Wilson, G. S., & Yamnitz, B. (2007). What predicts adjustment among college students? A longitudinal
+panel study. Journal of American College Health, 56(1), 15–22.
+Shanahan, T., & Shanahan, C. (2008). Teaching disciplinary literacy to adolescents: Rethinking content-area literacy.
+Harvard Educational Review, 78(1), 40–59.
+Stenner, A. J., Koons, H., & Swartz, C. W. (in press). Text complexity and developing expertise in reading. Chapel Hill,
+NC: MetaMetrics, Inc.
+van den Broek, P., Lorch, Jr., R. F., Linderholm, T., & Gustafson, M. (2001). The effects of readers’ goals on inference
+generation and memory for texts. Memory and Cognition, 29, 1081–1087.
+van den Broek, P., Risden, K., & Husebye-Hartmann, E. (1995). The role of readers’ standards for coherence in the
+generation of inferences during reading. In R. F. Lorch & E. J. O’Brien (Eds.), Sources of coherence in reading (pp.
+353–373). Hillsdale, NJ: Erlbaum.
+Williamson, G. L. (2006). Aligning the journey with a destination: A model for K–16 reading standards. Durham, NC:
+MetaMetrics, Inc.
+Wirt, J., Choy, S., Rooney, P., Provasnik, S., Sen, A., & Tobin, R. (2004). The condition of education 2004 (NCES 2004 077). U.S. Department of Education, National Center for Education Statistics. Washington, DC: U.S. Government Print ing Office. Retrieved from http://nces.ed.gov/pubs2004/2004077.pdf
+Yopp, H. K., & Yopp, R. H. (2006). Primary students and informational texts. Science and Children, 44(3), 22–25.
+Reading Foundational Skills
+Balmuth, M. (1992). The roots of phonics: A historical introduction. Baltimore, MD: York Press.
+Bryson, B. (1990). The mother tongue: English and how it got that way. New York, NY: Avon Books.
+Ganske, K. (2000). Word journeys. New York, NY: Guilford.
+Hanna, P. R., Hanna, S., Hodges, R. E., & Rudorf, E. H. (1966). Phoneme-grapheme correspondences as cues to spelling
+improvement. Washington, DC: Department of Health, Education, and Welfare.
+Henry, M. (2003). Unlocking literacy: Effective decoding and spelling instruction. Baltimore, MD: Brookes.
+Moats, L. C. (2000). Speech to print: Language essentials for teachers. Baltimore, MD: Brookes.
+Moats, L. C. (2008). Spellography for teachers: How English spelling works. (LETRS Module 3). Longmont, CO: Sopris
+West.
+Venezky, R. (2001). The American way of spelling. New York, NY: Guilford.
+Writing
+ACT, Inc. (2009). ACT National Curriculum Survey 2009. Iowa City, IA: Author.
+
+=== Page 38 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   38
+Fulkerson, R. (1996). Teaching the argument in writing. Urbana, IL: National Council of Teachers of English.
+Graff, G. (2003). Clueless in academe. New Haven, CT: Yale University Press.
+Intersegmental Committee of the Academic Senates of the California Community Colleges, the California State Uni versity, and the University of California (ICAS). (2002). Academic literacy: A statement of competencies expected of
+students entering California’s public colleges and universities. Sacramento, CA: Author.
+Milewski, G. B., Johnson, D., Glazer, N., & Kubota, M. (2005). A survey to evaluate the alignment of the new SAT Writing
+and Critical Reading sections to curricula and instructional practices (College Board Research Report No. 2005-1 /
+ETS RR-05-07). New York, NY: College Entrance Examination Board.
+National Assessment Governing Board. (2006). Writing framework and specifications for the 2007 National Assess ment of Educational Progress. Washington, DC: U.S. Government Printing Office.
+National Assessment Governing Board. (2007). Writing framework for the 2011 National Assessment of Educational
+Progress, pre-publication edition. Iowa City, IA: ACT, Inc.
+Postman, N. (1997). The end of education. New York, NY: Knopf.
+Williams, J. M., & McEnerney, L. (n.d.). Writing in college: A short guide to college writing. Retrieved from
+http://writing-program.uchicago.edu/resources/collegewriting/index.htm
+Speaking and Listening
+Bus, A. G., Van Ijzendoorn, M. H., & Pellegrini, A. D. (1995). Joint book reading makes for success in reading: A meta analysis on intergenenerational transmission of literacy. Review of Educational Research, 65(5), 1–21.
+Catts, H., Adolf, S. M., & Weismer, S. E. (2006). Language deficits in poor comprehenders: A case for the simple view
+of reading. Journal of Speech, Language, and Hearing Research, 49, 278–293.
+Dickinson, D. K., & Smith, M. W. (1994). Long-term effects of preschool teachers’ book readings on low-income chil dren’s vocabulary and story comprehension. Reading Research Quarterly, 29, 104–123.
+Feitelson, D., Goldstein, Z., Iraqui, J., & Share, D. I. (1993). Effects of listening to story reading on aspects of literacy
+acquisition in a diglossic situation. Reading Research Quarterly, 28, 70–79.
+Feitelson, D., Kita, B., & Goldstein, Z. (1986). Effects of listening to series stories on first graders’ comprehension and
+use of language. Research in the Teaching of English, 20, 339–356.
+Fromkin, V., Rodman, R., & Hyams, N. (2006). An introduction to language (8th ed.). Florence, KY: Wadsworth.
+Hart, B., & Risley, T. R. (1995). Meaningful differences in the everyday experience of young American children. Balti-
+more, MD: Brookes.
+Hoover, W. A., & Gough, P. B. (1990). The simple view of reading. Reading and Writing, 2, 127–160.
+Hulit, L. M., Howard, M. R., & Fahey, K. R. (2010). Born to talk: An introduction to speech and language development.
+Boston, MA: Allyn & Bacon.
+Pence, K. L., & Justice, L. M. (2007). Language development from theory to practice. Upper Saddle River, NJ: Prentice-
+Hall.
+Snow, C. E., Burns, M. S., & Griffin, P. (Eds.) (1998). Preventing reading difficulties in young children. Washington, DC:
+National Academy Press.
+Sticht, T. G., & James, J. H. (1984). Listening and reading. In P. D. Pearson, R. Barr, M. L. Kamil, & P. Mosenthal (Eds.),
+Handbook of reading research (Vol. 1) (pp. 293–317). White Plains, NY: Longman.
+Stuart, L., Wright, F., Grigor, S., & Howey, A. (2002). Spoken language difficulties: Practical strategies and activities for
+teachers and other professionals. London, England: Fulton.
+Whitehurst G. J., Falco, F. L., Lonigan, C. J., Fischel, J. E., DeBaryshe, B. D., Valdez-Menchaca, M. C., & Caufield, M.
+(1988). Accelerating language development through picture book reading. Developmental Psychology, 24, 552–558.
+
+=== Page 39 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   39
+Language
+Achugar, M., Schleppegrell, M., & Oteíza, T. (2007). Engaging teachers in language analysis: A functional linguistics ap proach to reflective literacy. English Teaching: Practice and Critique, 6(2), 8–24.
+Adams, M. J. (2009). The challenge of advanced texts: The interdependence of reading and learning. In E. H. Hiebert
+(Ed.), Reading more, reading better: Are American students reading enough of the right stuff? (pp. 163–189). New
+York, NY: Guilford.
+Bardovi-Harlig, K. (2000). Tense and aspect in second language acquisition: Form, meaning, and use. Language
+Learning Monograph Series. Malden, MA: Blackwell.
+Bartholomae, D. (1980). The study of error. College Composition and Communication, 31(3), 253–269.
+Baumann, J. F., & Kameenui, E. J. (1991). Research on vocabulary instruction: Ode to Voltaire. In J. Flood, J. M. Jensen,
+D. Lapp, & J. R. Squire (Eds.), Handbook of research on teaching the English language arts (pp. 604–632). New York,
+NY: Macmillan.
+Beck, I. L., McKeown, M. G., & Kucan, L. (2002). Bringing words to life: Robust vocabulary instruction. New York, NY:
+Guilford.
+Beck, I. L., McKeown, M. G., & Kucan, L. (2008). Creating robust vocabulary: Frequently asked questions and extended examples. New York, NY: Guilford.
+Becker, W. C. (1977). Teaching reading and language to the disadvantaged—What we have learned from field research.
+Harvard Educational Review, 47, 518–543.
+Betts, E. A. (1946). Foundations of reading instruction, with emphasis on differentiated guidance. New York, NY:
+American Book Company.
+Biber, D. (1991). Variation across speech and writing. Cambridge, England: Cambridge University Press.
+Biemiller, A. (2001). Teaching vocabulary: Early, direct, and sequential. American Educator, 25(1), 24–28, 47.
+Carver, R. P. (1994). Percentage of unknown vocabulary words in text as a function of the relative difficulty of the text:
+Implications for instruction. Journal of Reading Behavior, 26, 413–437.
+Daneman, M, & Green, I. (1986). Individual differences in comprehending and producing words in context. Journal of Memory and Language, 25(1), 1–18.
+DeVilliers, J., & DeVilliers, P. (1973). A cross-sectional study of the acquisition of grammatical morphemes in child
+speech. Journal of Psycholinguistic Research, 2, 267–278.
+Durkin, D. (1978). What classroom observations reveal about comprehension instruction. Reading Research Quarterly, 14, 481–533.
+Fogel, H., & Ehri, L. C. (2000). Teaching elementary students who speak Black English Vernacular to write in Standard
+English: Effects of dialect transformation practice. Contemporary Educational Psychology, 25, 212–235.
+García, G. G., & Beltrán, D. (2003). Revisioning the blueprint: Building for the academic success of English learners. In
+G. G. García (Ed.), English Learners (pp. 197–226). Newark, DE: International Reading Association.
+Gargani, J. (2006). UC Davis/SCUSD Teaching American History Grant technical memo: Years 1 & 2 essay and CST analysis results. Unpublished report.
+Hayes, D., & Ahrens, M. (1988). Vocabulary simplification for children: A special case of “motherese”? Journal of Child
+Language, 15, 395–410.
+Herman, P. A., Anderson, R. C., Pearson, P. D., & Nagy, W. E.  (1987). Incidental acquisition of word meaning from expo sitions with varied text features. Reading Research Quarterly, 22, 263–284.
+Hseuh-chao, M. H., & Nation, P. (2000). Unknown vocabulary density and reading comprehension. Reading in a For eign Language, 13(1), 403–430.
+Krauthamer, H. S. (1999). Spoken language interference patterns in written English. New York, NY: Peter Lang.
+Landauer, T. K., & Dumais, S. T. (1997). A solution to Plato’s problem: The latent semantic analysis theory of acquisi tion, induction, and representation of knowledge. Psychological Review, 104, 211–240.
+
+=== Page 40 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   40
+Landauer, T. K., McNamara, D. S., Dennis, S., & Kintsch, W. (Eds.) (2007). Handbook of latent semantic analysis. Lon-
+don, England: Psychology Press.
+Laufer, B. (1988). What percentage of text-lexis is essential for comprehension? In C. Laurén & M. Nordman (Eds.),
+Special language: From humans to thinking machines (pp. 316–323). Clevedon, England: Multilingual Matters.
+Lefstein, A. (2009). Rhetorical grammar and the grammar of schooling: Teaching “powerful verbs” in the English Na tional Literacy Strategy. Linguistics and Education, 20, 378–400.
+Lesaux, N. K., Kieffer, M. J., Faller, S. E., & Kelley, J. G. (2010). The effectiveness and ease of implementation of an aca demic English vocabulary intervention for linguistically diverse students in urban middle schools. Reading Research
+Quarterly, 45, 196–228.
+Miller, G. A. (1999). On knowing a word. Annual Review of Psychology, 50, 1–19.
+Nagy, W. E., Anderson, R. C., & Herman, P. A. (1987). Learning word meanings from context during normal reading.
+American Educational Research Journal, 24, 237–270.
+Nagy, W. E., Herman, P., & Anderson, R. C. (1985). Learning words from context. Reading Research Quarterly, 20, 233–253.
+National Institute of Child Health and Human Development. (2000). Report of the National Reading Panel. Teaching
+children to read: An evidence-based assessment of the scientific research literature on reading and its implications for
+reading instruction (NIH Publication No. 00-4769). Washington, DC: U.S. Government Printing Office.
+RAND Reading Study Group. (2002). Reading for understanding: Toward an R & D program in reading comprehen sion. Santa Monica, CA: RAND.
+Schleppegrell, M. (2001). Linguistic features of the language of schooling. Linguistics and Education, 12, 431–459.
+Scott, J., & Nagy, W. E. (1997). Understanding the definitions of unfamiliar verbs. Reading Research Quarterly, 32, 184–200.
+Shaughnessy, M. P. (1979). Errors and expectations: A guide for the teacher of basic writing. New York, NY: Oxford
+University Press.
+Short, D. J., & Fitzsimmons, S. (2007). Double the work: Challenges and solutions to acquiring language and academic
+literacy for adolescent English language learners. New York, NY: Alliance for Excellent Education.
+Stanovich, K. E. (1986). Matthew effects in reading: Some consequences of individual differences in the acquisition of
+literacy. Reading Research Quarterly, 21, 360–407.
+Sternberg, R. J., & Powell, J. S. (1983). Comprehending verbal comprehension. American Psychologist, 38, 878–893.
+Wheeler, R., & Swords, R. (2004). Code-switching: Tools of language and culture transform the dialectally diverse classroom. Language Arts, 81, 470–480.
+Whipple, G. (Ed.) (1925). The Twenty-fourth Yearbook of the National Society for the Study of Education: Report of
+the National Committee on Reading. Bloomington, IL: Public School Publishing Company.
+Williams, G. (2000). Children’s literature, children and uses of language description. In L. Unsworth (Ed.), Researching
+Language in Schools and Communities: Functional Linguistic Perspectives (pp. 111–129). London, England: Cassell.
+Williams, G. (2005). Grammatics in schools. In R. Hasan, C. M. I. M. Matthiessen, & J. Webster (Eds.), Continuing dis course on language (pp. 281–310). London, England: Equinox.
+
+=== Page 41 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   41
+A Note on International Sources for the Standards
+In the course of developing the Standards, the writing team consulted numerous international models, including those
+from Ireland, Finland, New Zealand, Australia (by state), Canada (by province), Singapore, the United Kingdom, and
+others. Several patterns emerging from international standards efforts influenced the design and content of the Stan-
+dards:
+(1) Other nations pay equal attention to what students read and how they read. Many countries set standards for
+student reading by providing a reading list. The United Kingdom has standards for the “range and content” of student
+reading. While lacking the mandate to set particular reading requirements, the Standards nonetheless follow the spirit
+of international models by setting explicit expectations for the range, quality, and complexity of what students read
+along with more conventional standards describing how well students must be able to read.
+(2) Students are required to write in response to sources. In several international assessment programs, students are
+confronted with a text or texts and asked to gather evidence, analyze readings, and synthesize content. The Stan dards likewise require students to “draw evidence from literary or informational texts to support analysis, reflection, and research” (Writing CCR standard 9).
+(3) Writing arguments and writing informational/explanatory texts are priorities. The Standards follow international
+models by making writing arguments and writing informational/explanatory texts the dominant modes of writing in
+high school to demonstrate readiness for college and career.
+
+=== Page 42 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   42
+Glossary of Key Terms
+Every effort has been made to ensure that the phrasing of the Standards is as clear and free of jargon as possible.
+When used, specialized and discipline-specific terms (e.g., simile, stanza, declarative sentence) typically conform to
+their standard definition, and readers are advised to consult high-quality dictionaries or standard resources in the
+field for clarification. The terms defined below are limited to those words and phrases particularly important to the
+Standards and that have a meaning unique to this document. CCSS refers to the main Common Core State Standards
+document; the names of various sections (e.g., “Reading”) refer to parts of this appendix.
+Definitions of many important terms associated with reading foundational skills appear in Reading Foundational Skills,
+pages 17–22. Descriptions of the Standards’ three writing types (argument, informative/explanatory writing, and nar rative) can be found in Writing, pages 23–24.
+Domain-specific words and phrases – Vocabulary specific to a particular field of study (domain), such as the human
+body (CCSS, p. 33); in the Standards, domain-specific words and phrases are analogous to Tier Three words (Lan guage, p. 33).
+Editing – A part of writing and preparing presentations concerned chiefly with improving the clarity, organization,
+concision, and correctness of expression relative to task, purpose, and audience; compared to revising, a smaller-scale
+activity often associated with surface aspects of a text; see also revising, rewriting
+Emergent reader texts – Texts consisting of short sentences comprised of learned sight words and CVC words; may
+also include rebuses to represent words that cannot yet be decoded or recognized; see also rebus
+Evidence – Facts, figures, details, quotations, or other sources of data and information that provide support for claims
+or an analysis and that can be evaluated by others; should appear in a form and be derived from a source widely ac cepted as appropriate to a particular discipline, as in details or quotations from a text in the study of literature and experimental results in the study of science
+Focused question – A query narrowly tailored to task, purpose, and audience, as in a research query that is sufficient ly precise to allow a student to achieve adequate specificity and depth within the time and format constraints
+Formal English – See standard English
+General academic words and phrases – Vocabulary common to written texts but not commonly a part of speech; in
+the Standards, general academic words and phrases are analogous to Tier Two words and phrases (Language, p. 33)
+Independent(ly) – A student performance done without scaffolding from a teacher, other adult, or peer; in the Stan dards, often paired with proficient(ly) to suggest a successful student performance done without scaffolding; in the
+Reading standards, the act of reading a text without scaffolding, as in an assessment; see also proficient(ly), scaffold ing
+More sustained research project – An investigation intended to address a relatively expansive query using several
+sources over an extended period of time, as in a few weeks of instructional time
+Point of view – Chiefly in literary texts, the narrative point of view (as in first- or third-person narration); more broadly,
+the position or perspective conveyed or represented by an author, narrator, speaker, or character
+Print or digital (texts, sources) – Sometimes added for emphasis to stress that a given standard is particularly likely
+to be applied to electronic as well as traditional texts; the Standards are generally assumed to apply to both
+Proficient(ly) – A student performance that meets the criterion established in the Standards as measured by a
+teacher or assessment; in the Standards, often paired with independent(ly) to suggest a successful student perfor mance done without scaffolding; in the Reading standards, the act of reading a text with comprehension; see also independent(ly), scaffolding
+Rebus – A mode of expressing words and phrases by using pictures of objects whose names resemble those words
+Revising – A part of writing and preparing presentations concerned chiefly with a reconsideration and reworking of
+the content of a text relative to task, purpose, and audience; compared to editing, a larger-scale activity often associ ated with the overall content and structure of a text; see also editing, rewriting
+Rewriting – A part of writing and preparing presentations that involves largely or wholly replacing a previous, unsatis factory effort with a new effort, better aligned to task, purpose, and audience, on the same or a similar topic or theme;
+compared to revising, a larger-scale activity more akin to replacement than refinement; see also editing, revising
+
+=== Page 43 ===
+Common Core State Standards for english language arts  & literacy in history/social studies, science, and technical subjects appendix A  |   43
+Scaffolding – Temporary guidance or assistance provided to a student by a teacher, another adult, or a more capable
+peer, enabling the student to perform a task he or she otherwise would not be able to do alone, with the goal of fos tering the student’s capacity to perform the task on his or her own later on*
+Short research project – An investigation intended to address a narrowly tailored query in a brief period of time, as in
+a few class periods or a week of instructional time
+Source – A text used largely for informational purposes, as in research.
+Standard English – In the Standards, the most widely accepted and understood form of expression in English in the
+United States; used in the Standards to refer to formal English writing and speaking; the particular focus of Language standards 1 and 2 (CCSS, pp. 26, 28, 52, 54)
+Technical subjects – A course devoted to a practical study, such as engineering, technology, design, business, or other
+workforce-related subject; a technical aspect of a wider field of study, such as art or music
+Text complexity – The inherent difficulty of reading and comprehending a text combined with consideration of reader
+and task variables; in the Standards, a three-part assessment of text difficulty that pairs qualitative and quantitative
+measures with reader-task considerations (CCSS, pp. 31, 57; Reading, pp. 4–16)
+Text complexity band – A range of text difficulty corresponding to grade spans within the Standards; specifically, the
+spans from grades 2–3, grades 4–5, grades 6–8, grades 9–10, and grades 11–CCR (college and career readiness)
+Textual evidence – See evidence
+With prompting and support/with (some) guidance and support – See scaffolding
+* Though Vygotsky himself does not use the term scaffolding, the educational meaning of the term relates closely to his con cept of the zone of proximal development. See L. S. Vygotsky (1978). Mind in society: The development of higher psychologi cal processes. Cambridge, MA: Harvard University Press.

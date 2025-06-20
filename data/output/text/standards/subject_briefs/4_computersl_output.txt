@@ -1,0 +1,121 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+The IB Diploma Programme (DP) is a rigorous, academically challenging and balanced
+programme of education designed to prepare students aged 16 to 19 for success at
+university and life beyond. The DP aims to encourage students to be knowledgeable,
+inquiring, caring and compassionate, and to develop intercultural understanding,
+open-mindedness and the attitudes necessary to respect and evaluate a range of viewpoints.
+To ensure both breadth and depth of knowledge and understanding, students must
+choose at least one subject from five groups: 1) their best language, 2) additional
+language(s), 3) social sciences, 4) experimental sciences, and 5) mathematics. Students
+may choose either an arts subject from group 6, or a second subject from groups
+1 to 5. At least three and not more than four subjects are taken at higher level (240
+recommended teaching hours), while the remaining are taken at standard level (150
+recommended teaching hours). In addition, three core elements—the extended essay,
+theory of knowledge and creativity, action, service—are compulsory and central to the philosophy of the programme.
+These IB DP subject briefs illustrate four key course components.
+I. Course description and aims
+II. Curriculum model overview
+III. Assessment model
+IV. Sample questions
+International Baccalaureate
+Diploma Programme Subject Brief
+Sciences:
+Computer science – Standard level
+First assessments 2014 © International Baccalaureate Organization 2014
+International Baccalaureate® | Baccalauréat International® | Bachillerato Internacional®
+I. Course description and aims
+The IB DP Computer science SL course requires an understanding of the
+fundamental concepts of computational thinking as well as knowledge
+of how computers and other digital devices operate. The course, under pinned by conceptual thinking, draws on a wide spectrum of knowledge,
+and enables and empowers innovation, exploration and the acquisition
+of further knowledge.  Students study how computer science interacts
+with and influences cultures, society and how individuals and societies
+behave, and the ethical issues involved. During the course the student
+will develop computational solutions. This will involve the ability to:
+• identify a problem or unanswered question • design, prototype and test a proposed solution
+• liaise with clients to evaluate the success of the proposed solution and make recommendations for future developments.
+The aims of the computer science standard level courses are to:
+• provide opportunities for study and creativity within a global con text that will stimulate and challenge students developing the
+skills necessary for independent and lifelong learning
+• provide a body of knowledge, methods and techniques that char acterize computer science
+• enable students to apply and use a body of knowledge, methods and techniques that characterize computer science
+• demonstrate initiative in applying thinking skills critically to identi fy and resolve complex problems
+• engender an awareness of the need for, and the value of, effective
+collaboration and communication in resolving complex problems
+• develop logical and critical thinking as well as experimental, inves tigative and problem-solving skills
+• develop and apply the students’ information and communication
+technology skills in the study of computer science to communi cate information confidently and effectively
+• raise awareness of the moral, ethical, social, economic and environ mental implications of using science and technology
+• develop an appreciation of the possibilities and limitations asso ciated with continued developments in IT systems and computer science
+• encourage an understanding of the relationships between scientif ic disciplines and the overarching nature of the scientific method.
+
+=== Page 2 ===
+About the IB: For over 40 years the IB has built a reputation for high-quality, challenging programmes of education that develop internationally
+minded young people who are well prepared for the challenges of life in the 21st century and able to contribute to creating a better, more peaceful world.
+For further information on the IB Diploma Programme, visit: http://www.ibo.org/diploma/  Complete subject guides can be accessed through
+the IB Online Curriculum Center (OCC), the IB university and government official system, or purchased through the IB store: http://store.ibo.org
+To learn more about how the IB Diploma Programme prepares students for success at university, visit: www.ibo.org/recognition or
+email: recognition@ibo.org
+II. Curriculum model overview
+Component
+Recommended teaching hours
+Core syllabus content
+SL/HL core
+The topics that must be studied, including some
+practical work, are:
+• Topic 1: System fundamentals
+• Topic 2: Computer organization
+• Topic 3: Networks
+• Topic 4: Computational thinking, problem-solving and programming 80
+Option
+SL/HL core 30
+Internal assessment
+Solution • Practical application of skills through the development of a product and associated documentation 30
+Group 4 project 10
+III. Assessment model
+Having followed the computer science standard level course, students
+will be expected to:
+Know and understand:
+• relevant facts and concepts • appropriate methods and techniques • computer science terminology • methods of presenting information.
+Apply and use:
+• relevant facts and concepts • relevant design methods and techniques • terminology to communicate effectively
+• appropriate communication methods to present information.
+Construct, analyse, evaluate and formulate:
+• success criteria, solution specifications including task outlines, de signs and test plans
+• appropriate techniques within a specified solution.
+Demonstrate the personal skills of cooperation and perseverance as well
+as appropriate technical skills for effective problem-solving in develop ing a specified product.
+Assessment at a glance
+Type of assessment
+Format of assessment
+Time (hours)
+Weighting of final grade (%)
+External 70
+Paper 1 • Section A consists of several compulsory short answer questions • Section B consists of three compulsory structured questions.
+1.5 45
+Paper 2
+An examination paper of between two and five com pulsory questions; linked to the option studied.
+1 25
+Internal 30
+Solution
+The development of a computational solution.
+Students must produce:
+• a cover page that follows the prescribed format • a product supporting documentation (word limit 2,000 words).
+There must be evidence of independent research and investigation for students to reach the top level.
+30
+Group 4 project
+To be assessed using the criterion Personal skills.
+10
+IV. Sample questions
+• The colour of a pixel can be stored as a 16-bit integer.
+(a) State how many different colours can be represented in a 16-bit integerfield.
+
+(b) State whether this storage system for colour values is digital or analog.
+(c) Outline one advantage and one disadvantage of using 32-bits
+per-pixel to store colours instead of 16-bits per-pixel.
+• State the output of the following code fragment:
+double n= 1234.5678;
+double p = math.floor((n*100)/100); output (p);
+Recall that math.floor(3.7) produces the integer result 3.

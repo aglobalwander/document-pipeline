@@ -1,0 +1,2000 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+Language ab initio guide
+First assessment 2020
+
+=== Page 3 ===
+Language ab initio guide
+First assessment 2020
+
+=== Page 4 ===
+Diploma Programme
+Language ab initio guide
+International Baccalaureate, Baccalauréat International and Bachillerato Internacional
+are registered trademarks of the International Baccalaureate Organization.
+Published February 2018
+Updated May 2019, August 2021
+Published by
+International Baccalaureate Organization 15 Route des Morillons 1218 Le Grand-Saconnex
+Geneva, Switzerland
+Represented by
+IB Publishing Ltd, Churchillplein 6, The Hague, 2517JW The Netherlands © International Baccalaureate Organization 2018
+The International Baccalaureate Organization (known as the IB) offers four high-quality
+and challenging educational programmes for a worldwide community of schools, aiming
+to create a better, more peaceful world. This publication is one of a range of materials produced to support these programmes.
+The IB may use a variety of sources in its work and checks information to verify accuracy
+and authenticity, particularly when using community-based knowledge sources such as
+Wikipedia. The IB respects the principles of intellectual property and makes strenuous
+efforts to identify and obtain permission before publication from rights holders of all
+copyright material used. The IB is grateful for permissions received for material used
+in this publication and will be pleased to correct any errors or omissions at the earliest opportunity.
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval
+system, or transmitted, in any form or by any means, without the prior written permission
+of the IB, or as expressly permitted by law or by the IB’s own rules and policy. See www.ibo.org/copyright.
+IB merchandise and publications can be purchased through the IB store at store.ibo.org.
+Email: sales@ibo.org
+
+=== Page 6 ===
+IB mission statement
+The International Baccalaureate aims to develop inquiring, knowledgeable and caring young people who
+help to create a better and more peaceful world through intercultural understanding and respect.
+To this end the organization works with schools, governments and international organizations to develop
+challenging programmes of international education and rigorous assessment.
+These programmes encourage students across the world to become active, compassionate and lifelong
+learners who understand that other people, with their differences, can also be right.
+
+=== Page 9 ===
+Language ab initio guide
+Contents
+Introduction
+
+1
+Purpose of this document 1
+The Diploma Programme 2
+Nature of the subject 6
+Aims
+
+11
+Assessment objectives 12
+Assessment objectives in practice 13
+Syllabus
+
+15
+Syllabus outline
+
+15
+Syllabus content
+
+17
+Assessment
+
+24
+Assessment in the Diploma Programme 24
+Assessment outline
+
+26
+External assessment
+
+27
+Internal assessment
+
+32
+Approaches to teaching and learning 42
+Approaches to the teaching and learning of language ab initio 42
+Appendices
+
+47
+Glossary of command terms 47
+Glossary of subject-specific terms 48
+Bibliography
+
+49
+
+=== Page 11 ===
+Language ab initio guide 1
+This publication is intended to guide the planning, teaching and assessment of the subject in schools.
+Subject teachers are the primary audience, although it is expected that teachers will use the guide to inform students and parents about the subject.
+This guide can be found on the subject page of the programme resource centre at https://resources.ibo.org,
+a password-protected IB website designed to support IB teachers. It can also be purchased from the IB store
+at http://store.ibo.org.
+Additional resources
+Additional publications such as specimen papers and markschemes, teacher support materials, subject
+reports and grade descriptors can also be found on the programme resource centre. Past examination
+papers as well as markschemes can be purchased from the IB store.
+Teachers are encouraged to check the programme resource centre for additional resources created or used
+by other teachers. Teachers can provide details of useful resources, for example: websites, books, videos, journals or teaching ideas.
+Acknowledgment
+The IB wishes to thank the educators and associated schools for generously contributing time and resources to the production of this guide.
+First assessment 2020
+Introduction
+Purpose of this document
+
+=== Page 12 ===
+Language ab initio guide 2
+Introduction
+The Diploma Programme
+The Diploma Programme is a rigorous pre-university course of study designed for students in the 16 to 19
+age range. It is a broad-based two-year course that aims to encourage students to be knowledgeable and
+inquiring, but also caring and compassionate. There is a strong emphasis on encouraging students to
+develop intercultural understanding, open-mindedness and the attitudes necessary for them to respect and evaluate a range of points of view.
+The Diploma Programme model
+The course is presented as six academic areas enclosing a central core (see figure 1). It encourages the
+concurrent study of a broad range of academic areas. Students study two modern languages (or a modern
+language and a classical language), a humanities or social science subject, an experimental science,
+mathematics and one of the creative arts. It is this comprehensive range of subjects that makes the Diploma
+Programme a demanding course of study designed to prepare students effectively for university entrance.
+In each of the academic areas, students have flexibility in making their choices, which means they can
+choose subjects that particularly interest them and that they may wish to study further at university.
+Figure 1
+Diploma Programme model
+
+=== Page 13 ===
+The Diploma Programme
+Language ab initio guide 3
+Choosing the right combination
+Students are required to choose one subject from each of the six academic areas, although they
+can, instead of an arts subject, choose two subjects from another area. Normally, three subjects (and
+not more than four) are taken at higher level (HL), and the others are taken at standard level (SL). The IB
+recommends 240 teaching hours for HL subjects and 150 hours for SL. Subjects at HL are studied in greater depth and breadth than at SL.
+At both levels, many skills are developed, especially those of critical thinking and analysis. At the end of
+the course, students’ abilities are measured by means of external assessment. Many subjects contain some element of coursework assessed by teachers.
+The core of the Diploma Programme model
+All Diploma Programme students participate in the three course elements that make up the core of the model.
+Theory of knowledge (TOK) is a course that is fundamentally about critical thinking and inquiry into the
+process of knowing rather than about learning a specific body of knowledge. The TOK course examines the
+nature of knowledge and how we know what we claim to know. It does this by encouraging students to
+analyse knowledge claims and explore questions about the construction of knowledge. The task of TOK is to
+emphasize connections between areas of shared knowledge and link them to personal knowledge in such a
+way that an individual becomes more aware of his or her own perspectives and how they might differ from others.
+Creativity, activity, service (CAS) is at the heart of the Diploma Programme. The emphasis in CAS is on
+helping students to develop their own identities, in accordance with the ethical principles embodied in
+the IB mission statement and the IB learner profile. It involves students in a range of activities alongside
+their academic studies throughout the Diploma Programme. The three strands of CAS are creativity (arts,
+and other experiences that involve creative thinking), activity (physical exertion contributing to a healthy
+lifestyle) and service (an unpaid and voluntary exchange that has a learning benefit for the student).
+Possibly, more than any other component in the Diploma Programme, CAS contributes to the IB’s mission to
+create a better and more peaceful world through intercultural understanding and respect.
+The extended essay, including the world studies extended essay, offers the opportunity for IB students to
+investigate a topic of special interest, in the form of a 4,000-word piece of independent research. The area of
+research undertaken is chosen from one of the students’ six Diploma Programme subjects, or in the case of
+the inter-disciplinary world studies essay, two subjects, and acquaints them with the independent research
+and writing skills expected at university. This leads to a major piece of formally presented, structured
+writing, in which ideas and findings are communicated in a reasoned and coherent manner, appropriate to
+the subject or subjects chosen. It is intended to promote high-level research and writing skills, intellectual
+discovery and creativity. An authentic learning experience, it provides students with an opportunity to
+engage in personal research on a topic of choice, under the guidance of a supervisor.
+
+=== Page 14 ===
+The Diploma Programme
+Language ab initio guide 4
+Approaches to teaching and approaches to learning
+Approaches to teaching and learning across the Diploma Programme refers to deliberate strategies,
+skills and attitudes which permeate the teaching and learning environment. These approaches and
+tools, intrinsically linked with the learner profile attributes, enhance student learning and assist student
+preparation for the Diploma Programme assessment and beyond. The aims of approaches to teaching and learning in the Diploma Programme are to:
+•
+empower teachers as teachers of learners as well as teachers of content •
+empower teachers to create clearer strategies for facilitating learning experiences in which students
+are more meaningfully engaged in structured inquiry and greater critical and creative thinking •
+promote both the aims of individual subjects (making them more than course aspirations) and linking
+previously isolated knowledge (concurrency of learning) •
+encourage students to develop an explicit variety of skills that will equip them to continue to be
+actively engaged in learning after they leave school, and to help them not only obtain university
+admission through better grades but also prepare for success during tertiary education and beyond •
+enhance further the coherence and relevance of the students’ Diploma Programme experience •
+allow schools to identify the distinctive nature of an IB Diploma Programme education, with its blend of idealism and practicality.
+The five approaches to learning (developing thinking skills, social skills, communication skills, self management skills and research skills) along with the six approaches to teaching (teaching that is inquiry based, conceptually focused, contextualized, collaborative, differentiated and informed by assessment)
+encompass the key values and principles that underpin IB pedagogy.
+The IB mission statement and the IB learner profile
+The Diploma Programme aims to develop in students the knowledge, skills and attitudes they will need
+to fulfill the aims of the IB, as expressed in the organization’s mission statement and the learner profile.
+Teaching and learning in the Diploma Programme represent the reality in daily practice of the organization’s educational philosophy.
+Academic honesty
+Academic honesty in the Diploma Programme is a set of values and behaviours informed by the attributes
+of the learner profile. In teaching, learning and assessment, academic honesty serves to promote personal
+integrity, engender respect for the integrity of others and their work, and ensure that all students have an
+equal opportunity to demonstrate the knowledge and skills they acquire during their studies.
+All coursework—including work submitted for assessment—is to be authentic, based on the student’s
+individual and original ideas with the ideas and work of others fully acknowledged. Assessment tasks that
+require teachers to provide guidance to students or that require students to work collaboratively must be
+completed in full compliance with the detailed guidelines provided by the IB for the relevant subjects.
+For further information on academic honesty in the IB and the Diploma Programme, please consult the IB
+publications Academic honesty in the IB educational context, Academic honesty in the Diploma Programme
+and Diploma Programme: From principles into practice. Specific information regarding academic honesty as it
+pertains to external and internal assessment components of this Diploma Programme subject can be found in this guide.
+
+=== Page 15 ===
+The Diploma Programme
+Language ab initio guide 5
+Acknowledging the ideas or work of another person
+Coordinators and teachers are reminded that candidates must acknowledge all sources used in work
+submitted for assessment. The following is intended as a clarification of this requirement.
+Diploma Programme candidates submit work for assessment in a variety of media that may include audio visual material, text, graphs, images and/or data published in print or electronic sources. If a candidate uses
+the work or ideas of another person, the candidate must acknowledge the source using a standard style of
+referencing in a consistent manner. A candidate’s failure to acknowledge a source will be investigated by the
+IB as a potential breach of regulations that may result in a penalty imposed by the IB final award committee.
+The IB does not prescribe which style(s) of referencing or in-text citation should be used by candidates; this
+is left to the discretion of appropriate faculty/staff in the candidate’s school. The wide range of subjects,
+three response languages and the diversity of referencing styles make it impractical and restrictive to insist
+on particular styles. In practice, certain styles may prove most commonly used, but schools are free to
+choose a style that is appropriate for the subject concerned and the language in which candidates’ work is
+written. Regardless of the reference style adopted by the school for a given subject, it is expected that the
+minimum information given includes: name of author, date of publication, title of source, and page numbers as applicable.
+Candidates are expected to use a standard style and use it consistently so that credit is given to all sources
+used, including sources that have been paraphrased or summarized. When writing text candidates must
+clearly distinguish between their words and those of others by the use of quotation marks (or other method,
+such as indentation) followed by an appropriate citation that denotes an entry in the bibliography. If an
+electronic source is cited, the date of access must be indicated. Candidates are not expected to show faultless
+expertise in referencing, but are expected to demonstrate that all sources have been acknowledged.
+Candidates must be advised that audio-visual material, text, graphs, images and/or data published in print
+or in electronic sources that is not their own must also attribute the source. Again, an appropriate style of referencing/citation must be used.
+Learning diversity and learning support requirements
+Schools must ensure that equal access arrangements and reasonable adjustments are provided to
+candidates with learning support requirements that are in line with the IB documents:
+•
+Candidates with assessment access requirements •
+Learning diversity and inclusion in IB programmes.
+
+=== Page 16 ===
+Language ab initio guide 6
+Introduction
+Nature of the subject
+Language acquisition
+Language acquisition consists of two modern language courses—language ab initio and language B—that
+are offered in a number of languages, and a classical languages course that is offered in Latin and Classical
+Greek. Owing to the nature of language study in the latter, there are specific aims for classical literature that
+can be found in the Classical languages guide. Language ab initio and language B are language acquisition
+courses designed to provide students with the necessary skills and intercultural understanding to enable
+them to communicate successfully in an environment where the language studied is spoken. This process
+allows the learner to go beyond the confines of the classroom, expanding their awareness of the world and fostering respect for cultural diversity.
+The two modern language courses—language ab initio and language B—develop students’ linguistic
+abilities through the development of receptive, productive and interactive skills (as defined in the “Syllabus
+content” section). The classical languages course focuses on the study of the language, literature and culture of the classical world.
+Language ab initio
+Language ab initio is a language acquisition course designed for students with no prior experience of the
+target language, or for those students with very limited previous exposure. It should be noted that language ab initio is offered at SL only.
+Because of the inherent difficulty of defining what constitutes “very limited exposure” to a language, it is not
+possible to list specific conditions such as the number of hours or the nature of previous language instruction;
+however, it is important to note that any student who is already able to understand and respond to spoken and
+written language on a range of common topics is not to be placed in language ab initio as this would not provide
+an appropriate academic challenge, nor is it fair for those students who are genuine beginners of the language.
+In order to ensure that the range of language and structures covered in language ab initio classes is
+manageable for all students, and so that they marry closely with the format and contents of final assessments,
+language-specific syllabuses have been provided and are available on the programme resource centre.
+At the language ab initio level, a student develops receptive, productive and interactive communicative
+skills. Students learn to communicate in the target language in familiar and unfamiliar contexts.
+Receptive: Students understand, both aurally and in writing, simple sentences and some more complex
+sentences relating to the five prescribed themes and related topics. They understand simple authentic and
+adapted written and audio texts and related questions in the target language.
+Productive: Students express information fairly accurately, in both writing and in speech, using a range of
+basic vocabulary and grammatical structures. They communicate orally and respond appropriately to most
+questions on the five prescribed themes and related topics.
+Interactive: Students understand and respond clearly to some information and ideas within the range of
+the five prescribed themes and related topics. They engage in simple conversations. They use strategies to negotiate meaning and foster communication.
+
+=== Page 17 ===
+Nature of the subject
+Language ab initio guide 7
+Language ab initio and the core
+Teachers of language acquisition courses need to plan carefully to provide opportunities for students to
+draw on their experiences in the core. Examples of how this might happen include:
+•
+transferring the critical-thinking process explored in TOK to the development of well-supported
+arguments in written text types, such as a blog or email •
+using personal knowledge gained from a CAS experience as a cultural comparison in an individual oral activity or as an example in a written response •
+developing ideas for CAS activities as a result of themes and topics explored in a language acquisition class.
+The following section outlines the nature of the contributions that each element of the core can make to language acquisition lessons.
+Language ab initio and theory of knowledge
+Theory of knowledge (TOK) is one of the three core elements of the Diploma Programme (DP). It plays a
+special role in the programme by providing an opportunity for students to reflect on the fundamental
+question of how they know what they know. It aims to help students become more aware of their own
+perspective, as well as developing an awareness of multiple perspectives. More information on TOK can be found in the Theory of knowledge guide.
+Language is itself one of the specific ways of knowing that is identified in the TOK course. In addition to
+this explicit exploration of language, the skills and wider conceptual understandings that students develop
+in TOK can make an extremely positive contribution to their study of language acquisition. TOK develops
+higher-order thinking skills, such as analysis and evaluation, and also helps students to make connections
+and comparisons across their subject areas and the DP core. In this way, language acquisition both supports and is supported by TOK.
+As well as using the skills developed in TOK in acquiring an additional language, students will also benefit
+from guiding questions that can connect TOK to the five themes of the language ab initio curriculum. The
+following discussion questions are examples and are not meant to be either prescriptive or exhaustive.
+•
+Is it possible to think without language?
+•
+What would be lost if the whole world shared one common language?
+•
+If people speak more than one language, is what they know different in each language?
+•
+Do you think maths, logic or music should be classified as languages?
+•
+In what ways can language be used to influence, persuade or manipulate people?
+•
+Does language describe our experience of the world, or does it actively shape our experience of the world?
+•
+How are metaphors used in the construction of knowledge?
+•
+To what extent is our perspective determined by our membership of a particular culture?
+•
+To what extent are we aware of the impact of culture on what we believe or know?
+•
+Is there anything that is true for all cultures?
+Language ab initio and creativity, activity, service
+Creativity, activity, service (CAS) experiences can be associated with each of the subject groups of the DP.
+CAS and language acquisition can complement each other in a variety of ways. Students can enhance
+intercultural understanding through the active and purposeful use of their acquired language within
+
+=== Page 18 ===
+Nature of the subject
+Language ab initio guide 8
+the specific real-life contexts provided by their CAS experiences. Students may also draw on their CAS
+experiences to enrich their involvement in language acquisition both within and outside the classroom.
+An important characteristic of the language acquisition courses is the conceptual understandings that
+students develop. Through the five prescribed themes around which the language acquisition courses are
+centred, students might be able to investigate, plan, act and reflect on CAS experiences and projects in a
+more informed and meaningful way. Similarly, CAS experiences can ignite students’ passion for addressing
+particular personal, local, national and global issues.
+Language acquisition teachers can assist students in making links between their subjects and their CAS
+experiences, where appropriate. This will provide students with relevance in both their subject learning and
+their CAS learning through purposeful discussion and real experiences.
+The challenge and enjoyment of CAS can often have a profound effect on language acquisition students,
+who might choose, for example, to engage with CAS in the following ways.
+•
+As a CAS experience, a student can extend engagement with the language acquisition theme of
+“sharing the planet” (for example, environment) by conducting a separate activity in learning the
+names of organic and human-made materials in the target language. The student could then walk
+around the school to collect human-made waste (for example, plastic) that is discarded during one day, and then display it.
+•
+In a series of CAS experiences relating to the language acquisition theme of “social organization” (for
+example, social relationships, community, social engagement), a student interacts with elderly target language speakers, over a number of visits, to collect sayings, idioms or adages used by the older
+generations. These could then be shared in an article on the school or programme blog.
+•
+Students can develop a CAS project linked to the language acquisition theme of “experiences”
+(for example, migration) in which they engage with members of a local refugee population. The
+students could collaborate in an investigation of how migrants balance negotiating a new culture with
+maintaining their cultural heritage. An outcome of this interaction could be the creation of a mural representing the cultural balance.
+It is important to note that a CAS experience can be a single event or may be an extended series of events.
+However, CAS experiences must be distinct from, and may not be included or used in, the student’s diploma course requirements.
+Additional suggestions on the links between DP subjects and CAS can be found in the Creativity, activity, service teacher support material.
+Language ab initio and extended essay
+Although writing an extended essay (EE) provides students with an excellent opportunity to explore an
+aspect of one of their DP courses in greater depth, language ab initio students cannot elect to write an EE for the ab initio language being studied.
+Language acquisition and international-mindedness
+International-mindedness is central to the IB philosophy and instrumental in aspiring to a more peaceful world.
+Language acquisition courses do not have as their only goal the development of language skills, but also
+fostering intercultural understanding and global engagement. The nature of the language acquisition process
+supports international-mindedness and is, in turn, supported by it. The flexibility of IB course design allows
+language acquisition teachers to incorporate ideas and resources that encourage students to view aspects
+of the language and culture from different (and sometimes differing) perspectives, to make non-judgmental
+comparisons of language and culture, and to view language and culture in a global context.
+
+=== Page 19 ===
+Nature of the subject
+Language ab initio guide 9
+International-mindedness also provides opportunities for students to progress in the development
+of IB learner profile traits. Through exposure to, examination of, and reflection on, texts from cultures
+other than their own, students nurture their curiosity (inquirers), engage with issues and ideas of global
+significance (knowledgeable), use critical-thinking skills (thinkers) and listen carefully to the perspectives
+of other individuals and groups (communicators). They learn to show respect for the dignity and rights of
+people everywhere (principled), critically appreciate the values and traditions of others (open-minded), show
+empathy, compassion and respect (caring), recognize their interdependence with other people and the world
+in which they live (balanced), consider the world thoughtfully (reflective) and explore new ideas (risk-takers).
+Engaging with sensitive topics
+All language acquisition courses will provide the opportunity to engage with a broad range of texts, stimuli
+and scenarios that address topics of personal, local or national and global significance. Such work may well
+raise issues that challenge learners intellectually, personally and culturally. Engagement with these topics,
+whether intentional or incidental, can be opportunities for development of IB learner profile traits. Teachers
+should help learners to approach such materials in a sensitive, responsible and reflective manner, bearing
+in mind the IB’s mission and its commitment to international-mindedness and intercultural respect within
+the context of the course. Consideration should also be given to the personal and social values of others.
+As part of the collective consideration of the school, language acquisition students must be supported
+in maintaining an ethical perspective during their course. Schools must make every reasonable effort to
+encourage students to respond appropriately (without seeking to offend), to promote respect for their
+peers and to consider the environment in all their actions.
+In selecting texts and preparing materials and tasks for language acquisition courses, teachers are reminded
+to consider the cultural environment and the make-up of the student body, in order to act as role models in
+demonstrating an awareness of, and sensitivity to, deeply held personal and community values.
+Prior learning
+Students enter language acquisition courses with varying degrees of exposure to the target language(s).
+It is, therefore, important that students are placed into a course that is most suited to their language
+development needs and that will provide them with an appropriate academic challenge. For those students
+entering DP language acquisition from the Middle Years Programme (MYP), table 1 in the “Language
+acquisition across the IB continuum” section of the MYP Language acquisition guide provides indications that can be useful for appropriate placement.
+Links to the Middle Years Programme
+The MYP is designed for students aged 11 to 16 and, as an integral part of the IB continuum, can directly
+lead into the DP. MYP language acquisition provides students with opportunities that prepare them for a DP
+language acquisition course through the following shared aims.
+•
+Developing communication skills in an additional language •
+Developing insights into the features, processes and craft of language, and the concept of culture,
+encouraging students to see that there are diverse ways of living, behaving and viewing the world •
+Developing intercultural understanding and global engagement, leading to international-mindedness
+
+=== Page 20 ===
+Nature of the subject
+Language ab initio guide 10 •
+Providing opportunities for learning through inquiry and the development of critical- and creative thinking skills •
+Fostering curiosity and a desire for lifelong learning •
+Understanding and respecting other languages and cultures
+As with the DP, the MYP holistically addresses students’ intellectual, social, emotional and physical well being, and provides students with opportunities to develop the knowledge, attitudes and skills they need in
+order to manage complex ideas and issues, and take responsible action for the future. The MYP requires the
+study of at least two languages to support students in understanding their own cultures and those of others.
+Additionally, the MYP helps to prepare students for further education, the workplace and lifelong learning.
+These courses also provide the opportunity to develop language skills and learn about language through
+the conceptual understandings of communication, connections, creativity and culture. The range of
+conceptual understandings, and factual and procedural knowledge that language acquisition students
+encounter throughout the MYP, can be directly transferred and developed in DP language acquisition
+courses, as can related concepts, such as audience, purpose, meaning and context.
+Learning takes place within contexts relevant to the student, whether personal, local, national, international
+or globally significant. This approach—using a range of learning contexts in the MYP—is directly extended
+through the five prescribed themes of DP language acquisition courses: identities; experiences; human
+ingenuity; social organization; sharing the planet.
+Links to the IB Career-related Programme
+The IB Career-related Programme (CP) is a framework of international education that incorporates the vision
+and educational principles of the IB into a unique programme specifically developed for students who wish
+to engage in career-related learning. The CP’s flexible educational framework allows schools to meet the
+needs, backgrounds and contexts of students, and is especially relevant for language acquisition.
+The core of the CP enables students to enhance their personal and interpersonal development, with an
+emphasis on experiential learning. One of the components of the CP core is language development, which
+ensures that all CP students have access, and are exposed, to an additional language that will enable them
+to use the language they have studied, encourage intercultural awareness and gain personal fulfilment.
+Students are encouraged to begin or extend the study of an additional language that suits their needs,
+background and context. A minimum of 50 hours is expected to be devoted to language development. CP
+students must complete a language development portfolio to the satisfaction of the school.
+One of the ways in which students can undertake language development in the CP is with an extension to
+their DP language acquisition course. This could be done through a school-designed language development
+course, through an external provider of language development or through monitored self-directed study.
+It is essential that the content of the provision of language development is an extension to the DP language
+acquisition coursework, if both are based on the same target language. The content and outcomes of the
+extension course may be tailored to the career-related studies of the students, if so desired.
+The CP documents Language development guide, General regulations: Career-related Programme, and
+Language development teacher support material provide further guidance regarding language acquisition
+and language development. More information about the CP can be found on the CP website, which can be accessed through the programme resource centre.
+
+=== Page 21 ===
+Language ab initio guide 11
+Introduction
+Aims
+Language acquisition aims
+The following aims are common to both language ab initio and language B.
+1.
+Develop international-mindedness through the study of languages, cultures, and ideas and issues of global significance.
+2.
+Enable students to communicate in the language they have studied in a range of contexts and for a variety of purposes.
+3.
+Encourage, through the study of texts and through social interaction, an awareness and appreciation
+of a variety of perspectives of people from diverse cultures.
+4.
+Develop students’ understanding of the relationship between the languages and cultures with which they are familiar.
+5.
+Develop students’ awareness of the importance of language in relation to other areas of knowledge.
+6.
+Provide students, through language learning and the process of inquiry, with opportunities for
+intellectual engagement and the development of critical- and creative-thinking skills.
+7.
+Provide students with a basis for further study, work and leisure through the use of an additional language.
+8.
+Foster curiosity, creativity and a lifelong enjoyment of language learning.
+
+=== Page 22 ===
+Language ab initio guide 12
+Introduction
+Assessment objectives
+The following assessment objectives are common to both language ab initio and language B. The level
+of difficulty of the assessments, and the expectations of student performance on the tasks, are what
+distinguishes the three modern language acquisition courses.
+1.
+Communicate clearly and effectively in a range of contexts and for a variety of purposes.
+2.
+Understand and use language appropriate to a range of interpersonal and/or intercultural contexts and audiences.
+3.
+Understand and use language to express and respond to a range of ideas with fluency and accuracy.
+4.
+Identify, organize and present ideas on a range of topics.
+5.
+Understand, analyse and reflect upon a range of written, audio, visual and audio-visual texts.
+
+=== Page 23 ===
+Language ab initio guide 13
+Introduction
+Assessment objectives in practice
+Assessment objective
+Which component addresses this assessment objective?
+How is the assessment objective addressed?
+1.
+Communicate clearly and effectively in a range of contexts and for a variety of purposes.
+Paper 1—writing
+Students demonstrate their conceptual understanding by responding appropriately in written tasks using a variety of text types.
+Internal assessment
+Students orally react to a visual stimulus, respond to questions and engage in a general conversation.
+2.
+Understand and use language appropriate to a range of interpersonal and/or intercultural contexts and audiences.
+Paper 1—writing
+Students demonstrate their conceptual understanding by responding appropriately in written tasks using a variety of text types.
+Paper 2—listening and reading
+Students produce responses that demonstrate an understanding of written and audio texts.
+Internal assessment
+Students interact with the teacher using a range of language structures and registers appropriate to the context and audience.
+3.
+Understand and use language to express and respond to a range of ideas with fluency and accuracy.
+Paper 1—writing
+Students respond to written tasks using appropriate language, register and format.
+Paper 2—listening and reading
+Students demonstrate an understanding of written and audio texts.
+Internal assessment
+Students interact orally with the teacher using appropriate language, register and format.
+
+=== Page 24 ===
+Assessment objectives in practice
+Language ab initio guide 14
+Assessment objective
+Which component addresses this assessment objective?
+How is the assessment objective addressed?
+4.
+Identify, organize and present ideas on a range of topics.
+Paper 1—writing
+Students develop a coherent and organized response on a range of topics.
+Internal assessment
+Students understand the topic of discussion and present an organized response, whether planned or spontaneous.
+5.
+Understand, analyse and reflect upon a range of written, audio, visual and audio-visual texts.
+Paper 2—listening and reading
+Students respond appropriately to authentic texts.
+Internal assessment
+Students demonstrate the ability to interact verbally in the target language in response to a visual stimulus.
+
+=== Page 25 ===
+Language ab initio guide 15
+Syllabus
+Syllabus outline
+Figure 2
+Language ab initio is a language acquisition course designed for students with no prior experience of the
+target language, or for those students with very limited previous exposure. It should be noted that language ab initio is offered at SL only.
+In the language ab initio course, students develop the ability to communicate in the target language through
+the study of language, themes and texts. In doing so, they also develop conceptual understandings of
+how language works. Communication is evidenced through receptive, productive and interactive skills
+across a range of contexts and purposes that are appropriate to the level of the course.
+The study of language requires careful attention to forms, structures, functions and conceptual
+understandings of language. Knowledge of vocabulary and grammar—the what of language—is reinforced
+and extended by understanding the why and how of language: audience, context, purpose, meaning.
+Students expand the range of their communication skills by understanding and producing a wide variety
+of oral and written texts for audiences, contexts and purposes associated with academic and personal
+interests. For the development of receptive skills, language ab initio students must study authentic texts
+that explore the culture(s) of the target language.
+A key aim of the language ab initio course is to develop international-mindedness through the study of
+language, culture, and ideas and issues of global significance. Explicit links to TOK strengthen the ability
+to communicate in the target language by increasing students’ self-awareness as inquirers in their own
+
+=== Page 26 ===
+Syllabus outline
+Language ab initio guide 16
+language learning process. As appropriate to the level of the course, communication skills are reinforced
+through the other categories of approaches to learning skills: thinking, research, social and self-management skills.
+The recommended teaching time is 240 hours to complete HL courses and 150 hours to complete SL courses,
+as stated in the document General regulations: Diploma Programme (2016: 6, article 8.2).
+
+=== Page 27 ===
+Language ab initio guide 17
+The syllabus of language ab initio is defined within this guide and also in the language-specific syllabuses;
+teachers must use both documents in order to design an appropriate course plan. Further information and
+examples that can help guide course development can be found in the teacher support materials (TSM).
+This section of the Language ab initio guide explains the syllabus content in detail, and the language specific syllabuses contain illustrations of the conceptual understandings, examples of activities and the
+grammatical structures in the target language that are necessary in order to teach the syllabus content and meet the assessment objectives.
+Themes
+Prescribed themes
+Five prescribed themes are common to the syllabuses of language ab initio and language B; the themes
+provide relevant contexts for study at all levels of language acquisition in the DP, and opportunities for
+students to communicate about matters of personal, local or national, and global interest.
+The five prescribed themes are:
+• identities • experiences • human ingenuity • social organization • sharing the planet.
+The themes allow students to compare the target language and culture(s) to other languages and cultures
+with which they are familiar. The themes also provide opportunities for students to make connections to
+other disciplinary areas in the DP. Students and teachers of language ab initio with experience of the Primary
+Years Programme (PYP) or the MYP will recognize that the themes are inspired by the transdisciplinary
+themes of the PYP and the global contexts of the MYP. In this way, the DP language ab initio course can
+enhance the continuity of the educational experience of long-standing IB students, while also being suitable for students who are new to the IB.
+Prescribed topics
+Because a structured learning environment is crucial for the success of beginning language learners, the
+language ab initio syllabus prescribes four topics for each of the five prescribed themes. Thus, in total
+there are 20 topics that must be addressed in the language ab initio course. Although the themes and topics
+are prescribed, the possible questions are suggestions linked to the themes and are not prescribed.
+Syllabus
+Syllabus content
+
+=== Page 28 ===
+Syllabus content
+Language ab initio guide 18
+Theme
+Guiding principle
+Prescribed topics
+Possible questions
+Identities
+Explore the nature of the self and how we express who we are.
+•
+Personal attributes •
+Personal relationships •
+Eating and drinking •
+Physical well being •
+How do I present myself to others?
+•
+How do I express my identity?
+•
+How do I achieve a balanced and healthy lifestyle?
+Experiences
+Explore and tell the stories of the events, experiences and journeys that shape our lives.
+•
+Daily routine •
+Leisure •
+Holidays •
+Festivals and celebrations •
+How does travel broaden our horizons?
+•
+How would my life be different if I lived in another culture?
+•
+What are the challenges of being a teenager?
+•
+How are customs and traditions similar or different across cultures?
+Human ingenuity
+Explore the ways in which human creativity and innovation affect our world.
+•
+Transport •
+Entertainment •
+Media •
+Technology •
+How do science and technology affect my life?
+•
+How do I use media in my daily life?
+•
+What can I learn about a culture through entertainment?
+Social organization
+Explore the ways in which groups of people organize themselves, or are organized, through common systems or interests.
+•
+Neighbourhood •
+Education •
+The workplace •
+Social issues •
+What purpose do rules and regulations have in society?
+•
+What is my role in society?
+•
+What options do I have in the world of work?
+Sharing the planet
+Explore the challenges and opportunities faced by individuals and communities in the modern world.
+•
+Climate •
+Physical geography •
+The environment •
+Global issues •
+What can I do to help the environment?
+•
+How do my surroundings affect the way I live?
+•
+What can I do to make the world a better place?
+
+=== Page 29 ===
+Syllabus content
+Language ab initio guide 19
+Texts
+In theory, a text is anything from which information can be extracted, including the wide range of oral,
+written and visual materials present in society. For example:
+•
+single and multiple images, with or without written text •
+non-literary and literary written texts and extracts •
+broadcast media texts: films, radio and television programmes, and their scripts •
+oral texts: presentations, debates, interviews, speeches, recorded conversations and their transcripts •
+electronic texts that share aspects of the above areas: text messaging, web pages and blogs, social media and video-sharing websites.
+For the purposes of teaching and learning in a language acquisition course, the language ab initio and
+language B syllabuses organize written, visual, audio and audio-visual texts into three broad categories:
+personal, professional and mass media texts. The guiding principle for using texts in the DP language
+acquisition courses is to develop students’ receptive, productive and interactive skills in the target language
+by focusing their attention on the ways in which good communicators consider the audience, context and
+purpose of what they want to say or write in the process of choosing and developing an appropriate text type to convey a message.
+Teachers should provide frequent opportunities for students to understand and use a variety of text types
+in relation to the prescribed themes and topics, as well as the content contained within the language specific syllabuses. The categories are described below, and the table that follows provides examples of text
+types for each category. The examples shown are neither prescriptive nor exhaustive.
+Personal texts
+Personal texts are shared by the person creating the message and an audience who may be family members,
+friends or groups with a common interest; a personal text may also be directed to oneself. Personal texts
+tend to be characterized by attention to the everyday interests or the affective needs of individuals rather
+than the analysis of information. Personal texts have a variety of functions including, but not limited to,
+describing, narrating, entertaining and recommending. The level of formality in the register of these texts
+will vary according to the linguistic and sociocultural norms of the target language.
+Professional texts
+Professional texts are created for an intended audience in contexts where no personal relationship is
+assumed between the producer of the text and the recipient(s); however, the producer of the text can
+assume that the recipient(s) will have an interest in receiving and understanding the message. Professional
+texts tend to be characterized by attention to the cognitive needs of individuals, the transfer of knowledge
+and the logical presentation of information; these texts employ clear, factual language and a formal register.
+Professional texts have a variety of functions including, but not limited to, informing, instructing and explaining.
+Mass media texts
+Mass media texts are created for distribution to a large audience that is targeted because of an interest that,
+at least initially, lies primarily with the producer of the text, since the person or entity responsible for a mass
+media text has no way of knowing exactly who will take the time and interest to understand the message
+or who will ignore it. Mass media texts tend to be characterized by the need of the producer of the text to
+project authority, desirability or exclusivity, and the conscious choice of a particular medium or technology
+that is appropriate to reach the targeted audience. The level of formality in the register of these texts will
+vary according to the linguistic and sociocultural norms of the target language.
+
+=== Page 30 ===
+Syllabus content
+Language ab initio guide 20
+Personal texts
+Professional texts
+Mass media texts
+Blog
+Diary
+Email
+Invitation
+Journal
+List
+Personal letter
+Postcard
+Social media posting/chat room
+Text message
+Timetable
+Blog
+Brochure
+Catalogue
+Email
+Essay
+Formal letter
+Interview
+Invitation
+Literature (short-story, novel, poem, graphic novel)
+Maps/diagrams
+Menu
+Online forum
+Personal statement/CV
+Proposal
+Questionnaire
+Recipe
+Report
+Set of instructions/guidelines
+Supporting letter
+Survey
+Timetable
+Advertisement
+Article (newspaper, magazine)
+Blog
+Brochure
+Film
+Flyer
+Interview
+Leaflet
+Literature
+News report
+Newsletter
+Opinion column/editorial
+Pamphlet
+Podcast
+Poster
+Public commentary (editorial/ readers’ letters)
+Radio programme
+Review
+Social media posting
+Speech
+Travel guide
+TV/drama/music
+Web page
+Literature
+Although literature is not an assessed component of the ab initio course, reading literature in the target
+language can be an enjoyable journey into cultures where the target language is spoken. Literature can
+exemplify one or more of the prescribed themes of the language acquisition courses and can help students
+to broaden their vocabulary and use language to express opinions and explore ideas. Reading literature
+helps students to develop fluent reading skills as they progress from comprehension to interpretation
+and inference. Literature is also an especially appropriate vehicle for promoting the development of
+international-mindedness, which is a key aim of the DP language acquisition courses.
+The use of literary works to develop students’ receptive and productive skills is encouraged at all levels of
+language acquisition in the DP; however, in terms of formal requirements of the syllabus and assessment
+outline, the study of two literary works originally written in the target language remains exclusively a requirement at HL in language B.
+
+=== Page 31 ===
+Syllabus content
+Language ab initio guide 21
+Literature used as part of the language ab initio course could include fables, short stories, poems and
+graphic novels. When choosing literary works, teachers should consider carefully how to use literature
+in relation to one or more of the prescribed themes, and they should also bear in mind the interests and general language proficiency of their students.
+As with any resources used in the classroom, literature should be chosen in order to allow students to
+achieve the aims and objectives of the course, be culturally relevant to the target language and linguistically
+accessible for language acquisition students. Literature that features a high degree of linguistic complexity,
+arcane language or an enigmatic subject matter are not appropriate.
+Conceptual understanding
+Concerning the importance of “significant content” that allows students to develop both disciplinary and
+interdisciplinary understandings, the document What is an IB education? states that “Each of the four IB
+programmes provides a detailed and developmentally appropriate curriculum or curriculum framework
+that is broad, balanced, conceptual and connected.” The explicit integration of conceptual understanding
+into the curriculum focuses on “powerful organizing ideas that are relevant across subject areas” (2013, updated June 2015, May 2017: 5).
+All DP language programme subject groups promote a vision of learning in which the development of
+language skills and conceptual understandings of language are complementary to each other, so that
+the total learning experience of the student is as robust as possible Thus, DP students become more
+accomplished communicators in the languages they study when their abilities to read, write and speak
+about course content are reinforced and extended by an understanding of why and how people use language to communicate.
+In particular, the approach to developing conceptual understandings of language in the DP languages
+programme is designed using the following guiding principles.
+•
+DP students with experience of the PYP or the MYP are provided with frequent opportunities to
+develop further their conceptual understandings of language (PYP) or their understanding of the key
+and related concepts in the MYP language and literature and language acquisition courses.
+•
+DP students are encouraged to apply what they already know about other languages and cultures—
+through formal study or personal experience—in order to enhance their overall learning process.
+•
+DP students are encouraged to consider broad questions about language and culture, as appropriate
+to their course of study, in order to develop international-mindedness and increase their self awareness as inquirers in their own learning process.
+Conceptual understanding in language acquisition courses
+For language acquisition courses, it is important to note that the approach presented here for developing
+conceptual understanding recognizes that DP students are not beginning students, even when they are
+beginning learners of a language or do not demonstrate a high level of language proficiency. At all levels of
+language acquisition, therefore, DP students are encouraged to make use of the thinking, communication
+and research skills they have developed over years of experience in school, and to transfer those skills to
+the target language at the pace—and within the contexts and for the purposes—that their language skills development will allow.
+Certain conceptual understandings of language are fundamental to successful communication and should
+be developed in all DP language acquisition courses. Following the description of each are some stimulus
+questions that may encourage exploration of these conceptual understandings while calling attention to
+language skills. Teachers should feel free to use or adapt these questions—or create their own questions—
+
+=== Page 32 ===
+Syllabus content
+Language ab initio guide 22
+for use in class so that they are comprehensible to students and relevant to course content. It is important
+to note that these are not questions for examination papers; rather, they are included in the syllabus as
+a tool for teachers to use in order to encourage students to think about language and culture as part of their
+language study in the DP and, in doing so, to become more effective and knowledgeable communicators.
+•
+Audience: Students understand that language should be appropriate for the person(s) with whom one is communicating.
+Stimulus questions –
+How can the perceived needs and interests, or previous knowledge, of the recipients of a text influence its production?
+–
+How would the language used in a given text need to change if the same basic message needed to be communicated to a different audience?
+•
+Context: Students understand that language should be appropriate to the situation in which one is communicating.
+Stimulus questions –
+How does the situation or setting influence the production or reception of a text?
+–
+How is the relationship between the producer and the recipient(s) of a text (or the relationship of
+interlocutors in a conversation) reflected in language use?
+•
+Purpose: Students understand that language should be appropriate to achieve a desired intention, goal or result when communicating.
+Stimulus questions –
+When I read or listen to a text, what helps me to understand the intention of the person who produced the text?
+–
+When I need to communicate for a specific reason, how do I plan my message and language use in order to achieve my goal?
+•
+Meaning: Students understand that language is used in a range of ways to communicate a message.
+Stimulus questions –
+How are literal and figurative (non-literal) language used by producers of texts to create desired effects?
+–
+What does the producer of a text do to make the message clear (or, on the contrary, to make it
+ambiguous) when there is no opportunity for the recipient(s) to reply to the text?
+•
+Variation: Students understand that differences exist within a given language, and that speakers of a
+given language are generally able to understand each other.
+Stimulus questions –
+How or why does a language change over time, across geographical boundaries or from one social or cultural group to another?
+–
+What does it mean to say that aspects of a text are “lost in translation” from one language to another?
+
+=== Page 33 ===
+Syllabus content
+Language ab initio guide 23
+Principles of course design
+The IB recognizes that, owing to differences in language teaching traditions, it might be easier for the teachers
+of particular languages to find textbooks to suit the language ab initio course. However, should appropriate
+textbooks not be available, the syllabus has been designed to allow teachers the freedom to construct their
+own course of study and schemes of work based on a range of texts linked to one or more of the themes
+and topics prescribed in the syllabus. Teachers are always encouraged to bring authentic materials into the
+classroom. This includes exposing students to the notion of variety in the target language, so that students
+become familiar with different mainstream accents. Such language experiences will encourage students to
+become open-minded, reflective communicators with a heightened sense of international-mindedness.
+In designing a language ab initio course of study, teachers should pay particular attention to three important
+principles: variety, integration and transparency.
+Variety
+Teachers should ensure that their students:
+•
+develop their receptive, productive and interactive skills in the target language through a wide range of individual, pair and group activities in class •
+practise the target language through a wide range of individual, pair and group tasks •
+are introduced to the full range of text types appropriate to the course •
+are exposed to a range of mainstream regional and national accents.
+Integration
+In order to integrate all the relevant aspects of the course and to encourage autonomy, it is necessary for
+teachers of language ab initio to help their students develop strategies for dealing with unfamiliar situations
+and unfamiliar language. To achieve this, teachers should provide:
+•
+an environment that promotes the use of the target language in the classroom and prepares the
+students to communicate in a variety of everyday situations •
+authentic and modified materials for study that, although they may have been edited or simplified,
+have originally been produced for everyday users of the target language.
+Teachers should also ensure that their course encourages students to:
+•
+interact in the target language through active participation in oral exchanges, by both listening and
+speaking, or responding to a text, either in writing or orally •
+consider and explore links with other disciplinary areas in the DP and with the TOK course •
+reinforce their communication skills by using the other categories of approaches to learning skills:
+thinking, research, social and self-management skills.
+Teachers are reminded that no single part of the syllabus—language, themes, texts, conceptual
+understandings—is an end in itself, but that all parts should complement each other and must be integrated
+in the course design. The ability of students to communicate in the target language should be developed
+through the study of materials that reflect the culture(s) concerned.
+Transparency
+Teachers must ensure that their students are given clear information about the aims and objectives, the
+syllabus requirements and the assessment criteria for the course. Students should be made aware of what
+is expected of them regarding classwork and homework, as well as receiving regular feedback on their progress throughout the course.
+
+=== Page 34 ===
+Language ab initio guide 24
+Assessment
+Assessment in the Diploma Programme
+General
+Assessment is an integral part of teaching and learning. The most important aims of assessment in the DP
+are that it should support curricular goals and encourage appropriate student learning. Both external and
+internal assessments are used in the DP. IB examiners mark work produced for external assessment, while
+work produced for internal assessment is marked by teachers and externally moderated by the IB.
+There are two types of assessment identified by the IB.
+•
+An integral component of approaches to teaching and learning (ATL), formative assessment informs
+both teaching and learning. It is concerned with providing accurate and helpful feedback to students
+and teachers on the kind of learning taking place and the nature of students’ strengths and weaknesses
+in order to help develop students’ understanding and capabilities. Formative assessment can also
+help to improve teaching quality, as it can provide information to monitor progress towards meeting the course aims and objectives.
+•
+Summative assessment gives an overview of previous learning and is concerned with measuring student achievement.
+The DP primarily focuses on summative assessment designed to record student achievement at, or towards,
+the end of the course of study. However, many of the assessment instruments can, and should, also be
+used formatively during the course of teaching and learning. A comprehensive assessment plan is viewed
+as being integral with teaching, learning and course organization. For further information, see the IB
+Programme standards and practices document.
+The approach to assessment used by the IB is criterion-related, not norm-referenced. This approach to
+assessment judges students’ work by their performance in relation to identified levels of attainment, and
+not in relation to the work of other students. For further information on assessment within the DP, please
+refer to the publication Diploma Programme assessment: Principles and practice.
+To support teachers in the planning, delivery and assessment of the DP courses, a variety of resources can
+be found on the programme resource centre. Additional publications, such as specimen papers and the
+corresponding markschemes, teacher support materials, subject reports and grade descriptors, can also be
+found on the programme resource centre. Past examination papers and the corresponding markschemes
+are made available for purchase through the IB store.
+Methods of assessment
+The IB uses the following methods to assess work produced by students.
+Assessment criteria
+Assessment criteria are used when the assessment task is open-ended. Each criterion concentrates on
+a particular skill that students are expected to demonstrate. An assessment objective describes what
+students should be able to do, and assessment criteria describe how well they should be able to do it. Using
+assessment criteria allows discrimination between different answers and encourages a variety of responses.
+
+=== Page 35 ===
+Assessment in the Diploma Programme
+Language ab initio guide 25
+Each criterion comprises a set of hierarchically ordered level descriptors. Each level descriptor is worth one
+or more marks. Each criterion is applied independently using a best-fit model. The maximum marks for each
+criterion may differ according to the criterion’s importance. The marks awarded for each criterion are added
+together to give the total mark for the piece of work.
+Markbands
+Markbands are a comprehensive statement of expected performance against which responses are judged.
+They represent a single holistic criterion divided into level descriptors. Each level descriptor corresponds
+to a range of marks to differentiate student performance. A best-fit approach is used to ascertain which
+particular mark to use from the possible range for each level descriptor.
+Analytic markschemes
+Analytic markschemes are prepared for those examination questions that expect a particular kind of
+response and/or a given final answer from students. They give detailed instructions to examiners on how to
+break down the total mark for each question for different parts of the response.
+Marking notes
+For some assessment components marked using assessment criteria, marking notes are provided. Marking
+notes give guidance on how to apply assessment criteria to the particular requirements of a question.
+Inclusive assessment arrangements
+Inclusive assessment arrangements are available for candidates with assessment access requirements.
+These arrangements enable candidates with diverse needs to access the examinations and demonstrate
+their knowledge and understanding of the constructs being assessed.
+The IB document Candidates with assessment access requirements provides details on all the inclusive
+assessment arrangements available to candidates with learning support requirements. The IB document
+Learning diversity and inclusion in IB programmes outlines the position of the IB with regard to candidates
+with diverse learning needs in the IB programmes. For candidates affected by adverse circumstances, the
+IB documents General regulations: Diploma Programme and Diploma Programme Assessment procedures provide details on access considerations.
+Responsibilities of the school
+Schools must ensure that equal access arrangements and reasonable adjustments are provided to
+candidates with learning support requirements, in line with the IB documents Candidates with assessment
+access requirements and Learning diversity and inclusion in IB programmes.
+The documents Meeting student learning diversity in the classroom and The IB guide to inclusive education:
+a resource for whole school development are available to support schools in the ongoing process of increasing
+access and engagement by removing barriers to learning.
+
+=== Page 36 ===
+Language ab initio guide 26
+Assessment
+Assessment outline
+First assessment 2020
+Assessment component
+Weighting
+External assessment (2 hours 45 minutes)
+Paper 1 (1 hour)
+Productive skills—writing (30 marks)
+Two written tasks of 70–150 words each from a choice of three tasks, choosing a
+text type for each task from among those listed in the examination instructions.
+75% 25%
+Paper 2 (1 hour 45 minutes)
+Receptive skills—separate sections for listening and reading (65 marks) 50%
+Listening comprehension (45 minutes) (25 marks)
+Reading comprehension (1 hour) (40 marks)
+Comprehension exercises on three audio passages and three written texts, drawn from all five themes.
+25% 25%
+Internal assessment
+This component is internally assessed by the teacher and externally moderated by the IB at the end of the course.
+Individual oral assessment
+A conversation with the teacher, based on a visual stimulus and at least one additional course theme. (30 marks) 25%
+
+=== Page 37 ===
+Language ab initio guide 27
+The following methods are used to assess language acquisition students.
+•
+Markschemes/detailed marking notes specific to each examination paper •
+Assessment criteria •
+Markbands
+The assessment criteria are published in this guide.
+For paper 1, there are three assessment criteria with markbands. Detailed marking notes are used by the examiners in assessing the task.
+For paper 2, there are markschemes.
+The assessment criteria and level descriptors are related to the assessment objectives established for the
+language ab initio course. The markschemes and detailed marking notes are specific to each examination.
+Use of dictionaries and reference material
+Students are not allowed to use dictionaries and other reference materials during the examinations for paper 1 and paper 2.
+External assessment details
+Paper 1: Productive skills—writing
+Duration: 1 hour
+Weighting: 25%
+Paper 1 is based on the five themes: identities, experiences, human ingenuity, social organization, sharing the planet.
+This examination is externally set and externally assessed. Paper 1 consists of two required tasks (task A
+and task B) of equal weighting. Each task addresses a variety of audiences, contexts and purposes. For each
+task, students will be presented with a choice from three options, each based on a different theme from
+the syllabus. Teachers and students should expect that one of the two tasks will require the production of
+a personal text and that the other task will require the production of a professional or mass media text. The
+“Texts” section of this guide offers examples of these types of texts.
+•
+Task A: Students write a response of 70–150 words to one of the three options shown, choosing a text type from the box provided for task A.
+•
+Task B: Students write a response of 70–150 words to one of the three options shown, choosing a text type from the box provided for task B.
+Assessment
+External assessment
+
+=== Page 38 ===
+External assessment
+Language ab initio guide 28
+The number of words required for each written response is the same. A final mark for paper 1 is achieved by adding the scores for task A and task B.
+The aim of this component is to assess the ability to communicate in writing for a variety of purposes. In
+order to fulfill the requirements of this assessment component, students need to show, through their use of
+text type, register and style, that they understand the concepts of audience, context, purpose, meaning and variation.
+Paper 1 assesses the degree to which students are able to:
+•
+communicate clearly and effectively in a range of contexts and for a variety of purposes •
+understand and use language appropriate to a range of interpersonal and/or intercultural contexts and audiences •
+understand and use language to express and respond to a range of ideas with fluency and accuracy •
+identify, organize and present ideas on a range of topics.
+Students’ factual knowledge of topics within the themes will not be tested; however, it can be used to
+support any ideas that the student wishes to communicate.
+Paper 2: Receptive skills—listening and reading
+Duration: 1 hour 45 minutes
+Weighting: 50% (25% listening comprehension, 25% reading comprehension)
+Paper 2 is based on the five themes: identities, experiences, human ingenuity, social organization, sharing the planet.
+This examination is externally set and externally assessed. It is divided into two separate sections: listening
+(three audio passages) and reading (three written passages) covering different topics drawn from the five
+themes. The students’ understanding of the six passages is assessed in this examination; it does not test
+the students’ knowledge of any factual content of a specific topic. All audio and written passages are in the
+target language and all answers must be provided in the target language.
+Note: International-mindedness is central to the IB philosophy. It is expected that students will
+have been exposed to a variety of texts, both oral and written, that demonstrate linguistic variation
+and regional accents. Linguistic variation and regional accents appearing in texts used for external
+assessment are intended to reflect this expectation while also being comprehensible to the students.
+
+=== Page 39 ===
+External assessment
+Language ab initio guide 29
+External assessment criteria
+Paper 1: Productive skills—writing
+Assessment criteria are used to mark paper 1, which is worth 25% of the overall mark. There are three assessment criteria.
+Criterion A: Language
+How successfully does the candidate command written language?
+•
+To what extent is the vocabulary appropriate and varied?
+•
+To what extent are the grammatical structures varied?
+•
+To what extent does the accuracy of the language contribute to effective communication?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1–2
+Command of the language is limited.
+Vocabulary is sometimes appropriate to the task.
+Basic grammatical structures are used.
+Language contains errors in basic structures. Abundant repetition and inaccuracies interfere with meaning.
+3–4
+Command of the language is generally effective.
+Vocabulary is generally appropriate to the task, and varied.
+Some basic grammatical structures are used, with some attempts to use more complex structures.
+Language is generally accurate for basic structures, but errors occur in more complex
+structures. Errors at times interfere with communication.
+5–6
+Command of the language is effective and mostly accurate.
+Vocabulary is appropriate to the task, and varied.
+A variety of basic and more complex grammatical structures is used effectively.
+Language is mostly accurate. Occasional errors do not interfere with communication.
+
+=== Page 40 ===
+External assessment
+Language ab initio guide 30
+Criterion B: Message
+To what extent does the candidate fulfill the task?
+•
+How relevant are the ideas to the task?
+•
+To what extent are ideas developed?
+•
+To what extent do the clarity and organization of ideas contribute to the successful delivery of the message?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1–2
+The task is partially fulfilled.
+Some ideas are relevant.
+Ideas are stated, but with no development.
+Ideas are not clearly presented and do not follow a logical structure, making the message difficult to determine.
+3–4
+The task is generally fulfilled.
+Most ideas are relevant to the task.
+Some ideas are developed with some detail and examples.
+Ideas are generally clearly presented and the response is generally structured in a logical
+manner, leading to a mostly successful delivery of the message.
+5–6
+The task is fulfilled effectively.
+Ideas are relevant to the task.
+Ideas are developed well, providing details and relevant examples.
+Ideas are clearly presented and the response is structured in a logical manner, supporting the delivery of the message.
+
+=== Page 41 ===
+External assessment
+Language ab initio guide 31
+Criterion C: Conceptual understanding
+To what extent does the candidate demonstrate conceptual understanding?
+•
+To what extent is the choice of text type appropriate to the task?
+•
+To what extent are register and tone appropriate to the context, purpose and audience of the task?
+•
+To what extent does the response incorporate the conventions of the chosen text type?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1
+Conceptual understanding is limited.
+The choice of text type is generally inappropriate to the context, purpose or audience.
+The register and tone are inappropriate to the context, purpose and audience of the task.
+The response incorporates limited recognizable conventions of the chosen text type.
+2
+Conceptual understanding is mostly demonstrated.
+The choice of text type is generally appropriate to the context, purpose and audience.
+The register and tone, while occasionally appropriate to the context, purpose and
+audience of the task, fluctuate throughout the response.
+The response incorporates some conventions of the chosen text type.
+3
+Conceptual understanding is fully demonstrated.
+The choice of text type is appropriate to the context, purpose and audience.
+The register and tone are appropriate to the context, purpose and audience of the task.
+The response fully incorporates the conventions of the chosen text type.
+Note: A response that ignores context, purpose and audience may receive marks of 0 for criteria B
+and C, even if the response has received a high mark for criterion A.
+
+=== Page 42 ===
+Language ab initio guide 32
+Assessment
+Internal assessment
+Purpose of internal assessment
+Internal assessment is an integral part of the course and is compulsory for all language ab initio students.
+It enables students to demonstrate the application of their skills and knowledge in a different setting.
+In language ab initio, the internal assessment takes the form of the individual oral assessment. The
+development of skills for the individual oral assessment should be woven into normal classroom teaching,
+although evidence submitted for moderation must come from an individual oral assessment, which is a
+separate activity conducted towards the end of the course.
+The internal assessment at language ab initio consists of an interactive skills task in the form of an
+individual oral assessment. Students are required to make an individual presentation with clear
+links to the target culture(s) in response to a visual stimulus. Students will then go on to engage in
+a one-to-one discussion with the teacher, firstly on the topic of the stimulus, followed by general
+conversation based on topics from at least one additional theme listed in the syllabus.
+Guidance and authenticity
+When carrying out the individual oral assessment, students may not bring into the preparation room any
+additional resources such as computers, mobile phones, class notes, dictionaries (either online or paper),
+copies of texts, and so on. Schools must provide students with a piece of paper on which to make brief
+working notes (a maximum of 10 bullet points) during the 15 minutes of preparation time. These notes are
+the only resource that may be brought into the interview room and are to be used for reference only. They
+are not to be read aloud and must be retained by the teacher at the end of the interview.
+It is the responsibility of the teacher to ensure that students are familiar with:
+•
+the linguistic requirements of the individual oral assessment • the procedures for the conduct of the examination • the assessment criteria.
+It is essential that language ab initio students do not have prior knowledge of the visual stimulus to be
+presented, nor can they know in advance which of the themes the teacher will use for the general
+conversation in part 3. The presentation in part 1 must be wholly the work of the student and it must not be
+written out in full and read aloud. Authenticity may be checked by scrutiny of the notes (if any) used by the
+student, as well as through the follow-up questions in part 2 of the individual oral assessment.
+
+=== Page 43 ===
+Internal assessment
+Language ab initio guide 33
+Group work
+Group work cannot be used as the final summative assessment submitted to the IB as the internal assessment
+individual oral. However, group work, as one aspect of a wide range of approaches to teaching and learning,
+may well be incorporated as one type of formative assessment used throughout the course.
+Time allocation
+Internal assessment is an integral part of the language ab initio course, contributing 25% to the final
+assessment. This weighting should be reflected in the time that is allocated to helping students develop
+the knowledge, skills and understanding required to carry out speaking tasks. The development of oral
+communication skills must be evenly interspersed throughout the course and should include:
+•
+time for students to develop their oral communication skills •
+time for one-to-one interaction between the teacher and each student so that the student becomes
+comfortable communicating in the target language with the teacher •
+time for students to review and monitor their own progress, and for teachers to offer feedback •
+time for the teacher to explain to students the requirements of the internal assessment.
+Requirements and recommendations
+The internal assessment is to be conducted entirely in the target language. The final internal assessment,
+for which marks will be submitted, must not be rehearsed as this would not reflect the student’s true
+ability to interact in the target language; however, the procedures and characteristics of the individual oral
+assessment can, and should, be practised during lessons, as should the development of verbal interaction between student and teacher.
+Each student’s individual oral assessment must be audio recorded and the files must be of high quality.
+Each recording is to be retained according to the procedures set out in Diploma Programme Assessment
+procedures. Samples of the internal assessment selected for moderation must be submitted in the form of an audio file.
+Using assessment criteria for internal assessment
+For internal assessment, a number of assessment criteria have been identified. Each assessment criterion has
+level descriptors describing specific achievement levels, together with an appropriate range of marks. The
+level descriptors concentrate on positive achievement, although for the lower levels failure to reach certain
+minimum requirements may be included in the description.
+Teachers must judge the internally assessed work for language ab initio against the criteria using the level descriptors.
+•
+The aim is to find, for each criterion, the descriptor that describes the student’s performance most
+accurately, using the best-fit model. A best-fit approach means that compensation should be made
+when a piece of work matches different aspects of a criterion at different levels. The mark awarded
+should be one that most fairly reflects the balance of achievement against the criterion. It is not
+necessary for every single aspect of a level descriptor to be met for that mark to be awarded.
+
+=== Page 44 ===
+Internal assessment
+Language ab initio guide 34 •
+When assessing a student’s work, teachers should read the level descriptors for each criterion until
+they reach a descriptor that most appropriately describes the standard of the work being assessed. If
+a piece of work seems to fall between two descriptors, both descriptors should be read again and the
+one that more appropriately describes the student’s work should be chosen.
+•
+Where there are two or more marks available within a level, teachers should award the upper marks
+if the student’s work demonstrates the qualities described to a great extent and the work is close to
+matching the descriptors in the level above. Teachers should award the lower marks if the student’s
+work demonstrates the qualities described to a lesser extent and the work is closer to matching the descriptors in the level below.
+•
+Only whole numbers should be recorded; partial marks (fractions and decimals) are not acceptable.
+•
+Teachers should not think in terms of a pass or fail boundary, but rather should concentrate on
+identifying the descriptor that best matches the student’s work for each assessment criterion.
+•
+The highest level descriptors do not imply a faultless performance; they should be achievable by a
+language acquisition student. Teachers should not hesitate to use the extremes of the mark range if
+they are appropriate descriptions of the work being assessed.
+•
+A student who is awarded a mark in a high level in relation to one criterion will not necessarily reach
+high levels in relation to the other criteria. Similarly, a student who is awarded a mark in a low level for
+one criterion will also not necessarily be placed in low levels for the other criteria. Teachers should not
+assume that the overall assessment of the students will produce any particular distribution of marks.
+•
+Teachers are expected to make the assessment criteria available to students and ensure that they understand them.
+Internal assessment details
+Interactive skills: Individual oral assessment
+Duration: 7–10 minutes
+Weighting: 25%
+The individual oral assessment is based on the course themes: identities, experiences, human ingenuity, social organization, sharing the planet.
+The aim of this assessment is to measure the student’s ability to understand and produce communication in
+the target language, and to use it for successful interaction.
+The language ab initio individual oral assesses the degree to which students are able to:
+•
+communicate clearly and effectively in a range of contexts and for a variety of purposes •
+understand and use language appropriate to a range of interpersonal and/or intercultural contexts and audiences •
+understand and use language to express and respond to a range of ideas with fluency and accuracy •
+identify, organize and present ideas on a range of topics •
+understand, analyse and reflect within the context of presentation and conversation.
+The language ab initio individual oral assessment is divided into three parts, preceded by a timed period of supervised preparation.
+
+=== Page 45 ===
+Internal assessment
+Language ab initio guide 35
+Supervised preparation time
+The student is shown two visual stimuli, each relating to a different theme from the course.
+Each visual stimulus must be labelled in the target language with the theme to which it relates.
+The student chooses one of the visual stimuli and prepares a presentation focusing on it.
+During this time, the student is allowed to make brief working notes.
+15 minutes
+Part 1: Presentation
+The student describes the visual stimulus and relates it to the relevant theme and the target culture(s).
+1–2 minutes
+Part 2: Follow-up discussion
+The teacher engages the student on the theme that was presented, expanding on what the student has provided in the presentation.
+3–4 minutes
+Part 3: General discussion
+The teacher and student have a general discussion on at least one additional theme taken from the five themes around which the course is based.
+3–4 minutes
+Preparation
+The teacher selects a range of visual stimuli linked to the five themes studied during the course and labels
+each one in the target language according to theme. For the purposes of the ab initio individual oral
+assessment, a “visual stimulus” may be a photo, a poster, an illustration or an advertisement. Any language
+that naturally appears on the image should be minimal and must be in the target language. It must not
+provide vocabulary and structures that would give a student an unfair advantage.
+An effective visual stimulus is one that:
+•
+is clearly relevant to one of the five themes in the course • is culturally relevant to the target language •
+offers opportunities for students to demonstrate their international-mindedness •
+offers sufficient visual text for students to describe a scene or situation •
+allows the student to offer a personal interpretation •
+enables the teacher to lead the student in a wider conversation •
+is relevant and of interest to the student’s age group.
+The students must not see these stimuli prior to the examination.
+The same five stimuli can be used for up to ten students sitting the examination. If there are more than ten
+students sitting the examination, two visual stimuli from each theme must be prepared.
+The following table provides an example of how the teacher may choose to distribute the visual stimuli to
+ensure that each student receives two stimuli, each relating to a different theme. Teachers may wish to have
+two copies of each stimulus available in the event that examination site arrangements require a student to
+be in the “supervised preparation” phase at the same time as a different student is sitting parts 1–3 of the examination.
+
+=== Page 46 ===
+Internal assessment
+Language ab initio guide 36
+Up to 10 students 5 stimuli total (1 from each theme)
+Up to 20 students 10 stimuli total (2 from each theme)
+Up to 30 students 10 stimuli total (2 from each theme)
+Up to 40 students 10 stimuli total (2 from each theme)
+Student
+Visual stimulus
+Student
+Visual stimulus
+Student
+Visual stimulus
+Student
+Visual stimulus 1
+A1 + B1 11
+A2 + B2 21
+A1 + B2 31
+A2 + B1 2
+A1 + C1 12
+A2 + C2 22
+A1 + C2 32
+A2 + C1 3
+A1 + D1 13
+A2 + D2 23
+A1 + D2 33
+A2 + D1 etc etc etc etc etc etc etc etc
+The letters above indicate the theme of the visual stimuli. For example, A1 would represent the first visual
+stimulus relating to one of the themes (for example, “sharing the planet”) and A2 would represent the
+second visual stimulus relating to that same theme (“sharing the planet”). Following this pattern, B1 would
+represent the first visual stimulus relating to a different theme (for example, “experiences”) and B2 would
+represent the second visual stimulus from that same theme (“experiences”).
+Please note that each student sitting the examination will be shown only two stimuli from which to select.
+In the event that more than 40 students are sitting the examination, the teacher will be allowed to re-sort
+these same ten visual stimuli into new pairings, but must ensure that the stimuli used in each pair do not relate to the same theme.
+Conduct of the individual oral assessment
+The timing of the 15-minute preparation period begins when the student is presented with clean copies of
+each of the two stimuli (from two different themes) from which to choose the one stimulus they would like
+to use for the individual oral assessment. After choosing the stimulus, the student has the remainder of the
+15 minutes to prepare the presentation. During this preparation time, the student may write brief working
+notes (a maximum of 10 bullet points). These notes may be used for reference only and must not be read aloud as a prepared speech.
+During the preparation time, the student must be supervised. The student may not have access to course
+materials, class notes, dictionaries (in any form), computers, mobile phones or other IT equipment. The
+student must be given a blank sheet of paper on which to make up to 10 notes in bullet-point form. The
+visual stimulus and any notes that have been made in the 15 minutes of preparation time for the individual
+oral assessment are to be collected and retained by the teacher.
+Presentation
+As schools are required to keep coursework submissions anonymous, students are asked to avoid using their
+names or any other identifying information in their presentations. During the presentation, the student
+should:
+•
+provide a brief description of the visual stimulus •
+relate the visual stimulus to the relevant theme from the course.
+• make clear links to the target culture(s)
+The presentation must be spontaneous and relate specifically to the content of the visual stimulus provided;
+pre-learned presentations on generic aspects of a course theme that do not directly focus on the features
+of the visual stimulus provided will not score high marks. Students who do not make clear links to the target
+culture(s) will not score full marks for Criterion B1.
+
+=== Page 47 ===
+Internal assessment
+Language ab initio guide 37
+In order to reassure students and help them focus on the requirements of the individual oral assessment, the
+teacher should signal the changes between the respective parts through the use of an appropriate phrase.
+The presentation should last 1–2 minutes, during which time the teacher should avoid interrupting
+the student, unless it is clear that guidance is needed. At two minutes, if the student has not drawn the
+presentation to a close, the teacher is expected to interrupt the presentation and make the transition to
+the second part of the oral assessment, using a phrase such as: “I’m sorry to interrupt, but we need to move
+on now”. This exact phrase does not need to be used, but it is good practice for teachers to prepare their
+students before the day of the examination so that a necessary interruption in order to adhere to timings does not unduly disturb the student.
+Follow-up discussion based on the visual stimulus
+Following the student’s presentation, the teacher initiates a discussion by asking questions about the theme
+represented by the visual stimulus. These questions should:
+•
+seek clarification or extension of observations made by the student in the presentation •
+invite the student to respond to ideas presented by both the visual stimulus and the teacher •
+encourage connections and comparisons with the student’s other cultural experiences •
+provide the student with opportunities to demonstrate his or her understanding and appreciation of the target language culture(s) •
+encourage the student to engage in authentic conversation to the best of his or her ability.
+This section of the individual oral assessment should last 3–4 minutes and should offer the student the
+opportunity to demonstrate the ability to engage in authentic discussion on a topic. The teacher should
+ask open-ended questions in order to offer the student the opportunity for authentic engagement, thus
+allowing an assessment of the student’s interactive skills.
+General discussion
+The teacher should signal that they are moving to the final section of the individual oral assessment in
+order to prepare the student for the change of theme. The teacher may use a phrase such as: “Let’s move
+on to the final section of the exam. First of all, I’d like to talk with you about [theme/topic]”. This section lasts 3–4 minutes and should:
+• introduce at least one additional theme •
+seek clarification or extension of observations made by the student in relation to the additional theme(s) broached •
+invite the student to respond to ideas that arise in the general discussion •
+encourage connections and comparisons with the student’s other cultural experiences •
+provide the student with opportunities to demonstrate their understanding and appreciation of the target language culture(s) •
+encourage the student to engage in authentic conversation to the best of his or her ability •
+allow an assessment of the student’s interactive skills.
+Administration of the individual oral assessment •
+The individual oral assessment for language ab initio should last a minimum of 7 minutes and a
+maximum of 10 minutes. Examiners will be instructed to stop listening after 10 minutes. The individual
+oral assessment must be scheduled during the final year of the course.
+•
+Students must be given adequate notice of when the individual oral assessment is to take place. It
+may take place in or out of the classroom, but care should be taken to ensure that students are not
+disturbed by external distractions such as school bells and announcements, people entering the
+room, or any audible or visual distractions from outside the room.
+
+=== Page 48 ===
+Internal assessment
+Language ab initio guide 38 •
+Students must not take mobile phones and other IT equipment into the examination room.
+•
+Audio recordings of the individual oral assessment will be required for external moderation. However,
+the samples selected for moderation will not be identified until the teacher’s marks are entered into
+IBIS; therefore, it is vital that all students are recorded and that the recordings are of a high quality.
+•
+Under no circumstances should a recording be stopped or modified in any way.
+•
+Timings for the individual oral assessment are approximate, but should be adhered to as much
+as possible without disturbing the student. It is imperative that all three sections are adequately addressed.
+•
+The teacher is encouraged to interact with the student to facilitate an authentic discussion, but must avoid dominating the exchange.
+The teacher’s role in conducting and assessing the individual oral assessment
+It is the teacher’s responsibility to:
+•
+be aware that the purpose of the individual oral assessment is to assess the student’s ability to
+produce, understand and interact using spoken language •
+ensure that the correct number and range of visual stimuli are prepared for the individual oral
+assessment and that an accurate record is kept of the allocation •
+have a very clear understanding of the format of the individual oral assessment as well as the assessment criteria •
+ensure that the questions asked are adapted to the student’s ability and are designed to give the
+student every opportunity to show the extent of the student’s language skills •
+rephrase a question or statement, if a student is having difficulty understanding, in order to support
+the student and maintain the flow of the conversation •
+avoid correcting the student or dominating the conversation •
+ensure that students are allowed sufficient time to respond to questions.
+Internal assessment criteria
+Productive and interactive skills: Individual oral assessment
+Criterion A: Language
+How successfully does the candidate command spoken language?
+•
+To what extent is the vocabulary appropriate and varied?
+•
+To what extent are the grammatical structures varied?
+•
+To what extent does the accuracy of the language contribute to effective communication?
+•
+To what extent do pronunciation and intonation affect communication?
+
+=== Page 49 ===
+Internal assessment
+Language ab initio guide 39
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1–3
+Command of the language is limited.
+Vocabulary is rarely appropriate to the task or is often repetitive or formulaic.
+Limited basic grammatical structures are used.
+Language contains errors in basic structures. Errors consistently interfere with communication.
+Recurrent mispronunciations and imprecision in intonation interfere with communication.
+4–6
+Command of the language is partially effective.
+Vocabulary is sometimes appropriate to the task.
+Basic grammatical structures are used.
+Language contains errors in basic structures. Errors interfere with communication.
+Pronunciation is sometimes unclear and obviously influenced by other language(s).
+Imprecision in intonation may interfere with communication.
+7–9
+Command of the language is mostly effective and accurate.
+Vocabulary is appropriate to the task.
+A variety of basic grammatical structures is used, with some attempts to use more complex structures.
+Language is mostly accurate in basic structures, but errors occur in more complex
+structures. Errors rarely interfere with communication.
+Pronunciation and intonation are influenced by other language(s), but do not interfere with communication.
+10–12
+Command of the language is effective and mostly accurate.
+Vocabulary is appropriate to the task, and varied.
+A variety of basic and more complex grammatical structures is used effectively.
+Language is mostly accurate. Occasional errors are minor and do not interfere with communication.
+Pronunciation and intonation are generally consistent and clear, and facilitate communication.
+
+=== Page 50 ===
+Internal assessment
+Language ab initio guide 40
+Criterion B1: Message—visual stimulus
+How relevant are the ideas to the selected stimulus?
+•
+How well does the candidate engage with the stimulus in the presentation?
+•
+How well are the ideas linked to the target culture(s)?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1–2
+The presentation is mostly irrelevant to the stimulus.
+The presentation is limited to descriptions of the stimulus, or part of it. These descriptions may be incomplete.
+The presentation is not clearly linked to the target culture(s).
+3–4
+The presentation is mostly relevant to the stimulus.
+With a focus on explicit details, the candidate provides descriptions and basic personal interpretations relating to the stimulus.
+The presentation is mostly linked to the target culture(s).
+5–6
+The presentation is consistently relevant to the stimulus and draws on explicit and implicit details.
+The presentation provides both descriptions and personal interpretations relating to the stimulus.
+The presentation makes clear links to the target culture(s).
+Criterion B2: Message—conversation
+How relevant are the ideas in the conversation?
+•
+How appropriately and thoroughly does the candidate respond to the questions in the conversation?
+•
+To what depth are the questions answered?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1–2
+The candidate consistently struggles to address the questions.
+Some responses are appropriate and are rarely developed.
+Responses are limited in scope and depth.
+3–4
+The candidate’s responses are mostly relevant to the questions.
+Most responses are appropriate and some are developed.
+Responses are mostly broad in scope and depth.
+5–6
+The candidate’s responses are consistently relevant to the questions and show some development.
+Responses are consistently appropriate and developed.
+Responses are broad in scope and depth, including personal interpretations and/or attempts to engage the interlocutor.
+
+=== Page 51 ===
+Internal assessment
+Language ab initio guide 41
+Criterion C: Interactive skills—communication
+To what extent does the candidate understand and interact?
+•
+How well can the candidate express ideas?
+•
+How well can the candidate maintain a conversation?
+Marks
+Level descriptor 0
+The work does not reach a standard described by the descriptors below.
+1–2
+Comprehension and interaction are limited.
+The candidate provides limited responses in the target language.
+Participation is limited. Most questions must be repeated and/or rephrased.
+3–4
+Comprehension and interaction are mostly sustained.
+The candidate provides responses in the target language and mostly demonstrates comprehension.
+Participation is mostly sustained.
+5–6
+Comprehension and interaction are consistently sustained.
+The candidate provides responses in the target language and demonstrates comprehension.
+Participation is sustained with some independent contributions.
+
+=== Page 52 ===
+Language ab initio guide 42
+Approaches to teaching and learning
+Approaches to the teaching and learning of language ab initio
+Through approaches to learning in language acquisition courses, students develop skills that have relevance
+across all areas that help them “learn how to learn”. Approaches to learning can be taught, improved with
+practice and developed incrementally through implementing a number of approaches to teaching.
+Approaches to learning provide a common framework for students to reflect on, and articulate, how they
+are learning. They prepare students for success in their studies and life beyond school. To this end, language
+learning should be supported in ways that are consistent with the IB learner profile and the pedagogical
+principles that underpin the IB programmes: the promotion of critical- and creative-thinking skills, learning
+how to learn, and promoting international-mindedness.
+When designing their courses, teachers need to embrace the approaches to teaching in order for them to
+help students identify and develop learning skills in their language acquisition course.
+Approaches to teaching
+Teaching based on inquiry
+One of the pedagogical principles that underpin all IB programmes is that of teaching based on inquiry.
+Being inquirers is one of the attributes of the IB learner profile, where the process is seen as involving the
+development of students’ natural curiosity, together with the skills needed to enable them to become
+autonomous lifelong language learners. In language acquisition classes, students should be encouraged to
+find out meaning and message for themselves, as far as is possible within the parameters of their language learning experiences.
+One form of inquiry-based approach is that of experiential learning. “Experiential education refers to
+learning activities that engage the learner directly in the phenomena being studied” (Cantor 1997). It is a
+type of inquiry that can occur within a normal classroom environment through the use of a wide range of
+linguistic sources, cultural artifacts and visitors, as well as outside the classroom through visits, virtual or actual exchange programmes.
+Another form of inquiry-based learning is problem-based learning (PBL). In PBL, students analyse and
+propose solutions to a real-world problem that is usually presented to them in an unstructured, and often
+open-ended, manner. This kind of task lends itself to small-group collaboration in order to address the
+themes in the language programme (such as “sharing the planet”) and also provides ample opportunities
+for bringing a conceptual focus to students’ learning experiences.
+Teaching focused on conceptual understanding
+Concepts are broad, powerful organizing ideas that have relevance both within and across subject areas.
+A set of five conceptual themes (identities, experiences, human ingenuity, social organization and sharing
+the planet) have been used to shape the language acquisition syllabuses in order to help students build
+the capacity to engage with complex ideas. Discussion of the “big ideas” behind these five concepts can
+help students get to the heart of why they are exploring a particular language unit or option. There is also a
+strong link between teaching through concepts and moving students to higher-order thinking; for example,
+it allows students to move from concrete to abstract thinking, and facilitates transfer of learning to new
+contexts, thereby supporting concurrency of learning.
+
+=== Page 53 ===
+Approaches to the teaching and learning of language ab initio
+Language ab initio guide 43
+Teaching developed in local and global contexts
+Contextualized learning places an emphasis on students processing new information by connecting it
+to their own first language and culture experience, and to the world around them. In addition to helping
+students see connections between languages and cultures, and helping to ground abstract concepts in real life situations, there is also an important link between the contextualization of learning in global contexts
+and the development of international-mindedness. International-mindedness should have a significant
+focus in language acquisition classes by allowing students opportunities to explore course concepts, such
+as sharing the planet, experiences and human ingenuity, as well as providing students with opportunities to
+consider the nature of target-language countries and regions.
+Teaching focused on effective teamwork and collaboration
+This principle applies to promoting teamwork and collaboration among students, but it also refers to the
+collaborative relationship between the teacher and students. Collaborative learning activities include
+activities such as group projects, debates, role plays and other activities with shared goals. Therefore,
+there are extremely close links between social skills, such as negotiation, and collaborative learning. A key
+aspect of fostering a collaborative relationship between teachers and students is the promotion of effective
+dialogue and feedback on what students have and have not understood during their lessons.
+Teaching differentiated to meet the needs of all learners
+Differentiation is about accommodating the different ways in which students learn, and about teachers
+designing learning experiences that allow students with a range of needs to meet their learning objectives.
+These include affirming identities, valuing prior knowledge, scaffolding learning and extending learning.
+Given the varied language experiences, first language knowledge and backgrounds of students when they
+start a language acquisition programme, it is vital for teachers to identify the different learning needs of
+individual students within a cohort and provide differentiated learning experiences for all students.
+Teaching informed by assessment (formative and summative)
+Assessment plays a crucial role in supporting learning, as well as in measuring learning. Formative
+assessment encompasses “all those activities undertaken by teachers, and/or by their students, which
+provide information to be used as feedback to modify the teaching and learning activities in which they
+are engaged” (Black and Wiliam 1998: 7). Formative assessment is, therefore, a tool or process that teachers
+can use to improve student learning; it is about assessment for learning, rather than simply assessment
+of learning. In the language acquisition classroom, there should be opportunities for both teacher-led
+formative and summative assessment as well as peer assessment and opportunities for students to reflect
+on their own learning and performance on assessment instruments in order to develop their language skills.
+Approaches to learning
+Thinking skills
+Through language acquisition, students develop a body of thinking skills that may include, but are not
+limited to, metacognition, reflection, critical thinking, creative thinking and transfer. The development of
+higher-order thinking skills, rather than the simple memorization of content, is integral to the language
+learning process. This may be achieved through approaches to teaching, such as the use of collaborative,
+enquiry-based tasks to provide students with the opportunity to explore language and structures relating
+to a given theme. Learners are better equipped for their future roles as global citizens when given the
+opportunity to analyse, synthesize and evaluate language topics from their own and different perspectives.
+
+=== Page 54 ===
+Approaches to the teaching and learning of language ab initio
+Language ab initio guide 44
+Research skills
+In language acquisition, research allows students to use authentic sources to explore questions from
+different cultural perspectives and to expand their linguistic and intercultural knowledge in any direction
+that presents a particular interest for them. Research skills may include critical thinking, problem solving,
+analysis and sharing of ideas (which could involve selecting a topic of interest in order to explore one of the
+language acquisition course’s five themes or concepts), finding, validating and evaluating sources, as well
+as paraphrasing and citing in an academically honest way. Students also need to present their work, and
+reflect on their experience, in a way that demonstrates a positive attitude to learning.
+Communication skills
+Communication is at the heart of language acquisition. Effective communicative interactions using the
+spoken and written forms of a language entail: interpretation and negotiation of meaning; coherent
+exchange of ideas; and the ability to inform, describe, narrate, explain, persuade and argue to a variety of
+audiences and in different contexts. Not only does effective communication allow students to develop their
+linguistic skills and self-confidence, it also promotes intercultural understanding through the examination
+of the interrelationship between language and culture, and promotes international-mindedness through an
+increased awareness of the use of the target language in a variety of countries and regions.
+Social skills
+To function effectively in the language acquisition classroom, students need to be adept at both peer-related
+and adult-related social communication and behaviour. These skills are closely related to communication
+skills and also to attributes of the IB learner profile, such as being open-minded for example, through
+students showing appreciation for the culture(s) of the target language. A particularly important skill
+within the category of social skills is collaboration, which can be a catalyst to higher-order thinking and
+should, therefore, be at the forefront of teachers’ minds when they are planning units of work for language acquisition classes.
+Self-management skills
+Students should set their own goals and reflect on their progress as they grow and improve their linguistic
+and cultural competence. They should demonstrate initiative, perseverance and a strong willingness to
+learn independently. An example could be students going beyond classroom requirements and using the
+language in real-life situations, or seeking out native speakers in the local community with whom to practise their language skills.
+
+=== Page 55 ===
+Approaches to the teaching and learning of language ab initio
+Language ab initio guide 45
+Approaches to teaching
+are:
+Example based on inquiry
+Students are given a set of resources (online, on paper, artifacts, and so
+on) along with a challenge to complete. They will need to look for possible
+solutions to the challenge by exploring the resources provided.
+focused on conceptual understanding
+Class discussion of the ways in which “purpose” shapes our communication
+in the target language (selection of appropriate vocabulary and structures,
+use of idiom, use of rhetorical devices, and so on). This could be done by
+taking an authentic piece of writing in the target language and analysing it
+in order to identify the purpose for which it was written. How do we know
+this? What devices help us to understand the purpose? How clear is the purpose?
+A follow-on task could be the creation of work samples, in which students
+write for a specific purpose. Peer review of students’ work can produce
+good discussion to evaluate the success of the writing for a specific purpose.
+developed in local and global contexts
+The class takes a topic from one of the themes and considers the
+application of one of the conceptual understandings in different regions
+and countries where the target language is spoken. For example, under
+“identities”, the Spanish class could explore the different approaches to
+naming, addressing and treating various family members in both Castilian
+and other variations of Spanish, and selecting ways in which the students
+can refer to their own family members (for example, in a non-Spanish speaking environment).
+focused on effective teamwork and collaboration
+Class debate on the pros and cons of recycling. Teams need to develop
+arguments, share them across the team, collaborate with the teacher to
+develop fluency in order to communicate well during the debate and
+interact with their own team and the opposition during the debate itself.
+differentiated to meet the needs of all learners
+An inquiry task in which different students are provided with resources
+commensurate with their language skills, but that will all ultimately still
+allow each individual student to contribute some ideas to the finished task.
+informed by assessment (formative and summative)
+An interactive oral activity in which students assess themselves and their
+partners (peers) on the degree to which the use of the target language and
+active participation contributed to the successful fulfilment of the activity
+(detracted, contributed, enhanced). For formative assessment purposes, the
+students also provide a reflection and strategy for improvement based on both the peer and self-assessment.
+
+=== Page 56 ===
+Approaches to the teaching and learning of language ab initio
+Language ab initio guide 46
+Approaches to learning
+Example
+Thinking skills
+Having completed a piece of written work, students are given some guiding
+questions and time for reflection on what they have written in the target
+language. Students can be asked to identify what they feel they have done
+well, whether there are any examples of language that they feel show they
+have moved beyond their previous achievements, and plan how they can
+expand on this success. In addition, students can take time to reflect on the
+mistakes they have made, and can seek to understand why a structure was
+wrong in order to reach a point where they use such structures correctly in the future.
+Research skills
+Themes such as “human ingenuity” particularly lend themselves to research
+skills. For example, it is valuable for students to be able to give examples
+when speaking about the ways in which technology has changed our lives.
+By doing an internet search using a target language search engine, more
+authentic language can be obtained. A common form of research, and one
+that students should be encouraged to use daily, is to look up their own
+vocabulary, verify language structures, and so on.
+Communication skills
+Skills development for the individual oral assessment is substantially focused
+on communication skills. Teachers need to allocate time in the class schedule
+to helping students build confidence in one-to-one conversation. This can
+be accomplished through establishing verbal protocols, using linguistic
+strategies for the maintenance of communication and encouraging the students’ active participation as interlocutors.
+Social skills
+A CAS activity that links to the language and culture a student is learning is
+a good way to develop social skills; in particular, it may provide the student
+with the opportunity to experience the way in which language, culture and
+nationality can create subtle differences in social skills. Attitudes, outlooks,
+prejudices and stereotyping are all topics that can be explored with
+language acquisition students in the process of developing more mature social skills.
+Self-management skills
+The class might develop a timeline or planning strategy for the completion
+of written tasks, establish routines for submitting completed work, and
+establish protocols for peer review of classwork and formative assessment
+tasks. Another very significant self-management skill focuses on the ability
+to self-check work, manage errors and develop strategies for improvement.
+While most students will already have some aspects of these skills, all
+students can benefit from more structured consideration of appropriate
+strategies for improving their ability to meet deadlines and manage their own learning.
+
+=== Page 57 ===
+Language ab initio guide 47
+Appendices
+Glossary of command terms
+Command terms for language acquisition
+Students should be familiar with the following key terms and phrases used in examination questions, which
+are to be understood as described below. Although these terms will be used frequently in examination
+questions, other terms may be used to direct students to present an argument in a specific way.
+Command term
+Assessment objective
+Definition
+Analyse 5
+Break down in order to bring out the essential elements or structure.
+Demonstrate 1, 2, 3, 5
+Make clear by reasoning or evidence, illustrating with examples or practical application.
+Describe 1, 2, 3
+Give a detailed account.
+Discuss 3, 4, 5
+Offer a considered and balanced review that includes a
+range of arguments, factors or hypotheses. Opinions or
+conclusions should be presented clearly and supported by appropriate evidence.
+Evaluate 5
+Make an appraisal by weighing up the strengths and limitations.
+Examine 5
+Consider an argument or concept in a way that uncovers the assumptions and interrelationships of the issue.
+Explain 2, 3, 4, 5
+Give a detailed account including reasons or causes.
+Identify 2, 3, 5
+Provide an answer from a number of possibilities.
+Outline 3, 4
+Give a brief account or summary.
+Present 1, 2, 3, 4, 5
+Offer for display, observation, examination or consideration.
+State 3, 4
+Give a specific name, value or other brief answer without explanation or calculation.
+
+=== Page 58 ===
+Language ab initio guide 48
+Glossary term
+Glossary definition
+Authentic text
+An authentic text may be an audio, visual, audio-visual or written text. It has three definitions.
+1.
+It may come from an original target language source, such as a public
+transport announcement or a television interview, and may be used in
+its unaltered state provided the speed, language and ambient noise
+do not prevent a language acquisition student from accessing the material.
+2.
+It may be an original text that has been modified (footnoted, some
+changes to vocabulary, slowed down, and so on) to assist students with access to the content.
+3.
+Alternatively, an authentic item may be one that has been created in
+the target language but is based on an authentic scenario, particularly
+for beginning language learners and specifically for the purposes of language acquisition instruction and assessment.
+Fluency
+In language acquisition syllabuses and assessment outlines, the term
+“fluency” does not mean “to speak like a native speaker”, nor should it be
+taken as a measure of the accuracy of a student’s language. Schmidt (1992)
+found that L2 (target language) fluency was “primarily a temporal
+phenomenon” (that is, not a vague notion of proficiency, but the way speech
+is processed and articulated in real time). In the context of the language
+ab initio course, “fluency” refers to how well a student can join up language
+and structures in order to convey their ideas within the parameters of the
+language learned. Pauses, rephrasing and repetition can all contribute to fluency rather than detracting from it.
+Visual stimulus
+For the purpose of the individual oral assessment, a “visual stimulus” may be
+a photo, a poster, an illustration or an advertisement.
+Visual text
+Visual texts are texts that are created using images such as posters, book
+covers, illustrations and photos. At their simplest, a visual text is a single
+image that conveys ideas and information. It may also contain added language to enrich the message.
+For the purpose of the individual oral assessment, a visual stimulus
+containing plenty of visual text is an image that has ample detail and action,
+and is a rich source of material for the student to talk about.
+Appendices
+Glossary of subject-specific terms
+
+=== Page 59 ===
+Language ab initio guide 49
+Appendices
+Bibliography
+This bibliography lists the principal works used to inform the curriculum review. It is not an exhaustive list
+and does not include all the literature available; judicious selection was made in order to better advise and
+guide teachers. This bibliography is not a list of recommended textbooks.
+Aghagolzadeh, F and Tajabadi, F. 2012. “A Debate on Literature as a Teaching Material in FLT”. Journal on
+Language Teaching and Research. Vol 3(1). Pp 205–210.
+Alderson, J. 2000. Assessing Reading. Cambridge, UK. Cambridge University Press.
+American Council on the Teaching of Foreign Languages. 2010. Assigning CEFR Ratings to ACTFL Assessments.
+Alexandria, VA, USA. ACTFL.
+Bagherkazemi, M and Alemi, M. 2010. “Literature in the EFL/ESL Classroom: Consensus and Controversy”.
+Linguistic and Literary Broad Research and Innovation. Vol 1(1). Pp 1–12.
+Black, P and Wiliam, D. 1998. “Assessment and Classroom Learning”. Assessment in Education: Principles, Policy and Practice. Vol 5, number 1. Pp 7–73.
+Bottino, O. 1999. “Literature and Language Teaching”. In Actas do 4 Encontro Nacional do Ensino das linguas
+vivas no ensino superior em Portugal. Porto, Universidade do Porto. Faculdade de Letras, Instituto de Estudos
+Franceses. Pp. 211–214.
+Brown, J and Hudson, T. 2002. Criterion-referenced Language Testing. Cambridge, UK. Cambridge University
+Press.
+Brown, J and Hudson, T. 1998. “The Alternatives in Language Assessment”. TESOL Quarterly. Vol 32(4).
+Pp 653–675.
+Buck, G. 2001. Assessing Listening. Cambridge, UK. Cambridge University Press.
+Canale, M and Swain, M. 1980. “Theoretical bases of communicative approaches to second language
+teaching and testing”. Applied Linguistics. Vol 1. Pp 1–47.
+Cantor, J. 1997. “Experiential Learning in Higher Education: Linking Classroom and Community”. ASHE-ERIC
+Higher Education Report, 7. Washington DC, USA. The George Washington University, Graduate School of Education and Human Development.
+Council of Europe. 2001. Common European Framework of Reference for Languages: Learning, Teaching,
+Assessment. Cambridge, UK. Cambridge University Press.
+Cushing Weigle, S. 2002. Assessing Writing. Cambridge, UK. Cambridge University Press.
+Dubash, C and Anwar, M. 2011. “The Integration of Literature in Second Language Acquisition and Learning”.
+British Journal of Arts and Social Sciences. Vol 1(1). Pp 35–40.
+Duncan, S and Paran, A. 2017. “The effectiveness of literature on acquisition of language skills and
+intercultural understanding in the high school context: A research report for the International Baccalaureate
+Organization”. London, UK. UCL Institute of Education, University College London.
+Elliott de Riverol, J. 1991. “Literature in the Teaching of English as a Foreign Language”. Revista Alicantina de
+Estudios Ingleses. Vol 4. Pp 65–69.
+
+=== Page 60 ===
+Bibliography
+Language ab initio guide 50
+Ellis, R. 2005. “Principles of instructed language learning”. Asian EFL Journal. Vol 7(3). Pp 9–24.
+Filipi, A. 2012. “Do questions written in the target language make foreign language listening comprehension
+tests more difficult?” Language Testing. Vol 29(4). Pp 511–532.
+Hall, G. 2005. Literature in Language Education. New York, NY, USA. Palgrave Macmillan.
+Hanauer, D. 2001. “Focus-on-Cultural Understanding: Literary Reading in the Second Language Classroom”.
+CAUCE. Vol 24. Pp 389–404.
+Hişmanoğlu, M. 2005. “Teaching English through Literature”. Journal of Language and Linguistic Studies.
+Vol 1(1). Pp 53–66.
+Hong Chen, R. 2009. “Pedagogical Approaches to Foreign Language Education: A discussion of poetic forms
+and culture”. SFU Educational Review. Vol 1. Pp 49–57.
+Instituto Cervantes. 2006. Plan curricular del Instituto Cervantes. Madrid, Spain. Biblioteca nueva.
+International Baccalaureate Organization. 2013 (updated June 2015, May 2017). What is an IB education?
+Cardiff, UK.
+Iwashita, N, Brown, A, McNamara, T and O’Hagan, S. 2008. “Assessed levels of second language speaking
+proficiency: How distinct?” Applied Linguistics. Vol 29(1). Pp 24–49.
+Jahangard, A. 2013. “Task-Induced Involvement in L2 Vocabulary Learning: A Case of Listening
+Comprehension”. Journal of English Language Teaching and Learning. Vol 5(12). Pp 43–62.
+Jendi, A. 2005. “Approaches to assessing English oral communication in UAE high schools”. In Davidson, P,
+Coombe, C and Jones, W, (eds.). Assessment in the Arab world. Pp 173–190. Dubai: TESOL Arabia.
+Jones, C and Carter, R. 2010. “Literature and Language Awareness: Using Literature to Achieve CEFR
+Outcomes”. Journal of Second Language Teaching and Research. Vol 1(1). Pp 69–82.
+Khalifa, H and Weir, C. 2009. Examining Reading: Research and Practice in Assessing Second Language Reading.
+Cambridge, UK. Cambridge University Press.
+Khatib, M and Nourzadeh, S. 2011. “Some Recommendations for Integrating Literature into EFL/ESL
+Classrooms”. International Journal of English Linguistics. Vol 1(2). Pp 258–263.
+Khatib, M and Rahimi, A. 2012. “Literature and Language Teaching”. Journal of Academic and Applied Studies.
+Vol 2(6). Pp 32–38.
+Kim, Y. 2010. “Implementing Literature-based Language Instruction in a Korean High School English
+Classroom”. English Teaching. Vol 65(1). Pp 87–112.
+Lee, C. 2010. “An Exploratory Study of the Interlanguage Pragmatic Comprehension of Young Learners of English”. Pragmatics. Vol 20(3). Pp 343–373.
+Lee, H, Huang, M and Hung, W. 2010. “The Development and Validation of a Listening Practice Strategy
+Questionnaire”. English Teaching & Learning. Vol 34(3). Pp 1–50.
+Liddicoat, A and Scarino, A. 2010. “Eliciting the Intercultural in Foreign Language Education at School”.
+In Paran, A and Sercu, L. Testing the Untestable in Language Education. (New Perspectives on Language and
+Education). Multilingual Matters. Bristol, UK. Chapter 4. Pp 52–73.
+Lightbown, P and Spada, N. 2006. How Languages are Learned. Oxford, UK. Oxford University Press.
+Llach, P. 2007. “Teaching Language through Literature: The Wasteland in the ESL Classroom”. Odisea. Vol 8.
+Pp 7–17.
+
+=== Page 61 ===
+Bibliography
+Language ab initio guide 51
+Luoma, S. 2000. Assessing Speaking. Cambridge, UK. Cambridge University Press.
+Maftoon, P, Lavasani, M and Shahini, A. 2011. “Broadening the listening materials in second/foreign language
+context”. Modern Journal of Language Teaching Methods. Vol 1(3). Pp 110–121.
+Miquel, L. 2005. “La subcompetencia sociocultural”. In Santos Gargallo, I and Sànchez Lobato, J. Vademécum
+para la formación de profesores. Madrid, Spain. SGEL. Pp 511–532.
+O’Bryan, A and Hegelheimer, V. 2009. “Using a mixed methods approach to explore strategies, metacognitive
+awareness and the effects of task design on listening development”. Canadian Journal of Applied Linguistics.
+Vol 12(1). Pp 9–38.
+Oh, S. 2011. “Effects of Three English Accents on Korean High School Students’ Listening Comprehension
+and Attitude”. English Teaching. Vol 66(1). Pp 39–63.
+Paran, A. 2008. “The role of literature in instructed foreign language learning and teaching: An evidence based survey”. Language Teaching. Vol 41(4). Pp 465–496.
+Paran, A. 2010. “Between Scylla and Charybdis: The Dilemmas of Testing Language and Literature”. In
+Paran, A and Sercu, L. Testing the Untestable in Language Education. (New Perspectives on Language and
+Education). Multilingual Matters. Bristol, UK. Chapter 8. Pp 143–164.
+Paran, A. 2012. “Language skills: questions for teaching and learning”. ELT Journal. Vol 66(4). Pp 450–458.
+Powers, D. 2010. “The Case for a Comprehensive, Four-Skills Assessment of English-Language Proficiency”.
+TOEIC Compendium. Vol 14. Pp 1–12.
+Premawardhena, N. 2007. “Integrating Literature into Foreign Language Teaching: A Sri Lankan perspective”.
+Novitas-ROYAL. Vol 1(2). Pp 92–97.
+Purpura, J. 2004. Assessing Grammar. Cambridge, UK. Cambridge University Press.
+Read, J. 2000. Assessing Vocabulary. Cambridge, UK. Cambridge University Press.
+Reyes Torres, A. 2012. “Literature in the foreign language syllabus: Engaging the student through active learning”. Tejuelo. Vol 15. Pp 9–16.
+Richards, J. 2005. “Second Thoughts on Teaching Listening”. RELC. Vol 36(1). Pp 85–92.
+Sanchez, H. 2009. “Building up literary reading responses in foreign language classrooms”. ELTED. Vol 12.
+Pp 1–13.
+Scarino, A and Liddicoat, A. 2009. Teaching and Learning Languages. A Guide. Melbourne, Australia.
+Melbourne Curriculum Corporation of Australia.
+Schmidt, R. 1992. “Psychological Mechanisms Underlying Second Language Fluency”. Studies in Second
+Language Acquisition. Vol 14(4). Pp 357–385.
+Sell, J. 2005. “Why Teach Literature in the Foreign Language Classroom?” Encuentro. Vol 15. Pp 86–93.
+Shaw, S and Weir, C. 2007. Examining Reading. Cambridge, UK. Cambridge University Press.
+The English Association. 2013. Ofqual Consultation on the Removal of Speaking and Listening from GCSE English
+and GCSE English Language. Leicester, UK. University of Leicester.
+Vandergrift, L. 2006. “Second Language Listening: Listening Ability or Language Proficiency?” The Modern
+Language Journal. Vol 90. Pp 6–18.
+Vandergrift, L. 2007. “Recent developments in second and foreign language listening comprehension
+research”. Language Teaching. Vol 40(3). Pp 191–210.
+
+=== Page 62 ===
+Bibliography
+Language ab initio guide 52
+Vandergrift, L and Goh, C. 2012. Teaching and Learning Second Language Listening: Metacognition in Action.
+New York, NY, USA. Routledge.
+Wagner, E. 2003. “Testing Second Language Listening Ability”. Retrieved from https://journals.cdrs.columbia.
+edu/wp-content/uploads/sites/12/2015/05/3.4-Wagner-2003.pdf. Accessed 24 April 2017.
+Wagner, E and Toth, P. 2004. “A Construct Validation Study of the Extended Listening Sections of the ECPE
+and MELAB”. Spaan Fellow Working Papers in Second or Foreign Language Assessment. Vol 2. Pp 1–25.
+Wagner, E and Toth, P. 2014. “Teaching and Testing L2 Spanish Listening Using Scripted vs. Unscripted Texts”.
+Foreign Language Annals. Vol 47(3). Pp 404–422.
+Welbourn, M. 2009. “Approaching authentic texts in the second language classroom: Some factors to
+consider”. Master’s thesis. Malmö, Sweden. Malmö University.

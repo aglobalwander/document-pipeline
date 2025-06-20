@@ -1,0 +1,155 @@
+ID,name,description,parent_tid,field_associated_framework
+51000,Grade 3,Common Core Math Standards for Grade 3,,14783
+51001,Number and Operations in Base Ten,,51000,14783
+51002,Use place value understanding and properties of operations to perform multi-digit arithmetic.,Use place value understanding and properties of operations to perform multi-digit arithmetic.,51001,14783
+51003,Kindergarten,Common Core Math Standards for Kindergarten,,14783
+51004,Number and Operations in Base Ten,,51003,14783
+51005,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51004,14783
+51006,Counting and Cardinality,,51003,14783
+51007,Know number names and the count sequence.,Know number names and the count sequence.,51006,14783
+51008,c. Understand that each successive number name refers to a quantity that is one larger.,c. Understand that each successive number name refers to a quantity that is one larger.,51006,14783
+51009,Operations and Algebraic Thinking,,51003,14783
+51010,"Understand addition as putting together and adding to, and under stand subtraction as taking apart a...","Understand addition as putting together and adding to, and under stand subtraction as taking apart and taking from.",51009,14783
+51011,Work with numbers 11–19 to gain foundations for place value.,Work with numbers 11–19 to gain foundations for place value.,51004,14783
+51012,Measurement and Data,,51003,14783
+51013,Describe and compare measurable attributes.,Describe and compare measurable attributes.,51012,14783
+51014,Geometry,,51003,14783
+51015,"Identify and describe shapes (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylin...","Identify and describe shapes (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders, and spheres).",51014,14783
+51016,"(e.g., “making tens”) to solve addition and subtraction problems within","(e.g., “making tens”) to solve addition and subtraction problems within",51014,14783
+51017,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51014,14783
+51018,Grade 1,Common Core Math Standards for Grade 1,,14783
+51019,Operations and Algebraic Thinking,,51018,14783
+51020,Represent and solve problems involving addition and subtraction.,Represent and solve problems involving addition and subtraction.,51019,14783
+51021,Number and Operations in Base Ten,,51018,14783
+51022,Extend the counting sequence.,Extend the counting sequence.,51021,14783
+51023,3Students need not use formal terms for these properties.,3Students need not use formal terms for these properties.,51021,14783
+51024,Measurement and Data,,51018,14783
+51025,Measure lengths indirectly and by iterating length units.,Measure lengths indirectly and by iterating length units.,51024,14783
+51026,Geometry,,51018,14783
+51027,Reason with shapes and their attributes.,Reason with shapes and their attributes.,51026,14783
+51028,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51026,14783
+51029,Grade 2,Common Core Math Standards for Grade 2,,14783
+51030,Operations and Algebraic Thinking,,51029,14783
+51031,Represent and solve problems involving addition and subtraction.,Represent and solve problems involving addition and subtraction.,51030,14783
+51032,Add and subtract within 20.,Add and subtract within 20.,51030,14783
+51033,Number and Operations in Base Ten,,51029,14783
+51034,Understand place value.,Understand place value.,51033,14783
+51035,"one, two, three, four, five, six, seven, eight, or nine hundreds (and 0 tens and 0 ones).","one, two, three, four, five, six, seven, eight, or nine hundreds (and 0 tens and 0 ones).",51033,14783
+51036,Measurement and Data,,51029,14783
+51037,Measure and estimate lengths in standard units.,Measure and estimate lengths in standard units.,51036,14783
+51038,Geometry,,51029,14783
+51039,Reason with shapes and their attributes.,Reason with shapes and their attributes.,51038,14783
+51040,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51038,14783
+51041,Operations and Algebraic Thinking,,51000,14783
+51042,Represent and solve problems involving multiplication and division.,Represent and solve problems involving multiplication and division.,51041,14783
+51043,"e.g., by using drawings and equations with a symbol for the unknown number to represent the problem....","e.g., by using drawings and equations with a symbol for the unknown number to represent the problem.1",51041,14783
+51044,Number and Operations—Fractions5,,51000,14783
+51045,Develop understanding of fractions as numbers.,Develop understanding of fractions as numbers.,51044,14783
+51046,a/b and that its endpoint locates the number a/b on the number line.,a/b and that its endpoint locates the number a/b on the number line.,51044,14783
+51047,Measurement and Data,,51000,14783
+51048,"Solve problems involving measurement and estimation of intervals of time, liquid volumes, and masses...","Solve problems involving measurement and estimation of intervals of time, liquid volumes, and masses of objects.",51047,14783
+51049,n unit squares is said to have an area of n square units.,n unit squares is said to have an area of n square units.,51047,14783
+51050,plane figures and distinguish between linear and area measures.,plane figures and distinguish between linear and area measures.,51047,14783
+51051,Geometry,,51000,14783
+51052,Reason with shapes and their attributes.,Reason with shapes and their attributes.,51051,14783
+51053,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51051,14783
+51054,Grade 4,Common Core Math Standards for Grade 4,,14783
+51055,Operations and Algebraic Thinking,,51054,14783
+51056,Use the four operations with whole numbers to solve problems.,Use the four operations with whole numbers to solve problems.,51055,14783
+51057,Number and Operations in Base Ten2,,51054,14783
+51058,Generalize place value understanding for multi-digit whole numbers.,Generalize place value understanding for multi-digit whole numbers.,51057,14783
+51059,Number and Operations—Fractions3,,51054,14783
+51060,Extend understanding of fraction equivalence and ordering.,Extend understanding of fraction equivalence and ordering.,51059,14783
+51061,"denominators, e.g., by using visual fraction models and equations to represent the problem.","denominators, e.g., by using visual fraction models and equations to represent the problem.",51059,14783
+51062,"Understand decimal notation for fractions, and compare decimal fractions.","Understand decimal notation for fractions, and compare decimal fractions.",51059,14783
+51063,Measurement and Data,,51054,14783
+51064,measurements from a larger unit to a smaller unit.,measurements from a larger unit to a smaller unit.,51063,14783
+51065,4Students who can generate equivalent fractions can develop strategies for adding,4Students who can generate equivalent fractions can develop strategies for adding,51063,14783
+51066,Geometry,,51054,14783
+51067,"Draw and identify lines and angles, and classify shapes by properties of their lines and angles.","Draw and identify lines and angles, and classify shapes by properties of their lines and angles.",51066,14783
+51068,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51066,14783
+51069,Grade 5,Common Core Math Standards for Grade 5,,14783
+51070,Operations and Algebraic Thinking,,51069,14783
+51071,Write and interpret numerical expressions.,Write and interpret numerical expressions.,51070,14783
+51072,Number and Operations in Base Ten,,51069,14783
+51073,Understand the place value system.,Understand the place value system.,51072,14783
+51074,"digits in each place, using >, =, and < symbols to record the results of comparisons.","digits in each place, using >, =, and < symbols to record the results of comparisons.",51072,14783
+51075,Number and Operations—Fractions,,51069,14783
+51076,Use equivalent fractions as a strategy to add and subtract fractions.,Use equivalent fractions as a strategy to add and subtract fractions.,51075,14783
+51077,Apply and extend previous understandings of multiplication and division to multiply and divide fract...,Apply and extend previous understandings of multiplication and division to multiply and divide fractions.,51075,14783
+51078,pounds of rice should each person get? Between what two whole numbers does your answer lie?,pounds of rice should each person get? Between what two whole numbers does your answer lie?,51075,14783
+51079,"rectangles, and represent fraction products as rectangular areas.","rectangles, and represent fraction products as rectangular areas.",51075,14783
+51080,(n×a)/(n×b) to the effect of multiplying a/b by 1.,(n×a)/(n×b) to the effect of multiplying a/b by 1.,51075,14783
+51081,Measurement and Data,,51069,14783
+51082,Convert like measurement units within a given measurement system.,Convert like measurement units within a given measurement system.,51081,14783
+51083,using n unit cubes is said to have a volume of n cubic units.,using n unit cubes is said to have a volume of n cubic units.,51081,14783
+51084,Geometry,,51069,14783
+51085,Graph points on the coordinate plane to solve real-world and mathematical problems.,Graph points on the coordinate plane to solve real-world and mathematical problems.,51084,14783
+51086,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51084,14783
+51087,Grade 6,Common Core Math Standards for Grade 6,,14783
+51088,Ratios and Proportional Relationships,,51087,14783
+51089,Understand ratio concepts and use ratio reasoning to solve problems.,Understand ratio concepts and use ratio reasoning to solve problems.,51088,14783
+51090,The Number System,,51087,14783
+51091,Apply and extend previous understandings of multiplication and division to divide fractions by fract...,Apply and extend previous understandings of multiplication and division to divide fractions by fractions.,51090,14783
+51092,of integers and other rational numbers on a coordinate plane.,of integers and other rational numbers on a coordinate plane.,51090,14783
+51093,dollars represents a debt greater than 30 dollars.,dollars represents a debt greater than 30 dollars.,51090,14783
+51094,Expressions and Equations,,51087,14783
+51095,Apply and extend previous understandings of arithmetic to algebraic expressions.,Apply and extend previous understandings of arithmetic to algebraic expressions.,51094,14783
+51096,and surface area of a cube with sides of length s = 1/2.,and surface area of a cube with sides of length s = 1/2.,51094,14783
+51097,Geometry,,51087,14783
+51098,"Solve real-world and mathematical problems involving area, surface area, and volume.","Solve real-world and mathematical problems involving area, surface area, and volume.",51097,14783
+51099,Statistics and Probability,,51087,14783
+51100,Develop understanding of statistical variability.,Develop understanding of statistical variability.,51099,14783
+51101,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51099,14783
+51102,Grade 7,Common Core Math Standards for Grade 7,,14783
+51103,Ratios and Proportional Relationships,,51102,14783
+51104,Analyze proportional relationships and use them to solve real-world and mathematical problems.,Analyze proportional relationships and use them to solve real-world and mathematical problems.,51103,14783
+51105,"to the points (0, 0) and (1, r) where r is the unit rate.","to the points (0, 0) and (1, r) where r is the unit rate.",51103,14783
+51106,The Number System,,51102,14783
+51107,"fractions to add, subtract, multiply, and divide rational numbers.","fractions to add, subtract, multiply, and divide rational numbers.",51106,14783
+51108,d. Apply properties of operations as strategies to add and subtract rational numbers.,d. Apply properties of operations as strategies to add and subtract rational numbers.,51106,14783
+51109,that the decimal form of a rational number terminates in 0s or eventually repeats.,that the decimal form of a rational number terminates in 0s or eventually repeats.,51106,14783
+51110,Expressions and Equations,,51102,14783
+51111,Use properties of operations to generate equivalent expressions.,Use properties of operations to generate equivalent expressions.,51110,14783
+51112,Geometry,,51102,14783
+51113,"Draw, construct, and describe geometrical figures and describe the relationships between them.","Draw, construct, and describe geometrical figures and describe the relationships between them.",51112,14783
+51114,Statistics and Probability,,51102,14783
+51115,Use random sampling to draw inferences about a population.,Use random sampling to draw inferences about a population.,51114,14783
+51116,down. Do the outcomes for the spinning penny appear to be equally likely based on the observed frequ...,down. Do the outcomes for the spinning penny appear to be equally likely based on the observed frequencies?,51114,14783
+51117,Make sense of problems and persevere in solving them.,Make sense of problems and persevere in solving them.,51114,14783
+51118,Grade 8,Common Core Math Standards for Grade 8,,14783
+51119,The Number System,,51118,14783
+51120,"Know that there are numbers that are not rational, and approximate them by rational numbers.","Know that there are numbers that are not rational, and approximate them by rational numbers.",51119,14783
+51121,Expressions and Equations,,51118,14783
+51122,Work with radicals and integer exponents.,Work with radicals and integer exponents.,51121,14783
+51123,the distributive property and collecting like terms.,the distributive property and collecting like terms.,51121,14783
+51124,Functions,,51118,14783
+51125,"Define, evaluate, and compare functions.","Define, evaluate, and compare functions.",51124,14783
+51126,Geometry,,51118,14783
+51127,"Understand congruence and similarity using physical models, trans parencies, or geometry software.","Understand congruence and similarity using physical models, trans parencies, or geometry software.",51126,14783
+51128,c. Parallel lines are taken to parallel lines.,c. Parallel lines are taken to parallel lines.,51126,14783
+51129,Statistics and Probability,,51118,14783
+51130,Investigate patterns of association in bivariate data.,Investigate patterns of association in bivariate data.,51129,14783
+51131,Mathematical Practices,Mathematical Practices,51129,14783
+51132,Extend the properties of exponents to rational exponents.,Extend the properties of exponents to rational exponents.,51129,14783
+51133,Represent and model with vector quantities.,Represent and model with vector quantities.,51129,14783
+51134,"by connecting the tips in the appropriate order, and perform vector subtraction component-wise.","by connecting the tips in the appropriate order, and perform vector subtraction component-wise.",51129,14783
+51135,Perform operations on matrices and use matrices in applications.,Perform operations on matrices and use matrices in applications.,51129,14783
+51136,"parts as a single entity. For example, interpret P(1+r)n as the product of P and a factor not depend...","parts as a single entity. For example, interpret P(1+r)n as the product of P and a factor not depending on P.",51129,14783
+51137,rewritten as (1.151/12)12t ≈ 1.01212t to reveal the approximate equivalent monthly interest rate if ...,rewritten as (1.151/12)12t ≈ 1.01212t to reveal the approximate equivalent monthly interest rate if the annual rate is 15%.,51129,14783
+51138,Rewrite rational expressions,Rewrite rational expressions,51129,14783
+51139,Solve systems of equations,Solve systems of equations,51129,14783
+51140,input x. The graph of f is the graph of the equation y = f(x).,input x. The graph of f is the graph of the equation y = f(x).,51129,14783
+51141,"and end behavior, and trigonometric functions, showing period, midline, and amplitude.","and end behavior, and trigonometric functions, showing period, midline, and amplitude.",51129,14783
+51142,classify them as representing exponential growth or decay.,classify them as representing exponential growth or decay.,51129,14783
+51143,at the location of the weather balloon as a function of time.,at the location of the weather balloon as a function of time.,51129,14783
+51144,d. (+) Produce an invertible function from a non-invertible function by restricting the domain.,d. (+) Produce an invertible function from a non-invertible function by restricting the domain.,51129,14783
+51145,constant percent rate per unit interval relative to another.,constant percent rate per unit interval relative to another.,51129,14783
+51146,Understand radian measure of an angle as the length of the arc on the unit circle subtended by the a...,Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle.,51129,14783
+51147,"distance along a line, and distance around a circular arc.","distance along a line, and distance around a circular arc.",51129,14783
+51148,b. The dilation of a line segment is longer or shorter in the ratio given by the scale factor.,b. The dilation of a line segment is longer or shorter in the ratio given by the scale factor.,51129,14783
+51149,Find arc lengths and areas of sectors of circles,Find arc lengths and areas of sectors of circles,51129,14783
+51150,"objects (e.g., modeling a tree trunk or a human torso as a cylinder).★","objects (e.g., modeling a tree trunk or a human torso as a cylinder).★",51129,14783
+51151,"Represent data with plots on the real number line (dot plots, histograms, and box plots).","Represent data with plots on the real number line (dot plots, histograms, and box plots).",51129,14783
+51152,Interpret linear models,Interpret linear models,51129,14783
+51153,"automobile insurance policy using various, but reasonable, chances of having a minor or a major acci...","automobile insurance policy using various, but reasonable, chances of having a minor or a major accident.",51129,14783

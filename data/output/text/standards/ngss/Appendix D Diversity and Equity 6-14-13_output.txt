@@ -1,0 +1,943 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+
+June 2013
+NGSS Release
+Page 1 of 21
+
+Appendix D - "All Standards, All Students”:
+Making the Next Generation Science Standards Accessible to All Students
+
+The Next Generation Science Standards (NGSS) are being developed at a historic time
+when major changes in education are occurring at the national level. On one hand, student
+demographics across the nation are changing rapidly, as teachers have seen the steady increase of
+student diversity in the classrooms. Yet, achievement gaps in science and other key academic
+indicators among demographic subgroups have persisted. On the other hand, national initiatives
+are emerging for a new wave of standards through the NGSS as well as Common Core State
+Standards (CCSS) for English language arts and literacy and for mathematics. As these new
+standards are cognitively demanding, teachers must make instructional shifts to enable all students to be college and career ready.
+The NGSS are building on the National Research Council’s consensus reports in recent
+years, including Taking Science to School (2007) and its companion report for practitioners
+Ready, Set, Science! (2008), Learning Science in Informal Environments (2009), and most
+notably A Framework for K-12 Science Education (2012). These reports consistently highlight
+that, when provided with equitable learning opportunities, students from diverse backgrounds are
+capable of engaging in scientific practices and constructing meaning in both science classrooms and informal settings.
+This chapter, accompanied by seven case studies of diverse student groups, addresses
+what classroom teachers can do to ensure that the NGSS are accessible to all students; hence the
+title: “All Standards, All Students.” Successful application of science and engineering practices
+(e.g., constructing explanations, engaging in argument from evidence) and understanding of how
+crosscutting concepts (e.g., patterns, structure and function) play out across a range of
+disciplinary core ideas (e.g., structure and properties of matter, earth materials and systems) will
+demand increased cognitive expectations of all students. Making such connections has typically
+been expected only of “advanced,” “gifted,” or “honors” students. The NGSS are intended to
+provide a foundation for all students, including those who can and should surpass the NGSS
+performance expectations. At the same time, the NGSS make it clear that these increased
+expectations apply to those students who have traditionally struggled to demonstrate mastery
+even in the previous generation of less cognitively demanding standards. The goal of the chapter
+and the case studies is to demonstrate that the NGSS are extended to all students.
+Throughout the chapter and case studies, the terms “dominant” and “non-dominant”
+groups are used with reference to student diversity (Gutiérrez & Rogoff, 2003). The dominant
+group(s) does not refer to numerical majority, but rather to social prestige and institutionalized
+privilege. This is particularly the case as student diversity is increasing in the nation’s
+classrooms. Even where the dominant group(s) is the numerical minority, the privileging of their
+academic backgrounds persists. In contrast, non-dominant groups have traditionally been
+underserved by the education system. Thus, the term “non-dominant” highlights a call to action
+that the education system meets the learning needs of the nation’s increasingly diverse student population.
+The chapter highlights practicality and utility of implementation strategies that are
+grounded in theoretical or conceptual frameworks. It consists of three parts. First, it discusses
+both learning opportunities and challenges that the NGSS present to student groups that have
+traditionally been underserved in science classrooms. Second, it describes effective strategies for
+
+=== Page 2 ===
+
+June 2013
+NGSS Release
+Page 2 of 21
+implementation of the NGSS in the classroom, school, home, and community. Finally, it
+provides the context of student diversity by addressing changing demographics, persistent
+science achievement gaps, and educational policies affecting non-dominant student groups.
+The seven case studies (available at www.nextgenscience.org) illustrate science teaching
+and learning of non-dominant student groups as they engage in the NGSS. Several caveats are
+offered to understand the purpose of case studies. First, the case studies are not intended to
+prescribe science instruction, but to illustrate an example or prototype for implementation of
+effective classroom strategies with diverse student groups. Given the vast range of student
+diversity across varied educational settings, teachers and schools will implement the NGSS to
+meet the learning needs of specific student groups in local contexts. Second, each case study
+highlights one identified group (e.g., economically disadvantaged students, English language
+learners). In reality, however, students could belong to multiple categories of diversity (e.g.,
+English language learners who are racial and ethnic minorities from economically disadvantaged
+backgrounds). Third, as there is wide variability among students within each group,
+“essentializing” on the basis of a group label must be avoided. For example, ELLs form a
+heterogeneous group with differences in ethnic background, proficiency level in home language
+and English, socioeconomic status, immigration history, quality of prior schooling, parents’ educational level, etc.
+In identifying student diversity, the case studies address the four accountability groups
+defined in No Child Left Behind (NCLB) Act of 2001 and the reauthorized Elementary and
+Secondary Education Act [ESEA], Section 1111(b)(2)(C)(v):
+ economically disadvantaged students,  students from major racial and ethnic groups,  students with disabilities, and  students with limited English proficiency.
+
+Further, student diversity is extended by adding three groups:
+ girls,  students in alternative education programs, and  gifted and talented students.
+
+Each of the seven case studies consists of three parts that parallel the chapter. It starts
+with a vignette of science instruction to illustrate learning opportunities through connections to
+the NGSS and the CCSS for English language arts and mathematics as well as use of effective
+classroom strategies. The vignette emphasizes what teachers can do to successfully engage
+students in learning the NGSS. Then, it provides a brief summary of the research literature on
+effective classroom strategies for the student group highlighted in the case study. It ends with the
+context for the student group – demographics, science achievement, and educational policy. The
+contextual information relies heavily on government reports addressing student diversity
+broadly, including the ESEA Act, U.S. Census, National Center for Education Statistics
+(including the National Assessment of Educational Progress), and Common Core of Data. The
+contextual information also comes from government reports addressing specific student groups
+such as students in alternative education programs or gifted and talented students.
+The case studies were written by the members of the NGSS Diversity and Equity Team
+with expertise on specific student groups. In working on their case studies, many of the members
+
+=== Page 3 ===
+
+June 2013
+NGSS Release
+Page 3 of 21
+piloted the NGSS in their own science instruction. The case studies represent science disciplines
+across grade levels:
+ economically disadvantaged students – 9th grade chemistry
+ students from major racial and ethnic groups – 8th grade life science
+ students with disabilities – 6th grade space science
+ students with limited English proficiency – 2nd grade earth science  girls – 3rd grade engineering
+ students in alternative education programs – 10th and 11th grade chemistry
+ gifted and talented students – 4th grade life science
+
+Collectively, the chapter and the seven case studies make contributions in several ways.
+First, they focus on issues of student diversity and equity in relation to the NGSS specifically as
+the NGSS present both learning opportunities and challenges to all students, particularly non dominant student groups. Second, they are intended for educational policies as they highlight
+emerging national initiatives through the NGSS as well as the CCSS for English language arts
+and mathematics. Third, they are intended for classroom practice as the case studies were written
+by members of the NGSS Diversity and Equity Team who are themselves teachers working with
+diverse student groups. Fourth, they highlight key findings in research literature on student
+diversity and equity for seven demographic groups of students in science education. This is
+noteworthy because research for each student group tends to exist independently from the others.
+Finally, for each student group, they provide the context in terms of demographics, science achievement, and educational policy.
+
+NGSS: Learning Opportunities and Demands for Non-Dominant
+Student Groups
+
+The NGSS offer a clear vision of rigorous science standards by blending scientific and
+engineering practices with disciplinary core ideas and crosscutting concepts across K-12. In
+addition, the NGSS make connections to the CCSS for English language arts and literacy and for
+mathematics. For the student groups that have traditionally been underserved in science
+education, the NGSS offer both learning opportunities and challenges. Instead of making a long
+list of opportunities and challenges, major considerations are discussed below. Then, learning
+opportunities and challenges are illustrated in the seven case studies for economically
+disadvantaged students, racial or ethnic minority students, students with disabilities, English
+language learners, girls, students in alternative education programs, and gifted and talented students.
+
+NGSS Connections to CCSS for English Language Arts and Mathematics
+
+The NGSS make connections across school curricula. For example, students understand
+the crosscutting concept of patterns not only across science disciplines but also across other
+subject areas of language arts, mathematics, social studies, etc. Likewise, the crosscutting
+concept of cause and effect can be used to explain phenomena in Earth science as well as to
+examine character or plot development in literature. Thus, students develop mastery of
+crosscutting concepts through repeated and contrastive experiences across school curricula.
+
+=== Page 4 ===
+
+June 2013
+NGSS Release
+Page 4 of 21
+The requirements and norms for classroom discourse are shared across all the science
+disciplines, and indeed across all the subject areas. The convergence of disciplinary practices
+across the CCSS for English language arts and literacy, the CCSS for mathematics, and the
+NGSS are highlighted in Figure 1 (on page 21). For example, students are expected to engage in
+argumentation from evidence; construct explanations; obtain, synthesize, evaluate, and
+communicate information; and build a knowledge base through content rich texts across the three
+subject areas. Such convergence is particularly beneficial for students from non-dominant groups
+who are pressed for instructional time to develop literacy and numeracy at the cost of other subjects, including science.
+Integration of subject areas strengthens science learning for all students, particularly for
+students who have traditionally been underserved. In the current climate of accountability
+policies, which are dominated by reading and mathematics, science tends to be de-emphasized.
+This is due to the perceived urgency of developing basic literacy and numeracy for students in
+low-performing schools including, but not limited to, English language learners and students
+with limited literacy development. Thus, allocation and utilization of instructional time across
+subject areas will benefit these students. Furthermore, the convergence of core ideas, practices,
+and crosscutting concepts across subject areas offers multiple entry points to build and deepen understanding for these students.
+Initiatives are emerging to identify language demands and opportunities as English
+language learners engage in the NGSS as well as the CCSS for English language arts and literacy
+and for mathematics. For example, the Understanding Language Initiative
+<http://ell.stanford.edu> is aimed at heightening educator awareness of the critical role that
+language plays in the CCSS and the NGSS. Its long-term goal is to help educators understand
+that the new standards cannot be achieved without providing specific attention to the language
+demands inherent to each subject area. This initiative seeks to improve academic outcomes for
+English language learners by drawing attention to critical aspects of instructional practices and
+by advocating for necessary policy supports at the state and local levels.
+
+Inclusion of Engineering
+
+Inclusion of engineering along with science in the NGSS has major implications for non dominant student groups. First, from an epistemological perspective, the NGSS reinterpret a
+traditional view of epistemology and history of science. For example, Science for All Americans
+stated:
+
+The recommendations in this chapter focus on the development of science, mathematics,
+and technology in Western culture, but not on how that development drew from earlier
+Egyptian, Chinese, Greek, and Arabic cultures. The sciences accounted for in this book
+are largely part of a tradition of thought that happened to develop in Europe during the
+last 500 years – a tradition to which most people from all cultures contribute today.
+(American Association for the Advancement of Science [AAAS], 1989, p. 136)
+
+At that time, although the goal of “Science for all Americans” was visionary, the
+definition of science in terms of Western science while ignoring historical contributions from
+other cultures presented a limited or distorted view of science. The NGSS, by emphasizing
+engineering, recognize contributions of other cultures historically. This (re)defines the
+
+=== Page 5 ===
+
+June 2013
+NGSS Release
+Page 5 of 21
+epistemology of science or what counts as science, which, in turn, defines or determines school science curriculum.
+Second, from a pedagogical perspective, engineering has potential to be inclusive of
+students who have traditionally been marginalized in the science classroom and do not see
+science as being relevant to their lives or future. By solving problems through engineering in
+local contexts (e.g., gardening, improving air quality, cleaning water pollution in the
+community), students gain knowledge of science content, view science as relevant to their lives
+and future, and engage in science in socially relevant and transformative ways (Rodriguez &
+Berryman, 2002).
+Finally, from a global perspective, engineering offers opportunities for “innovation” and
+“creativity” at the K-12 level. Engineering is a field that is critical to innovation, and exposure to
+engineering activities (e.g., robotics and invention competitions) can spark interest in the study
+of STEM or future careers (National Science Foundation [NSF], 2010). Although exposure to
+engineering at the pre-collegiate level is currently rare (Katehi, Pearson, & Feder, 2009), the
+NGSS make exposure to engineering at the pre-collegiate level no longer a rarity, but a
+necessity. This opportunity is particularly important for students who traditionally have not
+recognized science as relevant to their lives or future or students who come from multiple languages and cultures in this global community.
+
+Focus on Practices
+
+The ways we describe student engagement in science have evolved over time. Terms
+such as “hands-on” and “minds-on” have traditionally been used to describe when students
+engage in science. Then, National Science Education Standards (National Research Council
+[NRC], 1996, 2000) highlighted “scientific inquiry” as the core of science teaching and learning
+through which students “develop knowledge and understanding of scientific ideas, as well as an
+understanding of how scientists study the natural world” (p. 23). In the NGSS, “inquiry-based
+science” is refined and deepened by the explicit definition of the set of eight scientific and
+engineering practices, which have major implications for non-dominant student groups (for
+details, see Lee, Quinn, & Valdés, 2013; Quinn, Lee, & Valdés, 2012).
+Engagement in any of the scientific and engineering practices involves both scientific
+sense-making and language use (see Figure 1). Students engage in these practices for the
+scientific sense-making process as they transition from their naïve conceptions of the world to
+more scientifically-based conceptions. Engagement in these practices is also language intensive
+and requires students to participate in classroom science discourse. Students must read, write,
+and visually represent as they develop models and construct explanations. They speak and listen
+as they present their ideas or engage in reasoned argumentation with others to refine their ideas and reach shared conclusions.
+These scientific and engineering practices offer rich opportunities and demands for
+language learning while they support science learning for all students, especially English
+language learners, students with language processing difficulties, students with limited literacy
+development, and students who are speakers of social or regional varieties of English that are
+generally referred to as “non-Standard English.” When supported appropriately, these students
+are capable of learning science through their emerging language and comprehending and
+carrying out sophisticated language functions (e.g., arguing from evidence, constructing
+explanations, developing models) using less-than-perfect English. By engaging in such practices,
+
+=== Page 6 ===
+
+June 2013
+NGSS Release
+Page 6 of 21
+moreover, they simultaneously build on their understanding of science and their language
+proficiency (i.e., capacity to do more with language).
+
+Crosscutting Concepts
+
+Crosscutting concepts are overarching scientific themes that emerge across all scientific
+disciplines. These themes provide the context for new disciplinary core ideas and enable students
+to “develop a cumulative, coherent, and usable understanding of science and engineering” (NRC,
+2011, p. 4-1). Thus, crosscutting concepts bridge the engineering, physical, life, and Earth/space
+sciences, and offer increased rigor across science disciplines over K-12. Although Science for All
+Americans (AAAS, 1989) identified “common themes” and National Science Education
+Standards (NRC 1996) identified “unifying concepts and processes,” the NGSS bring
+crosscutting concepts to the forefront as one of three dimensions of science learning.
+Crosscutting concepts offers frameworks to conceptualize disciplinary core ideas. In this
+way, students think of science learning not as memorization of isolated or disconnected facts, but
+as integrated and interrelated concepts. This is a fundamental understanding of science that is
+often implied as background knowledge for students in “gifted,” “honors,” or “advanced”
+programs. Through the NGSS, explicit teaching of crosscutting concepts enables less privileged
+students, most from non-dominant groups, to make connections among big ideas that cut across
+science disciplines. This could result in leveling the playing field for students who otherwise might not have exposure to such opportunities.
+
+Implementation of Effective Strategies
+
+To make the NGSS accessible to all students, implementation of effective strategies
+capitalizes on learning opportunities while being aware of demands that the NGSS present to
+non-dominant student groups, as described in the previous section. Unfortunately, existing
+research literature does not address students’ performance expectations as envisioned in the
+NGSS based on the mastery of scientific and engineering practices, crosscutting concepts, and
+disciplinary core ideas. Furthermore, the existing research literature addresses non-dominant
+student groups separately. For example, research on race or ethnicity, research on English
+language learners, research on students with disabilities, and research on gender comprise
+distinct research traditions (for effective strategies for non-dominant groups in science
+classrooms, see Special Issue in Theory Into Practice, 2013; for discussion of classroom
+strategies and policy issues, see Lee & Buxton, 2010).
+There seem to be common themes that unite these distinct research areas. In describing
+“equitable learning opportunities” for non-dominant student groups, Lee and Buxton (2010)
+highlight the following themes: (1) value and respect the experiences that all students bring from
+their backgrounds (e.g., homes or communities), (2) articulate students’ background knowledge
+(e.g., cultural or linguistic knowledge) with disciplinary knowledge, and (3) offer sufficient school resources to support student learning.
+First, to value and respect the experiences that all students bring from their backgrounds,
+it is important to make diversity visible. In the process of making diversity visible, there are both
+connections and disconnections between home/community and classroom/school. Effective
+teachers understand how disconnections may vary among different student groups, as well as
+
+=== Page 7 ===
+
+June 2013
+NGSS Release
+Page 7 of 21
+how to capitalize on connections. These teachers bridge diverse students’ background knowledge
+and experiences to scientific knowledge and practices.
+Second, to articulate students’ background knowledge with disciplinary knowledge of
+science, it is important to capitalize on “funds of knowledge” (González, Moll, & Amanti, 2005).
+Funds of knowledge are culturally-based understandings and abilities that develop over time in
+family and neighborhood contexts, and the social and intellectual resources contained in families
+and communities can serve as resources for academic learning. Effective teachers ask questions
+that elicit students’ funds of knowledge related to science topics. They also use cultural artifacts
+and community resources in ways that are academically meaningful and culturally relevant.
+Finally, school resources constitute essential elements of a school’s organizational
+context for teaching and learning. School resources to support student learning involve material
+resources, human resources (or capital), and social resources (or capital). School resources are
+likely to have a greater impact on the learning opportunities of non-dominant students who have
+traditionally been underserved in science education. In schools and classrooms where non dominant students reside, resources are often scarce, forcing allocations of the limited resources
+for some areas (e.g., reading and mathematics) and not others (e.g., science and other non-tested subject areas).
+Below, each of these themes is described as it relates to classroom strategies, home and
+community connections, and school resources – all of which can enable non-dominant student groups to engage in the NGSS.
+
+Effective Classroom Strategies
+
+Key features of effective classroom strategies from the research literature on each of non dominant groups are summarized below. In recognition of the fact that each area of research
+literature has been developing as an independent body of knowledge, the description of strategies
+is provided for each group. Yet, it is noted that while some strategies are unique to a particular
+group (e.g., home language use with English language learners, accommodations or
+modifications for students with disabilities), other strategies apply to all students broadly (e.g.,
+multiple modes of representation). More detailed descriptions are provided in each of the seven
+case studies, including the four accountability groups defined in ESEA and three additional
+groups. While effective science instruction of the NGSS will be based on the existing research
+literature, the NGSS will also stimulate new directions for research to actualize its vision for all students.
+
+Economically disadvantaged students. Strategies to support economically
+disadvantaged students include: (1) connecting science education to students’ sense of “place” as
+physical, historical, and sociocultural dimensions, (2) applying students’ funds of knowledge and
+cultural practices, (3) using project-based science learning as a form of connected science, and
+(4) providing school resources and funding for science instruction.
+
+Students from major racial and ethnic groups. Effective strategies for students from
+major racial and ethnic groups fall into the following categories: (1) culturally relevant
+pedagogy, (2) community involvement and social activism, (3) multiple representation and
+multimodal experiences, and (4) school support systems including role models and mentors of similar racial or ethnic backgrounds.
+
+=== Page 8 ===
+
+June 2013
+NGSS Release
+Page 8 of 21
+
+Students with disabilities. Students with disabilities have their Individualized Education
+Plans (IEP), specific to the individuals, that mandate the accommodations and modifications that
+teachers must provide to support student learning in the regular education classroom.  By
+definition, accommodations allow students to overcome or work around their disabilities with the
+same performance expectations of their peers, whereas modifications generally change the
+curriculum or performance expectations for a specific student. Two approaches for providing
+accommodations and modifications are widely used by general education teachers in their
+classrooms: (1) differentiated instruction and (2) Universal Design for Learning.
+
+Students with limited English proficiency. The research literature indicates five areas
+where teachers can support both science and language learning for English language learners: (1)
+literacy strategies for all students, (2) language support strategies with ELLs, (3) discourse
+strategies with ELLs, (4) home language support, and (5) home culture connections.
+
+Girls. The research literature points to three main areas where schools can positively
+impact girls’ achievement, confidence and affinity with science and engineering: (1) instructional
+strategies to increase girls’ science achievement and their intentions to continue studies in
+science, (2) curricula to improve girls’ achievement and confidence in science by promoting
+images of successful females in science, and (3) classrooms’ and schools’ organizational
+structure in ways that benefit girls in science (e.g., after school clubs, summer camps, and mentoring programs).
+
+Students in alternative education programs. The research literature focuses on school wide approaches to promote increased attendance and high school graduation. Specific factors,
+taken collectively, correspond with alienation from school prior to dropping-out. Public
+alternative schools employ strategies to counteract these factors and increase student
+engagement: (1) structured after-school opportunities, (2) family outreach, (3) life skills training,
+(4) safe learning environment, and (5) individualized academic support.
+
+Gifted and talented students. Gifted and talented students may have such characteristics
+as intense interests, rapid learning, motivation and commitment, curiosity, and questioning skills.
+Teachers can employ effective differentiation strategies to promote science learning of gifted and
+talented students in four domains: (1) fast pacing, (2) level of challenge (including differentiation
+of content), (3) opportunities for self-direction, and (4) strategic grouping.
+
+Home and Community Connections to School Science
+
+While it has long been recognized that building home-school connections is important for
+the academic success of non-dominant student groups, in practice, this is rarely done in an
+effective manner. There are tensions as parents and families want their children to maintain the
+cultural and linguistic practices of their heritage while also wanting their children to participate
+fully in the dominant school culture. A challenge facing schools is the perceived disconnect
+between school science practices and home and community practices of non-dominant student
+groups. Traditionally, research on home-school connections looked at how the family and home
+environments of non-dominant student groups measured up to the expectations and practices of
+
+=== Page 9 ===
+
+June 2013
+NGSS Release
+Page 9 of 21
+the dominant group. The results were interpreted in terms of deficits in students’ family and
+home environments, as compared to their dominant counterparts. In contrast, more recent
+research has identified resources and strengths in the family and home environments of non dominant student groups (Calabrese Barton et al., 2004). Students bring to the science classroom
+funds of knowledge from their homes and communities that can serve as resources for academic
+learning, and teachers should understand and find ways to activate this prior knowledge
+(González, Moll, & Amanti, 2005). Science learning builds on tasks and activities that occur in
+the social contexts of day-to-day living, whether or not the school chooses to recognize this.
+Through the NGSS, students can engage in scientific and engineering practices,
+crosscutting concepts, and disciplinary core ideas by connecting school science to their out-of school experiences in home and community contexts. Several approaches build connections
+between home/community and school science: (1) increase parent involvement in their children’s
+science classroom by encouraging parents’ roles as partners in science learning, (2) engage
+students in defining problems and designing solutions of community projects in their
+neighborhoods (typically engineering), and (3) focus on science learning in informal environments.
+
+Parent involvement in school science. Concerted efforts should be made to support and
+encourage parent involvement in promoting positive engagement and achievement of non dominant student groups in science classrooms. Siblings and peers can serve as role models on
+academic achievement. Parents without academic background in science can still be partners in
+their children’s science education by setting high expectations for academic success and higher
+education. Teachers can form partnerships with parents, facilitating dialogue to solicit their help
+with homework and their attendance at science-related events in the school.
+To promote parents’ involvement in school science, schools can play a part to address
+parents’ needs from the school and remove roadblocks to participation. Schools may need to
+individually invite underserved families on science related field trips, making certain that
+particular concerns are met (e.g., child care, translation, transportation) so that the parents are
+able to attend. Teachers can create homework assignments that invite joint participation of the
+child and parent to complete a task together (e.g., observe the phases of the moon, record water
+use in the house). A non-evaluative survey related to science content can generate classroom
+discussions that bridge home and school. Homework assignments can encourage dialogue,
+increase interest among both parents and students, and solicit home language support for science learning.
+Parents from non-dominant backgrounds feel comfortable with the school when they
+perceive the school as reflecting their values, and such parents, in turn, are most likely to partner
+with the school. For example, a science camp focused on African American achievement had
+high parental participation because its goals highlighted issues related to African American
+identity and culture (Simpson & Parsons, 2008). Teachers can also increase parent involvement
+by relating after-school and summer school themes around values that are important to the families and communities.
+
+Student engagement with school science in community contexts. Strategies that
+involve the community underscore the importance of connecting the school science curriculum
+to the students’ lives and the community in which they live. It is through these connections that
+students who have traditionally been alienated from science recognize science as relevant to their
+
+=== Page 10 ===
+
+June 2013
+NGSS Release
+Page 10 of 21
+lives and future, deepen their understanding of science concepts, develop agency in science, and consider careers in science.
+Science learning in community contexts may take different approaches. First, both
+disciplinary and informal education experts underscore the connection between science and the
+neighborhood that the students reside in. Effective approaches can include engaging in outdoor
+exploration (e.g., bird surveys, weather journals) and analyzing local natural resources (e.g., land forms in the neighborhood, soil composition).
+Second, the community context for science education capitalizes on the community
+resources and funds of knowledge to make science more culturally, linguistically, and socially
+relevant for diverse student groups (González, Moll, & Amanti, 2005). For example, a teacher
+could tap into the community as a resource by recruiting a community member(s) to assist an
+upper elementary class, as students investigate the pollution along a river near the school. By
+bringing the neighborhood and community into the science classroom, students learn that science
+is not only applicable to events in the classroom, but it also extends to what they experience in
+their homes and what they observe in their communities.
+Finally, “place-based” science education is consistent with culturally relevant pedagogy
+(Ladson-Billings, 1995). Through social activism, students develop critical consciousness of
+social inequities, especially as such inequities exist in their communities. When youth find
+science education to be empowering and transformative, they are likely to embrace and further
+investigate what they are learning, instead of being resistant to learning science. Thus, school
+science should be reconceptualized to give a more central role to students’ lived experiences and identities.
+
+Science learning in informal environments. Informal environments for science learning
+(e.g., museums, nature centers, zoos, etc.) have the potential to broaden participation in science
+and engineering for youth from non-dominant communities. Informal environments may also
+include non-institutional opportunities that are not traditionally recognized by school systems
+(e.g., community gardens, woodlots, campgrounds). However, informal institutions face
+challenges in reaching and serving non-dominant groups, as reflected in low attendance patterns.
+Although research on how to structure science learning opportunities to better serve non dominant groups in informal environments is sparse, it highlights two promising insights and practices (NRC, 2009).
+First, informal environments for science learning should be developed and implemented
+with the interests and concerns of particular cultural groups and communities in mind. Project
+goals should be mutually determined by educators and the communities and cultural groups
+being served. It is also important to develop strategies that help learners identify with science in
+personally meaningful ways. Having community-based contacts that are familiar and safe can be
+critical in engaging families in science explorations and conversations and even, at a more basic
+level, in helping non-dominant groups see museums as worthwhile destinations for their families.
+Second, environments should be developed in ways that expressly draw upon
+participants’ cultural practices, including everyday language, linguistic practices, and cultural
+experiences. In designed environments, such as museums, bilingual or multilingual labels
+provide access to the specific content and facilitate conversations and sense-making among
+participants. Developing peer networks may be particularly important to foster sustained
+participation of non-dominant groups. Designed spaces that serve families should consider visits
+by extended families.  Members of diverse cultural groups can play a critical role in the
+
+=== Page 11 ===
+
+June 2013
+NGSS Release
+Page 11 of 21
+development and implementation of programs, serving as designers, advisers, front-line educators, and evaluators of such efforts.
+
+School Resources for Science Instruction
+
+School resources to support student learning generally fall into three categories (Gamoran
+et al., 2003; Penuel, Krause, & Frank, 2009). First, material resources include time available for
+teaching, professional development, and collaboration among teachers. Material resources also
+include curricular materials, equipment, supplies, and expenditures for school personnel and
+other purposes related to teaching and learning. Second, human capital includes individual
+knowledge, skills, and expertise that might become a part of the stock of resources available in
+an organization. In schools, human capital involves teachers’ knowledge, including content
+knowledge, pedagogical knowledge, and pedagogical content knowledge, as well as principal
+leadership. Finally, social capital concerns the relationships among individuals in a group or
+organization, including such norms as trust, collaboration, common values, shared responsibility,
+a sense of obligation, and collective decision making.
+School resources are likely to have a greater impact on the learning opportunities of
+non-dominant student groups. This is because the dominant student group is more likely to
+have the benefits of other supports for their learning, such as better equipped schools, more
+material resources at home, and highly educated parents. In contrast, the academic success of
+non-dominant students depends more heavily on the quality of their school environment; yet, it
+is these students who are less likely to have access to high quality learning environments. Thus,
+inequitable resources are a central concern. The NGSS present both opportunities and
+challenges to reconceptualize the allocation and utilization of school resources.
+
+Material resources. Science receives less instructional time (a form of material
+resources) than language arts and mathematics, which are both considered to be basic skills.
+Particularly, science instruction in low-performing schools is often limited and tightly regulated
+due to the urgency of developing basic literacy and numeracy. In addition, under the demands of
+accountability policies, schools devote extended time and attention to the heavily tested subjects
+of language arts and mathematics, leaving limited time for science.
+The NGSS capitalize on the synergy with the CCSS for English language arts and literacy
+and for mathematics. The standards across the three subject areas share common shifts to focus
+on core concepts and practices that build coherently across K-12. Scientific and engineering
+practices in the NGSS (e.g., argumentation from evidence) share commonalities with those of the
+CCSS for English language arts and for mathematics (see Figure 1). Furthermore, the CCSS for
+literacy require strong content knowledge, informational texts, and text complexity across
+subject areas, including science. In a similar manner, the NGSS make connections to the CCSS.
+Such synergy will help effective use of instructional time among English language arts, mathematics, and science.
+
+Human capital. While all students deserve access to highly qualified teachers, schools
+serving non-dominant student groups require the most effective teachers to enable students to
+overcome achievement gaps (Marx & Harris, 2006). The NGSS require science teachers who
+possess knowledge of disciplinary core ideas, scientific and engineering practices, and
+crosscutting concepts. For non-dominant student groups, teachers should also be able to connect
+
+=== Page 12 ===
+
+June 2013
+NGSS Release
+Page 12 of 21
+science to students’ home and community experiences as the students engage in the NGSS. Such
+expectations present both opportunities and challenges to teacher preparation and professional
+development for urban or low-performing schools where non-dominant student groups tend to be concentrated.
+NGSS is built on continuity of learning progressions across grade levels. This presents
+both opportunities and challenges to students who are highly mobile or transient. On one hand,
+the nationwide purview of the NGSS may help these students by providing them with consistent
+standards among states, districts, and schools. On the other hand, this assumption may impede
+the ability of new immigrant students to catch up as they are unable to draw from a base of years
+of shared experiences. Likewise, students who miss school because of homelessness or other
+reasons for mobility may struggle to fill gaps in understanding.
+
+Social capital. The conditions of urban or low-performing schools are not conducive to
+building social resources in the form of trust, collaboration, and high expectations collectively.
+Urban settings present challenges, including overcrowding, management issues, and emotional
+concerns related to conditions of poverty in students’ homes.
+The NGSS reinforce the need for collaboration among teachers of different
+specializations and subject areas beyond the traditional forms of collaboration. Science teachers
+need to work with special education teachers and teachers of English language learners in order
+to foster a deeper understanding of science. In addition, science, math, and English language arts
+teachers need to work together in order to address both the opportunities and demands for
+meaningful connections among these subject areas. Furthermore, collaboration needs to involve
+the entire school personnel, including teachers, administrators, counselors, etc. Utilization and
+development of social capital among school personnel is key to effective implementation of the
+NGSS with all students, particularly students from non-dominant groups.
+
+Context
+
+To engage all students in learning the NGSS, it is important to understand the context that
+influences science learning by diverse student groups. This section briefly describes student
+demographics, science achievement, and educational policies affecting non-dominant student
+groups. More details are presented in each of the seven case studies in terms of economically
+disadvantaged students, racial or ethnic minority students, students with disabilities, English
+language learners, girls, students in alternative education programs, and gifted and talented students.
+
+Student Demographics
+
+The student population in the U.S. is increasingly more diverse:
+
+ Economically disadvantaged students. The American Community Survey report
+from the U.S. Census Bureau summarized the poverty data (U.S. Census Bureau,
+2012). Overall 21.6% of children in the U.S. live in poverty, the highest poverty rate
+since the poverty survey began in 2001. The poverty rate was the highest for Black at
+38.2% and Hispanic at 32.3%, compared to White at 17.0% and Asian at 13.0%.
+According to the Common Core of Data report, 48% of students were eligible for free
+
+=== Page 13 ===
+
+June 2013
+NGSS Release
+Page 13 of 21
+or reduced price lunch in 2010-11. A greater number of students live in poverty in the
+cities compared to suburban areas, towns, and rural areas.
+
+ Students from major racial or ethnic minority groups. The student population in
+the U.S. is increasingly more diverse racially and ethnically. According to the 2010
+U.S. Census, 36% of the U.S. population is composed of racial minorities, including
+16% Hispanics, 13% Blacks, 5% Asians, and 1% American Indian or Native
+Alaskans (U.S. Census Bureau, 2012). Among the school age population under 19
+years old in 2010, 45% were minorities. It is projected that the year 2022 will be the
+turning point when minorities will become the majority in terms of percentage of the school-age population.
+
+ Students with disabilities. The number of children and youth ages 3-21 receiving
+special education services under the Individuals with Disabilities Education Act
+(IDEA) rose from 4.1 million to 6.7 million between 1980 and 2005, or from 10% to
+14% of the student enrollment (National Center for Education Statistics [NCES],
+2011). That number decreased to 6.5 million or 13% of student enrollment by 2009.
+
+ Students with limited English proficiency. Over 1 in 5 students (21%) speak a
+language other than English at home, and limited English Proficient (LEP) students
+(the federal term) have more than doubled from 5% in 1993 to 11% in 2007. The 11%
+of LEP students does not count those who were classified as LEP when younger but
+who are now considered proficient in English or during a monitoring period.
+
+ Students in alternative education programs. Reporting the demographics of
+students in alternative education is difficult due to wide inconsistencies in definitions
+across the nation. A significant proportion of students who attend public alternative
+schools specifically targeting dropout prevention are economically disadvantaged
+students, racial and ethnic minorities, and English language learners (NCES, 2012).
+
+ Gifted and talented students. Reporting the demographics of gifted and talented
+students is difficult due to wide inconsistencies in definitions, assessments to identify
+these students, and funding for programs across the nation. The National Association
+for Gifted Children (NAGC, 2012) defines giftedness as “those who demonstrate
+outstanding levels of aptitude or competence in one or more domains” and estimates
+that this definition describes approximately three million or roughly 6% of all students, K-12.
+
+Several caveats are made with regard to student diversity. First, each demographic
+subgroup is not a homogenous or monolithic group, and there is a great deal of variability among
+members of the group. For example, categories of disabilities include specific learning
+disabilities, speech and language impairments, other health impairments, intellectual disability,
+emotional disturbance, developmental delay, autism, multiple disabilities, hearing impairment,
+visual impairment, orthopedic impairment, deaf-blindness, and traumatic brain injury. These
+categories could be classified as cognitive, emotional, and physical disabilities. Such variability
+among members of a group cautions that essentializing should be avoided.
+
+=== Page 14 ===
+
+June 2013
+NGSS Release
+Page 14 of 21
+Second, there is a significant overlap among non-dominant student groups. For example,
+most English language learners are racial or ethnic minorities. In addition, 60% of economically
+disadvantaged students, including large proportions of racial or ethnic minorities and English
+language learners, live cities (NCES, 2012). As a result, these students face multiple challenges in achieving academic success.
+Finally, specific student groups are either overrepresented or underrepresented in
+education programs. For example, females are underrepresented in engineering and physics
+(NSF, 2012). Racial or ethnic minority students, economically disadvantaged students, and
+English language learners are underrepresented in gifted and talented programs, whereas they are
+overrepresented in special education programs (Harry & Klingner, 2006).
+
+Science Achievement
+
+While the student population in the U.S. is becoming more diverse, science achievement
+gaps persist by demographic subgroups. The results of international and national science
+assessments indicate the need for a two-pronged approach to enhancing student science
+outcomes. Achievement gaps must be closed among demographic subgroups of students, while
+improved science outcomes should be promoted for all students. In the report, “Preparing the
+Next Generation of STEM Innovators (NSF, 2010), the National Science Board states, “In
+America, it should be possible, even essential, to elevate the achievement of low-performing at risk groups while simultaneously lifting the ceiling of achievement for our future innovators” (p.
+16).
+U.S. students have not ranked favorably on international comparisons of science
+achievement as measured by Trends in International Mathematics and Science Study (TIMSS)
+and Program for International Student Assessment (PISA). Although TIMSS science results for
+U.S. 4th and 8th graders showed positive trends since its first administration in 1995 through the
+latest administration in 2007, PISA results for 15 year olds did not corroborate trends indicated
+by TIMSS. When it comes to applying science in meaningful ways (e.g., using scientific
+evidence, identifying scientific issues, and explaining phenomena scientifically) as measured by
+PISA, U.S. students performed in the bottom half of the international comparison and did not
+show significant improvements since its first administration in 2000 through its latest administration in 2009.
+At the national level, National Assessment of Educational Progress (NAEP) provides data
+for U.S. students’ science performance over time. Focusing only on more recent NAEP science
+assessments in 1996, 2000, 2005, 2009, and 2011, achievement gaps persist among demographic
+subgroups of students across grades 4, 8, and 12. Results are reported by family income level
+(based on eligibility for the National School Lunch Program), race or ethnicity, students with
+disabilities, English language learners, gender, and type of school (public or private). It is noted
+that these subgroups represent the accountability groups defined in ESEA.
+The framework for NAEP science involves science content in three areas (physical
+science, life science, and Earth and space sciences) and four science practices (identifying
+science principles, using science principles, using scientific inquiry, and using technological
+design). Two developments are noteworthy in relation to the NGSS. First, the 2009 NAEP
+science assessment included interactive computer and hands-on tasks to measure how well
+students were able to reason through complex problems and apply science to real-life situations.
+This approach could pave a way for assessment of scientific and engineering practices in the
+
+=== Page 15 ===
+
+June 2013
+NGSS Release
+Page 15 of 21
+NGSS. Second, the first-ever NAEP Technology and Engineering Literacy Assessment (TELA)
+is currently under development. The initial assessment, planned for 2014, will be a probe—a
+smaller-scale, focused assessment on a timely topic that explores a particular question or issue.
+This approach could be used for assessment of engineering in the NGSS.
+A clear understanding of science achievement gaps should take into account certain
+methodological limitations in how these gaps are measured and reported. Science achievement is
+typically measured by standardized tests administered to national and international student
+samples. A strength of these measures is that they provide access to large data sets that allow for
+the use of powerful statistical analyses. However, these measures also present limitations.
+First, standardized tests provide only a general picture of how demographic variables
+relate to science achievement. For example, “Hispanic” is likely to be treated as a single category
+of race or ethnicity, masking potentially important differences in performance among Mexican-
+Americans, Puerto Ricans, and Cuban-Americans. Similarly, the group of students with
+disabilities (SD) is generic, referring to students who usually have Individualized Education
+Programs (IEP) and could include both learning disabled (LD) or emotionally disturbed (ED).
+Thus, achievement data are generally lumped together for very different disabilities. Such
+overgeneralization hinders more nuanced understanding of achievement gaps, thereby limiting
+the potential effectiveness of educational interventions aimed at reducing these gaps.
+Second, standardized tests have the potential to reinforce stereotypes, both positive and
+negative, of certain demographic groups (Rodriguez, 1998). For example, the “model minority”
+stereotype of Asian American students as strong performers in mathematics and science may
+well be supported by generalized test data for the racial category of Asian American. However,
+such a result masks great disparities within this group, such as Southeast Asian refugees with
+limited literacy development in their homes or communities. These students are less likely to
+have their needs met in equitable ways if teachers presume that they “naturally” learn science
+and mathematics with little trouble. In contrast, high-achieving Hispanic or African American
+students may be disadvantaged by teachers or counselors who underestimate them and set low expectations of their academic success.
+Finally, standardized tests do not analyze or report interactions between demographic
+variables. For example, as racial/ethnic minority students are disproportionately represented in
+free or reduced price lunch programs, science achievement gaps between race/ethnicity and
+socioeconomic status are confounded. In a similar manner, science achievement gaps between race/ethnicity and gender are confounded.
+
+Educational Policies
+
+The passing of the NCLB Act of 2001 (the reauthorized Elementary and Secondary
+Education Act [ESEA]) ushered in a new era of high-stakes testing and accountability policies.
+Districts and schools are accountable for making an adequate level of achievement gain each
+year, referred to as annual yearly progress (AYP). The theory behind ESEA (NCLB) assumes
+that states, districts, and schools will allocate resources to best facilitate the attainment of AYP.
+Decisions concerning resources and practices are determined largely by test scores on state assessments.
+Although ESEA is most often associated with accountability systems, there is a second
+property of ESEA that has also been a focus of attention. ESEA mandates that each state report
+AYP disaggregated for demographic subgroups of students. Mandating this disaggregated
+
+=== Page 16 ===
+
+June 2013
+NGSS Release
+Page 16 of 21
+reporting of AYP results in potentially desirable outcomes: (a) each of the groups is publicly
+monitored to examine achievement and progress; (b) resources are allocated differentially to
+these groups to enhance the likelihood that they meet AYP; and (c) if AYP is not met for these
+groups in schools receiving Title I funding, students are provided with additional academic
+assistance through Supplemental Educational Services (e.g., tutoring) and the right to transfer to
+another public school. Schools, districts, and states cannot hide historically underperforming
+demographic groups, since ESEA forces the state to publicly monitor these groups and to be
+accountable for their performance. On the undesirable side, however, all of the added attention to
+high-stakes testing does not necessarily result in improved teaching. In fact, the increased
+emphasis on testing could detract from academically rigorous learning opportunities that are
+often lacking with students from certain demographic subgroups. Similarly, calling more public
+attention to the failures of schools to adequately meet the needs of these students does little to
+ensure that they will receive instruction that is more engaging, more intellectually challenging, or more culturally or socially relevant.
+Although ESEA mandates reporting of AYP for reading and mathematics, the same is not
+true for science. With respect to science, ESEA only requires that by the 2007-2008 school year
+each state would have science assessments to be administered and reported for formative
+purposes at least once during grades 3-5, grades 6-9, and grades 10-12. However, it is up to each
+state to decide whether to include high-stakes science testing in state accountability systems or
+AYP reporting. Although science accountability policies affect all students, the impact is far
+greater for student groups that have traditionally been underserved in the education system.
+Separate from federal and state policies that apply to all students, specific policies apply
+to specific student groups. According to the ESEA Act:
+
+ Title I is the largest federally funded educational program intended for “improving
+the academic achievement of the disadvantaged” in order to meet “the educational
+needs of low-achieving children in our Nation's highest-poverty schools, limited
+English proficient children, migratory children, children with disabilities, Indian
+children, neglected or delinquent children, and young children in need of reading assistance.”
+
+ Title I, Part H, states that the Dropout Prevention Act aims “to provide for school
+dropout prevention and reentry and to raise academic achievement levels by
+providing grants that (1) challenge all children to attain their highest academic
+potential; and (2) ensure that all students have substantial and ongoing opportunities
+to attain their highest academic potential through school-wide programs proven
+effective in school dropout prevention and reentry.”
+
+ Title III addresses “language instruction for limited English proficient and immigrant students.”
+
+ Title VII is designed for “Indian, Native Hawaiian, and Alaska Native education.”
+
+ Title IX prevents gender-based discrimination within federally funded educational
+programs. Title IX states, "No person in the United States shall, on the basis of sex,
+be excluded from participation in, be denied the benefits of, or be subjected to
+
+=== Page 17 ===
+
+June 2013
+NGSS Release
+Page 17 of 21
+discrimination under any education program or activity receiving federal financial
+assistance" (Public Law No. 92-318, 86 Stat. 235).
+
+ Title IX, Part A, SEC. 9101 (22), provides a federal definition and federal research
+funding for gifted and talented students: "The term gifted and talented, when used
+with respect to students, children, or youth, means students, children, or youth who
+give evidence of high achievement capability in areas such as intellectual, creative,
+artistic, or leadership capacity, or in specific academic fields, and who need services
+or activities not ordinarily provided by the school in order to fully develop those capabilities."
+
+ The Individuals with Disabilities Education Act (IDEA) is a law ensuring services to children with disabilities.
+
+Conclusions and Implications
+
+The NGSS offer a vision of science teaching and learning that presents both learning
+opportunities and demands for all students, particularly student groups that have traditionally
+been underrepresented in the science classroom. Furthermore, the NGSS are connected to the
+CCSS for English language arts and mathematics. Changes in the new standards occur as student
+demographics in the nation become increasingly diverse while science achievement gaps persist among demographic subgroups.
+The academic rigor and expectations of the NGSS are less familiar to many science
+teachers than conventional or traditional teaching practices and require shifts for science
+teaching, which are consistent with shifts for teaching the CCSS for English language arts and
+mathematics (see Figure 1). Science teachers need to acquire effective strategies to include all
+students regardless of racial, ethnic, cultural, linguistic, socioeconomic, and gender backgrounds.
+While effective classroom strategies that enable students to engage in the NGSS will draw from
+the existing research literature, the NGSS will also stimulate new research agenda. For example,
+future research may identify ways to make connections between school science and
+home/community for non-dominant student groups as they engage in the NGSS. Future research
+may also explore how to utilize and allocate school resources to support student learning in terms
+of material resources, human capital, and social capital in relation to the NGSS.
+Effective implementation of the NGSS for all students, including non-dominant student
+groups, will require shifts in the education support system. Key components of the support
+system include teacher preparation and professional development, principal support and
+leadership, public-private-community partnerships, formal and informal classroom experiences
+that require considerable coordination among community stakeholders, technological
+capabilities, network infrastructure, cyber-learning opportunities, access to digital resources,
+online learning communities, and virtual laboratories. As the NGSS implementation takes root
+over time, these components of the education system will also evolve and change accordingly.
+
+=== Page 18 ===
+
+June 2013
+NGSS Release
+Page 18 of 21
+References
+
+American Association for the Advancement of Science. (1989). Science for all Americans. New
+York: Oxford University Press.
+
+Calabrese Barton, A., Drake, C., Perez, J. G., St. Louis, K., & George, M. (2004). Ecologies of
+parental engagement in urban education. Educational Researcher, 33, 3-12.
+
+Gamoran, A., Anderson, C. W., Quiroz, P. A., Secada, W. G., Williams, T., & Ashmann, S.
+(2003). Transforming teaching in math and science: How schools and districts can support change. New York: Teachers College Press.
+
+González, N., Moll, L. C., & Amanti, C. (2005). Funds of knowledge: Theorizing practices in
+households, communities, and classrooms. Mahwah, NJ: L. Erlbaum Associates.
+
+Gutiérrez, K., & Rogoff, B. (2003). Cultural ways of learning: Individual traits or repertoires of practice. Educational Researcher, 32, 19-25.
+
+Harry, B., & Klingner, J. K. (2006). Why are so many minority students in special education?:
+Understanding race and disability in schools. New York: Teachers College Press.
+
+Katehi, L., Pearson, G., & Feder, M. (2009). Engineering in K-12 education: Understanding the
+status and improving the prospects. Washington, DC: The National Academy Press.
+
+Ladson-Billings, G. (1995). Toward a theory of culturally relevant pedagogy. American
+Educational Research Journal, 32, 465-491.
+
+Lee, O., & Buxton, C. A. (2010). Diversity and equity in science education: Theory, research, and practice. New York: Teachers College Press.
+
+Lee, O., Quinn, H., & Valdés, G. (2013). Science and language for English language learners:
+Language demands and opportunities in relation to Next Generation Science Standards.
+Educational Researcher, 42, 223-233
+
+Marx, R. W., & Harris, C. J. (2006). No Child Left Behind and science education: Opportunities,
+challenges, and risks. The Elementary School Journal, 106, 467-477.
+
+National Association for Gifted Children (2010).  Redefining giftedness for a new century:
+Shifting the paradigm.  Retrieved from:
+http://www.nagc.org/uploadedFiles/About_NAGC/Redefining%20Giftedness%20for%20 a%20New%20Century.pdf.
+
+National Center for Education Statistics. (2011). The condition of education 2011 (NCES 2011 033). Washington, DC: U.S. Department of Education, Institute of Education Sciences.
+
+=== Page 19 ===
+
+June 2013
+NGSS Release
+Page 19 of 21
+National Center for Education Statistics. (2012). The condition of education 2012 (NCES 2012 045). Washington, DC: U.S. Department of Education, Institute of Education Sciences.
+
+National Research Council. (1996). National science education standards. Washington, DC:
+National Academy Press.
+
+National Research Council. (2000). Inquiry and the national science education standards: A
+guide for teaching and learning. Washington, DC: National Academy Press.
+
+National Research Council. (2007). Taking science to school: Learning and teaching science in
+grades K-8. Washington, DC: National Academies Press.
+
+National Research Council. (2008). Ready, set, science!: Putting research to work in K-8 science
+classrooms. Washington, DC:  National Academies Press.
+
+National Research Council. (2009). Learning science in informal environments: People, places,
+and pursuits. Washington, DC:  National Academies Press.
+
+National Research Council. (2011). A framework for K-12 science education: Practices,
+crosscutting themes, and core ideas. Washington, DC: National Academies Press.
+
+National Science Foundation. (2010). Preparing the next generation of STEM innovators:
+Identifying and developing our nation’s human capital. Washington, DC: Author.
+
+National Science Foundation. (2012). Science and engineering indicators 2012: A broad base of
+quantitative information on the U.S. and international science and engineering enterprise. Washington, DC: Author.
+
+Penuel, W., Riel, M., Krause, A., & Frank, K. (2009). Analyzing teachers’ professional
+interactions in a school as social capital: A social network approach. Teachers College
+Record, 111, 124-163.
+
+Quinn, H., Lee, O., & Valdés, G. (2012). Language demands and opportunities in relation to
+Next Generation Science Standards for English language learners: What teachers need
+to know. Stanford, CA: Stanford University, Understanding Language Initiative at
+Stanford University (ell.stanford.edu).
+
+Rodriguez, A. (1998). Busting open the meritocracy myth: Rethinking equity and student
+achievement in science education. Journal of Women and Minorities in Science and Engineering, 4, 195-216.
+
+Rodriguez, A. J., & Berryman, C. (2002). Using sociotransformative constructivism to teach for
+understanding in diverse classrooms: A beginning teacher’s journey. American
+Educational Research Journal, 39, 1017-1045.
+
+=== Page 20 ===
+
+June 2013
+NGSS Release
+Page 20 of 21
+Simpson, J. S., & Parsons, E. (2008). African American perspectives and informal science
+educational experiences. Science Education, 93, 293-321.
+
+Special issue on diversity and equity in science education. (2013). Theory into Practice, 52(1).
+
+U.S. Census Bureau. (2012). Statistical abstract of the United States, 2012. Washington, DC:
+Government Printing Office. Accessed online at
+http://www.census.gov/compendia/statab/cats/education.html
+
+=== Page 21 ===
+
+June 2013
+NGSS Release
+Page 21 of 21
+
+Figure 1. Relationships and convergences found in the Common Core State Standards for
+Mathematics (practices), Common Core State Standards for English Language Arts and Literacy
+(student portraits), and the NRC Framework (science & engineering practices)
+
+Note: The letter and number set preceding each phrase denotes the discipline and number
+designated by the content standards. The NRC Framework is being used to guide the
+development of the Next Generation Science Standards.
+
+We acknowledge Tina Cheuk for developing Figure 1 as part of the Understanding Language
+Initiative at Stanford University <ell.stanford.edu>.
+

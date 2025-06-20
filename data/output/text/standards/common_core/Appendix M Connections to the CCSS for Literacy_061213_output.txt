@@ -1,0 +1,506 @@
+=== DOCUMENT TEXT ===
+
+=== Page 1 ===
+
+May 2013
+NGSS Release
+Page 1 of 16
+
+APPENDIX M – Connections to the Common Core State Standards for Literacy in Science and Technical Subjects1
+
+Literacy skills are critical to building knowledge in science. To ensure the CCSS literacy standards work
+in tandem with the specific content demands outlined in the NGSS, the NGSS development team worked
+with the CCSS writing team to identify key literacy connections to the specific content demands outlined
+in the NGSS. As the CCSS affirms, reading in science requires an appreciation of the norms and
+conventions of the discipline of science, including understanding the nature of evidence used, an attention
+to precision and detail, and the capacity to make and assess intricate arguments, synthesize complex
+information, and follow detailed procedures and accounts of events and concepts. Students also need to be
+able to gain knowledge from elaborate diagrams and data that convey information and illustrate scientific
+concepts. Likewise, writing and presenting information orally are key means for students to assert and
+defend claims in science, demonstrate what they know about a concept, and convey what they have experienced, imagined, thought, and learned.
+
+Every effort has been made to ensure consistency between the CCSS and the NGSS. As is the case with
+the mathematics standards, NGSS should always be interpreted and implemented in such a way that they
+do not outpace or misalign to the grade-by-grade standards in the CCSS for literacy (this includes the
+development of NGSS-aligned instructional materials and assessments). Below are the NGSS Science and
+Engineering Practices and the corresponding CCSS Literacy Anchor Standards and portions of the
+Standards for Science and Technical Subjects.
+Connections to the English/language arts (ELA) CCSS are included across all disciplines and grade bands in the
+final version of the NGSS.  However, Appendix M focuses on connections to the Standards for Literacy in Science
+and Technical Subjects, which only cover grades 6–12.  Therefore this appendix likewise only lists connections for
+grades 6–12.  The K–12 ELA connections that are currently listed in the NGSS connection boxes will also be added
+to this appendix in the near future.  See the Common Core State Standards website for more information about the
+Literacy standards: http://www.corestandards.org/ELA-Literacy.
+
+1 Many thanks to the contributions of Susan Pimentel in the development of this document..
+
+=== Page 2 ===
+
+May 2013
+NGSS Release
+Page 2 of 16
+
+Science and Engineering Practice: Asking Questions and Defining Problems
+Students at any grade level should be able to ask questions of each other about the texts they read, the features of the phenomena they observe, and the
+conclusions they draw from their models or scientific investigations. For engineering, they should ask questions to define the problem to be solved and to elicit
+ideas that lead to the constraints and specifications for its solution. (NRC Framework 2012, p. 56)
+Supporting CCSS Literacy Anchor Standards and Relevant Portions of the Corresponding Standards for Science and Technical Subjects
+Connection to Science and Engineering
+Practice
+CCR Reading Anchor #1: Read closely to determine what the text says explicitly and to make logical inferences
+from it; cite specific textual evidence when writing or speaking to support conclusions drawn from the text.
+ RST.6-8.1: “…support analysis of science and technical texts.”
+ RST.9-10.1: “…support analysis of science and technical texts, attending to the precise details of explanations or descriptions.”
+ RST.11-12.1: “…support analysis of science and technical texts, attending to important distinctions the author
+makes and to any gaps or inconsistencies in the account.”
+
+Evidence plays a critical role in the kinds of questions asked, information gathered, and findings reported in science and technical texts. The notion of close reading in Reading Standard 1 emphasizes the use of asking and refining questions in order to answer them with evidence that is either explicitly stated or implied.
+CCR Reading Anchor #7: Integrate and evaluate content presented in diverse formats and media, including visually and quantitatively, as well as in words.
+ RST.6-8.7: “Integrate quantitative or technical information expressed in words in a text with a version of that
+information expressed visually (e.g., in a flowchart, diagram, model, graph, or table).”
+ RST.9-10.7: “Translate quantitative or technical information expressed in words in a text into visual form (e.g., a
+table or chart) and translate information expressed visually or mathematically (e.g., in an equation) into words.
+ RST.11-12.7: “…evaluate multiple sources of information presented in diverse formats and media (e.g.,
+quantitative data, video, multimedia) in order to address a question or solve a problem.”
+Scientists and engineers present data in a myriad of visual formats in order to reveal meaningful patterns and trends. Reading
+Standard 7 speaks directly to the importance of asking questions about and evaluating data presented in different formats.
+
+CCR Reading Anchor #8: Delineate and evaluate the argument and specific claims in a text, including the validity
+of the reasoning as well as the relevance and sufficiency of the evidence.
+ RST.6-8.8: “Distinguish among facts, reasoned judgment based on research findings, and speculation...”
+ RST.9-10.8: “Assess the extent to which the reasoning and evidence in a text support the author’s claim or a
+recommendation for solving a scientific or technical problem.”
+ RST.11-12.8: “Evaluate the hypotheses, data, analysis, and conclusions in a science or technical text, verifying
+the data when possible and corroborating or challenging conclusions with other sources of information.”
+
+Challenging or clarifying scientific hypotheses, arguments, experiments or conclusions—and the evidence and premises that support them—are key to this practice. Reading Standard 8 emphasizes evaluating the validity of arguments and whether the evidence offered backs up the claims logically.
+
+=== Page 3 ===
+
+May 2013
+NGSS Release
+Page 3 of 16
+
+CCR Writing Anchor #7: Conduct short as well as more sustained research projects based on focused questions,
+demonstrating understanding of the subject under investigation.
+ RST.6-8.7: “…answer a question (including a self-generated question)…generating additional related, focused
+questions that allow for multiple avenues of exploration.”
+ RST.9-12.7: “…narrow or broaden inquiry when appropriate…”
+
+Generating focused questions and well honed scientific inquiries are key to conducting investigations and defining problems. The research practices reflected in Writing Standard 7 reflect the skills needed for successful completion of such research-based inquiries.
+CCR Speaking & Listening Anchor #1: Prepare for and participate effectively in a range of conversations and
+collaborations with diverse partners, building on others’ ideas and expressing their own clearly and persuasively.
+ SL.8.1: “…Pose…specific questions by making comments that contribute to the discussion…”
+ SL.9-10.1: “... posing and responding to questions that relate the current discussion to broader themes or larger ideas…”
+ SL.11-12.1: “…posing and responding to questions that probe reasoning and evidence…”
+
+The ability to pose relevant questions, clarify or elaborate on the ideas of others or request information from others are crucial to learning and conducting investigations in science class.  Speaking and Listening Standard 1 speaks directly to the importance of asking and refining questions to clarify ideas that generate solutions and explanations.
+CCR Speaking & Listening Anchor #3: Evaluate a speaker’s point of view, reasoning, and use of evidence and rhetoric.
+ SL.8.3: “…evaluating the soundness of the reasoning and sufficiency of the evidence, and identifying when irrelevant evidence is introduced.”
+ SL.9-10.3: “…identifying fallacious reasoning or exaggerated or distorted evidence.”
+ SL.11-12.3: “…assessing the stance, premises, links among ideas, word choice, points of emphasis.”
+Evaluating the soundness of a speaker’s reasoning and evidence concerning scientific theories and concepts through a series of inquiries teaches students to be discriminating thinkers. Speaking and Listening Standard 3 directly asserts that students must be able to critique a point of view from the perspective of the evidence provided and reasoning advanced.
+
+=== Page 4 ===
+
+May 2013
+NGSS Release
+Page 4 of 16
+
+Science and Engineering Practice: Planning and Carrying Out Investigations
+Students should have opportunities to plan and carry out several different kinds of investigations during their K-12 years. At all levels, they should engage in
+investigations that range from those structured by the teacher—in order to expose an issue or question that they would be unlikely to explore on their own (e.g.,
+measuring specific properties of materials)—to those that emerge from students’ own questions. (NRC Framework, 2012, p. 61)
+Supporting CCSS Literacy Anchor Standards and Relevant Portions of the Corresponding Standards for Science and Technical Subjects
+Connection to Science and Engineering
+Practice
+CCR Reading Anchor #3: Analyze how and why individuals, events, or ideas develop and interact over the course of a text.
+ RST.6-8.3: “Follow precisely a multistep procedure when carrying out experiments, taking measurements, or performing technical tasks.”
+ RST.9-10.3: “Follow precisely a complex multistep procedure when carrying out experiments, taking
+measurements, or performing technical tasks, attending to special cases or exceptions defined in the text.”
+ RST.11-12.3: “Follow precisely a complex multistep procedure when carrying out experiments, taking
+measurements, or performing technical tasks; analyze the specific results based on explanations in the text.”
+Systematic investigations in the field or laboratory lie at the heart of scientific inquiry. Reading Standard 8 emphasizes the importance of accuracy in carrying out such complex experiments and procedures, in following a course of action that will provide the best evidence to support conclusions.
+CCR Writing Anchor #7: Conduct short as well as more sustained research projects based on focused questions,
+demonstrating understanding of the subject under investigation.
+
+Planning and carrying out investigations to test hypotheses or designs is central to scientific and engineering activity. The research practices reflected in Writing
+Standard 7 reflect the skills needed for successful completion of such research based inquiries.
+CCR Writing Anchor #8: Gather relevant information from multiple print and digital sources, assess the credibility
+and accuracy of each source, and integrate the information while avoiding plagiarism.
+ WHST.6-8.8: “… quote or paraphrase the data and conclusions of others…”
+ WHST.9-10.8: “…assess the usefulness of each source in answering the research question…”
+ WHST.11-12.8: “…assess the strengths and limitations of each source in terms of the specific task, purpose, and audience…”
+
+Collecting relevant data across a broad spectrum of sources in a systematic fashion is a key element of this scientific practice. Writing Standard 8 spells out the importance of gathering applicable information from multiple reliable sources to support claims.
+CCR Speaking & Listening Anchor #1: Prepare for and participate effectively in a range of conversations and
+collaborations with diverse partners, building on others’ ideas and expressing their own clearly and persuasively.
+ SL.8.1: “Come …having read or researched material under study; explicitly draw on that preparation by referring to
+evidence on the topic, text, or issue to probe and reflect on ideas under discussion…define individual roles as
+Carrying out investigations in collaborative settings is crucial to learning in science class and engineering settings. Speaking and Listening
+
+=== Page 5 ===
+
+May 2013
+NGSS Release
+Page 5 of 16
+
+needed.”
+ SL.9-10.1: “Come…having read and researched material under study; explicitly draw on that preparation by
+referring to evidence from texts and other research on the topic or issue to stimulate a thoughtful, well-reasoned
+exchange of ideas… make new connections in light of the evidence and reasoning presented.”
+ Sl.11-12.1: “…determine what additional information or research is required to deepen the investigation or complete the task.”
+
+Standard 1 speaks directly to the importance of exchanging theories and evidence cooperatively and collaboratively to carrying out investigations.
+
+=== Page 6 ===
+
+May 2013
+NGSS Release
+Page 6 of 16
+
+Science and Engineering Practice: Analyzing and Interpreting Data
+Once collected, data must be presented in a form that can reveal any patterns and relationships and that allows results to be communicated to others. Because raw
+data as such have little meaning, a major practice of scientists is to organize and interpret data through tabulating, graphing, or statistical analysis. Such analysis
+can bring out the meaning of data—and their relevance—so that they may be used as evidence.
+Engineers, too, make decisions based on evidence that a given design will work; they rarely rely on trial and error. Engineers often analyze a design by creating a
+model or prototype and collecting extensive data on how it performs, including under extreme conditions. Analysis of this kind of data not only informs design
+decisions and enables the prediction or assessment of performance but also helps define or clarify problems, determine economic feasibility, evaluate alternatives,
+and investigate failures. (NRC Framework, 2012, p. 61-62)
+Supporting CCSS Literacy Anchor Standards and Relevant Portions of the Corresponding Standards for Science and Technical Subjects
+Connection to Science and Engineering
+Practice
+CCR Reading Anchor #7: Integrate and evaluate content presented in diverse formats and media, including visually and quantitatively, as well as in words.
+ RST.6-8.7: “Integrate quantitative or technical information expressed in words in a text with a version of that
+information expressed visually (e.g., in a flowchart, diagram, model, graph, or table).”
+ RST.9-10.7: “Translate quantitative or technical information expressed in words in a text into visual form (e.g., a
+table or chart) and translate information expressed visually or mathematically (e.g., in an equation) into words.
+ RST.11-12.7: “…evaluate multiple sources of information presented in diverse formats and media (e.g.,
+quantitative data, video, multimedia) in order to address a question or solve a problem.”
+
+Scientists and engineers present data in a myriad of visual formats in order to reveal meaningful patterns and trends.
+Reading Standard 7 speaks directly to the importance of understanding and presenting information that has been gathered in various formats to reveal patterns and relationships and allow for deeper explanations and analyses.
+CCR Reading Anchor #9: Analyze how two or more texts address similar themes or topics in order to build
+knowledge or to compare the approaches the authors take.
+ RST.6-8.9: “Compare and contrast the information gained from experiments, simulations, video, or multimedia
+sources with that gained from reading a text on the same topic.”
+ RST.9-10.9: “Compare and contrast findings presented in a text to those from other sources (including their own
+experiments), noting when the findings support or contradict previous explanations or accounts.”
+ RST.11-12.9: “Synthesize information from a range of sources (e.g., texts, experiments, simulations) into a
+coherent understanding of a process, phenomenon, or concept, resolving conflicting information when possible.”
+Scientists and engineers use technology to allow them to draw on multiple sources of information in order to create data sets. Reading Standard 9 identifies the importance of analyzing multiple sources in order to inform design decisions and create a coherent understanding of a process or concept.
+CCR Speaking and Listening #2: Integrate and evaluate information presented in diverse media and formats, including visually, quantitatively, and orally.
+ SL.8.2: “Analyze the purpose of information presented in diverse media and formats (e.g., visually, quantitatively, orally)…”
+Central to the practice of scientists and engineers is integrating data drawn from multiple sources in order to create a cohesive vision of what the data means.
+Speaking and Listening Standard 2
+
+=== Page 7 ===
+
+May 2013
+NGSS Release
+Page 7 of 16
+
+ SL.9-10.2: “Integrate multiple sources of information presented in diverse media or formats (e.g., visually,
+quantitatively, orally) evaluating the credibility and accuracy of each source.”
+ SL.11-12.2: “…evaluating the credibility and accuracy of each source and noting any discrepancies among the data.”
+
+addresses the importance of such synthesizing activities to building knowledge and defining and clarifying problems. This includes evaluating the credibility and accuracy of data and identifying possible sources of error.
+CCR Speaking and Listening #5: Make strategic use of digital media and visual displays of data to express
+information and enhance understanding of presentations.
+ SL.8.5: “Integrate multimedia and visual displays into presentations to clarify information, strengthen claims and evidence...”
+ SL.9-12.5: “Make strategic use of digital media (e.g., textual, graphical, audio, visual, and interactive elements) in
+presentations to enhance understanding of findings, reasoning, and evidence…”
+
+Presenting data for the purposes of cross comparison is essential for identifying the best design solution or scientific explanation. Speaking and Listening
+Standard 5 stresses the importance of visual displays of data within presentations in order to enhance understanding of the relevance of the evidence. That way others can make critical decisions regarding what is being claimed based on the data.
+
+=== Page 8 ===
+
+May 2013
+NGSS Release
+Page 8 of 16
+
+Science and Engineering Practice: Constructing Explanations and Designing Solutions
+Asking students to demonstrate their own understanding of the implications of a scientific idea by developing their own explanations of
+phenomena, whether based on observations they have made or models they have developed, engages them in an essential part of the process by which conceptual change can occur.
+In engineering, the goal is a design rather than an explanation. The process of developing a design is iterative and systematic, as is the process of
+developing an explanation or a theory in science. Engineers’ activities, however, have elements that are distinct from those of scientists. These
+elements include specifying constraints and criteria for desired qualities of the solution, developing a design plan, producing and testing models
+or prototypes, selecting among alternative design features to optimize the achievement of design criteria, and refining design ideas based on the
+performance of a prototype or simulation. (NRC Framework, 2012, p. 68-69)
+Supporting CCSS Literacy Anchor Standards and Relevant Portions of the Corresponding Standards for Science and Technical Subjects
+Connection to Science and Engineering Practice
+CCR Reading Anchor #1: Read closely to determine what the text says explicitly and to make logical inferences
+from it; cite specific textual evidence when writing or speaking to support conclusions drawn from the text.
+ RST.6-8.1: “…support analysis of science and technical texts.”
+ RST.9-10.1: “…support analysis of science and technical texts, attending to the precise details of explanations or descriptions.”
+ RST.11-12.1: “…support analysis of science and technical texts, attending to important distinctions the author
+makes and to any gaps or inconsistencies in the account.”
+
+Evidence plays a critical role in determining a theory in science and a design solution in engineering.  The notion of close reading in Reading
+Standard 1 emphasizes pursing investigations into well-supported theories and design solutions on the basis of evidence that is either explicitly stated or implied.
+CCR Reading Anchor #2: Determine central ideas or themes of a text and analyze their development; summarize the key supporting details and ideas.
+ RST.6-8.2: “…provide an accurate summary of the text distinct from prior knowledge or opinions.”
+ RST.9-10.2: “…trace the text’s explanation or depiction of a complex process, phenomenon, or concept…”
+ RST.11-12.2: “…summarize complex concepts, processes, or information presented in a text by paraphrasing them in simpler but still accurate terms.”
+Part of the power of a scientific theory or engineering design is its ability to be cogently explained.  That ability to determine and clearly state an idea lies at the heart of Reading Standard 2.
+CCR Reading Anchor #8: Delineate and evaluate the argument and specific claims in a text, including the validity
+of the reasoning as well as the relevance and sufficiency of the evidence.
+ RST.6-8.8:“Distinguish among facts, reasoned judgment based on research findings, and speculation...”
+ RST.9-10.8: “Assess the extent to which the reasoning and evidence in a text support the author’s claim or a
+recommendation for solving a scientific or technical problem.”
+ RST.11-12.8: “Evaluate the hypotheses, data, analysis, and conclusions in a science or technical text, verifying the
+Constructing theories and designing solutions both require analysis that is rooted in rational argument and in evidence stemming from an understanding of the world. Reading
+Standard 8 emphasizes evaluating the validity of arguments and whether the
+
+=== Page 9 ===
+
+May 2013
+NGSS Release
+Page 9 of 16
+
+data when possible and corroborating or challenging conclusions with other sources of information.”
+
+evidence offered backs up the claim logically.
+CCR Writing Anchor #2: Write informative/explanatory texts to examine and convey complex ideas and
+information clearly and accurately through the effective selection, organization, and analysis of content.
+ WHST.6-8.2: “…Develop the topic with relevant, well-chosen facts, definitions, concrete details, quotations, or other information and examples…”
+ WHST.9-10.2: “…Develop the topic with well-chosen, relevant, and sufficient facts, extended definitions,
+concrete details, quotations, or other information and examples appropriate to the audience’s knowledge of the topic…”
+ WHST.11-12.2: “…Develop the topic thoroughly by selecting the most significant and relevant facts, extended
+definitions, concrete details, quotations, or other information and examples appropriate to the audience’s knowledge of the topic…”
+Building a theory or a model that explains the natural world requires close attention to how to weave together evidence from multiple sources. With a focus on clearly communicating complex ideas and information by critically choosing, arranging, and analyzing information, Writing Standard 2 requires students to develop theories with the end goal of explanation in mind.
+CCR Writing Anchor #8: Gather relevant information from multiple print and digital sources, assess the credibility
+and accuracy of each source, and integrate the information while avoiding plagiarism.
+ WHST.6-8.8: “… quote or paraphrase the data and conclusions of others…”
+ WHST.9-10.8: “…assess the usefulness of each source in answering the research question; integrate information
+into the text selectively to maintain the flow of ideas …”
+ WHST.11-12.8: “…assess the strengths and limitations of each source in terms of the specific task, purpose, and
+audience; integrate information into the text selectively to maintain the flow of ideas …”
+
+Collecting relevant data across a broad spectrum of sources in a systematic fashion is a key element of constructing a theory with explanatory power or a design that meets multiple constraints.
+Writing Standard 8 spells out the importance of gathering applicable information from multiple reliable sources in order to construct well-honed explanations.
+CCR Writing Anchor #9: Draw evidence from literary or informational texts to support analysis, reflection, and research.
+ WHST.6-12.9: “Draw evidence from informational texts to support analysis, reflection, and research.”
+
+The route towards constructing a rigorous explanatory account centers on garnering the necessary empirical evidence to support a theory or design.
+That same focus on generating evidence that can be analyzed is at the heart of Writing Standard 9.
+CCR Speaking and Listening Anchor #4: Present information, findings, and supporting evidence such that
+listeners can follow the line of reasoning and the organization, development, and style are appropriate to task, purpose, and audience.
+A theory in science and a design in engineering is a rational explanatory account of how the world works in light
+
+=== Page 10 ===
+
+May 2013
+NGSS Release
+Page 10 of 16
+
+ SL.8.4: “Present claims and findings, emphasizing salient points in a focused, coherent manner with relevant evidence, sound valid reasoning…”
+ SL.9-10.4: “Present information, findings, and supporting evidence clearly, concisely, and logically…”
+ SL.11-12.4: “Present information, findings, and supporting evidence, conveying a clear and distinct perspective…
+alternative or opposing perspectives are addressed…” of the evidence. Speaking and Listening
+Standard 4 stresses how the presentation of findings crucially relies on how the evidence is used to illuminate the line of reasoning embedded in the explanation offered.
+
+=== Page 11 ===
+
+May 2013
+NGSS Release
+Page 11 of 16
+
+Science and Engineering Practice: Engaging in Argument from Evidence
+The study of science and engineering should produce a sense of the process of argument necessary for advancing and defending a new idea or an explanation of
+a phenomenon and the norms for conducting such arguments. In that spirit, students should argue for the explanations they construct, defend their interpretations
+of the associated data, and advocate for the designs they propose. (NRC Framework, 2012, p. 73)
+Supporting CCSS Literacy Anchor Standards and Relevant Portions of the Corresponding Standards for Science and Technical Subjects
+Connection to Science and Engineering Practice
+CCR Reading Anchor #6: Assess how point of view or purpose shapes the content and style of a text.
+ RST.6-8.6: “Analyze the author’s purpose in providing an explanation, describing a procedure, or discussing an experiment in a text.”
+ RST.9-10.6: “Analyze the author’s purpose in providing an explanation, describing a procedure, or discussing an
+experiment in a text, defining the question the author seeks to address.”
+ RST.11-12.6: “Analyze the author’s purpose in providing an explanation, describing a procedure, or discussing an
+experiment in a text, identifying important issues that remain unresolved.”
+
+The central motivation of scientists and engineers is to put forth what they believe is the best explanation for a natural phenomena or design solution, and to verify that representation through well wrought arguments. Understanding the point of view of scientists and engineers and how that point of view shapes the content of the explanation is what Reading Standard 6 asks students to attune to.
+CCR Reading Anchor #8: Delineate and evaluate the argument and specific claims in a text, including the validity
+of the reasoning as well as the relevance and sufficiency of the evidence.
+ RST.6-8.8: “Distinguish among facts, reasoned judgment based on research findings, and speculation...”
+ RST.9-10.8: “Assess the extent to which the reasoning and evidence in a text support the author’s claim or a
+recommendation for solving a scientific or technical problem.”
+ RST.11-12.8: “Evaluate the hypotheses, data, analysis, and conclusions in a science or technical text, verifying the
+data when possible and corroborating or challenging conclusions with other sources of information.”
+
+Formulating the best explanation or solution to a problem or phenomenon stems from advancing an argument whose premises are rational and supported with evidence. Reading
+Standard 8 emphasizes evaluating the validity of arguments and whether the evidence offered backs up the claim logically.
+CCR Reading Anchor #9: Analyze how two or more texts address similar themes or topics in order to build
+knowledge or to compare the approaches the authors take.
+ RST.6-8.9: “Compare and contrast the information gained from experiments, simulations, video, or multimedia
+sources with that gained from reading a text on the same topic.”
+ RST.9-10.9: “Compare and contrast findings presented in a text to those from other sources (including their own
+experiments), noting when the findings support or contradict previous explanations or accounts.”
+Implicit in the practice of identifying the best explanation or design solution is comparing and contrasting competing proposals. Reading Standard 9 identifies the importance of comparing different sources in the process of creating a
+
+=== Page 12 ===
+
+May 2013
+NGSS Release
+Page 12 of 16
+
+ RST.11-12.9: “Synthesize information from a range of sources (e.g., texts, experiments, simulations) into a
+coherent understanding of a process, phenomenon, or concept, resolving conflicting information when possible.”
+
+coherent understanding of a phenomenon, concept, or design solution.
+CCR Writing Anchor #1: Write arguments to support claims in an analysis of substantive topics or texts using valid reasoning and relevant and sufficient evidence.
+ WHST.6-8.1: “…Support claim(s) with logical reasoning and relevant, accurate data and evidence that
+demonstrate an understanding of the topic or text, using credible sources…”
+ WHST.9-10.1: “…Develop claim(s) and counterclaims fairly, supplying data and evidence for each while pointing
+out the strengths and limitations of both claim(s) and counterclaims in a discipline-appropriate form and in a
+manner that anticipates the audience’s knowledge level and concerns…”
+ WHST.11-12.1: “…Develop claim(s) and counterclaims fairly and thoroughly, supplying the most relevant data
+and evidence for each while pointing out the strengths and limitations of both claim(s) and counterclaims in a
+discipline-appropriate form that anticipates the audience’s knowledge level, concerns, values, and possible biases…”
+Central to the process of engaging in scientific thought or engineering practices is the notion that what will emerge is backed up by rigorous argument. Writing Standard 1 places argumentation at the heart of the CCSS for science and technology subjects, stressing the importance of logical reasoning, relevant evidence, and credible sources.
+CCR Speaking & Listening Anchor #1: Prepare for and participate effectively in a range of conversations and
+collaborations with diverse partners, building on others’ ideas and expressing their own clearly and persuasively.
+ SL.8.1: “… Pose questions that connect the ideas of several speakers and respond to others’ questions and
+comments with relevant evidence, observations, and ideas. Acknowledge new information expressed by others, and,
+when warranted, qualify or justify their own views in light of the evidence presented.”
+ SL.9-10.1: “…actively incorporate others into the discussion; and clarify, verify, or challenge ideas and
+conclusions. Respond thoughtfully to diverse perspectives, summarize points of agreement and disagreement, and,
+when warranted, qualify or justify their own views and understanding and make new connections in light of the evidence and reasoning presented.”
+ Sl.11-12.1: “…Respond thoughtfully to diverse perspectives; synthesize comments, claims, and evidence made on
+all sides of an issue; resolve contradictions when possible; and determine what additional information or research is
+required to deepen the investigation or complete the task.”
+Reasoning and argument require critical listening and collaboration skills in order to identify the best explanation for a natural phenomenon or the best solution to a design problem.  Speaking and Listening Standard 1 speaks directly to the importance of comparing and evaluating competing ideas through argument to cooperatively and collaboratively identify the best explanation or solution.
+
+CCR Speaking & Listening Anchor #3: Evaluate a speaker’s point of view, reasoning, and use of evidence and rhetoric.
+ SL.8.3: “…evaluating the soundness of the reasoning and sufficiency of the evidence, and identifying when irrelevant evidence is introduced.”
+ SL.9-10.3: “…identifying fallacious reasoning or exaggerated or distorted evidence.”
+ SL.11-12.3: “…assessing the stance, premises, links among ideas, word choice, points of emphasis.”
+
+Evaluating the reasoning in an argument based on the evidence present is crucial for identifying the best design or scientific explanation. Speaking and Listening Standard 3 directly asserts that students must be able to critique the point of view within an argument presented orally from the perspective of
+
+=== Page 13 ===
+
+May 2013
+NGSS Release
+Page 13 of 16
+
+the evidence provided and reasoning advanced by others.
+CCR Speaking and Listening Anchor #4: Present information, findings, and supporting evidence such that
+listeners can follow the line of reasoning and the organization, development, and style are appropriate to task, purpose, and audience.
+ SL.8.4: “Present claims and findings, emphasizing salient points in a focused, coherent manner with relevant evidence, sound valid reasoning…”
+ SL.9-10.4: “Present information, findings, and supporting evidence clearly, concisely, and logically…”
+ SL.11-12.4: “Present information, findings, and supporting evidence, conveying a clear and distinct perspective…
+alternative or opposing perspectives are addressed…”
+
+The practice of engaging in argument from evidence is a key ingredient in determining the best explanation for a natural phenomenon or the best solution to a design problem. Speaking and Listening Standard 4 stresses how the presentation of findings crucially relies on how the evidence is used to illuminate the line of reasoning embedded in the explanation offered.
+
+=== Page 14 ===
+
+May 2013
+NGSS Release
+Page 14 of 16
+
+Science and Engineering Practice: Obtaining, Evaluating, and Communicating Information
+Any education in science and engineering needs to develop students’ ability to read and produce domain-specific text. As such, every science or engineering
+lesson is in part a language lesson, particularly reading and producing the genres of texts that are intrinsic to science and engineering. (NRC Framework, 2012, p.
+76)
+Supporting CCSS Literacy Anchor Standards and Relevant Portions of the Corresponding Standards for Science and Technical Subjects
+Connection to Science and Engineering Practice
+CCR Reading Anchor #2: Determine central ideas or themes of a text and analyze their development; summarize the key supporting details and ideas.
+ RST.6-8.2: “…provide an accurate summary of the text distinct from prior knowledge or opinions.”
+ RST.9-10.2: “…trace the text’s explanation or depiction of a complex process, phenomenon, or concept…”
+ RST.11-12.2: “…summarize complex concepts, processes, or information presented in a text by paraphrasing them in simpler but still accurate terms.”
+Part of the power of a scientific theory or engineering design is its ability to be cogently explained. That ability to determine and clearly state or summarize a salient scientific concept or phenomena lies at the heart of Reading Standard 2.
+CCR Reading Anchor #7: Integrate and evaluate content presented in diverse formats and media, including visually and quantitatively, as well as in words.
+ RST.6-8.7: “Integrate quantitative or technical information expressed in words in a text with a version of that
+information expressed visually (e.g., in a flowchart, diagram, model, graph, or table).”
+ RST.9-10.7: “Translate quantitative or technical information expressed in words in a text into visual form (e.g., a
+table or chart) and translate information expressed visually or mathematically (e.g., in an equation) into words.
+ RST.11-12.7: “…evaluate multiple sources of information presented in diverse formats and media (e.g.,
+quantitative data, video, multimedia) in order to address a question or solve a problem.”
+
+A key practice within scientific and engineering communities is communicating about data through the use of tables, diagrams, graphs and models. Reading Standard 7 speaks directly to the importance of understanding information that has been gathered by investigators in visual formats that reveal deeper explanations and analyses.
+CCR Reading Anchor #9: Analyze how two or more texts address similar themes or topics in order to build
+knowledge or to compare the approaches the authors take.
+ RST.6-8.9: “Compare and contrast the information gained from experiments, simulations, video, or multimedia
+sources with that gained from reading a text on the same topic.”
+ RST.9-10.9: “Compare and contrast findings presented in a text to those from other sources (including their own
+experiments), noting when the findings support or contradict previous explanations or accounts.”
+ RST.11-12.9: “Synthesize information from a range of sources (e.g., texts, experiments, simulations) into a
+coherent understanding of a process, phenomenon, or concept, resolving conflicting information when possible.”
+
+The end goal of these scientific and engineering practices is to position scientists and engineers to be able to evaluate the merit and validity of claims, methods, and designs.  Reading Standard 9 identifies the importance of synthesizing information from a range of sources to the process of creating a coherent understanding of a phenomenon or concept.
+
+=== Page 15 ===
+
+May 2013
+NGSS Release
+Page 15 of 16
+
+CCR Reading Anchor #10: Read and comprehend complex literary and informational texts independently and proficiently.
+ RST.6-8.10: “By the end of grade 8, read and comprehend science/technical texts in the grades 6–8 text complexity band independently and proficiently.”
+ RST.9-10.10: “By the end of grade 10, read and comprehend science/technical texts in the grades 9–10 text complexity band independently and proficiently.”
+ RST.11-12.10: “By the end of grade 12, read and comprehend science/technical texts in the grades 11-CCR text complexity band independently and proficiently.”
+
+When reading scientific and technical texts, students need to be able to gain knowledge from challenging texts that often make extensive use of elaborate diagrams and data to convey information and illustrate concepts. Reading
+Standard 10 asks students to read complex informational texts in these fields with independence and confidence.
+CCR Writing Anchor #2: Write informative/explanatory texts to examine and convey complex ideas and
+information clearly and accurately through the effective selection, organization, and analysis of content.
+ WHST.6-8.2: “…include formatting (e.g., headings), graphics (e.g., charts, tables), and multimedia when useful to
+aiding comprehension…Develop the topic with relevant, well-chosen facts, definitions, concrete details, quotations, or other information and examples…”
+ WHST.9-10.2: “…include formatting (e.g., headings), graphics (e.g., figures, tables), and multimedia when useful
+to aiding comprehension…Develop the topic with well-chosen, relevant, and sufficient facts, extended definitions,
+concrete details, quotations, or other information and examples appropriate to the audience’s knowledge of the topic…”
+ WHST.11-12.2: “…include formatting (e.g., headings), graphics (e.g., figures, tables), and multimedia when
+useful to aiding comprehension…Develop the topic thoroughly by selecting the most significant and relevant facts,
+extended definitions, concrete details, quotations, or other information and examples appropriate to the audience’s knowledge of the topic…”
+The demand for precision in expression is an essential requirement of scientists and engineers, and using the multiple means available to them is a crucial part of that expectation. With a focus on clearly communicating complex ideas and information by critically choosing, arranging, and analyzing information— particularly through the use of visual means—Writing Standard 2 requires students to develop their claims with the end goal of explanation in mind.
+
+CCR Writing Anchor #8: Gather relevant information from multiple print and digital sources, assess the credibility
+and accuracy of each source, and integrate the information while avoiding plagiarism.
+ WHST.6-8.8: “…using search terms effectively…quote or paraphrase the data and conclusions of others…”
+ WHST.9-10.8: “…using advanced searches effectively; assess the usefulness of each source in answering the
+research question; integrate information into the text selectively to maintain the flow of ideas …”
+ WHST.11-12.8: “…using advanced searches effectively; assess the strengths and limitations of each source in
+terms of the specific task, purpose, and audience; integrate information into the text selectively to maintain the flow of ideas …”
+Collecting relevant data across a broad spectrum of sources in a systematic fashion is a key element of assessing the validity of claims, methods, and designs.
+Writing Standard 8 spells out the importance of gathering applicable information from multiple reliable sources so that information can be communicated accurately.
+CCR Speaking & Listening Anchor #1: Prepare for and participate effectively in a range of conversations and
+collaborations with diverse partners, building on others’ ideas and expressing their own clearly and persuasively.
+Reasoning and argument require critical listening and collaboration skills in order
+
+=== Page 16 ===
+
+May 2013
+NGSS Release
+Page 16 of 16
+
+ SL.8.1: “… Pose questions that connect the ideas of several speakers and respond to others’ questions and
+comments with relevant evidence, observations, and ideas. Acknowledge new information expressed by others, and,
+when warranted, qualify or justify their own views in light of the evidence presented.”
+ SL.9-10.1: “…actively incorporate others into the discussion; and clarify, verify, or challenge ideas and
+conclusions. Respond thoughtfully to diverse perspectives, summarize points of agreement and disagreement, and,
+when warranted, qualify or justify their own views and understanding and make new connections in light of the evidence and reasoning presented.”
+ Sl.11-12.1: “…Respond thoughtfully to diverse perspectives; synthesize comments, claims, and evidence made on
+all sides of an issue; resolve contradictions when possible; and determine what additional information or research is
+required to deepen the investigation or complete the task.” to evaluate the merit and validity claims, methods, and designs. Speaking and Listening Standard 1 speaks directly to the importance of comparing and assessing competing ideas through extended discussions grounded in evidence.
+
+CCR Speaking and Listening Anchor #4: Present information, findings, and supporting evidence such that
+listeners can follow the line of reasoning and the organization, development, and style are appropriate to task, purpose, and audience.
+ SL.8.4: “Present claims and findings, emphasizing salient points in a focused, coherent manner with relevant evidence, sound valid reasoning…”
+ SL.9-10.4: “Present information, findings, and supporting evidence clearly, concisely, and logically…”
+ SL.11-12.4: “Present information, findings, and supporting evidence, conveying a clear and distinct perspective…
+alternative or opposing perspectives are addressed…”
+
+Central to the professional activity of scientists and engineers alike is communicating their findings clearly and persuasively. Speaking and Listening
+Standard 4 stresses how the presentation of findings crucially relies on how the evidence is used to illuminate the line of reasoning embedded in the explanation offered.
+CCR Speaking and Listening #5: Make strategic use of digital media and visual displays of data to express
+information and enhance understanding of presentations.
+ SL.8.5: “Integrate multimedia and visual displays into presentations to clarify information, strengthen claims and evidence...”
+ SL.9-12.5: “Make strategic use of digital media (e.g., textual, graphical, audio, visual, and interactive elements) in
+presentations to enhance understanding of findings, reasoning, and evidence…”
+
+Presenting data for the purposes of communication is essential for evaluating the merit and validity of claims, methods, and designs.  Speaking and Listening Standard 5 stresses the importance of visual or digital displays of data within presentations in order to enhance understanding of the evidence.
+That way others can make critical decisions regarding what is being claimed based on the data.
+

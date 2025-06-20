@@ -1,0 +1,23 @@
+{
+  "total": 233,
+  "moved": 232,
+  "not_found": 1,
+  "by_framework": {
+    "actful": 26,
+    "ncas": 24,
+    "p.e_": 6,
+    "ngss": 22,
+    "ngss_2": 2,
+    "common_core": 4,
+    "student_guides": 3,
+    "ap_guides": 41,
+    "common_core_math": 2,
+    "c3_framework": 2,
+    "iste": 1,
+    "course_guides": 46,
+    "common_core_ela": 6,
+    "briefs": 12,
+    "isca": 1,
+    "subject_briefs": 34
+  }
+}

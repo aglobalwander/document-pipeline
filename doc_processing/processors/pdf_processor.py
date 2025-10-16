@@ -14,6 +14,7 @@ from doc_processing.config import get_settings
 from .gpt_vision_processor import GPTPVisionProcessor
 from .enhanced_docling_processor import EnhancedDoclingPDFProcessor
 from .pymupdf_processor import PyMuPDFProcessor
+from .claude_pdf_processor import ClaudePDFProcessor
 from doc_processing.llm.gemini_client import GeminiClient
 from doc_processing.templates.prompt_manager import PromptTemplateManager # Import PromptTemplateManager
 

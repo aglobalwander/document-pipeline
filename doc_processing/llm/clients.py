@@ -186,4 +186,26 @@ class OpenAIClient(BaseLLMClient):
             raise # Re-raise the exception
 
 
-# Add other client implementations here later (AnthropicClient, GeminiClient, etc.)
+# Import and export Anthropic client
+try:
+    from .anthropic_client import AnthropicClient
+    ANTHROPIC_CLIENT_AVAILABLE = True
+except ImportError:
+    ANTHROPIC_CLIENT_AVAILABLE = False
+    logger.warning("AnthropicClient not available. Install 'anthropic' package to use Claude.")
+
+# Import and export Gemini client
+try:
+    from .gemini_client import GeminiClient
+    GEMINI_CLIENT_AVAILABLE = True
+except ImportError:
+    GEMINI_CLIENT_AVAILABLE = False
+    logger.warning("GeminiClient not available.")
+
+__all__ = ['OpenAIClient', 'BaseLLMClient']
+
+if ANTHROPIC_CLIENT_AVAILABLE:
+    __all__.append('AnthropicClient')
+
+if GEMINI_CLIENT_AVAILABLE:
+    __all__.append('GeminiClient')

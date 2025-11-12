@@ -38,3 +38,14 @@ class ProcessingCache:
         cache_path = self.get_cache_path(document_id)
         if cache_path.exists():
             cache_path.unlink()
+
+    def clear_all(self):
+        """Clear all cached checkpoints and return the number of removed files."""
+        cleared = 0
+        if not self.cache_dir.exists():
+            return cleared
+
+        for cache_file in self.cache_dir.glob("*.json"):
+            cache_file.unlink()
+            cleared += 1
+        return cleared

@@ -342,7 +342,7 @@ def write_learning_objectives_csv(los: List[Dict], output_path: Path):
 def main():
     """Main execution function."""
     input_dir = Path("data/output/text/standards/ap_guides")
-    output_dir = Path("data/output/drupal_import/ap")
+    output_dir = Path("data/output/drupal_prep/10_ap")
     
     if not input_dir.exists():
         print(f"Input directory not found: {input_dir}")

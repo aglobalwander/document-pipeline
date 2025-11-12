@@ -19,6 +19,7 @@ sys.path.insert(0, str(project_root))
 
 from doc_processing.processors.enhanced_docling_processor import EnhancedDoclingPDFProcessor
 from doc_processing.loaders.pdf_loader import PDFLoader
+from doc_processing.utils.processing_cache import ProcessingCache
 
 # --- Logging Setup ---
 logging.basicConfig(
@@ -42,12 +43,26 @@ def parse_arguments():
                         help='Directory to save output files (default: data/output).')
     parser.add_argument('--output_format', type=str, default='text', choices=['text', 'markdown', 'json'],
                         help='Primary output format (default: text).')
-    parser.add_argument('--no_all_formats', action='store_true',
+    parser.add_argument('--output_all_formats', dest='output_all_formats', action='store_true', default=None,
+                        help='Enable output of all formats (text, markdown, JSON).')
+    parser.add_argument('--no_output_all_formats', dest='no_output_all_formats', action='store_true',
                         help='Disable output of all formats (text, markdown, JSON).')
+    parser.add_argument('--no_all_formats', action='store_true',
+                        help='(Deprecated) Disable output of all formats (text, markdown, JSON).')
     parser.add_argument('--extract_tables', action='store_true', default=True,
                         help='Enable table extraction (default: enabled).')
     parser.add_argument('--no_extract_tables', action='store_true',
                         help='Disable table extraction.')
+    parser.add_argument('--detect_columns', dest='detect_columns', action='store_true', default=None,
+                        help='Enable column detection for multi-column PDFs (default: enabled).')
+    parser.add_argument('--no_detect_columns', dest='no_detect_columns', action='store_true',
+                        help='Disable column detection for multi-column PDFs.')
+    parser.add_argument('--use_cache', dest='use_cache', action='store_true', default=None,
+                        help='Enable processing cache for resumable document processing (default: enabled).')
+    parser.add_argument('--no_cache', dest='no_cache', action='store_true',
+                        help='Disable processing cache for resumable document processing.')
+    parser.add_argument('--clear_cache', action='store_true',
+                        help='Clear cached Docling processing checkpoints before running.')
 
     return parser.parse_args()
 
@@ -63,11 +78,37 @@ def main():
         logger.error(f"Input file not found: {input_path}")
         sys.exit(1)
     
+    # Resolve boolean options with support for deprecated flags
+    output_all_formats = True
+    if getattr(args, 'no_all_formats', False) or getattr(args, 'no_output_all_formats', False):
+        output_all_formats = False
+    elif args.output_all_formats is not None:
+        output_all_formats = args.output_all_formats
+
+    detect_columns = True
+    if getattr(args, 'no_detect_columns', False):
+        detect_columns = False
+    elif args.detect_columns is not None:
+        detect_columns = args.detect_columns
+
+    use_cache = True
+    if getattr(args, 'no_cache', False):
+        use_cache = False
+    elif args.use_cache is not None:
+        use_cache = args.use_cache
+
+    if args.clear_cache:
+        cache_manager = ProcessingCache()
+        cleared = cache_manager.clear_all()
+        logger.info(f"Cleared {cleared} cached processing checkpoints from {cache_manager.cache_dir}")
+
     # Create configuration for the processor
     processor_config = {
         'docling_extract_tables': False if args.no_extract_tables else args.extract_tables,
         'output_format': args.output_format,
-        'output_all_formats': not args.no_all_formats,
+        'output_all_formats': output_all_formats,
+        'detect_columns': detect_columns,
+        'use_cache': use_cache,
     }
     
     # Load the PDF file
@@ -103,7 +144,7 @@ def main():
         f.write(content if content else "No content was generated.")
     
     # Save all formats if requested
-    if not args.no_all_formats:
+    if output_all_formats:
         # Save text format
         if args.output_format != 'text' and 'text_content' in processed_document:
             text_output_path = output_dir / 'text' / f"{input_path.stem}_docling.txt"
@@ -135,7 +176,7 @@ def main():
     logger.info(f"  Input file: {input_path}")
     logger.info(f"  Primary output format: {args.output_format}")
     logger.info(f"  Primary output file: {primary_output_path}")
-    logger.info(f"  All formats output: {'Disabled' if args.no_all_formats else 'Enabled'}")
+    logger.info(f"  All formats output: {'Enabled' if output_all_formats else 'Disabled'}")
     logger.info(f"  Table extraction: {'Enabled' if processor_config['docling_extract_tables'] else 'Disabled'}")
     
     # Print a sample of the processed text

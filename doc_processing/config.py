@@ -5,10 +5,12 @@ from typing import Dict, Any, Optional
 from pydantic import Field, validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
-from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv(find_dotenv())
+# Load environment variables from centralized API key store
+MASTER_ENV_PATH = Path.home() / '.config' / 'api-keys' / '.env.master'
+if MASTER_ENV_PATH.exists():
+    load_dotenv(dotenv_path=MASTER_ENV_PATH, override=False)
 
 # Calculate base paths beforehand
 _base_dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -66,13 +68,6 @@ class Settings(BaseSettings):
     HF_TOKEN: Optional[str] = Field(default=os.getenv('HF_TOKEN', ''))
     SMITHERY_API_TOKEN: Optional[str] = Field(default=os.getenv('SMITHERY_API_TOKEN', ''))
     GIT_HUB_TOKEN: Optional[str] = Field(default=os.getenv('GIT_HUB_TOKEN', ''))
-    WEAVIATE_GRPC_URL: Optional[str] = Field(default=os.getenv('WEAVIATE_GRPC_URL', ''))
-    
-    # Weaviate configuration (Handled separately in weaviate_layer.config)
-    # WEAVIATE_URL: str = Field(default=os.getenv('WEAVIATE_URL', 'http://localhost:8080')) # Removed
-    # WEAVIATE_API_KEY: str = Field(default=os.getenv('WEAVIATE_API_KEY', '')) # Removed
-    WEAVIATE_BATCH_SIZE: int = Field(default=100) # Keep batch size if used elsewhere
-    
     # Processing configuration
     MAX_RETRIES: int = Field(default=3)
     CONCURRENT_TASKS: int = Field(default=4)
@@ -94,7 +89,6 @@ class Settings(BaseSettings):
     PROGRESS_FILE: str = Field(default='processing_progress.txt')
     
     # Remove env_file loading for this specific Settings class
-    # as Weaviate settings are handled in weaviate_layer/config.py
     model_config = SettingsConfigDict(
         # env_file='.env', # Removed
         case_sensitive=True,

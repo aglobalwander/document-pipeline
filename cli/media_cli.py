@@ -7,7 +7,6 @@ import logging
 # from doc_processing.processors.deepgram_processor import DeepgramProcessor
 # from doc_processing.processors.image_processor import ImageProcessor
 # from doc_processing.transformers.video_to_chunks import VideoToChunks
-# from weaviate_layer.manage_collections import ingest_rows
 
 logging.basicConfig(level=logging.INFO)
 

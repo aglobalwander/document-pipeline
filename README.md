@@ -1,13 +1,12 @@
 # Document Processing Pipeline
 
-A powerful, modular document processing framework that transforms various document formats (PDF, DOCX, PPTX, images, audio, video) into structured outputs (text, markdown, JSON) with optional vector database storage.
+A powerful, modular document processing framework that transforms various document formats (PDF, DOCX, PPTX, images, audio, video) into structured outputs (text, markdown, JSON). The project now focuses purely on extraction and transformation so you can hand results to whatever downstream system (Milvus, Qdrant, Postgres, etc.) you prefer.
 
 ## 🚀 Features
 
 - **Multi-Format Support**: Process PDFs, Word docs, PowerPoints, images, audio, video, and YouTube URLs
 - **Flexible Output**: Generate text, markdown, JSON, CSV, or Excel outputs
 - **Advanced PDF Processing**: Multiple OCR modes including Docling, GPT-4 Vision, and hybrid approaches
-- **Vector Database Integration**: Store and search documents using Weaviate
 - **Modular Architecture**: Easily extend with custom loaders, processors, and transformers
 - **Batch Processing**: Process entire directories with recursive file discovery
 - **Resumable Operations**: Processing cache enables resuming interrupted operations
@@ -41,8 +40,6 @@ python scripts/download_nltk_resources.py
 # For YouTube processing
 pip install yt-dlp
 
-# For Weaviate integration
-pip install weaviate-client
 ```
 
 ## 🚀 Quick Start
@@ -64,22 +61,41 @@ python scripts/master_docling.py --input_path document.pdf --output_all_formats
 # Process all PDFs in a directory
 python scripts/run_pipeline.py --input_path /path/to/pdfs --pipeline_type markdown --recursive
 
-# Batch process with Weaviate storage
-python scripts/batch_process.py --input_dir /path/to/docs --collection MyDocuments
+# Batch process with optional recursive discovery
+python scripts/run_pipeline.py --input_path /path/to/docs --pipeline_type text --recursive
 ```
 
-### Store in Vector Database
+### Process External Collections (No Copying)
 ```bash
-# Process and store in Weaviate
-python scripts/run_pipeline.py --input_path document.pdf --pipeline_type weaviate --collection MyCollection
+# 1) Inventory an external folder first
+poetry run python scripts/collections/inventory_collection.py \
+  --source_dir "/absolute/path/to/collection"
+
+# 2) Preview processing plan (dry run) with auto storage fallback
+scripts/collections/run_collection_with_storage_fallback.sh \
+  --storage auto \
+  --source_dir "/absolute/path/to/collection" \
+  --collection_name "my-collection" \
+  --dry_run
+
+# 3) Run full processing (uses /Volumes/My Passport/knowledge-hub when mounted)
+scripts/collections/run_collection_with_storage_fallback.sh \
+  --storage auto \
+  --source_dir "/absolute/path/to/collection" \
+  --collection_name "my-collection" \
+  --resume
 ```
+
+Outputs are written under `data/output/collections/{collection_name}/{text,markdown,json}/` with a per-collection `manifest.yaml`.  
+Global collection status is tracked in `data/processing_registry.yaml`.  
+Use `--resume` to skip files already marked successful with existing outputs.
+For large runs, use `scripts/collections/run_collection_with_storage_fallback.sh` so outputs write to an external drive when available and automatically fall back to local paths when not.
 
 ## 📖 Documentation
 
 - **[User Guide](docs/USER_GUIDE.md)** - Detailed usage instructions
 - **[Command Reference](docs/COMMANDS.md)** - Complete CLI documentation
 - **[Overview](docs/OVERVIEW.md)** - Non-technical project overview
-- **[Weaviate Integration](docs/weaviate_layer.md)** - Vector database setup
 
 ## 🏗️ Architecture
 
@@ -87,8 +103,6 @@ The pipeline follows a modular architecture:
 
 ```
 Input → Loader → Processor → Transformer → Output
-                                ↓
-                            Weaviate (optional)
 ```
 
 ### Core Components
@@ -96,13 +110,12 @@ Input → Loader → Processor → Transformer → Output
 - **Loaders**: Read various file formats into a common document structure
 - **Processors**: Extract and enhance content from documents
 - **Transformers**: Convert between formats or chunk documents
-- **Embedding**: Store and search documents in Weaviate
 
 ### Supported Formats
 
 **Input**: PDF, DOCX, PPTX, TXT, PNG/JPG/JPEG, MP4/AVI/MOV, MP3/WAV, YouTube URLs
 
-**Output**: TXT, MD, JSON, CSV, XLSX, Weaviate vectors
+**Output**: TXT, MD, JSON, CSV, XLSX
 
 ## ⚙️ Configuration
 
@@ -114,10 +127,6 @@ OPENAI_API_KEY=your_key_here
 ANTHROPIC_API_KEY=your_key_here
 GOOGLE_API_KEY=your_key_here
 DEEPSEEK_API_KEY=your_key_here
-
-# Weaviate Configuration
-WEAVIATE_URL=http://localhost:8080
-WEAVIATE_API_KEY=your_key_here
 
 # Processing Options
 DEFAULT_CHUNK_SIZE=1000
@@ -174,5 +183,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Built with excellent open-source libraries including:
 - [Docling](https://github.com/DS4SD/docling) - Advanced PDF processing
 - [LangChain](https://github.com/langchain-ai/langchain) - Document chunking and LLM integration
-- [Weaviate](https://weaviate.io/) - Vector database
 - [MarkItDown](https://github.com/microsoft/markitdown) - Office document conversion

@@ -127,6 +127,10 @@ class EnhancedDoclingPDFProcessor(BaseProcessor):
             # JSON export is not available in the current Docling API
             # Instead, we'll create a simple JSON representation of the document
             try:
+                # Extract per-page content by splitting markdown on page boundaries
+                # Docling markdown often has page breaks or section headers we can use
+                page_texts = self._split_content_by_pages(markdown_content, text_content, docling_doc)
+
                 # Create a simple JSON representation
                 json_data = {
                     "metadata": {
@@ -134,19 +138,9 @@ class EnhancedDoclingPDFProcessor(BaseProcessor):
                         "num_pages": len(docling_doc.pages) if hasattr(docling_doc, 'pages') else 0,
                     },
                     "content": text_content,
-                    "pages": []
+                    "pages": page_texts
                 }
-                
-                # Add page information if available
-                if hasattr(docling_doc, 'pages'):
-                    for i, page in enumerate(docling_doc.pages):
-                        page_num = page.page_number if hasattr(page, 'page_number') else i + 1
-                        page_text = page.export_to_text() if hasattr(page, 'export_to_text') else ""
-                        json_data["pages"].append({
-                            "page_number": page_num,
-                            "text": page_text
-                        })
-                
+
                 json_content = json.dumps(json_data, indent=2)
                 self.logger.info(f"  - JSON: {len(json_content)} characters")
             except Exception as e:
@@ -239,13 +233,78 @@ class EnhancedDoclingPDFProcessor(BaseProcessor):
 
     # Helper methods for extracting content from Docling document
 
+    def _split_content_by_pages(self, markdown_content: str, text_content: str, docling_doc: Any) -> List[Dict[str, Any]]:
+        """
+        Split document content into per-page chunks.
+        Uses Docling's internal page structure to extract content per page.
+        """
+        pages = []
+        num_pages = len(docling_doc.pages) if hasattr(docling_doc, 'pages') else 0
+
+        if num_pages == 0:
+            return pages
+
+        # Try to extract per-page content from docling_doc's internal structure
+        if hasattr(docling_doc, 'pages'):
+            for i, page in enumerate(docling_doc.pages):
+                page_num = i + 1
+                page_text = self._extract_page_text_from_docling(page)
+
+                pages.append({
+                    "page_number": page_num,
+                    "text": page_text
+                })
+
+        # If we couldn't extract per-page content, split the full content evenly
+        if not any(p.get("text") for p in pages) and text_content:
+            # Simple heuristic: split content roughly by page count
+            lines = text_content.split('\n')
+            lines_per_page = max(1, len(lines) // num_pages)
+
+            pages = []
+            for i in range(num_pages):
+                start_idx = i * lines_per_page
+                end_idx = start_idx + lines_per_page if i < num_pages - 1 else len(lines)
+                page_text = '\n'.join(lines[start_idx:end_idx])
+                pages.append({
+                    "page_number": i + 1,
+                    "text": page_text
+                })
+
+        return pages
+
     def _extract_page_text_from_docling(self, page: Any) -> str:
-        """Extract text from a Docling page."""
+        """Extract text from a Docling page by iterating over its items/elements."""
         page_content = []
-        if hasattr(page, 'blocks'):
+
+        # Try different approaches to extract page content from Docling
+        # Approach 1: Check for items attribute (common in newer Docling)
+        if hasattr(page, 'items'):
+            for item in page.items:
+                if hasattr(item, 'text') and item.text:
+                    page_content.append(item.text)
+                elif hasattr(item, 'content') and item.content:
+                    page_content.append(str(item.content))
+
+        # Approach 2: Check for children attribute
+        if not page_content and hasattr(page, 'children'):
+            for child in page.children:
+                if hasattr(child, 'text') and child.text:
+                    page_content.append(child.text)
+
+        # Approach 3: Check for body/main_text
+        if not page_content and hasattr(page, 'body'):
+            if hasattr(page.body, 'text'):
+                page_content.append(page.body.text)
+            elif isinstance(page.body, str):
+                page_content.append(page.body)
+
+        # Approach 4: Original blocks approach
+        if not page_content and hasattr(page, 'blocks'):
             for block in page.blocks:
                 if hasattr(block, 'text') and block.text:
                     page_content.append(block.text)
+
         return "\n".join(page_content)
 
     def _extract_tables_from_docling(self, docling_doc: Any) -> List[Dict[str, Any]]:

@@ -202,6 +202,22 @@ except ImportError:
     GEMINI_CLIENT_AVAILABLE = False
     logger.warning("GeminiClient not available.")
 
+# Import and export Kimi client
+try:
+    from .kimi_client import KimiClient
+    KIMI_CLIENT_AVAILABLE = True
+except ImportError:
+    KIMI_CLIENT_AVAILABLE = False
+    logger.warning("KimiClient not available.")
+
+# Import and export Qwen client
+try:
+    from .qwen_client import QwenClient
+    QWEN_CLIENT_AVAILABLE = True
+except ImportError:
+    QWEN_CLIENT_AVAILABLE = False
+    logger.warning("QwenClient not available.")
+
 __all__ = ['OpenAIClient', 'BaseLLMClient']
 
 if ANTHROPIC_CLIENT_AVAILABLE:
@@ -209,3 +225,9 @@ if ANTHROPIC_CLIENT_AVAILABLE:
 
 if GEMINI_CLIENT_AVAILABLE:
     __all__.append('GeminiClient')
+
+if KIMI_CLIENT_AVAILABLE:
+    __all__.append('KimiClient')
+
+if QWEN_CLIENT_AVAILABLE:
+    __all__.append('QwenClient')

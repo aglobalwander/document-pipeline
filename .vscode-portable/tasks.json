@@ -1,0 +1,136 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Python with Conda ds-template",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "--live-stream",
+        "--name",
+        "ds-template",
+        "python",
+        "${file}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": "$python"
+    },
+    {
+      "label": "Run Jupyter Notebook",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "--live-stream",
+        "--name",
+        "ds-template",
+        "jupyter",
+        "notebook",
+        "--notebook-dir=${workspaceFolder}/notebooks"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Run Likert Analysis",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "--live-stream",
+        "--name",
+        "ds-template",
+        "python",
+        "${workspaceFolder}/saved_scripts/main_likert.py"
+      ],
+      "group": "build",
+      "problemMatcher": "$python"
+    },
+    {
+      "label": "Run Open-Ended Analysis",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "--live-stream",
+        "--name",
+        "ds-template",
+        "python",
+        "${workspaceFolder}/saved_scripts/open_ended.py"
+      ],
+      "group": "build",
+      "problemMatcher": "$python"
+    },
+    {
+      "label": "Install Requirements",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "--live-stream",
+        "--name",
+        "ds-template",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "List Conda Packages",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "list",
+        "--name",
+        "ds-template"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Execute Notebook",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "--live-stream",
+        "--name",
+        "ds-template",
+        "jupyter",
+        "nbconvert",
+        "--to",
+        "notebook",
+        "--execute",
+        "${file}",
+        "--output",
+        "${file}"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}

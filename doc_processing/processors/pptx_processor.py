@@ -121,31 +121,17 @@ class MarkItDownPPTXProcessor(BaseProcessor, PipelineComponent):
         """Extract text and speaker notes from PPTX using MarkItDown."""
         try:
             # Import here to avoid dependency issues if not installed
-            from markitdown.pptx import extract_slides_from_pptx
-            
-            self.logger.info(f"Extracting text and notes from PPTX: {pptx_path}")
-            slides = extract_slides_from_pptx(pptx_path)
-            
-            # Format the slides
-            formatted_slides = []
-            all_content = []
-            
-            for i, slide in enumerate(slides):
-                slide_number = i + 1
-                slide_title = slide.get('title', f"Slide {slide_number}")
-                slide_content = slide.get('content', '')
-                slide_notes = slide.get('notes', '')
-                
-                # Format the slide content
-                formatted_content = f"# {slide_title}\n\n{slide_content}"
-                all_content.append(formatted_content)
-                
-                formatted_slides.append({
-                    'slide_number': slide_number,
-                    'title': slide_title,
-                    'content': formatted_content,
-                    'notes': slide_notes
-                })
+            from markitdown import MarkItDown
+
+            self.logger.info(f"Extracting PPTX content via MarkItDown: {pptx_path}")
+            converter = MarkItDown()
+            conversion_result = converter.convert(pptx_path)
+            markdown_content = getattr(conversion_result, 'text_content', '') or ''
+
+            # New MarkItDown API returns a markdown-like text blob. Split into
+            # slide-ish sections by markdown headings when present.
+            formatted_slides = self._split_markdown_into_slides(markdown_content)
+            all_content = [slide['content'] for slide in formatted_slides]
             
             # Update the document
             result = document.copy()
@@ -164,6 +150,56 @@ class MarkItDownPPTXProcessor(BaseProcessor, PipelineComponent):
         except Exception as e:
             self.logger.error(f"Error extracting text from PPTX: {e}")
             return document
+
+    def _split_markdown_into_slides(self, markdown_content: str) -> List[Dict[str, Any]]:
+        """Split markdown-like text into slide sections using heading boundaries."""
+        if not markdown_content.strip():
+            return [{
+                'slide_number': 1,
+                'title': 'Slide 1',
+                'content': '',
+                'notes': ''
+            }]
+
+        lines = markdown_content.splitlines()
+        slides: List[Dict[str, Any]] = []
+        current_lines: List[str] = []
+        current_title = "Slide 1"
+
+        def flush_slide() -> None:
+            if not current_lines and not slides:
+                # Ensure at least one slide if there is content.
+                return
+            slide_number = len(slides) + 1
+            content = "\n".join(current_lines).strip()
+            title = current_title or f"Slide {slide_number}"
+            slides.append({
+                'slide_number': slide_number,
+                'title': title,
+                'content': content,
+                'notes': ''
+            })
+
+        for line in lines:
+            stripped = line.strip()
+            if stripped.startswith("#"):
+                if current_lines:
+                    flush_slide()
+                    current_lines = []
+                current_title = stripped.lstrip("#").strip() or f"Slide {len(slides) + 1}"
+            current_lines.append(line)
+
+        if current_lines:
+            flush_slide()
+
+        if not slides:
+            slides.append({
+                'slide_number': 1,
+                'title': 'Slide 1',
+                'content': markdown_content.strip(),
+                'notes': ''
+            })
+        return slides
 
     def _process_pdf_only(self, document: Dict[str, Any], pptx_path: str) -> Dict[str, Any]:
         """Convert PPTX to PDF and extract text using LibreOffice."""

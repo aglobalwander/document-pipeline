@@ -1,0 +1,81 @@
+{
+  "recommendations": [
+    // Python Core Development
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "ms-python.isort",
+    
+    // Jupyter & Data Science
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+    "ms-toolsai.vscode-jupyter-slideshow",
+    
+    // Data Visualization & Analysis
+    "RandomFractalsInc.vscode-data-preview",
+    "GrapeCity.gc-excelviewer",
+    "mechatroner.rainbow-csv",
+    "janisdd.vscode-edit-csv",
+    
+    // AI & Machine Learning Support
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "Continue.continue",
+    
+    // Documentation & Markdown
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-mermaid",
+    "davidanson.vscode-markdownlint",
+    "njpwerner.autodocstring",
+    
+    // Git & Version Control
+    "eamodio.gitlens",
+    "donjayamanne.githistory",
+    "mhutchie.git-graph",
+    
+    // Code Quality & Testing
+    "littlefoxteam.vscode-python-test-adapter",
+    "hbenl.vscode-test-explorer",
+    "ryanluker.vscode-coverage-gutters",
+    "usernamehw.errorlens",
+    
+    // Productivity Tools
+    "Gruntfuggly.todo-tree",
+    "alefragnani.Bookmarks",
+    "sleistner.vscode-fileutils",
+    "streetsidesoftware.code-spell-checker",
+    
+    // Environment Management
+    "ms-vscode-remote.remote-containers",
+    "ms-azuretools.vscode-docker",
+    "donjayamanne.python-environment-manager",
+    
+    // YAML & Configuration
+    "redhat.vscode-yaml",
+    "tamasfe.even-better-toml",
+    
+    // Database Tools (for SQLite analysis)
+    "alexcvzz.vscode-sqlite",
+    "qwtel.sqlite-viewer",
+    
+    // File Icons & Themes
+    "PKief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    
+    // Code Formatting & Snippets
+    "VisualStudioExptTeam.vscodeintellicode",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "frhtylcn.pythonsnippets"
+  ],
+  
+  "unwantedRecommendations": [
+    // Exclude PHP/Drupal extensions from original config
+    "bmewburn.vscode-intelephense-client",
+    "xdebug.php-debug",
+    "DEVSENSE.phptools-vscode",
+    "felixfbecker.php-pack"
+  ]
+}

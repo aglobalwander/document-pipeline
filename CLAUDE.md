@@ -4,15 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Document Pipeline Overview
 
-The document processing pipeline is a system that processes various document formats (PDF, DOCX, PPTX, images, audio, video) and transforms them into structured outputs (text, markdown, JSON). It can also store documents in a vector database (Weaviate) for search and retrieval.
+The document processing pipeline is a system that processes various document formats (PDF, DOCX, PPTX, images, audio, video) and transforms them into structured outputs (text, markdown, JSON). It focuses on clean extraction/transform so downstream systems (Milvus, Postgres, etc.) can ingest the outputs as needed.
 
-**Cost-Effective Processing Strategy:**
-- **Default**: Enhanced Docling (FREE) - Excellent quality for most PDFs
-- **Fallback**: Docling → Gemini (FREE or cheap)
-- **Optional**: Claude API, GPT-4 (requires API keys, opt-in only)
-- **Interactive**: Claude Code (FREE with subscription) - Use for complex cases
+**Processing Strategy (Scott's Preference):**
+- **Default for LLM tasks**: Claude Code (FREE with subscription) - Interactive, high quality
+- **Default for PDFs**: Enhanced Docling (FREE) - Excellent quality, local OCR
+- **Batch automation**: Gemini API (cheap) - Only when explicitly requested
+- **Other APIs**: Claude API, GPT-4 - Only when explicitly requested
 
-See [CLAUDE_CODE_WORKFLOW.md](docs/CLAUDE_CODE_WORKFLOW.md) for detailed cost-saving strategies.
+**Workflow**: Extract with Docling/MarkItDown → Transform/structure with Claude Code
 
 ## Environment Setup
 
@@ -24,7 +24,6 @@ The Poetry environment has all required packages installed including:
 - anthropic (for optional Claude API integration)
 - google-genai (for optional Gemini API integration)
 - mammoth, markitdown (for DOCX/PPTX processing)
-- weaviate-client (for vector database)
 - langchain, instructor (for LLM integration)
 - pandas, openpyxl (for data export)
 
@@ -49,14 +48,13 @@ poetry run python scripts/document_processing/run_pipeline.py --input_path <path
 **Note about Conda environments:**
 While conda environments are available, they don't have all the required packages:
 - `base` (Python 3.10.14) - Limited packages: openpyxl, pandas, tqdm
-- `ds-template` (Python 3.12.11) - Limited packages: openpyxl, pandas, tqdm, weaviate-client  
+- `ds-template` (Python 3.12.11) - Limited packages: openpyxl, pandas, tqdm  
 - `my-crawler` (Python 3.11.13) - Limited packages: pandas only
 
 The pipeline uses a modular architecture consisting of:
 - **Loaders**: Read files of various formats
 - **Processors**: Extract content from documents 
 - **Transformers**: Convert between formats or chunk the data
-- **Embedding**: Optional integration with Weaviate for vector search
 
 ## Key Command-Line Tools
 
@@ -64,7 +62,7 @@ The pipeline uses a modular architecture consisting of:
 
 ```bash
 # Process a single file with default settings
-python scripts/run_pipeline.py --input_path <path_to_file> --pipeline_type <text|markdown|json|weaviate> --output_format <txt|md|json|csv|xlsx>
+python scripts/run_pipeline.py --input_path <path_to_file> --pipeline_type <text|markdown|json|structured> --output_format <txt|md|json|csv|xlsx>
 
 # Enhanced Docling processor for PDFs (recommended for most cases)
 python scripts/master_docling.py --input_path <path_to_pdf> --output_format <text|markdown|json>
@@ -79,7 +77,7 @@ python scripts/run_pipeline.py --input_path <directory_path> --pipeline_type <ty
 ```bash
 --input_path               # Path to input file or directory
 --output_dir               # Output directory (default: data/output)
---pipeline_type            # Pipeline type: text, markdown, json, weaviate
+--pipeline_type            # Pipeline type: text, markdown, json, structured
 --output_format            # Output format: txt, md, json, csv, xlsx
 --recursive                # Process directories recursively
 ```
@@ -126,13 +124,6 @@ OPENAI_API_KEY=sk-...            # For GPT (optional)
 
 **Note**: By default, the pipeline uses FREE local processing. API keys are only needed when explicitly using paid options.
 
-#### Weaviate Options
-```bash
---collection <name>        # Target Weaviate collection name
---weaviate_url <url>       # Weaviate URL (uses env var if not set)
---weaviate_api_key <key>   # Weaviate API key (uses env var if not set)
-```
-
 ## Pipeline Architecture
 
 The pipeline is built around the following components:
@@ -140,7 +131,6 @@ The pipeline is built around the following components:
 1. **DocumentPipeline** (`doc_processing/document_pipeline.py`) - Core orchestration class that:
    - Determines appropriate loaders and processors based on file type
    - Constructs the processing pipeline
-   - Handles Weaviate integration when enabled
 
 2. **BaseLoader** implementations:
    - PDFLoader, DocxLoader, TextLoader, ImageLoader, VideoLoader, AudioLoader, YouTubeLoader
@@ -169,7 +159,7 @@ poetry add package-name
 
 ### Project Structure
 - `doc_processing/` - Core library modules
-  - `embedding/` - Weaviate integration
+  - `embedding/` - Shared loader/processor/transformer primitives
   - `loaders/` - File loading components
   - `processors/` - Content extraction components
   - `transformers/` - Format conversion components
@@ -197,29 +187,218 @@ poetry add package-name
    - `text`: Raw text extraction 
    - `markdown`: Formatted markdown output
    - `json`: Structured JSON output
-   - `weaviate`: Vector database storage and retrieval
+   - `structured`: Instructor-based extraction into custom schemas
 
 4. **LLM Integration**: Can leverage OpenAI, Anthropic (Claude), Gemini, or DeepSeek models for enhanced processing
    - **Claude Code Integration** (FREE): Use Claude Code interactively to review/improve outputs
    - **API Integration** (Paid, opt-in): Automated processing with Claude, GPT-4, or Gemini APIs
 
-## Cost-Effective Processing Strategies
+## Using Pipeline from Other Repos
 
-### Default Workflow (Zero Cost)
+### Option A: Process files from anywhere (works now)
+The pipeline accepts any absolute path - process files from any repo:
+
 ```bash
-# Step 1: Process with enhanced_docling (FREE)
-poetry run python scripts/document_processing/master_docling.py --input_path document.pdf
+# Process a file from another repo
+cd ~/Development/master_projects/pipeline-documents
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path ~/Development/other-repo/docs/document.docx \
+  --output_dir ~/Development/other-repo/data/processed \
+  --pipeline_type structured
 
-# Step 2: Review output
-cat data/output/markdown/document_docling.md
-
-# Step 3 (if needed): Ask Claude Code for help
-# Open output file and ask: "Can you clean up these OCR errors?"
+# Or use Claude Code interactively
+# "Process this file: ~/Development/etl_drupal/data/calendar.docx and output structured JSON"
 ```
 
-### When to Use Paid APIs
-- **Batch processing**: Many documents needing automation → Use Gemini (cheapest)
-- **Complex documents**: High accuracy needed → Use Claude API (best quality/cost)
-- **Manual review**: Complex interpretation → Use Claude Code (FREE interactive)
+### Option B: Install as package (future)
+TODO: Make `doc_processing` pip-installable so other repos can import directly:
+```python
+# Future usage in other repos
+from doc_processing import DocumentPipeline
+pipeline = DocumentPipeline()
+result = pipeline.process("/path/to/any/file.docx")
+```
 
-See [docs/CLAUDE_CODE_WORKFLOW.md](docs/CLAUDE_CODE_WORKFLOW.md) for detailed examples and workflows.
+## Typical Workflow
+
+1. **Extract**: Use Docling (PDF) or MarkItDown (DOCX/PPTX) to get raw content
+2. **Review**: Check extracted markdown/text for quality
+3. **Transform**: Ask Claude Code to structure the data (normalize dates, categorize, etc.)
+4. **Output**: JSON for flexibility, CSV for spreadsheets, or direct to downstream system
+# Template for CLAUDE.md - Global API Access Section
+
+**Copy this section into any repo's CLAUDE.md file to document available APIs.**
+
+---
+
+## Global API Access
+
+This repo has access to shared SAS APIs managed centrally in `~/.config/api-keys/`.
+
+**Full API List**: See `~/.config/api-keys/API_REGISTRY.md`
+
+### SharePoint (Microsoft Graph API)
+
+**Access**: Employee Directory, Stipend Catalog, Calendar, 84 lists across 4 sites
+
+**Quick Start**:
+```bash
+# Install package (once per virtual environment)
+pip install -e ~/.local/share/sas-tools/sas-sharepoint
+```
+
+**Usage**:
+```python
+from sas_sharepoint import get_employee_client, get_stipend_client
+
+# Get 696 employee records
+employees = get_employee_client().get_all_employees()
+
+# Get by campus
+puxi_staff = get_employee_client().get_employees_by_campus('Puxi')
+
+# Get stipend positions
+positions = get_stipend_client().get_all_positions()
+
+# Access any SharePoint list
+from sas_sharepoint import SharePointClient
+client = SharePointClient(site_name='EmployeePortal')
+calendar = client.get_list_items_fields('School Calendar Events')
+```
+
+**Documentation**: `~/.config/api-keys/sharepoint/README.md`
+
+**Sites Available**:
+- EmployeePortal: Employee directory, stipends, calendar
+- HR: HR documents
+- HRTech: Onboarding/offboarding
+- SasEdPrograms: Educational programs
+
+**Credentials**: Automatically loaded from `~/.config/api-keys/.env.master`
+**Expires**: 2028-01-07
+
+---
+
+### Other APIs
+
+**LLM Services**:
+```python
+# Auto-load all API keys
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.home() / '.config' / 'api-keys'))
+from load_keys import load_api_keys
+load_api_keys()
+
+# Keys now available in os.environ
+import os
+openai_key = os.environ['OPENAI_API_KEY']
+anthropic_key = os.environ['ANTHROPIC_API_KEY']
+```
+
+**Available APIs** (loaded from `.env.master`):
+- OpenAI, Anthropic, DeepSeek, Perplexity, Cohere, Gemini
+- ElevenLabs (TTS), Deepgram (STT)
+- SerpAPI, Tavily (Search)
+- GitHub, HuggingFace
+- AWS, Supabase
+- See full list: `~/.config/api-keys/API_REGISTRY.md`
+
+---
+
+### Adding API Access to This Repo
+
+**For Python projects**:
+
+**Method 1: Use installable packages** (recommended for SharePoint, etc.)
+```bash
+pip install -e ~/.local/share/sas-tools/sas-sharepoint
+```
+
+**Method 2: Auto-load all keys**
+```python
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.home() / '.config' / 'api-keys'))
+from load_keys import load_api_keys
+load_api_keys()  # All keys now in os.environ
+```
+
+**Method 3: Load specific keys**
+```python
+from load_keys import get_api_key
+api_key = get_api_key('OPENAI_API_KEY')
+```
+
+**For Node.js projects**:
+```javascript
+require('dotenv').config({
+    path: require('os').homedir() + '/.config/api-keys/.env.master'
+})
+```
+
+**For Shell scripts**:
+```bash
+source ~/.config/api-keys/.env.master
+```
+
+---
+
+## Example Use Cases in This Repo
+
+### Employee Data Sync
+```python
+from sas_sharepoint import get_employee_client
+
+client = get_employee_client()
+employees = client.get_all_employees()
+
+# Use in your application
+for emp in employees:
+    process_employee(emp)
+```
+
+### Generate Rosters
+```python
+from sas_sharepoint import get_employee_client
+
+client = get_employee_client()
+pxes_teachers = client.get_employees_by_division('PXES')
+
+# Export for event
+with open('roster.csv', 'w') as f:
+    for teacher in pxes_teachers:
+        f.write(f"{teacher['firstName']},{teacher['lastName']},{teacher['email']}\n")
+```
+
+### Calendar Integration
+```python
+from sas_sharepoint import SharePointClient
+
+client = SharePointClient(site_name='EmployeePortal')
+events = client.get_all_list_items_fields('School Calendar Events')
+
+# Sync to local system
+for event in events:
+    sync_event(event)
+```
+
+---
+
+## Credentials
+
+**Never commit API keys to Git!**
+
+All credentials managed in: `~/.config/api-keys/.env.master`
+- File is chmod 600 (secure)
+- Automatically backed up before changes
+- Shared across all repos
+
+To add new keys: Edit `~/.config/api-keys/.env.master` and update `API_REGISTRY.md`
+
+---
+
+**Resources**:
+- **API Registry**: `~/.config/api-keys/API_REGISTRY.md` - Complete list
+- **SharePoint Docs**: `~/.config/api-keys/sharepoint/README.md`
+- **Package Docs**: `~/.local/share/sas-tools/sas-sharepoint/README.md`

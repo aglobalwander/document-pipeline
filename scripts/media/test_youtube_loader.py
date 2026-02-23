@@ -10,11 +10,10 @@ from doc_processing.document_pipeline import DocumentPipeline
 youtube_url = "https://www.youtube.com/watch?v=BPj_yt_5d_w"
 
 # Create a DocumentPipeline instance
-# You might need to adjust the config based on your setup (e.g., Weaviate enabled/disabled)
+# You might need to adjust the config based on your setup.
 # For a basic test, we can start with a minimal config.
 pipeline_config = {
     'pipeline_type': 'text', # Or another type that includes VideoLoader and chunking
-    'weaviate_enabled': False, # Set to True if you have Weaviate running and configured
     'video_loader_config': {}, # Add any specific video loader config here
     'chunker_config': {}, # Add any specific chunker config here
     # Add other necessary configurations for the pipeline components

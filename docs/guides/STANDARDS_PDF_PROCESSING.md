@@ -177,16 +177,6 @@ python scripts/run_pipeline.py \
     --output_format json
 ```
 
-### Ingesting to Weaviate for Search
-```python
-# Create searchable standards database
-python scripts/run_pipeline.py \
-    --input_path data/output/text/standards/ \
-    --pipeline_type weaviate \
-    --collection StandardsFrameworks \
-    --recursive
-```
-
 ## Tips for Standards Documents
 
 ### 1. Handling Multi-Column Layouts
@@ -287,12 +277,8 @@ python scripts/run_pipeline.py \
     --pipeline_type json \
     --recursive
 
-# 5. Ingest to Weaviate
-python scripts/run_pipeline.py \
-    --input_path data/output/json/standards/ngss/ \
-    --pipeline_type weaviate \
-    --collection NGSS_Standards \
-    --recursive
+# 5. Hand JSON off to your search/indexing pipeline (Milvus, Elasticsearch, etc.)
+# e.g., python ../knowledge-management/tools/index_ngss.py data/output/json/standards/ngss/
 ```
 
-This workflow gives you searchable, structured NGSS standards!
+This workflow gives you searchable, structured NGSS standards ready for downstream ingestion!

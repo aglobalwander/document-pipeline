@@ -1,0 +1,17 @@
+version: '1.0'
+collections:
+- name: marzano
+  source_path: /Users/scottwilliams/Library/CloudStorage/OneDrive-ShanghaiAmericanSchool/2_Models-Frameworks-Research/Marzano
+  output_path: /Users/scottwilliams/Development/master_projects/pipeline-documents/data/output/collections/marzano
+  manifest_path: /Users/scottwilliams/Development/master_projects/pipeline-documents/data/output/collections/marzano/manifest.yaml
+  status: complete
+  processing_date: '2026-02-12'
+  files_processed: 48
+  files_failed: 0
+  files_total: 91
+  ready_for_ingestion: false
+  processable_by_type:
+    pdf: 79
+    docx: 11
+    pptx: 1
+  updated_at: '2026-02-12T01:50:37.380578+00:00'

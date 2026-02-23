@@ -1,0 +1,119 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File (conda ds-template)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "python": "/opt/homebrew/Caskroom/mambaforge/base/envs/ds-template/bin/python",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "CONDA_DEFAULT_ENV": "ds-template"
+      }
+    },
+    {
+      "name": "Conda Run: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "conda",
+      "args": ["run", "--live-stream", "--name", "ds-template", "python", "${file}"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Likert Analysis (conda)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/saved_scripts/main_likert.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "python": "/opt/homebrew/Caskroom/mambaforge/base/envs/ds-template/bin/python",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "CONDA_DEFAULT_ENV": "ds-template"
+      }
+    },
+    {
+      "name": "Python: Open-Ended Analysis (conda)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/saved_scripts/open_ended.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "python": "/opt/homebrew/Caskroom/mambaforge/base/envs/ds-template/bin/python",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "CONDA_DEFAULT_ENV": "ds-template"
+      }
+    },
+    {
+      "name": "Python: Coaching Survey Analysis",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "coaching_survey_analysis.run_analysis",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "Python: Module",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "enter-your-module-name",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Debug Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "-v",
+        "--tb=short",
+        "${file}"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Attach to Remote",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "."
+        }
+      ]
+    },
+    {
+      "name": "Jupyter: Debug Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "jupyter": true
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Analysis Pipeline",
+      "configurations": [
+        "Python: Likert Analysis",
+        "Python: Open-Ended Analysis"
+      ],
+      "stopAll": true
+    }
+  ]
+}

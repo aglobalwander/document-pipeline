@@ -12,6 +12,17 @@ Migrate ~5,100 curated educational documents from OneDrive research collection i
 
 ---
 
+## Decisions
+
+| Decision | Choice | Rationale |
+|----------|--------|-----------|
+| **Collection** | `educational_resources` (new) | Separate from `knowledge_main` literature; different retrieval patterns, easier rollback |
+| **ID format** | Include path hash | Prevent same-named files across directories from colliding |
+| **observed_at** | File mtime or processing timestamp | More useful than fixed plan date |
+| **Staging** | Copy to local `data/staging/` before processing | OneDrive sync can change files mid-run |
+
+---
+
 ## Directory Inventory
 
 | Priority | Directory | Files | Content Type |
@@ -54,12 +65,18 @@ Migrate ~5,100 curated educational documents from OneDrive research collection i
 
 For each directory the user prioritizes:
 
-1. **Inventory** - List files, identify formats (PDF, DOCX, PPTX)
-2. **Categorize** - Determine if Drupal-bound or Knowledge Hub only
-3. **Process** - Run through document pipeline (enhanced_docling for PDFs)
-4. **Tag** - Extract/assign topic metadata, source organization
-5. **Chunk** - Split into searchable segments for Milvus
-6. **Ingest** - Load into Knowledge Hub collection
+1. **Stage** - Copy from OneDrive to `data/staging/<dirname>/` (freeze for processing)
+2. **Inventory** - List files, identify formats, generate manifest CSV
+3. **Categorize** - Determine if Drupal-bound or Knowledge Hub only
+4. **Process** - Run through document pipeline by format:
+   - PDF: `EnhancedDoclingPDFProcessor` (FREE, local OCR)
+   - DOCX: `MammothDOCXProcessor` (extracts text + structure)
+   - PPTX: `MarkItDownPPTXProcessor` (slide-by-slide extraction)
+   - MD/TXT: Direct read
+5. **Tag** - Extract/assign topic metadata, source organization
+6. **Chunk** - Split into searchable segments (500-1000 tokens, 100 overlap)
+7. **Validate** - Run acceptance checks before ingest
+8. **Ingest** - Load into `educational_resources` collection
 
 ### Output Destinations
 
@@ -77,19 +94,25 @@ For each directory the user prioritizes:
 
 ```json
 {
-  "id": "edu:<category>:<source>:<filename>:chunk_<n>",
+  "id": "edu:<category>:<path_hash_8>:<filename_normalized>:chunk_<n>",
   "text": "extracted content...",
   "ns": "edu:<category>",
   "source_id": "filename.pdf",
-  "source_path": "relative/path/to/file",
-  "source_org": "Project Zero",
-  "topics": ["thinking_routines", "visible_thinking"],
-  "title": "Document Title",
+  "source_path": "Collaboration-Facilitation/liberating_structures/25-10-Crowd-Sourcing.pdf",
+  "source_path_hash": "a1b2c3d4",
+  "source_org": "Liberating Structures",
+  "topics": ["facilitation", "crowd_sourcing", "protocols"],
+  "title": "25/10 Crowd Sourcing",
   "chunk_index": 0,
   "doc_type": "educational_resource",
-  "observed_at": "2026-01-04"
+  "observed_at": "2024-03-15T10:30:00Z",
+  "file_mtime": "2023-11-20T14:22:00Z"
 }
 ```
+
+**ID format**: `edu:collab:a1b2c3d4:25_10_crowd_sourcing:chunk_0`
+- `path_hash_8`: First 8 chars of SHA256(source_path) - prevents collisions
+- `filename_normalized`: Lowercase, spaces→underscores, special chars removed
 
 ---
 

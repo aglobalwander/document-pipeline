@@ -31,24 +31,15 @@ from doc_processing.loaders.video_loader import VideoLoader
 class DocumentPipeline:
     """Document processing pipeline."""
 
-    def __init__(self, config: Optional[Dict[str, Any]] = None, weaviate_client: Optional[Any] = None):
+    def __init__(self, config: Optional[Dict[str, Any]] = None):
         """Initialize document pipeline.
 
         Args:
             config: Configuration options
-            weaviate_client: Optional pre-initialized Weaviate client instance from weaviate_layer.client
         """
         self.settings = get_settings()
         self.config = config or {}
         self.logger = logging.getLogger(__name__)
-
-        self.weaviate_client = weaviate_client
-        # weaviate_enabled is true if a client is provided OR if the config explicitly enables it (and we expect a client to be provided externally in that case)
-        self.weaviate_enabled = self.weaviate_client is not None or self.config.get('weaviate_enabled', False)
-
-        if self.weaviate_enabled and self.weaviate_client is None:
-            # If enabled via config but no client provided, raise an error
-            raise ValueError("Weaviate is enabled in configuration but no client instance was provided to the pipeline.")
 
         # Create directories if they don't exist
         ensure_directories_exist()
@@ -137,14 +128,6 @@ class DocumentPipeline:
                  # Decide whether to raise error or proceed without extractor
              self._pipeline_component_definitions.append({'class': InstructorExtractor, 'config': instructor_config})
              self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
-        elif pipeline_type == 'weaviate':
-            # For Weaviate ingestion, the processing steps depend on the input file type.
-            # The specific processor (PDF, DOCX, PPTX, etc.) will be added in process_document.
-            # Chunking is always needed before Weaviate ingestion.
-            self.logger.info("Configuring 'weaviate' pipeline: Processor (determined by input type) -> LangChainChunker")
-            self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
-            pass # Keep pass for correct indentation
-
         # Add elif blocks for other pipeline types (e.g., 'image', 'video', 'audio')
         # These might involve processors like ImageProcessor, VideoToChunks, AudioTranscription
         # elif pipeline_type == 'image':
@@ -292,23 +275,6 @@ class DocumentPipeline:
              merged_metadata.update(processed_document.get('metadata', {}))
              processed_document['metadata'] = merged_metadata
 
-        # Handle Weaviate ingestion if enabled and chunks are present
-        if self.weaviate_enabled and 'chunks' in processed_document:
-             self._upload_to_weaviate(processed_document)
-
-        # Clean up temporary PDF file if it was created during PPTX processing (only for hybrid strategy, which is now removed)
-        # This cleanup logic is no longer needed with MarkItDownPPTXProcessor
-        # if processed_document.get('metadata', {}).get('filetype') == 'pptx' and \
-        #    processed_document.get('metadata', {}).get('pdf_path'):
-        #     temp_pdf_path = Path(processed_document['metadata']['pdf_path'])
-        #     try:
-        #         if temp_pdf_path.exists():
-        #             temp_pdf_path.unlink()
-        #             self.logger.info(f"Cleaned up temporary PDF file: {temp_pdf_path}")
-        #     except Exception as e:
-        #         self.logger.error(f"Error cleaning up temporary PDF file {temp_pdf_path}: {e}")
-
-
         # The return type should be Dict[str, Any] for a single processed document
         return processed_document
 
@@ -331,115 +297,3 @@ class DocumentPipeline:
             except Exception as exc:  # noqa: BLE001
                 self.logger.error(f"Error processing {fp}: {exc}")
         return results
-
-    # -------------------------------------------------------------------------
-    # Weaviate helpers
-    # -------------------------------------------------------------------------
-
-    def _upload_to_weaviate(self, document: Dict[str, Any]) -> None:
-        """Upload a processed document (and its chunks) to Weaviate."""
-        if not self.weaviate_enabled:
-            self.logger.debug("Weaviate not enabled, skipping upload.")
-            return
-
-        # Get the target collection name from the pipeline configuration
-        collection_name = self.config.get('collection_name')
-        if not collection_name:
-            self.logger.error("Weaviate upload failed: 'collection_name' not found in pipeline configuration.")
-            # Optionally add the error to the document dict
-            document['error'] = document.get('error', '') + " Weaviate upload failed: Missing collection name in config."
-            return
-
-        try:
-            # Get the specified collection for ingesting chunks
-            chunk_collection = self.weaviate_client.collections.get(collection_name)
-            self.logger.info(f"Targeting Weaviate collection: {collection_name}")
-        except Exception as e:
-            self.logger.error(f"Failed to get Weaviate collection '{collection_name}': {e}")
-            document['error'] = document.get('error', '') + f" Weaviate upload failed: Cannot access collection '{collection_name}'."
-            return
-
-        # We will ingest chunks into the specified collection.
-        # The document-level metadata might be implicitly linked via document_id in chunks,
-        # or the user schema might handle it differently. Removing direct doc insertion.
-        doc_uuid = document.get('id', str(uuid.uuid4())) # Still need a document ID for linking chunks
-
-        chunks = document.get('chunks', [])
-        if not chunks:
-            self.logger.warning(f"No chunks found in document {doc_uuid} to upload to Weaviate collection '{collection_name}'.")
-            return
-
-        uploaded_count = 0
-        try:
-            with chunk_collection.batch.dynamic() as batch:
-                for idx, ch in enumerate(chunks):
-                    # Use chunk_index from data if available, otherwise use loop index
-                    chunk_index = ch.get('chunk_index', idx)
-                    chunk_text = ch.get('content', ch.get('text')) # Try 'content' then 'text'
-
-                    if not chunk_text:
-                         self.logger.warning(f"Skipping chunk {chunk_index} for document {doc_uuid} due to missing text content.")
-                         continue
-
-                    ch_uuid = str(uuid.uuid4()) # Generate UUID for each chunk object
-                    # Ensure properties match common chunk schemas or user needs to adapt their schema
-                    ch_props = {
-                        'text': chunk_text,
-                        'chunk_index': chunk_index,
-                        'document_id': doc_uuid, # Link back to the conceptual document
-                        # Add other relevant metadata from chunk if needed, e.g., ch.get('metadata')
-                    }
-                    batch.add_object(properties=ch_props, uuid=ch_uuid)
-                    uploaded_count += 1
-            # Check batch results if needed (omitted for brevity)
-            self.logger.info(f"Successfully uploaded {uploaded_count} chunks for document '{doc_uuid}' to Weaviate collection '{collection_name}'.")
-        except Exception as e:
-             self.logger.error(f"Error during Weaviate batch upload to collection '{collection_name}' for document {doc_uuid}: {e}")
-             document['error'] = document.get('error', '') + f" Weaviate batch upload failed for collection '{collection_name}'."
-
-    # -------------------------------------------------------------------------
-    # Query helpers
-    # -------------------------------------------------------------------------
-
-    def query_similar_documents(self, query_text: str, limit: int = 5) -> List[Dict[str, Any]]:
-        """Return documents similar to the query text."""
-        if not self.weaviate_enabled:
-            raise ValueError("Weaviate is not enabled in this pipeline")
-        collection = self.weaviate_client.collections.get("KnowledgeItem")
-        response = collection.query.near_text(
-            query=query_text,
-            limit=limit,
-            return_properties=['title', 'body', 'source', 'url', 'summary', 'created_at', 'chunk_index'], # Removed 'source_type'
-            return_metadata=["distance"] # Request distance metadata
-            # Removed the invalid 'vector' parameter
-        )
-        return [
-            {'uuid': obj.uuid, 'distance': obj.metadata.distance, 'properties': obj.properties} # Access distance via metadata
-            for obj in response.objects
-        ]
-
-    def query_similar_chunks(self, query_text: str, limit: int = 10) -> List[Dict[str, Any]]:
-        """Return text chunks similar to the query text."""
-        if not self.weaviate_enabled:
-            raise ValueError("Weaviate is not enabled in this pipeline")
-        collection = self.weaviate_client.collections.get("KnowledgeMain")
-        response = collection.query.near_text(
-            query=query_text,
-            limit=limit,
-            return_properties=['text', 'chunk_index', 'filename', 'tags', 'document_id'],
-            return_metadata=["distance"], # Use return_metadata for distance
-            # Removed the invalid 'vector' parameter
-        )
-        return [
-            {
-                'uuid': obj.uuid,
-                'distance': obj.metadata.distance, # Access distance via metadata
-                'properties': obj.properties,
-            }
-            for obj in response.objects
-        ]
-
-    def get_document_context(self, query_text: str, context_chunks: int = 3) -> str:
-        """Concatenate top-N matching chunks into a context string."""
-        chunks = self.query_similar_chunks(query_text, limit=context_chunks)
-        return "\n\n".join(ch['properties'].get('text', '') for ch in chunks)

@@ -1,0 +1,41 @@
+{
+  "environments": {
+    "drupal-php": {
+      "type": "system",
+      "language": "php",
+      "executable": "/opt/homebrew/bin/php",
+      "version": "8.4",
+      "use_for": ["*.php", "*.module", "*.inc", "*.theme"]
+    },
+    "conda-base": {
+      "type": "conda",
+      "language": "python",
+      "name": "base",
+      "version": "3.10.14",
+      "use_for": ["scripts/*.py", "migration/*.py"]
+    },
+    "conda-ds-template": {
+      "type": "conda",
+      "language": "python", 
+      "name": "ds-template",
+      "version": "3.12.11",
+      "use_for": ["analysis/*.py", "data-science/*.py"]
+    },
+    "conda-my-crawler": {
+      "type": "conda",
+      "language": "python",
+      "name": "my-crawler",
+      "version": "3.11.13",
+      "use_for": ["crawlers/*.py", "scrapers/*.py"]
+    },
+    "micromamba-drupal": {
+      "type": "micromamba",
+      "language": "python",
+      "path": "/Users/scottwilliams/micromamba/envs/drupal",
+      "use_for": ["*.py"]
+    }
+  },
+  "auto_detect": true,
+  "default_python": "micromamba-drupal",
+  "default_php": "drupal-php"
+}

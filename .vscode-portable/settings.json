@@ -1,0 +1,196 @@
+{
+  // Python & Data Science Environment - Using conda ds-template
+  "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/mambaforge/base/envs/ds-template/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.condaPath": "/opt/homebrew/Caskroom/mambaforge/base/bin/conda",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=120", "--ignore=E203,W503"],
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "120"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+
+  // Jupyter Notebook Settings
+  "jupyter.askForKernelRestart": false,
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "notebook.lineNumbers": "on",
+  "notebook.output.textLineLimit": 50,
+
+  // Data Science Specific
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "python.dataScience.askForKernelRestart": false,
+  "python.dataScience.jupyterServerType": "local",
+
+  // Editor Configuration for Data Analysis
+  "editor.fontSize": 13,
+  "editor.fontFamily": "'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+  "editor.minimap.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.suggestSelection": "first",
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.renderWhitespace": "trailing",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  // File Associations
+  "files.associations": {
+    "*.csv": "csv",
+    "*.ipynb": "jupyter",
+    "*.md": "markdown",
+    "*.yaml": "yaml",
+    "*.yml": "yaml",
+    "requirements*.txt": "pip-requirements"
+  },
+
+  // Files to Exclude from Explorer
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.ipynb_checkpoints": true,
+    "**/node_modules": true,
+    "**/.venv": false,
+    "**/.env": false
+  },
+
+  // Search Exclusions
+  "search.exclude": {
+    "**/archive": true,
+    "**/backups": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/node_modules": true,
+    "data/output/**": true,
+    "data/processed/**": true
+  },
+
+  // Terminal Configuration
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "'Cascadia Code', 'Fira Code', monospace",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}",
+    "CONDA_DEFAULT_ENV": "ds-template"
+  },
+  "terminal.integrated.profiles.osx": {
+    "conda-ds-template": {
+      "path": "/bin/zsh",
+      "args": ["-l"],
+      "env": {
+        "CONDA_DEFAULT_ENV": "ds-template"
+      }
+    }
+  },
+
+  // Git Configuration
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.codeLens.enabled": false,
+
+  // CSV Preview Settings
+  "csv-preview.separator": ",",
+  "csv-preview.resizeColumns": "all",
+  "csv-preview.capitalizeHeaders": true,
+  "rainbow_csv.enable_tooltip": true,
+
+  // Markdown Settings
+  "markdown.preview.fontSize": 14,
+  "markdown.preview.lineHeight": 1.6,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    }
+  },
+
+  // Python Docstring
+  "autoDocstring.docstringFormat": "numpy",
+  "autoDocstring.includeExtendedSummary": true,
+  "autoDocstring.includeName": false,
+  "autoDocstring.startOnNewLine": true,
+
+  // Error Lens for Better Debugging
+  "errorLens.enabled": true,
+  "errorLens.fontSize": "12",
+  "errorLens.margin": "20px",
+  "errorLens.delay": 500,
+
+  // TODO Tree for Task Management
+  "todo-tree.tree.showScanModeButton": false,
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "alert",
+    "type": "text-and-comment",
+    "foreground": "#ff0000",
+    "background": "#ffffff",
+    "opacity": 50,
+    "iconColour": "#ff0000"
+  },
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "NOTE",
+    "HACK",
+    "WARNING",
+    "OPTIMIZE",
+    "REFACTOR"
+  ],
+
+  // AI Assistant Settings (if using)
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true,
+    "python": true
+  },
+
+  // Project-Specific Settings
+  "python.envFile": "${workspaceFolder}/.env",
+  "jupyter.notebookFileRoot": "${workspaceFolder}/notebooks",
+  
+  // Custom File Nesting
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.py": "${capture}.log, ${capture}_test.py, test_${capture}.py",
+    "*.ipynb": "${capture}.html, ${capture}.pdf, ${capture}_output.csv"
+  },
+
+  // Workspace-specific Python paths
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/coaching_survey_analysis/src",
+    "${workspaceFolder}/survey_analysis_framework",
+    "${workspaceFolder}/saved_scripts"
+  ],
+
+  // Better IntelliSense for Data Science
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+
+  // Output and Debug Console
+  "debug.console.fontSize": 13,
+  "debug.console.fontFamily": "'Cascadia Code', monospace",
+  "output.smartScroll.enabled": true
+}

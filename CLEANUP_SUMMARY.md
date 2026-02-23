@@ -15,7 +15,7 @@ Created organized structure:
 scripts/
 ├── pdf_processing/        (9 scripts)
 ├── document_processing/   (6 scripts)
-├── weaviate/             (9 scripts + 2 READMEs)
+├── vector_db/            (legacy scripts removed after Milvus migration)
 ├── content_processing/    (4 scripts)
 ├── standards/            (9 scripts + README)
 ├── standards_org/        (8 scripts)
@@ -38,7 +38,7 @@ scripts/
 ## Script Count by Category
 - PDF Processing: 9 scripts
 - Document Processing: 6 scripts
-- Weaviate Operations: 9 scripts
+- Vector DB Operations: 9 scripts (legacy, removed)
 - Content Processing: 4 scripts
 - Standards Extraction: 9 scripts
 - Standards Organization: 8 scripts

@@ -26,16 +26,8 @@
    - run_pipeline.py
    - test_enhanced_docling.py
 
-4. **Weaviate/Database Operations**
-   - check_weaviate_api.py
-   - delete_adaptive_schools_collection.py
-   - direct_ingest_adaptive_school.py
-   - ingest_adaptive_school.py
-   - query_adaptive_schools.py
-   - setup_weaviate_mcp.py
-   - verify_adaptive_schools_collection.py
-   - verify_weaviate_connection.py
-   - weaviate_operations.py
+4. **Vector Database Operations (legacy)**
+   - All former ingestion/query scripts were archived once the project migrated fully to Milvus.
 
 5. **Content Splitting/Organization**
    - split_by_headings.py
@@ -70,7 +62,7 @@
 scripts/
 ├── pdf_processing/
 ├── document_processing/
-├── weaviate/
+├── vector_db/          (legacy scripts archived)
 ├── content_processing/
 ├── standards/           (already exists)
 ├── standards_org/       (organization scripts)

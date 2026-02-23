@@ -3,7 +3,7 @@
 Flexible Script for Running Document and Media Processing Pipelines
 
 Allows processing single files or directories/URLs with various configurations
-and uploading results to Weaviate or saving to files.
+and saving results to files.
 """
 
 import os
@@ -28,9 +28,6 @@ from doc_processing.document_pipeline import DocumentPipeline
 from doc_processing.config import get_settings, ensure_directories_exist
 
 # Import Weaviate client getter and collection management function
-from weaviate_layer.client import get_weaviate_client
-from weaviate_layer.collections import ensure_collections_exist # Import ensure_collections_exist
-
 # --- Logging Setup ---
 logging.basicConfig(
     level=logging.INFO,
@@ -54,7 +51,7 @@ def parse_arguments():
     parser.add_argument('--output_dir', type=str, default='data/output',
                         help='Base directory to save output files (defaults to data/output).')
     parser.add_argument('--pipeline_type', type=str, required=True,
-                        choices=['text', 'markdown', 'json', 'hybrid', 'weaviate'],
+                        choices=['text', 'markdown', 'json', 'structured'],
                         help='Type of pipeline configuration to run.')
     parser.add_argument('--recursive', action='store_true',
                         help='Process directories recursively.')
@@ -133,17 +130,6 @@ def parse_arguments():
                         help='JSON string of parameters for the Deepgram API (e.g., \'{"diarize": true}\').')
     # Add arguments for VideoToChunks if needed (e.g., --video_split_strategy)
 
-    # Weaviate Configuration (only relevant for 'weaviate' pipeline_type)
-    parser.add_argument('--weaviate_class_prefix', type=str, default='Document',
-                        help='Prefix for Weaviate class names (e.g., KnowledgeItem, KnowledgeMain).')
-    parser.add_argument('--weaviate_url', type=str,
-                        help='Weaviate URL (uses environment variable if not set).')
-    parser.add_argument('--weaviate_api_key', type=str,
-                        help='Weaviate API key (uses environment variable if not set).')
-    parser.add_argument('--collection', type=str,
-                        help='Target Weaviate collection name for ingestion.')
-
-
     return parser.parse_args()
 
 # --- Helper to check if input is a URL ---
@@ -201,28 +187,6 @@ def main():
 
     logger.info(f"Found {len(inputs_to_process)} input(s) to process.")
 
-    # --- Initialize Weaviate client if needed ---
-    weaviate_client = None
-    if args.pipeline_type == 'weaviate':
-        try:
-            # Pass Weaviate config from args if provided, otherwise rely on env vars/settings
-            weaviate_config = {}
-            if args.weaviate_url:
-                weaviate_config['weaviate_url'] = args.weaviate_url
-            if args.weaviate_api_key:
-                weaviate_config['weaviate_api_key'] = args.weaviate_api_key
-
-            weaviate_client = get_weaviate_client(config=weaviate_config)
-            logger.info("Successfully connected to Weaviate.")
-
-            # Ensure the target collection exists using the new logic
-            ensure_collections_exist(collection_name=args.collection)
-            logger.info(f"Ensured collection '{args.collection}' exists.")
-
-        except Exception as e:
-            logger.error(f"Failed to connect to Weaviate or ensure collection: {e}")
-            sys.exit(1)
-
     # --- Process Inputs ---
     all_results: List[Dict[str, Any]] = []
     for input_item in inputs_to_process:
@@ -241,10 +205,6 @@ def main():
             'image_backend': args.image_backend,
             'deepgram_params': args.deepgram_params,
             # Add other relevant args to config as needed by components
-            'weaviate_enabled': args.pipeline_type == 'weaviate', # Explicitly enable weaviate in config
-            'weaviate_class_prefix': args.weaviate_class_prefix,
-            'collection_name': args.collection, # Pass the collection name from CLI args
-            
             # Add new configuration options
             'excel_template': args.excel_template,
             'excel_template_dir': args.excel_template_dir,
@@ -288,35 +248,33 @@ def main():
             pipeline_config['pdf_processor_strategy'] = args.pdf_processor_strategy
 
         # Instantiate DocumentPipeline for each input (to ensure a clean pipeline per document/URL)
-        pipeline = DocumentPipeline(config=pipeline_config, weaviate_client=weaviate_client)
+        pipeline = DocumentPipeline(config=pipeline_config)
 
         try:
             # process_document returns a single dictionary
             processed_document = pipeline.process_document(input_item)
             all_results.append(processed_document) # Append the single dict to results
 
-            # --- Handle Output (Save to file if not Weaviate) ---
-            if args.pipeline_type != 'weaviate':
-                # Use the single processed_document directly
-                doc = processed_document
-                # Determine output filename and format
-                # Use metadata from the processed doc if available, otherwise derive from input_item
-                metadata = doc.get('metadata', {})
-                original_filename = Path(input_item).name if not is_url(input_item) else metadata.get('title', 'output')
-                original_stem = Path(original_filename).stem
-                output_format = args.output_format if args.output_format else args.pipeline_type
-                # Map 'text' format to '.txt' extension, otherwise use the format directly
-                output_extension = ".txt" if output_format == 'text' else f".{output_format}"
+            # --- Handle Output (Save to file) ---
+            doc = processed_document
+            # Determine output filename and format
+            # Use metadata from the processed doc if available, otherwise derive from input_item
+            metadata = doc.get('metadata', {})
+            original_filename = Path(input_item).name if not is_url(input_item) else metadata.get('title', 'output')
+            original_stem = Path(original_filename).stem
+            output_format = args.output_format if args.output_format else args.pipeline_type
+            # Map 'text' format to '.txt' extension, otherwise use the format directly
+            output_extension = ".txt" if output_format == 'text' else f".{output_format}"
 
-                # Ensure output directory exists for the specific format
-                # Determine the final output directory
-                # Check if the output_dir already ends with the pipeline_type
-                if output_dir.name.lower() == args.pipeline_type.lower():
-                    # If it does, use the output_dir directly
-                    final_output_dir = output_dir
-                else:
-                    # Otherwise, create a subdirectory with the pipeline_type
-                    final_output_dir = output_dir
+            # Ensure output directory exists for the specific format
+            # Determine the final output directory
+            # Check if the output_dir already ends with the pipeline_type
+            if output_dir.name.lower() == args.pipeline_type.lower():
+                # If it does, use the output_dir directly
+                final_output_dir = output_dir
+            else:
+                # Otherwise, create a subdirectory with the pipeline_type
+                final_output_dir = output_dir
 
                 final_output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -351,21 +309,21 @@ def main():
                      # Removed the 'continue' as we are no longer in a loop here
 
                 # Only attempt to write if content was found
-                if content_to_save:
-                    try:
-                        # Log what we're about to save
-                        logger.info(f"Saving content to {output_filepath}, content type: {type(content_to_save)}, length: {len(content_to_save)}")
-                        logger.info(f"Content starts with: {content_to_save[:100]}...")
-                        
-                        with open(output_filepath, 'w', encoding='utf-8') as f:
-                            f.write(content_to_save)
-                        logger.info(f"Saved output to {output_filepath}")
-                    except IOError as e:
-                        logger.error(f"Error saving output to {output_filepath}: {e}")
-                        # Re-raise the exception so the script fails and the test catches it
-                        raise
-                elif args.pipeline_type != 'weaviate': # Log warning only if not weaviate pipeline and no content
-                     logger.warning(f"No content found to save for {input_item} to {output_filepath}")
+            if content_to_save:
+                try:
+                    # Log what we're about to save
+                    logger.info(f"Saving content to {output_filepath}, content type: {type(content_to_save)}, length: {len(content_to_save)}")
+                    logger.info(f"Content starts with: {content_to_save[:100]}...")
+                    
+                    with open(output_filepath, 'w', encoding='utf-8') as f:
+                        f.write(content_to_save)
+                    logger.info(f"Saved output to {output_filepath}")
+                except IOError as e:
+                    logger.error(f"Error saving output to {output_filepath}: {e}")
+                    # Re-raise the exception so the script fails and the test catches it
+                    raise
+            else:
+                 logger.warning(f"No content found to save for {input_item} to {output_filepath}")
                 
                 # Handle multi-format output from EnhancedDoclingPDFProcessor
                 if pipeline_config.get('output_all_formats', False) and doc.get('processing_method') == 'docling':

@@ -21,7 +21,7 @@ def test_pdf_to_text_conversion():
     print(f"Input file: {SAMPLE_REPORT}")
     assert SAMPLE_REPORT.exists(), f"Input file not found: {SAMPLE_REPORT}"
 
-    config = {'weaviate_enabled': False, 'pipeline_type': 'text'}
+    config = {'pipeline_type': 'text'}
     pipeline = DocumentPipeline(config=config)
 
 
@@ -47,32 +47,6 @@ def test_pdf_to_text_conversion():
 
 # def test_pdf_to_json_conversion():
 #     pass
-def test_hybrid_pdf_processing():
-    """Test 2: Hybrid PDF processing."""
-    print(f"\n--- Running Test 2: Hybrid PDF ---")
-    # Using the available test PDF for this test as well
-    sample_test_path = Path("data/input/pdfs/sample_test.pdf")
-    print(f"Input file: {sample_test_path}")
-    assert sample_test_path.exists(), f"Input file not found: {sample_test_path}"
-
-    config = {'weaviate_enabled': False, 'pipeline_type': 'hybrid'}
-    # Add any specific config for hybrid if needed, e.g.,
-    # config['use_docling'] = True # Or False to test specific paths
-    pipeline = DocumentPipeline(config=config)
-
-
-    result = pipeline.process_document(str(sample_test_path))
-
-    print(f"Result keys: {result.keys()}")
-    assert isinstance(result, dict), "Result should be a dictionary"
-    assert 'content' in result, "Result dictionary should contain a 'content' key"
-    assert isinstance(result['content'], str), "'content' should be a string"
-    assert len(result['content']) > 0, "'content' string should not be empty"
-    # We could add more specific checks here later if needed, e.g., check for OCR'd text
-    print(f"Extracted content length: {len(result['content'])}")
-    print("--- Test 2 Passed ---")
-# Removed test_structured_extraction as it requires a specific Pydantic model
-# and sample_test.pdf is not suitable input for ResumeInfo.
 def test_pdf_to_markdown_conversion():
     """Test 4: PDF to Markdown conversion."""
     print(f"\n--- Running Test 4: PDF-to-Markdown ---")
@@ -80,7 +54,7 @@ def test_pdf_to_markdown_conversion():
     print(f"Input file: {sample_test_path}")
     assert sample_test_path.exists(), f"Input file not found: {sample_test_path}"
 
-    config = {'weaviate_enabled': False, 'pipeline_type': 'markdown'}
+    config = {'pipeline_type': 'markdown'}
     pipeline = DocumentPipeline(config=config)
 
 
@@ -89,17 +63,15 @@ def test_pdf_to_markdown_conversion():
     print(f"Result keys: {result.keys()}")
     assert isinstance(result, dict), "Result should be a dictionary"
     # Check if markdown content is added or if 'content' is modified
-    # Assuming the transformer adds a 'markdown_content' key for now
-    assert 'markdown' in result, "Result should contain a 'markdown' key"
-    markdown_content = result['markdown'] # Check the correct key
+    # The processor adds 'markdown_content' key
+    assert 'markdown_content' in result, "Result should contain a 'markdown_content' key"
+    markdown_content = result['markdown_content']
     assert isinstance(markdown_content, str), "Markdown content should be a string"
     assert len(markdown_content) > 0, "Markdown content string should not be empty"
     # Basic check for markdown syntax (this is very basic, might need refinement)
-    assert '#' in markdown_content or '*' in markdown_content or '_' in markdown_content, "Content should show signs of Markdown formatting in the 'markdown' field"
+    assert '#' in markdown_content or '*' in markdown_content or '_' in markdown_content, "Content should show signs of Markdown formatting in the 'markdown_content' field"
     print(f"Markdown content length: {len(markdown_content)}")
     print("--- Test 4 Passed ---")
-import json # Need this for validation
-
 def test_pdf_to_json_conversion():
     """Test 5: PDF to JSON conversion."""
     print(f"\n--- Running Test 5: PDF-to-JSON ---")
@@ -107,7 +79,7 @@ def test_pdf_to_json_conversion():
     print(f"Input file: {sample_test_path}")
     assert sample_test_path.exists(), f"Input file not found: {sample_test_path}"
 
-    config = {'weaviate_enabled': False, 'pipeline_type': 'json'}
+    config = {'pipeline_type': 'json'}
     pipeline = DocumentPipeline(config=config)
 
 

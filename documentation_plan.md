@@ -14,10 +14,8 @@ This document outlines the plan to clean up and update the existing documentatio
 *   **USER_GUIDE.md:**
     *   Add comprehensive instructions and practical examples for processing audio and video files using the `run_pipeline.py` script, including relevant options (e.g., for transcription).
     *   Provide clearer explanations and examples for PDF processing, detailing the different `--ocr_mode` options (`hybrid`, `docling`, `gpt`) and how to specify the `--llm_provider`.
-    *   Ensure the section on Weaviate ingestion is clear, explaining how to use the `weaviate` pipeline type and linking to `docs/weaviate_layer.md` for in-depth details on Weaviate configuration and management.
     *   Review all existing examples to ensure they are accurate and cover the full range of supported functionalities.
 
-*   **docs/weaviate_layer.md:**
     *   Review the technical details, especially regarding schema definitions and collection management, to ensure they align with the current codebase and the recent bug fixes.
     *   Add a section or update the existing schema section to list and briefly describe the purpose of each defined collection schema (KnowledgeItem, KnowledgeMain, AudioItem, AudioChunk, ImageItem, VideoItem, VideoChunk).
     *   If there have been updates to the planned testing or CI setup, reflect those in the document.

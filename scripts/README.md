@@ -17,12 +17,8 @@ Core document processing scripts using various processors.
 - `batch_process.py` - Batch document processing
 - MarkItDown processors for DOCX files
 
-### 📁 `weaviate/`
-Scripts for Weaviate vector database operations.
-- Collection management (create, delete, verify)
-- Document ingestion (Adaptive Schools content)
-- Query and search operations
-- Connection verification
+### 📁 `vector_db/` (archived)
+Legacy scripts for vector database operations (moved to the knowledge-management repo once Milvus became the source of truth).
 
 ### 📁 `content_processing/`
 Scripts for processing and organizing document content.
@@ -85,9 +81,8 @@ Deprecated or old scripts kept for reference.
 - See `/standards/README.md` for detailed information
 
 ### Database Operations
-- Weaviate collection management
-- Document ingestion and retrieval
-- Vector search operations
+- Vector database ingestion and search now live in `/knowledge-management`
+- Use the JSON/Markdown outputs from this repo as inputs to those pipelines
 
 ### Content Organization
 - Document splitting by structure
@@ -98,7 +93,7 @@ Deprecated or old scripts kept for reference.
 
 1. Most scripts should be run from the project root directory
 2. Check individual script headers for specific requirements
-3. Ensure environment variables are set for API keys (OpenAI, Weaviate, etc.)
+3. Ensure environment variables are set for API keys (OpenAI, Anthropic, Gemini, etc.)
 4. See `../docs/` for detailed documentation
 
 ## Recent Updates

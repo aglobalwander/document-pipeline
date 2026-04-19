@@ -7,7 +7,7 @@ def run_pipeline(input_path: Path, pipeline_type: str, output_dir: Path, output_
     """Helper to invoke the run_pipeline CLI."""
     cmd = [
         sys.executable,
-        "scripts/run_pipeline.py",
+        "scripts/document_processing/run_pipeline.py",
         "--input_path", str(input_path),
         "--pipeline_type", pipeline_type,
         "--output_dir", str(output_dir)

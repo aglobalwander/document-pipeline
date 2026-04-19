@@ -10,22 +10,11 @@ from pydantic import BaseModel
 
 from doc_processing.config import get_settings, ensure_directories_exist
 from doc_processing.embedding.base import Pipeline, PipelineComponent, BaseDocumentLoader
-from doc_processing.loaders.pdf_loader import PDFLoader
-from doc_processing.loaders.youtube_loader import YouTubeLoader
-from doc_processing.loaders.docx_loader import DocxLoader # Import DocxLoader
-from doc_processing.processors.pdf_processor import PDFProcessor # Updated import
-from doc_processing.processors.docx_processor import MammothDOCXProcessor # Import DOCX processor
-from doc_processing.processors.pptx_processor import MarkItDownPPTXProcessor # Import MarkItDown PPTX processor
-# Removed import of HybridPPTXProcessor
-from doc_processing.transformers.text_to_markdown import TextToMarkdown
-from doc_processing.transformers.text_to_json import TextToJSON
-from doc_processing.transformers.chunker import LangChainChunker # Import the new chunker
-from doc_processing.transformers.instructor_extractor import InstructorExtractor
-from doc_processing.transformers.json_to_csv import JsonToCSV # Import JSON to CSV transformer
-from doc_processing.transformers.json_to_excel import JsonToExcel # Import JSON to Excel transformer
-from doc_processing.loaders.image_loader import ImageLoader
-from doc_processing.loaders.text_loader import TextLoader
-from doc_processing.loaders.video_loader import VideoLoader
+
+# All loaders, processors, and transformers are imported lazily
+# to avoid cascading ImportErrors from heavy deps (PyMuPDF, docling,
+# instructor, openai, etc.) that are only needed for specific file types
+# or pipeline types.
 
 
 class DocumentPipeline:
@@ -107,25 +96,24 @@ class DocumentPipeline:
             # self._pipeline_component_definitions.append({'class': TextToMarkdown, 'config': markdown_config}) # Removed TextToMarkdown
             pass # Keep pass for correct indentation
         elif pipeline_type == 'json':
-            # Convert to JSON, then chunk
-            # Assumes input is text content from a loader
+            from doc_processing.transformers.text_to_json import TextToJSON
             self._pipeline_component_definitions.append({'class': TextToJSON, 'config': json_config})
-            
-            # Add JSON to CSV or Excel transformer based on output_format
+
             output_format = self.config.get('output_format')
             if output_format == 'csv':
+                from doc_processing.transformers.json_to_csv import JsonToCSV
                 self._pipeline_component_definitions.append({'class': JsonToCSV, 'config': json_to_csv_config})
             elif output_format == 'xlsx':
+                from doc_processing.transformers.json_to_excel import JsonToExcel
                 self._pipeline_component_definitions.append({'class': JsonToExcel, 'config': json_to_excel_config})
             else:
-                # Default behavior: chunk the JSON
+                from doc_processing.transformers.chunker import LangChainChunker
                 self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
         elif pipeline_type == 'structured':
-             # Use InstructorExtractor, then chunk
-             # Assumes input is text content and config includes 'response_model'
+             from doc_processing.transformers.instructor_extractor import InstructorExtractor
+             from doc_processing.transformers.chunker import LangChainChunker
              if 'response_model' not in instructor_config:
                  self.logger.error("InstructorExtractor requires 'response_model' in its config. Pipeline may fail.")
-                 # Decide whether to raise error or proceed without extractor
              self._pipeline_component_definitions.append({'class': InstructorExtractor, 'config': instructor_config})
              self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
         # Add elif blocks for other pipeline types (e.g., 'image', 'video', 'audio')
@@ -139,9 +127,8 @@ class DocumentPipeline:
         #      self._pipeline_component_definitions.append({'class': AudioTranscription, 'config': self.config.get('audio_transcription_config', {})}) # Example
         #      self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config}) # Chunk transcript
         else:
-            # Keep the warning for truly unknown types not explicitly handled above
             self.logger.warning(f"Unknown or unsupported pipeline_type: {pipeline_type}. Defaulting to text pipeline (chunking only).")
-            # Default to just chunking the content provided by the initial loader
+            from doc_processing.transformers.chunker import LangChainChunker
             self._pipeline_component_definitions.append({'class': LangChainChunker, 'config': chunker_config})
 
         self.logger.info(f"Pipeline definitions initialized with {len(self._pipeline_component_definitions)} components for type '{pipeline_type}'.")
@@ -160,53 +147,54 @@ class DocumentPipeline:
         initial_load_result: Optional[Dict[str, Any]] = None
         initial_loader: Optional[BaseDocumentLoader] = None
 
-        if YouTubeLoader(self.config)._is_youtube_url(source_path_str):
+        # Check for YouTube URL first (lazy import)
+        try:
+            from doc_processing.loaders.youtube_loader import YouTubeLoader
+            is_youtube = YouTubeLoader(self.config)._is_youtube_url(source_path_str)
+        except ImportError:
+            is_youtube = False
+
+        if is_youtube:
              self.logger.info(f"Detected YouTube URL: {source_path_str}. Using YouTubeLoader.")
              initial_loader = YouTubeLoader(self.config)
-             self.logger.info(f"Selected loader: YouTubeLoader") # Added logging
         elif source_path_str.lower().endswith('.pdf'):
              self.logger.info(f"Detected PDF file: {source_path_str}. Using PDFLoader.")
+             from doc_processing.loaders.pdf_loader import PDFLoader
              initial_loader = PDFLoader(self.config.get('pdf_loader_config', {}))
-             self.logger.info(f"Selected loader: PDFLoader") # Added logging
-        elif source_path_str.lower().endswith(('.jpg', '.png', '.gif')):
+        elif source_path_str.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp')):
              self.logger.info(f"Detected image file: {source_path_str}. Using ImageLoader.")
+             from doc_processing.loaders.image_loader import ImageLoader
              initial_loader = ImageLoader(self.config.get('image_loader_config', {}))
-             self.logger.info(f"Selected loader: ImageLoader") # Added logging
         elif source_path_str.lower().endswith('.docx'):
-             self.logger.info(f"Detected DOCX file: {source_path_str}. Using DocxLoader for initial loading.")
+             self.logger.info(f"Detected DOCX file: {source_path_str}. Using DocxLoader.")
+             from doc_processing.loaders.docx_loader import DocxLoader
              initial_loader = DocxLoader(self.config.get('docx_loader_config', {}))
-             self.logger.info(f"Selected loader: DocxLoader for DOCX") # Added logging
         elif source_path_str.lower().endswith('.pptx'):
              self.logger.info(f"Detected PPTX file: {source_path_str}. Skipping initial text loading.")
-             # Create a document dictionary with just the input path and metadata
              initial_load_result = {
                  "input_path": source_path_str,
-                 "content": source_path_str, # Pass the file path in the content field
+                 "content": source_path_str,
                  "metadata": {
                      "filename": Path(source_path_str).name,
                      "filetype": "pptx"
                  }
              }
-             self.logger.info(f"Created initial document structure for PPTX.")
-             # No initial_loader needed for PPTX as we handle it with a specific processor
         elif source_path_str.lower().endswith(('.txt', '.md', '.json')):
              self.logger.info(f"Detected text/document file: {source_path_str}. Using TextLoader.")
+             from doc_processing.loaders.text_loader import TextLoader
              initial_loader = TextLoader(self.config.get('text_loader_config', {}))
-             self.logger.info(f"Selected loader: TextLoader") # Added logging
         elif source_path_str.lower().endswith(('.3gp', '.flv', '.mkv', '.mp4')):
              self.logger.info(f"Detected video file: {source_path_str}. Using VideoLoader.")
+             from doc_processing.loaders.video_loader import VideoLoader
              initial_loader = VideoLoader(self.config.get('video_loader_config', {}))
-             self.logger.info(f"Selected loader: VideoLoader") # Added logging
-        elif source_path_str.lower().endswith(('.wav', '.ogg', '.mp3', '.m4a')): # Added audio loader check
+        elif source_path_str.lower().endswith(('.wav', '.ogg', '.mp3', '.m4a')):
              self.logger.info(f"Detected audio file: {source_path_str}. Using AudioLoader.")
-             from doc_processing.loaders.audio_loader import AudioLoader # Import AudioLoader
+             from doc_processing.loaders.audio_loader import AudioLoader
              initial_loader = AudioLoader(self.config.get('audio_loader_config', {}))
-             self.logger.info(f"Selected loader: AudioLoader") # Added logging
         else:
-             # Fallback for unknown file types or if no specific loader matched
              self.logger.warning(f"Could not determine loader for {source_path_str}. Defaulting to TextLoader.")
-             initial_loader = TextLoader(self.config.get('text_loader_config', {})) # Default fallback loader
-             self.logger.info(f"Selected loader: TextLoader (fallback)") # Added logging
+             from doc_processing.loaders.text_loader import TextLoader
+             initial_loader = TextLoader(self.config.get('text_loader_config', {}))
 
         # Run the initial loader if it was determined (i.e., not a PPTX file handled above)
         if initial_loader:
@@ -218,22 +206,17 @@ class DocumentPipeline:
         # Add specific processors based on file type and pipeline type/strategy
         if source_path_str.lower().endswith('.docx'):
             self.logger.info(f"Adding MammothDOCXProcessor for DOCX processing")
+            from doc_processing.processors.docx_processor import MammothDOCXProcessor
             processing_pipeline.add_component(MammothDOCXProcessor(self.config.get('docx_config', {})))
         elif source_path_str.lower().endswith('.pptx'):
-            # Use MarkItDownPPTXProcessor for PPTX files as per updated plan
             self.logger.info(f"Adding MarkItDownPPTXProcessor for PPTX processing")
-            # Explicitly set pptx_strategy to 'text' as per the updated plan
+            from doc_processing.processors.pptx_processor import MarkItDownPPTXProcessor
             pptx_processor_config = self.config.get('pptx_config', {})
             pptx_processor_config['pptx_strategy'] = 'text'
             processing_pipeline.add_component(MarkItDownPPTXProcessor(pptx_processor_config))
         elif source_path_str.lower().endswith('.pdf'):
-             # Add PDFProcessor for PDF files
              from doc_processing.processors.pdf_processor import PDFProcessor
-             
-             # Create PDF processor configuration
-             pdf_processor_config = self.config.copy()  # Start with a copy of the main config
-             
-             # Add the PDFProcessor component to the pipeline
+             pdf_processor_config = self.config.copy()
              self.logger.info(f"Adding PDFProcessor for PDF processing")
              processing_pipeline.add_component(PDFProcessor(pdf_processor_config))
 

@@ -1,0 +1,100 @@
+{
+  "English 9": {
+    "course_code": "HS1000",
+    "duration": "Year",
+    "prerequisites": "None",
+    "grade_levels": "9",
+    "credits": 1.0,
+    "description": "In this course, students analyze a wide range of literature that is connected to a variety of different cultures. Students study the following genres: novel, short story, poetry, drama, and nonfiction. The literature serves not only as a vehicle for understanding human experience more richly but also as a means for developing critical thinking, language, and communication skills. Students learn the tools of literary analysis and explore a variety of writing styles and forms. Oral communication skills are developed through participation in seminars, discussions, and oral/dramatic presentations.",
+    "main_topics": [],
+    "learning_outcomes": []
+  },
+  "English 10": {
+    "course_code": "HS1001",
+    "duration": "Year",
+    "prerequisites": "English 9",
+    "grade_levels": "10",
+    "credits": 1.0,
+    "description": "In this course, students study a range of historical and contemporary literature, exploring a variety of genres. Students are encouraged to make connections between the literature and their experiences as multicultural students. The writing process is used to allow students to explore a variety of writing styles and forms. Students' oral communication skills are developed through participation in seminars, discussions, and oral/dramatic presentations.",
+    "main_topics": [],
+    "learning_outcomes": []
+  },
+  "Literature in Film": {
+    "course_code": "HS1405",
+    "duration": "Year",
+    "prerequisites": "English 9, 10, or 11 (rising G10 students must get permission)",
+    "grade_levels": "10,11,12",
+    "credits": 1.0,
+    "description": "In this course, students will delve into the rich interplay between literature and film, exploring how literary works are adapted for the screen. Through a curated selection of literary works and their film adaptations, students will analyze narrative literary and cinematic techniques, character and thematic development, and examine and discuss the recurring question: Is the movie really as good as the book?",
+    "main_topics": [],
+    "learning_outcomes": []
+  },
+  "English 11": {
+    "course_code": "HS1002",
+    "duration": "Year",
+    "prerequisites": "English 10",
+    "grade_levels": "11",
+    "credits": 1.0,
+    "description": "This course is an opportunity for students to continue a deeper exploration of various literary genres and to develop the skills of close reading and literary analysis, as well as both written and oral expression. Through the study of a variety of genres, students are encouraged to connect aspects of the texts they read with their own personal knowledge and experience. Students will be expected to produce a variety of assessments such as written essays, oral presentations, creative pieces, and visual projects.",
+    "main_topics": [],
+    "learning_outcomes": []
+  },
+  "English 12": {
+    "course_code": "HS1003",
+    "duration": "Year",
+    "prerequisites": "English 11 or AP Language",
+    "grade_levels": "12",
+    "credits": 1.0,
+    "description": "In this course students will develop their understanding of texts and refine their ability to analyze creative works. The course is focused on developing student skills in reading, analysis, written expression, speaking and listening. Students will be expected to read critically, comprehend, and respond to the works through class discussions and written assignments. A variety of assessment types will be used to develop skills including oral presentations, written tasks, podcast and projects.",
+    "main_topics": [],
+    "learning_outcomes": []
+  },
+  "IB English A: Literature SL/HL": {
+    "course_codes": "HS1110 (SL Y1); HS 1120 (SL Y2); HS1130 (HL Y1); HS1140 (HL Y2)",
+    "duration": "Two years",
+    "prerequisites": "English 10",
+    "grade_levels": "11,12",
+    "credits": 2.0,
+    "description": "This course is designed for students interested in developing their analytical skills through the study of literary texts. The areas of exploration in the course include: Readers, writer and texts - exploring the nature and purpose of literature and the ways in which texts can be read, interpreted and responded to; Time and Space - draws attention to the fact that texts are not isolated entities, but are connected to space and time; Intertextuality: connecting texts - focuses on the connections between and among diverse texts, traditions, creators and ideas. Each of these is accompanied by six questions, linked to course concepts, that provide a guide to the learning in each part of the course. The emphasis of the course will be on developing the skills of independent literary analysis, critical reading and the powers of expression in both written and oral communication through the study of literature in a variety of media and modes, from different periods, styles, genres and cultures. Written compositions, exams, and oral commentary will be assessed through internal (school) and external (IBO) assessments. At Standard Level students read 9 texts, some in translation, in order to complete the IB assessment tasks. At Higher Level a greater depth of material is covered and students read 13 texts, some in translation, in order to complete the IB assessment tasks. The internal assessment task for HL is more demanding than that of SL, requiring more texts to be used and a longer presentation. There is also an additional essay HL students will complete. In addition, the external assessment criteria require the HL students to show a deeper understanding of content, complete a more in-depth task and show a greater ability to analyze a writer's techniques than SL students.",
+    "main_topics": [
+      "Readers, writer and texts",
+      "Time and Space",
+      "Intertextuality: connecting texts"
+    ],
+    "learning_outcomes": []
+  },
+  "IB English A: Language & Literature SL/HL": {
+    "course_codes": "HS1111 (SL Y1); HS 1121 (SL Y2); HS1131 (HL Y1); HS1141 (HL Y2)",
+    "duration": "Two years",
+    "prerequisites": "English 10",
+    "grade_levels": "11,12",
+    "credits": 2.0,
+    "description": "The Language and Literature course is designed to encourage students to question the meaning generated by language and texts. Students will develop their analytical skills through the study of literary texts, nontraditional texts and topics dealing with language in cultural contexts, and language in mass communication. Areas of exploration include: Readers, writer and texts - exploring the nature and purpose of literature and the ways in which texts can be read, interpreted and responded to; Time and Space - draws attention to the fact that texts are not isolated entities, but are connected to space and time; Intertextuality: connecting texts - focuses on the connections between and among diverse texts, traditions, creators and ideas. Each of these is accompanied by six questions, linked to course concepts, that provide a guide to the learning in each part of the course. The emphasis of the course will be on developing the skills of independent textual analysis, critical reading and the powers of expression in both written and oral communication through the study of language and literature in a variety of media and modes, from different periods, styles, genres and cultures. Written compositions, exams, and oral commentary will be assessed through internal (school) and external (IBO) assessments. All students are expected to read a breadth of non-literary texts. In addition: Standard Level students read four texts, some in translation, in order to complete the IB assessment tasks. At Higher Level, a greater depth of material is covered and students read six texts, some in translation, in order to complete the IB assessment tasks. The internal assessment task, the individual oral, is the same for HL and SL. Both SL and HL students sit for Paper 1 and Paper 2 external exams, but Paper 1 for HL students includes analysis of two non-literary texts while SL students only examine one. There is an additional essay HL students will complete.",
+    "main_topics": [
+      "Readers, writer and texts",
+      "Time and Space",
+      "Intertextuality: connecting texts"
+    ],
+    "learning_outcomes": []
+  },
+  "AP English Language & Composition": {
+    "course_code": "HS1200",
+    "duration": "Year",
+    "prerequisites": "English 10",
+    "grade_levels": "11,12",
+    "credits": 1.0,
+    "description": "The AP English Language and Composition course cultivates the reading and writing skills that students need for college success and for intellectually responsible civic engagement. The course guides students in becoming curious, critical, and responsive readers of diverse texts and becoming flexible, reflective writers of texts addressed to diverse audiences for diverse purposes. The reading and writing students do in the course deepens and expands their understanding of how written language functions rhetorically: to communicate writers' intentions and elicit readers' responses in particular situations. Students will focus on the development and revision of evidence-based analytic and argumentative writing, the rhetorical analysis of nonfiction texts, and the decisions writers make as they compose and revise. Students will evaluate, synthesize, and cite research to support their arguments. Additionally, they will read and analyze rhetorical elements and their effects in nonfiction texts - including images as forms of text - from a range of disciplines and historical periods.",
+    "main_topics": [],
+    "learning_outcomes": []
+  },
+  "AP English Literature & Composition": {
+    "course_code": "HS1201",
+    "duration": "Year",
+    "prerequisites": "English 10",
+    "grade_levels": "11,12",
+    "credits": 1.0,
+    "description": "Advanced Placement English Literature and Composition is a course for students who have both the desire and ability to read college level literature in high school. The course engages students in the careful reading and critical analysis of imaginative literature. Through the close reading of selected texts, students deepen their understanding of the ways writers use language to provide both meaning and pleasure for their readers. Reading in an AP course is both wide and deep. This reading necessarily builds upon and complements the reading done in previous English courses so that by the time students complete their AP course, they will have read works from several genres and periods - from the 16th to the 21st century. More importantly, they will have gotten to know a few works well. Extensive reading, writing tasks, and projects are assigned for completion both in and out of class.",
+    "main_topics": [],
+    "learning_outcomes": []
+  }
+}

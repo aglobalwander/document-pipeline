@@ -6,17 +6,42 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List, Optional, Tuple, Union
 from pathlib import Path
 import logging
-import fitz  # PyMuPDF
-from PIL import Image
 
 from doc_processing.embedding.base import BaseProcessor
 from doc_processing.config import get_settings
-from .gpt_vision_processor import GPTPVisionProcessor
-from .enhanced_docling_processor import EnhancedDoclingPDFProcessor
-from .pymupdf_processor import PyMuPDFProcessor
-from .claude_pdf_processor import ClaudePDFProcessor
-from doc_processing.llm.gemini_client import GeminiClient
-from doc_processing.templates.prompt_manager import PromptTemplateManager # Import PromptTemplateManager
+
+# Heavy processor/client dependencies loaded lazily to avoid import
+# failures when the pipeline is only processing non-PDF file types.
+
+
+def _lazy_import_gpt_vision():
+    from .gpt_vision_processor import GPTPVisionProcessor
+    return GPTPVisionProcessor
+
+
+def _lazy_import_enhanced_docling():
+    from .enhanced_docling_processor import EnhancedDoclingPDFProcessor
+    return EnhancedDoclingPDFProcessor
+
+
+def _lazy_import_pymupdf_processor():
+    from .pymupdf_processor import PyMuPDFProcessor
+    return PyMuPDFProcessor
+
+
+def _lazy_import_claude_processor():
+    from .claude_pdf_processor import ClaudePDFProcessor
+    return ClaudePDFProcessor
+
+
+def _lazy_import_gemini_client():
+    from doc_processing.llm.gemini_client import GeminiClient
+    return GeminiClient
+
+
+def _lazy_import_prompt_manager():
+    from doc_processing.templates.prompt_manager import PromptTemplateManager
+    return PromptTemplateManager
 
 logger = logging.getLogger(__name__)
 
@@ -142,9 +167,9 @@ class GPTPDFProcessor(BasePDFProcessor):
     def __init__(self, config: Optional[Dict[str, Any]] = None):
         super().__init__(config)
         self.settings = get_settings()
-        # Initialize GPTPVisionProcessor
+        GPTPVisionProcessor = _lazy_import_gpt_vision()
         vision_config = {
-            'llm_provider': self.config.get('llm_provider', 'openai'), # Default to 'openai'
+            'llm_provider': self.config.get('llm_provider', 'openai'),
             'vision_model': self.config.get('vision_model', self.settings.DEFAULT_OPENAI_VISION_MODEL),
             'llm_model': self.config.get('llm_model'),
             'api_key': self.config.get('api_key', self.settings.OPENAI_API_KEY or self.settings.OPENAI_APIKEY),
@@ -173,8 +198,9 @@ class GeminiPDFProcessor(BasePDFProcessor):
     def __init__(self, config: Optional[Dict[str, Any]] = None):
         super().__init__(config)
         self.settings = get_settings()
-        self.gemini_client: Optional[GeminiClient] = None
+        self.gemini_client = None
         try:
+            GeminiClient = _lazy_import_gemini_client()
             gemini_config = {
                 'api_key': self.config.get('api_key', self.settings.GEMINI_API_KEY or self.settings.GOOGLE_API_KEY),
                 'model_name': self.config.get('llm_model', GeminiClient.DEFAULT_MODEL),
@@ -202,6 +228,7 @@ class GeminiPDFProcessor(BasePDFProcessor):
                 template_name = f"{prompt_name}.j2"
                 try:
                     template_dir = self.config.get('template_dir', self.settings.TEMPLATE_DIR)
+                    PromptTemplateManager = _lazy_import_prompt_manager()
                     template_manager = PromptTemplateManager(template_dir)
                     prompt_context = {'document': document, 'metadata': document.get('metadata', {})}
                     pdf_prompt_text = template_manager.render_prompt(template_name, prompt_context)
@@ -263,22 +290,21 @@ class PDFProcessor(BasePDFProcessor):
 
     def _initialize_processors(self):
         """Initializes the configured PDF processors."""
+        # Use lazy imports for processor classes that have heavy dependencies
         processor_map = {
-            'pymupdf': PyMuPDFProcessor,
-            'docling': DoclingPDFProcessor,
-            'enhanced_docling': EnhancedDoclingPDFProcessor,
-            'gpt': GPTPDFProcessor,
-            'gemini': GeminiPDFProcessor,
+            'pymupdf': lambda: _lazy_import_pymupdf_processor(),
+            'docling': lambda: DoclingPDFProcessor,
+            'enhanced_docling': lambda: _lazy_import_enhanced_docling(),
+            'gpt': lambda: GPTPDFProcessor,
+            'gemini': lambda: GeminiPDFProcessor,
         }
 
         for processor_name in self.active_processors:
             if processor_name in processor_map:
                 try:
-                    # Pass the relevant config to each processor
-                    processor_config = self.config.copy() # Start with a copy of the main config
-                    # Add processor-specific overrides if needed (e.g., docling_use_easyocr)
-                    # For now, assuming the main config contains all necessary sub-configs
-                    self.available_processors[processor_name] = processor_map[processor_name](config=processor_config)
+                    processor_class = processor_map[processor_name]()
+                    processor_config = self.config.copy()
+                    self.available_processors[processor_name] = processor_class(config=processor_config)
                     self.logger.info(f"Initialized {processor_name} PDF processor.")
                 except Exception as e:
                     self.logger.warning(f"Failed to initialize {processor_name} PDF processor: {e}")

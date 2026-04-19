@@ -9,9 +9,6 @@ and saving results to files.
 import os
 import sys
 import argparse
-import os
-import sys
-import argparse
 import logging
 from pathlib import Path
 import json
@@ -21,7 +18,8 @@ from typing import Optional, Dict, Any, List, Union
 from urllib.parse import urlparse # Import urlparse for URL checking
 
 # Add project root to sys.path to allow importing doc_processing modules
-project_root = Path(__file__).resolve().parent.parent
+# parent chain: run_pipeline.py -> document_processing/ -> scripts/ -> (repo root)
+project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from doc_processing.document_pipeline import DocumentPipeline
@@ -266,91 +264,72 @@ def main():
             # Map 'text' format to '.txt' extension, otherwise use the format directly
             output_extension = ".txt" if output_format == 'text' else f".{output_format}"
 
-            # Ensure output directory exists for the specific format
-            # Determine the final output directory
-            # Check if the output_dir already ends with the pipeline_type
+            # Determine final output directory — add pipeline_type subdirectory
+            # unless the output_dir already ends with it (e.g., data/output/text)
             if output_dir.name.lower() == args.pipeline_type.lower():
-                # If it does, use the output_dir directly
                 final_output_dir = output_dir
             else:
-                # Otherwise, create a subdirectory with the pipeline_type
-                final_output_dir = output_dir
+                final_output_dir = output_dir / args.pipeline_type
+            final_output_dir.mkdir(parents=True, exist_ok=True)
 
-                final_output_dir.mkdir(parents=True, exist_ok=True)
+            output_filename = f"{original_stem}_output{output_extension}"
+            output_filepath = final_output_dir / output_filename
 
-                output_filename = f"{original_stem}_output{output_extension}"
-                output_filepath = final_output_dir / output_filename
+            # Save content based on output format
+            content_to_save = ""
+            logger.info(f"Document keys: {list(doc.keys())}")
 
-                # Save content based on output format
-                content_to_save = ""
-                # Log document keys to help debug
-                logger.info(f"Document keys: {list(doc.keys())}")
+            if output_format == 'json':
+                content_to_save = json.dumps(doc, indent=2)
+            elif output_format == 'markdown':
                 if 'content' in doc:
-                    logger.info(f"Content field length: {len(doc['content'])}")
-                    logger.info(f"Content field starts with: {doc['content'][:100]}...")
-                
-                if output_format == 'json':
-                    # For JSON output, save the entire document dictionary
-                    content_to_save = json.dumps(doc, indent=2)
-                elif output_format == 'markdown':
-                    # For Markdown output, use the 'content' field which contains the markdown from MammothDOCXProcessor
-                    if 'content' in doc:
-                        content_to_save = doc['content']
-                    elif 'markdown' in doc:  # Fallback to 'markdown' field if it exists
-                        content_to_save = doc['markdown']
-                elif 'content' in doc:
-                    # Fallback for text output
                     content_to_save = doc['content']
-                elif 'text' in doc:
-                     # Further fallback (e.g., from chunks, though less likely now)
-                     content_to_save = doc['text']
-                else:
-                     logger.warning(f"No 'content' or 'text' field found in processed document for {input_item}. Skipping file output.")
-                     # Removed the 'continue' as we are no longer in a loop here
+                elif 'markdown' in doc:
+                    content_to_save = doc['markdown']
+            elif 'content' in doc:
+                content_to_save = doc['content']
+            elif 'text' in doc:
+                content_to_save = doc['text']
+            else:
+                logger.warning(f"No 'content' or 'text' field found in processed document for {input_item}. Skipping file output.")
 
-                # Only attempt to write if content was found
             if content_to_save:
                 try:
-                    # Log what we're about to save
-                    logger.info(f"Saving content to {output_filepath}, content type: {type(content_to_save)}, length: {len(content_to_save)}")
-                    logger.info(f"Content starts with: {content_to_save[:100]}...")
-                    
+                    logger.info(f"Saving {len(content_to_save)} chars to {output_filepath}")
                     with open(output_filepath, 'w', encoding='utf-8') as f:
                         f.write(content_to_save)
                     logger.info(f"Saved output to {output_filepath}")
                 except IOError as e:
                     logger.error(f"Error saving output to {output_filepath}: {e}")
-                    # Re-raise the exception so the script fails and the test catches it
                     raise
             else:
-                 logger.warning(f"No content found to save for {input_item} to {output_filepath}")
-                
-                # Handle multi-format output from EnhancedDoclingPDFProcessor
-                if pipeline_config.get('output_all_formats', False) and doc.get('processing_method') == 'docling':
-                    # Save additional formats if they exist
-                    if 'text_content' in doc and output_format != 'text':
-                        text_output_dir = output_dir / 'text'
-                        text_output_dir.mkdir(parents=True, exist_ok=True)
-                        text_output_path = text_output_dir / f"{original_stem}_output.txt"
-                        logger.info(f"Saving additional text format to {text_output_path}")
-                        with open(text_output_path, 'w', encoding='utf-8') as f:
-                            f.write(doc['text_content'])
-                    
-                    if 'markdown_content' in doc and output_format != 'markdown':
-                        md_output_dir = output_dir / 'markdown'
-                        md_output_dir.mkdir(parents=True, exist_ok=True)
-                        md_output_path = md_output_dir / f"{original_stem}_output.md"
-                        logger.info(f"Saving additional markdown format to {md_output_path}")
-                        with open(md_output_path, 'w', encoding='utf-8') as f:
-                            f.write(doc['markdown_content'])
-                    
-                    if 'json_content' in doc and output_format != 'json':
-                        json_output_dir = output_dir / 'json'
-                        json_output_dir.mkdir(parents=True, exist_ok=True)
-                        json_output_path = json_output_dir / f"{original_stem}_output.json"
-                        logger.info(f"Saving additional JSON format to {json_output_path}")
-                        with open(json_output_path, 'w', encoding='utf-8') as f:
-                            f.write(doc['json_content'])
+                logger.warning(f"No content found to save for {input_item} to {output_filepath}")
+
+            # Handle multi-format output from EnhancedDoclingPDFProcessor
+            if pipeline_config.get('output_all_formats', False) and doc.get('processing_method') == 'docling':
+                if 'text_content' in doc and output_format != 'text':
+                    text_output_dir = output_dir / 'text'
+                    text_output_dir.mkdir(parents=True, exist_ok=True)
+                    text_output_path = text_output_dir / f"{original_stem}_output.txt"
+                    with open(text_output_path, 'w', encoding='utf-8') as f:
+                        f.write(doc['text_content'])
+                    logger.info(f"Saved additional text format to {text_output_path}")
+
+                if 'markdown_content' in doc and output_format != 'markdown':
+                    md_output_dir = output_dir / 'markdown'
+                    md_output_dir.mkdir(parents=True, exist_ok=True)
+                    md_output_path = md_output_dir / f"{original_stem}_output.md"
+                    with open(md_output_path, 'w', encoding='utf-8') as f:
+                        f.write(doc['markdown_content'])
+                    logger.info(f"Saved additional markdown format to {md_output_path}")
+
+                if 'json_content' in doc and output_format != 'json':
+                    json_output_dir = output_dir / 'json'
+                    json_output_dir.mkdir(parents=True, exist_ok=True)
+                    json_output_path = json_output_dir / f"{original_stem}_output.json"
+                    with open(json_output_path, 'w', encoding='utf-8') as f:
+                        f.write(doc['json_content'])
+                    logger.info(f"Saved additional JSON format to {json_output_path}")
 
         except Exception as exc:
             logger.error(f"Error processing input {input_item}: {exc}")

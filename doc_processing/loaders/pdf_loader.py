@@ -1,18 +1,44 @@
 """PDF Document Loader."""
+from __future__ import annotations
+
 import os
 from typing import Any, Dict, Optional, Union
 from pathlib import Path
-import fitz  # PyMuPDF
 import hashlib
-# Imports needed for image generation
 import base64
 import io
-from PIL import Image
-import logging # Added logging import
+import logging
 
 from doc_processing.embedding.base import BaseDocumentLoader
 
-logger = logging.getLogger(__name__) # Added logger instance
+logger = logging.getLogger(__name__)
+
+# Lazy imports — only loaded when PDFLoader.load() is actually called
+fitz = None
+Image = None
+
+
+def _ensure_pdf_deps():
+    """Import fitz (PyMuPDF) and PIL on first use. Raises ImportError with a clear message."""
+    global fitz, Image
+    if fitz is None:
+        try:
+            import fitz as _fitz
+            fitz = _fitz
+        except ImportError:
+            raise ImportError(
+                "PyMuPDF (fitz) is required for PDFLoader. "
+                "Install with: pip install PyMuPDF"
+            )
+    if Image is None:
+        try:
+            from PIL import Image as _Image
+            Image = _Image
+        except ImportError:
+            raise ImportError(
+                "Pillow is required for PDFLoader page image generation. "
+                "Install with: pip install Pillow"
+            )
 
 class PDFLoader(BaseDocumentLoader):
     """Loader for PDF documents."""
@@ -41,6 +67,7 @@ class PDFLoader(BaseDocumentLoader):
         Returns:
             Dictionary containing document content and metadata
         """
+        _ensure_pdf_deps()
         source_path = self.validate_source(source)
         # Use self.logger inherited from BaseDocumentLoader
         self.logger.info(f"Loading PDF from {source_path}")

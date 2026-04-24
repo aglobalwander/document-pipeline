@@ -7,7 +7,7 @@ from doc_processing.embedding.base import BaseTransformer
 from doc_processing.config import get_settings
 # Import the new LLM client base and implementation
 from doc_processing.llm.base import BaseLLMClient
-from doc_processing.llm.clients import OpenAIClient # Default client
+from doc_processing.llm.clients import DeepSeekClient, OpenAIClient # Default client
 
 # Define the type variable for the response model
 T = TypeVar('T', bound=BaseModel)
@@ -41,8 +41,20 @@ class InstructorExtractor(BaseTransformer):
                 model_name=llm_model,
                 config=self.config.get('llm_client_config')
             )
+        elif llm_provider in {'deepseek', 'dashscope', 'dashscope_deepseek'}:
+            route = 'dashscope' if llm_provider in {'dashscope', 'dashscope_deepseek'} else self.config.get('deepseek_route', 'deepseek')
+            client_config = dict(self.config.get('llm_client_config') or {})
+            client_config.setdefault('route', route)
+            api_key = self.config.get('api_key')
+            if not api_key:
+                api_key = self.settings.DASHSCOPE_API_KEY if route == 'dashscope' else self.settings.DEEPSEEK_API_KEY
+            self.llm_client = DeepSeekClient(
+                api_key=api_key,
+                model_name=llm_model,
+                config=client_config,
+            )
         else:
-            self.logger.error(f"InstructorExtractor currently only supports 'openai' provider, but '{llm_provider}' was configured.")
+            self.logger.error(f"InstructorExtractor currently supports 'openai', 'deepseek', and 'dashscope' providers, but '{llm_provider}' was configured.")
             # Optionally raise an error or disable functionality
 
         # Store parameters for the call

@@ -109,7 +109,7 @@ python scripts/run_pipeline.py --input_path <directory_path> --pipeline_type <ty
 
 #### LLM Integration Options
 ```bash
---llm_provider <provider>  # LLM provider: openai, gemini, anthropic (claude), deepseek
+--llm_provider <provider>  # LLM provider: openai, gemini, anthropic (claude), deepseek, dashscope
 --llm_model <model>        # Specific LLM model name
 --api_key <key>            # API key for LLM provider
 ```

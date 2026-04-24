@@ -219,6 +219,18 @@ class DocumentPipeline:
              pdf_processor_config = self.config.copy()
              self.logger.info(f"Adding PDFProcessor for PDF processing")
              processing_pipeline.add_component(PDFProcessor(pdf_processor_config))
+        elif source_path_str.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp')):
+             from doc_processing.processors.image_processor import ImageProcessor
+             image_processor_config = self.config.get('image_processor_config', {}).copy()
+             image_processor_config.setdefault('backend', self.config.get('image_backend', 'openai'))
+             image_processor_config.setdefault(
+                 'skip_caption',
+                 self.config.get('pipeline_type') == 'text',
+             )
+             if self.config.get('llm_model') and 'model' not in image_processor_config:
+                 image_processor_config['model'] = self.config.get('llm_model')
+             self.logger.info("Adding ImageProcessor for image OCR and caption extraction")
+             processing_pipeline.add_component(ImageProcessor(image_processor_config))
 
         # The output of the initial loader becomes the input for the rest of the pipeline
         pipeline_input = initial_load_result

@@ -54,6 +54,7 @@ class Settings(BaseSettings):
     ANTHROPIC_API_KEY: Optional[str] = Field(default=os.getenv('ANTHROPIC_API_KEY', ''))
     GEMINI_API_KEY: Optional[str] = Field(default=os.getenv('GEMINI_API_KEY', ''))
     DEEPSEEK_API_KEY: Optional[str] = Field(default=os.getenv('DEEPSEEK_API_KEY', ''))
+    DASHSCOPE_API_KEY: Optional[str] = Field(default=os.getenv('DASHSCOPE_API_KEY', ''))
     ELEVEN_LABS_API_KEY: Optional[str] = Field(default=os.getenv('ELEVEN_LABS_API_KEY', ''))
     BSA_API_KEY: Optional[str] = Field(default=os.getenv('BSA_API_KEY', ''))
     SUPABASE_API_KEY: Optional[str] = Field(default=os.getenv('SUPABASE_API_KEY', ''))
@@ -82,7 +83,11 @@ class Settings(BaseSettings):
     # Google Gemini
     DEFAULT_GEMINI_MODEL: str = Field(default='gemini-1.5-pro-latest') # Or 'gemini-pro-vision' for vision
     # DeepSeek
-    DEFAULT_DEEPSEEK_MODEL: str = Field(default='deepseek-chat') # Or 'deepseek-coder'
+    DEFAULT_DEEPSEEK_MODEL: str = Field(default='deepseek-v4-flash')
+    DEFAULT_DEEPSEEK_PRO_MODEL: str = Field(default='deepseek-v4-pro')
+    DEFAULT_DASHSCOPE_DEEPSEEK_MODEL: str = Field(default='deepseek-v4-flash')
+    DEEPSEEK_BASE_URL: str = Field(default='https://api.deepseek.com/v1')
+    DASHSCOPE_COMPAT_BASE_URL: str = Field(default='https://dashscope.aliyuncs.com/compatible-mode/v1')
     
     # Other settings
     LOG_LEVEL: str = Field(default='INFO')

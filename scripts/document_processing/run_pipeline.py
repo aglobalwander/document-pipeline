@@ -70,7 +70,7 @@ def parse_arguments():
 
     # LLM Configuration (used by various processors/transformers)
     parser.add_argument('--llm_provider', type=str, default='openai',
-                        choices=['openai', 'gemini', 'anthropic', 'deepseek'],
+                        choices=['openai', 'gemini', 'anthropic', 'deepseek', 'dashscope'],
                         help='LLM provider to use.')
     parser.add_argument('--llm_model', type=str,
                         help='Specific LLM model name to override the default.')

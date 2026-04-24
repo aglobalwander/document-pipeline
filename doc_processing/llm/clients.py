@@ -34,8 +34,9 @@ class OpenAIClient(BaseLLMClient):
             self.client = None
             self.instructor_client = None
         else:
-            # Initialize the standard OpenAI client
-            self.client = OpenAI(api_key=self.api_key)
+            # Initialize the standard OpenAI-compatible client
+            base_url = self.config.get("base_url")
+            self.client = OpenAI(api_key=self.api_key, base_url=base_url) if base_url else OpenAI(api_key=self.api_key)
             # Initialize the instructor-patched client
             try:
                 self.instructor_client = instructor.from_openai(
@@ -186,6 +187,39 @@ class OpenAIClient(BaseLLMClient):
             raise # Re-raise the exception
 
 
+class DeepSeekClient(OpenAIClient):
+    """OpenAI-compatible client for DeepSeek direct or DashScope-hosted DeepSeek."""
+
+    DEFAULT_MODEL = "deepseek-v4-flash"
+
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        model_name: Optional[str] = None,
+        config: Optional[Dict[str, Any]] = None,
+        route: str = "deepseek",
+    ):
+        settings = get_settings()
+        client_config = dict(config or {})
+        resolved_route = str(client_config.pop("route", route) or "deepseek").lower()
+        if resolved_route in {"dashscope", "bailian", "dashscope_deepseek"}:
+            resolved_api_key = api_key or os.getenv("DASHSCOPE_API_KEY") or settings.DASHSCOPE_API_KEY
+            resolved_model_name = model_name or os.getenv("DASHSCOPE_DEEPSEEK_MODEL") or settings.DEFAULT_DASHSCOPE_DEEPSEEK_MODEL
+            client_config["base_url"] = client_config.get("base_url") or settings.DASHSCOPE_COMPAT_BASE_URL
+            self.route = "dashscope"
+        else:
+            resolved_api_key = api_key or os.getenv("DEEPSEEK_API_KEY") or settings.DEEPSEEK_API_KEY
+            resolved_model_name = model_name or os.getenv("DEEPSEEK_MODEL") or settings.DEFAULT_DEEPSEEK_MODEL
+            client_config["base_url"] = client_config.get("base_url") or settings.DEEPSEEK_BASE_URL
+            self.route = "deepseek"
+
+        super().__init__(
+            api_key=resolved_api_key,
+            model_name=resolved_model_name,
+            config=client_config,
+        )
+
+
 # Import and export Anthropic client
 try:
     from .anthropic_client import AnthropicClient
@@ -218,7 +252,7 @@ except ImportError:
     QWEN_CLIENT_AVAILABLE = False
     logger.warning("QwenClient not available.")
 
-__all__ = ['OpenAIClient', 'BaseLLMClient']
+__all__ = ['OpenAIClient', 'DeepSeekClient', 'BaseLLMClient']
 
 if ANTHROPIC_CLIENT_AVAILABLE:
     __all__.append('AnthropicClient')

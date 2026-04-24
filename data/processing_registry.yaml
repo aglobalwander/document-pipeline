@@ -15,3 +15,18 @@ collections:
     docx: 11
     pptx: 1
   updated_at: '2026-02-12T01:50:37.380578+00:00'
+- name: asia-tl
+  source_path: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/input/asia_tl
+  output_path: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/collections/asia-tl
+  manifest_path: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/collections/asia-tl/manifest.yaml
+  status: reviewed_manual
+  processing_date: '2026-04-22'
+  files_processed: 11
+  files_failed: 0
+  files_total: 11
+  ready_for_ingestion: false
+  processable_by_type:
+    pdf: 5
+    docx: 6
+    pptx: 0
+  updated_at: '2026-04-22T04:36:13.513834+00:00'

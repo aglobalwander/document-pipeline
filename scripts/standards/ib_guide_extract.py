@@ -25,12 +25,13 @@ import pathlib
 import re
 
 TIME_MARKER = re.compile(r"^\*\*Recommended (?:teaching )?time[^*]*\*\*$")
+UNIT_HEADER = re.compile(r"^# Unit (\d): (.+)$")
 ISSUE_HDR = re.compile(r"^# Real-world issue (\d)$")
 TOPIC_HDR = re.compile(r"^\*\*(\d\.\d+)\s+(.+?)\*\*$")
 AO_LINE = re.compile(r"^(AO\d(?:,\s*AO\d)*)$")
 PAGE_FURNITURE = re.compile(
-    r"^(#+ Unit \d.*|Unit \d:.*|\d{1,3}|Economics guide|---|Syllabus(?: content)?|"
-    r"\*\*Depth of\*\*|\*\*teaching\*\*|\*\*Diagrams(?: and calculations)?\*\*)$")
+    r"^(#+ Unit \d.*|Unit \d:.*|\d{1,3}|[A-Z][\w ]+ guide|---|Syllabus(?: content)?|"
+    r"\*\*Depth of(?: teaching)?\*\*|\*\*teaching\*\*|\*\*Diagrams(?: and calculations)?\*\*)$")
 
 
 def is_bold(ln):
@@ -41,7 +42,7 @@ def unbold(ln):
     return ln.strip("*").strip()
 
 
-def parse(text, unit_titles):
+def parse(text, unit_titles, anchor="time"):
     lines = [l.strip() for l in text.replace("\xa0", " ").splitlines()]
     units, unit, issue, topic, block = [], None, None, None, None
     mode = None  # None | 'cu' | 'keyconcepts' | 'question'
@@ -62,7 +63,17 @@ def parse(text, unit_titles):
         if not ln:
             continue
 
-        if TIME_MARKER.match(ln):
+        um = UNIT_HEADER.match(ln) if anchor == "unit_header" else None
+        if um:
+            close_block()
+            topic = issue = None
+            unit = {"number": int(um.group(1)), "title": um.group(2).strip(),
+                    "time_note": "", "conceptual_understandings": [], "key_concepts": [],
+                    "issues": [], "topics": []}
+            units.append(unit)
+            mode = None
+            continue
+        if anchor == "time" and TIME_MARKER.match(ln):
             close_block()
             topic = issue = None
             unit = {"number": len(units) + 1, "title": unit_titles[len(units)],
@@ -209,13 +220,14 @@ def main():
     ap.add_argument("--guide", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--units", required=True, help="comma-separated unit titles, in order")
+    ap.add_argument("--anchor", default="time", choices=["time", "unit_header"])
     ap.add_argument("--start", default="# Assessment in the Diploma Programme",
                     help="section header that ends the syllabus content range")
     args = ap.parse_args()
 
     text = pathlib.Path(args.guide).read_text(encoding="utf-8")
     end = text.find(args.start)
-    depth = parse(text[:end if end > 0 else len(text)], args.units.split(","))
+    depth = parse(text[:end if end > 0 else len(text)], args.units.split(","), args.anchor)
 
     out = pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)

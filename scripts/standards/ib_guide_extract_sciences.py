@@ -84,6 +84,89 @@ def parse_topic(lines):
     return topic
 
 
+PHYS_TOPIC = re.compile(r"^## ([A-E])\.(\d+)\s+(.+)$")
+CHEM_TOPIC = re.compile(r"^\*\*(Structure|Reactivity)\s+(\d+)\.(\d+)[—-]\s*(.+?)\*\*$")
+CHEM_UND = re.compile(r"^\*\*(Structure|Reactivity)\s+(\d+\.\d+\.\d+)[—-]\s*(.+?)\*\*$")
+CHEM_XREF = re.compile(r"^(Structure|Reactivity)\s+\d")
+
+
+def parse_topic_physics(lines):
+    topic = {"theme_level": "", "guiding_questions": [], "understandings": [],
+             "linking_questions": []}
+    mode, hl = None, False
+    for ln in lines:
+        s = ln.strip()
+        if not s or FURNITURE.match(s):
+            continue
+        if "no additional higher level content" in s.lower():
+            continue
+        if s.startswith("**Guiding questions**"):
+            mode = "gq"; continue
+        if s.startswith("**Understandings**"):
+            mode, hl = "u", False; continue
+        if s.startswith("**Additional higher level**"):
+            mode, hl = "u", True; continue
+        if s.startswith("**Linking questions**"):
+            mode = "lq"; continue
+        if s.startswith("**Guidance**") or s.startswith("**Standard level") \
+                or s.startswith("Students should understand"):
+            continue
+        if s.startswith(("**", "#")):
+            mode = None; continue
+        if mode == "gq" and s.endswith("?"):
+            topic["guiding_questions"].append(s)
+        elif mode == "lq" and s.endswith("?"):
+            topic["linking_questions"].append(s)
+        elif mode == "u":
+            if s == "•":
+                topic["understandings"].append({"code": "", "statement": "", "guidance": "", "hl_only": hl})
+            elif topic["understandings"] and not topic["understandings"][-1]["statement"]:
+                topic["understandings"][-1]["statement"] = s
+            elif topic["understandings"]:
+                topic["understandings"][-1]["statement"] = (topic["understandings"][-1]["statement"] + " " + s).strip()
+    topic["understandings"] = [u for u in topic["understandings"] if u["statement"]]
+    return topic
+
+
+def parse_chemistry(body):
+    """Chemistry: bold understandings '**Structure 1.1.1—stmt**' + guidance prose;
+    inline 'Guiding question:' lines; cross-ref lines are linking questions."""
+    units = {"Structure": {"theme": "Structure", "title": "Structure", "topics": []},
+             "Reactivity": {"theme": "Reactivity", "title": "Reactivity", "topics": []}}
+    cur_topic, cur_u = None, None
+    for ln in body:
+        s = ln.strip()
+        if not s or FURNITURE.match(s):
+            continue
+        m = CHEM_TOPIC.match(s)
+        if m and not CHEM_UND.match(s):
+            theme = m.group(1)
+            cur_topic = {"code": f"{theme} {m.group(2)}.{m.group(3)}", "title": m.group(4).strip(),
+                         "theme_level": "", "guiding_questions": [], "understandings": [],
+                         "linking_questions": [], "org_level": int(m.group(2))}
+            units[theme]["topics"].append(cur_topic)
+            cur_u = None
+            continue
+        if cur_topic is None:
+            continue
+        gm = re.match(r"^\*\*Guiding question[s]?:?\s*(.+?)\*\*$", s)
+        if gm:
+            cur_topic["guiding_questions"].append(gm.group(1).strip())
+            continue
+        um = CHEM_UND.match(s)
+        if um:
+            cur_u = {"code": um.group(2), "statement": um.group(3).strip(), "guidance": "",
+                     "hl_only": False}
+            cur_topic["understandings"].append(cur_u)
+            continue
+        if CHEM_XREF.match(s) and s.endswith("?"):
+            cur_topic["linking_questions"].append(s)
+            continue
+        if cur_u is not None and not s.startswith(("**", "#")) and not CHEM_XREF.match(s):
+            cur_u["guidance"] = re.sub(r"\s+", " ", cur_u["guidance"] + " " + s).strip()
+    return [units[k] for k in ("Structure", "Reactivity") if units[k]["topics"]]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--guide", required=True)
@@ -91,6 +174,7 @@ def main():
     ap.add_argument("--themes", required=True, help="A=Label,B=Label,... (theme letter = concept)")
     ap.add_argument("--content-start", required=True)
     ap.add_argument("--content-end", required=True)
+    ap.add_argument("--mode", default="biology", choices=["biology", "physics", "chemistry"])
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
 
@@ -105,14 +189,29 @@ def main():
     end = next(i for i, l in enumerate(lines) if l.strip() == args.content_end)
     body = lines[start:end]
 
-    # split into topics
-    topic_bounds = [i for i, l in enumerate(body) if TOPIC_HDR.match(l.strip())]
+    if args.mode == "chemistry":
+        out_units = parse_chemistry(body)
+        depth = {"subject": args.subject, "themes": themes, "units": out_units}
+        pathlib.Path(args.out).parent.mkdir(parents=True, exist_ok=True)
+        pathlib.Path(args.out).write_text(json.dumps(depth, indent=1, ensure_ascii=False), encoding="utf-8")
+        n_t = sum(len(u["topics"]) for u in out_units)
+        n_u = sum(len(t["understandings"]) for u in out_units for t in u["topics"])
+        print(f"wrote {args.out}: {len(out_units)} theme-units, {n_t} topics, {n_u} understandings")
+        return
+
+    hdr = PHYS_TOPIC if args.mode == "physics" else TOPIC_HDR
+    parse_fn = parse_topic_physics if args.mode == "physics" else parse_topic
+    topic_bounds = [i for i, l in enumerate(body) if hdr.match(l.strip())]
     units = {k: {"theme": k, "title": v, "topics": []} for k, v in themes.items()}
     for idx, ti in enumerate(topic_bounds):
-        m = TOPIC_HDR.match(body[ti].strip())
-        theme, lvl, num, title = m.group(1), m.group(2), m.group(3), m.group(4).strip()
+        m = hdr.match(body[ti].strip())
+        if args.mode == "physics":
+            theme, num, title = m.group(1), m.group(2), m.group(3).strip()
+            lvl = "1"
+        else:
+            theme, lvl, num, title = m.group(1), m.group(2), m.group(3), m.group(4).strip()
         stop = topic_bounds[idx + 1] if idx + 1 < len(topic_bounds) else len(body)
-        parsed = parse_topic(body[ti + 1:stop])
+        parsed = parse_fn(body[ti + 1:stop])
         parsed["code"] = f"{theme}{lvl}.{num}"
         parsed["title"] = title
         parsed["org_level"] = int(lvl)

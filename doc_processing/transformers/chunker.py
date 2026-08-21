@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Optional, Union, Callable
 import logging
 import tiktoken
 
-from langchain.text_splitter import (
+from langchain_text_splitters import (
     RecursiveCharacterTextSplitter,
     TokenTextSplitter,
 )

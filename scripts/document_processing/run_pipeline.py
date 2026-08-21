@@ -38,7 +38,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- Argument Parsing ---
-def parse_arguments():
+def parse_arguments(argv=None):
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(
         description='Run document and media processing pipelines on files, directories, or URLs.'
@@ -69,18 +69,34 @@ def parse_arguments():
                         help='Merge multiple CSV outputs into a single file')
 
     # LLM Configuration (used by various processors/transformers)
-    parser.add_argument('--llm_provider', type=str, default='openai',
-                        choices=['openai', 'gemini', 'anthropic', 'deepseek', 'dashscope'],
-                        help='LLM provider to use.')
+    parser.add_argument('--llm_provider', type=str,
+                        choices=['openai', 'gemini', 'anthropic', 'deepseek', 'dashscope', 'kimi'],
+                        help='Explicit paid API opt-in. Omit for local/subscription-first processing.')
     parser.add_argument('--llm_model', type=str,
                         help='Specific LLM model name to override the default.')
     parser.add_argument('--api_key', type=str,
                         help='API key for the selected LLM provider (uses environment variable if not set).')
     parser.add_argument('--prompt_name', type=str,
                         help='Base name of the prompt template file (e.g., "invoice_extraction" for invoice_extraction.j2).')
+    parser.add_argument('--reasoning_effort', type=str,
+                        choices=['minimal', 'low', 'medium', 'high', 'xhigh', 'max'],
+                        help='Provider-native reasoning effort. Omit to use the selected model default.')
+    parser.add_argument('--reasoning_mode', type=str, choices=['standard', 'pro'],
+                        help='OpenAI GPT-5.6 reasoning mode.')
+    parser.add_argument('--thinking', type=str,
+                        choices=['adaptive', 'enabled', 'disabled'],
+                        help='Provider-native thinking mode where supported.')
+    parser.add_argument('--thinking_budget', type=int,
+                        help='Claude token budget when --thinking enabled is selected.')
+    parser.add_argument('--thinking_summaries', type=str, choices=['auto', 'none'],
+                        help='Gemini Interactions thinking-summary behavior.')
+    parser.add_argument('--text_verbosity', type=str, choices=['low', 'medium', 'high'],
+                        help='OpenAI Responses text verbosity.')
+    parser.add_argument('--store_remote_state', action='store_true',
+                        help='Allow the remote API to retain response/interaction state. Disabled by default.')
 
     # PDF Processing Configuration
-    parser.add_argument('--ocr_mode', type=str, default='hybrid', choices=['hybrid', 'docling', 'enhanced_docling', 'gpt'],
+    parser.add_argument('--ocr_mode', type=str, default='enhanced_docling', choices=['hybrid', 'docling', 'enhanced_docling', 'gpt'],
                         help="OCR mode for PDF processing ('hybrid', 'docling', 'enhanced_docling', 'gpt'). Only relevant for PDF inputs.")
     parser.add_argument('--show_progress_bar', action='store_true', default=True,
                         help="Show progress bar when processing multi-page documents.")
@@ -114,7 +130,7 @@ def parse_arguments():
                         help="Use LLM-based cleaning for improved text flow (for enhanced_docling processor).")
     parser.add_argument('--pdf_processor_strategy', type=str, choices=['exclusive', 'fallback_chain'],
                         help="Strategy for PDF processing: 'exclusive' (use one processor) or 'fallback_chain' (try multiple in order)")
-    parser.add_argument('--pdf_processor', type=str, choices=['pymupdf', 'docling', 'enhanced_docling', 'gpt', 'gemini'],
+    parser.add_argument('--pdf_processor', type=str, choices=['pymupdf', 'docling', 'enhanced_docling', 'gpt', 'gemini', 'claude'],
                         help="Default PDF processor to use (for 'exclusive' strategy)")
     parser.add_argument('--gpt_vision_prompt', type=str,
                         help='Path to a custom Jinja2 template file for GPT Vision OCR.')
@@ -122,13 +138,83 @@ def parse_arguments():
                         help='Disable PDF page image generation in the loader (saves time if only using Docling).')
 
     # Media Processing Configuration
-    parser.add_argument('--image_backend', type=str, default='openai', choices=['openai', 'gemini'],
-                        help='Backend for image processing (captioning/vision).')
+    parser.add_argument('--image_backend', type=str, default='local', choices=['local', 'openai', 'gemini'],
+                        help='Image backend. Local Tesseract is the default; remote backends are paid API opt-ins.')
     parser.add_argument('--deepgram_params', type=json.loads, default={},
                         help='JSON string of parameters for the Deepgram API (e.g., \'{"diarize": true}\').')
     # Add arguments for VideoToChunks if needed (e.g., --video_split_strategy)
 
-    return parser.parse_args()
+    args = parser.parse_args(argv)
+
+    if args.llm_model and not args.llm_provider:
+        parser.error('--llm_model requires an explicit --llm_provider paid API opt-in')
+    if args.api_key and not args.llm_provider:
+        parser.error('--api_key requires an explicit --llm_provider paid API opt-in')
+    if any((
+        args.reasoning_effort,
+        args.reasoning_mode,
+        args.thinking,
+        args.thinking_budget,
+        args.thinking_summaries,
+        args.text_verbosity,
+        args.store_remote_state,
+    )) and not args.llm_provider:
+        parser.error('remote model controls require an explicit --llm_provider paid API opt-in')
+    if args.llm_provider == 'anthropic' and args.thinking == 'enabled' and not args.thinking_budget:
+        parser.error('--thinking enabled with Anthropic requires --thinking_budget')
+    allowed_effort = {
+        'openai': {'low', 'medium', 'high', 'xhigh', 'max'},
+        'anthropic': {'low', 'medium', 'high', 'max'},
+        'gemini': {'minimal', 'low', 'medium', 'high'},
+        'deepseek': {'low', 'medium', 'high', 'max'},
+        'dashscope': {'low', 'medium', 'high', 'max'},
+        'kimi': {'low', 'medium', 'high'},
+    }
+    if args.reasoning_effort and args.reasoning_effort not in allowed_effort.get(args.llm_provider, set()):
+        parser.error(
+            f"--reasoning_effort {args.reasoning_effort} is not supported by "
+            f"--llm_provider {args.llm_provider}"
+        )
+    if args.reasoning_mode and args.llm_provider != 'openai':
+        parser.error('--reasoning_mode is supported only with --llm_provider openai')
+    if args.thinking_budget is not None and args.thinking_budget <= 0:
+        parser.error('--thinking_budget must be a positive integer')
+    if args.thinking_budget is not None and args.llm_provider != 'anthropic':
+        parser.error('--thinking_budget is supported only with --llm_provider anthropic')
+    if args.thinking and args.llm_provider not in {'anthropic', 'deepseek', 'dashscope'}:
+        parser.error('--thinking is supported only with Anthropic or DeepSeek routes')
+    if args.text_verbosity and args.llm_provider != 'openai':
+        parser.error('--text_verbosity is supported only with --llm_provider openai')
+    if args.thinking_summaries and args.llm_provider != 'gemini':
+        parser.error('--thinking_summaries is supported only with --llm_provider gemini')
+    if args.thinking == 'adaptive' and args.llm_provider != 'anthropic':
+        parser.error('--thinking adaptive is supported only with --llm_provider anthropic')
+    if args.store_remote_state and args.llm_provider not in {'openai', 'gemini'}:
+        parser.error('--store_remote_state is supported only with OpenAI or Gemini')
+    if args.pipeline_type == 'structured' and not args.llm_provider:
+        parser.error('--pipeline_type structured requires an explicit --llm_provider paid API opt-in')
+
+    requested_pdf_processor = args.pdf_processor
+    if not requested_pdf_processor and args.ocr_mode == 'gpt':
+        requested_pdf_processor = 'gpt'
+    required_pdf_provider = {
+        'gpt': 'openai',
+        'gemini': 'gemini',
+        'claude': 'anthropic',
+    }.get(requested_pdf_processor)
+    if required_pdf_provider and args.llm_provider != required_pdf_provider:
+        parser.error(
+            f"--pdf_processor {requested_pdf_processor} requires "
+            f"--llm_provider {required_pdf_provider}"
+        )
+
+    if args.image_backend in {'openai', 'gemini'} and args.llm_provider != args.image_backend:
+        parser.error(
+            f"--image_backend {args.image_backend} requires "
+            f"--llm_provider {args.image_backend}"
+        )
+
+    return args
 
 # --- Helper to check if input is a URL ---
 def is_url(input_string: str) -> bool:
@@ -191,11 +277,26 @@ def main():
         logger.info(f"Processing input: {input_item}")
 
         # Create pipeline configuration dictionary from parsed arguments
+        llm_client_config = {
+            'reasoning_effort': args.reasoning_effort,
+            'reasoning_mode': args.reasoning_mode,
+            'thinking': args.thinking,
+            'thinking_budget': args.thinking_budget,
+            'thinking_summaries': args.thinking_summaries,
+            'verbosity': args.text_verbosity,
+            'store': args.store_remote_state,
+        }
+        llm_client_config = {
+            key: value for key, value in llm_client_config.items()
+            if value is not None
+        }
+
         pipeline_config = {
             'pipeline_type': args.pipeline_type,
             'llm_provider': args.llm_provider,
             'llm_model': args.llm_model,
             'api_key': args.api_key,
+            'llm_client_config': llm_client_config,
             'prompt_name': args.prompt_name,
             'ocr_mode': args.ocr_mode,
             'gpt_vision_prompt': args.gpt_vision_prompt,
@@ -228,22 +329,48 @@ def main():
         # Map ocr_mode to default_pdf_processor if pdf_processor is not explicitly specified
         if args.pdf_processor:
             pipeline_config['default_pdf_processor'] = args.pdf_processor
+            pipeline_config['active_pdf_processors'] = [args.pdf_processor]
         elif args.ocr_mode:
             # Map ocr_mode to default_pdf_processor
             if args.ocr_mode == 'gpt':
                 pipeline_config['default_pdf_processor'] = 'gpt'
+                pipeline_config['active_pdf_processors'] = ['gpt']
             elif args.ocr_mode == 'docling':
                 pipeline_config['default_pdf_processor'] = 'docling'
+                pipeline_config['active_pdf_processors'] = ['docling']
             elif args.ocr_mode == 'enhanced_docling':
                 pipeline_config['default_pdf_processor'] = 'enhanced_docling'
+                pipeline_config['active_pdf_processors'] = ['enhanced_docling']
             elif args.ocr_mode == 'hybrid':
-                # For hybrid mode, use fallback chain strategy with docling as first choice
+                # Hybrid is a local-only fallback chain. Paid APIs require an
+                # explicit processor/provider selection and never enter here.
                 pipeline_config['pdf_processor_strategy'] = 'fallback_chain'
-                pipeline_config['active_pdf_processors'] = ['pymupdf', 'docling', 'enhanced_docling', 'gpt', 'gemini']
+                pipeline_config['active_pdf_processors'] = ['enhanced_docling', 'docling', 'pymupdf']
+                pipeline_config['pdf_fallback_order'] = ['enhanced_docling', 'docling', 'pymupdf']
         
         # Set pdf_processor_strategy if specified
         if args.pdf_processor_strategy:
             pipeline_config['pdf_processor_strategy'] = args.pdf_processor_strategy
+            if args.pdf_processor_strategy == 'fallback_chain':
+                if args.pdf_processor:
+                    fallback_order = [args.pdf_processor]
+                elif args.ocr_mode == 'gpt':
+                    fallback_order = ['gpt']
+                else:
+                    preferred_local = {
+                        'docling': 'docling',
+                        'enhanced_docling': 'enhanced_docling',
+                    }.get(args.ocr_mode, 'enhanced_docling')
+                    fallback_order = [
+                        preferred_local,
+                        *[
+                            processor
+                            for processor in ('enhanced_docling', 'docling', 'pymupdf')
+                            if processor != preferred_local
+                        ],
+                    ]
+                pipeline_config['active_pdf_processors'] = fallback_order
+                pipeline_config['pdf_fallback_order'] = fallback_order
 
         # Instantiate DocumentPipeline for each input (to ensure a clean pipeline per document/URL)
         pipeline = DocumentPipeline(config=pipeline_config)

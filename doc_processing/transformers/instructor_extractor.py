@@ -1,4 +1,4 @@
-"""Document structure extractor using Instructor."""
+"""Document structure extractor using provider-native structured output."""
 from typing import Any, Dict, List, Optional, Type, TypeVar
 import logging
 from pydantic import BaseModel
@@ -7,13 +7,13 @@ from doc_processing.embedding.base import BaseTransformer
 from doc_processing.config import get_settings
 # Import the new LLM client base and implementation
 from doc_processing.llm.base import BaseLLMClient
-from doc_processing.llm.clients import DeepSeekClient, OpenAIClient # Default client
+from doc_processing.llm.clients import DeepSeekClient, KimiClient, OpenAIClient
 
 # Define the type variable for the response model
 T = TypeVar('T', bound=BaseModel)
 
 class InstructorExtractor(BaseTransformer):
-    """Extract structured data from documents using Instructor."""
+    """Extract structured data; the legacy class name is kept for compatibility."""
     
     def __init__(self, response_model: Type[BaseModel], config: Optional[Dict[str, Any]] = None):
         """Initialize with Pydantic response model.
@@ -31,11 +31,16 @@ class InstructorExtractor(BaseTransformer):
         
         # LLM Client Initialization
         self.llm_client: Optional[BaseLLMClient] = None
-        # Determine provider (default to openai as Instructor primarily works with it)
-        llm_provider = self.config.get('llm_provider', 'openai')
+        # Remote structured extraction is always an explicit paid API choice.
+        llm_provider = self.config.get('llm_provider')
         llm_model = self.config.get('llm_model') # Let client use its default if not specified
 
-        if llm_provider == 'openai':
+        if not llm_provider:
+            self.logger.error(
+                "Structured extraction requires an explicit llm_provider; "
+                "subscription CLIs are interactive tools, not pipeline credentials."
+            )
+        elif llm_provider == 'openai':
             self.llm_client = OpenAIClient(
                 api_key=self.config.get('api_key', self.settings.OPENAI_API_KEY or self.settings.OPENAI_APIKEY),
                 model_name=llm_model,
@@ -53,8 +58,35 @@ class InstructorExtractor(BaseTransformer):
                 model_name=llm_model,
                 config=client_config,
             )
+        elif llm_provider in {'kimi', 'moonshot'}:
+            self.llm_client = KimiClient(
+                api_key=self.config.get('api_key'),
+                model_name=llm_model,
+                config=self.config.get('llm_client_config'),
+            )
+        elif llm_provider == 'anthropic':
+            from doc_processing.llm.anthropic_client import AnthropicClient
+            self.llm_client = AnthropicClient(
+                api_key=self.config.get('api_key', self.settings.ANTHROPIC_API_KEY),
+                model_name=llm_model,
+                config=self.config.get('llm_client_config'),
+            )
+        elif llm_provider == 'gemini':
+            from doc_processing.llm.gemini_client import GeminiClient
+            self.llm_client = GeminiClient(
+                api_key=self.config.get(
+                    'api_key',
+                    self.settings.GEMINI_API_KEY or self.settings.GOOGLE_API_KEY,
+                ),
+                model_name=llm_model,
+                config=self.config.get('llm_client_config'),
+            )
         else:
-            self.logger.error(f"InstructorExtractor currently supports 'openai', 'deepseek', and 'dashscope' providers, but '{llm_provider}' was configured.")
+            self.logger.error(
+                "InstructorExtractor supports openai, anthropic, gemini, deepseek, dashscope, and kimi; "
+                "received %r.",
+                llm_provider,
+            )
             # Optionally raise an error or disable functionality
 
         # Store parameters for the call
@@ -80,7 +112,7 @@ class InstructorExtractor(BaseTransformer):
         
         if not self.llm_client:
              self.logger.error("LLM client not initialized. Cannot perform structured extraction.")
-             document['error'] = "InstructorExtractor: LLM client not initialized."
+             document['error'] = "Structured extractor: LLM client not initialized."
              return document
 
         try:

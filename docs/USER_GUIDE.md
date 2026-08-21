@@ -1,176 +1,177 @@
-# Document Processing Pipeline User Guide
+# User guide
 
-## Overview
-The document processing pipeline provides a flexible system for extracting and transforming content from various document formats (PDF, DOCX, PPTX, etc.) into structured outputs. The pipeline now includes PyMuPDF for ultra-fast text extraction from PDFs, alongside Docling's native processing capabilities for enhanced accuracy and caching support for resumable processing.
+## Setup and health check
 
-## Key Features
+Run from the repository root:
 
-### Multi-Format Output
-When using the enhanced Docling processor, the pipeline supports output in multiple formats:
-- **Primary format**: Specified by `--output_format` (text, markdown, json)
-- **Additional formats**: Automatically saved to subdirectories:
-  - `data/output/text/`
-  - `data/output/markdown/`
-  - `data/output/json/`
-
-### Resumable Processing with Caching
-The pipeline now includes a caching mechanism that allows processing to be resumed if interrupted:
-- Automatically saves progress after each page is processed
-- Resumes from the last processed page if the pipeline is restarted
-- Maintains document integrity across processing sessions
-
-## Command-Line Options
-
-### Basic Usage
 ```bash
-python scripts/master_docling.py --input_path data/input/pdfs/cc.pdf --output_format text
+poetry install
+poetry run python -c "import doc_processing, pydantic; print('pipeline ready')"
+poetry run python scripts/document_processing/run_pipeline.py --help
 ```
 
-### Format Control Options
-- `--output_format`: Specify primary output format (text, markdown, json)
-- `--no_all_formats`: Disable additional output formats (default: false)
+Use the Poetry environment for every processing command. The local Conda
+environments do not contain the complete dependency set.
 
-### Caching Options
-- `--use_cache`: Enable processing cache (default: true)
-- `--no_cache`: Disable processing cache
+## Choose the smallest useful workflow
 
-### PDF Processing Options
-- `--extract_tables`: Enable table extraction (default: true)
-- `--no_extract_tables`: Disable table extraction
-- `--pdf_processor_strategy`: Choose processing strategy (exclusive, fallback_chain)
-- `--pdf_processor`: Specific processor for exclusive strategy (pymupdf, docling, enhanced_docling, gemini, gpt)
+### PDF: recommended local extraction
 
-## Output Structure
+Enhanced Docling is the default recommendation for PDFs, especially scans,
+tables, and complex layouts:
+
+```bash
+poetry run python scripts/document_processing/master_docling.py \
+  --input_path /absolute/path/document.pdf \
+  --output_format markdown
 ```
+
+It writes under `data/output/{text,markdown,json}/` by default and emits all
+three representations unless `--no_output_all_formats` is supplied. Caching and
+column detection are enabled by default.
+
+Useful variants:
+
+```bash
+# One primary format only
+poetry run python scripts/document_processing/master_docling.py \
+  --input_path /absolute/path/document.pdf \
+  --output_format json \
+  --no_output_all_formats
+
+# Ignore existing checkpoints
+poetry run python scripts/document_processing/master_docling.py \
+  --input_path /absolute/path/document.pdf \
+  --output_format markdown \
+  --no_cache
+
+# Remove checkpoints before the run
+poetry run python scripts/document_processing/master_docling.py \
+  --input_path /absolute/path/document.pdf \
+  --clear_cache
+
+# Disable table or column handling only when the source requires it
+poetry run python scripts/document_processing/master_docling.py \
+  --input_path /absolute/path/document.pdf \
+  --no_extract_tables \
+  --no_detect_columns
+```
+
+### PDF: fast embedded text
+
+Use PyMuPDF when a PDF has reliable selectable text and layout reconstruction is
+not the priority:
+
+```bash
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path /absolute/path/document.pdf \
+  --pipeline_type text \
+  --pdf_processor pymupdf
+```
+
+### DOCX, PPTX, text, Markdown, JSON, image, audio, or video
+
+Use the general runner:
+
+```bash
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path /absolute/path/document.docx \
+  --pipeline_type markdown \
+  --output_format md
+```
+
+For direct DOCX/PPTX conversion with MarkItDown:
+
+```bash
+poetry run python scripts/document_processing/direct_markitdown.py \
+  /absolute/path/document.docx \
+  /absolute/path/output.md
+```
+
+### Directories
+
+Directories are non-recursive unless `--recursive` is present:
+
+```bash
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path /absolute/path/collection \
+  --pipeline_type text \
+  --recursive
+```
+
+Supported discovery extensions include PDF, TXT, MD, JSON, DOCX, PPTX, common
+image/audio/video formats, and supported URLs.
+
+### YouTube
+
+For a URL through the pipeline:
+
+```bash
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path "https://youtube.com/watch?v=..." \
+  --pipeline_type markdown \
+  --output_format md
+```
+
+For the repository's batch download workflow:
+
+```bash
+poetry run python batch_youtube_download.py
+```
+
+Private or restricted videos may require browser cookies.
+
+## Outputs
+
+The general runner writes to a subdirectory matching `pipeline_type` unless the
+provided output directory already has that name:
+
+```text
 data/output/
-├── text/              # Text format outputs (.txt)
-├── markdown/          # Markdown format outputs (.md)
-├── json/              # JSON format outputs (.json)
-└── ...                # Other pipeline-specific outputs
+├── text/
+├── markdown/
+├── json/
+└── collections/
 ```
 
-## Cache Structure
-```
-data/cache/
-└── [document_id].json # Cache files for resumable processing
-```
+Collection jobs also write a manifest and update
+`data/processing_registry.yaml`. Do not edit generated outputs or the registry
+while a batch is running.
 
-## PDF Processing Strategies
+## Optional remote models
 
-### Available PDF Processors
-1. **PyMuPDF** (New!) - Ultra-fast text extraction for PDFs with embedded text
-   - Speed: 50-100x faster than OCR methods
-   - Cost: Free
-   - Best for: Modern PDFs, reports, ebooks with selectable text
+Remote providers are paid, explicit paths. The general runner accepts
+`openai`, `gemini`, `anthropic`, `deepseek`, `dashscope`, and `kimi` for the
+transform stages that support them.
 
-2. **Docling** - Advanced document understanding with layout preservation
-   - Speed: Moderate
-   - Cost: Free (local processing)
-   - Best for: Complex layouts, mixed content
-
-3. **Enhanced Docling** - Docling with multi-format output and caching
-   - Speed: Moderate
-   - Cost: Free (local processing)
-   - Best for: When you need text, markdown, and JSON outputs
-
-4. **Gemini** - Google's AI for document processing
-   - Speed: Fast
-   - Cost: ~$0.0002 per page
-   - Best for: When Docling fails, complex documents
-
-5. **GPT-4V** - OpenAI's vision model
-   - Speed: Moderate
-   - Cost: ~$0.01 per page
-   - Best for: Handwritten text, poor quality scans
-
-### Processing Strategies
-
-#### Exclusive Strategy (Default)
-Uses only the specified processor:
-```bash
-python scripts/run_pipeline.py --input_path document.pdf --pipeline_type text --pdf_processor pymupdf
-```
-
-#### Fallback Chain Strategy (Recommended)
-Tries processors in order until one succeeds:
-```bash
-python scripts/run_pipeline.py --input_path document.pdf --pipeline_type text --pdf_processor_strategy fallback_chain
-```
-Default order: PyMuPDF → Docling → Enhanced Docling → Gemini → GPT-4V
-
-## Examples
-
-### Basic Text Output with PyMuPDF (Fastest)
-```bash
-python scripts/run_pipeline.py --input_path data/input/pdfs/document.pdf --pipeline_type text --pdf_processor pymupdf
-```
-
-### Basic Text Output with Docling
-```bash
-python scripts/master_docling.py --input_path data/input/pdfs/document.pdf --output_format text
-```
-
-### Full Multi-Format Output with Caching
-```bash
-python scripts/master_docling.py --input_path data/input/pdfs/document.pdf --output_format markdown --use_cache
-```
-
-### Disable Caching for One-Time Processing
-```bash
-python scripts/master_docling.py --input_path data/input/pdfs/document.pdf --output_format json --no_cache
-```
-
-### Process with Table Extraction Disabled
-```bash
-python scripts/master_docling.py --input_path data/input/pdfs/document.pdf --output_format text --no_extract_tables
-```
-
-## Troubleshooting
-
-### Interrupted Processing
-If processing is interrupted, simply run the same command again. The pipeline will automatically resume from the last successfully processed page.
-
-### Cache Issues
-If you encounter issues with cached results, simply delete the cache files in the `data/cache/` directory.
-
-### Performance Considerations
-- Caching adds minimal overhead but provides significant benefits for large documents
-- For small documents or one-time processing, you can disable caching with `--no_cache`
-
-## DOCX Processing
-
-The pipeline supports two methods for converting DOCX files to Markdown:
-
-### Pipeline Approach (MammothDOCXProcessor)
-Uses the pipeline's integrated DOCX processor based on the Mammoth library:
+For one-off review or restructuring, use the active Codex subscription task
+instead. See [Model routing](MODEL_ROUTING.md) before choosing a remote API or
+another subscription CLI.
 
 ```bash
-python scripts/run_pipeline.py --input_path data/input/docx/document.docx --pipeline_type markdown
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path /absolute/path/document.md \
+  --pipeline_type json \
+  --output_format json \
+  --llm_provider kimi \
+  --llm_model kimi-k3
 ```
 
-Features:
-- Integrated with the pipeline's workflow
-- Preserves basic document structure (headings, lists, tables)
-- Outputs to configured output directories
+Credentials live in `~/.config/api-keys/.env.master` and load at runtime. Do not
+pass a key in a recorded shell command or put it in the repository. See
+[Kimi K3](KIMI_K3.md) for the subscription CLI versus API boundary.
 
-### Direct MarkitDown Approach
-Uses the MarkitDown library directly for more efficient conversion:
+## Recovery
 
-```bash
-python scripts/direct_markitdown.py data/input/docx/document.docx output.md
-```
+- Interrupted Docling run: rerun the same command; caching resumes where
+  supported.
+- Suspect cache: use `--clear_cache`, then rerun.
+- Missing import inside `poetry run`: run `poetry install` and verify with the
+  health-check command above.
+- No content: inspect the source for selectable text and retry with Enhanced
+  Docling rather than escalating directly to a paid API.
+- Directory finds nothing: verify the extension and add `--recursive` if the
+  files are nested.
 
-Features:
-- More compact and cleaner output 
-- Better table formatting
-- Preserves images as base64-encoded content
-- Faster processing for large documents
-
-### Comparison
-| Feature | Pipeline Approach | Direct MarkitDown |
-|---------|-------------------|-------------------|
-| Output Size | Larger/more verbose | More compact |
-| Table Support | Basic | Enhanced |
-| Image Support | Limited | Base64 encoded |
-| Integration | Full pipeline features | Standalone |
-| Performance | Good | Better |
+For every option supported by the current code, see [Commands](COMMANDS.md) or
+run the two `--help` commands.

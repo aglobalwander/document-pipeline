@@ -1,188 +1,222 @@
-"""Kimi (Moonshot AI) client for multimodal LLM interactions."""
+"""Kimi API client for text, structured, image, and video-aware requests."""
 
-import os
 import json
 import logging
-import base64
-from typing import Any, Dict, List, Optional
+import os
+from typing import Any, Dict, List, Optional, Type, Union
+from urllib.parse import urljoin
+
 import requests
+from pydantic import BaseModel
+
+from doc_processing.config import get_settings
 
 from .base import BaseLLMClient
-from doc_processing.config import get_settings
 
 logger = logging.getLogger(__name__)
 
 
 class KimiClient(BaseLLMClient):
-    """Client for interacting with Moonshot AI's Kimi API (multimodal models)."""
+    """Client for Moonshot AI's OpenAI-compatible Kimi API.
 
-    DEFAULT_MODEL = "moonshot-v1-128k"  # Kimi's vision-capable model
-    API_ENDPOINT = "https://api.moonshot.cn/v1/chat/completions"
+    Kimi K3 is the default paid API model. Local extraction remains the
+    pipeline default; constructing this client never makes an API request.
+    """
+
+    DEFAULT_MODEL = "kimi-k3"
+    DEFAULT_BASE_URL = "https://api.moonshot.ai/v1"
+    DEFAULT_MAX_COMPLETION_TOKENS = 16_000
 
     def __init__(
         self,
         api_key: Optional[str] = None,
         model_name: Optional[str] = None,
-        config: Optional[Dict[str, Any]] = None
+        config: Optional[Dict[str, Any]] = None,
     ):
-        """Initialize Kimi client."""
+        """Initialize Kimi without contacting the API."""
         settings = get_settings()
-        resolved_api_key = api_key or os.getenv("KIMI_API_KEY") or settings.config.get("KIMI_API_KEY")
-        resolved_model_name = model_name or os.getenv("KIMI_MODEL") or self.DEFAULT_MODEL
+        client_config = dict(config or {})
+        resolved_api_key = (
+            api_key
+            or os.getenv("MOONSHOT_API_KEY")
+            or os.getenv("KIMI_API_KEY")
+            or settings.MOONSHOT_API_KEY
+            or settings.KIMI_API_KEY
+        )
+        resolved_model_name = (
+            model_name
+            or os.getenv("KIMI_MODEL")
+            or client_config.get("model")
+            or settings.KIMI_MODEL
+            or self.DEFAULT_MODEL
+        )
+        base_url = (
+            client_config.get("base_url")
+            or os.getenv("MOONSHOT_BASE_URL")
+            or os.getenv("KIMI_BASE_URL")
+            or settings.MOONSHOT_BASE_URL
+            or self.DEFAULT_BASE_URL
+        )
 
         super().__init__(
             api_key=resolved_api_key,
             model_name=resolved_model_name,
-            config=config
+            config=client_config,
         )
+        self.base_url = base_url.rstrip("/")
+        self.api_endpoint = urljoin(f"{self.base_url}/", "chat/completions")
 
         if not self.api_key:
-            logger.warning("Kimi API key not found. KimiClient will not function.")
+            logger.warning(
+                "Kimi API key not found. Set MOONSHOT_API_KEY (preferred) or "
+                "KIMI_API_KEY before making a paid API request."
+            )
 
-    def generate_completion(self, prompt: str, system_prompt: Optional[str] = None, **kwargs) -> str:
-        """Generate text completion using Kimi Chat Completions."""
+    def _require_api_key(self) -> None:
         if not self.api_key:
-            raise ValueError("Kimi API key not set. Check KIMI_API_KEY environment variable.")
+            raise ValueError(
+                "Kimi API key not set. Check MOONSHOT_API_KEY or KIMI_API_KEY."
+            )
 
-        messages = []
+    def _request_payload(
+        self,
+        messages: List[Dict[str, Any]],
+        **kwargs: Any,
+    ) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {
+            "model": self.get_model_name(),
+            "messages": messages,
+            "max_completion_tokens": kwargs.get(
+                "max_completion_tokens",
+                kwargs.get("max_tokens", self.DEFAULT_MAX_COMPLETION_TOKENS),
+            ),
+        }
+
+        # K3 always reasons. Omitting reasoning_effort preserves the provider's
+        # current default (max); callers can explicitly request low/high/max.
+        for parameter in ("reasoning_effort", "temperature", "top_p", "response_format"):
+            value = kwargs.get(parameter)
+            if value is not None:
+                payload[parameter] = value
+
+        return payload
+
+    def _post_completion(self, payload: Dict[str, Any], timeout: int) -> str:
+        self._require_api_key()
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+
+        try:
+            response = requests.post(
+                self.api_endpoint,
+                headers=headers,
+                json=payload,
+                timeout=timeout,
+            )
+            response.raise_for_status()
+            data = response.json()
+        except requests.exceptions.RequestException as exc:
+            logger.error("Kimi API request failed: %s", exc)
+            raise
+
+        choices = data.get("choices") or []
+        message = choices[0].get("message") if choices else None
+        content = message.get("content") if message else None
+        if not isinstance(content, str):
+            logger.warning("Kimi response did not contain text message content.")
+            return ""
+        return content.strip()
+
+    def generate_completion(
+        self,
+        prompt: str,
+        system_prompt: Optional[str] = None,
+        **kwargs: Any,
+    ) -> str:
+        """Generate a text completion using Kimi Chat Completions."""
+        messages: List[Dict[str, Any]] = []
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
 
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
-        }
-
-        payload = {
-            "model": self.get_model_name(),
-            "messages": messages,
-            "temperature": kwargs.get("temperature", 0.3),
-            "max_tokens": kwargs.get("max_tokens", 4000),
-        }
-
-        try:
-            logger.debug(f"Sending completion request to Kimi model {self.get_model_name()}")
-            response = requests.post(
-                self.API_ENDPOINT,
-                headers=headers,
-                json=payload,
-                timeout=kwargs.get("timeout", 120)
-            )
-            response.raise_for_status()
-
-            data = response.json()
-            if data.get("choices") and data["choices"][0].get("message"):
-                completion = data["choices"][0]["message"].get("content", "")
-                return completion.strip()
-            else:
-                logger.warning("Kimi response structure unexpected or message content empty.")
-                return ""
-
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Kimi API request failed: {e}")
-            raise
+        payload = self._request_payload(messages, **kwargs)
+        logger.debug("Sending completion request to Kimi model %s", self.get_model_name())
+        return self._post_completion(payload, timeout=kwargs.get("timeout", 300))
 
     def generate_structured_output(
         self,
         prompt: str,
-        output_schema: Dict[str, Any],
+        output_schema: Union[Dict[str, Any], Type[BaseModel]],
         system_prompt: Optional[str] = None,
-        **kwargs
+        **kwargs: Any,
     ) -> Dict[str, Any]:
-        """Generate structured JSON output using Kimi."""
-        if not self.api_key:
-            raise ValueError("Kimi API key not set.")
+        """Generate JSON constrained by Kimi K3's native structured output."""
+        self._require_api_key()
+        if isinstance(output_schema, type) and issubclass(output_schema, BaseModel):
+            schema = output_schema.model_json_schema()
+        elif isinstance(output_schema, dict):
+            schema = output_schema
+        else:
+            raise TypeError("output_schema must be a JSON Schema dictionary or Pydantic model.")
 
-        # Add JSON instructions to system prompt
-        default_system_prompt = "You are an expert data extraction assistant. Extract structured information from the user's text."
-        json_system_prompt = (system_prompt or default_system_prompt) + \
-            "\n\nYour response MUST be a single, valid JSON object conforming to the following schema, with no extra text or explanation before or after it."
+        messages: List[Dict[str, Any]] = []
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
+        if schema:
+            messages.append({"role": "user", "content": prompt})
+        else:
+            # TextToJSON intentionally allows callers to request arbitrary JSON
+            # without supplying a schema. K3's JSON object mode covers that path.
+            messages.append(
+                {
+                    "role": "user",
+                    "content": f"Return a valid JSON object.\n\n{prompt}",
+                }
+            )
 
-        if output_schema:
-            schema_string = json.dumps(output_schema, indent=2)
-            json_system_prompt += f"\n\nDesired JSON Schema:\n```json\n{schema_string}\n```"
-
-        # Generate completion
-        raw_completion = self.generate_completion(
-            prompt,
-            system_prompt=json_system_prompt,
-            temperature=kwargs.get("temperature", 0.2),
-            max_tokens=kwargs.get("max_tokens", 4000)
+        structured_kwargs = dict(kwargs)
+        if schema:
+            structured_kwargs["response_format"] = {
+                "type": "json_schema",
+                "json_schema": {
+                    "name": structured_kwargs.pop("schema_name", "document_extraction"),
+                    "strict": True,
+                    "schema": schema,
+                },
+            }
+        else:
+            structured_kwargs["response_format"] = {"type": "json_object"}
+        payload = self._request_payload(messages, **structured_kwargs)
+        raw_completion = self._post_completion(
+            payload,
+            timeout=structured_kwargs.get("timeout", 300),
         )
 
-        # Parse JSON
         try:
-            json_start = raw_completion.find('{')
-            json_end = raw_completion.rfind('}')
-            if json_start != -1 and json_end != -1:
-                json_str = raw_completion[json_start:json_end+1]
-                parsed_json = json.loads(json_str)
-                return parsed_json
-            else:
-                return json.loads(raw_completion)
-        except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse JSON from Kimi completion. Error: {e}")
-            raise ValueError(f"LLM output was not valid JSON. Completion: {raw_completion}")
+            return json.loads(raw_completion)
+        except json.JSONDecodeError as exc:
+            logger.error("Kimi structured output was not valid JSON: %s", exc)
+            raise ValueError("Kimi structured output was not valid JSON.") from exc
 
-    def generate_multimodal_completion(self, messages: List[Dict[str, Any]], **kwargs) -> str:
-        """
-        Generate text completion using Kimi with multimodal input (images + text).
-
-        Args:
-            messages: List of message dicts with format:
-                [
-                    {"role": "system", "content": "..."},
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "text", "text": "..."},
-                            {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64,..."}}
-                        ]
-                    }
-                ]
-        """
-        if not self.api_key:
-            raise ValueError("Kimi API key not set.")
-
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
-        }
-
-        payload = {
-            "model": self.get_model_name(),
-            "messages": messages,
-            "temperature": kwargs.get("temperature", 0.2),
-            "max_tokens": kwargs.get("max_tokens", 4000),
-        }
-
-        try:
-            logger.debug(f"Sending multimodal completion request to Kimi model {self.get_model_name()}")
-            response = requests.post(
-                self.API_ENDPOINT,
-                headers=headers,
-                json=payload,
-                timeout=kwargs.get("timeout", 180)
-            )
-            response.raise_for_status()
-
-            data = response.json()
-            if data.get("choices") and data["choices"][0].get("message"):
-                completion = data["choices"][0]["message"].get("content", "")
-                return completion.strip()
-            else:
-                logger.warning("Kimi multimodal response structure unexpected or message content empty.")
-                return ""
-
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Kimi multimodal API request failed: {e}")
-            raise
+    def generate_multimodal_completion(
+        self,
+        messages: List[Dict[str, Any]],
+        **kwargs: Any,
+    ) -> str:
+        """Generate a completion from OpenAI-style text/image/video messages."""
+        payload = self._request_payload(messages, **kwargs)
+        logger.debug("Sending multimodal request to Kimi model %s", self.get_model_name())
+        return self._post_completion(payload, timeout=kwargs.get("timeout", 300))
 
     def supports_language(self, language: str) -> bool:
-        """
-        Check if Kimi has strong support for the given language.
-
-        Kimi excels at Chinese and has good English support.
-        """
-        return language.lower() in ['zh', 'zh-cn', 'zh-tw', 'en', 'english', 'chinese']
+        """Return whether the client has first-class Chinese or English support."""
+        return language.lower() in {
+            "zh",
+            "zh-cn",
+            "zh-tw",
+            "en",
+            "english",
+            "chinese",
+        }

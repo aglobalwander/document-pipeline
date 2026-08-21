@@ -1,5 +1,8 @@
 # Pipeline Documents Cleanup Summary
 
+> Historical record from 2024-06-20. Counts and paths describe that cleanup,
+> not the current repository inventory.
+
 Date: 2024-06-20
 
 ## What Was Done

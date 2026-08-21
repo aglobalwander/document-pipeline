@@ -1,46 +1,32 @@
-# Document Processing Pipeline - Simplified Overview
+# Document Processing Pipeline overview
 
-This document provides a simple explanation of the document processing pipeline for a non-technical audience.
+The pipeline turns source files into clean, portable artifacts.
 
-## What is the Document Processing Pipeline?
+It can read PDFs, Word documents, PowerPoint files, text, images, recordings,
+videos, and supported URLs. A loader opens the source, a processor extracts or
+cleans the content, and an optional transformer reshapes the result as text,
+Markdown, JSON, CSV, or XLSX.
 
-Imagine you have a lot of different files – like reports, articles, audio recordings, pictures, and videos – and you need to get information out of them or organize them in a smart way. That's where the Document Processing Pipeline comes in!
-
-It's like a smart system that can read and understand many different types of files and turn them into useful formats or store them so you can easily find and use the information later.
-
-## How Does it Work (Simply)?
-
-The pipeline works in steps:
-The processing is initiated using the `master_docling.py` script, which handles all document types and formats.
-
-1.  **It Reads Your Files:** It can take in various file types, like PDFs, Word documents, text files, audio files (like MP3s or WAVs), images (like JPGs or PNGs), and videos (like MP4s).
-2.  **It Processes the Content:** Depending on the file type, it can do things like:
-    *   Convert spoken words in audio or video into text (transcription).
-    *   Read text from images or scanned documents (OCR) with helpful progress tracking.
-    *   Clean up the text to make it easier to understand.
-3.  **It Transforms the Information:** It can then turn the processed information into different useful formats:
-    *   Plain text.
-    *   Formatted reports (using Markdown).
-    *   Structured data (like JSON), which is great for organizing information.
-4.  **It Can Store Information Smartly:** It can also send the processed information to a special database (called a vector database, like Weaviate) that makes it really easy to search and find related information quickly.
-
-Here's a simple picture of the process:
-
-```mermaid
-graph TD
-    A[Your Files (PDFs, Audio, Images, etc.)] --> B[Run master_docling.py]
-    B --> C[Useful Outputs (Text, Reports, Data, Searchable Database)]
+```text
+Source file -> extraction -> optional transformation -> output artifact
 ```
 
-## What Can You Use It For?
+PDFs normally use Enhanced Docling on the local machine. That keeps routine OCR
+free and private. Remote language or vision models are available for explicit
+cases where local extraction is not enough; they are never required for the
+default PDF path.
 
-This pipeline can be used for many things, such as:
+This repository does not own search or vector-database ingestion. It produces
+the artifacts that downstream systems can ingest into Milvus, Postgres, or
+another store under their own contracts.
 
-*   Converting meeting recordings into searchable text.
-*   Extracting information from scanned documents or images.
-*   Turning reports into well-formatted documents.
-*   Organizing a large collection of documents and media for easy searching.
+Typical uses include:
 
-## Want to Learn More?
+- extracting Markdown from a report or slide deck;
+- recovering text and tables from a scanned PDF;
+- converting a document collection into normalized JSON;
+- transcribing audio or video;
+- preparing a resumable collection for downstream ingestion.
 
-This is just a simple overview. If you are a technical user and want to understand how to set up and use the pipeline in detail, please refer to the [README.md](README.md) and [USER_GUIDE.md](USER_GUIDE.md) files.
+Start with the [user guide](USER_GUIDE.md). For exact commands, use the
+[command reference](COMMANDS.md).

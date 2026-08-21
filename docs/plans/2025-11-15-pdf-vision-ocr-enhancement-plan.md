@@ -1,5 +1,10 @@
 # PDF/Vision/OCR Stack Enhancement Plan
 
+> Historical design from 2025-11-15. Model IDs, endpoints, pricing, and planned
+> file paths below are preserved as point-in-time context, not current runtime
+> truth. See [Kimi K3](../KIMI_K3.md), [Commands](../COMMANDS.md), and the live
+> code/tests for current behavior.
+
 **Date**: 2025-11-15
 **Goal**: Evolve the PDF/vision/OCR stack with Milvus-first ETL approach
 **Scope**: Add Kimi/Qwen multimodal support, provider-agnostic processing, intelligent routing

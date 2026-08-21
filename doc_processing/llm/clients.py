@@ -1,15 +1,12 @@
-"""Concrete implementations of LLM clients for different providers."""
+"""Concrete implementations of OpenAI and OpenAI-compatible LLM clients."""
 
-import os
 import json
 import logging
-import requests
-from typing import Any, Dict, List, Optional, Type, TypeVar, Union # Added List
-# Need pydantic and instructor for internal handling
-from pydantic import BaseModel
-import instructor
-from instructor import Mode
+import os
+from typing import Any, Dict, List, Optional, Type, Union
+
 from openai import OpenAI
+from pydantic import BaseModel
 
 from .base import BaseLLMClient
 from doc_processing.config import get_settings
@@ -17,174 +14,268 @@ from doc_processing.config import get_settings
 logger = logging.getLogger(__name__)
 
 class OpenAIClient(BaseLLMClient):
-    """Client for interacting with OpenAI's API (GPT models)."""
+    """OpenAI client using the provider-native Responses API."""
 
-    DEFAULT_MODEL = "gpt-4.1" # Or fetch from settings if preferred
-    API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
+    DEFAULT_MODEL = "gpt-5.6-terra"
+    API_ENDPOINT = "https://api.openai.com/v1/responses"
 
     def __init__(self, api_key: Optional[str] = None, model_name: Optional[str] = None, config: Optional[Dict[str, Any]] = None):
         """Initialize OpenAI client."""
         settings = get_settings()
         resolved_api_key = api_key or settings.OPENAI_API_KEY or settings.OPENAI_APIKEY
-        resolved_model_name = model_name or self.DEFAULT_MODEL
+        resolved_model_name = model_name or settings.DEFAULT_OPENAI_CHAT_MODEL or self.DEFAULT_MODEL
         super().__init__(api_key=resolved_api_key, model_name=resolved_model_name, config=config)
+        self.api_style = self.config.get("api_style", "responses")
 
         if not self.api_key:
             logger.warning("OpenAI API key not found. OpenAIClient will not function.")
             self.client = None
-            self.instructor_client = None
         else:
-            # Initialize the standard OpenAI-compatible client
             base_url = self.config.get("base_url")
             self.client = OpenAI(api_key=self.api_key, base_url=base_url) if base_url else OpenAI(api_key=self.api_key)
-            # Initialize the instructor-patched client
-            try:
-                self.instructor_client = instructor.from_openai(
-                    self.client,
-                    mode=Mode.TOOLS_STRICT, # Or configure mode via self.config
-                )
-                logger.debug("Instructor client initialized successfully.")
-            except Exception as e:
-                logger.error(f"Failed to initialize instructor client: {e}")
-                self.instructor_client = None # Ensure it's None if init fails
+
+    @staticmethod
+    def _is_pydantic_schema(output_schema: Any) -> bool:
+        return isinstance(output_schema, type) and issubclass(output_schema, BaseModel)
+
+    @staticmethod
+    def _parse_json_object(raw_completion: str) -> Dict[str, Any]:
+        raw_completion = raw_completion.strip()
+        try:
+            return json.loads(raw_completion)
+        except json.JSONDecodeError as error:
+            json_start = raw_completion.find("{")
+            json_end = raw_completion.rfind("}")
+            if json_start != -1 and json_end > json_start:
+                try:
+                    return json.loads(raw_completion[json_start:json_end + 1])
+                except json.JSONDecodeError:
+                    pass
+            raise ValueError(
+                f"LLM output was not valid JSON. Completion: {raw_completion[:500]}"
+            ) from error
+
+    def _responses_options(
+        self,
+        kwargs: Dict[str, Any],
+        *,
+        default_max_tokens: int,
+    ) -> Dict[str, Any]:
+        """Build Responses API options without silently enabling state storage."""
+        options: Dict[str, Any] = {
+            "model": self.get_model_name(),
+            "max_output_tokens": kwargs.get("max_tokens", default_max_tokens),
+            "store": kwargs.get("store", self.config.get("store", False)),
+        }
+        reasoning: Dict[str, Any] = {}
+        reasoning_effort = kwargs.get(
+            "reasoning_effort", self.config.get("reasoning_effort")
+        )
+        if reasoning_effort and reasoning_effort != "none":
+            reasoning["effort"] = reasoning_effort
+        for option, key in (
+            ("reasoning_mode", "mode"),
+            ("reasoning_context", "context"),
+            ("reasoning_summary", "summary"),
+        ):
+            value = kwargs.get(option, self.config.get(option))
+            if value is not None:
+                reasoning[key] = value
+        if reasoning:
+            options["reasoning"] = reasoning
+
+        text_config: Dict[str, Any] = {}
+        verbosity = kwargs.get("verbosity", self.config.get("verbosity"))
+        if verbosity:
+            text_config["verbosity"] = verbosity
+        if text_config:
+            options["text"] = text_config
+
+        for option in (
+            "previous_response_id",
+            "prompt_cache_key",
+            "prompt_cache_retention",
+            "safety_identifier",
+            "service_tier",
+        ):
+            value = kwargs.get(option, self.config.get(option))
+            if value is not None:
+                options[option] = value
+        if kwargs.get("temperature") is not None:
+            options["temperature"] = kwargs["temperature"]
+        return options
+
+    def _chat_options(
+        self,
+        kwargs: Dict[str, Any],
+        *,
+        default_max_tokens: int,
+    ) -> Dict[str, Any]:
+        """Build options for OpenAI-compatible Chat Completions providers."""
+        options: Dict[str, Any] = {
+            "max_tokens": kwargs.get("max_tokens", default_max_tokens),
+        }
+        if kwargs.get("temperature") is not None:
+            options["temperature"] = kwargs["temperature"]
+        if kwargs.get("top_p") is not None:
+            options["top_p"] = kwargs["top_p"]
+        return options
+
+    @staticmethod
+    def _chat_text(response: Any) -> str:
+        if response.choices and response.choices[0].message:
+            return (response.choices[0].message.content or "").strip()
+        return ""
 
     def generate_completion(self, prompt: str, system_prompt: Optional[str] = None, **kwargs) -> str:
-        """Generate text completion using OpenAI Chat Completions."""
+        """Generate text using Responses, or Chat Completions for compatibility."""
         if not self.client:
             raise ValueError("OpenAI client not initialized (check API key).")
 
-        messages = []
-        if system_prompt:
-            messages.append({"role": "system", "content": system_prompt})
-        messages.append({"role": "user", "content": prompt})
-
         try:
-            logger.debug(f"Sending completion request to OpenAI model {self.get_model_name()}")
+            if self.api_style == "responses":
+                options = self._responses_options(kwargs, default_max_tokens=1500)
+                response = self.client.responses.create(
+                    input=prompt,
+                    instructions=system_prompt,
+                    **options,
+                )
+                return (response.output_text or "").strip()
+
+            messages = []
+            if system_prompt:
+                messages.append({"role": "system", "content": system_prompt})
+            messages.append({"role": "user", "content": prompt})
             response = self.client.chat.completions.create(
                 model=self.get_model_name(),
                 messages=messages,
-                temperature=kwargs.get("temperature", 0.7),
-                max_tokens=kwargs.get("max_tokens", 1500),
-                # Add other kwargs if needed
+                **self._chat_options(kwargs, default_max_tokens=1500),
             )
-            logger.debug(f"Received response from OpenAI.")
-
-            if response.choices and response.choices[0].message:
-                completion = response.choices[0].message.content or ""
-                return completion.strip()
-            else:
-                logger.warning("OpenAI response structure unexpected or message content empty.")
-                return ""
-        except Exception as e:
-            logger.error(f"OpenAI API request failed: {e}")
-            raise # Re-raise the exception
+            return self._chat_text(response)
+        except Exception as error:
+            logger.error("OpenAI-compatible completion request failed: %s", error)
+            raise
 
     # Type hint for output_schema allows checking if it's a Pydantic model type
     def generate_structured_output(self, prompt: str, output_schema: Union[Dict[str, Any], Type[BaseModel]], system_prompt: Optional[str] = None, **kwargs) -> Dict[str, Any]:
-        """Generate structured JSON output using OpenAI, leveraging Instructor if a Pydantic model is provided."""
+        """Generate provider-enforced structured JSON output."""
         if not self.client:
             raise ValueError("OpenAI client not initialized (check API key).")
 
-        messages = []
-        # Use provided system prompt or default if none given
         default_system_prompt = "You are an expert data extraction assistant. Extract structured information from the user's text."
-        messages.append({"role": "system", "content": system_prompt or default_system_prompt})
-        messages.append({"role": "user", "content": prompt})
+        instructions = system_prompt or default_system_prompt
 
         try:
-            # Check if output_schema is a Pydantic model type and instructor client is available
-            if isinstance(output_schema, type) and issubclass(output_schema, BaseModel) and self.instructor_client:
-                logger.debug(f"Using Instructor to generate structured output with model {output_schema.__name__}")
-                # Use instructor client with response_model
-                response = self.instructor_client.chat.completions.create(
-                    model=self.get_model_name(),
-                    messages=messages,
-                    response_model=output_schema, # Pass the Pydantic model type
-                    temperature=kwargs.get("temperature", 0.2), # Lower temp for structured output
-                    max_tokens=kwargs.get("max_tokens", 4000),
-                )
-                # Instructor returns the validated Pydantic model instance
-                return response.model_dump() # Return as dictionary
-
-            # --- Fallback: Use standard client with JSON prompting ---
+            if self._is_pydantic_schema(output_schema):
+                schema_dict = output_schema.model_json_schema()
+            elif isinstance(output_schema, dict):
+                schema_dict = output_schema
             else:
-                if isinstance(output_schema, type) and issubclass(output_schema, BaseModel):
-                     logger.warning("Instructor client not available or output_schema not Pydantic model. Falling back to JSON prompting.")
-                     # Convert Pydantic model to JSON schema for the prompt if needed
-                     schema_dict = output_schema.model_json_schema()
-                elif isinstance(output_schema, dict):
-                     schema_dict = output_schema # Assume it's already a JSON schema dict
-                else:
-                     logger.warning("Invalid output_schema type. Attempting generic extraction.")
-                     schema_dict = {} # Empty schema, rely on prompt
+                schema_dict = {}
 
-                # Add JSON instructions to system prompt if not using instructor
-                json_system_prompt = (system_prompt or default_system_prompt) + \
-                    "\n\nYour response MUST be a single, valid JSON object conforming to the following schema (if provided), with no extra text or explanation before or after it."
+            if self.api_style == "responses":
+                options = self._responses_options(kwargs, default_max_tokens=4000)
+                if self._is_pydantic_schema(output_schema):
+                    response = self.client.responses.parse(
+                        input=prompt,
+                        instructions=instructions,
+                        text_format=output_schema,
+                        **options,
+                    )
+                    parsed = response.output_parsed
+                    if parsed is None:
+                        raise ValueError("OpenAI structured response had no parsed output.")
+                    return parsed.model_dump() if isinstance(parsed, BaseModel) else parsed
+
+                text_config = dict(options.pop("text", {}))
                 if schema_dict:
-                    schema_string = json.dumps(schema_dict, indent=2)
-                    json_system_prompt += f"\n\nDesired JSON Schema:\n```json\n{schema_string}\n```"
-                messages[0]['content'] = json_system_prompt # Update system prompt
-
-                logger.debug(f"Using standard OpenAI client with JSON prompting. Schema: {schema_dict.keys() if schema_dict else 'None'}")
-                response = self.client.chat.completions.create(
-                    model=self.get_model_name(),
-                    messages=messages,
-                    temperature=kwargs.get("temperature", 0.2),
-                    max_tokens=kwargs.get("max_tokens", 4000),
-                    # Consider adding response_format={"type": "json_object"} for newer models
-                )
-
-                if response.choices and response.choices[0].message:
-                    raw_completion = response.choices[0].message.content or ""
-                    # Attempt to parse the completion as JSON
-                    try:
-                        json_start = raw_completion.find('{')
-                        json_end = raw_completion.rfind('}')
-                        if json_start != -1 and json_end != -1:
-                            json_str = raw_completion[json_start:json_end+1]
-                            parsed_json = json.loads(json_str)
-                            return parsed_json
-                        else:
-                            return json.loads(raw_completion) # Try parsing whole string
-                    except json.JSONDecodeError as e:
-                        logger.error(f"Failed to parse JSON from standard completion. Error: {e}. Completion: '{raw_completion[:500]}...'")
-                        raise ValueError(f"LLM output was not valid JSON. Completion: {raw_completion}")
+                    text_config["format"] = {
+                        "type": "json_schema",
+                        "name": kwargs.get("schema_name", "document_extraction"),
+                        "strict": True,
+                        "schema": schema_dict,
+                    }
                 else:
-                     raise ValueError("Standard OpenAI completion failed or returned empty message.")
+                    text_config["format"] = {"type": "json_object"}
+                response = self.client.responses.create(
+                    input=prompt,
+                    instructions=instructions,
+                    text=text_config,
+                    **options,
+                )
+                return self._parse_json_object(response.output_text or "")
 
-        except Exception as e:
-            logger.error(f"OpenAI structured output request failed: {e}")
-            raise # Re-raise the exception
+            json_instructions = instructions + "\n\nReturn one valid JSON object."
+            if schema_dict:
+                json_instructions += f"\nJSON Schema:\n{json.dumps(schema_dict)}"
+            messages = [
+                {"role": "system", "content": json_instructions},
+                {"role": "user", "content": prompt},
+            ]
+            chat_options = self._chat_options(kwargs, default_max_tokens=4000)
+            if self.config.get("use_json_mode", True):
+                chat_options["response_format"] = {"type": "json_object"}
+            response = self.client.chat.completions.create(
+                model=self.get_model_name(), messages=messages, **chat_options
+            )
+            parsed = self._parse_json_object(self._chat_text(response))
+            if self._is_pydantic_schema(output_schema):
+                return output_schema.model_validate(parsed).model_dump()
+            return parsed
+        except Exception as error:
+            logger.error("OpenAI-compatible structured output request failed: %s", error)
+            raise
 
     def generate_multimodal_completion(self, messages: List[Dict[str, Any]], **kwargs) -> str:
-        """Generate text completion using OpenAI Chat Completions with multimodal input."""
+        """Generate text from OpenAI-style text/image messages."""
         if not self.client:
             raise ValueError("OpenAI client not initialized (check API key).")
 
-        # Ensure messages format is suitable for multimodal input if needed
-        # (The structure passed from GPTPVisionProcessor should be correct for OpenAI)
-
         try:
-            logger.debug(f"Sending multimodal completion request to OpenAI model {self.get_model_name()}")
-            response = self.client.chat.completions.create(
-                model=self.get_model_name(), # Should be a vision-capable model like gpt-4o
-                messages=messages,
-                temperature=kwargs.get("temperature", 0.2), # Often lower temp for OCR
-                max_tokens=kwargs.get("max_tokens", 3000), # May need more tokens for vision
-                # Add other kwargs if needed
-            )
-            logger.debug(f"Received multimodal response from OpenAI.")
+            if self.api_style == "responses":
+                instructions: List[str] = []
+                response_input: List[Dict[str, Any]] = []
+                for message in messages:
+                    if message.get("role") == "system":
+                        instructions.append(str(message.get("content", "")))
+                        continue
+                    content = message.get("content", "")
+                    if isinstance(content, str):
+                        response_input.append(
+                            {"role": message.get("role", "user"), "content": content}
+                        )
+                        continue
+                    converted_content = []
+                    for part in content:
+                        if part.get("type") == "text":
+                            converted_content.append(
+                                {"type": "input_text", "text": part.get("text", "")}
+                            )
+                        elif part.get("type") == "image_url":
+                            image_url = part.get("image_url", {})
+                            url = image_url.get("url") if isinstance(image_url, dict) else image_url
+                            converted_content.append(
+                                {"type": "input_image", "image_url": url}
+                            )
+                    response_input.append(
+                        {"role": message.get("role", "user"), "content": converted_content}
+                    )
+                response = self.client.responses.create(
+                    input=response_input,
+                    instructions="\n\n".join(instructions) or None,
+                    **self._responses_options(kwargs, default_max_tokens=3000),
+                )
+                return (response.output_text or "").strip()
 
-            if response.choices and response.choices[0].message:
-                completion = response.choices[0].message.content or ""
-                return completion.strip()
-            else:
-                logger.warning("OpenAI multimodal response structure unexpected or message content empty.")
-                return ""
-        except Exception as e:
-            logger.error(f"OpenAI multimodal API request failed: {e}")
-            raise # Re-raise the exception
+            response = self.client.chat.completions.create(
+                model=self.get_model_name(),
+                messages=messages,
+                **self._chat_options(kwargs, default_max_tokens=3000),
+            )
+            return self._chat_text(response)
+        except Exception as error:
+            logger.error("OpenAI-compatible multimodal request failed: %s", error)
+            raise
 
 
 class DeepSeekClient(OpenAIClient):
@@ -202,6 +293,7 @@ class DeepSeekClient(OpenAIClient):
         settings = get_settings()
         client_config = dict(config or {})
         resolved_route = str(client_config.pop("route", route) or "deepseek").lower()
+        client_config["api_style"] = "chat_completions"
         if resolved_route in {"dashscope", "bailian", "dashscope_deepseek"}:
             resolved_api_key = api_key or os.getenv("DASHSCOPE_API_KEY") or settings.DASHSCOPE_API_KEY
             resolved_model_name = model_name or os.getenv("DASHSCOPE_DEEPSEEK_MODEL") or settings.DEFAULT_DASHSCOPE_DEEPSEEK_MODEL
@@ -218,6 +310,33 @@ class DeepSeekClient(OpenAIClient):
             model_name=resolved_model_name,
             config=client_config,
         )
+
+    def _chat_options(
+        self,
+        kwargs: Dict[str, Any],
+        *,
+        default_max_tokens: int,
+    ) -> Dict[str, Any]:
+        """Enable DeepSeek V4 thinking controls without legacy sampling noise."""
+        options: Dict[str, Any] = {
+            "max_tokens": kwargs.get("max_tokens", default_max_tokens),
+        }
+        reasoning_effort = kwargs.get(
+            "reasoning_effort", self.config.get("reasoning_effort")
+        )
+        if reasoning_effort and reasoning_effort != "none":
+            options["reasoning_effort"] = reasoning_effort
+
+        thinking = kwargs.get("thinking", self.config.get("thinking"))
+        if thinking in {"enabled", "disabled"}:
+            options["extra_body"] = {"thinking": {"type": thinking}}
+
+        if thinking != "enabled" and not reasoning_effort:
+            if kwargs.get("temperature") is not None:
+                options["temperature"] = kwargs["temperature"]
+            if kwargs.get("top_p") is not None:
+                options["top_p"] = kwargs["top_p"]
+        return options
 
 
 # Import and export Anthropic client

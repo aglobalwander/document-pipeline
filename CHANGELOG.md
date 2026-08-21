@@ -1,5 +1,29 @@
 # Changelog
 
+## Unreleased - 2026-07-20
+
+### Added
+
+- Kimi K3 text, multimodal, and strict JSON Schema client coverage.
+- Kimi routing for JSON and structured pipeline transforms.
+- Top-level CLI LLM options now propagate into JSON and structured transformers.
+- Current Kimi K3 CLI/API integration and capability documentation.
+
+### Changed
+
+- Updated Kimi defaults from Moonshot V1 to `kimi-k3` and the global
+  `https://api.moonshot.ai/v1` endpoint.
+- Rebuilt the live documentation entry points around the actual Poetry commands
+  and current script locations.
+- Clarified that local extraction and downstream ingestion are separate stages.
+- Declared the test runner and chunk-tokenizer dependencies in Poetry, scoped
+  test discovery to `tests/`, and updated the LangChain splitter import.
+
+### Security
+
+- Documented the central credential store and prohibited tracked `.env` backup
+  files from being treated as configuration.
+
 ## 1.0.0 - 2025-04-27
 
 ### Added

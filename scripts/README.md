@@ -1,104 +1,44 @@
-# Pipeline Documents - Scripts Directory
+# Scripts
 
-This directory contains all scripts for the document processing pipeline, organized by functionality.
+Run scripts from the repository root through Poetry unless a shell script says
+otherwise.
 
-## Directory Structure
+## Primary entry points
 
-### 📁 `pdf_processing/`
-Scripts for processing PDF files using PyMuPDF and other PDF tools.
-- PDF analysis and OCR detection
-- Batch PDF processing
-- PyMuPDF utilities and benchmarks
+```bash
+poetry run python scripts/document_processing/run_pipeline.py --help
+poetry run python scripts/document_processing/master_docling.py --help
+```
 
-### 📁 `document_processing/`
-Core document processing scripts using various processors.
-- `run_pipeline.py` - Main pipeline execution script
-- `master_docling.py` - Enhanced Docling processor
-- `batch_process.py` - Batch document processing
-- MarkItDown processors for DOCX files
+- `document_processing/`: general pipeline, Enhanced Docling, MarkItDown, and
+  PPTX utilities
+- `collections/`: inventory, resumable batches, manifests, and storage fallback
+- `pdf_processing/`: focused PyMuPDF analysis and batch tools
+- `content_processing/`: heading/chapter splitting
+- `standards/`: framework-specific extraction
+- `standards_org/`: standards file organization and analysis
+- `media/`: YouTube and media diagnostics
+- `utilities/`: setup and maintenance helpers
+- `shell/`: shell wrappers for standards workflows
 
-### 📁 `vector_db/` (archived)
-Legacy scripts for vector database operations (moved to the knowledge-management repo once Milvus became the source of truth).
+Vector-database ingestion is downstream and is not a script category in this
+repository.
 
-### 📁 `content_processing/`
-Scripts for processing and organizing document content.
-- Split documents by headings or chapters
-- Content summarization
-- Specialized processors (e.g., Cognitive Coaching)
+## Common commands
 
-### 📁 `standards/`
-Educational standards extraction scripts.
-- Extract standards from various frameworks (NCAS, Common Core, C3, NGSS)
-- Map standards to Drupal hierarchy
-- Extract related entities (EUs, EQs, Big Ideas)
+```bash
+poetry run python scripts/document_processing/master_docling.py \
+  --input_path /absolute/path/document.pdf \
+  --output_format markdown
 
-### 📁 `standards_org/`
-Scripts for organizing standards files and directories.
-- Analyze and organize standards PDFs
-- Process standards by framework
-- Test standards processing
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path /absolute/path/input \
+  --pipeline_type text \
+  --recursive
 
-### 📁 `utilities/`
-Helper scripts and utilities.
-- NLTK resource downloads
-- File size management
-- Git LFS migration
-- Template creation
+poetry run python scripts/collections/inventory_collection.py \
+  --source_dir /absolute/path/collection
+```
 
-### 📁 `media/`
-Scripts for processing media files.
-- YouTube video processing
-- Audio/video extraction utilities
-
-### 📁 `archive/`
-Deprecated or old scripts kept for reference.
-
-## Main Entry Points
-
-1. **Document Processing Pipeline**
-   ```bash
-   python document_processing/run_pipeline.py --input_path <file> --pipeline_type <type> --output_format <format>
-   ```
-
-2. **Enhanced Docling Processing**
-   ```bash
-   python document_processing/master_docling.py --input_path <pdf> --output_format <format>
-   ```
-
-3. **Batch PDF Processing**
-   ```bash
-   python pdf_processing/batch_process_pymupdf.py
-   ```
-
-## Script Categories
-
-### Core Processing
-- `run_pipeline.py` - Main pipeline orchestrator
-- `master_docling.py` - Enhanced PDF processing
-- `batch_process.py` - Batch file processing
-
-### Standards Extraction
-- See `/standards/README.md` for detailed information
-
-### Database Operations
-- Vector database ingestion and search now live in `/knowledge-management`
-- Use the JSON/Markdown outputs from this repo as inputs to those pipelines
-
-### Content Organization
-- Document splitting by structure
-- Content summarization
-- Chapter/section extraction
-
-## Usage Notes
-
-1. Most scripts should be run from the project root directory
-2. Check individual script headers for specific requirements
-3. Ensure environment variables are set for API keys (OpenAI, Anthropic, Gemini, etc.)
-4. See `../docs/` for detailed documentation
-
-## Recent Updates
-
-- Reorganized all scripts into categorical directories (2024-06-20)
-- Moved standards extraction scripts to dedicated directory
-- Cleaned up root scripts directory
-- Added comprehensive documentation
+Check an individual script's `--help` or header before use. Some specialized
+standards and collection scripts require source-specific inputs.

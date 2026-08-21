@@ -30,3 +30,62 @@ collections:
     docx: 6
     pptx: 0
   updated_at: '2026-04-22T04:36:13.513834+00:00'
+- name: sas-powerpoint-visual-record
+  source_path: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/input/powerpoint
+  output_path: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record
+  manifest_path: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/manifest.json
+  status: visual_record_complete
+  processing_date: '2026-05-15'
+  files_processed: 27
+  files_failed: 0
+  files_total: 29
+  ready_for_ingestion: false
+  processable_by_type:
+    pptx: 27
+    xlsx: 2
+  output_summary:
+    pptx_slide_count: 573
+    visible_slide_count: 529
+    hidden_slide_count: 44
+    rendered_screenshot_count: 529
+    embedded_media_count: 625
+    deduped_visible_candidate_count: 175
+    curated_visual_count: 38
+    removed_from_curated_visual_record_count: 45
+    manual_addition_count: 21
+    visual_classification_count: 38
+    visual_classification_phase_counts:
+      ttgs_transdisciplinary_transfer_goals: 1
+      dtgs_macro_curriculum_gvc: 4
+      sas_forward_wasc_strategic_pillars: 17
+      vision_core_commitments_learning_ecosystem: 5
+      principles_of_practice: 3
+      pl_plan_professional_learning_system: 5
+      udl_universal_design_for_learning: 1
+      crp_culturally_responsive_pedagogy: 1
+      ai_artificial_intelligence: 1
+  visual_review:
+    gallery_path: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/index.html
+    ranked_contact_sheet: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/contact_sheet_ranked.png
+    deck_diverse_contact_sheet: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/contact_sheet_by_deck.png
+    selected_visuals_manifest: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/selected_key_visuals.json
+    feedback_board: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/review/review_board.html
+    feedback_template: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/review/feedback_template.md
+    review_items_manifest: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/review/review_items.json
+    feedback_source: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/input/powerpoint/sas-key-visual-feedback.json
+    curated_gallery: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/curated/index.html
+    curated_contact_sheet: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/curated/curated_contact_sheet.png
+    curated_summary: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/curated/curation_summary.json
+    kept_visuals: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/curated/kept_visuals.json
+    removed_from_visual_record: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/curated/removed_from_visual_record.json
+    manual_additions_source: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/additions/manual_additions.json
+    applied_manual_additions: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/curated/manual_additions.json
+    visual_classification: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/curated/visual_register_classification.md
+    visual_classification_data: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/key_visuals/curated/visual_register_classification.json
+    curriculum_story_visual_timeline: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/analysis/sas_curriculum_story_visual_timeline.html
+    concept_introduction_visual_timeline: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/analysis/sas_concept_introduction_visual_timeline.html
+    concept_visual_register: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/analysis/sas_concept_visual_register.html
+    concept_visual_register_contact_sheet: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/analysis/sas_concept_visual_register_contact_sheet.png
+    concept_introduction_visual_timeline_note: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/analysis/sas_concept_introduction_visual_timeline.md
+    concept_introduction_visual_timeline_data: /Users/scottwilliams/Development/_02_platforms/pipeline-documents/data/output/powerpoint_visual_record/analysis/sas_concept_introduction_visual_timeline.json
+  updated_at: '2026-05-15T10:48:53.835148+00:00'

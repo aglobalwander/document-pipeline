@@ -2,7 +2,7 @@
 import os
 from pathlib import Path
 from typing import Dict, Any, Optional
-from pydantic import Field, validator
+from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
 from dotenv import load_dotenv
@@ -53,6 +53,8 @@ class Settings(BaseSettings):
     OPENAI_APIKEY: Optional[str] = Field(default=os.getenv('OPENAI_APIKEY', '')) # Note: Potential typo in .env? OPENAI_API_KEY exists.
     ANTHROPIC_API_KEY: Optional[str] = Field(default=os.getenv('ANTHROPIC_API_KEY', ''))
     GEMINI_API_KEY: Optional[str] = Field(default=os.getenv('GEMINI_API_KEY', ''))
+    MOONSHOT_API_KEY: Optional[str] = Field(default=os.getenv('MOONSHOT_API_KEY', ''))
+    KIMI_API_KEY: Optional[str] = Field(default=os.getenv('KIMI_API_KEY', ''))
     DEEPSEEK_API_KEY: Optional[str] = Field(default=os.getenv('DEEPSEEK_API_KEY', ''))
     DASHSCOPE_API_KEY: Optional[str] = Field(default=os.getenv('DASHSCOPE_API_KEY', ''))
     ELEVEN_LABS_API_KEY: Optional[str] = Field(default=os.getenv('ELEVEN_LABS_API_KEY', ''))
@@ -75,19 +77,22 @@ class Settings(BaseSettings):
     
     # Models configuration
     # OpenAI
-    DEFAULT_OPENAI_EMBEDDING_MODEL: str = Field(default='text-embedding-ada-002', alias='DEFAULT_EMBEDDING_MODEL') # Keep alias for backward compat?
-    DEFAULT_OPENAI_VISION_MODEL: str = Field(default='gpt-4.1', alias='DEFAULT_VISION_MODEL') # Assuming gpt-4.1 handles vision, adjust if needed
-    DEFAULT_OPENAI_CHAT_MODEL: str = Field(default='gpt-4.1', alias='DEFAULT_CHAT_MODEL')
+    DEFAULT_OPENAI_EMBEDDING_MODEL: str = Field(default='text-embedding-3-small', alias='DEFAULT_EMBEDDING_MODEL')
+    DEFAULT_OPENAI_VISION_MODEL: str = Field(default='gpt-5.6-terra', alias='DEFAULT_VISION_MODEL')
+    DEFAULT_OPENAI_CHAT_MODEL: str = Field(default='gpt-5.6-terra', alias='DEFAULT_CHAT_MODEL')
     # Anthropic
-    DEFAULT_ANTHROPIC_MODEL: str = Field(default='claude-3-opus-20240229')
+    DEFAULT_ANTHROPIC_MODEL: str = Field(default='claude-sonnet-4-6')
     # Google Gemini
-    DEFAULT_GEMINI_MODEL: str = Field(default='gemini-1.5-pro-latest') # Or 'gemini-pro-vision' for vision
+    DEFAULT_GEMINI_MODEL: str = Field(default='gemini-3.6-flash')
     # DeepSeek
     DEFAULT_DEEPSEEK_MODEL: str = Field(default='deepseek-v4-flash')
     DEFAULT_DEEPSEEK_PRO_MODEL: str = Field(default='deepseek-v4-pro')
     DEFAULT_DASHSCOPE_DEEPSEEK_MODEL: str = Field(default='deepseek-v4-flash')
     DEEPSEEK_BASE_URL: str = Field(default='https://api.deepseek.com/v1')
     DASHSCOPE_COMPAT_BASE_URL: str = Field(default='https://dashscope.aliyuncs.com/compatible-mode/v1')
+    DEFAULT_QWEN_MODEL: str = Field(default='qwen3.6-flash')
+    KIMI_MODEL: str = Field(default='kimi-k3')
+    MOONSHOT_BASE_URL: str = Field(default='https://api.moonshot.ai/v1')
     
     # Other settings
     LOG_LEVEL: str = Field(default='INFO')
@@ -106,25 +111,25 @@ class Settings(BaseSettings):
         description="Processing strategy: 'exclusive' (choose one) or 'fallback_chain'"
     )
     ACTIVE_PDF_PROCESSORS: list[str] = Field(
-        default=["docling", "enhanced_docling", "gemini", "gpt", "pymupdf", "claude"],
-        description="Ordered list of enabled processors: docling (FREE), enhanced_docling, gemini (cheap), gpt, pymupdf, claude (opt-in with API key)"
+        default=["enhanced_docling", "docling", "pymupdf"],
+        description="Ordered local-only default processors. Remote processors require explicit selection."
     )
     DEFAULT_PDF_PROCESSOR: str = Field(
         default="enhanced_docling",
         description="Default processor for 'exclusive' strategy (enhanced_docling is FREE and excellent)"
     )
     PDF_FALLBACK_ORDER: list[str] = Field(
-        default=["enhanced_docling", "docling", "gemini"],
-        description="Fallback order (FREE first, then cheap options). Claude removed to avoid API costs - use explicitly if needed"
+        default=["enhanced_docling", "docling", "pymupdf"],
+        description="Local-only fallback order. Remote APIs never enter the fallback chain implicitly."
     )
 
-    @validator('PDF_PROCESSOR_STRATEGY')
+    @field_validator('PDF_PROCESSOR_STRATEGY')
     def validate_strategy(cls, v):
         if v not in ['exclusive', 'fallback_chain']:
             raise ValueError("Invalid strategy. Choose 'exclusive' or 'fallback_chain'")
         return v
 
-    @validator('ACTIVE_PDF_PROCESSORS')
+    @field_validator('ACTIVE_PDF_PROCESSORS')
     def validate_active_processors(cls, v):
         valid = {'claude', 'pymupdf', 'docling', 'enhanced_docling', 'gpt', 'gemini'}
         if not set(v).issubset(valid):

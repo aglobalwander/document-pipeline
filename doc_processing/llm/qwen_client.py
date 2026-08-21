@@ -3,7 +3,6 @@
 import os
 import json
 import logging
-import base64
 from typing import Any, Dict, List, Optional
 import requests
 
@@ -16,7 +15,7 @@ logger = logging.getLogger(__name__)
 class QwenClient(BaseLLMClient):
     """Client for interacting with Alibaba's Qwen-VL API (multimodal models)."""
 
-    DEFAULT_MODEL = "qwen-vl-max"  # Qwen's best vision-capable model
+    DEFAULT_MODEL = "qwen3.6-flash"
     API_ENDPOINT = "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation"
 
     def __init__(
@@ -27,8 +26,23 @@ class QwenClient(BaseLLMClient):
     ):
         """Initialize Qwen client."""
         settings = get_settings()
-        resolved_api_key = api_key or os.getenv("QWEN_API_KEY") or os.getenv("DASHSCOPE_API_KEY") or settings.config.get("QWEN_API_KEY")
-        resolved_model_name = model_name or os.getenv("QWEN_MODEL") or self.DEFAULT_MODEL
+        resolved_api_key = (
+            api_key
+            or os.getenv("QWEN_API_KEY")
+            or os.getenv("DASHSCOPE_API_KEY")
+            or settings.DASHSCOPE_API_KEY
+        )
+        resolved_model_name = (
+            model_name
+            or os.getenv("QWEN_MODEL")
+            or settings.DEFAULT_QWEN_MODEL
+            or self.DEFAULT_MODEL
+        )
+        self.api_endpoint = (
+            (config or {}).get("api_endpoint")
+            or os.getenv("QWEN_API_ENDPOINT")
+            or self.API_ENDPOINT
+        )
 
         super().__init__(
             api_key=resolved_api_key,
@@ -54,22 +68,27 @@ class QwenClient(BaseLLMClient):
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
 
+        parameters: Dict[str, Any] = {
+            "result_format": "message",
+            "max_tokens": kwargs.get("max_tokens", 4000),
+        }
+        for option in ("temperature", "top_p", "enable_thinking", "response_format"):
+            value = kwargs.get(option, self.config.get(option))
+            if value is not None:
+                parameters[option] = value
+
         payload = {
             "model": self.get_model_name(),
             "input": {
                 "messages": messages
             },
-            "parameters": {
-                "temperature": kwargs.get("temperature", 0.3),
-                "max_tokens": kwargs.get("max_tokens", 4000),
-                "top_p": kwargs.get("top_p", 0.8)
-            }
+            "parameters": parameters,
         }
 
         try:
             logger.debug(f"Sending completion request to Qwen model {self.get_model_name()}")
             response = requests.post(
-                self.API_ENDPOINT,
+                self.api_endpoint,
                 headers=headers,
                 json=payload,
                 timeout=kwargs.get("timeout", 120)
@@ -114,8 +133,9 @@ class QwenClient(BaseLLMClient):
         raw_completion = self.generate_completion(
             prompt,
             system_prompt=json_system_prompt,
-            temperature=kwargs.get("temperature", 0.2),
-            max_tokens=kwargs.get("max_tokens", 4000)
+            max_tokens=kwargs.get("max_tokens", 4000),
+            enable_thinking=False,
+            response_format={"type": "json_object"},
         )
 
         # Parse JSON
@@ -151,22 +171,27 @@ class QwenClient(BaseLLMClient):
         # Convert messages to Qwen format
         qwen_messages = self._convert_to_qwen_format(messages)
 
+        parameters: Dict[str, Any] = {
+            "result_format": "message",
+            "max_tokens": kwargs.get("max_tokens", 4000),
+        }
+        for option in ("temperature", "top_p", "enable_thinking", "response_format"):
+            value = kwargs.get(option, self.config.get(option))
+            if value is not None:
+                parameters[option] = value
+
         payload = {
             "model": self.get_model_name(),
             "input": {
                 "messages": qwen_messages
             },
-            "parameters": {
-                "temperature": kwargs.get("temperature", 0.2),
-                "max_tokens": kwargs.get("max_tokens", 4000),
-                "top_p": kwargs.get("top_p", 0.8)
-            }
+            "parameters": parameters,
         }
 
         try:
             logger.debug(f"Sending multimodal completion request to Qwen model {self.get_model_name()}")
             response = requests.post(
-                self.API_ENDPOINT,
+                self.api_endpoint,
                 headers=headers,
                 json=payload,
                 timeout=kwargs.get("timeout", 180)

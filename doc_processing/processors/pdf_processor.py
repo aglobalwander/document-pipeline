@@ -167,9 +167,13 @@ class GPTPDFProcessor(BasePDFProcessor):
     def __init__(self, config: Optional[Dict[str, Any]] = None):
         super().__init__(config)
         self.settings = get_settings()
+        if self.config.get('llm_provider') != 'openai':
+            raise ValueError(
+                "GPT PDF processing requires explicit llm_provider='openai'."
+            )
         GPTPVisionProcessor = _lazy_import_gpt_vision()
         vision_config = {
-            'llm_provider': self.config.get('llm_provider', 'openai'),
+            'llm_provider': self.config.get('llm_provider'),
             'vision_model': self.config.get('vision_model', self.settings.DEFAULT_OPENAI_VISION_MODEL),
             'llm_model': self.config.get('llm_model'),
             'api_key': self.config.get('api_key', self.settings.OPENAI_API_KEY or self.settings.OPENAI_APIKEY),
@@ -198,13 +202,17 @@ class GeminiPDFProcessor(BasePDFProcessor):
     def __init__(self, config: Optional[Dict[str, Any]] = None):
         super().__init__(config)
         self.settings = get_settings()
+        if self.config.get('llm_provider') != 'gemini':
+            raise ValueError(
+                "Gemini PDF processing requires explicit llm_provider='gemini'."
+            )
         self.gemini_client = None
         try:
             GeminiClient = _lazy_import_gemini_client()
             gemini_config = {
                 'api_key': self.config.get('api_key', self.settings.GEMINI_API_KEY or self.settings.GOOGLE_API_KEY),
-                'model_name': self.config.get('llm_model', GeminiClient.DEFAULT_MODEL),
-                'llm_client_config': self.config.get('llm_client_config')
+                'model_name': self.config.get('llm_model') or self.settings.DEFAULT_GEMINI_MODEL,
+                'config': self.config.get('llm_client_config')
             }
             gemini_config = {k: v for k, v in gemini_config.items() if v is not None}
             self.gemini_client = GeminiClient(**gemini_config)
@@ -270,15 +278,21 @@ class PDFProcessor(BasePDFProcessor):
             os.environ.get('PDF_PROCESSOR_STRATEGY', self.settings.PDF_PROCESSOR_STRATEGY)
         ).lower()
         
-        self.active_processors = self.config.get(
+        self.active_processors = list(self.config.get(
             'active_pdf_processors',
             self.settings.ACTIVE_PDF_PROCESSORS
-        )
+        ))
         
         self.default_processor = self.config.get(
             'default_pdf_processor',
             os.environ.get('DEFAULT_PDF_PROCESSOR', self.settings.DEFAULT_PDF_PROCESSOR)
         ).lower()
+
+        # A programmatic default processor is itself an explicit selection. Add
+        # it to the active set, while remote constructors still require their
+        # matching explicit llm_provider below.
+        if 'default_pdf_processor' in self.config and self.default_processor not in self.active_processors:
+            self.active_processors.insert(0, self.default_processor)
         
         self.fallback_order = self.config.get(
             'pdf_fallback_order',
@@ -297,6 +311,7 @@ class PDFProcessor(BasePDFProcessor):
             'enhanced_docling': lambda: _lazy_import_enhanced_docling(),
             'gpt': lambda: GPTPDFProcessor,
             'gemini': lambda: GeminiPDFProcessor,
+            'claude': lambda: _lazy_import_claude_processor(),
         }
 
         for processor_name in self.active_processors:
@@ -328,8 +343,11 @@ class PDFProcessor(BasePDFProcessor):
                 return document
 
         elif self.processor_strategy == 'fallback_chain':
-            # The fallback chain includes Docling implicitly if it's active
-            chain = [p for p in self.active_processors if p in self.available_processors]
+            chain = [
+                processor_name
+                for processor_name in self.fallback_order
+                if processor_name in self.available_processors
+            ]
             if not chain:
                  error_msg = "No active or available PDF processors for fallback chain."
                  self.logger.error(error_msg)

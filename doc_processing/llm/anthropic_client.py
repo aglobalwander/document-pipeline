@@ -1,6 +1,5 @@
 """Concrete implementation for Anthropic Claude LLM client."""
 
-import os
 import json
 import logging
 import base64
@@ -24,12 +23,7 @@ logger = logging.getLogger(__name__)
 class AnthropicClient(BaseLLMClient):
     """Client for interacting with Anthropic's Claude API."""
 
-    DEFAULT_MODEL = "claude-sonnet-4-20250514"  # Latest Sonnet with vision
-    # Alternative models: "claude-3-5-sonnet-20241022", "claude-3-opus-20240229"
-
-    # Claude 3.5 Sonnet pricing (per million tokens): $3 input / $15 output
-    # Claude 3 Opus pricing: $15 input / $75 output
-    # For PDF/vision: Sonnet is the sweet spot for quality/cost
+    DEFAULT_MODEL = "claude-sonnet-4-6"
 
     def __init__(self, api_key: Optional[str] = None, model_name: Optional[str] = None, config: Optional[Dict[str, Any]] = None):
         """Initialize Anthropic client."""
@@ -38,7 +32,7 @@ class AnthropicClient(BaseLLMClient):
 
         settings = get_settings()
         resolved_api_key = api_key or settings.ANTHROPIC_API_KEY
-        resolved_model_name = model_name or self.DEFAULT_MODEL
+        resolved_model_name = model_name or settings.DEFAULT_ANTHROPIC_MODEL or self.DEFAULT_MODEL
         super().__init__(api_key=resolved_api_key, model_name=resolved_model_name, config=config)
 
         if not self.api_key:
@@ -52,6 +46,53 @@ class AnthropicClient(BaseLLMClient):
                 logger.error(f"Failed to initialize Anthropic client: {e}")
                 self.client = None
 
+    def _request_options(
+        self,
+        kwargs: Dict[str, Any],
+        *,
+        default_max_tokens: int,
+    ) -> Dict[str, Any]:
+        """Build current Messages API controls for effort and thinking."""
+        options: Dict[str, Any] = {
+            "max_tokens": kwargs.get("max_tokens", default_max_tokens),
+        }
+        effort = kwargs.get("reasoning_effort", self.config.get("reasoning_effort"))
+        if effort and effort != "none":
+            options["output_config"] = {"effort": effort}
+
+        thinking = kwargs.get("thinking", self.config.get("thinking"))
+        if isinstance(thinking, dict):
+            options["thinking"] = thinking
+        elif thinking == "adaptive":
+            options["thinking"] = {"type": "adaptive"}
+        elif thinking == "enabled":
+            budget = kwargs.get(
+                "thinking_budget", self.config.get("thinking_budget")
+            )
+            if not budget:
+                raise ValueError(
+                    "Claude thinking='enabled' requires a thinking_budget."
+                )
+            options["thinking"] = {
+                "type": "enabled",
+                "budget_tokens": budget,
+            }
+        elif thinking == "disabled":
+            options["thinking"] = {"type": "disabled"}
+
+        if "thinking" not in options and kwargs.get("temperature") is not None:
+            options["temperature"] = kwargs["temperature"]
+        return options
+
+    @staticmethod
+    def _message_text(response: Any) -> str:
+        """Return text even when thinking blocks precede the answer."""
+        return "\n".join(
+            block.text.strip()
+            for block in response.content or []
+            if getattr(block, "type", None) == "text" and getattr(block, "text", None)
+        ).strip()
+
     def generate_completion(self, prompt: str, system_prompt: Optional[str] = None, **kwargs) -> str:
         """Generate text completion using Claude."""
         if not self.client:
@@ -64,11 +105,10 @@ class AnthropicClient(BaseLLMClient):
             messages = [{"role": "user", "content": prompt}]
 
             # Claude uses system parameter separately
-            create_params = {
+            create_params: Dict[str, Any] = {
                 "model": self.get_model_name(),
                 "messages": messages,
-                "max_tokens": kwargs.get("max_tokens", 4096),
-                "temperature": kwargs.get("temperature", 0.7),
+                **self._request_options(kwargs, default_max_tokens=4096),
             }
 
             if system_prompt:
@@ -78,12 +118,7 @@ class AnthropicClient(BaseLLMClient):
 
             logger.debug("Received response from Claude.")
 
-            # Extract text from response
-            if response.content and len(response.content) > 0:
-                return response.content[0].text.strip()
-            else:
-                logger.warning("Claude response was empty.")
-                return ""
+            return self._message_text(response)
 
         except Exception as e:
             logger.error(f"Anthropic API request failed: {e}")
@@ -94,8 +129,10 @@ class AnthropicClient(BaseLLMClient):
         if not self.client:
             raise ValueError("Anthropic client not initialized (check API key).")
 
-        # Prepare schema for prompt
-        if isinstance(output_schema, type) and issubclass(output_schema, BaseModel):
+        is_pydantic_schema = (
+            isinstance(output_schema, type) and issubclass(output_schema, BaseModel)
+        )
+        if is_pydantic_schema:
             schema_dict = output_schema.model_json_schema()
         elif isinstance(output_schema, dict):
             schema_dict = output_schema
@@ -103,30 +140,54 @@ class AnthropicClient(BaseLLMClient):
             logger.warning("Invalid output_schema type. Attempting generic extraction.")
             schema_dict = {}
 
-        # Build system prompt with JSON instructions
         default_system_prompt = "You are an expert data extraction assistant. Extract structured information accurately."
-        json_instructions = (system_prompt or default_system_prompt) + \
-            "\n\nYou MUST respond with a single, valid JSON object with no additional text before or after. Do not use markdown code blocks."
-
-        if schema_dict:
-            schema_string = json.dumps(schema_dict, indent=2)
-            json_instructions += f"\n\nRequired JSON Schema:\n{schema_string}"
+        json_instructions = system_prompt or default_system_prompt
 
         try:
             logger.debug(f"Sending structured output request to Claude model {self.get_model_name()}")
 
-            response = self.client.messages.create(
-                model=self.get_model_name(),
-                system=json_instructions,
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=kwargs.get("max_tokens", 4096),
-                temperature=kwargs.get("temperature", 0.1),  # Lower temp for structured output
+            request_options = self._request_options(
+                kwargs, default_max_tokens=4096
             )
+            if is_pydantic_schema:
+                response = self.client.messages.parse(
+                    model=self.get_model_name(),
+                    system=json_instructions,
+                    messages=[{"role": "user", "content": prompt}],
+                    output_format=output_schema,
+                    **request_options,
+                )
+                parsed = response.parsed_output
+                if parsed is None:
+                    raise ValueError("Claude structured response had no parsed output.")
+                return parsed.model_dump() if isinstance(parsed, BaseModel) else parsed
+
+            output_config = dict(request_options.pop("output_config", {}))
+            if schema_dict:
+                output_config["format"] = {
+                    "type": "json_schema",
+                    "schema": schema_dict,
+                }
+                response = self.client.messages.create(
+                    model=self.get_model_name(),
+                    system=json_instructions,
+                    messages=[{"role": "user", "content": prompt}],
+                    output_config=output_config,
+                    **request_options,
+                )
+            else:
+                response = self.client.messages.create(
+                    model=self.get_model_name(),
+                    system=json_instructions
+                    + "\n\nReturn one valid JSON object and no surrounding text.",
+                    messages=[{"role": "user", "content": prompt}],
+                    **request_options,
+                )
 
             logger.debug("Received response from Claude.")
 
-            if response.content and len(response.content) > 0:
-                raw_completion = response.content[0].text.strip()
+            raw_completion = self._message_text(response)
+            if raw_completion:
 
                 # Parse JSON
                 try:
@@ -215,11 +276,10 @@ class AnthropicClient(BaseLLMClient):
                 raise ValueError("No valid messages to send to Claude.")
 
             # Build request parameters
-            create_params = {
+            create_params: Dict[str, Any] = {
                 "model": self.get_model_name(),
                 "messages": claude_messages,
-                "max_tokens": kwargs.get("max_tokens", 4096),
-                "temperature": kwargs.get("temperature", 0.2),
+                **self._request_options(kwargs, default_max_tokens=4096),
             }
 
             if system_content:
@@ -229,11 +289,7 @@ class AnthropicClient(BaseLLMClient):
 
             logger.debug("Received multimodal response from Claude.")
 
-            if response.content and len(response.content) > 0:
-                return response.content[0].text.strip()
-            else:
-                logger.warning("Claude multimodal response was empty.")
-                return ""
+            return self._message_text(response)
 
         except Exception as e:
             logger.error(f"Anthropic multimodal request failed: {e}")
@@ -274,11 +330,10 @@ class AnthropicClient(BaseLLMClient):
             # Get system prompt from kwargs
             system_prompt = kwargs.get("system_prompt")
 
-            create_params = {
+            create_params: Dict[str, Any] = {
                 "model": self.get_model_name(),
                 "messages": [{"role": "user", "content": message_content}],
-                "max_tokens": kwargs.get("max_tokens", 4096),
-                "temperature": kwargs.get("temperature", 0.2),
+                **self._request_options(kwargs, default_max_tokens=4096),
             }
 
             if system_prompt:
@@ -288,11 +343,7 @@ class AnthropicClient(BaseLLMClient):
 
             logger.debug("Received response from Claude PDF processing.")
 
-            if response.content and len(response.content) > 0:
-                return response.content[0].text.strip()
-            else:
-                logger.warning("Claude PDF processing returned empty response.")
-                return ""
+            return self._message_text(response)
 
         except Exception as e:
             logger.error(f"Claude PDF processing request failed: {e}")

@@ -205,6 +205,8 @@ python scripts/document_processing/generate_knowledge_hub_jsonl.py \
 
 ---
 
-## Related Plans
+## Related plans
 
-- [Educational Materials Processing Plan](../../.claude/plans/iridescent-zooming-cake.md) - Original 319-doc plan for TPT, QFT, SEL, CFU subset
+- Educational Materials Processing Plan — original private 319-document plan
+  for the TPT, QFT, SEL, and CFU subset. That source file is not present in this
+  repository; this reference is retained as historical provenance only.

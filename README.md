@@ -1,186 +1,147 @@
 # Document Processing Pipeline
 
-A powerful, modular document processing framework that transforms various document formats (PDF, DOCX, PPTX, images, audio, video) into structured outputs (text, markdown, JSON). The project now focuses purely on extraction and transformation so you can hand results to whatever downstream system (Milvus, Qdrant, Postgres, etc.) you prefer.
+Local-first extraction and transformation for PDF, DOCX, PPTX, text, images,
+audio, video, and YouTube URLs. Outputs stay portable—text, Markdown, JSON,
+CSV, or XLSX—so downstream repositories can decide how to store and index them.
 
-## 🚀 Features
+## Processing defaults
 
-- **Multi-Format Support**: Process PDFs, Word docs, PowerPoints, images, audio, video, and YouTube URLs
-- **Flexible Output**: Generate text, markdown, JSON, CSV, or Excel outputs
-- **Advanced PDF Processing**: Multiple OCR modes including Docling, GPT-4 Vision, and hybrid approaches
-- **Modular Architecture**: Easily extend with custom loaders, processors, and transformers
-- **Batch Processing**: Process entire directories with recursive file discovery
-- **Resumable Operations**: Processing cache enables resuming interrupted operations
-- **LLM Integration**: Leverage OpenAI, Anthropic, Google, or DeepSeek models for enhanced processing
+- Use Enhanced Docling for PDFs. It is local, free, and supports OCR, layout,
+  tables, caching, and text/Markdown/JSON output.
+- Use MarkItDown or Mammoth for Office documents.
+- Use Codex interactively for review and one-off structuring.
+- Prefer subscription-backed interactive tools for model judgment; never feed
+  their OAuth credentials into the Python pipeline.
+- Treat every remote API as paid and opt-in. Kimi K3, Gemini, OpenAI, and
+  Anthropic are available only when explicitly selected and configured.
+- Keep vector database ingestion downstream; this repository ends at clean
+  extracted or transformed artifacts.
 
-## 📦 Installation
+## Setup
 
-### Prerequisites
-- Python 3.8+
-- Poetry (recommended) or pip
+Python 3.10+ and Poetry are required.
 
-### Install with Poetry
 ```bash
-git clone https://github.com/yourusername/pipeline-documents.git
+git clone https://github.com/aglobalwander/document-pipeline.git
 cd pipeline-documents
 poetry install
+poetry run python -c "import doc_processing; print('ready')"
 ```
 
-### Install with pip
+Do not use the available Conda environments for pipeline work; they do not
+contain the locked dependency set.
+
+## Quick start
+
+Process a PDF with the recommended local path:
+
 ```bash
-git clone https://github.com/yourusername/pipeline-documents.git
-cd pipeline-documents
-pip install -e .
+poetry run python scripts/document_processing/master_docling.py \
+  --input_path /absolute/path/document.pdf \
+  --output_format markdown
 ```
 
-### Additional Dependencies
+Process another supported file or a directory:
+
 ```bash
-# Download NLTK resources
-python scripts/download_nltk_resources.py
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path /absolute/path/document.docx \
+  --pipeline_type markdown \
+  --output_format md
 
-# For YouTube processing
-pip install yt-dlp
-
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path /absolute/path/collection \
+  --pipeline_type text \
+  --recursive
 ```
 
-## 🚀 Quick Start
+Inspect the live CLI contracts before scripting an unfamiliar option:
 
-### Process a Single PDF
 ```bash
-# Basic text extraction
-python scripts/run_pipeline.py --input_path document.pdf --pipeline_type text
-
-# Enhanced PDF processing with Docling
-python scripts/master_docling.py --input_path document.pdf --output_format markdown
-
-# Extract to multiple formats
-python scripts/master_docling.py --input_path document.pdf --output_all_formats
+poetry run python scripts/document_processing/master_docling.py --help
+poetry run python scripts/document_processing/run_pipeline.py --help
 ```
 
-### Process Multiple Files
-```bash
-# Process all PDFs in a directory
-python scripts/run_pipeline.py --input_path /path/to/pdfs --pipeline_type markdown --recursive
+## External collections
 
-# Batch process with optional recursive discovery
-python scripts/run_pipeline.py --input_path /path/to/docs --pipeline_type text --recursive
-```
+Inventory and preview large folders before processing them:
 
-### Process External Collections (No Copying)
 ```bash
-# 1) Inventory an external folder first
 poetry run python scripts/collections/inventory_collection.py \
-  --source_dir "/absolute/path/to/collection"
+  --source_dir /absolute/path/collection
 
-# 2) Preview processing plan (dry run) with auto storage fallback
 scripts/collections/run_collection_with_storage_fallback.sh \
   --storage auto \
-  --source_dir "/absolute/path/to/collection" \
-  --collection_name "my-collection" \
+  --source_dir /absolute/path/collection \
+  --collection_name my-collection \
   --dry_run
+```
 
-# 3) Run full processing (uses /Volumes/My Passport/knowledge-hub when mounted)
+Run after reviewing the plan:
+
+```bash
 scripts/collections/run_collection_with_storage_fallback.sh \
   --storage auto \
-  --source_dir "/absolute/path/to/collection" \
-  --collection_name "my-collection" \
+  --source_dir /absolute/path/collection \
+  --collection_name my-collection \
   --resume
 ```
 
-Outputs are written under `data/output/collections/{collection_name}/{text,markdown,json}/` with a per-collection `manifest.yaml`.  
-Global collection status is tracked in `data/processing_registry.yaml`.  
-Use `--resume` to skip files already marked successful with existing outputs.
-For large runs, use `scripts/collections/run_collection_with_storage_fallback.sh` so outputs write to an external drive when available and automatically fall back to local paths when not.
+Collection outputs go to
+`data/output/collections/{collection_name}/{text,markdown,json}/` unless the
+storage wrapper routes them to the external knowledge-hub volume. Status is
+recorded in `data/processing_registry.yaml`.
 
-## 📖 Documentation
+## Optional Kimi K3 transforms
 
-- **[User Guide](docs/USER_GUIDE.md)** - Detailed usage instructions
-- **[Command Reference](docs/COMMANDS.md)** - Complete CLI documentation
-- **[Overview](docs/OVERVIEW.md)** - Non-technical project overview
-
-## 🏗️ Architecture
-
-The pipeline follows a modular architecture:
-
-```
-Input → Loader → Processor → Transformer → Output
-```
-
-### Core Components
-
-- **Loaders**: Read various file formats into a common document structure
-- **Processors**: Extract and enhance content from documents
-- **Transformers**: Convert between formats or chunk documents
-
-### Supported Formats
-
-**Input**: PDF, DOCX, PPTX, TXT, PNG/JPG/JPEG, MP4/AVI/MOV, MP3/WAV, YouTube URLs
-
-**Output**: TXT, MD, JSON, CSV, XLSX
-
-## ⚙️ Configuration
-
-Create a `.env` file for API keys and settings:
+Kimi K3 is supported for paid structured/text transforms through
+`--llm_provider kimi`. The Kimi Code subscription CLI is a separate OAuth lane
+and does not supply an Open Platform API key to this pipeline.
 
 ```bash
-# LLM API Keys
-OPENAI_API_KEY=your_key_here
-ANTHROPIC_API_KEY=your_key_here
-GOOGLE_API_KEY=your_key_here
-DEEPSEEK_API_KEY=your_key_here
-
-# Processing Options
-DEFAULT_CHUNK_SIZE=1000
-DEFAULT_CHUNK_OVERLAP=200
-ENABLE_CACHING=true
+poetry run python scripts/document_processing/run_pipeline.py \
+  --input_path /absolute/path/notes.md \
+  --pipeline_type json \
+  --output_format json \
+  --llm_provider kimi \
+  --llm_model kimi-k3
 ```
 
-## 🛠️ Advanced Usage
+Credentials load from `~/.config/api-keys/.env.master`. The canonical variable
+is `MOONSHOT_API_KEY`; `KIMI_API_KEY` remains a compatibility alias. Never put a
+real key in a tracked `.env` or backup file. See [Kimi K3](docs/KIMI_K3.md) for
+the API/CLI boundary, current capabilities, and verification commands.
 
-### Custom Pipeline Configuration
-```python
-from doc_processing import DocumentPipeline
+## Architecture
 
-pipeline = DocumentPipeline(
-    pipeline_type="custom",
-    ocr_mode="enhanced_docling",
-    chunk_size=1500,
-    extract_tables=True,
-    detect_columns=True
-)
-
-result = pipeline.process_document("document.pdf")
+```text
+Input -> Loader -> Processor -> Transformer -> Output artifact
 ```
 
-### Extending the Pipeline
-Create custom components by extending base classes:
+- `doc_processing/loaders/`: input normalization
+- `doc_processing/processors/`: OCR, extraction, transcription, and cleanup
+- `doc_processing/transformers/`: Markdown, JSON, chunking, CSV, and XLSX
+- `scripts/document_processing/`: main CLI entry points
+- `scripts/collections/`: inventory and resumable collection batches
+- `data/output/`: generated artifacts (ignored by git)
 
-```python
-from doc_processing.base import BaseProcessor
+## Documentation
 
-class MyCustomProcessor(BaseProcessor):
-    def process(self, document):
-        # Custom processing logic
-        return enhanced_document
+- [Documentation index](docs/README.md)
+- [User guide](docs/USER_GUIDE.md)
+- [Command reference](docs/COMMANDS.md)
+- [Kimi K3 integration](docs/KIMI_K3.md)
+- [Model routing and subscription-first policy](docs/MODEL_ROUTING.md)
+- [System map](SYSTEM_MAP.md)
+- [Runbook](RUNBOOK.md)
+- [Invariants](INVARIANTS.md)
+
+## Verification
+
+```bash
+poetry run pytest -q
+git diff --check
 ```
 
-## 📊 Performance
-
-- **Caching**: Resume interrupted processing automatically
-- **Batch Processing**: Process multiple files concurrently
-- **Memory Efficient**: Stream large files without loading entirely into memory
-- **Optimized OCR**: Multiple OCR strategies for best accuracy/speed trade-off
-
-## 🤝 Contributing
-
-Contributions are welcome! Please read our contributing guidelines and submit pull requests to our repository.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-Built with excellent open-source libraries including:
-- [Docling](https://github.com/DS4SD/docling) - Advanced PDF processing
-- [LangChain](https://github.com/langchain-ai/langchain) - Document chunking and LLM integration
-- [MarkItDown](https://github.com/microsoft/markitdown) - Office document conversion
+Some tests depend on sample data under `data/input/`; targeted unit tests are
+the reliable minimum when those fixtures are absent.

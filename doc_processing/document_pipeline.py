@@ -13,7 +13,7 @@ from doc_processing.embedding.base import Pipeline, PipelineComponent, BaseDocum
 
 # All loaders, processors, and transformers are imported lazily
 # to avoid cascading ImportErrors from heavy deps (PyMuPDF, docling,
-# instructor, openai, etc.) that are only needed for specific file types
+# provider SDKs, etc.) that are only needed for specific file types
 # or pipeline types.
 
 
@@ -51,8 +51,24 @@ class DocumentPipeline:
         chunker_config = self.config.get('chunker_config', {})
         # Removed hybrid_processor_config
         markdown_config = self.config.get('markdown_config', {})
-        json_config = self.config.get('json_config', {})
-        instructor_config = self.config.get('instructor_config', {})
+        json_config = dict(self.config.get('json_config', {}))
+        instructor_config = dict(self.config.get('instructor_config', {}))
+
+        # The general CLI exposes these options at the pipeline's top level.
+        # Propagate them into LLM-backed transformers while allowing an explicit
+        # nested transformer config to take precedence.
+        for option in (
+            'llm_provider',
+            'llm_model',
+            'api_key',
+            'prompt_name',
+            'temperature',
+            'max_tokens',
+            'llm_client_config',
+        ):
+            if self.config.get(option) is not None:
+                json_config.setdefault(option, self.config[option])
+                instructor_config.setdefault(option, self.config[option])
         
         # Add configs for new processors and transformers
         docx_config = self.config.get('docx_config', {})
@@ -222,13 +238,14 @@ class DocumentPipeline:
         elif source_path_str.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp')):
              from doc_processing.processors.image_processor import ImageProcessor
              image_processor_config = self.config.get('image_processor_config', {}).copy()
-             image_processor_config.setdefault('backend', self.config.get('image_backend', 'openai'))
-             image_processor_config.setdefault(
-                 'skip_caption',
-                 self.config.get('pipeline_type') == 'text',
-             )
+             image_backend = self.config.get('image_backend', 'local')
+             image_processor_config.setdefault('backend', image_backend)
+             image_processor_config.setdefault('skip_caption', image_backend == 'local')
              if self.config.get('llm_model') and 'model' not in image_processor_config:
                  image_processor_config['model'] = self.config.get('llm_model')
+             for option in ('api_key', 'llm_client_config'):
+                 if self.config.get(option) is not None:
+                     image_processor_config.setdefault(option, self.config[option])
              self.logger.info("Adding ImageProcessor for image OCR and caption extraction")
              processing_pipeline.add_component(ImageProcessor(image_processor_config))
 

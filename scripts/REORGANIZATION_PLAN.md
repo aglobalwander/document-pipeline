@@ -1,5 +1,8 @@
 # Scripts Reorganization Plan
 
+> Historical planning note. See `scripts/README.md` and the current filesystem
+> for the live script map.
+
 ## Current Scripts Analysis
 
 ### Categories Identified:

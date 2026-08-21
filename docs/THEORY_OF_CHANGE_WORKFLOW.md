@@ -196,7 +196,7 @@ poetry run python scripts/document_processing/master_docling.py \
 |-------|----------|
 | Tables not extracting well | `--no_extract_tables` |
 | Processing very slow | `--no_cache` |
-| Need only markdown | `--no_all_formats` |
+| Need only markdown | `--no_output_all_formats` |
 
 ---
 
@@ -258,7 +258,7 @@ chmod +x scripts/process_theory_of_change.sh
 ### "poetry not found"
 Make sure you're in the project directory:
 ```bash
-cd /Users/scottwilliams/Development/master_projects/pipeline-documents
+cd /Users/scottwilliams/Development/_02_platforms/pipeline-documents
 ```
 
 ### Processing fails for a specific PDF

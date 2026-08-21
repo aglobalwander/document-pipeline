@@ -1,5 +1,8 @@
 # Documentation Improvement Plan
 
+> Historical planning note. The current documentation map is
+> `docs/README.md`; use live code and CLI `--help` for command authority.
+
 This document outlines the plan to clean up and update the existing documentation and create a new simplified overview document for the document processing pipeline.
 
 ## 1. Update Existing Documentation:

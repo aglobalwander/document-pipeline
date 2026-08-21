@@ -37,7 +37,7 @@ class GPTPVisionProcessor(BaseProcessor):
 
         # LLM Client Initialization
         self.llm_client: Optional[BaseLLMClient] = None
-        llm_provider = self.config.get('llm_provider', 'openai') # Default to OpenAI
+        llm_provider = self.config.get('llm_provider')
         # Use specific vision model from config or client's default
         llm_model = self.config.get('vision_model', self.config.get('llm_model'))
 
@@ -51,11 +51,10 @@ class GPTPVisionProcessor(BaseProcessor):
         # Removed GeminiClient initialization block
         # Add elif blocks here for other providers (Anthropic) when their clients are implemented
         else:
-             # Handle non-OpenAI providers if this processor is mistakenly called for them
-             if llm_provider != 'openai':
-                  logger.warning(f"GPTPVisionProcessor received unsupported provider '{llm_provider}'. Only 'openai' is currently handled for page-image processing.")
-             else: # Should not happen if logic is correct, but good to log
-                  logger.error(f"Failed to initialize OpenAIClient for unknown reasons.")
+             logger.warning(
+                 "GPTPVisionProcessor requires explicit llm_provider='openai'; received %r.",
+                 llm_provider,
+             )
              self.llm_client = None # Ensure client is None
 
         # Prompt configuration - prioritize prompt_name if provided

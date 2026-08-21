@@ -1,11 +1,11 @@
-"""Concrete implementation for Google Gemini LLM client using the new google-genai SDK."""
+"""Gemini client using the Interactions API with generateContent fallback."""
 
-import os
+import base64
 import json
 import logging
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Type
-from pydantic import BaseModel, Field
+from typing import Any, Dict, List, Optional, Type, Union
+from pydantic import BaseModel
 
 # Import the new Google library and types
 try:
@@ -24,9 +24,9 @@ from doc_processing.config import get_settings
 logger = logging.getLogger(__name__)
 
 class GeminiClient(BaseLLMClient):
-    """Client for interacting with Google's Gemini API using google-genai SDK."""
+    """Client for Gemini's current Interactions API."""
 
-    DEFAULT_MODEL = "gemini-1.5-pro-latest" # Or fetch from settings
+    DEFAULT_MODEL = "gemini-3.6-flash"
     # Note: Specific vision models might not be needed if using generate_content with mixed types
 
     def __init__(self, api_key: Optional[str] = None, model_name: Optional[str] = None, config: Optional[Dict[str, Any]] = None):
@@ -36,8 +36,9 @@ class GeminiClient(BaseLLMClient):
 
         settings = get_settings()
         resolved_api_key = api_key or settings.GEMINI_API_KEY or settings.GOOGLE_API_KEY # Check both potential env vars
-        resolved_model_name = model_name or self.DEFAULT_MODEL
+        resolved_model_name = model_name or settings.DEFAULT_GEMINI_MODEL or self.DEFAULT_MODEL
         super().__init__(api_key=resolved_api_key, model_name=resolved_model_name, config=config)
+        self.api_style = self.config.get("api_style", "interactions")
 
         if not self.api_key:
             logger.warning("Google API key (GEMINI_API_KEY or GOOGLE_API_KEY) not found. GeminiClient will not function.")
@@ -53,11 +54,59 @@ class GeminiClient(BaseLLMClient):
                 logger.error(f"Failed to configure or initialize Gemini client (google-genai): {e}")
                 self.client = None
 
+    def _interaction_options(
+        self,
+        system_instruction: Optional[str] = None,
+        **kwargs,
+    ) -> Dict[str, Any]:
+        """Build Interactions options, keeping remote state storage off by default."""
+        options: Dict[str, Any] = {
+            "model": self.get_model_name(),
+            "store": kwargs.get("store", self.config.get("store", False)),
+        }
+        if system_instruction:
+            options["system_instruction"] = system_instruction
+
+        generation_config: Dict[str, Any] = {
+            "max_output_tokens": kwargs.get("max_tokens", 8192),
+        }
+        effort = kwargs.get("reasoning_effort", self.config.get("reasoning_effort"))
+        effort_map = {
+            "minimal": "minimal",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+        }
+        if effort and effort not in effort_map:
+            raise ValueError(
+                "Gemini thinking level must be minimal, low, medium, or high."
+            )
+        if effort in effort_map:
+            generation_config["thinking_level"] = effort_map[effort]
+        thinking_summaries = kwargs.get(
+            "thinking_summaries", self.config.get("thinking_summaries")
+        )
+        if thinking_summaries:
+            generation_config["thinking_summaries"] = thinking_summaries
+        options["generation_config"] = generation_config
+
+        for option in ("previous_interaction_id", "service_tier"):
+            value = kwargs.get(option, self.config.get(option))
+            if value is not None:
+                options[option] = value
+        return options
+
+    @staticmethod
+    def _extract_interaction_text(response: Any) -> str:
+        return (getattr(response, "output_text", None) or "").strip()
+
     def _prepare_generation_config(self, system_instruction: Optional[str] = None, **kwargs) -> types.GenerateContentConfig: # Correct class name
          """Helper to create GenerateContentConfig from kwargs, including system instruction."""
          config_args = {
                 "max_output_tokens": kwargs.get("max_tokens", 8192),
-                "temperature": kwargs.get("temperature", 0.7),
+                # Gemini 3 models choose an appropriate default. Only send a
+                # sampling value when the caller deliberately overrides it.
+                "temperature": kwargs.get("temperature"),
                 # Add other standard config args here if needed (top_p, top_k etc.)
                 "response_mime_type": kwargs.get("response_mime_type"), # Pass through if provided
                 "response_schema": kwargs.get("response_schema") # Pass through if provided
@@ -95,9 +144,15 @@ class GeminiClient(BaseLLMClient):
         if not self.client:
             raise ValueError("Gemini client not initialized (check API key).")
 
-        contents = [prompt] # Simple text prompt
-
         try:
+            if self.api_style == "interactions":
+                response = self.client.interactions.create(
+                    input=prompt,
+                    **self._interaction_options(system_prompt, **kwargs),
+                )
+                return self._extract_interaction_text(response)
+
+            contents = [prompt]
             logger.debug(f"Sending completion request to Gemini model {self.get_model_name()}")
             # Prepare config, passing system prompt to the helper
             generation_config = self._prepare_generation_config(system_instruction=system_prompt, **kwargs)
@@ -116,10 +171,44 @@ class GeminiClient(BaseLLMClient):
             logger.error(f"Gemini API request failed: {e}")
             raise
 
-    def generate_structured_output(self, prompt: str, output_schema: Dict[str, Any], system_prompt: Optional[str] = None, **kwargs) -> Dict[str, Any]:
-        """Generate structured JSON output using Gemini (requires specific prompting or JSON mode)."""
+    def generate_structured_output(self, prompt: str, output_schema: Union[Dict[str, Any], Type[BaseModel]], system_prompt: Optional[str] = None, **kwargs) -> Dict[str, Any]:
+        """Generate JSON constrained by a provider-native response schema."""
         if not self.client:
             raise ValueError("Gemini client not initialized (check API key).")
+
+        is_pydantic_schema = (
+            isinstance(output_schema, type) and issubclass(output_schema, BaseModel)
+        )
+        schema_dict = (
+            output_schema.model_json_schema()
+            if is_pydantic_schema
+            else output_schema if isinstance(output_schema, dict) else {}
+        )
+
+        if self.api_style == "interactions":
+            options = self._interaction_options(
+                system_prompt
+                or "You are an expert data extraction assistant. Return the requested structured data.",
+                **kwargs,
+            )
+            options["response_mime_type"] = "application/json"
+            options["response_format"] = {
+                "type": "text",
+                "mime_type": "application/json",
+                "schema": schema_dict,
+            }
+            try:
+                response = self.client.interactions.create(input=prompt, **options)
+                raw_completion = self._extract_interaction_text(response)
+                if not raw_completion:
+                    raise ValueError("Gemini structured output returned empty text.")
+                parsed = json.loads(raw_completion)
+                if is_pydantic_schema:
+                    return output_schema.model_validate(parsed).model_dump()
+                return parsed
+            except Exception as error:
+                logger.error("Gemini Interactions structured request failed: %s", error)
+                raise
 
         # Use JSON mode if available and requested
         use_json_mode = self.config.get('use_json_mode', True) # Default to trying JSON mode
@@ -137,7 +226,7 @@ class GeminiClient(BaseLLMClient):
                  temperature=kwargs.get("temperature", 0.1), # Lower temp for structured
                  max_tokens=kwargs.get("max_tokens", 4096),
                  response_mime_type=response_mime_type,
-                 response_schema=output_schema if use_json_mode else None
+                 response_schema=schema_dict if use_json_mode else None
             )
 
             response = self.client.models.generate_content(
@@ -186,6 +275,23 @@ class GeminiClient(BaseLLMClient):
             # Read PDF bytes
             pdf_bytes = file_path.read_bytes()
 
+            if self.api_style == "interactions":
+                interaction_input = [
+                    {
+                        "type": "document",
+                        "data": base64.b64encode(pdf_bytes).decode("ascii"),
+                        "mime_type": "application/pdf",
+                    },
+                    {"type": "text", "text": prompt},
+                ]
+                response = self.client.interactions.create(
+                    input=interaction_input,
+                    **self._interaction_options(
+                        kwargs.get("system_prompt"), **kwargs
+                    ),
+                )
+                return self._extract_interaction_text(response)
+
             # Prepare content parts using types.Part.from_bytes as per latest docs
             contents = [
                  # Prompt order might matter, example shows Part first
@@ -220,7 +326,50 @@ class GeminiClient(BaseLLMClient):
         if not self.client:
             raise ValueError("Gemini client not initialized (check API key).")
 
-        # Convert the OpenAI-style message format to Gemini's content list format
+        if self.api_style == "interactions":
+            interaction_input: List[Dict[str, Any]] = []
+            system_instructions: List[str] = []
+            for message in messages:
+                if message.get("role") == "system":
+                    system_instructions.append(str(message.get("content", "")))
+                    continue
+                content = message.get("content", "")
+                if isinstance(content, str):
+                    interaction_input.append({"type": "text", "text": content})
+                    continue
+                for part in content:
+                    if part.get("type") == "text":
+                        interaction_input.append(
+                            {"type": "text", "text": part.get("text", "")}
+                        )
+                    elif part.get("type") == "image_url":
+                        image_url = part.get("image_url", {})
+                        url = image_url.get("url") if isinstance(image_url, dict) else image_url
+                        if not url or not url.startswith("data:image"):
+                            raise ValueError(
+                                "Gemini Interactions requires base64 data image URLs."
+                            )
+                        header, encoded = url.split(",", 1)
+                        interaction_input.append(
+                            {
+                                "type": "image",
+                                "data": encoded,
+                                "mime_type": header.split(";", 1)[0].split(":", 1)[1],
+                            }
+                        )
+            if not interaction_input:
+                raise ValueError("Could not convert messages to Gemini input.")
+            system_prompt = kwargs.pop("system_prompt", None)
+            response = self.client.interactions.create(
+                input=interaction_input,
+                **self._interaction_options(
+                    system_prompt or "\n\n".join(system_instructions) or None,
+                    **kwargs,
+                ),
+            )
+            return self._extract_interaction_text(response)
+
+        # Convert the OpenAI-style message format to Gemini's legacy content list format
         gemini_contents = []
         try:
             for msg in messages:

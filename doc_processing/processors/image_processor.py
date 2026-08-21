@@ -1,121 +1,120 @@
-"""Processor for analyzing images using vision models."""
+"""Local-first image OCR with explicit opt-in remote captioning."""
+import base64
+from io import BytesIO
 import logging
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
-# Assuming these imports are available in the environment
 import pytesseract
-from PIL import Image # Assuming Pillow is installed
+from PIL import Image
 
-from doc_processing.embedding.base import PipelineComponent
+from doc_processing.config import get_settings
+from doc_processing.embedding.base import BaseProcessor
 
 logger = logging.getLogger(__name__)
 
-class ImageProcessor(PipelineComponent):
-    """
-    Processes images to extract captions and OCR text using vision models.
-    """
-    def __init__(self, cfg: Dict[str, Any]):
-        """
-        Initializes the ImageProcessor.
 
-        Args:
-            cfg: Configuration dictionary. Expected keys:
-                 - "backend": "openai" or "gemini" (default: "openai")
-                 - "model": Specific model name (optional, overrides default)
-        """
-        self.backend = cfg.get("backend", "openai")
-        self.model = cfg.get("model") or (
-            "gpt-4o-mini" if self.backend == "openai" else "gemini-pro-vision"
+class ImageProcessor(BaseProcessor):
+    """Extract image text locally and optionally add a paid API caption."""
+
+    def __init__(self, config: Optional[Dict[str, Any]] = None):
+        super().__init__(config)
+        self.settings = get_settings()
+        self.backend = self.config.get("backend", "local")
+        if self.backend not in {"local", "openai", "gemini"}:
+            raise ValueError(f"Unsupported image backend: {self.backend}")
+
+        default_model = {
+            "openai": self.settings.DEFAULT_OPENAI_VISION_MODEL,
+            "gemini": self.settings.DEFAULT_GEMINI_MODEL,
+        }.get(self.backend)
+        self.model = self.config.get("model") or default_model
+        self.skip_caption = self.config.get(
+            "skip_caption",
+            self.backend == "local",
         )
-        self.skip_caption = cfg.get("skip_caption", False)
-        logger.info(f"ImageProcessor initialized with backend: {self.backend}, model: {self.model}")
+        logger.info(
+            "ImageProcessor initialized with backend=%s model=%s skip_caption=%s",
+            self.backend,
+            self.model or "none",
+            self.skip_caption,
+        )
 
-    def run(self, img_arr: Image.Image) -> Dict[str, Any]:
-        """
-        Runs the image processing pipeline.
+    def _generate_caption(self, image: Image.Image) -> str:
+        buffered = BytesIO()
+        image.convert("RGB").save(buffered, format="JPEG")
+        image_base64 = base64.b64encode(buffered.getvalue()).decode("utf-8")
+        messages = [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": "Describe this image accurately and concisely."},
+                    {
+                        "type": "image_url",
+                        "image_url": {"url": f"data:image/jpeg;base64,{image_base64}"},
+                    },
+                ],
+            }
+        ]
 
-        Args:
-            img_arr: The image as a PIL Image object.
+        if self.backend == "openai":
+            from doc_processing.llm.clients import OpenAIClient
 
-        Returns:
-            A dictionary containing the extracted caption and OCR text.
-        """
+            client = OpenAIClient(
+                api_key=self.config.get(
+                    "api_key",
+                    self.settings.OPENAI_API_KEY or self.settings.OPENAI_APIKEY,
+                ),
+                model_name=self.model,
+                config=self.config.get("llm_client_config"),
+            )
+        elif self.backend == "gemini":
+            from doc_processing.llm.gemini_client import GeminiClient
+
+            client = GeminiClient(
+                api_key=self.config.get(
+                    "api_key",
+                    self.settings.GEMINI_API_KEY or self.settings.GOOGLE_API_KEY,
+                ),
+                model_name=self.model,
+                config=self.config.get("llm_client_config"),
+            )
+        else:
+            return ""
+
+        return client.generate_multimodal_completion(messages, max_tokens=300)
+
+    def process(self, document: Dict[str, Any]) -> Dict[str, Any]:
+        """Process the PIL image stored in ``document['content']``."""
+        image = document.get("content")
+        if not isinstance(image, Image.Image):
+            document["error"] = "ImageProcessor expected a PIL Image in document['content']."
+            return document
+
         caption = ""
-        ocr_text = ""
-
         if not self.skip_caption:
             try:
-                # Get caption from vision model
-                if self.backend == "openai":
-                    import openai
-
-                    # Convert PIL Image to bytes for OpenAI Vision
-                    # Note: This assumes the image is in a format supported by OpenAI Vision (e.g., JPEG, PNG)
-                    # You might need to handle different formats or add conversion logic.
-                    # For simplicity, assuming JPEG for now.
-                    from io import BytesIO
-                    buffered = BytesIO()
-                    img_arr.save(buffered, format="JPEG")
-                    img_bytes = buffered.getvalue()
-
-                    # Encode image bytes to base64
-                    import base64
-                    img_base64 = base64.b64encode(img_bytes).decode('utf-8')
-
-                    response = openai.chat.completions.create(
-                        model=self.model,
-                        messages=[
-                            {
-                                "role": "user",
-                                "content": [
-                                    {"type": "text", "text": "Describe this image."},
-                                    {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_base64}"}},
-                                ],
-                            }
-                        ],
-                        max_tokens=100, # Increased max_tokens for potentially better captions
-                    )
-                    caption = response.choices[0].message.content.strip()
-                    logger.info(f"Generated caption using OpenAI: {caption}")
-
-                elif self.backend == "gemini":
-                     import google.generativeai as genai
-
-                     # Gemini Vision can directly take PIL Image
-                     response = genai.generate_content(
-                         model=self.model,
-                         contents=[{"mime_type": "image/jpeg", "data": img_arr.tobytes()}], # Assuming JPEG format
-                     )
-                     caption = response.text.strip()
-                     logger.info(f"Generated caption using Gemini: {caption}")
-
-                else:
-                    logger.warning(f"Unsupported image processing backend: {self.backend}")
-
-            except Exception as e:
-                logger.error(f"Error generating caption with {self.backend} backend: {e}")
-                caption = f"Error generating caption: {e}" # Indicate failure in output
+                caption = self._generate_caption(image)
+            except Exception as exc:
+                logger.error("Error generating caption with %s: %s", self.backend, exc)
+                caption = f"Error generating caption: {exc}"
 
         try:
-            # Perform OCR using pytesseract
-            ocr_text = pytesseract.image_to_string(img_arr)
-            logger.info("Extracted OCR text using pytesseract.")
-        except Exception as e:
-            logger.error(f"Error performing OCR with pytesseract: {e}")
-            ocr_text = f"Error performing OCR: {e}" # Indicate failure in output
-
+            ocr_text = pytesseract.image_to_string(image)
+            logger.info("Extracted OCR text using local Tesseract.")
+        except Exception as exc:
+            logger.error("Error performing local Tesseract OCR: %s", exc)
+            ocr_text = f"Error performing OCR: {exc}"
 
         extracted_text = ocr_text.strip() if isinstance(ocr_text, str) else ""
         fallback_caption = caption.strip() if isinstance(caption, str) else ""
-        content = extracted_text or fallback_caption
-
-        return {
-            "content": content,
-            "metadata": {
+        document["content"] = extracted_text or fallback_caption
+        metadata = document.setdefault("metadata", {})
+        metadata.update(
+            {
                 "caption": caption,
                 "ocr": ocr_text,
-            },
-        }
-
-# Note: This processor expects a PIL Image object as input.
-# A loader component would be needed to load images from files into this format.
+                "image_backend": self.backend,
+                "image_model": self.model,
+            }
+        )
+        return document

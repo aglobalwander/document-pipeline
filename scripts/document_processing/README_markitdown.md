@@ -10,10 +10,10 @@ The `direct_markitdown.py` script is a lightweight wrapper around the MarkItDown
 
 ```bash
 # Basic usage - print to stdout
-python direct_markitdown.py path/to/document.docx
+poetry run python scripts/document_processing/direct_markitdown.py path/to/document.docx
 
 # Save to file
-python direct_markitdown.py path/to/document.docx output.md
+poetry run python scripts/document_processing/direct_markitdown.py path/to/document.docx output.md
 ```
 
 ## Supported File Types
@@ -57,7 +57,7 @@ pip install 'markitdown[docx,pdf]'
 
 While this script operates independently of the main pipeline, the outputs can still be used with other pipeline components by:
 
-1. First converting the document: `python direct_markitdown.py input.docx output.md`
-2. Then processing the Markdown: `python scripts/run_pipeline.py --input_path output.md --pipeline_type json`
+1. First converting the document: `poetry run python scripts/document_processing/direct_markitdown.py input.docx output.md`
+2. Then processing the Markdown: `poetry run python scripts/document_processing/run_pipeline.py --input_path output.md --pipeline_type json`
 
 For a detailed comparison of processing approaches, see the DOCX Processing section in the USER_GUIDE.md.

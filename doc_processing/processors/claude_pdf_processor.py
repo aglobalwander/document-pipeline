@@ -43,6 +43,10 @@ Provide clean, accurate transcription of all text."""
         """Initialize the Claude PDF processor."""
         super().__init__(config)
         self.settings = get_settings()
+        if self.config.get('llm_provider') != 'anthropic':
+            raise ValueError(
+                "Claude PDF processing requires explicit llm_provider='anthropic'."
+            )
 
         # Initialize Claude client
         self.claude_client = None
@@ -51,7 +55,11 @@ Provide clean, accurate transcription of all text."""
 
             self.claude_client = AnthropicClient(
                 api_key=self.config.get('api_key', self.settings.ANTHROPIC_API_KEY),
-                model_name=self.config.get('model_name', 'claude-sonnet-4-20250514'),
+                model_name=(
+                    self.config.get('llm_model')
+                    or self.config.get('model_name')
+                    or self.settings.DEFAULT_ANTHROPIC_MODEL
+                ),
                 config=self.config.get('llm_client_config')
             )
             logger.info(f"Initialized Claude PDF processor with model: {self.claude_client.get_model_name()}")

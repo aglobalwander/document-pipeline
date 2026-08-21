@@ -13,7 +13,7 @@ from doc_processing.templates.prompt_manager import PromptTemplateManager
 from doc_processing.config import get_settings
 # Import the new LLM client base and implementation
 from doc_processing.llm.base import BaseLLMClient
-from doc_processing.llm.clients import DeepSeekClient, OpenAIClient
+from doc_processing.llm.clients import DeepSeekClient, KimiClient, OpenAIClient
 
 class TextToJSON(BaseTransformer):
     """Transform text documents to structured JSON format."""
@@ -34,7 +34,14 @@ class TextToJSON(BaseTransformer):
         
         # JSON configuration
         self.json_schema = self.config.get('json_schema', None)
-        self.use_llm = self.config.get('use_llm', True) # Keep flag to enable/disable LLM use
+        llm_provider = self.config.get('llm_provider')
+        requested_llm_use = self.config.get('use_llm')
+        self.use_llm = bool(llm_provider) if requested_llm_use is None else bool(requested_llm_use)
+        if self.use_llm and not llm_provider:
+            raise ValueError(
+                "TextToJSON LLM extraction requires an explicit llm_provider; "
+                "omit use_llm or set it to false for local rule-based extraction."
+            )
         # Prioritize prompt_name, fallback to schema_prompt_template, then default
         self.prompt_name = self.config.get('prompt_name')
         self.schema_prompt_template = self.config.get('schema_prompt_template', 'json_extraction.j2') # Keep as fallback/default
@@ -42,8 +49,6 @@ class TextToJSON(BaseTransformer):
         # LLM Client Initialization
         self.llm_client: Optional[BaseLLMClient] = None
         if self.use_llm:
-            # Determine provider (default to openai for now)
-            llm_provider = self.config.get('llm_provider', 'openai')
             llm_model = self.config.get('llm_model') # Let client use its default if not specified
 
             # Instantiate the client (add more providers later)
@@ -64,6 +69,29 @@ class TextToJSON(BaseTransformer):
                     api_key=api_key,
                     model_name=llm_model,
                     config=client_config,
+                )
+            elif llm_provider in {'kimi', 'moonshot'}:
+                self.llm_client = KimiClient(
+                    api_key=self.config.get('api_key'),
+                    model_name=llm_model,
+                    config=self.config.get('llm_client_config'),
+                )
+            elif llm_provider == 'anthropic':
+                from doc_processing.llm.anthropic_client import AnthropicClient
+                self.llm_client = AnthropicClient(
+                    api_key=self.config.get('api_key', self.settings.ANTHROPIC_API_KEY),
+                    model_name=llm_model,
+                    config=self.config.get('llm_client_config'),
+                )
+            elif llm_provider == 'gemini':
+                from doc_processing.llm.gemini_client import GeminiClient
+                self.llm_client = GeminiClient(
+                    api_key=self.config.get(
+                        'api_key',
+                        self.settings.GEMINI_API_KEY or self.settings.GOOGLE_API_KEY,
+                    ),
+                    model_name=llm_model,
+                    config=self.config.get('llm_client_config'),
                 )
             else:
                 self.logger.warning(f"Unsupported LLM provider specified: {llm_provider}. LLM extraction disabled.")

@@ -1,0 +1,1667 @@
+{
+  "authority": {
+    "readiness_matrix_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-29-ap-current-guide-review/readiness-matrix-v2/ap-current-readiness-matrix-v2.json",
+    "readiness_matrix_sha256": "2e3626ac97c6afd1aa87e0db4cffc23edb2e1567e73ed5856583c9453a99e846",
+    "review_baseline_manifest_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/ap_current_source_package_manifest.json",
+    "review_baseline_manifest_sha256": "f2ce852f0e56bf7b14ce1fece92a68885a6cd848023029a02af1a6faa40b97dd"
+  },
+  "claim_class": "source_summary",
+  "counts": {
+    "changed_since_review_baseline": 2,
+    "current_official_bytes_retained": 40,
+    "exact_to_review_baseline": 38,
+    "packages": 40
+  },
+  "downstream_permission": "private_internal_reference_only",
+  "packages": {
+    "ap-african-american-studies": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "20638a664193b5f86355a0ba34b252cdf98729cea7a5963d697a95ee284d8b1c": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-african-american-studies/20638a664193b5f86355a0ba34b252cdf98729cea7a5963d697a95ee284d8b1c/ap-african-american-studies-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 53431854,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 442,
+          "pdf_version": "1.7",
+          "sha256": "20638a664193b5f86355a0ba34b252cdf98729cea7a5963d697a95ee284d8b1c"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "20638a664193b5f86355a0ba34b252cdf98729cea7a5963d697a95ee284d8b1c",
+      "named_offerings": [
+        "AP African American Studies"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-african-american-studies-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-african-american-studies/20638a664193b5f86355a0ba34b252cdf98729cea7a5963d697a95ee284d8b1c/ap-african-american-studies-course-and-exam-description.pdf",
+        "bytes": 53431854,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 442,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "20638a664193b5f86355a0ba34b252cdf98729cea7a5963d697a95ee284d8b1c",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-african-american-studies.md"
+      }
+    },
+    "ap-art-and-design": {
+      "archive_state": "verified_current_bytes_distinct_from_baseline",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "0085507a53d0c1a170271883ade1257242e4a372c983f46dae098bf58d1b61b9": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-art-and-design/0085507a53d0c1a170271883ade1257242e4a372c983f46dae098bf58d1b61b9/ap-art-and-design-course-and-exam-description.pdf",
+          "baseline_primary_label_present": false,
+          "bytes": 3575579,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 55,
+          "pdf_version": "1.7",
+          "sha256": "0085507a53d0c1a170271883ade1257242e4a372c983f46dae098bf58d1b61b9"
+        }
+      },
+      "comparison_state": "different_from_august_review_baseline",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "0085507a53d0c1a170271883ade1257242e4a372c983f46dae098bf58d1b61b9",
+      "named_offerings": [
+        "AP 2-D Art and Design",
+        "AP 3-D Art and Design",
+        "AP Drawing"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-art-and-design-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": null,
+        "bytes": 3334276,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 53,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "ed016d231fee2ae24e82d237fc02e982b33827af718415f6cefba3c9664bafbe",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-art-and-design.md"
+      }
+    },
+    "ap-art-history": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "3de089e73857cf8545b578e4602828803d6fdce34058c5ba21263360c9ba2d02": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-art-history/3de089e73857cf8545b578e4602828803d6fdce34058c5ba21263360c9ba2d02/ap-art-history-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 79603543,
+          "detected_effective_labels": [
+            "Effective Fall 2019"
+          ],
+          "effective_label": "Effective Fall 2019",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 368,
+          "pdf_version": "1.7",
+          "sha256": "3de089e73857cf8545b578e4602828803d6fdce34058c5ba21263360c9ba2d02"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "3de089e73857cf8545b578e4602828803d6fdce34058c5ba21263360c9ba2d02",
+      "named_offerings": [
+        "AP Art History"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-art-history-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-art-history/3de089e73857cf8545b578e4602828803d6fdce34058c5ba21263360c9ba2d02/ap-art-history-course-and-exam-description.pdf",
+        "bytes": 79603543,
+        "effective_labels": [
+          "Effective Fall 2019"
+        ],
+        "pages": 368,
+        "primary_effective_label": "Effective Fall 2019",
+        "retrieved_on": "2026-08-16",
+        "sha256": "3de089e73857cf8545b578e4602828803d6fdce34058c5ba21263360c9ba2d02",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-art-history.md"
+      }
+    },
+    "ap-biology": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "30db56cdd81a231b17d48aeda420364794b285beedfd1f1a1c256de0939b793c": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-biology/30db56cdd81a231b17d48aeda420364794b285beedfd1f1a1c256de0939b793c/ap-biology-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 5140208,
+          "detected_effective_labels": [
+            "Effective Fall 2025"
+          ],
+          "effective_label": "Effective Fall 2025",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 240,
+          "pdf_version": "1.7",
+          "sha256": "30db56cdd81a231b17d48aeda420364794b285beedfd1f1a1c256de0939b793c"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "30db56cdd81a231b17d48aeda420364794b285beedfd1f1a1c256de0939b793c",
+      "named_offerings": [
+        "AP Biology"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-biology-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-biology/30db56cdd81a231b17d48aeda420364794b285beedfd1f1a1c256de0939b793c/ap-biology-course-and-exam-description.pdf",
+        "bytes": 5140208,
+        "effective_labels": [
+          "Effective Fall 2025"
+        ],
+        "pages": 240,
+        "primary_effective_label": "Effective Fall 2025",
+        "retrieved_on": "2026-08-16",
+        "sha256": "30db56cdd81a231b17d48aeda420364794b285beedfd1f1a1c256de0939b793c",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-biology.md"
+      }
+    },
+    "ap-business-personal-finance": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "a04d8ead3761d2f9a40beda685b1c28626e9105defee12015476622079ea24e0": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-business-personal-finance/a04d8ead3761d2f9a40beda685b1c28626e9105defee12015476622079ea24e0/ap-business-personal-finance-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 9668818,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 302,
+          "pdf_version": "1.7",
+          "sha256": "a04d8ead3761d2f9a40beda685b1c28626e9105defee12015476622079ea24e0"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "a04d8ead3761d2f9a40beda685b1c28626e9105defee12015476622079ea24e0",
+      "named_offerings": [
+        "AP Business with Personal Finance"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-business-personal-finance-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-business-personal-finance/a04d8ead3761d2f9a40beda685b1c28626e9105defee12015476622079ea24e0/ap-business-personal-finance-course-and-exam-description.pdf",
+        "bytes": 9668818,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 302,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "a04d8ead3761d2f9a40beda685b1c28626e9105defee12015476622079ea24e0",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-business-personal-finance.md"
+      }
+    },
+    "ap-calculus-ab-and-bc": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "fd571cdc252c24d33a75ed556ee20d9261ef1ad3dbb718d0caf78acecc8253ca": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-calculus-ab-and-bc/fd571cdc252c24d33a75ed556ee20d9261ef1ad3dbb718d0caf78acecc8253ca/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 7997796,
+          "detected_effective_labels": [
+            "Effective Fall 2020"
+          ],
+          "effective_label": "Effective Fall 2020",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 230,
+          "pdf_version": "1.7",
+          "sha256": "fd571cdc252c24d33a75ed556ee20d9261ef1ad3dbb718d0caf78acecc8253ca"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "fd571cdc252c24d33a75ed556ee20d9261ef1ad3dbb718d0caf78acecc8253ca",
+      "named_offerings": [
+        "AP Calculus AB",
+        "AP Calculus BC"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-calculus-ab-and-bc/fd571cdc252c24d33a75ed556ee20d9261ef1ad3dbb718d0caf78acecc8253ca/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+        "bytes": 7997796,
+        "effective_labels": [
+          "Effective Fall 2020"
+        ],
+        "pages": 230,
+        "primary_effective_label": "Effective Fall 2020",
+        "retrieved_on": "2026-08-16",
+        "sha256": "fd571cdc252c24d33a75ed556ee20d9261ef1ad3dbb718d0caf78acecc8253ca",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-calculus-ab-and-bc.md"
+      }
+    },
+    "ap-chemistry": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "b5dfe8677ef3d88c613865d2e2a3e8d6125d652e2b24c71ef1e8ce4e011094f0": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-chemistry/b5dfe8677ef3d88c613865d2e2a3e8d6125d652e2b24c71ef1e8ce4e011094f0/ap-chemistry-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 7852554,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 238,
+          "pdf_version": "1.7",
+          "sha256": "b5dfe8677ef3d88c613865d2e2a3e8d6125d652e2b24c71ef1e8ce4e011094f0"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "b5dfe8677ef3d88c613865d2e2a3e8d6125d652e2b24c71ef1e8ce4e011094f0",
+      "named_offerings": [
+        "AP Chemistry"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-chemistry/b5dfe8677ef3d88c613865d2e2a3e8d6125d652e2b24c71ef1e8ce4e011094f0/ap-chemistry-course-and-exam-description.pdf",
+        "bytes": 7852554,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 238,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "b5dfe8677ef3d88c613865d2e2a3e8d6125d652e2b24c71ef1e8ce4e011094f0",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-chemistry.md"
+      }
+    },
+    "ap-chinese-language-and-culture": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "5c39039d0cacf70d0364b090c0d25a5c2f658b149d8b598151ac229740b57618": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-chinese-language-and-culture/5c39039d0cacf70d0364b090c0d25a5c2f658b149d8b598151ac229740b57618/ap-chinese-language-and-culture-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 2303363,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 175,
+          "pdf_version": "1.7",
+          "sha256": "5c39039d0cacf70d0364b090c0d25a5c2f658b149d8b598151ac229740b57618"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "5c39039d0cacf70d0364b090c0d25a5c2f658b149d8b598151ac229740b57618",
+      "named_offerings": [
+        "AP Chinese Language and Culture"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-chinese-language-and-culture-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-chinese-language-and-culture/5c39039d0cacf70d0364b090c0d25a5c2f658b149d8b598151ac229740b57618/ap-chinese-language-and-culture-course-and-exam-description.pdf",
+        "bytes": 2303363,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 175,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "5c39039d0cacf70d0364b090c0d25a5c2f658b149d8b598151ac229740b57618",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-chinese-language-and-culture.md"
+      }
+    },
+    "ap-comparative-government-and-politics": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "fe5ea39aba230219173434b0eb66c5b62b2ec366aaa6814652edf836063bee87": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-comparative-government-and-politics/fe5ea39aba230219173434b0eb66c5b62b2ec366aaa6814652edf836063bee87/ap-comparative-government-and-politics-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 3731509,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 183,
+          "pdf_version": "1.7",
+          "sha256": "fe5ea39aba230219173434b0eb66c5b62b2ec366aaa6814652edf836063bee87"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "fe5ea39aba230219173434b0eb66c5b62b2ec366aaa6814652edf836063bee87",
+      "named_offerings": [
+        "AP Comparative Government and Politics"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-comparative-government-and-politics-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-comparative-government-and-politics/fe5ea39aba230219173434b0eb66c5b62b2ec366aaa6814652edf836063bee87/ap-comparative-government-and-politics-course-and-exam-description.pdf",
+        "bytes": 3731509,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 183,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "fe5ea39aba230219173434b0eb66c5b62b2ec366aaa6814652edf836063bee87",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-comparative-government-and-politics.md"
+      }
+    },
+    "ap-computer-science-a": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "c81501ad5a022c83f1ca51119cccd1907b1394e1416d8c2a01bd43a38ab16486": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-computer-science-a/c81501ad5a022c83f1ca51119cccd1907b1394e1416d8c2a01bd43a38ab16486/ap-computer-science-a-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 4204647,
+          "detected_effective_labels": [
+            "Effective Fall 2025"
+          ],
+          "effective_label": "Effective Fall 2025",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 194,
+          "pdf_version": "1.7",
+          "sha256": "c81501ad5a022c83f1ca51119cccd1907b1394e1416d8c2a01bd43a38ab16486"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "c81501ad5a022c83f1ca51119cccd1907b1394e1416d8c2a01bd43a38ab16486",
+      "named_offerings": [
+        "AP Computer Science A"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-a-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-computer-science-a/c81501ad5a022c83f1ca51119cccd1907b1394e1416d8c2a01bd43a38ab16486/ap-computer-science-a-course-and-exam-description.pdf",
+        "bytes": 4204647,
+        "effective_labels": [
+          "Effective Fall 2025"
+        ],
+        "pages": 194,
+        "primary_effective_label": "Effective Fall 2025",
+        "retrieved_on": "2026-08-16",
+        "sha256": "c81501ad5a022c83f1ca51119cccd1907b1394e1416d8c2a01bd43a38ab16486",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-computer-science-a.md"
+      }
+    },
+    "ap-computer-science-principles": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "144e1af475c01ced6d068356d5494e09d8ed8136d397872ce03c448a4886b1f5": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-computer-science-principles/144e1af475c01ced6d068356d5494e09d8ed8136d397872ce03c448a4886b1f5/ap-computer-science-principles-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 7498387,
+          "detected_effective_labels": [
+            "Effective Fall 2023"
+          ],
+          "effective_label": "Effective Fall 2023",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 266,
+          "pdf_version": "1.7",
+          "sha256": "144e1af475c01ced6d068356d5494e09d8ed8136d397872ce03c448a4886b1f5"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "144e1af475c01ced6d068356d5494e09d8ed8136d397872ce03c448a4886b1f5",
+      "named_offerings": [
+        "AP Computer Science Principles"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-computer-science-principles/144e1af475c01ced6d068356d5494e09d8ed8136d397872ce03c448a4886b1f5/ap-computer-science-principles-course-and-exam-description.pdf",
+        "bytes": 7498387,
+        "effective_labels": [
+          "Effective Fall 2023"
+        ],
+        "pages": 266,
+        "primary_effective_label": "Effective Fall 2023",
+        "retrieved_on": "2026-08-16",
+        "sha256": "144e1af475c01ced6d068356d5494e09d8ed8136d397872ce03c448a4886b1f5",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-computer-science-principles.md"
+      }
+    },
+    "ap-cybersecurity": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "169ac424ba436754de71c2ba2e09541eb43bfaf170435f39f4cec55c67c597da": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-cybersecurity/169ac424ba436754de71c2ba2e09541eb43bfaf170435f39f4cec55c67c597da/ap-cybersecurity-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 5947037,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 192,
+          "pdf_version": "1.7",
+          "sha256": "169ac424ba436754de71c2ba2e09541eb43bfaf170435f39f4cec55c67c597da"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "169ac424ba436754de71c2ba2e09541eb43bfaf170435f39f4cec55c67c597da",
+      "named_offerings": [
+        "AP Cybersecurity"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-cybersecurity-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-cybersecurity/169ac424ba436754de71c2ba2e09541eb43bfaf170435f39f4cec55c67c597da/ap-cybersecurity-course-and-exam-description.pdf",
+        "bytes": 5947037,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 192,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "169ac424ba436754de71c2ba2e09541eb43bfaf170435f39f4cec55c67c597da",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-cybersecurity.md"
+      }
+    },
+    "ap-english-language-and-composition": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "75e257eddb549cf68fdf1846fbd8bc3ae3be623e44010346c5b5c9d93f747cbd": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-english-language-and-composition/75e257eddb549cf68fdf1846fbd8bc3ae3be623e44010346c5b5c9d93f747cbd/ap-english-language-and-composition-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 5780945,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 149,
+          "pdf_version": "1.7",
+          "sha256": "75e257eddb549cf68fdf1846fbd8bc3ae3be623e44010346c5b5c9d93f747cbd"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "75e257eddb549cf68fdf1846fbd8bc3ae3be623e44010346c5b5c9d93f747cbd",
+      "named_offerings": [
+        "AP English Language and Composition"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-english-language-and-composition-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-english-language-and-composition/75e257eddb549cf68fdf1846fbd8bc3ae3be623e44010346c5b5c9d93f747cbd/ap-english-language-and-composition-course-and-exam-description.pdf",
+        "bytes": 5780945,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 149,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "75e257eddb549cf68fdf1846fbd8bc3ae3be623e44010346c5b5c9d93f747cbd",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-english-language-and-composition.md"
+      }
+    },
+    "ap-english-literature-and-composition": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "f97e43d43750ab745613a7a4cff16f718afb515bfe5f5f24da1b617c3b5f4e3a": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-english-literature-and-composition/f97e43d43750ab745613a7a4cff16f718afb515bfe5f5f24da1b617c3b5f4e3a/ap-english-literature-and-composition-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 5852516,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 176,
+          "pdf_version": "1.7",
+          "sha256": "f97e43d43750ab745613a7a4cff16f718afb515bfe5f5f24da1b617c3b5f4e3a"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "f97e43d43750ab745613a7a4cff16f718afb515bfe5f5f24da1b617c3b5f4e3a",
+      "named_offerings": [
+        "AP English Literature and Composition"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-english-literature-and-composition-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-english-literature-and-composition/f97e43d43750ab745613a7a4cff16f718afb515bfe5f5f24da1b617c3b5f4e3a/ap-english-literature-and-composition-course-and-exam-description.pdf",
+        "bytes": 5852516,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 176,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "f97e43d43750ab745613a7a4cff16f718afb515bfe5f5f24da1b617c3b5f4e3a",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-english-literature-and-composition.md"
+      }
+    },
+    "ap-environmental-science": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "8bdd6b4ceea957a4772ebdfec3028294a9e5402ffe57830f50187fe126b41ca6": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-environmental-science/8bdd6b4ceea957a4772ebdfec3028294a9e5402ffe57830f50187fe126b41ca6/ap-environmental-science-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 11735679,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 252,
+          "pdf_version": "1.7",
+          "sha256": "8bdd6b4ceea957a4772ebdfec3028294a9e5402ffe57830f50187fe126b41ca6"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "8bdd6b4ceea957a4772ebdfec3028294a9e5402ffe57830f50187fe126b41ca6",
+      "named_offerings": [
+        "AP Environmental Science"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-environmental-science-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-environmental-science/8bdd6b4ceea957a4772ebdfec3028294a9e5402ffe57830f50187fe126b41ca6/ap-environmental-science-course-and-exam-description.pdf",
+        "bytes": 11735679,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 252,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "8bdd6b4ceea957a4772ebdfec3028294a9e5402ffe57830f50187fe126b41ca6",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-environmental-science.md"
+      }
+    },
+    "ap-european-history": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "79c4c1764aee9c49763c003db8c2b297071f89a198e5dc84e29fa8d1ad6db2cf": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-european-history/79c4c1764aee9c49763c003db8c2b297071f89a198e5dc84e29fa8d1ad6db2cf/ap-european-history-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 7810863,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 297,
+          "pdf_version": "1.7",
+          "sha256": "79c4c1764aee9c49763c003db8c2b297071f89a198e5dc84e29fa8d1ad6db2cf"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "79c4c1764aee9c49763c003db8c2b297071f89a198e5dc84e29fa8d1ad6db2cf",
+      "named_offerings": [
+        "AP European History"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-european-history-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-european-history/79c4c1764aee9c49763c003db8c2b297071f89a198e5dc84e29fa8d1ad6db2cf/ap-european-history-course-and-exam-description.pdf",
+        "bytes": 7810863,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 297,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "79c4c1764aee9c49763c003db8c2b297071f89a198e5dc84e29fa8d1ad6db2cf",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-european-history.md"
+      }
+    },
+    "ap-french-language-and-culture": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "4f3a9e5d15652df21706a02079faf0406372da52e871ca66c9d0281b1fba9243": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-french-language-and-culture/4f3a9e5d15652df21706a02079faf0406372da52e871ca66c9d0281b1fba9243/ap-french-language-and-culture-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 9751100,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 167,
+          "pdf_version": "1.7",
+          "sha256": "4f3a9e5d15652df21706a02079faf0406372da52e871ca66c9d0281b1fba9243"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "4f3a9e5d15652df21706a02079faf0406372da52e871ca66c9d0281b1fba9243",
+      "named_offerings": [
+        "AP French Language and Culture"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-french-language-and-culture-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-french-language-and-culture/4f3a9e5d15652df21706a02079faf0406372da52e871ca66c9d0281b1fba9243/ap-french-language-and-culture-course-and-exam-description.pdf",
+        "bytes": 9751100,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 167,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "4f3a9e5d15652df21706a02079faf0406372da52e871ca66c9d0281b1fba9243",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-french-language-and-culture.md"
+      }
+    },
+    "ap-german-language-and-culture": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "12d61bd3f931c3ea3027eb3a0a376ef5e3850023965301b1deaadffc9009088b": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-german-language-and-culture/12d61bd3f931c3ea3027eb3a0a376ef5e3850023965301b1deaadffc9009088b/ap-german-language-and-culture-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 3377244,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 169,
+          "pdf_version": "1.7",
+          "sha256": "12d61bd3f931c3ea3027eb3a0a376ef5e3850023965301b1deaadffc9009088b"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "12d61bd3f931c3ea3027eb3a0a376ef5e3850023965301b1deaadffc9009088b",
+      "named_offerings": [
+        "AP German Language and Culture"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-german-language-and-culture-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-german-language-and-culture/12d61bd3f931c3ea3027eb3a0a376ef5e3850023965301b1deaadffc9009088b/ap-german-language-and-culture-course-and-exam-description.pdf",
+        "bytes": 3377244,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 169,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "12d61bd3f931c3ea3027eb3a0a376ef5e3850023965301b1deaadffc9009088b",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-german-language-and-culture.md"
+      }
+    },
+    "ap-human-geography": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "570d19e5c92c12c173c56382a5a4d6fa8de0f7e45326ff58e6f8bbd76498b60d": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-human-geography/570d19e5c92c12c173c56382a5a4d6fa8de0f7e45326ff58e6f8bbd76498b60d/ap-human-geography-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 8403903,
+          "detected_effective_labels": [
+            "Effective Fall 2020"
+          ],
+          "effective_label": "Effective Fall 2020",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 185,
+          "pdf_version": "1.7",
+          "sha256": "570d19e5c92c12c173c56382a5a4d6fa8de0f7e45326ff58e6f8bbd76498b60d"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "570d19e5c92c12c173c56382a5a4d6fa8de0f7e45326ff58e6f8bbd76498b60d",
+      "named_offerings": [
+        "AP Human Geography"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-human-geography/570d19e5c92c12c173c56382a5a4d6fa8de0f7e45326ff58e6f8bbd76498b60d/ap-human-geography-course-and-exam-description.pdf",
+        "bytes": 8403903,
+        "effective_labels": [
+          "Effective Fall 2020"
+        ],
+        "pages": 185,
+        "primary_effective_label": "Effective Fall 2020",
+        "retrieved_on": "2026-08-16",
+        "sha256": "570d19e5c92c12c173c56382a5a4d6fa8de0f7e45326ff58e6f8bbd76498b60d",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-human-geography.md"
+      }
+    },
+    "ap-italian-language-and-culture": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "3f18ffcb5fab9e2e21749c9bccff0a738b0c3f75e83c0ccb8e63a917a2690c24": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-italian-language-and-culture/3f18ffcb5fab9e2e21749c9bccff0a738b0c3f75e83c0ccb8e63a917a2690c24/ap-italian-language-and-culture-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 11132802,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 167,
+          "pdf_version": "1.7",
+          "sha256": "3f18ffcb5fab9e2e21749c9bccff0a738b0c3f75e83c0ccb8e63a917a2690c24"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "3f18ffcb5fab9e2e21749c9bccff0a738b0c3f75e83c0ccb8e63a917a2690c24",
+      "named_offerings": [
+        "AP Italian Language and Culture"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-italian-language-and-culture-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-italian-language-and-culture/3f18ffcb5fab9e2e21749c9bccff0a738b0c3f75e83c0ccb8e63a917a2690c24/ap-italian-language-and-culture-course-and-exam-description.pdf",
+        "bytes": 11132802,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 167,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "3f18ffcb5fab9e2e21749c9bccff0a738b0c3f75e83c0ccb8e63a917a2690c24",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-italian-language-and-culture.md"
+      }
+    },
+    "ap-japanese-language-and-culture": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "3c7c4ffcd81785b5f3605fef50c4187a60fb4663e0981c094452ef1075cf0cbd": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-japanese-language-and-culture/3c7c4ffcd81785b5f3605fef50c4187a60fb4663e0981c094452ef1075cf0cbd/ap-japanese-language-and-culture-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 8402561,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 177,
+          "pdf_version": "1.7",
+          "sha256": "3c7c4ffcd81785b5f3605fef50c4187a60fb4663e0981c094452ef1075cf0cbd"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "3c7c4ffcd81785b5f3605fef50c4187a60fb4663e0981c094452ef1075cf0cbd",
+      "named_offerings": [
+        "AP Japanese Language and Culture"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-japanese-language-and-culture-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-japanese-language-and-culture/3c7c4ffcd81785b5f3605fef50c4187a60fb4663e0981c094452ef1075cf0cbd/ap-japanese-language-and-culture-course-and-exam-description.pdf",
+        "bytes": 8402561,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 177,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "3c7c4ffcd81785b5f3605fef50c4187a60fb4663e0981c094452ef1075cf0cbd",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-japanese-language-and-culture.md"
+      }
+    },
+    "ap-latin": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "09b9f3738a8bd4c91644aabe82ca3c2e9b16d3fc23c825e16233ccbdb690d256": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-latin/09b9f3738a8bd4c91644aabe82ca3c2e9b16d3fc23c825e16233ccbdb690d256/ap-latin-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 10653678,
+          "detected_effective_labels": [
+            "Effective Fall 2025"
+          ],
+          "effective_label": "Effective Fall 2025",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 344,
+          "pdf_version": "1.7",
+          "sha256": "09b9f3738a8bd4c91644aabe82ca3c2e9b16d3fc23c825e16233ccbdb690d256"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "09b9f3738a8bd4c91644aabe82ca3c2e9b16d3fc23c825e16233ccbdb690d256",
+      "named_offerings": [
+        "AP Latin"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-latin-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-latin/09b9f3738a8bd4c91644aabe82ca3c2e9b16d3fc23c825e16233ccbdb690d256/ap-latin-course-and-exam-description.pdf",
+        "bytes": 10653678,
+        "effective_labels": [
+          "Effective Fall 2025"
+        ],
+        "pages": 344,
+        "primary_effective_label": "Effective Fall 2025",
+        "retrieved_on": "2026-08-16",
+        "sha256": "09b9f3738a8bd4c91644aabe82ca3c2e9b16d3fc23c825e16233ccbdb690d256",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-latin.md"
+      }
+    },
+    "ap-macroeconomics": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "cf3b6c0ab09ddd49bfe7bc1059e21297aed0b495d4f435dc63e6236d4b213458": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-macroeconomics/cf3b6c0ab09ddd49bfe7bc1059e21297aed0b495d4f435dc63e6236d4b213458/ap-macroeconomics-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 6928156,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 182,
+          "pdf_version": "1.7",
+          "sha256": "cf3b6c0ab09ddd49bfe7bc1059e21297aed0b495d4f435dc63e6236d4b213458"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "cf3b6c0ab09ddd49bfe7bc1059e21297aed0b495d4f435dc63e6236d4b213458",
+      "named_offerings": [
+        "AP Macroeconomics"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-macroeconomics-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-macroeconomics/cf3b6c0ab09ddd49bfe7bc1059e21297aed0b495d4f435dc63e6236d4b213458/ap-macroeconomics-course-and-exam-description.pdf",
+        "bytes": 6928156,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 182,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "cf3b6c0ab09ddd49bfe7bc1059e21297aed0b495d4f435dc63e6236d4b213458",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-macroeconomics.md"
+      }
+    },
+    "ap-microeconomics": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "951debaa16e95d9c600a21026134f24d5d7d0635543f7de5bd916a645657fde3": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-microeconomics/951debaa16e95d9c600a21026134f24d5d7d0635543f7de5bd916a645657fde3/ap-microeconomics-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 4826052,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 182,
+          "pdf_version": "1.7",
+          "sha256": "951debaa16e95d9c600a21026134f24d5d7d0635543f7de5bd916a645657fde3"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "951debaa16e95d9c600a21026134f24d5d7d0635543f7de5bd916a645657fde3",
+      "named_offerings": [
+        "AP Microeconomics"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-microeconomics-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-microeconomics/951debaa16e95d9c600a21026134f24d5d7d0635543f7de5bd916a645657fde3/ap-microeconomics-course-and-exam-description.pdf",
+        "bytes": 4826052,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 182,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "951debaa16e95d9c600a21026134f24d5d7d0635543f7de5bd916a645657fde3",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-microeconomics.md"
+      }
+    },
+    "ap-music-theory": {
+      "archive_state": "verified_current_bytes_distinct_from_baseline",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "cead88d02c097d6f8f7da7b1c55e1e7ed1d674d1cebcbfd9998edd694c89aacc": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-music-theory/cead88d02c097d6f8f7da7b1c55e1e7ed1d674d1cebcbfd9998edd694c89aacc/ap-music-theory-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 3878670,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 274,
+          "pdf_version": "1.7",
+          "sha256": "cead88d02c097d6f8f7da7b1c55e1e7ed1d674d1cebcbfd9998edd694c89aacc"
+        }
+      },
+      "comparison_state": "different_from_august_review_baseline",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "cead88d02c097d6f8f7da7b1c55e1e7ed1d674d1cebcbfd9998edd694c89aacc",
+      "named_offerings": [
+        "AP Music Theory"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-music-theory-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": null,
+        "bytes": 4786370,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 274,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "6e767a62b0133bc9433df329dcec96180146776024767cca94580ce01bf086d1",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-music-theory.md"
+      }
+    },
+    "ap-networking": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_framework",
+      "artifacts": {
+        "2dd45c6fc59c90533a1570102a3be0ec9fcae4bf731b389525fe25a80c80bd8f": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-networking/2dd45c6fc59c90533a1570102a3be0ec9fcae4bf731b389525fe25a80c80bd8f/ap-networking-course-framework.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 2101433,
+          "detected_effective_labels": [
+            "For Use Beginning with the 2026-2027 School Year Pilot"
+          ],
+          "effective_label": "For Use Beginning with the 2026-2027 School Year Pilot",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 102,
+          "pdf_version": "1.7",
+          "sha256": "2dd45c6fc59c90533a1570102a3be0ec9fcae4bf731b389525fe25a80c80bd8f"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "2dd45c6fc59c90533a1570102a3be0ec9fcae4bf731b389525fe25a80c80bd8f",
+      "named_offerings": [
+        "AP Networking"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-networking-course-framework.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-networking/2dd45c6fc59c90533a1570102a3be0ec9fcae4bf731b389525fe25a80c80bd8f/ap-networking-course-framework.pdf",
+        "bytes": 2101433,
+        "effective_labels": [
+          "For Use Beginning with the 2026-2027 School Year Pilot"
+        ],
+        "pages": 102,
+        "primary_effective_label": "For Use Beginning with the 2026-2027 School Year Pilot",
+        "retrieved_on": "2026-08-16",
+        "sha256": "2dd45c6fc59c90533a1570102a3be0ec9fcae4bf731b389525fe25a80c80bd8f",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-networking.md"
+      }
+    },
+    "ap-physics-1": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "c994fc72062e113832e098965f27902fec03bcdc20b0d516ee2a884ab76eeb65": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-physics-1/c994fc72062e113832e098965f27902fec03bcdc20b0d516ee2a884ab76eeb65/ap-physics-1-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 7731901,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 220,
+          "pdf_version": "1.7",
+          "sha256": "c994fc72062e113832e098965f27902fec03bcdc20b0d516ee2a884ab76eeb65"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "c994fc72062e113832e098965f27902fec03bcdc20b0d516ee2a884ab76eeb65",
+      "named_offerings": [
+        "AP Physics 1: Algebra-Based"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-physics-1-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-physics-1/c994fc72062e113832e098965f27902fec03bcdc20b0d516ee2a884ab76eeb65/ap-physics-1-course-and-exam-description.pdf",
+        "bytes": 7731901,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 220,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "c994fc72062e113832e098965f27902fec03bcdc20b0d516ee2a884ab76eeb65",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-physics-1.md"
+      }
+    },
+    "ap-physics-2": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "81719f7fb35add121ddf70b61f6ff33e9110239511f4cf7dcc6763879007e29c": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-physics-2/81719f7fb35add121ddf70b61f6ff33e9110239511f4cf7dcc6763879007e29c/ap-physics-2-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 7052491,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 230,
+          "pdf_version": "1.7",
+          "sha256": "81719f7fb35add121ddf70b61f6ff33e9110239511f4cf7dcc6763879007e29c"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "81719f7fb35add121ddf70b61f6ff33e9110239511f4cf7dcc6763879007e29c",
+      "named_offerings": [
+        "AP Physics 2: Algebra-Based"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-physics-2-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-physics-2/81719f7fb35add121ddf70b61f6ff33e9110239511f4cf7dcc6763879007e29c/ap-physics-2-course-and-exam-description.pdf",
+        "bytes": 7052491,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 230,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "81719f7fb35add121ddf70b61f6ff33e9110239511f4cf7dcc6763879007e29c",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-physics-2.md"
+      }
+    },
+    "ap-physics-c-electricity-and-magnetism": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "a1c8a7a89176b65df8fc8c2a42c0f11fd51dbe8fb38331efd71cfe6c5a72ffa4": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-physics-c-electricity-and-magnetism/a1c8a7a89176b65df8fc8c2a42c0f11fd51dbe8fb38331efd71cfe6c5a72ffa4/ap-physics-c-electricity-and-magnetism-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 7577072,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 189,
+          "pdf_version": "1.7",
+          "sha256": "a1c8a7a89176b65df8fc8c2a42c0f11fd51dbe8fb38331efd71cfe6c5a72ffa4"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "a1c8a7a89176b65df8fc8c2a42c0f11fd51dbe8fb38331efd71cfe6c5a72ffa4",
+      "named_offerings": [
+        "AP Physics C: Electricity and Magnetism"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-physics-c-electricity-and-magnetism-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-physics-c-electricity-and-magnetism/a1c8a7a89176b65df8fc8c2a42c0f11fd51dbe8fb38331efd71cfe6c5a72ffa4/ap-physics-c-electricity-and-magnetism-course-and-exam-description.pdf",
+        "bytes": 7577072,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 189,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "a1c8a7a89176b65df8fc8c2a42c0f11fd51dbe8fb38331efd71cfe6c5a72ffa4",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-physics-c-electricity-and-magnetism.md"
+      }
+    },
+    "ap-physics-c-mechanics": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "dd89823220791d9d461858b1d8ca704c28b3442cf5a85bbb20dd82c742916606": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-physics-c-mechanics/dd89823220791d9d461858b1d8ca704c28b3442cf5a85bbb20dd82c742916606/ap-physics-c-mechanics-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 10790435,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 214,
+          "pdf_version": "1.7",
+          "sha256": "dd89823220791d9d461858b1d8ca704c28b3442cf5a85bbb20dd82c742916606"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "dd89823220791d9d461858b1d8ca704c28b3442cf5a85bbb20dd82c742916606",
+      "named_offerings": [
+        "AP Physics C: Mechanics"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-physics-c-mechanics-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-physics-c-mechanics/dd89823220791d9d461858b1d8ca704c28b3442cf5a85bbb20dd82c742916606/ap-physics-c-mechanics-course-and-exam-description.pdf",
+        "bytes": 10790435,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 214,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "dd89823220791d9d461858b1d8ca704c28b3442cf5a85bbb20dd82c742916606",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-physics-c-mechanics.md"
+      }
+    },
+    "ap-precalculus": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "5ef13ad6e4b39455330257e94d1b4750a833ef6e05ccf2f4a24141912345f04f": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-precalculus/5ef13ad6e4b39455330257e94d1b4750a833ef6e05ccf2f4a24141912345f04f/ap-precalculus-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 9485805,
+          "detected_effective_labels": [
+            "Effective Fall 2026",
+            "Effective Fall 2023"
+          ],
+          "effective_label": null,
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "multiple_detected_labels_review_required",
+          "observed_on": "2026-08-29",
+          "pages": 178,
+          "pdf_version": "1.7",
+          "sha256": "5ef13ad6e4b39455330257e94d1b4750a833ef6e05ccf2f4a24141912345f04f"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "5ef13ad6e4b39455330257e94d1b4750a833ef6e05ccf2f4a24141912345f04f",
+      "named_offerings": [
+        "AP Precalculus"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-precalculus-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-precalculus/5ef13ad6e4b39455330257e94d1b4750a833ef6e05ccf2f4a24141912345f04f/ap-precalculus-course-and-exam-description.pdf",
+        "bytes": 9485805,
+        "effective_labels": [
+          "Effective Fall 2023",
+          "Effective Fall 2026"
+        ],
+        "pages": 178,
+        "primary_effective_label": "Effective Fall 2023",
+        "retrieved_on": "2026-08-16",
+        "sha256": "5ef13ad6e4b39455330257e94d1b4750a833ef6e05ccf2f4a24141912345f04f",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-precalculus.md"
+      }
+    },
+    "ap-psychology": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "5efacb3416c5ecee008b08fd940e1cfbd81dcadf550f68c164d450c0898c386d": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-psychology/5efacb3416c5ecee008b08fd940e1cfbd81dcadf550f68c164d450c0898c386d/ap-psychology-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 3732925,
+          "detected_effective_labels": [
+            "Effective Fall 2025",
+            "Effective Fall 2024"
+          ],
+          "effective_label": null,
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "multiple_detected_labels_review_required",
+          "observed_on": "2026-08-29",
+          "pages": 186,
+          "pdf_version": "1.7",
+          "sha256": "5efacb3416c5ecee008b08fd940e1cfbd81dcadf550f68c164d450c0898c386d"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "5efacb3416c5ecee008b08fd940e1cfbd81dcadf550f68c164d450c0898c386d",
+      "named_offerings": [
+        "AP Psychology"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-psychology-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-psychology/5efacb3416c5ecee008b08fd940e1cfbd81dcadf550f68c164d450c0898c386d/ap-psychology-course-and-exam-description.pdf",
+        "bytes": 3732925,
+        "effective_labels": [
+          "Effective Fall 2025",
+          "Effective Fall 2024"
+        ],
+        "pages": 186,
+        "primary_effective_label": "Effective Fall 2025",
+        "retrieved_on": "2026-08-16",
+        "sha256": "5efacb3416c5ecee008b08fd940e1cfbd81dcadf550f68c164d450c0898c386d",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-psychology.md"
+      }
+    },
+    "ap-research": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "f598d115dc73d95af34d4c67f54a2575818c10875438fabe446e07622c76181e": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-research/f598d115dc73d95af34d4c67f54a2575818c10875438fabe446e07622c76181e/ap-research-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 3979513,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 86,
+          "pdf_version": "1.7",
+          "sha256": "f598d115dc73d95af34d4c67f54a2575818c10875438fabe446e07622c76181e"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "f598d115dc73d95af34d4c67f54a2575818c10875438fabe446e07622c76181e",
+      "named_offerings": [
+        "AP Research"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-research-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-research/f598d115dc73d95af34d4c67f54a2575818c10875438fabe446e07622c76181e/ap-research-course-and-exam-description.pdf",
+        "bytes": 3979513,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 86,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "f598d115dc73d95af34d4c67f54a2575818c10875438fabe446e07622c76181e",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-research.md"
+      }
+    },
+    "ap-seminar": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "c9e64e51ff6299f942b5d521df64d0d4f0ceb303c0ec21ec25ffbc46864d1110": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-seminar/c9e64e51ff6299f942b5d521df64d0d4f0ceb303c0ec21ec25ffbc46864d1110/ap-seminar-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 14528647,
+          "detected_effective_labels": [
+            "Effective Fall 2024"
+          ],
+          "effective_label": "Effective Fall 2024",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 148,
+          "pdf_version": "1.7",
+          "sha256": "c9e64e51ff6299f942b5d521df64d0d4f0ceb303c0ec21ec25ffbc46864d1110"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "c9e64e51ff6299f942b5d521df64d0d4f0ceb303c0ec21ec25ffbc46864d1110",
+      "named_offerings": [
+        "AP Seminar"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-seminar-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-seminar/c9e64e51ff6299f942b5d521df64d0d4f0ceb303c0ec21ec25ffbc46864d1110/ap-seminar-course-and-exam-description.pdf",
+        "bytes": 14528647,
+        "effective_labels": [
+          "Effective Fall 2024"
+        ],
+        "pages": 148,
+        "primary_effective_label": "Effective Fall 2024",
+        "retrieved_on": "2026-08-16",
+        "sha256": "c9e64e51ff6299f942b5d521df64d0d4f0ceb303c0ec21ec25ffbc46864d1110",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-seminar.md"
+      }
+    },
+    "ap-spanish-language-and-culture": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "292010ba1b0e320bf25caa0e216732362da4889b9cf6c85318e130a94126956b": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-spanish-language-and-culture/292010ba1b0e320bf25caa0e216732362da4889b9cf6c85318e130a94126956b/ap-spanish-language-and-culture-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 4106492,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 167,
+          "pdf_version": "1.7",
+          "sha256": "292010ba1b0e320bf25caa0e216732362da4889b9cf6c85318e130a94126956b"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "292010ba1b0e320bf25caa0e216732362da4889b9cf6c85318e130a94126956b",
+      "named_offerings": [
+        "AP Spanish Language and Culture"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-spanish-language-and-culture-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-spanish-language-and-culture/292010ba1b0e320bf25caa0e216732362da4889b9cf6c85318e130a94126956b/ap-spanish-language-and-culture-course-and-exam-description.pdf",
+        "bytes": 4106492,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 167,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "292010ba1b0e320bf25caa0e216732362da4889b9cf6c85318e130a94126956b",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-spanish-language-and-culture.md"
+      }
+    },
+    "ap-spanish-literature-and-culture": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "768c29f3d9883d14b7d00e07eae7c2d67622b4459179fb9cd08764d63d3b8c1a": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-spanish-literature-and-culture/768c29f3d9883d14b7d00e07eae7c2d67622b4459179fb9cd08764d63d3b8c1a/ap-spanish-literature-and-culture-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 11102168,
+          "detected_effective_labels": [
+            "Effective Fall 2023"
+          ],
+          "effective_label": "Effective Fall 2023",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 210,
+          "pdf_version": "1.7",
+          "sha256": "768c29f3d9883d14b7d00e07eae7c2d67622b4459179fb9cd08764d63d3b8c1a"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "768c29f3d9883d14b7d00e07eae7c2d67622b4459179fb9cd08764d63d3b8c1a",
+      "named_offerings": [
+        "AP Spanish Literature and Culture"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-spanish-literature-and-culture-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-spanish-literature-and-culture/768c29f3d9883d14b7d00e07eae7c2d67622b4459179fb9cd08764d63d3b8c1a/ap-spanish-literature-and-culture-course-and-exam-description.pdf",
+        "bytes": 11102168,
+        "effective_labels": [
+          "Effective Fall 2023"
+        ],
+        "pages": 210,
+        "primary_effective_label": "Effective Fall 2023",
+        "retrieved_on": "2026-08-16",
+        "sha256": "768c29f3d9883d14b7d00e07eae7c2d67622b4459179fb9cd08764d63d3b8c1a",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-spanish-literature-and-culture.md"
+      }
+    },
+    "ap-statistics": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "d648a6bfc07971f517df117fb86726e0e4c8ca25582243178d54d9687121e47f": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-statistics/d648a6bfc07971f517df117fb86726e0e4c8ca25582243178d54d9687121e47f/ap-statistics-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 4329047,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 244,
+          "pdf_version": "1.7",
+          "sha256": "d648a6bfc07971f517df117fb86726e0e4c8ca25582243178d54d9687121e47f"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "d648a6bfc07971f517df117fb86726e0e4c8ca25582243178d54d9687121e47f",
+      "named_offerings": [
+        "AP Statistics"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-statistics/d648a6bfc07971f517df117fb86726e0e4c8ca25582243178d54d9687121e47f/ap-statistics-course-and-exam-description.pdf",
+        "bytes": 4329047,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 244,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "d648a6bfc07971f517df117fb86726e0e4c8ca25582243178d54d9687121e47f",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-statistics.md"
+      }
+    },
+    "ap-us-government-and-politics": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "f19780d44b93352ed09f695ca6bdc47dfe8a436318ae07b23e074ffa66254e0b": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-us-government-and-politics/f19780d44b93352ed09f695ca6bdc47dfe8a436318ae07b23e074ffa66254e0b/ap-us-government-and-politics-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 10446298,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 202,
+          "pdf_version": "1.7",
+          "sha256": "f19780d44b93352ed09f695ca6bdc47dfe8a436318ae07b23e074ffa66254e0b"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "f19780d44b93352ed09f695ca6bdc47dfe8a436318ae07b23e074ffa66254e0b",
+      "named_offerings": [
+        "AP United States Government and Politics"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-us-government-and-politics-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-us-government-and-politics/f19780d44b93352ed09f695ca6bdc47dfe8a436318ae07b23e074ffa66254e0b/ap-us-government-and-politics-course-and-exam-description.pdf",
+        "bytes": 10446298,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 202,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "f19780d44b93352ed09f695ca6bdc47dfe8a436318ae07b23e074ffa66254e0b",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-us-government-and-politics.md"
+      }
+    },
+    "ap-us-history": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "e5dff06dfb974b5ccebebb7038fd5e693f4530fe3ad8d298a3f10a55fc288c27": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-us-history/e5dff06dfb974b5ccebebb7038fd5e693f4530fe3ad8d298a3f10a55fc288c27/ap-us-history-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 6141268,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 562,
+          "pdf_version": "1.7",
+          "sha256": "e5dff06dfb974b5ccebebb7038fd5e693f4530fe3ad8d298a3f10a55fc288c27"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "e5dff06dfb974b5ccebebb7038fd5e693f4530fe3ad8d298a3f10a55fc288c27",
+      "named_offerings": [
+        "AP United States History"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-us-history-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-us-history/e5dff06dfb974b5ccebebb7038fd5e693f4530fe3ad8d298a3f10a55fc288c27/ap-us-history-course-and-exam-description.pdf",
+        "bytes": 6141268,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 562,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "e5dff06dfb974b5ccebebb7038fd5e693f4530fe3ad8d298a3f10a55fc288c27",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-us-history.md"
+      }
+    },
+    "ap-world-history-modern": {
+      "archive_state": "verified_current_bytes",
+      "artifact_role": "course_and_exam_description",
+      "artifacts": {
+        "b2e62178a8669289ef2b78a4632b39d03393ff4841f9ed7a4febdd58e8c5fcfd": {
+          "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-world-history-modern/b2e62178a8669289ef2b78a4632b39d03393ff4841f9ed7a4febdd58e8c5fcfd/ap-world-history-modern-course-and-exam-description.pdf",
+          "baseline_primary_label_present": true,
+          "bytes": 7174240,
+          "detected_effective_labels": [
+            "Effective Fall 2026"
+          ],
+          "effective_label": "Effective Fall 2026",
+          "encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:AES-256)",
+          "label_detection_source": "pdf_title_and_pages_1_through_8",
+          "label_resolution_state": "single_detected_label",
+          "observed_on": "2026-08-29",
+          "pages": 260,
+          "pdf_version": "1.7",
+          "sha256": "b2e62178a8669289ef2b78a4632b39d03393ff4841f9ed7a4febdd58e8c5fcfd"
+        }
+      },
+      "comparison_state": "exact_august_review_baseline_bytes",
+      "content_review_state": "owned_outside_pipeline",
+      "current_artifact_sha256": "b2e62178a8669289ef2b78a4632b39d03393ff4841f9ed7a4febdd58e8c5fcfd",
+      "named_offerings": [
+        "AP World History: Modern"
+      ],
+      "official_url": "https://apcentral.collegeboard.org/media/pdf/ap-world-history-modern-course-and-exam-description.pdf",
+      "review_baseline": {
+        "archive_path": "data/input/pdfs/standards/ap_guide_archive/ap-world-history-modern/b2e62178a8669289ef2b78a4632b39d03393ff4841f9ed7a4febdd58e8c5fcfd/ap-world-history-modern-course-and-exam-description.pdf",
+        "bytes": 7174240,
+        "effective_labels": [
+          "Effective Fall 2026"
+        ],
+        "pages": 260,
+        "primary_effective_label": "Effective Fall 2026",
+        "retrieved_on": "2026-08-16",
+        "sha256": "b2e62178a8669289ef2b78a4632b39d03393ff4841f9ed7a4febdd58e8c5fcfd",
+        "snapshot_ref": "knowledge-management:research/standards_frameworks/deconstructing_standards/audits/2026-08-16-ap-ib-full-wave/source_snapshots/ap/ap-world-history-modern.md"
+      }
+    }
+  },
+  "public_redistribution_allowed": false,
+  "schema": "pipeline-documents.ap-pdf-edition-index.v2"
+}

@@ -37,6 +37,16 @@ This directory contains scripts for extracting and processing educational standa
 
 ### Processing Scripts
 
+#### `ap_pdf_archive.py`
+- Preserves current official AP PDFs in an ignored, hash-addressed local archive
+- Writes and verifies the tracked `ap_editions.json` source-edition index
+- Requires the sealed 40-package manifest and readiness-matrix hashes and
+  preserves every observed artifact in a cumulative SHA-addressed history
+- Keeps changed official bytes separate from the reviewed baseline and never
+  overwrites the legacy flat AP guide directory
+- Leaves missing or ambiguous source-edition labels in explicit review states
+- Performs no network access; callers provide a complete downloaded directory
+
 #### `map_ncas_to_drupal_hierarchy.py`
 - Maps extracted NCAS standards to Drupal's 4-level hierarchy
 - Creates hierarchy entries and standard entries with proper taxonomy references

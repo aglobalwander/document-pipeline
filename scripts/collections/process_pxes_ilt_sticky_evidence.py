@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import argparse
 import csv
-import hashlib
+
 import json
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -20,7 +20,6 @@ from typing import Any
 
 import pytesseract
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps, ImageStat
-
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_SPEC = (
@@ -31,12 +30,7 @@ DEFAULT_SPEC = (
 )
 
 
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+from doc_processing.utils.file_utils import sha256_file
 
 
 def normalized_box_to_pixels(

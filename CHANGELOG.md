@@ -1,5 +1,99 @@
 # Changelog
 
+## Unreleased - 2026-09-16
+
+### Fixed
+
+- Removed the import-time `logging.basicConfig(level=DEBUG)` in
+  `doc_processing/embedding/base.py`; it ran before every CLI configured logging
+  and forced all pipeline runs (and their dependencies) to DEBUG.
+- Replaced the per-page Docling "checkpoint" writes, which rewrote the whole
+  accumulating page list after every page and were deleted at the end of each
+  run, with one result cache entry per (file content hash, options) pair under
+  `data/cache/`. The previous early-return path also returned documents without
+  `content`.
+- `doc_processing/processors/__init__.py` no longer imports docling and the
+  provider SDKs eagerly, and `VideoLoader`/`YouTubeLoader` no longer import
+  `ffmpeg` at module import time. This repaired test collection
+  (`pytest -q` went from 43 collected + 3 errors to 68 collected) and keeps the
+  documented lazy-import policy in `document_pipeline.py` true.
+- `AudioLoader` was an empty module that `DocumentPipeline` imported for
+  `.mp3/.wav/.ogg/.m4a` inputs, so audio processing raised `ImportError`.
+  It now decodes audio locally to 16 kHz mono WAV bytes. `VideoLoader` had a
+  `NameError` (`data` referenced where the parameter was `document`) and no
+  `load()` method, so the video branch raised `AttributeError`; both paths now
+  return the documented document shape.
+- `--pipeline_type markdown` on plain-text input returned the raw text
+  unchanged because `TextToMarkdown` was never wired for text sources. It is now
+  applied to `.txt/.md/.json` inputs (local heuristics, no model call), and it
+  leaves existing `markdown_content` from Mammoth or Docling untouched.
+- Wired `--clear_cache` in `run_pipeline.py` (it was accepted but never acted
+  on), and made `--no_page_images` effective: the loader reads
+  `generate_page_images`, so the flag previously did nothing while every PDF was
+  still rasterised and base64-encoded page by page. Page images are now off
+  unless a GPT vision processor is selected.
+- Removed the stray per-document `print()` calls in `YouTubeLoader._is_youtube_url`.
+
+### Changed
+
+- `EnhancedDoclingPDFProcessor` builds one Docling `DocumentConverter` per
+  processor instance and reuses it for every document instead of rebuilding it
+  per file, so model initialisation is paid once per run.
+- Docling pipeline options are now configurable and only set when requested:
+  `docling_do_ocr`, `docling_images_scale`, `docling_generate_page_images`,
+  `docling_do_picture_classification`, `docling_code_enrichment`, and
+  `docling_formula_enrichment`, exposed as `--ocr`/`--no_ocr`, `--images_scale`,
+  and `--page_images`. The old `DOCLING_USE_EASYOCR`/`DOCLING_ENABLED` module
+  level constants in `config.py` were dead code and were removed.
+- `run_pipeline.py` reuses one `DocumentPipeline` (and one Docling converter)
+  across a directory run and no longer accumulates every processed document in
+  memory. Binary WAV content from audio/video inputs is reported instead of
+  being written as a text artifact.
+- `process_collection.py` now honours the `CONCURRENT_TASKS` and `MAX_RETRIES`
+  settings the project already declared: `--workers` (default
+  `CONCURRENT_TASKS`) runs extractions in worker processes that each load models
+  once, `--retries` (default `MAX_RETRIES`) retries failures, and both are
+  recorded in the manifest.
+- `ProcessingCache` resolves its directory from `settings.DATA_DIR` instead of
+  the current working directory, writes results atomically, and also clears
+  stale `.tmp` files.
+- Duplicated helpers were consolidated: `sha256_file` (6 copies) now uses
+  `doc_processing.utils.file_utils`, and `generate_unique_id` (6 copies in
+  `scripts/standards`) uses the new `doc_processing.utils.ids`.
+- `--detect_columns`, `--no_merge_hyphenated_words`, `--no_reconstruct_paragraphs`,
+  and `--use_llm_cleaning` are still accepted but now warn that no component
+  consumes them.
+
+### Added
+
+- `pytest` markers: fixture- and network-dependent tests are marked
+  `integration` and deselected by default, so `poetry run pytest -q` is green on
+  a fresh clone (51 tests, ~2s). Run the full set with
+  `poetry run pytest -q -m integration`.
+- `doc_processing/utils/ids.py` and `file_utils.sha256_file`.
+
+### Removed
+
+- Empty placeholder modules that were imported or implied as features:
+  `processors/ocr_processor.py`, `processors/text_cleaner.py`,
+  `processors/audio_transcription.py`, and the empty `tests/test_{embedding,loaders,processors,transformers}.py`
+  (which silently "passed").
+- Ten unreferenced ad-hoc YouTube/translation scripts moved to
+  `scripts/archive/youtube_adhoc/`; `batch_youtube_download.py` stays because
+  the live docs reference it.
+- `requirements.txt`, which contradicted `poetry.lock` and listed out-of-scope
+  dependencies (Weaviate, Jupyter, NLTK).
+
+### Security
+
+- Untracked `.env.backup` (43 populated credential assignments), which would
+  have published the keys on the next push to the public remote, and added it to
+  `.gitignore`. The file remains on disk and is not part of any pushed commit.
+  Rotate those credentials if the file was ever shared.
+- Untracked `data/processing_registry.yaml` and `pymupdf_processing.log` as
+  runtime state, and corrected stale `master_projects` paths in the local
+  registry.
+
 ## Unreleased - 2026-07-20
 
 ### Added

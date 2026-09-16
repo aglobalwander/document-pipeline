@@ -4,10 +4,7 @@ version = "1.0.0"
 description = "A powerful, modular document processing framework that transforms various document formats into structured outputs with optional vector database storage"
 authors = ["Document Pipeline Contributors"]
 readme = "README.md"
-license = "MIT"
-homepage = "https://github.com/yourusername/pipeline-documents"
-repository = "https://github.com/yourusername/pipeline-documents"
-documentation = "https://github.com/yourusername/pipeline-documents/tree/main/docs"
+license = "Apache-2.0"
 keywords = ["document-processing", "pdf", "ocr", "nlp", "docling"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -51,6 +48,12 @@ pytest = "^8.3"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = [
+    "integration: needs local gitignored fixtures (data/input) or runs end-to-end pipelines",
+]
+# Local-first default: the fast unit suite runs anywhere; opt in to fixture- and
+# network-dependent checks with `poetry run pytest -q -m integration`.
+addopts = "-m 'not integration'"
 
 [build-system]
 requires = ["poetry-core"]

@@ -27,8 +27,9 @@ poetry run python scripts/document_processing/master_docling.py \
 ```
 
 It writes under `data/output/{text,markdown,json}/` by default and emits all
-three representations unless `--no_output_all_formats` is supplied. Caching and
-column detection are enabled by default.
+three representations unless `--no_output_all_formats` is supplied. The result
+cache is enabled by default and lives in `data/cache/`, keyed by file content
+plus extraction options, so an unchanged file is not converted twice.
 
 Useful variants:
 
@@ -39,23 +40,28 @@ poetry run python scripts/document_processing/master_docling.py \
   --output_format json \
   --no_output_all_formats
 
-# Ignore existing checkpoints
+# Ignore the cached result and convert again
 poetry run python scripts/document_processing/master_docling.py \
   --input_path /absolute/path/document.pdf \
   --output_format markdown \
   --no_cache
 
-# Remove checkpoints before the run
+# Remove cached results before the run
 poetry run python scripts/document_processing/master_docling.py \
   --input_path /absolute/path/document.pdf \
   --clear_cache
 
-# Disable table or column handling only when the source requires it
+# Speed up a text-layer PDF (skip OCR) and drop table structure
 poetry run python scripts/document_processing/master_docling.py \
   --input_path /absolute/path/document.pdf \
-  --no_extract_tables \
-  --no_detect_columns
+  --no_ocr \
+  --no_extract_tables
 ```
+
+OCR is left to Docling's own per-page decision unless `--ocr` or `--no_ocr` is
+given. Page images are off by default because only the GPT vision path consumes
+them. `--detect_columns` / `--no_detect_columns` are accepted for compatibility
+only; Docling performs layout and column analysis internally.
 
 ### PDF: fast embedded text
 
@@ -101,6 +107,12 @@ poetry run python scripts/document_processing/run_pipeline.py \
 
 Supported discovery extensions include PDF, TXT, MD, JSON, DOCX, PPTX, common
 image/audio/video formats, and supported URLs.
+
+One pipeline instance (and therefore one set of Docling models) is reused for
+every input in a directory run. Audio and video inputs are decoded locally to
+WAV bytes; they need an explicitly selected transcription processor before a text
+artifact can be written, so the runner reports them instead of writing binary
+output.
 
 ### YouTube
 
@@ -163,8 +175,8 @@ pass a key in a recorded shell command or put it in the repository. See
 
 ## Recovery
 
-- Interrupted Docling run: rerun the same command; caching resumes where
-  supported.
+- Interrupted Docling run: rerun the same command. Finished extractions are
+  cached in `data/cache/` by content hash, so work is not repeated.
 - Suspect cache: use `--clear_cache`, then rerun.
 - Missing import inside `poetry run`: run `poetry install` and verify with the
   health-check command above.
@@ -172,6 +184,10 @@ pass a key in a recorded shell command or put it in the repository. See
   Docling rather than escalating directly to a paid API.
 - Directory finds nothing: verify the extension and add `--recursive` if the
   files are nested.
+- Memory pressure in a collection run: pass `--workers 1`; parallel workers each
+  hold their own Docling models.
+- Noisy first run: Torch/Docling print model-compilation warnings on the first
+  conversion. They are expected.
 
 For every option supported by the current code, see [Commands](COMMANDS.md) or
 run the two `--help` commands.

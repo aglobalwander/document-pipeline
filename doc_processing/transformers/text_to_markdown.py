@@ -45,6 +45,12 @@ class TextToMarkdown(BaseTransformer):
             self.logger.warning(f"Document has no content to transform")
             document['markdown'] = ""
             return document
+
+        # A processor (Mammoth, Docling) may already have produced Markdown for
+        # this document; do not overwrite it with a heuristic conversion.
+        if document.get('markdown_content') and not self.config.get('force_rebuild'):
+            self.logger.debug("Document already carries markdown_content; skipping conversion")
+            return document
         
         try:
             content = document.get('content', '')

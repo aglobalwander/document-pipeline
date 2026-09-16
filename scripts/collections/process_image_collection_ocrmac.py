@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
+
 import json
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
@@ -12,6 +12,8 @@ from pathlib import Path
 from typing import Iterable
 
 from ocrmac.ocrmac import text_from_image
+
+from doc_processing.utils.file_utils import sha256_file
 
 
 DEFAULT_INPUT_DIR = Path(
@@ -41,11 +43,8 @@ def iter_image_files(input_dir: Path) -> Iterable[Path]:
 
 
 def file_hash(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+    """SHA-256 of a file; shared implementation lives in doc_processing."""
+    return sha256_file(path)
 
 
 def clean_text(lines: list[tuple[str, float, list[float]]]) -> str:

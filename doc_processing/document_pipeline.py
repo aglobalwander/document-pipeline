@@ -10,6 +10,8 @@ from pydantic import BaseModel
 
 from doc_processing.config import get_settings, ensure_directories_exist
 from doc_processing.embedding.base import Pipeline, PipelineComponent, BaseDocumentLoader
+from doc_processing.loaders.audio_loader import SUPPORTED_AUDIO_SUFFIXES
+from doc_processing.loaders.video_loader import SUPPORTED_VIDEO_SUFFIXES
 
 # All loaders, processors, and transformers are imported lazily
 # to avoid cascading ImportErrors from heavy deps (PyMuPDF, docling,
@@ -199,11 +201,11 @@ class DocumentPipeline:
              self.logger.info(f"Detected text/document file: {source_path_str}. Using TextLoader.")
              from doc_processing.loaders.text_loader import TextLoader
              initial_loader = TextLoader(self.config.get('text_loader_config', {}))
-        elif source_path_str.lower().endswith(('.3gp', '.flv', '.mkv', '.mp4')):
+        elif source_path_str.lower().endswith(tuple(SUPPORTED_VIDEO_SUFFIXES)):
              self.logger.info(f"Detected video file: {source_path_str}. Using VideoLoader.")
              from doc_processing.loaders.video_loader import VideoLoader
              initial_loader = VideoLoader(self.config.get('video_loader_config', {}))
-        elif source_path_str.lower().endswith(('.wav', '.ogg', '.mp3', '.m4a')):
+        elif source_path_str.lower().endswith(tuple(SUPPORTED_AUDIO_SUFFIXES)):
              self.logger.info(f"Detected audio file: {source_path_str}. Using AudioLoader.")
              from doc_processing.loaders.audio_loader import AudioLoader
              initial_loader = AudioLoader(self.config.get('audio_loader_config', {}))
@@ -248,6 +250,16 @@ class DocumentPipeline:
                      image_processor_config.setdefault(option, self.config[option])
              self.logger.info("Adding ImageProcessor for image OCR and caption extraction")
              processing_pipeline.add_component(ImageProcessor(image_processor_config))
+        elif (
+            self.config.get('pipeline_type') == 'markdown'
+            and source_path_str.lower().endswith(('.txt', '.md', '.json'))
+        ):
+             # Plain-text sources have no processor that emits Markdown, so the
+             # markdown pipeline previously returned the raw text unchanged.
+             # TextToMarkdown is a local heuristic converter (no LLM call).
+             from doc_processing.transformers.text_to_markdown import TextToMarkdown
+             self.logger.info("Adding TextToMarkdown for plain-text markdown conversion")
+             processing_pipeline.add_component(TextToMarkdown(self.config.get('markdown_config', {})))
 
         # The output of the initial loader becomes the input for the rest of the pipeline
         pipeline_input = initial_load_result

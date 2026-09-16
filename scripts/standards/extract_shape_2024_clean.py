@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import argparse
 import csv
-import hashlib
+
 import json
 import re
 import subprocess
@@ -17,6 +17,8 @@ import sys
 import urllib.request
 from pathlib import Path
 from typing import Any
+
+from doc_processing.utils.file_utils import sha256_file
 
 
 def import_fitz():
@@ -129,12 +131,7 @@ def clean_indicator_text(text: str) -> str:
     return clean_text(text)
 
 
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+from doc_processing.utils.file_utils import sha256_file
 
 
 def fetch_health_pdf(destination: Path) -> Path:

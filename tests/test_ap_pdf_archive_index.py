@@ -14,6 +14,9 @@ INDEX_PATH = ROOT / "scripts/standards/ap_editions.json"
 SCRIPT_DIR = ROOT / "scripts/standards"
 sys.path.insert(0, str(SCRIPT_DIR))
 
+# Depends on the gitignored AP raw-PDF corpus under data/input; excluded by default.
+pytestmark = pytest.mark.integration
+
 import ap_pdf_archive as archive_module  # noqa: E402
 from ap_pdf_archive import (
     detected_source_labels,

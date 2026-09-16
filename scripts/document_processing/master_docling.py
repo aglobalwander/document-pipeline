@@ -62,7 +62,15 @@ def parse_arguments():
     parser.add_argument('--no_cache', dest='no_cache', action='store_true',
                         help='Disable processing cache for resumable document processing.')
     parser.add_argument('--clear_cache', action='store_true',
-                        help='Clear cached Docling processing checkpoints before running.')
+                        help='Clear cached Docling results before running.')
+    parser.add_argument('--ocr', dest='ocr', action='store_true', default=None,
+                        help='Force Docling OCR on (default: Docling decides per page).')
+    parser.add_argument('--no_ocr', dest='no_ocr', action='store_true',
+                        help='Disable Docling OCR for PDFs that already carry a text layer.')
+    parser.add_argument('--page_images', action='store_true',
+                        help='Ask Docling to render page images (off by default; only vision models need them).')
+    parser.add_argument('--images_scale', type=float,
+                        help='Scale factor for Docling page/picture images (only relevant with --page_images).')
 
     return parser.parse_args()
 
@@ -97,6 +105,20 @@ def main():
     elif args.use_cache is not None:
         use_cache = args.use_cache
 
+    # None means "leave Docling's own default in place".
+    if args.no_ocr:
+        docling_do_ocr = False
+    elif args.ocr:
+        docling_do_ocr = True
+    else:
+        docling_do_ocr = None
+
+    if getattr(args, 'no_detect_columns', False):
+        logger.warning(
+            "--no_detect_columns: Docling performs layout/column analysis internally; "
+            "the flag is accepted for compatibility and has no effect."
+        )
+
     if args.clear_cache:
         cache_manager = ProcessingCache()
         cleared = cache_manager.clear_all()
@@ -109,11 +131,17 @@ def main():
         'output_all_formats': output_all_formats,
         'detect_columns': detect_columns,
         'use_cache': use_cache,
+        'docling_do_ocr': docling_do_ocr,
+        'docling_generate_page_images': True if args.page_images else None,
+        'docling_images_scale': args.images_scale,
     }
-    
+
     # Load the PDF file
     logger.info(f"Loading PDF file: {input_path}")
-    pdf_loader = PDFLoader()
+    # Page images are only consumed by the vision processors; Docling reads the
+    # page itself, so skipping rasterisation + base64 encoding saves a full pass
+    # over every page.
+    pdf_loader = PDFLoader({'generate_page_images': False})
     document = pdf_loader.load(str(input_path))
     
     # Process the document with the Enhanced Docling processor
@@ -178,6 +206,8 @@ def main():
     logger.info(f"  Primary output file: {primary_output_path}")
     logger.info(f"  All formats output: {'Enabled' if output_all_formats else 'Disabled'}")
     logger.info(f"  Table extraction: {'Enabled' if processor_config['docling_extract_tables'] else 'Disabled'}")
+    logger.info(f"  OCR: {docling_do_ocr if docling_do_ocr is not None else 'Docling default'}")
+    logger.info(f"  Page images: {'Enabled' if args.page_images else 'Disabled'}")
     
     # Print a sample of the processed text
     sample_length = min(500, len(content))

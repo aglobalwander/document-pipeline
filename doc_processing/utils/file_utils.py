@@ -5,7 +5,7 @@ import hashlib
 import logging
 from pathlib import Path
 from datetime import datetime, timezone
-from typing import Dict, Any
+from typing import Dict, Any, Union
 
 logger = logging.getLogger(__name__)
 
@@ -39,6 +39,22 @@ def calculate_file_hash(file_path: Path, algorithm: str = 'sha256', buffer_size:
     except Exception as e:
         logger.error(f"Error calculating hash for {file_path}: {e}")
         raise IOError(f"Error calculating hash for {file_path}: {e}") from e
+
+def sha256_file(file_path: Union[str, Path], buffer_size: int = 1024 * 1024) -> str:
+    """Return the SHA-256 hex digest of a file.
+
+    Thin, str-or-Path tolerant wrapper over :func:`calculate_file_hash` so the
+    many scripts that hashed artifacts for provenance share one implementation.
+
+    Args:
+        file_path: File to hash.
+        buffer_size: Read size per chunk.
+
+    Returns:
+        Hex digest string.
+    """
+    return calculate_file_hash(Path(file_path), algorithm="sha256", buffer_size=buffer_size)
+
 
 def get_file_metadata(file_path: Path) -> Dict[str, Any]:
     """Extracts common metadata from a file.

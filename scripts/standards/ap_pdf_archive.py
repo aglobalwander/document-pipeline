@@ -10,7 +10,7 @@ without claiming content-review or downstream-release authority.
 from __future__ import annotations
 
 import argparse
-import hashlib
+
 import json
 import os
 import re
@@ -22,6 +22,8 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
+from doc_processing.utils.file_utils import sha256_file
+
 EXPECTED_PACKAGES = 40
 EXPECTED_OFFERINGS = 43
 INDEX_SCHEMA = "pipeline-documents.ap-pdf-edition-index.v2"
@@ -29,14 +31,6 @@ REQUIRED_TOOLS = ("file", "pdfinfo", "pdftotext")
 CANONICAL_ARCHIVE_RELATIVE = Path("data/input/pdfs/standards/ap_guide_archive")
 CANONICAL_INDEX_RELATIVE = Path("scripts/standards/ap_editions.json")
 PACKAGE_ID_PATTERN = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
-
-
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
 
 
 def command(args: list[str]) -> str:

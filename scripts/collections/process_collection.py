@@ -5,11 +5,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import sys
 import time
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Tuple
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -19,6 +21,7 @@ if str(SCRIPT_DIR) not in sys.path:
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from doc_processing.config import get_settings
 from doc_processing.document_pipeline import DocumentPipeline
 
 from inventory_collection import build_inventory_report
@@ -28,6 +31,8 @@ from registry_utils import (
     update_registry,
     write_yaml_file,
 )
+
+logger = logging.getLogger(__name__)
 
 OUTPUT_EXTENSIONS = {
     "text": ".txt",
@@ -99,6 +104,33 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dry_run", action="store_true", help="Preview processing without executing pipeline.")
     parser.add_argument("--resume", action="store_true", help="Skip files already processed successfully.")
     parser.add_argument(
+        "--workers",
+        type=int,
+        default=get_settings().CONCURRENT_TASKS,
+        help=(
+            "Number of worker processes (default: CONCURRENT_TASKS setting). "
+            "Use 1 for sequential processing. Each worker loads its own model set, so raise this only when memory allows."
+        ),
+    )
+    parser.add_argument(
+        "--retries",
+        type=int,
+        default=get_settings().MAX_RETRIES,
+        help="Attempts per file before recording a failure (default: MAX_RETRIES setting).",
+    )
+    parser.add_argument(
+        "--ocr", dest="ocr", action="store_true", default=None,
+        help="Force Docling OCR on (default: Docling decides per page).",
+    )
+    parser.add_argument(
+        "--no_ocr", dest="no_ocr", action="store_true",
+        help="Disable Docling OCR for PDFs that already carry a text layer.",
+    )
+    parser.add_argument(
+        "--images_scale", type=float,
+        help="Scale factor for Docling page/picture images.",
+    )
+    parser.add_argument(
         "--max_files",
         type=int,
         help="Optional limit for number of processable files to run in this invocation.",
@@ -151,7 +183,11 @@ def _extract_payloads(
 ) -> Dict[str, str]:
     primary = _coerce_text(processed_document.get("content"))
     text_payload = _coerce_text(processed_document.get("text_content")) or primary
-    markdown_payload = _coerce_text(processed_document.get("markdown_content")) or primary
+    markdown_payload = (
+        _coerce_text(processed_document.get("markdown_content"))
+        or _coerce_text(processed_document.get("markdown"))
+        or primary
+    )
     json_payload = _coerce_text(processed_document.get("json_content"))
     if not json_payload:
         json_payload = json.dumps(processed_document, indent=2, ensure_ascii=False)
@@ -212,19 +248,108 @@ def _load_previous_successes(manifest_path: Path) -> Dict[str, Dict[str, Any]]:
     return success_map
 
 
-def _initialize_pipeline(args: argparse.Namespace) -> DocumentPipeline:
-    pipeline_config = {
+def _build_pipeline_config(args: argparse.Namespace) -> Dict[str, Any]:
+    """Pipeline config shared by every file in the collection run."""
+    # Page rasterisation is only consumed by the GPT vision path; the Docling,
+    # PyMuPDF, Gemini and Claude paths read the PDF directly.
+    needs_page_images = args.pdf_processor == "gpt"
+    return {
         "pipeline_type": args.pipeline_type,
         "pdf_processor_strategy": "exclusive",
         "default_pdf_processor": args.pdf_processor,
         "output_all_formats": args.output_all_formats,
         "use_cache": True,
         "detect_columns": True,
+        "docling_extract_tables": True,
+        "docling_do_ocr": _resolve_docling_ocr(args),
+        "docling_images_scale": args.images_scale,
+        "pdf_loader_config": {"generate_page_images": needs_page_images},
     }
-    return DocumentPipeline(config=pipeline_config)
+
+
+def _resolve_docling_ocr(args: argparse.Namespace):
+    """Map --ocr/--no_ocr to a Docling option (None keeps Docling's default)."""
+    if getattr(args, "no_ocr", False):
+        return False
+    if getattr(args, "ocr", False):
+        return True
+    return None
+
+
+def _write_payloads(
+    output_paths: Dict[str, Path], payloads: Dict[str, str], target_formats: List[str]
+) -> None:
+    """Write one file's payloads into the collection output tree."""
+    for fmt in target_formats:
+        output_path = output_paths[fmt]
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with output_path.open("w", encoding="utf-8") as handle:
+            handle.write(payloads.get(fmt, ""))
+
+
+# One pipeline per worker process: Docling models load once per process instead
+# of once per file.
+_WORKER_PIPELINE: DocumentPipeline | None = None
+
+
+def _worker_init(pipeline_config: Dict[str, Any]) -> None:
+    """ProcessPoolExecutor initializer: build the worker's pipeline once."""
+    global _WORKER_PIPELINE
+    # Spawned workers do not inherit the parent's logging configuration.
+    if not logging.getLogger().handlers:
+        logging.basicConfig(
+            level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+        )
+    _WORKER_PIPELINE = DocumentPipeline(config=pipeline_config)
+
+
+def _process_one(task: Dict[str, Any]) -> Dict[str, Any]:
+    """Extract a single file, returning payloads instead of writing them.
+
+    Runs in a worker process (or in-process for the sequential path), so it must
+    stay picklable and must not touch the manifest/registry.
+    """
+    global _WORKER_PIPELINE
+    pipeline = _WORKER_PIPELINE
+    if pipeline is None:
+        pipeline = DocumentPipeline(config=task["pipeline_config"])
+        _WORKER_PIPELINE = pipeline
+
+    attempts = max(1, int(task.get("retries") or 1))
+    last_error: str | None = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            processed = pipeline.process_document(str(task["source_path"]))
+            if not isinstance(processed, dict):
+                raise RuntimeError(f"Unexpected pipeline result type: {type(processed)}")
+            if processed.get("error"):
+                raise RuntimeError(str(processed["error"]))
+
+            payloads = _extract_payloads(
+                processed, task["pipeline_type"], task["output_all_formats"]
+            )
+            outcome: Dict[str, Any] = {
+                "status": "success",
+                "payloads": payloads,
+                "processing_method": processed.get("processing_method", "unknown"),
+            }
+            if attempt > 1:
+                outcome["attempts"] = attempt
+            return outcome
+        except Exception as exc:  # noqa: BLE001 - reported through the outcome
+            last_error = str(exc)
+            logger.warning(
+                f"Attempt {attempt}/{attempts} failed for {task['source_path']}: {exc}"
+            )
+
+    return {"status": "failed", "error": last_error or "processing failed"}
 
 
 def main() -> None:
+    logging.basicConfig(
+        level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+    )
     args = parse_args()
     started_at = time.time()
     run_started_iso = _now_iso()
@@ -260,13 +385,12 @@ def main() -> None:
         else bool(previous_manifest.get("ready_for_ingestion", False))
     )
 
-    pipeline: DocumentPipeline | None = None
-
     successes = 0
     failures = 0
     resume_skips = 0
     errors: List[str] = []
     run_records: List[Dict[str, Any]] = []
+    pending: List[Tuple[Dict[str, Any], Dict[str, Path], Path]] = []
 
     for index, source_path in enumerate(processable_files, start=1):
         relative_path = source_path.relative_to(source_dir)
@@ -298,33 +422,69 @@ def main() -> None:
             run_records.append(record)
             continue
 
-        try:
-            if pipeline is None:
-                pipeline = _initialize_pipeline(args)
-            processed = pipeline.process_document(str(source_path))
-            if not isinstance(processed, dict):
-                raise RuntimeError(f"Unexpected pipeline result type: {type(processed)}")
-            if processed.get("error"):
-                raise RuntimeError(str(processed["error"]))
+        pending.append((record, output_paths, source_path))
 
-            payloads = _extract_payloads(processed, args.pipeline_type, args.output_all_formats)
-            for fmt in formats_to_write:
-                output_path = output_paths[fmt]
-                output_path.parent.mkdir(parents=True, exist_ok=True)
-                with output_path.open("w", encoding="utf-8") as handle:
-                    handle.write(payloads[fmt])
+    # --- Execute pending work (worker processes, or sequential) ---
+    outcomes: Dict[str, Dict[str, Any]] = {}
+    if pending:
+        pipeline_config = _build_pipeline_config(args)
+        retries = max(1, int(args.retries or 1))
+        tasks = [
+            {
+                "source_path": str(source_path),
+                "pipeline_config": pipeline_config,
+                "pipeline_type": args.pipeline_type,
+                "output_all_formats": args.output_all_formats,
+                "retries": retries,
+            }
+            for _, _, source_path in pending
+        ]
 
+        workers = max(1, int(args.workers or 1))
+        if workers > 1 and len(tasks) > 1:
+            logger.info(
+                f"Processing {len(tasks)} file(s) across {workers} worker processes "
+                f"(retries={retries})"
+            )
+            with ProcessPoolExecutor(
+                max_workers=workers,
+                initializer=_worker_init,
+                initargs=(pipeline_config,),
+            ) as executor:
+                future_map = {executor.submit(_process_one, task): task for task in tasks}
+                for future in as_completed(future_map):
+                    task = future_map[future]
+                    try:
+                        outcomes[task["source_path"]] = future.result()
+                    except Exception as exc:  # noqa: BLE001 - recorded per file
+                        outcomes[task["source_path"]] = {
+                            "status": "failed",
+                            "error": str(exc),
+                        }
+        else:
+            logger.info(f"Processing {len(tasks)} file(s) sequentially (retries={retries})")
+            _worker_init(pipeline_config)
+            for task in tasks:
+                outcomes[task["source_path"]] = _process_one(task)
+
+    for record, output_paths, source_path in pending:
+        outcome = outcomes.get(str(source_path)) or {
+            "status": "failed",
+            "error": "no result produced",
+        }
+        if outcome.get("status") == "success":
+            _write_payloads(output_paths, outcome.get("payloads", {}), formats_to_write)
             record["status"] = "success"
-            record["processing_method"] = processed.get("processing_method", "unknown")
-            record["completed_at"] = _now_iso()
+            record["processing_method"] = outcome.get("processing_method", "unknown")
+            if outcome.get("attempts"):
+                record["attempts"] = outcome["attempts"]
             successes += 1
-        except Exception as exc:  # noqa: BLE001
+        else:
             record["status"] = "failed"
-            record["error"] = str(exc)
-            record["completed_at"] = _now_iso()
+            record["error"] = outcome.get("error", "unknown error")
             failures += 1
-            errors.append(f"{relative_key}: {exc}")
-
+            errors.append(f"{record['relative_path']}: {record['error']}")
+        record["completed_at"] = _now_iso()
         run_records.append(record)
 
     previous_records = previous_manifest.get("processed_files", [])
@@ -379,6 +539,9 @@ def main() -> None:
             "resume": args.resume,
             "pdf_processor": args.pdf_processor,
             "max_files": args.max_files,
+            "workers": args.workers,
+            "retries": args.retries,
+            "docling_do_ocr": _resolve_docling_ocr(args),
         },
         "files_processed": {
             "discovered_total": inventory["total_files"],

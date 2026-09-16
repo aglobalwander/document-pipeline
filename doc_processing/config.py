@@ -238,9 +238,3 @@ def ensure_directories_exist() -> None:
     os.makedirs(settings.TEXT_OUTPUT_DIR, exist_ok=True)
     os.makedirs(settings.MARKDOWN_OUTPUT_DIR, exist_ok=True)
     os.makedirs(settings.JSON_OUTPUT_DIR, exist_ok=True)
-    # Add these new settings to your existing config
-
-DOCLING_ENABLED: bool = Field(default=True)
-DOCLING_USE_EASYOCR: bool = Field(default=True)
-DOCLING_EXTRACT_TABLES: bool = Field(default=True)
-DOCLING_EXTRACT_FIGURES: bool = Field(default=True)

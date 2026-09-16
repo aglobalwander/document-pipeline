@@ -135,7 +135,13 @@ def parse_arguments(argv=None):
     parser.add_argument('--gpt_vision_prompt', type=str,
                         help='Path to a custom Jinja2 template file for GPT Vision OCR.')
     parser.add_argument('--no_page_images', action='store_true',
-                        help='Disable PDF page image generation in the loader (saves time if only using Docling).')
+                        help='Disable PDF page image generation in the loader (auto-off unless a vision processor is used).')
+    parser.add_argument('--ocr', dest='ocr', action='store_true', default=None,
+                        help='Force Docling OCR on (default: Docling decides per page).')
+    parser.add_argument('--no_ocr', dest='no_ocr', action='store_true',
+                        help='Disable Docling OCR for PDFs that already carry a text layer.')
+    parser.add_argument('--images_scale', type=float,
+                        help='Scale factor for Docling page/picture images.')
 
     # Media Processing Configuration
     parser.add_argument('--image_backend', type=str, default='local', choices=['local', 'openai', 'gemini'],
@@ -225,12 +231,74 @@ def is_url(input_string: str) -> bool:
     except ValueError:
         return False
 
+def _vision_processor_selected(args) -> bool:
+    """True when the selected PDF path needs rasterised page images.
+
+    Only the GPT vision path consumes page images (``image_base64``); the
+    Docling, PyMuPDF, Gemini and Claude paths read the PDF directly.
+    """
+    if args.pdf_processor == 'gpt':
+        return True
+    if not args.pdf_processor and args.ocr_mode == 'gpt':
+        return True
+    return False
+
+
+def _resolve_page_images(args) -> bool:
+    """Decide whether the PDF loader should rasterise every page."""
+    if args.no_page_images:
+        return False
+    return _vision_processor_selected(args)
+
+
+def _resolve_docling_ocr(args):
+    """Map --ocr/--no_ocr to a Docling option (None keeps Docling's default)."""
+    if getattr(args, 'no_ocr', False):
+        return False
+    if getattr(args, 'ocr', False):
+        return True
+    return None
+
+
+def _warn_inert_options(args) -> None:
+    """Report legacy flags that no current component consumes."""
+    if args.no_detect_columns:
+        logger.warning(
+            "--no_detect_columns: Docling performs layout/column analysis internally; "
+            "the flag is accepted for compatibility and has no effect."
+        )
+    if args.no_merge_hyphenated_words:
+        logger.warning("--no_merge_hyphenated_words has no effect in the current Docling path.")
+    if args.no_reconstruct_paragraphs:
+        logger.warning("--no_reconstruct_paragraphs has no effect in the current Docling path.")
+    if args.use_llm_cleaning:
+        logger.warning(
+            "--use_llm_cleaning: no cleaning component consumes this flag; "
+            "select --llm_provider plus an explicit transform to use a model."
+        )
+
+
 # --- Main Processing Logic ---
 def main():
     """Main execution function."""
     args = parse_arguments()
     settings = get_settings()
     ensure_directories_exist() # Ensure base output dirs exist
+
+    _warn_inert_options(args)
+
+    if args.clear_cache:
+        cache_manager = ProcessingCache()
+        cleared = cache_manager.clear_all()
+        logger.info(f"Cleared {cleared} cached entries from {cache_manager.cache_dir}")
+
+    generate_page_images = _resolve_page_images(args)
+    docling_do_ocr = _resolve_docling_ocr(args)
+    if not generate_page_images:
+        logger.info(
+            "PDF page rasterisation disabled for this run "
+            "(only the GPT vision path needs page images)."
+        )
 
     input_path_str = args.input_path
     output_dir = Path(args.output_dir)
@@ -272,7 +340,10 @@ def main():
     logger.info(f"Found {len(inputs_to_process)} input(s) to process.")
 
     # --- Process Inputs ---
-    all_results: List[Dict[str, Any]] = []
+    # One pipeline (and therefore one Docling converter) is reused for every
+    # input; the configuration is identical across inputs and rebuilding it per
+    # file re-pays Docling model initialisation costs.
+    pipeline: Optional[DocumentPipeline] = None
     for input_item in inputs_to_process:
         logger.info(f"Processing input: {input_item}")
 
@@ -323,6 +394,17 @@ def main():
             # Caching configuration
             'use_cache': args.use_cache if hasattr(args, 'use_cache') else True,
             'clear_cache': args.clear_cache if hasattr(args, 'clear_cache') else False,
+
+            # Docling pipeline options (None keeps Docling's own default)
+            'docling_extract_tables': True,
+            'docling_do_ocr': docling_do_ocr,
+            'docling_images_scale': args.images_scale,
+            'pdf_processor_config': {
+                'docling_do_ocr': docling_do_ocr,
+                'docling_images_scale': args.images_scale,
+            },
+            # Page rasterisation is only needed by the vision path.
+            'pdf_loader_config': {'generate_page_images': generate_page_images},
         }
         
         # Add PDF processor configuration
@@ -372,16 +454,29 @@ def main():
                 pipeline_config['active_pdf_processors'] = fallback_order
                 pipeline_config['pdf_fallback_order'] = fallback_order
 
-        # Instantiate DocumentPipeline for each input (to ensure a clean pipeline per document/URL)
-        pipeline = DocumentPipeline(config=pipeline_config)
+        # Instantiate DocumentPipeline once (to reuse the Docling converter and
+        # other heavy state) and reuse it for the remaining inputs.
+        if pipeline is None:
+            pipeline = DocumentPipeline(config=pipeline_config)
 
         try:
             # process_document returns a single dictionary
             processed_document = pipeline.process_document(input_item)
-            all_results.append(processed_document) # Append the single dict to results
 
             # --- Handle Output (Save to file) ---
             doc = processed_document
+
+            # Audio/video loaders return decoded WAV bytes. They need an
+            # explicitly selected transcription processor before a text
+            # artifact can be written, so report rather than writing binary.
+            raw_content = doc.get('content')
+            if isinstance(raw_content, (bytes, bytearray)):
+                logger.warning(
+                    f"{Path(input_item).name}: pipeline returned binary audio data "
+                    f"({len(raw_content)} bytes); no text artifact written. "
+                    "Select a transcription processor for audio/video inputs."
+                )
+                continue
             # Determine output filename and format
             # Use metadata from the processed doc if available, otherwise derive from input_item
             metadata = doc.get('metadata', {})
@@ -409,10 +504,13 @@ def main():
             if output_format == 'json':
                 content_to_save = json.dumps(doc, indent=2)
             elif output_format == 'markdown':
-                if 'content' in doc:
-                    content_to_save = doc['content']
+                # Prefer generated Markdown over the raw text the loader read.
+                if 'markdown_content' in doc:
+                    content_to_save = doc['markdown_content']
                 elif 'markdown' in doc:
                     content_to_save = doc['markdown']
+                elif 'content' in doc:
+                    content_to_save = doc['content']
             elif 'content' in doc:
                 content_to_save = doc['content']
             elif 'text' in doc:

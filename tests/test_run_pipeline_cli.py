@@ -1,7 +1,12 @@
+import pytest
 import subprocess
 import sys
 import json
 from pathlib import Path
+
+# Requires the gitignored data/input/text fixture; excluded from the default run.
+pytestmark = pytest.mark.integration
+
 
 def run_pipeline(input_path: Path, pipeline_type: str, output_dir: Path, output_format: str = None) -> str:
     """Helper to invoke the run_pipeline CLI."""

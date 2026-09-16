@@ -26,6 +26,8 @@ from xml.etree import ElementTree
 
 from scripts.document_processing.export_pptx_slides import export_pptx_slide_payload
 
+from doc_processing.utils.file_utils import sha256_file
+
 
 DEFAULT_INPUT_DIR = Path("data/input/powerpoint")
 DEFAULT_OUTPUT_DIR = Path("data/output/powerpoint_visual_record")
@@ -52,14 +54,6 @@ KEYWORD_PATTERNS: list[tuple[str, str, int]] = [
 def slugify(value: str, max_len: int = 80) -> str:
     slug = re.sub(r"[^A-Za-z0-9]+", "-", value).strip("-").lower()
     return (slug or "deck")[:max_len].strip("-") or "deck"
-
-
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
 
 
 def relative_to(path: Path, root: Path) -> str:

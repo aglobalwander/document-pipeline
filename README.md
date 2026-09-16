@@ -139,9 +139,13 @@ Input -> Loader -> Processor -> Transformer -> Output artifact
 ## Verification
 
 ```bash
-poetry run pytest -q
+poetry run pytest -q                 # fast unit suite (no fixtures needed)
+poetry run pytest -q -m integration  # end-to-end checks; needs data/input fixtures
 git diff --check
 ```
 
-Some tests depend on sample data under `data/input/`; targeted unit tests are
-the reliable minimum when those fixtures are absent.
+The default run excludes tests marked `integration` because they depend on
+sample files under `data/input/` (gitignored) or on network access. Run them
+explicitly when those fixtures are present. A green unit run does not prove the
+extraction paths worked; it only proves the code loaded and the local contracts
+hold.

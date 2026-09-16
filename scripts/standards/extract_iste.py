@@ -9,14 +9,8 @@ import csv
 import json
 from pathlib import Path
 from typing import Dict, List, Tuple
-import hashlib
 
-
-def generate_unique_id(text: str, prefix: str = "") -> str:
-    """Generate a unique ID based on text content."""
-    hash_obj = hashlib.md5(text.encode())
-    hash_str = hash_obj.hexdigest()[:8]
-    return f"{prefix}{hash_str}"
+from doc_processing.utils.ids import generate_unique_id
 
 
 def extract_iste_standards(file_path: Path) -> List[Dict]:

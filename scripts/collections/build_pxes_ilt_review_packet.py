@@ -4,12 +4,13 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
+
 import html
 import json
 from pathlib import Path
 from typing import Any
 
+from doc_processing.utils.file_utils import sha256_file
 from PIL import Image as PILImage
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
@@ -69,14 +70,6 @@ def ascii_safe(value: Any) -> str:
     for old, new in replacements.items():
         text = text.replace(old, new)
     return html.escape(text)
-
-
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
 
 
 def scaled_image(path: Path, max_width: float, max_height: float) -> Image:

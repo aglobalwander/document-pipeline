@@ -4,8 +4,10 @@ from typing import Any, Dict, List, Optional, Union
 from pathlib import Path
 import logging
 
-# Set up logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# Per-module logger only. Never call logging.basicConfig() here: it runs at
+# import time (before CLI entry points configure logging), which silently
+# forced every pipeline run to DEBUG level and flooded collection runs with
+# third-party debug output. Entry points own logging configuration.
 logger = logging.getLogger(__name__)
 
 class BaseDocumentLoader(ABC):

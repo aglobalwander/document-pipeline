@@ -19,13 +19,22 @@ poetry run python scripts/document_processing/master_docling.py \
   [--output_format text|markdown|json] \
   [--output_all_formats|--no_output_all_formats] \
   [--extract_tables|--no_extract_tables] \
+  [--ocr|--no_ocr] \
+  [--page_images] \
+  [--images_scale FLOAT] \
   [--detect_columns|--no_detect_columns] \
   [--use_cache|--no_cache] \
   [--clear_cache]
 ```
 
 Defaults: primary format `text`, output directory `data/output`, all formats
-enabled, tables enabled, column detection enabled, and cache enabled.
+enabled, tables enabled, cache enabled, OCR left to Docling's per-page decision,
+and page images disabled (only the GPT vision path needs them). `--no_ocr` is
+the main speed lever for PDFs that already carry a text layer.
+
+`--detect_columns` / `--no_detect_columns` are accepted only for compatibility:
+Docling performs layout and column analysis internally, so the flag has no
+effect and the runner logs a warning when it is used.
 
 Examples:
 
@@ -67,9 +76,11 @@ Common options:
 | `--ocr_mode` | `hybrid`, `docling`, `enhanced_docling`, `gpt` |
 | `--image_backend` | `local` (default), `openai`, `gemini` |
 | `--deepgram_params` | JSON object, such as `'{"diarize": true}'` |
-| `--use_cache` / `--no_cache` | control processing cache |
-| `--clear_cache` | clear checkpoints before processing |
-| `--no_page_images` | skip PDF page-image generation |
+| `--use_cache` / `--no_cache` | control the Docling result cache (`data/cache`) |
+| `--clear_cache` | clear cached results and checkpoints before processing |
+| `--no_page_images` | skip PDF page-image generation (already the default unless a vision processor is selected) |
+| `--ocr` / `--no_ocr` | force Docling OCR on/off; omit to keep Docling's per-page decision |
+| `--images_scale` | scale factor for Docling page/picture images |
 
 The live parser remains authoritative:
 
@@ -150,6 +161,11 @@ scripts/collections/run_collection_with_storage_fallback.sh \
   --collection_name collection-name \
   --resume
 ```
+
+`process_collection.py` accepts `--workers N` (defaults to the `CONCURRENT_TASKS`
+setting) and `--retries N` (defaults to `MAX_RETRIES`), plus `--ocr`/`--no_ocr`
+and `--images_scale`. Each worker process loads its own Docling models, so pass
+`--workers 1` when memory is tight.
 
 ## Diagnostics
 

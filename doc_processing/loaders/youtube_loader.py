@@ -4,7 +4,6 @@ from typing import Dict, Any, Optional, Union, List
 from pathlib import Path
 
 from doc_processing.embedding.base import BaseDocumentLoader
-from .video_loader import VideoLoader
 
 import yt_dlp
 
@@ -17,7 +16,6 @@ class YouTubeLoader(BaseDocumentLoader):
     """
     def __init__(self, config: Optional[Dict[str, Any]] = None):
         super().__init__(config)
-        self.video_loader = VideoLoader(config.get('video_loader_config', {})) # Pass relevant config to VideoLoader
 
     def load(self, source: Union[str, Path]) -> Dict[str, Any]:
         """
@@ -211,11 +209,11 @@ class YouTubeLoader(BaseDocumentLoader):
         Checks if the input_path is a valid YouTube URL.
         """
         if not isinstance(input_path, str):
-            print(f"_is_youtube_url: Input is not a string: {input_path}. Returning False.") # Added print
+            self.logger.debug("_is_youtube_url: non-string input; returning False")
             return False
         # Basic check for common YouTube URL patterns
         # Check if the URL starts with a valid YouTube domain
         valid_domains = ['https://www.youtube.com/', 'http://www.youtube.com/', 'https://youtu.be/', 'http://youtu.be/']
         is_youtube = any(input_path.startswith(domain) for domain in valid_domains)
-        print(f"_is_youtube_url: Input: {input_path}, Result: {is_youtube}") # Added print
+        self.logger.debug(f"_is_youtube_url: {input_path} -> {is_youtube}")
         return is_youtube

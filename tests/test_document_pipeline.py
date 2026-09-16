@@ -4,11 +4,16 @@ from pathlib import Path
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any
 
+import pytest
+
 from doc_processing.document_pipeline import DocumentPipeline
 # Assuming the sample files are correctly located relative to the project root
 # Adjust paths if necessary based on where pytest is run from
 INPUT_DIR = Path("data/input/pdfs")
 SAMPLE_REPORT = INPUT_DIR / "sample_test.pdf" # Use the specified test PDF
+
+# Requires the gitignored data/input fixtures; excluded from the default run.
+pytestmark = pytest.mark.integration
 
 # Define Pydantic model for Test 3 (Structured Extraction)
 # Removed ResumeInfo model as it's not suitable for sample_test.pdf

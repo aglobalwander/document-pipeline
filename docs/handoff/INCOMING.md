@@ -20,6 +20,9 @@ Format per entry:
 Full text: docs/handoff/<dated-file>.md
 ```
 
+Use a placeholder date in any example: the scanner reads a heading whose date is a real
+`YYYY-MM-DD`, so an example dated with its own placeholder stays invisible to it.
+
 Replies to these notes live in `OUTGOING.md` in this same directory. The boundary is fixed: this
 repo extracts and transforms, so an extraction is evidence and a received request is neither a canon
 row nor an authorization to rule editions, canonize, or crosswalk.

@@ -1,6 +1,8 @@
 # KM → pipeline-documents — re-extraction request for three IB guides
 
-**Date:** 2026-09-16 · **From:** Knowledge Management · **To:** `_02_platforms/pipeline-documents`
+**Date:** 2026-09-16
+**From:** knowledge-management
+**To:** pipeline_documents (`_02_platforms/pipeline-documents`)
 **Status:** request received in this repo — not started
 **Claim class:** `source_summary` for the findings below; this is a work request, not a claim about outcomes.
 **Full text as sent by KM:** `_01_hubs/knowledge-management/docs/handoff/2026-09-16-km-request-ib-guide-re-extraction.md`

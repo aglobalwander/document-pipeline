@@ -28,6 +28,7 @@ current behavior.
 
 ## Handoffs
 
+- [Incoming notes](handoff/INCOMING.md): requests from other repos that this repo must act on
 - [Outgoing notes](handoff/OUTGOING.md): notes this repo sends to other repos
 - [KM request: IB guide re-extraction](handoff/2026-09-16-km-request-ib-guide-re-extraction.md):
   received request for three IB guide runs plus two sweep-label corrections

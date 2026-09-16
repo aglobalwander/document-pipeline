@@ -26,6 +26,12 @@ current behavior.
 - [AGENTS.md](../AGENTS.md): Codex and general coding-agent instructions
 - [CLAUDE.md](../CLAUDE.md): Claude Code instructions
 
+## Handoffs
+
+- [Outgoing notes](handoff/OUTGOING.md): notes this repo sends to other repos
+- [KM request: IB guide re-extraction](handoff/2026-09-16-km-request-ib-guide-re-extraction.md):
+  received request for three IB guide runs plus two sweep-label corrections
+
 ## History
 
 - `plans/`: dated designs that describe intended behavior at that point in time

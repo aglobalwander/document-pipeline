@@ -137,6 +137,21 @@ whether they are the same population as KM's 115 is a hypothesis to check, not a
   from ordering rather than printed. The acceptance asks that *"the lettered sub-item matches the
   guide's lettering"* — that cannot be met as written, and the finding is the result rather than a pass.
 
+**Substrate for the two withheld reads is in hand (2026-09-18).** The milestone's **315 NCAS residuals**
+and **137 Theatre derived scales** have no enumerated list yet, and KM chose to ask rather than invent
+one. Both need the same thing from this side, so that substrate is built now and those reads become
+**joins rather than new extraction** once the definitions arrive:
+
+| artifact | content | measure |
+|---|---|---|
+| `ncas_code_source_index.csv` | every distinct printed code → the document(s) printing it, with a representative page and bbox | **1,165** codes, **557 of them printed in more than one document** |
+| `theatre_printed_codes.csv` | every Theatre cell → printed code, the band as printed, page, bbox | **298** cells; bands print as `1`…`8`, `PreK`, `K`, `HS Proficient`, `HS Accomplished`, `HS Advanced` |
+
+The 557 is the useful number: it quantifies the source-identity ambiguity the 315 residuals concern,
+before any definition of "residual" exists. This is deliberately **unopinionated raw evidence, not an
+acceptance artifact** — it reports what the twelve returned documents print and says nothing about what
+qualifies.
+
 ### Action Required
       rows qualified from the guide's printed topic heading (`A1.1 1.1.1`), collisions now 0 on
       `(subject, statement_code_qualified)`, the `statement_code` column untouched, and no other

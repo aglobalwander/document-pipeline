@@ -145,6 +145,47 @@ def flatten(depth_path: Path, layer_path: Path, subject: str, sha: str) -> list[
     return rows
 
 
+TOPIC_CODE_RX = re.compile(r"^([A-Z]{1,3}\d+(?:\.\d+)*)(?=\s|$)")
+
+
+def printed_topic_code(row: dict) -> str | None:
+    """The topic code the guide prints, from the heading above the row or the recorded topic_code.
+
+    Design technology prints `A1.1 Ergonomics` as the heading and `1.1.1` as the statement code, so the
+    qualifier has to come from the printed heading. Nothing is invented: a row whose heading carries no
+    code and whose recorded topic is not a code returns None and stays unqualified.
+    """
+    for candidate in (row.get("printed_heading") or "", row.get("topic_code") or ""):
+        match = TOPIC_CODE_RX.match(candidate.strip())
+        if match:
+            return match.group(1)
+    return None
+
+
+def qualify_collisions(rows: list[dict]) -> list[dict]:
+    """KM's ruling (a): qualify a statement code only where it is not unique within its subject.
+
+    Chemistry prints its qualifier inline (`Structure 1.1.1`) and has no collisions. Design technology
+    does not: `1.1.1` appears under `A1.1`, `B1.1` and `C1.1` — 49 collision groups, every one of them
+    DT — which is what breaks `(subject, code)` as the layer's identity. Scoping the pass to colliding
+    codes is deliberate: KM measured zero collisions for biology, ESS, computer science and SEHS and
+    ruled that a qualifier there would be noise, so nothing else may change. The `statement_code`
+    column stays exactly as printed; the qualified form is a join annotation, never the code.
+    """
+    counts = collections.Counter((r["subject"], r["statement_code"])
+                                 for r in rows if r.get("statement_code"))
+    qualified = 0
+    for row in rows:
+        code = row.get("statement_code")
+        if not code or counts[(row["subject"], code)] < 2 or row.get("statement_code_qualified"):
+            continue
+        qualifier = printed_topic_code(row)
+        if qualifier:
+            row["statement_code_qualified"] = f"{qualifier} {code}"
+            qualified += 1
+    return rows
+
+
 def dedupe(rows: list[dict]) -> tuple[list[dict], list[dict]]:
     """Drop exact duplicate rows and return them, so the removal is reported rather than silent.
 
@@ -177,6 +218,8 @@ def summarise(rows: list[dict], dropped: list[dict] | None = None) -> dict:
         "topic_check_applicable": any(r["topic_in_canonical"] is not None for r in rows),
         "printed_heading": sum(1 for r in rows if r.get("printed_heading")),
         "statement_code_qualified": sum(1 for r in rows if r.get("statement_code_qualified")),
+        "collisions_qualified": sum(
+            1 for r in rows if r.get("statement_code_qualified") and r.get("section_qualifier") is None),
         "canon_subject_slug": sum(1 for r in rows if r.get("canon_subject_slug")),
         "duplicate_rows_dropped": len(dropped),
         "duplicates": [{"subject": r["subject"], "statement_code": r["statement_code"],
@@ -199,6 +242,7 @@ def process(depth: Path, subject: str, sha: str | None, out_dir: Path) -> dict:
     layer = depth.parent / "text_layer.jsonl"
     sha = sha or depth.parent.name
     rows, dropped = dedupe(flatten(depth, layer, subject, sha))
+    rows = qualify_collisions(rows)
     out_dir.mkdir(parents=True, exist_ok=True)
     with (out_dir / "statements.csv").open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=FIELDS)

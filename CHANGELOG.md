@@ -48,6 +48,12 @@
   and three TOK lines), **Language and Literature 21**, **Music 5** component headings, **Dance 4**.
   **54 of 54 codes matched exactly, 0 not found**; each row carries page, bbox, md_line and an
   `is_heading` type-size fact. Writes `printed_units.csv` + `printed_units_summary.json`.
+- KM's ruling (a) on the acceptance of `db5dfe5` is applied: `statement_code_qualified` now covers
+  **design technology**, which is the only subject whose bare statement code collides — 49 groups,
+  because `1.1.1` prints under `A1.1`, `B1.1` and `C1.1`. 121 rows are qualified from the guide's
+  printed topic heading (`A1.1 1.1.1`), collisions fall to 0 on `(subject, statement_code_qualified)`,
+  and the pass is scoped to colliding codes so the four subjects KM measured at zero collisions are
+  untouched. `statement_code` itself stays exactly as printed.
 
 ### Added
 

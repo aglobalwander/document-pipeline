@@ -29,6 +29,57 @@ row nor an authorization to rule editions, canonize, or crosswalk.
 
 ---
 
+## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: P4 accepted at db5dfe5 — four items accepted by re-measurement, two rulings made; three items remain ours]
+### Type: acceptance + rulings
+### Priority: now
+
+**Subject: KM accepted the P4 return at `db5dfe5`, ruled the DT qualifier and the enumerated-unit key, and named the three things left**
+
+KM re-measured each item rather than reading the summary: **2,331** rows with `verbatim` true, and
+`printed_heading` and `canon_subject_slug` non-empty on all 2,331; topic codes resolving at **84.8%**
+by KM's five measured rules (our stricter `topic_in_canonical` column reads 51.0% — the gap is the
+rules, not the data, and KM owns the code shapes); the unit-grain spine at **838/838** joined with
+zero unmatched either direction, 589 rows canonised from it; and `printed_units.csv` resolving
+**54/54** with label == printed text on every row.
+
+**Two rulings.** (a) Extend `statement_code_qualified` to **design technology only** — 49 collision
+groups, every one of them DT, because `1.1.1` prints under `A1.1`, `B1.1` and `C1.1`. Biology, ESS,
+Computer Science and SEHS measured **zero** collisions, so a qualifier there would be noise; KM is not
+asking for a re-run of those. The statement layer stays keyed `(subject, topic_code, code)` until DT is
+qualified, and Hub holds its ratification as provisional rather than re-keying canon twice.
+(b) For Dance, Music, Literature and Language and Literature the **enumerated unit is the key** —
+extract their statements *under* those units, keyed `(subject, unit_code, statement)`, using the codes
+`comp-ca`, `AoE1-Q1`, `comp-explorectx` … Those guides print named units and no statement codes, which
+is why they were refused at statement grain in the first place.
+
+**One correction KM owes us, recorded here so it is never read as a fourth item for us:** the 146 rows
+without a canon topic are **KM's**, not ours. Measured, they are six distinct values: **80** are KM's
+own ambiguity guard firing correctly (canon holds seven labels containing the Global Politics phrase,
+so its unique-match rule held them by design), and **66** are front matter mislabelled as
+`no_canon_topic` when they should read `source_is_front_matter`. KM is closing both.
+
+KM also recorded that **no edition marker is a legitimate state** (`no_marker_printed`), distinct from
+a marker it failed to read (`unresolved`) or a review hold — which is the vocabulary our twelve NCAS
+At-a-Glance `source.json` files currently spell `unresolved`.
+
+### Action Required
+
+- [x] pipeline-documents: `statement_code_qualified` for **design technology** (49 groups) — done: 121
+      rows qualified from the guide's printed topic heading (`A1.1 1.1.1`), collisions now 0 on
+      `(subject, statement_code_qualified)`, the `statement_code` column untouched, and no other
+      subject moved.
+- [ ] pipeline-documents: extract statements for **Dance, Music, Literature and Language and
+      Literature** under their enumerated units (ruling b).
+- [ ] pipeline-documents: exclude **front matter** at source, or confirm KM's 96-row exclusion is the
+      right reading.
+- [ ] KM: commit the bus — its `OUTGOING.md`/`INCOMING.md` entries are uncommitted at a 548-line diff,
+      so the acceptance is on disk but not in the ledger. KM is 66 commits ahead of its remote.
+- [ ] KM: close the 146-row residue (80 by the parent-preference rule, 66 reclassified as front matter).
+
+Full text: `knowledge-management/docs/handoff/2026-09-17-km-acceptance-p4-return.md` (committed as
+`06a8bd07a`). Our return: `docs/handoff/OUTGOING.md` (2026-09-17 entry, pushed at `db5dfe5`).
+
+---
 ## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: answers received — all seven P4 asks answered; seven items are ours, two need Scott]
 ### Type: answers + rulings + asks back
 ### Priority: now

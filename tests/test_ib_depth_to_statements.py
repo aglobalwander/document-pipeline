@@ -13,6 +13,59 @@ sys.path.insert(0, str(ROOT / "scripts/standards"))
 import ib_depth_to_statements as flat  # noqa: E402
 
 
+def row(topic, code, heading):
+    return {"subject": "Design Technology", "topic_code": topic, "statement_code": code,
+            "printed_heading": heading, "section_qualifier": None,
+            "statement_code_qualified": None, "statement_text": "printed text"}
+
+
+def test_a_colliding_code_is_qualified_from_the_printed_topic_heading():
+    """KM's ruling (a): DT prints `A1.1 Ergonomics` over a bare `1.1.1` under three topics."""
+    rows = [row("A1.1", "1.1.1", "A1.1 Ergonomics"),
+            row("B1.1", "1.1.1", "B1.1 User-centred design"),
+            row("C1.1", "1.1.1", "C1.1 Responsibility of the designer")]
+
+    out = flat.qualify_collisions([dict(r) for r in rows])
+
+    assert [r["statement_code_qualified"] for r in out] == [
+        "A1.1 1.1.1", "B1.1 1.1.1", "C1.1 1.1.1"]
+    assert len({r["statement_code_qualified"] for r in out}) == 3
+    assert [r["statement_code"] for r in out] == ["1.1.1"] * 3, "the code stays as printed"
+
+
+def test_a_unique_code_is_left_unqualified():
+    """Biology, ESS, CS and SEHS have zero collisions; KM ruled a qualifier there would be noise."""
+    rows = [row("A1.1", "1.1.1", "A1.1 Ergonomics"), row("A1.2", "1.2.1", "A1.2 Something else")]
+
+    out = flat.qualify_collisions([dict(r) for r in rows])
+
+    assert all(r["statement_code_qualified"] is None for r in out)
+
+
+def test_an_existing_inline_qualifier_is_never_overwritten():
+    """Chemistry prints `Structure 1.1.1` inline; its raw codes collide but its qualified ones do not."""
+    rows = [row("Structure 1.1", "1.1.1", "Structure 1.1 Introduction"),
+            row("Reactivity 1.1", "1.1.1", "Reactivity 1.1 Measuring")]
+    for r, qualified in zip(rows, ("Structure 1.1.1", "Reactivity 1.1.1")):
+        r["statement_code_qualified"] = qualified
+
+    out = flat.qualify_collisions([dict(r) for r in rows])
+
+    assert [r["statement_code_qualified"] for r in out] == ["Structure 1.1.1", "Reactivity 1.1.1"]
+
+
+def test_a_colliding_row_with_no_printed_topic_code_stays_unqualified():
+    """Nothing is invented: a heading that carries no code yields no qualifier."""
+    rows = [row("", "1.1.1", "Ergonomics"), row("", "1.1.1", "User-centred design")]
+
+    out = flat.qualify_collisions([dict(r) for r in rows])
+
+    assert all(r["statement_code_qualified"] is None for r in out)
+    assert flat.printed_topic_code({"printed_heading": "A1.1 Ergonomics"}) == "A1.1"
+    assert flat.printed_topic_code({"printed_heading": "Ergonomics"}) is None
+    assert flat.printed_topic_code({"topic_code": "B1.1"}) == "B1.1"
+
+
 def test_walks_units_topics_understandings_with_codes_and_levels():
     depth = {"subject": "biology", "units": [{"theme": "A", "topics": [
         {"code": "A1.1", "understandings": [

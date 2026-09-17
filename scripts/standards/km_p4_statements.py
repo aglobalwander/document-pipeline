@@ -182,7 +182,8 @@ def body_size(layer: list[dict]) -> float:
 
 
 def _text_of(rec: dict) -> str:
-    return (rec.get("text") or "").strip().lstrip("#* ").strip()
+    """The line as printed, without markdown furniture or the guides' trailing bullet separators."""
+    return (rec.get("text") or "").strip().lstrip("#* ").rstrip(" \u2022\u25aa\uf0b7\t").strip()
 
 
 CONTINUATION_TAIL = {"and", "or", "of", "the", "to", "in", "into", "for", "with", "a", "an", "as",

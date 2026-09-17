@@ -137,3 +137,29 @@ def test_a_statement_printed_under_two_topics_is_kept():
     other = {**row, "topic_code": "Reactivity 1.1"}
     kept, dropped = dedupe([dict(row), other])
     assert len(kept) == 2 and not dropped
+
+
+def test_km_slugs_map_back_to_the_subject_head_our_rows_carry():
+    """KM's hold list is keyed by slug; our statements.csv carries the subject_head."""
+    from km_unit_grain_spine import subject_head_for
+
+    assert subject_head_for("global_politics") == "Global Politics"
+    assert subject_head_for("mathematics_aa") == "Mathematics Analysis and Approaches"
+    assert subject_head_for("business_management") == "Business Management"
+
+
+def test_hold_text_matching_ignores_spacing_and_non_breaking_spaces():
+    """KM's hold rows and our statement text differ in whitespace only, so the join normalises it."""
+    from km_unit_grain_spine import norm
+
+    assert norm("Change is essential\u00a0for  businesses") == norm("Change is essential for businesses")
+    assert norm(None) == ""
+
+
+def test_trailing_bullet_separators_are_not_part_of_a_heading():
+    """Physics prints `D.4 Induction \u2022\u2022\u2022`; the bullets are separators, not the heading."""
+    from km_p4_statements import _text_of
+
+    assert _text_of({"text": "D.4 Induction \u2022\u2022\u2022"}) == "D.4 Induction"
+    assert _text_of({"text": "Structure 1.1\u2014Introduction to the particulate nature of matter"}) == (
+        "Structure 1.1\u2014Introduction to the particulate nature of matter")

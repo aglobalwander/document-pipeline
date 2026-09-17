@@ -26,7 +26,7 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
-## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P4 follow-ups returned — four hygiene fixes done; the context spine now covers all 22 subjects; three enumerations still to come]
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P4 follow-ups returned — four hygiene fixes done, Film and SEHS markers resolved, all 838 held rows answered by name; three enumerations still to come]
 ### Type: extraction return
 ### Priority: now
 
@@ -57,6 +57,18 @@ History 2028, Lang&Lit 2026, Literature 2026, Physics 2025, Psychology 2027). Th
 your `subject_area`, which is yours to correct. The **12 debris and 63 Maths rows are kept** unchanged,
 as you asked. P4's headline is unchanged: **8,252 rows located as printed, 0 verbatim failures**.
 
+**Film and SEHS now read a single marker, which they did not before.** You flagged both as carrying no
+marker we could read; that was our detector, not the documents, and the cause was twofold. SEHS prints
+`First assessment 2026` on **page 7**, outside the pages 1–3 window we scanned; Film prints
+`first assessment 2023` and `First assessment 2023` on pages 1–2, which we counted as two markers and
+held. The scan window is now eight pages and markers are compared case-insensitively. One rule needed
+adding at the same time, because the wider window found the *older* edition in a newer guide: **the
+earliest page carrying a marker governs** — `Biology (2028).pdf` prints `First assessment 2028` on
+pages 1–2 and a reference to `First assessment 2025` on page 7, and the 2028 edition is the guide. A
+hold is now recorded only when one page names different years. Every stored IB guide (28) resolves to a
+single marker. The twelve **NCAS At-a-Glance** tables from P2 still read `unresolved`, correctly: those
+are tables, not subject guides, and they print no edition marker — do not expect one there.
+
 **The spine (§2) — one extractor, run over everything.** `km_reference_context.py` reads each guide's
 own printed headings above each located row; no per-subject grammar was invented and no text is
 inferred. It now covers **all 22 subjects**, including your seven unit-grain documents, where the unit
@@ -76,6 +88,32 @@ Artifact: `data/output/km_requests/2026-09-17/p4_dp_statements/statements_arts.c
 `pdf_sha256, subject, reference_standard_id, printed_code, reference_text, printed_text, match, page,
 bbox, md_line, theme_context, topic_context, context_pages_back`.
 
+**And your 838 held rows, answered by name** — `dp_statements_hold.csv` is a list, not a count, so
+`scripts/standards/km_unit_grain_spine.py` walks it and returns the printed unit for each row:
+
+| document | held rows | joined | with a printed heading and topic context |
+|---|---:|---:|---:|
+| Global Politics (2026) | 402 | 402 | 402 |
+| Physics (2025) | 169 | 169 | 169 |
+| Business Management (2024) | 123 | 123 | 123 |
+| Mathematics AI (2021) | 50 | 50 | 50 |
+| Mathematics AA (2021) | 44 | 44 | 44 |
+| Visual Arts (2027) | 35 | 35 | 35 |
+| History (2028) | 15 | 15 | 15 |
+
+**838 of 838**, every one with the guide's printed heading above it and a printed topic context, and all
+838 contexts are distinct from the statement text — units, not echoes. Business Management's read
+`Unit 1: Introduction to business management`, Maths AA's `Topic 3— Geometry and trigonometry`,
+Physics' `A.1 Kinematics`. The section qualifier is empty for all seven, which is the evidence rather
+than a gap: those guides print no per-statement code, which is what makes the rows unit grain.
+Artifact: `data/output/km_requests/2026-09-17/p4_dp_statements/statements_unit_grain.csv` (+
+`unit_grain_summary.json`). The join is your slug + statement text against our own `statements.csv`
+rows — the artifact you measured the holds from. One fix worth recording in the spine's first pass: its
+heading rule took wrapped bold lines as headings, so Global Politics topics came out as prose
+fragments; it now prefers section-shaped headings and refuses a fragment (unclosed bracket, sentence
+left hanging on a connective, lowercase start), and fragment-like topics on the joined rows went
+**39 → 0**.
+
 **Still open from §2, and next:** the printed-unit enumerations for **Literature, Language and
 Literature and Music** (and Dance if its headings print as units) — the three subjects whose guides
 print a unit of their own (`AoE1`…`AoE3` with `AoE1-Q1`…`Q6`; `comp-explorectx` / `comp-experiment` /
@@ -85,6 +123,10 @@ print a unit of their own (`AoE1`…`AoE3` with `AoE1-Q1`…`Q6`; `comp-explorec
 
 - [ ] KM: acceptance check on the four fixes (subject slug, qualified code, printed heading, duplicates).
 - [ ] KM: rule on the located set's `section_qualifier` — keep it, or restrict it to the inline form.
+- [ ] KM: acceptance check on `statements_unit_grain.csv` — 838 rows, one per hold you named, each with
+      its printed heading and topic context. Rule on whether that unit is the shape you want keyed.
+- [ ] KM: note that the twelve NCAS At-a-Glance tables carry no edition marker by nature, so
+      `unresolved` is their correct state rather than a gap to fill.
 - [ ] pipeline-documents: the three printed-unit enumerations.
 
 Full text: this entry. Context: `docs/handoff/2026-09-17-km-answers-p4-open-questions.md`.

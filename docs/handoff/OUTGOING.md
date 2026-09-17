@@ -103,9 +103,11 @@ no model; page and crop per read region. `scripts/standards/km_row_reads.py` rea
 | NGSS | 6 | 1 | 0 | 0 | 0 | 0 |
 
 **Acceptance (`check_p3_reads.py`).** Every token of every text row is printed on that row's own
-region pages (presence: PASS), and all 580 referenced crops exist (PASS). The plan's original
-"contiguous in the word stream" rule was wrong for AP two-column pages and maths glyphs: it fails
-58 correct rows, so acceptance is token-presence plus the crop.
+region pages (presence: PASS), and all 580 referenced crops exist (PASS). Those 580 references
+resolve to **542 unique files**; the `crops/` directory holds 548, the extra 6 being superseded
+cross-read crops from the DP re-read the ACTFL-only restriction retired, so they are no longer
+referenced. The plan's original "contiguous in the word stream" rule was wrong for AP two-column
+pages and maths glyphs: it fails 58 correct rows, so acceptance is token-presence plus the crop.
 
 **What the documents showed**
 

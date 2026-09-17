@@ -19,6 +19,16 @@
   the OCR ceiling — the migration this change deliberately avoided — and is recorded
   rather than attempted. The `youtube-transcript-api` `<3.14` override stays as a
   second, independent guard (it is not, on its own, what blocks 3.14).
+
+### Added
+
+- Hermetic tests for the two P2/P3 scripts that had none, both runnable without the OneDrive
+  store: `tests/test_p3_row_reads.py` (21 tests) drives `check_p3_reads.check` with the page
+  readers patched, so the acceptance gate's PASS/FAIL contract — token presence, crop existence,
+  order-as-a-soft-check, non-text statuses, and the CLI's non-zero exit — is exercised without a
+  PDF; `tests/test_ncas_at_a_glance_extract.py` (25 tests) pins the NCAS printed-form rules
+  (inline codes kept raw, lettered and `2a`/dash item forms, the Roman-band and irregular-shape
+  flags, grade/process/band/furniture recognition). The suite is now 97 passed / 17 deselected.
 ## Unreleased - 2026-09-16
 
 ### Fixed

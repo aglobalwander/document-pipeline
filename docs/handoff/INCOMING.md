@@ -29,7 +29,7 @@ row nor an authorization to rule editions, canonize, or crosswalk.
 
 ---
 
-## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: accepted — P1 returned (Economics skeleton open); P2–P4 queued]
+## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: accepted — P1 (with the Economics skeleton addendum), P2 and P3 returned; P4 scoped, blocked on KM's two answers]
 ### Type: working contract + extraction requests
 ### Priority: now
 

@@ -4,6 +4,34 @@
 **For:** a DeepSeek-driven coding agent, with Scott or Claude reviewing at the end
 **Request:** `knowledge-management/docs/handoff/2026-09-17-km-to-pipeline-extraction-contract-and-requests.md`
 
+## Addendum — state after the P3 close (2026-09-17, written by the session that closed it)
+
+The plan body below is the handoff as written. Two things in it are now out of date:
+
+- **"Nothing below is committed" is no longer true.** The scripts, the edited sweep files and the
+  handoff logs are committed: `ae02b9d` (P1–P3 scripts and handoff plan), `e2ac36d` (P3 cross-read
+  restriction to ACTFL, acceptance checker, KM returns), then `273e2a0` (Python floor to 3.13) and
+  `6fec8e7` (ceiling-rationale correction).
+- **The P3 status counts in the "State at handoff" table are the pre-close numbers.** The returned
+  counts are `read 276, review 91, not_in_document 60, not_in_named_document 38,
+  absence_region_read 6, not_found 2`. The three DP rows that the ACTFL-only restriction recovered
+  moved from `not_in_named_document` into `review` (41 → 38 and 88 → 91).
+- **Task 1 is complete**, including the acceptance script and `p3_row_reads/SUMMARY.md`. Note that
+  the plan's proposed acceptance rule (contiguous in the word stream) was replaced: it fails 58
+  correct rows on AP two-column and maths pages, so acceptance is token-presence plus the crops, with
+  order reported as a soft check (83 rows).
+- **Task 2 (P4) is not started**: it waits on KM for the Hub's 9,272-statement export path and the
+  arts/languages "what counts as a statement" answer.
+- Both new scripts now have hermetic tests: `tests/test_p3_row_reads.py` (the acceptance gate's
+  PASS/FAIL contract, driven with the page readers patched) and
+  `tests/test_ncas_at_a_glance_extract.py` (the NCAS printed-form rules).
+
+One accounting detail for KM's acceptance check on P3: `reads.jsonl` references 580 crops across
+473 rows, resolving to **542 unique files, all present**; the `crops/` directory holds 548, the
+extra 6 being superseded cross-read crops for P3-0067, P3-0070 and P3-0076 from the DP re-read that
+the ACTFL-only restriction retired.
+
+---
 ## The principle that makes a cheap model safe here
 
 The model writes and fixes **local parsing code**. It never reads a PDF and types out what it

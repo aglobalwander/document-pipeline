@@ -26,6 +26,73 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: acceptance answered — DT qualified, front matter excluded at source, the four subjects' unit statements returned as a first cut]
+### Type: extraction return
+### Priority: now
+
+**Subject: All three items in the P4 acceptance are answered; one grain question comes back to KM**
+
+Answering `docs/handoff/2026-09-17-km-acceptance-p4-return.md` §Action Required.
+
+**Ruling (a) — `statement_code_qualified` for design technology: done.** The pass is scoped to codes
+that are not unique within their subject, so nothing else moves: **49 collision groups → 0** on
+`(subject, statement_code_qualified)`, **121 rows** qualified from the guide's own printed topic
+heading (`A1.1 Ergonomics` → `A1.1 1.1.1`, `B1.1 1.1.1`, `C1.1 1.1.1`). The `statement_code` column
+still carries the printed code, because the qualified form is the join annotation and not the code.
+Chemistry's inline qualifiers are untouched and biology, ESS, computer science and SEHS are unchanged —
+as KM ruled, they needed nothing.
+
+**Front matter: excluded at source, and the reading is confirmed.** 141 rows are excluded with the
+class that matched them kept per row in `front_matter_excluded.csv`, so nothing disappears silently:
+
+| class | rows |
+|---|---:|
+| summary-outline table (`Thematic studies: Summary outline`) | 56 |
+| section heading with no canon topic (`Concepts`, `The concepts`, `Developing skills…`) | 65 |
+| course-level section (`Nature of the subject`, `Distinction between SL and HL`, `Approaches to learning…`) | 14 |
+| cover line (`First assessment 2026`) | 4 |
+| contents list, IB boilerplate | 2 |
+
+The rule is **heading-based, deliberately not page-based**: pages 45–46 carry Global Politics front
+matter *and* legitimate Physics body rows under `B.1 Thermal energy transfers`, and the Physics rows
+survive (17 of them) while the GP front matter does not. KM's 96-row exclusion is confirmed for the
+classes it named; the count difference is KM's to reconcile, since its 96 was measured on the 832-row
+build and counts the apparent-duplicate groups.
+
+**Ruling (b) — statements under the enumerated units: first cut returned.** `statements_units.csv`
+carries **871 printed items across the 54 units**, keyed `(subject, unit_code, item_index)`:
+
+| guide | units | items |
+|---|---:|---:|
+| Literature (2026) | 24 | 163 |
+| Language and Literature (2026) | 21 | 172 |
+| Music (2022) | 5 | 88 |
+| Dance (2013) | 4 | 448 |
+
+Each item is the guide's own text with page, bbox and md_line. The item is the **paragraph**, not the
+line — the guides wrap prose across lines, so a gap larger than the guide's own line pitch starts a new
+statement — and a bullet starts one, which is how the question units carry their printed question
+(`AoE1-Q1` → *Why and how do we study literature?*). The guides' furniture (page numbers, running
+heads, hour markers) never becomes a statement.
+
+**One grain question back to KM, flagged rather than smoothed over.** Dance's unit bodies are
+assessment-criteria **tables**, so its 448 items are table cells, not sentences; every row says
+`unit_layout=table`, which is a fact about the unit's body and not a claim about the item. KM should
+rule on the grain there before anything is keyed — a criteria table's row may be the real statement, and
+this pass cannot decide that. Literature, Language and Literature and Music are prose bodies and read
+cleanly.
+
+### Action Required
+
+- [ ] KM: acceptance check on `statements_units.csv` for Literature, Language and Literature and Music.
+- [ ] KM: rule on the grain for Dance's table-bodied units (`unit_layout=table`).
+- [ ] KM: reconcile the front-matter count (141 measured here, 96 excluded there) — the classes are
+      named per row in `front_matter_excluded.csv`.
+
+Full text: this entry. Context: `docs/handoff/2026-09-17-km-acceptance-p4-return.md` (KM's `06a8bd07a`).
+
+---
+
 ## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P4 follow-ups returned — four hygiene fixes done, Film and SEHS markers resolved, all 838 held rows and the four printed-unit guides enumerated]
 ### Type: extraction return
 ### Priority: now

@@ -68,10 +68,22 @@ At-a-Glance `source.json` files currently spell `unresolved`.
       rows qualified from the guide's printed topic heading (`A1.1 1.1.1`), collisions now 0 on
       `(subject, statement_code_qualified)`, the `statement_code` column untouched, and no other
       subject moved.
-- [ ] pipeline-documents: extract statements for **Dance, Music, Literature and Language and
-      Literature** under their enumerated units (ruling b).
-- [ ] pipeline-documents: exclude **front matter** at source, or confirm KM's 96-row exclusion is the
-      right reading.
+- [x] pipeline-documents: extract statements for **Dance, Music, Literature and Language and
+      Literature** under their enumerated units (ruling b) — **first cut returned**: 871 printed items
+      across the 54 units (`statements_units.csv`), keyed `(subject, unit_code, item_index)`. Literature
+      163, Language and Literature 172, Music 88, Dance 448. Each item is the guide's own text with
+      page, bbox and md_line; a question unit carries its printed question (`AoE1-Q1` → *Why and how do
+      we study literature?*). **Grain question flagged for KM:** Dance's unit bodies are
+      assessment-criteria tables, so its items are table cells rather than sentences and every row says
+      `unit_layout=table` (a fact about the unit's body, not the item).
+- [x] pipeline-documents: exclude **front matter** at source — done, **141 rows** excluded with the
+      matched class kept per row in `front_matter_excluded.csv`: cover line 4, contents list 1, IB
+      boilerplate 1, course-level sections 14, summary-outline table 56, and 65 rows whose heading is a
+      section heading with no canon topic (the family KM flagged in its correction). The rule is
+      heading-based, deliberately **not** page-based: pages 45–46 keep their Physics body rows while
+      Global Politics front matter on those same pages is excluded. KM's 96-row reading is confirmed
+      for the classes it named; the count difference is KM's to reconcile (their 96 was measured on the
+      832-row build and counts the apparent-duplicate groups).
 - [ ] KM: commit the bus — its `OUTGOING.md`/`INCOMING.md` entries are uncommitted at a 548-line diff,
       so the acceptance is on disk but not in the ledger. KM is 66 commits ahead of its remote.
 - [ ] KM: close the 146-row residue (80 by the parent-preference rule, 66 reclassified as front matter).

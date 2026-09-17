@@ -54,6 +54,17 @@
   printed topic heading (`A1.1 1.1.1`), collisions fall to 0 on `(subject, statement_code_qualified)`,
   and the pass is scoped to colliding codes so the four subjects KM measured at zero collisions are
   untouched. `statement_code` itself stays exactly as printed.
+- Front matter is excluded **at source** (KM's acceptance §3): 141 rows whose printed heading is a
+  course-level section, the cover line, the contents list or the contents-style
+  `Thematic studies: Summary outline`, each with the matched class kept in `front_matter_excluded.csv`
+  so the reading stays auditable. The rule is heading-based, not page-based — pages 45–46 keep their
+  Physics body rows while Global Politics front matter on the same pages is excluded.
+- Statements are extracted **under** the four enumerated subjects' units (KM's ruling b):
+  `scripts/standards/km_unit_statements.py` returns **871 printed items across 54 units**, keyed
+  `(subject, unit_code, item_index)` — Literature 163, Language and Literature 172, Music 88, Dance 448.
+  The item is the paragraph (a gap larger than the guide's line pitch starts a new one) or a bulleted
+  item, so a question unit carries its printed question. `unit_layout` records when a unit's body is a
+  criteria **table** — Dance's are, and its cells are flagged for KM's grain ruling rather than keyed.
 
 ### Added
 

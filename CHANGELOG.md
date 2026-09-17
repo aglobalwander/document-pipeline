@@ -34,6 +34,14 @@
   Biology (2028) prints `First assessment 2028` on pages 1-2 and a 2025 reference on page 7. Every
   stored IB guide now resolves to a single marker; Film reads `first assessment 2023`, SEHS
   `First assessment 2026`. A hold is recorded only when one page names different years.
+- The 838 unit-grain holds KM named now carry their statement unit. The join is by **KM subject slug
+  + statement text against our own `statements.csv` rows** — the holds were measured from that
+  artifact, not from the reference rows in `statements_arts.csv` — and it resolves **838 of 838**,
+  every one with the guide's printed heading and a printed topic context (`Unit 1: Introduction to
+  business management`, `Topic 3— Geometry and trigonometry`, `A.1 Kinematics`). The earlier
+  "399 unmatched" was a join against the wrong artifact, not a difference in KM's semantics. New
+  `scripts/standards/km_unit_grain_spine.py` writes `statements_unit_grain.csv` +
+  `unit_grain_summary.json`.
 
 ### Added
 

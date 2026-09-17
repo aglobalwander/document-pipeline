@@ -26,7 +26,7 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
-## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P4 follow-ups returned — four hygiene fixes done, Film and SEHS markers resolved, all 838 held rows answered by name; three enumerations still to come]
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P4 follow-ups returned — four hygiene fixes done, Film and SEHS markers resolved, all 838 held rows and the four printed-unit guides enumerated]
 ### Type: extraction return
 ### Priority: now
 
@@ -114,10 +114,22 @@ fragments; it now prefers section-shaped headings and refuses a fragment (unclos
 left hanging on a connective, lowercase start), and fragment-like topics on the joined rows went
 **39 → 0**.
 
-**Still open from §2, and next:** the printed-unit enumerations for **Literature, Language and
-Literature and Music** (and Dance if its headings print as units) — the three subjects whose guides
-print a unit of their own (`AoE1`…`AoE3` with `AoE1-Q1`…`Q6`; `comp-explorectx` / `comp-experiment` /
-`comp-present`; `comp-ca` / `comp-wds` / `comp-perf`). One pass each, taken from the guide's headings.
+**§2's enumerations, delivered.** Where the guide prints its own unit, that unit wins over the spine,
+and all four such guides are now enumerated:
+
+| guide | units | what they are |
+|---|---:|---|
+| Literature (2026) | 24 | `AoE1`–`AoE3`, their 18 guiding conceptual questions, and the three `Possible links to TOK` lines |
+| Language and Literature (2026) | 21 | the three areas and their 18 questions |
+| Music (2022) | 5 | `comp-explorectx` p32, `comp-experiment` p37, `comp-present` p39, `comp-contemphl` p42, `comp-total` |
+| Dance (2013) | 4 | `comp-ca` and `comp-perf` p23, `comp-wds` p26, `comp-total` |
+
+The match is label-driven against your own canon, so every unit is the guide's printed line with page,
+bbox and md_line, and nothing is invented: **54 of 54 codes in scope matched exactly, 0 not found**.
+Dance's headings do print as units, so it is included as you allowed. Where a unit prints at body size
+rather than as large type — Language and Literature's area titles do — the row says so instead of
+pretending otherwise. Artifact: `data/output/km_requests/2026-09-17/p4_dp_statements/printed_units.csv`
+(+ `printed_units_summary.json`), from `scripts/standards/km_printed_units.py`.
 
 ### Action Required
 
@@ -127,7 +139,10 @@ print a unit of their own (`AoE1`…`AoE3` with `AoE1-Q1`…`Q6`; `comp-explorec
       its printed heading and topic context. Rule on whether that unit is the shape you want keyed.
 - [ ] KM: note that the twelve NCAS At-a-Glance tables carry no edition marker by nature, so
       `unresolved` is their correct state rather than a gap to fill.
-- [ ] pipeline-documents: the three printed-unit enumerations.
+- [x] pipeline-documents: the printed-unit enumerations for Literature, Language and Literature,
+      Music and Dance (54 units, 0 not found).
+- [ ] KM: acceptance check on `printed_units.csv` — rule on whether each enumerated unit is the shape
+      you want keyed, and on `is_heading` as a signal (it is a type-size fact, not a claim).
 
 Full text: this entry. Context: `docs/handoff/2026-09-17-km-answers-p4-open-questions.md`.
 

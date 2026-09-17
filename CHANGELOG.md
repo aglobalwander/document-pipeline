@@ -42,6 +42,12 @@
   "399 unmatched" was a join against the wrong artifact, not a difference in KM's semantics. New
   `scripts/standards/km_unit_grain_spine.py` writes `statements_unit_grain.csv` +
   `unit_grain_summary.json`.
+- §2's printed-unit enumerations are delivered, so the guides that print their own unit no longer rely
+  on the spine. `scripts/standards/km_printed_units.py` matches each canon label in scope to the
+  guide's own printed line: **Literature 24 units** (AoE1–AoE3, their 18 guiding conceptual questions
+  and three TOK lines), **Language and Literature 21**, **Music 5** component headings, **Dance 4**.
+  **54 of 54 codes matched exactly, 0 not found**; each row carries page, bbox, md_line and an
+  `is_heading` type-size fact. Writes `printed_units.csv` + `printed_units_summary.json`.
 
 ### Added
 

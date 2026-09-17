@@ -40,6 +40,11 @@ REQUEST = "p4_dp_statements"
 PAGE_NUMBER = re.compile(r"^\d{1,3}$")
 RUNNING_HEAD = re.compile(r"\bguide\b|\bFirst assessment \d{4}\b|^\d{4}$", re.I)
 BULLET = re.compile(r"^[\u2022\u25aa\uf0b7\u25cf\u25cb\-–—]\s*$|^[\u2022\u25aa\uf0b7\u25cf\u25cb]\s+")
+# A bare list marker prints as its own text run (`1.`, `2.`) before its item. KM asked for trailing
+# list numbers to be stripped; doing that with a text pattern would corrupt the eight items that
+# legitimately end in a number (`… are illustrated in figure 2.`), so the marker is treated
+# structurally instead: it starts the next item and contributes no text of its own.
+LIST_MARKER = re.compile(r"^\d{1,2}[.)]$|^\d{1,2}[.)]\s+\S")
 FIELDS = ["subject", "pdf_sha256", "unit_code", "unit_label", "item_index", "statement_text",
           "unit_layout", "page", "bbox", "md_line", "source_line"]
 GUIDES = {"Dance": "Dance (2013).pdf", "Music": "Music (2022).pdf",
@@ -93,6 +98,12 @@ def paragraphs(records: list[dict], line_pitch: float) -> list[dict]:
             continue
         text = _text_of(rec)
         if is_section_heading(rec) or is_large_heading(rec, 9.5):
+            current = None
+            continue
+        if LIST_MARKER.match(text):
+            # The marker belongs to the item that follows it, never to the one before.
+            if current:
+                items.append(current)
             current = None
             continue
         starts = BULLET.match(text) is not None
@@ -157,10 +168,13 @@ def main() -> None:
         for i, unit in enumerate(mine):
             start = int(unit["md_line"])
             next_unit = int(mine[i + 1]["md_line"]) if i + 1 < len(mine) else last_line
-            # A unit's body ends where the next *section-shaped* heading begins (the strict rule, so a
-            # sub-heading inside the unit does not cut it) or at the next unit, whichever comes first.
+            # A unit's extent ends at the **next heading of any kind** — KM's instruction — or at the
+            # next enumerated unit, whichever comes first. Terminating only at section-shaped headings
+            # let a unit run into following sections; terminating at any heading is what KM asked for,
+            # and the next-unit bound keeps question units from swallowing the questions after them.
             boundary = next((r["md_line"] for r in layer
-                             if r["md_line"] > start + 1 and is_section_heading(r)), None)
+                             if r["md_line"] > start
+                             and (is_section_heading(r) or is_large_heading(r, 9.5))), None)
             end = min(next_unit, boundary) if boundary else next_unit
             # The span includes the unit's own printed line: for the question units (`AoE1-Q1`) that
             # line *is* the statement, and it is the guide's printed text for the unit either way. A

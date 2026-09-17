@@ -89,6 +89,27 @@ cleanly.
 - [ ] KM: reconcile the front-matter count (141 measured here, 96 excluded there) — the classes are
       named per row in `front_matter_excluded.csv`.
 
+**Follow-ups applied (second pass, same day).** Unit extents now terminate at the next heading of any
+kind, and the four subjects' statements fall from 871 over-captured items to **62** at the right grain
+(Music's `comp-explorectx` is its own paragraph; a question unit carries its printed question); note
+that Dance's criteria tables now sit under their own sub-headings and are no longer inside a unit span.
+Trailing list numbers are handled **structurally** — a bare marker (`1.`, `2.`) starts the next item
+rather than being glued to the previous one, so 0 statements end in a marker, and no text strip was
+applied because 8 items legitimately end in a number (`… illustrated in figure 2.`). `printed_units.csv`
+now enumerates **Visual Arts 6/6** and **Psychology 44/45**, 104 of 105 codes in scope, with the single
+`not_found` reported (`content-biological_approach-t1` *"Animal research/animal models"* does not print).
+
+**And one instruction I cannot confirm: `rev 12-1-16` is not the Music basis.** KM's own
+`research/standards_frameworks/rule_ncas_music_edition.py` (2026-09-14) rules the opposite — **keep
+`Music at a Glance.pdf`, drop `Music at a Glance rev 12-1-16.pdf`**: the rev copy lost 20 well-formed
+codes (`MU:Cn10.1.1` … `.8` and siblings), holds only two truncated stubs (`MU:Cn10.`, `MU:Cn11.`), and
+text is identical on **all 214 shared codes**, so the revision changed nothing and the choice was
+extraction soundness, not currency. Our own document check agrees the two differ
+(`Music at a Glance.pdf` prints `MU:Cn10.1.x`, rev prints `MU:Cn10.0.x`). Our earlier "the canon cites
+the rev copy" note is superseded by that ruling, and if KM has since re-ruled the other way it needs to
+supersede its own file — I will not confirm from a filename what the documents and KM's own ruling say
+otherwise.
+
 Full text: this entry. Context: `docs/handoff/2026-09-17-km-acceptance-p4-return.md` (KM's `06a8bd07a`).
 
 ---

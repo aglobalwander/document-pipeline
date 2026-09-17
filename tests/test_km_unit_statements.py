@@ -70,6 +70,28 @@ def test_side_by_side_cells_mark_the_unit_body_as_a_table():
     assert all(item["unit_layout"] == "table" for item in paragraphs(layer, PITCH))
 
 
+def test_a_bare_list_marker_starts_the_next_item_and_is_not_kept():
+    """KM asked for trailing list numbers to be stripped; the markers print as their own runs."""
+    layer = [rec("Why and how do we study literature?", 1, y=100.0),
+             rec("2.", 2, y=120.0), rec("How are we affected by literary texts?", 3, y=133.0)]
+
+    items = paragraphs(layer, PITCH)
+
+    assert [i["text"] for i in items] == [
+        "Why and how do we study literature?", "How are we affected by literary texts?"]
+
+
+def test_a_sentence_ending_in_a_number_is_left_intact():
+    """Eight items legitimately end in a number; a text strip would corrupt them."""
+    layer = [rec("What was your reason for choosing this work?", 1, y=100.0),
+             rec("The composition and analysis component at SL are illustrated in figure 2.",
+                 2, y=160.0)]
+
+    items = paragraphs(layer, PITCH)
+
+    assert items[-1]["text"].endswith("illustrated in figure 2.")
+
+
 def test_a_wrapped_paragraph_is_not_a_table():
     layer = [rec(f"line {n} of one wrapped paragraph", n, y=100.0 + n * 13.0) for n in range(8)]
 

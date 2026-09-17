@@ -62,6 +62,30 @@ KM also recorded that **no edition marker is a legitimate state** (`no_marker_pr
 a marker it failed to read (`unresolved`) or a review hold — which is the vocabulary our twelve NCAS
 At-a-Glance `source.json` files currently spell `unresolved`.
 
+**Follow-ups applied (second pass, same day)** — KM asked for four things after the acceptance:
+
+1. **Unit extents now terminate at the next heading of any kind** (or the next enumerated unit, whichever
+   is first), as instructed. The four subjects' statements fall from 871 over-captured items to **62**,
+   and the grain reads right: Music's `comp-explorectx` is its own paragraph, Literature's question units
+   carry their printed question. Note the side effect: with extents cut at headings, Dance's
+   assessment-criteria tables sit under their own sub-headings and are no longer captured by a unit span.
+2. **Trailing list numbers are handled structurally, not by stripping text.** The markers print as their
+   own runs (`1.`, `2.`), so a marker now starts the next item instead of being glued to the previous
+   one: **0** statements end in a marker. A text strip would have corrupted the **8** items that
+   legitimately end in a number (`… are illustrated in figure 2.`), so none was applied.
+3. **Visual Arts and Psychology are enumerated**: `printed_units.csv` now covers **visual_arts 6/6** and
+   **psychology 44/45** — 104 of 105 codes in scope. The one `not_found` is
+   `content-biological_approach-t1` *"Animal research/animal models"*, which the guide does not print;
+   it is reported rather than invented.
+4. **`rev 12-1-16` is not the Music basis, and this cannot be confirmed.** KM's own
+   `research/standards_frameworks/rule_ncas_music_edition.py` (2026-09-14) rules the opposite: **KEEP
+   `Music at a Glance.pdf`, DROP `Music at a Glance rev 12-1-16.pdf`** — the rev copy lost 20
+   well-formed codes (`MU:Cn10.1.1` … `MU:Cn10.1.8` and siblings) and holds only two truncated stubs
+   (`MU:Cn10.`, `MU:Cn11.`), with text identical on **all 214 shared codes**, so the revision changed
+   nothing and the choice was extraction soundness, not currency. Our own document check agrees the two
+   differ (`Music at a Glance.pdf` prints `MU:Cn10.1.x`, rev prints `MU:Cn10.0.x`). Our earlier "the
+   canon cites the rev copy (234 rows)" note is superseded by that ruling.
+
 ### Action Required
 
 - [x] pipeline-documents: `statement_code_qualified` for **design technology** (49 groups) — done: 121
@@ -69,13 +93,11 @@ At-a-Glance `source.json` files currently spell `unresolved`.
       `(subject, statement_code_qualified)`, the `statement_code` column untouched, and no other
       subject moved.
 - [x] pipeline-documents: extract statements for **Dance, Music, Literature and Language and
-      Literature** under their enumerated units (ruling b) — **first cut returned**: 871 printed items
-      across the 54 units (`statements_units.csv`), keyed `(subject, unit_code, item_index)`. Literature
-      163, Language and Literature 172, Music 88, Dance 448. Each item is the guide's own text with
-      page, bbox and md_line; a question unit carries its printed question (`AoE1-Q1` → *Why and how do
-      we study literature?*). **Grain question flagged for KM:** Dance's unit bodies are
-      assessment-criteria tables, so its items are table cells rather than sentences and every row says
-      `unit_layout=table` (a fact about the unit's body, not the item).
+      Literature** under their enumerated units (ruling b) — returned, then re-run under the
+      next-heading extent rule: **62 printed items** across the 54 units, keyed
+      `(subject, unit_code, item_index)`. Each item is the guide's own text with page, bbox and
+      md_line; a question unit carries its printed question (`AoE1-Q1` → *Why and how do we study
+      literature?*).
 - [x] pipeline-documents: exclude **front matter** at source — done, **141 rows** excluded with the
       matched class kept per row in `front_matter_excluded.csv`: cover line 4, contents list 1, IB
       boilerplate 1, course-level sections 14, summary-outline table 56, and 65 rows whose heading is a

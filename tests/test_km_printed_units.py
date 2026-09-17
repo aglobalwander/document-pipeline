@@ -50,7 +50,11 @@ def test_a_label_that_does_not_print_is_reported_not_invented():
 
 
 def test_scope_covers_the_subjects_km_named_and_nothing_else():
-    """KM's §2 scope: the two Literature guides' areas of exploration, Music and Dance components."""
-    assert set(SCOPE) == {"literature", "language_and_literature", "music", "dance"}
+    """KM's scope: the two Literature guides' areas of exploration, Music and Dance components, then
+    Visual Arts and Psychology — the two subjects still without a printed basis."""
+    assert set(SCOPE) == {"literature", "language_and_literature", "music", "dance",
+                          "visual_arts", "psychology"}
     assert SCOPE["music"].startswith("^comp-") and SCOPE["dance"].startswith("^comp-")
     assert "AoE" in SCOPE["literature"] and "AoE" in SCOPE["language_and_literature"]
+    assert "CREATE" in SCOPE["visual_arts"]
+    assert SCOPE["psychology"].startswith("^(branch-|concept-|content-)")

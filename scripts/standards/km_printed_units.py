@@ -42,10 +42,16 @@ SCOPE = {
     "language_and_literature": r"^AoE\d+(-Q\d+|-TOK)?$",
     "music": r"^comp-",
     "dance": r"^comp-",
+    # KM asked for the two subjects still without a printed basis. Visual arts prints its three
+    # syllabus areas and its two framing sections; psychology prints its four branches, its six
+    # concepts and its four content areas — all of them canon codes standing on printed headings.
+    "visual_arts": r"^(CREATE|CONNECT|COMMUNICATE|INTEGRATE|INQUIRY|STUDIO)$",
+    "psychology": r"^(branch-|concept-|content-)",
 }
 # code prefix -> KM subject slug, for the guide file that holds it.
 SLUG_OF = {"literature": "Literature", "language_and_literature": "Language and Literature",
-           "music": "Music", "dance": "Dance"}
+           "music": "Music", "dance": "Dance", "visual_arts": "Visual Arts",
+           "psychology": "Psychology"}
 FIELDS = ["subject", "pdf_sha256", "code", "label", "parent_code", "printed_text", "match",
           "is_heading", "page", "bbox", "md_line"]
 

@@ -97,6 +97,27 @@ read attempted:
 | **Dance criteria text (20 rows)** | **attempted; does not yet reconcile.** `scripts/standards/km_dance_criteria.py` reads every page printing an assessment-criteria marker (18, 19, 36, 39, 42, 44, 50, 63; 320 grouped rows). The table is **three columns** — descriptor, component, assessment type — and grouping records by baseline merges the descriptor with the component (`'Describe the similarities and Dance investigation'`). By that rule p18–19 hold **11** descriptor rows, not 20. Before this becomes the artifact KM wants it needs the pages meant, whether the descriptor must be split from the component name, and the acceptance check. |
 | whatever the sweep names | a page read is KM's by definition; anything that is a re-read comes back in the contract's shape. |
 
+**Measured readiness of the NCAS returns (2,284 cell items, 12 documents)** — so KM's acceptance checks
+can be written against what exists:
+
+| field | populated | what it gives a read |
+|---|---:|---|
+| `anchor_standard` | **2,284 / 2,284** | the anchor's **prose title** (`Anchor Standard 1: Generate and conceptualize artistic ideas and work.`) — **not** a coded anchor identity |
+| `column_code_printed` | 2,043 / 2,284 (89%) | the full printed code including its anchor portion (`TH:Cr1.1.PK.`) |
+| `column_header` | **2,284 / 2,284** | the band/column as printed (`PreK`, `K`, `1`…`8`, `HS Proficient`, `HS Accomplished`) |
+| `page` + `bbox` + `pdf_sha256` | **2,284 / 2,284** | full source identity per row |
+| `inline_code` / `letter` | 419 / 1,321 | irregular printed forms, and the lettered sub-item |
+| `artistic_process` / `process_component` | 1,894 / 1,902 | process and component context |
+
+For the **115-row empty-code group** the publisher's anchor code is therefore recoverable: it is
+`column_code_printed` minus the **printed band suffix** (`TH:Cr1.1.PK.` → `TH:Cr1.1`), and the
+band→suffix mapping is learnable from the rows themselves because `column_header` prints the band
+(`PreK`, `K`, `II`…) beside it. That is a *derivation* and KM owns the code shapes, so it must come back
+labelled as one, never as a printed code. Theatre's band read is complete the same way — **298 of 298**
+rows carry both `column_code_printed` and `column_header`, the substrate for the 137 derived scales. The
+**241 rows (10.6%)** without `column_code_printed` are the quantified gap that may need a re-read;
+whether they are the same population as KM's 115 is a hypothesis to check, not a claim.
+
 ### Action Required
 
 - [x] pipeline-documents: `statement_code_qualified` for **design technology** (49 groups) — done: 121

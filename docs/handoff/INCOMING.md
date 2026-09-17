@@ -86,6 +86,17 @@ At-a-Glance `source.json` files currently spell `unresolved`.
    differ (`Music at a Glance.pdf` prints `MU:Cn10.1.x`, rev prints `MU:Cn10.0.x`). Our earlier "the
    canon cites the rev copy (234 rows)" note is superseded by that ruling.
 
+**Pipeline reads in progress (the four KM cannot make).** Readiness check first, then the one bounded
+read attempted:
+
+| read | state |
+|---|---|
+| **NCAS 115-row empty-code group** | pages already on disk — the P2 request read 12 NCAS documents (`cells.jsonl` for Theatre, Dance, both Visual Arts, all six Music, two Media Arts). Ready; needs KM's row list (which 115) plus the acceptance check. Anchor rows take **the publisher's** anchor code or a documented `anchor_row_id`; none will be invented. |
+| **NCAS 315 residuals** | pages already on disk for the same 12 documents. Ready; needs KM's row list. |
+| **Theatre 137 derived scales** | `Theatre at a Glance.pdf` is already read (`09c58eb04e73…`). Ready; needs KM's row list and whether the scale is wanted per code or per row. |
+| **Dance criteria text (20 rows)** | **attempted; does not yet reconcile.** `scripts/standards/km_dance_criteria.py` reads every page printing an assessment-criteria marker (18, 19, 36, 39, 42, 44, 50, 63; 320 grouped rows). The table is **three columns** — descriptor, component, assessment type — and grouping records by baseline merges the descriptor with the component (`'Describe the similarities and Dance investigation'`). By that rule p18–19 hold **11** descriptor rows, not 20. Before this becomes the artifact KM wants it needs the pages meant, whether the descriptor must be split from the component name, and the acceptance check. |
+| whatever the sweep names | a page read is KM's by definition; anything that is a re-read comes back in the contract's shape. |
+
 ### Action Required
 
 - [x] pipeline-documents: `statement_code_qualified` for **design technology** (49 groups) — done: 121

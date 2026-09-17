@@ -18,6 +18,7 @@ Usage:
 Outputs: data/output/ib_native/<subject>/skeleton.json + data/output/ib_native/SWEEP_REPORT.md
 """
 import argparse
+from datetime import date
 import json
 import pathlib
 import re
@@ -240,7 +241,7 @@ def main():
     editions = json.load(open(args.editions))["subjects"]
     only = set(filter(None, args.only.split(",")))
 
-    report = ["# DP brief skeleton sweep — coverage report (2026-06-10)", "",
+    report = [f"# DP brief skeleton sweep — coverage report ({date.today().isoformat()})", "",
               "| subject | family | ed. | aims | concepts | AOs | components | curric | note |",
               "|---|---|---|---|---|---|---|---|---|"]
     for slug, meta in editions.items():
@@ -248,9 +249,6 @@ def main():
             continue
         if not meta["briefs"]:
             report.append(f"| {slug} | {meta['family']} | {meta['edition']} | — | — | — | — | — | NO BRIEF: {meta.get('note','')} |")
-            continue
-        if slug == "economics":
-            report.append(f"| economics | individuals_societies | 2022 | done | done | done | done | done | PILOT (full skeleton+depth in Hub) |")
             continue
         sk = sweep_subject(slug, meta)
         out = OUT / slug / "skeleton.json"

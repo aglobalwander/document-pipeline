@@ -29,7 +29,47 @@ row nor an authorization to rule editions, canonize, or crosswalk.
 
 ---
 
-## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-16] [STATUS: open — accepted, blocked on source PDFs]
+## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: accepted — P1 returned (Economics skeleton open); P2–P4 queued]
+### Type: working contract + extraction requests
+### Priority: now
+
+**Subject: Read sources by sha256 from the one OneDrive store; four extraction requests (IB
+guides, NCAS tables, 473 row reads, DP statements)**
+
+Scott approved pipeline-documents as the PDF, OCR and vision specialist, with one OneDrive
+store for source documents: `_Standards Frameworks/_curriculum_ontology_sources/`. It holds
+108 PDFs, indexed by `MANIFEST.csv` (sha256).
+
+- **Contract.** KM names the document by sha256, the pages, the artifact wanted and its
+  acceptance check. You return artifacts under
+  `data/output/km_requests/2026-09-17/<request>/<sha>/`, each with a source block (sha, file,
+  page, bbox, method, edition marker). Extractions are evidence, not canon.
+- **P1.** Economics (2024) `d1a7bcb5…`, Visual Arts (2027) `3ff05912…` and ToK (2022)
+  `096f0b28…` are in the store.
+  - Briefs are not needed.
+  - For ToK, extract what the guide prints: core theme, optional themes, knowledge questions,
+    AOs.
+- **P2.** NCAS At a Glance tables, 12 documents: printed codes, lettered sub-items, headers,
+  page, bbox.
+- **P3.** 473 row reads: AP 318, ACTFL 40, DP 39, WIDA 37, GOLD 32, NGSS 7. Printed text,
+  page and crop per row.
+- **P4.** DP statements under each topic, with level, and the printed AOs, from 23 guides.
+
+Request lists: `knowledge-management/research/standards_frameworks/pipeline_requests_2026-09-17/`
+
+### Action Required
+
+- [x] pipeline-documents: P1 (returned 2026-09-17; Economics guide-based skeleton still open)
+- [ ] pipeline-documents: P2
+- [ ] pipeline-documents: P3
+- [ ] pipeline-documents: P4
+- [ ] KM: acceptance check on each return
+
+Full text: `knowledge-management/docs/handoff/2026-09-17-km-to-pipeline-extraction-contract-and-requests.md`
+
+---
+
+## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-16] [STATUS: superseded by the 2026-09-17 entry — sources now read from the store]
 ### Type: extraction-re-run
 ### Priority: next-session
 

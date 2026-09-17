@@ -47,6 +47,19 @@ This directory contains scripts for extracting and processing educational standa
 - Leaves missing or ambiguous source-edition labels in explicit review states
 - Performs no network access; callers provide a complete downloaded directory
 
+#### `km_text_layer.py`
+- Reads a KM-requested source by sha256 from the OneDrive source store (`MANIFEST.csv`) and
+  refuses bytes whose hash does not match
+- Writes `guide.md` (page-joined markdown in the shape the `ib_guide_extract*.py` grammars
+  expect), `text_layer.jsonl` (page, bbox, fonts per line) and `source.json` (sha, edition
+  markers, method) under `data/output/km_requests/<date>/<request>/<sha256>/`
+- PDF text layer via PyMuPDF only: no OCR, no model. On Economics 2022 it reproduces the old guide
+  markdown closely enough that `ib_guide_extract.py` returns an identical `depth.json`
+
+#### `ib_tok_extract.py`, `ib_va_extract.py`
+- Guide-shaped extractors for DP Theory of Knowledge (2022) and Visual Arts (2027), which print
+  no statement codes; read `text_layer.jsonl` so every item carries page and bbox
+
 #### `map_ncas_to_drupal_hierarchy.py`
 - Maps extracted NCAS standards to Drupal's 4-level hierarchy
 - Creates hierarchy entries and standard entries with proper taxonomy references

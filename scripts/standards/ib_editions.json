@@ -5,11 +5,11 @@
     "business_management":   {"family": "individuals_societies", "edition": 2024, "briefs": ["business_management_hl_2024.md", "business_management_sl_2024.md"], "guide": "business_management_2024.md", "status": "current"},
     "chemistry":             {"family": "sciences",  "edition": 2025, "briefs": ["chemistry_2025.md"], "guide": "chemistry_2025.md", "status": "current"},
     "computer_science":      {"family": "sciences",  "edition": 2027, "briefs": ["computer_science_2027.md"], "guide": "computer_science_2027.md", "status": "current_forward"},
-    "dance":                 {"family": "arts",      "edition": 2015, "briefs": ["dance_hl.md", "dance_sl.md"], "guide": "dance_2013.md", "status": "in_force_legacy", "note": "2013 guide (FA 2015) still in force; no successor published on disk"},
+    "dance":                 {"family": "arts",      "edition": 2013, "briefs": ["dance_hl.md", "dance_sl.md"], "guide": "dance_2013.md", "status": "in_force_legacy", "note": "guide prints First examinations 2013 (dance_2013.md L2); briefs print First assessments 2014; edition follows the guide"},
     "design_technology":     {"family": "sciences",  "edition": 2027, "briefs": [], "guide": "design_technology_2027.md", "status": "current_forward", "note": "no brief on disk — skeleton must derive from guide in the depth wave"},
-    "economics":             {"family": "individuals_societies", "edition": 2022, "briefs": ["economics_hl_2022.md", "economics_sl_2022.md"], "guide": "economics_2022.md", "status": "current", "note": "PILOT DONE 2026-06-10"},
+    "economics":             {"family": "individuals_societies", "edition": 2024, "briefs": [], "guide": null, "status": "current", "note": "guide sha d1a7bcb5 prints First assessment 2024; briefs are not a source (KM 2026-09-17); depth in data/output/km_requests/2026-09-17/p1_ib_guides/"},
     "ess":                   {"family": "sciences",  "edition": 2026, "briefs": ["ess_2026.md"], "guide": "ess_2026.md", "status": "current"},
-    "film":                  {"family": "arts",      "edition": 2019, "briefs": ["film.md"], "guide": "film_2023.md", "status": "current", "note": "FA-2019 syllabus, 2023 print"},
+    "film":                  {"family": "arts",      "edition": 2023, "briefs": ["film.md"], "guide": "film_2023.md", "status": "current", "note": "guide prints first assessment 2023 (film_2023.md L2); brief prints First assessments 2019; edition follows the guide"},
     "global_politics":       {"family": "individuals_societies", "edition": 2026, "briefs": ["global_politics_2026.md"], "guide": "global_politics_2026.md", "status": "current"},
     "history":               {"family": "individuals_societies", "edition": 2028, "briefs": ["history_2028.md"], "guide": "history_2028.md", "status": "current_forward"},
     "language_ab_initio":    {"family": "languages", "edition": 2020, "briefs": ["language_ab_initio.md"], "guide": "language_ab_initio.md", "status": "current"},
@@ -23,8 +23,8 @@
     "psychology":            {"family": "individuals_societies", "edition": 2027, "briefs": ["psychology_2027.md"], "guide": "psychology_2027.md", "status": "current_forward"},
     "sehs":                  {"family": "sciences",  "edition": 2026, "briefs": ["sehs_2026.md"], "guide": "sehs_2026.md", "status": "current"},
     "theatre":               {"family": "arts",      "edition": 2024, "briefs": ["theatre_2024.md"], "guide": "theatre_2024.md", "status": "current"},
-    "theory_of_knowledge":   {"family": "core",      "edition": 2022, "briefs": ["theory_of_knowledge_2022.md"], "guide": null, "status": "current", "note": "core; no guide on disk — depth gap"},
-    "visual_arts":           {"family": "arts",      "edition": 2027, "briefs": ["visual_arts_2027.md"], "guide": null, "status": "current_forward", "note": "2017 guide on disk is SUPERSEDED by the FA-2027 syllabus — excluded; acquire 2027 guide for depth"}
+    "theory_of_knowledge":   {"family": "core",      "edition": 2022, "briefs": ["theory_of_knowledge_2022.md"], "guide": null, "status": "current", "note": "guide sha 096f0b28 prints First assessment 2022; guide extraction (tok.json) in data/output/km_requests/2026-09-17/p1_ib_guides/"},
+    "visual_arts":           {"family": "arts",      "edition": 2027, "briefs": ["visual_arts_2027.md"], "guide": null, "status": "current_forward", "note": "guide sha 3ff05912 prints First assessment 2027; depth in data/output/km_requests/2026-09-17/p1_ib_guides/; 2017 guide superseded, excluded"}
   },
   "excluded_sources": {
     "visual_arts_2017.md": "superseded by FA-2027 syllabus",

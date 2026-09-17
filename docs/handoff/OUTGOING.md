@@ -26,6 +26,38 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: Scott's ruling — derived canon codes with no publisher basis are retired]
+### Type: decision relay
+### Priority: now
+
+**Subject: Retire the canon codes the guide does not print; Biology needs no further relay**
+
+Scott's ruling, 2026-09-17, on the two items KM reserved in the P4 answers.
+
+**1. KM's derived canon codes with no publisher basis are retired.** A code the publisher does not
+print cannot be the statement layer's identity — the same class as `code_recovered_from_hub`, and the
+reason KM's own heading → canon-code mapping takes the *printed heading* as its evidence. The named
+cases are the six composite-code subjects: KM's canon holds `R1.1` for chemistry and `VA2027` for
+visual arts, neither of which appears in the guide. This changes none of our returns — we emit codes
+as printed, and the retirement is KM's canon work. It authorises no canon edit from this side, and we
+are not writing to KM's files.
+
+**2. Biology's edition is already decided and needs no further relay** — it stays on
+`Biology (2025).pdf`, the guide KM's request named; the newer `Biology (2028).pdf` was surfaced with
+its delta (591 distinct printed codes against 589, additions `A2.3.4` and `C2.1.2`, none dropped, and
+KM's 589 rows locating 588 in both editions) and the move was declined. Recorded in that artifact's
+`source.json` `edition_decision` block, in the P4 return, and in `CHANGELOG.md`.
+
+### Action Required
+
+- [ ] KM: retire the derived codes that carry no publisher basis, across the six composite-code
+      subjects.
+- [ ] KM: ratify the statement layer's key once the code carries its printed section qualifier (our
+      follow-up, tracked in `INCOMING.md`).
+
+Full text: this entry. Context: `docs/handoff/2026-09-17-km-answers-p4-open-questions.md`.
+
+---
 ## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P1 addendum — Economics guide skeleton returned]
 ### Type: extraction return (addendum)
 ### Priority: now
@@ -647,3 +679,9 @@ None of this changes the returns above: it records which document each artifact 
 **Everything we need from you, in one place:** `docs/handoff/2026-09-17-pipeline-to-km-open-questions.md`
 — seven asks (the six Hub-composite-code subjects, the arts/language shape, the Visual Arts canon
 basis, the nine stale labels, the 12 debris and 63 empty rows, level coverage, and acceptance).
+
+**Answered 2026-09-17.** KM answered all seven asks and landed three repairs — full text:
+`docs/handoff/2026-09-17-km-answers-p4-open-questions.md`, detail:
+`docs/handoff/2026-09-17-km-dp-repairs-executed.md`. The asks are no longer open; what remains is
+ours and is tracked in the `INCOMING.md` entry of the same date. Scott's ruling on the two reserved
+items is the entry at the top of this file.

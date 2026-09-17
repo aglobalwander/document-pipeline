@@ -73,8 +73,11 @@ Biology's edition, and whether KM's derived canon codes are retired long term.
 - [ ] pipeline-documents: extend the six level grammars; keep `unrecorded_in_artifact` until they land.
 - [ ] pipeline-documents: adopt the nine markers; leave the Geography label to Hub.
 - [ ] pipeline-documents: keep the 12 debris rows and the 63 Maths rows in the reference.
-- [ ] Scott: Biology's edition (the newest-governs choice was surfaced with its delta and declined).
-- [ ] Scott: whether KM's derived canon codes for the six composite-code subjects are retired.
+- [x] Scott: Biology's edition — stays on `Biology (2025).pdf`, the guide KM named; the newer
+      `Biology (2028).pdf` was surfaced with its delta and declined (recorded in that artifact's
+      `edition_decision` block and in the P4 return).
+- [x] Scott: KM's derived canon codes that carry no publisher basis are **retired** — a code the guide
+      does not print cannot be the layer's identity. Relayed to KM in `OUTGOING.md` (2026-09-17).
 
 Full text: `docs/handoff/2026-09-17-km-answers-p4-open-questions.md`. Detail behind KM's changes:
 `docs/handoff/2026-09-17-km-dp-repairs-executed.md`. The asks being answered:

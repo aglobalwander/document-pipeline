@@ -93,6 +93,12 @@
   bringing the statements set to **13 subjects / 2,338 statements** — Visual Arts adds 35 (7
   assessment objectives and 28 learning-and-teaching items under Create / Connect / Communicate).
   `ib_depth_to_statements.py` gained the `learning_and_teaching` key so that shape is walked too.
+- Scott's ruling (2026-09-17) on the two items KM reserved in the P4 answers: **KM's derived canon
+  codes that carry no publisher basis are retired** — a code the guide does not print (`R1.1` for
+  chemistry, `VA2027` for visual arts) cannot be the statement layer's identity, the same class as
+  `code_recovered_from_hub`. Relayed to KM in `docs/handoff/OUTGOING.md` and it changes no return
+  from this repo, which emits codes as printed.
+
 ## Unreleased - 2026-09-16
 
 ### Fixed

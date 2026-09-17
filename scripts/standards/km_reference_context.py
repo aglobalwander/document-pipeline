@@ -25,7 +25,7 @@ import csv
 import json
 from pathlib import Path
 
-from km_p4_statements import SUBJECT_GUIDE
+from km_p4_statements import SUBJECT_GUIDE, _text_of, headings_above
 from km_text_layer import OUT_ROOT
 
 REQUEST = "p4_dp_statements"
@@ -33,42 +33,27 @@ DEFAULT_DATE = "2026-09-17"
 # KM flags these subjects `arts_language=yes`; they are the ones with no depth extractor.
 ARTS_LANGUAGE = ["Dance", "Film", "Language ab initio", "Language and Literature", "Language B",
                  "Literature", "Music", "Psychology", "Theatre", "Visual Arts"]
-BODY_SIZE = 10.5      # the largest span on a body line in these guides
-HEADING_MIN_SIZE = 12.0
-HEADING_MAX_CHARS = 90
 FIELDS = ["pdf_sha256", "subject", "reference_standard_id", "printed_code", "reference_text",
           "printed_text", "match", "page", "bbox", "md_line", "theme_context", "topic_context",
           "context_pages_back"]
 
 
-def is_heading(rec: dict) -> bool:
-    text = (rec.get("text") or "").strip()
-    if not text or len(text) > HEADING_MAX_CHARS:
-        return False
-    spans = rec.get("spans") or []
-    if not spans:
-        return False
-    size = max(s.get("size", 0) for s in spans)
-    bold = any(s.get("bold") for s in spans)
-    words = len(text.split())
-    return size >= HEADING_MIN_SIZE or (bold and words <= 8 and not text.endswith("."))
-
-
 def context_for(md_line: int, layer: list[dict]) -> tuple[str | None, str | None, int | None]:
-    """The two nearest printed headings above this line, nearest first."""
-    found: list[tuple[int, str]] = []
-    for rec in reversed(layer):
-        if rec["md_line"] >= md_line:
-            continue
-        if is_heading(rec):
-            found.append((rec["md_line"], rec["text"].strip()))
-            if len(found) == 2:
-                break
+    """The two nearest printed headings above this line, nearest first.
+
+    Uses the shared heading rule in `km_p4_statements` — section-shaped headings first (`A.1
+    Kinematics`, `Structure 1. Models…`), then large/bold ones — which excludes the guides' furniture
+    and wrapped prose fragments. That is the fix for KM's complaint that the first spine pass returned
+    "whatever heading the extractor reached, including prose paragraphs".
+    """
+    found = headings_above(md_line, layer, 2)
     if not found:
         return None, None, None
-    theme = found[1][1] if len(found) > 1 else None
-    topic = found[0][1]
-    return theme, topic, md_line - found[0][0]
+    topic = found[0]
+    theme = found[1] if len(found) > 1 else None
+    line = next((rec["md_line"] for rec in reversed(layer)
+                 if rec["md_line"] < md_line and _text_of(rec) == topic), None)
+    return theme, topic, (md_line - line) if line else None
 
 
 def main() -> None:

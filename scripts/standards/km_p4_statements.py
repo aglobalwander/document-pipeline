@@ -185,14 +185,43 @@ def _text_of(rec: dict) -> str:
     return (rec.get("text") or "").strip().lstrip("#* ").strip()
 
 
+CONTINUATION_TAIL = {"and", "or", "of", "the", "to", "in", "into", "for", "with", "a", "an", "as",
+                     "by", "on", "at", "from", "than", "that", "which", "when", "where", "while",
+                     "is", "are", "was", "were", "be", "been", "it", "its", "their", "our", "your",
+                     "them", "they", "this", "these", "those"}
+
+
+def looks_like_heading(text: str) -> bool:
+    """Reject wrapped fragments: a printed heading does not start lowercase or end mid-clause.
+
+    KM's complaint about the first spine pass was exactly this — `their "topic" is whatever heading
+    the extractor reached, including prose paragraphs`. A bold line that is a *continuation* of a
+    wrapped paragraph reads like `Supporting details (further ex` and must not become a topic, so an
+    unclosed bracket or a sentence left hanging on a connective is refused.
+    """
+    if not text or not text[0].isupper():
+        return False
+    if text.endswith((")", ",", ":", ";", "-", "\u2014")):
+        return False
+    if text.count("(") != text.count(")"):
+        return False
+    words = text.split()
+    if not words or len(words) > 12:
+        return False
+    return words[-1].lower().strip(".,:;") not in CONTINUATION_TAIL
+
+
 def is_section_heading(rec: dict) -> bool:
     text = _text_of(rec)
-    return bool(text) and not FURNITURE.match(text) and bool(SECTION_HEADING.match(text))
+    return (bool(text) and looks_like_heading(text) and not FURNITURE.match(text)
+            and bool(SECTION_HEADING.match(text)))
 
 
 def is_large_heading(rec: dict, body: float) -> bool:
     text = _text_of(rec)
     if not text or len(text) > HEADING_MAX_CHARS or FURNITURE.match(text):
+        return False
+    if not looks_like_heading(text):
         return False
     spans = rec.get("spans") or []
     if not spans:

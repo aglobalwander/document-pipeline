@@ -20,6 +20,21 @@
   rather than attempted. The `youtube-transcript-api` `<3.14` override stays as a
   second, independent guard (it is not, on its own, what blocks 3.14).
 
+- KM's P4 answers (`docs/handoff/2026-09-17-km-answers-p4-open-questions.md`) are applied to the return.
+  `statements.csv` now carries `printed_heading`, `section_qualifier`, `statement_code_qualified` and
+  `canon_subject_slug` per row: the printed heading above each statement (`A.1 Kinematics`), the code
+  with the qualifier the guide prints (`Structure 1.1.1`, `Reactivity 1.1.1`, not a bare `1.1.1`), and
+  the canon slug so the 217 rows that did not join now have a key. Exact duplicate rows are dropped
+  and reported — 7 across the set, including the `design_technology 1.1.2` KM named (2,338 → 2,331).
+  The context spine was rerun for all 22 subjects (9,272 rows, 9,189 with a printed topic above them)
+  and its heading rule now prefers section-shaped headings and refuses wrapped prose fragments, which
+  was KM's complaint (39 fragment-like topics → 0 on the 439 held rows that join).
+- Edition markers: the scan window widens to eight pages (SEHS prints its marker on page 7) and
+  case-only duplicates are one marker (Film), while the earliest page carrying a marker governs —
+  Biology (2028) prints `First assessment 2028` on pages 1-2 and a 2025 reference on page 7. Every
+  stored IB guide now resolves to a single marker; Film reads `first assessment 2023`, SEHS
+  `First assessment 2026`. A hold is recorded only when one page names different years.
+
 ### Added
 
 - Hermetic tests for the two P2/P3 scripts that had none, both runnable without the OneDrive

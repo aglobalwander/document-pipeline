@@ -35,6 +35,51 @@ STORE = Path.home() / (
     "_Standards Frameworks/_curriculum_ontology_sources")
 OUT_ROOT = Path("data/output/km_requests")
 MARKER_RX = re.compile(r"[Ff]irst (?:assessments?|examinations?)\s+\d{4}")
+# The marker prints on the title/imprint pages, but not always in the first three: SEHS prints
+# `First assessment 2026` on page 7, which is why it read as unresolved. Eight pages covers every
+# guide in the store without reaching the syllabus body.
+MARKER_PAGES = 8
+
+
+def read_markers(records: list[dict], max_page: int = MARKER_PAGES) -> list[dict]:
+    """First-assessment markers with the page each prints on, in page order.
+
+    Compared case-insensitively: `first assessment 2023` and `First assessment 2023` are the same
+    marker, and treating them as two is what put Film in a review hold for one document.
+    """
+    found: list[dict] = []
+    seen: set[str] = set()
+    for rec in records:
+        if rec["page"] > max_page:
+            break
+        for match in MARKER_RX.finditer(rec["text"]):
+            key = match.group(0).lower()
+            if key not in seen:
+                seen.add(key)
+                found.append({"marker": match.group(0), "page": rec["page"]})
+    return found
+
+
+def marker_resolution(found: list[dict]) -> tuple[str | None, str]:
+    """(edition_marker, marker_resolution_state).
+
+    The **earliest page carrying a marker governs**: a guide's own edition statement prints on its
+    title/imprint pages, while a later page that names another year is referring to the superseded
+    edition. Biology (2028) prints `First assessment 2028` on pages 1-2 and `First assessment 2025`
+    on page 7 — the 2028 edition is the guide, the 2025 mention is the previous one. A hold is
+    recorded only when the markers on that earliest page name different years, which is genuine
+    ambiguity; when no marker prints in the window the state is `unresolved`.
+    """
+    if not found:
+        return None, "unresolved"
+    first_page = min(f["page"] for f in found)
+    on_page = [f["marker"] for f in found if f["page"] == first_page]
+    years = {match.group(0)[-4:] for match in (MARKER_RX.search(m) for m in on_page) if match}
+    if len(years) != 1:
+        return None, "multiple_detected_markers_review_hold"
+    if len(on_page) == 1:
+        return on_page[0], "single_detected_marker"
+    return on_page[0], "single_year_multiple_markers"
 
 
 def is_bold(span: dict) -> bool:
@@ -86,22 +131,61 @@ def text_layer(data: bytes) -> tuple[list[str], list[dict], int]:
     return md, records, doc.page_count
 
 
+def refresh_markers(root: Path, request: str, date: str) -> None:
+    """Re-read each stored guide's marker from its text layer and update `source.json`.
+
+    Store-free: the text layer is already on disk, so a marker-rule change does not mean re-hashing
+    every PDF. Only the marker fields are rewritten; the bytes and the markdown hash are untouched.
+    """
+    changed = 0
+    for layer in sorted((root / date / request).glob("*/text_layer.jsonl")):
+        source_path = layer.parent / "source.json"
+        if not source_path.exists():
+            continue
+        records = [json.loads(line) for line in layer.open(encoding="utf-8")]
+        found = read_markers(records)
+        marker, state = marker_resolution(found)
+        source = json.loads(source_path.read_text(encoding="utf-8"))
+        before = (source.get("edition_marker"), source.get("marker_resolution_state"))
+        source["edition_marker"] = marker
+        source["detected_markers"] = [f["marker"] for f in found]
+        source["detected_marker_pages"] = found
+        source["marker_detection_source"] = f"pdf_text_pages_1_through_{MARKER_PAGES}"
+        source["marker_resolution_state"] = state
+        source["marker_rule"] = ("the earliest page carrying a marker governs; a hold is recorded "
+                                 "only when that page names more than one year")
+        source_path.write_text(json.dumps(source, indent=2) + "\n", encoding="utf-8")
+        flag = ""
+        if (marker, state) != before:
+            changed += 1
+            flag = f"   <== was {before[0]!r} ({before[1]})"
+        print(f"{source.get('file'):46} {str(marker):30} {state}{flag}")
+    print(f"\n{changed} of the files in {date}/{request} changed")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--request", required=True, help="request folder name, e.g. p1_ib_guides")
-    ap.add_argument("--sha", required=True, action="append", help="repeatable")
+    ap.add_argument("--sha", action="append", default=[], help="repeatable")
     ap.add_argument("--date", default="2026-09-17")
     ap.add_argument("--store", type=Path, default=STORE)
+    ap.add_argument("--reread-markers", action="store_true",
+                    help="re-read the marker from each stored text layer and update source.json "
+                         "(no store access; use after a marker-rule change)")
     args = ap.parse_args()
+
+    if args.reread_markers:
+        refresh_markers(OUT_ROOT, args.request, args.date)
+        return
+
+    if not args.sha:
+        raise SystemExit("--sha is required unless --reread-markers is given")
 
     for sha in args.sha:
         row, data = resolve(sha, args.store)
         md, records, pages = text_layer(data)
-        markers = []
-        for rec in records:
-            if rec["page"] > 3:
-                break
-            markers += [m for m in MARKER_RX.findall(rec["text"]) if m not in markers]
+        found = read_markers(records)
+        marker, marker_state = marker_resolution(found)
         out = OUT_ROOT / args.date / args.request / sha
         out.mkdir(parents=True, exist_ok=True)
         (out / "guide.md").write_text("\n".join(md) + "\n", encoding="utf-8")
@@ -114,11 +198,13 @@ def main() -> None:
             "directory": row["directory"],
             "pdf_pages": pages,
             "method": f"pdf text layer (PyMuPDF {pymupdf.VersionBind}); no OCR, no model",
-            "edition_marker": markers[0] if len(markers) == 1 else None,
-            "detected_markers": markers,
-            "marker_detection_source": "pdf_text_pages_1_through_3",
-            "marker_resolution_state": {0: "unresolved", 1: "single_detected_marker"}.get(
-                len(markers), "multiple_detected_markers_review_hold"),
+            "edition_marker": marker,
+            "detected_markers": [f["marker"] for f in found],
+            "detected_marker_pages": found,
+            "marker_detection_source": f"pdf_text_pages_1_through_{MARKER_PAGES}",
+            "marker_resolution_state": marker_state,
+            "marker_rule": ("the earliest page carrying a marker governs; a hold is recorded only "
+                            "when that page names more than one year"),
             "guide_markdown_sha256": hashlib.sha256((out / "guide.md").read_bytes()).hexdigest(),
         }
         (out / "source.json").write_text(json.dumps(source, indent=2) + "\n", encoding="utf-8")

@@ -70,6 +70,19 @@ This directory contains scripts for extracting and processing educational standa
   column code, letter/inline code, text, page, bbox, row context and flags
 - Never normalises codes; irregular printed forms are flagged for KM to rule on
 
+#### `km_p4_statements.py`
+- P4: locates each row of KM's 9,272-statement DP reference in the guide KM named for that subject,
+  returning the guide's own printed line(s) with page, bbox and md_line, plus the match state
+  (`located_exact`, `located_adjacent`, `partial`, `not_located`, `empty_statement_text`) and, when a
+  row is not placed, its coverage against the whole document so an edition gap is distinguishable
+  from a matching limit
+- `--audit` reconciles the reference's `subject_area` edition label with the first-assessment marker
+  read from the document, recording disagreements as label-versus-marker candidates
+- `--aos` returns the printed lines carrying an `AOn` marker, with page and bbox, for the guides that
+  number their assessment objectives
+- Reads only local files (the KM request folder and the text layers written by `km_text_layer.py`);
+  no OCR, no model. Misses are listed, never coerced
+
 #### `km_row_reads.py`
 - Locates each of KM's 473 requested rows by printed key and text in the named sha's text layer,
   with a crop per read region. No OCR, no model

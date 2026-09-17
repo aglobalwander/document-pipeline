@@ -433,3 +433,95 @@ no benefit. Recorded in `docs/MODEL_ROUTING.md`, `README.md`, `SYSTEM_MAP.md` an
       returned.
 
 Full text: `docs/handoff/2026-09-17-flow-interpreter-version-question.md` (status now resolved).
+
+---
+
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P4 returned — all 22 subjects located; edition labels audited; three rulings needed]
+### Type: extraction return
+### Priority: now
+
+**Subject: Every statement in your 9,272-row reference located in the guide you named — 8,252 as
+printed, and the edition labels are the problem, not the text.**
+
+**Method.** The 23 sha256 named in `p4_dp_guides.csv` were read from the store (bytes verified
+against `MANIFEST.csv`; all 23 hash as listed) and their text layers written by
+`scripts/standards/km_text_layer.py`. `scripts/standards/km_p4_statements.py --locate` then locates
+each reference row in the guide named for its subject, by printed key and text, and returns the
+guide's own line(s) with page, bbox and md_line. No OCR, no model. 22 subjects; Economics included
+(it is also the P1 guide).
+
+| outcome | rows | |
+|---|---:|---|
+| `located_exact` | 6,668 | the statement is one printed line |
+| `located_adjacent` | 1,584 | printed across a line wrap or a page break |
+| `partial` | 945 | region found, statement not contiguous (maths expressions, lists, tables) |
+| `not_located` | 12 | not in the document at all |
+| `empty_statement_text` | 63 | your row carries no statement text |
+| **verbatim failures** | **0** | every returned text re-tokenises against its own page |
+
+**What the documents showed**
+
+1. **Your `subject_area` edition labels are stale, not your text.** Ten disagree with the marker
+   printed in the guide you named (Computer Science, Design Technology, ESS, Global Politics,
+   History, Language and Literature, Literature, Physics, Psychology, Visual Arts); two guides carry
+   no marker we could read (Film, SEHS). The text locates anyway: Computer Science 100%,
+   Design Technology 100%, ESS 100%, History 98.1%. So the canon rows match the guides you asked us
+   to read, and the labels need the same correction you gave dance (2013) and film (2023).
+2. **Visual Arts is the one real edition question.** 19/214 located, 194 partial — but 138 of those
+   partials have ≥0.9 of their tokens present in the **2027** guide, so the text is in the document
+   and is not printed as contiguous lines. That fits the P1 finding that Visual Arts 2027 prints no
+   statement codes (it prints core-area bullets, key terms, word clouds). Only 15 rows are largely
+   absent — consistent with your reference being built from the 2017 guide, which you ruled
+   superseded. Tell us which edition governs before we treat those 15 as gaps.
+3. **12 `not_located` rows are not statements.** Each has 0.0 document coverage and reads as a
+   fragment: Global Politics `Col1`/`Col3`, Maths AA `ofAB`, `findingx)`, `(notA)`, Maths AI
+   `, wheren = ∑`, Visual Arts `cohesiveness`. This is the same class as the AP image-caption
+   fragments in P3 — canon debris, not printed text we failed to find.
+4. **63 rows carry empty `statement_text`** (Maths AA 31, Maths AI 30, Literature 1, Language and
+   Literature 1). Nothing to locate; listed rather than dropped.
+5. **The topic-code acceptance rule does not hold for nine subjects.** 2,525 rows have no
+   `dp_canonical` code that prefixes their printed code, concentrated where the canonical layer is
+   shaped differently: Maths AI 1,374 (every row), Dance 242 (every row), Visual Arts 214 (every
+   row), Chemistry 190 (every row), Psychology 151, Music 125 (every row), Design Technology 87,
+   Literature 70 (every row), Language and Literature 63 (every row). For 6,265 rows a canonical
+   topic was found, and for 482 the statement is its own canonical row. We list the misses rather
+   than coercing them; the acceptance rule ("every statement's topic exists in `dp_canonical`")
+   needs a shape ruling for those nine subjects.
+6. **AOs.** 647 printed lines carry an `AOn` marker across 14 subjects (AO1–AO4, except Global
+   Politics and Psychology, which print AO1–AO3). Nine subjects carry no `AOn` marker in the text
+   layer at all (History, Language B, Language ab initio, Language and Literature, Literature,
+   Maths AA, Maths AI, Theatre, Visual Arts) — either they print AOs otherwise or the marker is not
+   in the layer. Released as printed lines with page and bbox, not as a mapping. Each row carries
+   `ao_at_line_start` so definitions are separable from the many assessment lines that merely cite
+   an AO (Business Management 231 and Economics 242 such lines).
+
+**Artifacts** under `data/output/km_requests/2026-09-17/p4_dp_statements/`:
+`statements_located.jsonl` (one record per reference row: sha, subject, printed_code, printed_text,
+page, bbox, md_line, match, coverage, doc_coverage, verbatim, code_in_region), `aos.jsonl`,
+`edition_audit.json`, `summary.json`, `SUMMARY.md`.
+
+**One correction on our own first pass.** An earlier run reported 2,265 `not_located`, because the
+matcher required all of a statement's rarest tokens on one printed line. Guides wrap statements, so
+that was wrong; it also reported 6 "verbatim failures" that were one statement spanning a page
+break. Both are fixed — the matcher anchors on the rarest printed token and the span decides, and
+the verbatim check now covers every page the span touches — and the figures above are the corrected
+ones. The fix is covered by `tests/test_p4_statement_locator.py`.
+
+**Still open in P4:** the per-subject depth artifacts (topic tree, printed SL/HL/AHL level) come from
+the extractor reruns, which are the next step. The 10 arts/language subjects' "what counts as a
+statement" question is partly answered by your reference (`arts_language=yes` = 1,554 rows) but not
+yet confirmed.
+
+### Action Required
+
+- [ ] KM: acceptance check on the located statements (samples with page+bbox are in
+      `statements_located.jsonl`).
+- [ ] KM: rule on the stale `subject_area` labels for the ten subjects in point 1.
+- [ ] KM: rule which Visual Arts edition governs; if 2027, the 194 partials need a shape decision.
+- [ ] KM: confirm whether the 12 debris rows and the 63 empty-text rows stay in your reference.
+- [ ] KM: rule on the nine subjects where the topic-code rule cannot hold (point 5).
+- [ ] pipeline-documents: the extractor reruns and `ib_depth_to_statements.py` (topic tree, levels),
+      then the arts/language shapes once ruled.
+
+Full text: `docs/handoff/INCOMING.md` (2026-09-17 entry). Counts and tables:
+`data/output/km_requests/2026-09-17/p4_dp_statements/SUMMARY.md`.

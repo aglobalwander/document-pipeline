@@ -29,7 +29,7 @@ row nor an authorization to rule editions, canonize, or crosswalk.
 
 ---
 
-## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: accepted — P1 (with the Economics skeleton addendum), P2 and P3 returned; P4 scoped, blocked on KM's two answers]
+## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: accepted — P1 (with the Economics skeleton addendum), P2, P3 and P4 returned; P4 needs three rulings]
 ### Type: working contract + extraction requests
 ### Priority: now
 
@@ -62,7 +62,8 @@ Request lists: `knowledge-management/research/standards_frameworks/pipeline_requ
 - [x] pipeline-documents: P1 (returned 2026-09-17, including the Economics guide skeleton)
 - [x] pipeline-documents: P2 (returned 2026-09-17)
 - [x] pipeline-documents: P3 (returned 2026-09-17)
-- [ ] pipeline-documents: P4 (scoped; blocked on KM's two answers — see OUTGOING)
+- [x] pipeline-documents: P4 (returned 2026-09-17 — all 22 subjects, 8,252 of 9,272 reference rows
+      located as printed with page and bbox; edition labels audited; three rulings requested)
 - [ ] KM: acceptance check on each return
 
 Full text: `knowledge-management/docs/handoff/2026-09-17-km-to-pipeline-extraction-contract-and-requests.md`

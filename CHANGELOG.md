@@ -29,6 +29,17 @@
   PDF; `tests/test_ncas_at_a_glance_extract.py` (25 tests) pins the NCAS printed-form rules
   (inline codes kept raw, lettered and `2a`/dash item forms, the Roman-band and irregular-shape
   flags, grade/process/band/furniture recognition). The suite is now 97 passed / 17 deselected.
+- P4 delivery, all 22 DP subjects without a per-subject grammar: `scripts/standards/km_p4_statements.py`
+  locates every row of KM's 9,272-statement reference in the guide KM named (23 sha256 read and
+  verified from the store) and returns the guide's own printed text with page, bbox and md_line.
+  Result: 6,668 `located_exact`, 1,584 `located_adjacent`, 945 `partial`, 12 `not_located`,
+  63 empty-text rows, **0 verbatim failures**. `--audit` reconciles the reference's `subject_area`
+  label with the marker printed in the guide and found ten stale labels (content still matches:
+  Computer Science, Design Technology and ESS locate at 100%). `--aos` returns 647 printed lines
+  carrying an `AOn` marker across 14 subjects. Two defects found by the new tests and fixed before
+  returning: the matcher required a statement on one printed line (which cost 2,253 false
+  `not_located` rows) and the verbatim check compared cross-page spans against a single page.
+  `tests/test_p4_statement_locator.py` covers the matching rules; the suite is 108 passed.
 ## Unreleased - 2026-09-16
 
 ### Fixed

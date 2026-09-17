@@ -54,7 +54,7 @@ def statements(depth: dict) -> list[dict]:
     A walker keeps all of them in one pass, with the nearest code/title as the topic context.
     """
     keys = ("understandings", "conceptual_understandings", "items", "blocks",
-            "focused_study_skills")
+            "focused_study_skills", "learning_and_teaching")
     out: list[dict] = []
 
     def add(text: str, code: str | None, hl: bool, topic: str, aos: list | None):

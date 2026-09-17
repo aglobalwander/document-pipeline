@@ -624,3 +624,22 @@ capture the nearest preceding printed theme and topic headings as its topic cont
 and with every row still carrying the guide's own text, page and bbox. It does not pre-empt your
 ruling — the topic context is read from the guide's own headings, and the row's identity is still
 your reference code.
+
+**Edition decisions (Scott, 2026-09-17), recorded for your side.** The store holds more than one
+edition for exactly three subjects, and this repo now applies an edition rule: the newest governs the
+extraction, but the choice is surfaced with its evidence first and Scott decides, with the decision
+recorded against the sha in that artifact's `source.json`. Outcomes:
+
+- **Biology** — read from `Biology (2025).pdf` (First assessment 2025), the guide your request named.
+  `Biology (2028).pdf` (First assessment 2028, 137 pp) was surfaced with its delta and the move was
+  declined: 591 distinct printed codes against 589, additions `A2.3.4` and `C2.1.2`, none dropped,
+  and your 589 Biology rows locate 588 in *both* editions.
+- **Visual Arts** — both editions are kept, each labelled by its own sha and marker: the **2017**
+  guide as the basis of your 214 reference rows (212/214 locate there), the **2027** guide as the
+  current-edition extraction, now flattened into `statements.csv` like the others (35 statements:
+  7 assessment objectives and 28 learning-and-teaching items under Create / Connect / Communicate).
+- **Economics** — already read from the newest (2024), which is what P1 returned. For the record, its
+  2022 and 2024 files in the store are **not** byte-identical to each other (different sha and byte
+  size), so the byte-identity note we relayed earlier from your index does not hold for these two.
+
+None of this changes the returns above: it records which document each artifact was read from.

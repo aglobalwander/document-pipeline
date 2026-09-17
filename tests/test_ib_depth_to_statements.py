@@ -100,6 +100,23 @@ def test_a_subject_that_records_hl_keeps_sl_as_a_reading():
     assert [r["level"] for r in rows] == ["SL", "HL"]
 
 
+def test_walks_visual_arts_2027_shape_of_aos_and_learning_and_teaching():
+    depth = {"subject": "visual_arts",
+             "assessment_objectives": {"items": [
+                 {"text": "curate visual and written materials", "page": 20, "bbox": [1, 2, 3, 4]}]},
+             "core_areas": [{"title": "Create", "learning_and_teaching": [
+                 {"text": "nurturing art-making practice", "page": 29, "bbox": [1, 2, 3, 4]}]},
+                 {"title": "Connect", "learning_and_teaching": [
+                     {"text": "connecting with artists", "page": 40, "bbox": [1, 2, 3, 4]}]}]}
+
+    rows = flat.statements(depth)
+
+    assert [r["statement_text"] for r in rows] == [
+        "curate visual and written materials", "nurturing art-making practice",
+        "connecting with artists"]
+    assert [r["topic_code"] for r in rows] == ["visual_arts", "Create", "Connect"]
+
+
 def test_empty_statements_are_dropped_rather_than_emitted():
     depth = {"units": [{"topics": [{"code": "A", "understandings": [
         {"statement": "  ", "hl_only": False}, {"statement": "Real", "hl_only": False}]}]}]}

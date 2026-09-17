@@ -85,6 +85,14 @@
   591 distinct printed codes against 589, the two additions being `A2.3.4` and `C2.1.2`, none
   dropped, and KM's 589 Biology rows locate 588 in *both* editions — so re-deriving biology from 2028
   is a re-attribution rather than a re-extraction. Awaiting Scott's decision; nothing changed yet.
+- Edition decisions applied (Scott, 2026-09-17) and recorded in each artifact's `source.json`
+  `edition_decision` block. **Biology** stays on `Biology (2025).pdf`, the guide the request named —
+  the newer `Biology (2028).pdf` was surfaced with its delta and declined. **Visual Arts** keeps both
+  editions, labelled: the 2017 guide as the basis of KM's 214 reference rows, the 2027 guide as the
+  current-edition extraction. The 2027 Visual Arts depth (from P1) is now flattened like the others,
+  bringing the statements set to **13 subjects / 2,338 statements** — Visual Arts adds 35 (7
+  assessment objectives and 28 learning-and-teaching items under Create / Connect / Communicate).
+  `ib_depth_to_statements.py` gained the `learning_and_teaching` key so that shape is walked too.
 ## Unreleased - 2026-09-16
 
 ### Fixed

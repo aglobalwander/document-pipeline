@@ -32,7 +32,8 @@ import json
 import re
 from pathlib import Path
 
-from km_p4_statements import (CANON_SUBJECT, canonical_codes, index, locate_row, topic_of)
+from km_p4_statements import (CANON_SUBJECT, SUBJECT_GUIDE, canonical_codes, index, locate_row,
+                              printed_context, topic_of)
 from km_row_reads import tokens
 from km_text_layer import OUT_ROOT
 
@@ -40,7 +41,13 @@ REQUEST = "p4_dp_statements"
 AHL = re.compile(r"\bAHL\b|\bHL only\b", re.I)
 FIELDS = ["pdf_sha256", "subject", "topic_code", "statement_code", "statement_text", "level",
           "level_basis", "printed_aos", "page", "bbox", "md_line", "printed_text", "match",
-          "doc_coverage", "verbatim", "topic_in_canonical"]
+          "doc_coverage", "verbatim", "topic_in_canonical",
+          # KM's P4 answers, §Action Required: the printed heading above the statement, the code with
+          # its printed section qualifier (`Structure 1.1.1`, not `1.1.1`), and the canon subject slug
+          # so the row joins KM's layer without a second mapping.
+          "printed_heading", "section_qualifier", "statement_code_qualified", "canon_subject_slug"]
+# Identity used to drop exact duplicate rows: the same statement, code, topic and page twice.
+DEDUPE_KEYS = ("subject", "topic_code", "statement_code", "statement_text", "page", "md_line")
 
 
 def statements(depth: dict) -> list[dict]:
@@ -132,11 +139,34 @@ def flatten(depth_path: Path, layer_path: Path, subject: str, sha: str) -> list[
             "doc_coverage": hit["doc_coverage"],
             "verbatim": verbatim,
             "topic_in_canonical": bool(topic) if canon else None,
+            **printed_context(hit.get("md_line"), records, s["statement_code"], printed),
+            "canon_subject_slug": CANON_SUBJECT.get(subject) or subject,
         })
     return rows
 
 
-def summarise(rows: list[dict]) -> dict:
+def dedupe(rows: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Drop exact duplicate rows and return them, so the removal is reported rather than silent.
+
+    KM found one: `design_technology` `B1.1` / `1.1.2` arrives twice, identical in text, code, topic
+    and page. Two rows are duplicates only when every identity field AND the located page/line agree,
+    so a statement legitimately printed under two topics is kept.
+    """
+    seen: set[tuple] = set()
+    kept: list[dict] = []
+    dropped: list[dict] = []
+    for r in rows:
+        key = tuple(r.get(k) for k in DEDUPE_KEYS)
+        if key in seen:
+            dropped.append(r)
+            continue
+        seen.add(key)
+        kept.append(r)
+    return kept, dropped
+
+
+def summarise(rows: list[dict], dropped: list[dict] | None = None) -> dict:
+    dropped = dropped or []
     return {
         "statements": len(rows),
         "by_match": dict(collections.Counter(r["match"] for r in rows)),
@@ -145,36 +175,91 @@ def summarise(rows: list[dict]) -> dict:
         "verbatim_failures": sum(1 for r in rows if r["verbatim"] is False),
         "topic_in_canonical": sum(1 for r in rows if r["topic_in_canonical"]),
         "topic_check_applicable": any(r["topic_in_canonical"] is not None for r in rows),
+        "printed_heading": sum(1 for r in rows if r.get("printed_heading")),
+        "statement_code_qualified": sum(1 for r in rows if r.get("statement_code_qualified")),
+        "canon_subject_slug": sum(1 for r in rows if r.get("canon_subject_slug")),
+        "duplicate_rows_dropped": len(dropped),
+        "duplicates": [{"subject": r["subject"], "statement_code": r["statement_code"],
+                        "topic_code": r["topic_code"], "page": r["page"],
+                        "statement_text": r["statement_text"]} for r in dropped],
     }
+
+
+def subject_for_sha(dirpath: Path) -> str | None:
+    """The KM subject_head for a stored guide, from its `source.json` file name."""
+    src = dirpath / "source.json"
+    if not src.exists():
+        return None
+    record = json.loads(src.read_text(encoding="utf-8")) or {}
+    return {v: k for k, v in SUBJECT_GUIDE.items()}.get(record.get("file"))
+
+
+def process(depth: Path, subject: str, sha: str | None, out_dir: Path) -> dict:
+    """Flatten one depth artifact, drop exact duplicates, and write `statements.csv`."""
+    layer = depth.parent / "text_layer.jsonl"
+    sha = sha or depth.parent.name
+    rows, dropped = dedupe(flatten(depth, layer, subject, sha))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    with (out_dir / "statements.csv").open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+    summary = summarise(rows, dropped)
+    (out_dir / "statements_summary.json").write_text(json.dumps(summary, indent=2) + "\n",
+                                                     encoding="utf-8")
+    return summary
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--depth", type=Path, required=True)
+    ap.add_argument("--depth", type=Path, default=None)
     ap.add_argument("--layer", type=Path, default=None,
                     help="defaults to text_layer.jsonl beside the depth file")
-    ap.add_argument("--subject", required=True)
+    ap.add_argument("--subject", default=None)
     ap.add_argument("--sha", default=None, help="defaults to the sha from the depth file's directory")
     ap.add_argument("--out", type=Path, default=None)
+    ap.add_argument("--all", action="store_true",
+                    help="re-run every stored depth.json (the KM re-run: headings, qualified codes, "
+                         "canon slug, duplicate removal)")
+    ap.add_argument("--date", default="2026-09-17")
     args = ap.parse_args()
 
-    sha = args.sha or args.depth.parent.name
-    layer = args.layer or args.depth.parent / "text_layer.jsonl"
-    out_dir = args.out or args.depth.parent
-    out_dir.mkdir(parents=True, exist_ok=True)
+    if args.all:
+        base = OUT_ROOT / args.date / REQUEST
+        depths = sorted(base.glob("*/depth.json"))
+        totals = collections.Counter()
+        dropped_all: list[dict] = []
+        for depth in depths:
+            subject = subject_for_sha(depth.parent)
+            if not subject:
+                print(f"skip {depth.parent.name}: no subject_head for its source file")
+                continue
+            summary = process(depth, subject, depth.parent.name, depth.parent)
+            totals["statements"] += summary["statements"]
+            totals["dropped"] += summary["duplicate_rows_dropped"]
+            totals["headings"] += summary["printed_heading"]
+            totals["qualified"] += summary["statement_code_qualified"]
+            dropped_all += summary["duplicates"]
+            print(f"{subject:46} {summary['statements']:5} statements | heading "
+                  f"{summary['printed_heading']:5} | qualified code "
+                  f"{summary['statement_code_qualified']:5} | dup {summary['duplicate_rows_dropped']}")
+        print(f"\ntotal {totals['statements']} statements across {len(depths)} depth artifacts; "
+              f"printed_heading {totals['headings']}; qualified codes {totals['qualified']}; "
+              f"duplicates dropped {totals['dropped']}")
+        for d in dropped_all:
+            print(f"  dropped duplicate: {d['subject']} {d['statement_code']} "
+                  f"(topic {d['topic_code']}, page {d['page']})")
+        return
 
-    rows = flatten(args.depth, layer, args.subject, sha)
-    csv_path = out_dir / "statements.csv"
-    with csv_path.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=FIELDS)
-        writer.writeheader()
-        writer.writerows(rows)
-    summary = summarise(rows)
-    (out_dir / "statements_summary.json").write_text(json.dumps(summary, indent=2) + "\n",
-                                                     encoding="utf-8")
-    print(f"{args.subject}: {summary['statements']} statements -> {csv_path}")
+    if not args.depth or not args.subject:
+        raise SystemExit("--depth and --subject are required unless --all is given")
+    out_dir = args.out or args.depth.parent
+    summary = process(args.depth, args.subject, args.sha, out_dir)
+    print(f"{args.subject}: {summary['statements']} statements "
+          f"(duplicates dropped {summary['duplicate_rows_dropped']}) -> {out_dir}/statements.csv")
     print(f"   matches {summary['by_match']}  levels {summary['by_level']}  "
-          f"verbatim failures {summary['verbatim_failures']}")
+          f"verbatim failures {summary['verbatim_failures']}  "
+          f"qualified codes {summary['statement_code_qualified']}")
 
 
 if __name__ == "__main__":

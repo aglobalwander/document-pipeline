@@ -150,6 +150,107 @@ def doc_covers(toks: list[str], doc_tokens: collections.Counter) -> float:
     return round(sum(min(doc_tokens[t], n) for t, n in want.items()) / sum(want.values()), 2)
 
 
+# ---------------------------------------------------------------------------------------------
+# Printed heading context (also used by ib_depth_to_statements.py)
+# ---------------------------------------------------------------------------------------------
+# Two printed signals are used, both from the guide and neither inferred:
+#   1. a *section-shaped* heading — Physics prints `A.1 Kinematics`, Chemistry prints
+#      `Structure 1. Models of the particulate nature of matter` and `Structure 1.1—Introduction…`;
+#   2. failing that, a line set larger than the guide's body text, or bold and short.
+# The guides' own furniture (hour/level markers, guiding and linking questions) is excluded: in
+# Chemistry `Standard level and higher level: 2 hours` is bold and nearer than the real heading, so
+# without the exclusion it becomes the "heading" and the qualifier reads `Standard level…`.
+SECTION_HEADING = re.compile(
+    r"^(?:[A-D]\.\d+\s+\S"                                                    # `A.1 Kinematics`
+    r"|[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?\s+\d+(?:\.\d+)*[.\u2014\u2013-]\s)"     # `Structure 1. …`
+)
+FURNITURE = re.compile(r"^(standard level|higher level|additional higher level|guiding question|"
+                       r"linking question|assessment|syllabus|time\b)", re.I)
+HEADING_MAX_CHARS = 90
+BODY_MARGIN = 1.5
+LABEL_RE = re.compile(r"^([A-Z][A-Za-z&/'’ -]{1,40}?)\s+(\d+(?:\.\d+)*)")
+
+
+def body_size(layer: list[dict]) -> float:
+    """The guide's body text size: the most common largest-span size on its lines."""
+    sizes: collections.Counter = collections.Counter()
+    for rec in layer:
+        spans = rec.get("spans") or []
+        if spans:
+            sizes[round(max(s.get("size", 0) for s in spans), 1)] += 1
+    return sizes.most_common(1)[0][0] if sizes else 10.0
+
+
+def _text_of(rec: dict) -> str:
+    return (rec.get("text") or "").strip().lstrip("#* ").strip()
+
+
+def is_section_heading(rec: dict) -> bool:
+    text = _text_of(rec)
+    return bool(text) and not FURNITURE.match(text) and bool(SECTION_HEADING.match(text))
+
+
+def is_large_heading(rec: dict, body: float) -> bool:
+    text = _text_of(rec)
+    if not text or len(text) > HEADING_MAX_CHARS or FURNITURE.match(text):
+        return False
+    spans = rec.get("spans") or []
+    if not spans:
+        return False
+    size = max(s.get("size", 0) for s in spans)
+    if size >= body + BODY_MARGIN:
+        return True
+    bold = any(s.get("bold") for s in spans)
+    return bold and size >= body + 0.5 and len(text.split()) <= 8 and not text.endswith(".")
+
+
+def headings_above(md_line: int | None, layer: list[dict], count: int = 1) -> list[str]:
+    """The nearest printed section headings above a line, nearest first (section-shaped first)."""
+    if not md_line:
+        return []
+    above = [rec for rec in layer if rec["md_line"] < md_line]
+    section = [_text_of(rec) for rec in reversed(above) if is_section_heading(rec)]
+    if section:
+        return section[:count]
+    body = body_size(layer)
+    return [_text_of(rec) for rec in reversed(above) if is_large_heading(rec, body)][:count]
+
+
+def printed_qualifier(printed_text: str | None, code: str | None) -> tuple[str | None, str | None]:
+    """The section qualifier printed on the row's own line: `Structure 1.1.1—Elements …`.
+
+    Chemistry prints the qualified code inline, which is what KM asked for (`Structure 1.1.1` rather
+    than `1.1.1`). Returns the label and the qualified code, or (None, None) when the line does not
+    carry one — nothing is invented.
+    """
+    text = (printed_text or "").strip()
+    code = (code or "").strip()
+    if not text or not code:
+        return None, None
+    match = re.match(r"^([A-Z][A-Za-z&/'’ -]{1,40}?)\s+" + re.escape(code) + r"(?![0-9.])", text)
+    if not match:
+        return None, None
+    label = match.group(1).strip()
+    return label, f"{label} {code}"
+
+
+def printed_context(md_line: int | None, layer: list[dict], code: str | None,
+                    printed_text: str | None = None) -> dict:
+    """`printed_heading`, `section_qualifier` and the qualified code for one located row."""
+    heading = next(iter(headings_above(md_line, layer, 1)), None)
+    label, qualified = printed_qualifier(printed_text, code)
+    if label is None and heading and code:
+        # Fall back to the section label the nearest printed heading carries (`Structure 1. Models…`
+        # -> `Structure`); a heading that is itself only a code (`A.1 Kinematics`) yields no label.
+        match = LABEL_RE.match(heading)
+        if match:
+            label = match.group(1)
+            qualified = f"{label} {code}"
+    return {
+        "printed_heading": heading,
+        "section_qualifier": label,
+        "statement_code_qualified": qualified,
+    }
 def locate_row(row: dict, records: list[dict], post: dict[str, set[int]],
                doc_tokens: collections.Counter | None = None) -> dict:
     toks = tokens(row["statement_text"])
@@ -280,6 +381,8 @@ def locate(date: str, only: str | None) -> tuple[list[dict], list[dict]]:
                 "edition_agrees": audit[subject]["edition_agrees"],
                 "method": "pdf text layer via PyMuPDF; located by printed key and text; no OCR, no model",
                 **hit,
+                **printed_context(hit.get("md_line"), records, r["printed_code"], printed),
+                "canon_subject_slug": CANON_SUBJECT.get(subject),
             }
             if printed:
                 want = collections.Counter(tokens(printed))

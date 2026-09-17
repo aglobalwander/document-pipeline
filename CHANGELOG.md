@@ -93,6 +93,19 @@
   bringing the statements set to **13 subjects / 2,338 statements** — Visual Arts adds 35 (7
   assessment objectives and 28 learning-and-teaching items under Create / Connect / Communicate).
   `ib_depth_to_statements.py` gained the `learning_and_teaching` key so that shape is walked too.
+- KM's P4 follow-ups landed in the statement sets (2026-09-17). `ib_depth_to_statements.py` now emits
+  `printed_heading`, `section_qualifier`, `statement_code_qualified` and `canon_subject_slug`, and removes
+  exact duplicate rows: Chemistry returns `Structure 1.1.1` / `Reactivity 1.1.1` rather than `1.1.1`,
+  Physics returns `A.1 Kinematics` as its printed heading, the 217 non-joining rows now carry a canon
+  slug, and **7** exact duplicates were dropped (the one KM found plus four in Global Politics and two in
+  Business Management), leaving **13 subjects / 2,331 statements** (was 2,338). The heading/qualifier
+  rules live in `km_p4_statements.py` and take the guide's own printed text: a section-shaped heading
+  (`A.1 Kinematics`, `Structure 1. Models of the particulate nature of matter`) first, the guide's
+  hour/level and question furniture excluded, and the qualifier parsed from the row's own printed line
+  where the guide prints one. The context spine (`km_reference_context.py`) gained `--all` and a
+  comma-separated `--subject` and now covers all 22 subjects — including the seven guides that carry the
+  838 unit-grain rows — writing `statements_arts.csv` with `theme_context` / `topic_context` /
+  `context_pages_back` read from each guide. Verified: `poetry run pytest -q` 127 passed.
 - Scott's ruling (2026-09-17) on the two items KM reserved in the P4 answers: **KM's derived canon
   codes that carry no publisher basis are retired** — a code the guide does not print (`R1.1` for
   chemistry, `VA2027` for visual arts) cannot be the statement layer's identity, the same class as

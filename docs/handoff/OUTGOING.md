@@ -26,6 +26,70 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P4 follow-ups returned — four hygiene fixes done; the context spine now covers all 22 subjects; three enumerations still to come]
+### Type: extraction return
+### Priority: now
+
+**Subject: printed_heading, qualified codes, canon slugs and the duplicates removed on all 13 statement sets; the spine is built as one extractor, not ten**
+
+Answering the "Still yours" list in `2026-09-17-km-answers-p4-open-questions.md` §Action Required.
+
+**The four fixes, all landed:**
+
+- **`printed_heading`** on **2,331 of 2,331** statement rows (was absent), and on **9,189 of 9,272**
+  located rows. Physics is the case you named: its rows now carry `A.1 Kinematics` rather than nothing.
+- **`statement_code_qualified`** — the guide's own printed qualifier where it prints one. Chemistry now
+  returns `Structure 1.1.1` (73 rows) and `Reactivity 1.1.1` (92), not `1.1.1`. Where no qualifier
+  prints, the column is empty rather than guessed: Physics' headings are themselves codes, so it stays
+  empty there. The located set also carries a `section_qualifier` from the nearest printed heading above
+  the row (3,277 rows); it is the position of the printed heading, not a claim about the code, and the
+  statement sets only use the inline form — rule on it if you want it elsewhere.
+- **`canon_subject_slug`** on every row, in your canon's own vocabulary, so the 217 rows that did not
+  join now do: `mathematics_aa`, `mathematics_ai`, `business_management`.
+- **Duplicates: 7 removed, not one.** Yours (`design_technology` `1.1.2`, topic `B1.1`, p46) plus four
+  in Global Politics and two in Business Management — each identical in subject, code, text, topic, page
+  *and* line, so nothing is lost. The statements set is **13 subjects / 2,331 statements** (was 2,338).
+  A statement legitimately printed under two topics keeps both rows.
+
+**Already true, checked rather than changed:** the **nine markers**. Every stored guide's `source.json`
+carries the marker read from the document, and all nine agree (CS 2027, DT 2027, ESS 2026, GP 2026,
+History 2028, Lang&Lit 2026, Literature 2026, Physics 2025, Psychology 2027). The stale values were in
+your `subject_area`, which is yours to correct. The **12 debris and 63 Maths rows are kept** unchanged,
+as you asked. P4's headline is unchanged: **8,252 rows located as printed, 0 verbatim failures**.
+
+**The spine (§2) — one extractor, run over everything.** `km_reference_context.py` reads each guide's
+own printed headings above each located row; no per-subject grammar was invented and no text is
+inferred. It now covers **all 22 subjects**, including your seven unit-grain documents, where the unit
+is the whole point:
+
+| document | rows with a printed topic heading above them |
+|---|---:|
+| Global Politics (2026) | 783 / 789 |
+| History (2028) | 1,273 / 1,273 |
+| Physics (2025) | 274 / 274 |
+| Business Management (2024) | 235 / 235 |
+| Mathematics AI (2021) | 1,338 / 1,374 |
+| Mathematics AA (2021) | 1,197 / 1,234 |
+| Visual Arts (2027) | 213 / 214 |
+
+Artifact: `data/output/km_requests/2026-09-17/p4_dp_statements/statements_arts.csv` —
+`pdf_sha256, subject, reference_standard_id, printed_code, reference_text, printed_text, match, page,
+bbox, md_line, theme_context, topic_context, context_pages_back`.
+
+**Still open from §2, and next:** the printed-unit enumerations for **Literature, Language and
+Literature and Music** (and Dance if its headings print as units) — the three subjects whose guides
+print a unit of their own (`AoE1`…`AoE3` with `AoE1-Q1`…`Q6`; `comp-explorectx` / `comp-experiment` /
+`comp-present`; `comp-ca` / `comp-wds` / `comp-perf`). One pass each, taken from the guide's headings.
+
+### Action Required
+
+- [ ] KM: acceptance check on the four fixes (subject slug, qualified code, printed heading, duplicates).
+- [ ] KM: rule on the located set's `section_qualifier` — keep it, or restrict it to the inline form.
+- [ ] pipeline-documents: the three printed-unit enumerations.
+
+Full text: this entry. Context: `docs/handoff/2026-09-17-km-answers-p4-open-questions.md`.
+
+---
 ## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: Scott's ruling — derived canon codes with no publisher basis are retired]
 ### Type: decision relay
 ### Priority: now

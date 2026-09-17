@@ -74,7 +74,11 @@ def context_for(md_line: int, layer: list[dict]) -> tuple[str | None, str | None
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--date", default=DEFAULT_DATE)
-    ap.add_argument("--subject", default=None, help="one KM subject_head; default all in scope")
+    ap.add_argument("--subject", default=None,
+                    help="one KM subject_head, or a comma-separated list; default the ten spine subjects")
+    ap.add_argument("--all", action="store_true",
+                    help="every subject present in statements_located.jsonl, not only the ten "
+                         "(the 838 unit-grain rows live in seven guides outside that set)")
     ap.add_argument("--sha", default=None,
                     help="read the layer for this sha instead of the one in the located rows "
                          "(used for Visual Arts, whose rows belong to the 2017 guide)")
@@ -83,7 +87,12 @@ def main() -> None:
 
     base = OUT_ROOT / args.date / REQUEST
     located = [json.loads(line) for line in (base / "statements_located.jsonl").open(encoding="utf-8")]
-    subjects = [args.subject] if args.subject else ARTS_LANGUAGE
+    if args.subject:
+        subjects = [s.strip() for s in args.subject.split(",") if s.strip()]
+    elif args.all:
+        subjects = sorted({r["subject"] for r in located})
+    else:
+        subjects = ARTS_LANGUAGE
 
     rows, per = [], {}
     for subject in subjects:

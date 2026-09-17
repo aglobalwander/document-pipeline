@@ -26,6 +26,66 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: R1 and R2 returned — 205/205 NCAS rows printed, 20/20 Dance rows located with both locations; one acceptance wording cannot be met as written]
+### Type: extraction return
+### Priority: now
+
+**Subject: Both reads met their acceptance; the Dance letters are not printed, and one NCAS code is corrupt**
+
+Answering `2026-09-18-km-request-r1-r2-and-dance-answers.md` §Action Required.
+
+**R1 — the 205 NCAS held rows: 205 printed, 0 unread.** For each row, the occurrence as printed with
+page and bbox; neither outcome was treated as a defect, and no row came back blank.
+
+| result | rows |
+|---|---:|
+| matched the code exactly | 204 |
+| matched the code's **tail** | 1 |
+| `no_printed_code` | 0 |
+
+Two things settle it:
+
+1. **The 115 rows with no code resolve as anchor titles.** Their printed form is
+   `Anchor Standard 1: Generate and conceptualize artistic ideas and work.` — printed on page 1 of every
+   At-a-Glance, Media Arts and Music included. Your `NONE in any returned document` holds only for a
+   code-shaped search, so those rows were never unprinted.
+2. **One row's code is corrupt, not unprinted:** `MU-T:CN11.0.T.IIa` prints as **`CN11.0.T.IIa`** in
+   *Music Tech Strand at a Glance* p4 — no `MU:` prefix, and `CN` in capitals. The tail match is
+   reported as `match_kind=tail` rather than counted as an exact hit, because the defect is yours to
+   rule on and hiding it behind a success would be the wrong result.
+
+**R2 — the Dance criteria: 20 of 20 canon rows located, both locations where both print.** Artifact
+`r2_dance_criteria_read.csv`, each row carrying the printed criterion text with page, bbox and md lines.
+
+| location | canon pages | PDF pages here | rows |
+|---|---|---|---:|
+| AO statements | p.9 | **p17** | 20 |
+| `Assessment objectives in practice` | pp.10–11 | **pp.18** (and 19) | 16 |
+
+**Your page numbers are canon offsets, not PDF indices** — that mapping is the answer to the 320-vs-20
+confusion, and the read locates by text and reports the page it actually found rather than assuming an
+index. The practice table numbers the AOs (`1. Knowledge and understanding`), which is reported as
+printed.
+
+**The one thing R2 cannot satisfy as written: the letters are not printed.** All 16 lettered items
+return `letter_printed=not_printed` in both locations — the guide prints the criteria without `a`/`b`/`c`
+against them, so your `-a`/`-b` suffixes are derived from ordering. The acceptance asks that *"the
+lettered sub-item matches the guide's lettering"*; if there is no lettering, that check cannot pass, and
+the finding is the result. **A derivation recorded as a derivation**, which is the rule you set for the
+115-row code derivation and for DP's derived codes.
+
+### Action Required
+
+- [ ] KM: acceptance check on `r1_held_rows_read.csv` (205 rows, 0 unread; 1 flagged as a tail match).
+- [ ] KM: acceptance check on `r2_dance_criteria_read.csv` (20 rows; both locations where both print).
+- [ ] KM: rule on `MU-T:CN11.0.T.IIa` — printed as `CN11.0.T.IIa`; the row's code carries a corrupt prefix.
+- [ ] KM: rule on the Dance letters — the guide prints none, so `-a`/`-b` are derivations and the
+      acceptance wording needs re-stating.
+
+Full text: this entry. Request: `knowledge-management/docs/handoff/2026-09-18-km-request-r1-r2-and-dance-answers.md`.
+
+---
+
 ## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: acceptance answered — DT qualified, front matter excluded at source, the four subjects' unit statements returned as a first cut]
 ### Type: extraction return
 ### Priority: now

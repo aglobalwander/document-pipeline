@@ -118,9 +118,26 @@ rows carry both `column_code_printed` and `column_header`, the substrate for the
 **241 rows (10.6%)** without `column_code_printed` are the quantified gap that may need a re-read;
 whether they are the same population as KM's 115 is a hypothesis to check, not a claim.
 
-### Action Required
+**R1 and R2 delivered (2026-09-18 request).** Both reads now meet their acceptance:
 
-- [x] pipeline-documents: `statement_code_qualified` for **design technology** (49 groups) — done: 121
+- **R1 — the 205 NCAS held rows: 205/205 printed, 0 unread.** `r1_held_rows_read.csv` (+ summary) in the
+  P2 request directory. 204 matched the code exactly; **1 matched its tail** — `MU-T:CN11.0.T.IIa`
+  prints as **`CN11.0.T.IIa`** in Music Tech p4, so that row's code carries a corrupt prefix (`MU-T:`
+  with a hyphen) rather than being unprinted. The 115 empty-code rows resolve because their printed form
+  is the **anchor title** (`Anchor Standard 1: Generate and conceptualize artistic ideas and work.`),
+  which the returned documents print on page 1 of each At-a-Glance — KM's `NONE in any returned
+  document` holds only for a code-shaped search, which is why it could be refuted rather than re-read.
+- **R2 — the Dance criteria: 20/20 canon rows located.** `r2_dance_criteria_read.csv` (+ summary) in the
+  P4 request directory. **Both locations** are recorded where both print: all 20 on **PDF p17** (KM's
+  canon p.9, the AO statements) and **16 on PDF p18** (KM's canon pp.10–11, the practice table, which
+  numbers the AOs — `1. Knowledge and understanding`). KM's page numbers are canon offsets, not PDF
+  indices, so the read locates by text and reports the page it found.
+- **One finding that affects R2's acceptance wording:** the guide prints **no letters**. All 16 lettered
+  items return `letter_printed=not_printed` in both locations, so KM's `-a`/`-b` suffixes are derived
+  from ordering rather than printed. The acceptance asks that *"the lettered sub-item matches the
+  guide's lettering"* — that cannot be met as written, and the finding is the result rather than a pass.
+
+### Action Required
       rows qualified from the guide's printed topic heading (`A1.1 1.1.1`), collisions now 0 on
       `(subject, statement_code_qualified)`, the `statement_code` column untouched, and no other
       subject moved.

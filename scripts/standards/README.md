@@ -83,6 +83,17 @@ This directory contains scripts for extracting and processing educational standa
 - Reads only local files (the KM request folder and the text layers written by `km_text_layer.py`);
   no OCR, no model. Misses are listed, never coerced
 
+#### `ib_depth_to_statements.py`
+- Flattens a P4 `depth.json` into `statements.csv`: topic code, statement code and text, level,
+  the printed AOs where the extractor recorded them, page, bbox, md_line and the guide's own printed
+  text for each statement
+- Walks every shape the depth artifacts use (`units -> topics -> understandings`, unit-level
+  `understandings` for maths, string `items`, Business Management `blocks`, History's top-level
+  `concepts` / `focused_study_skills`), so one post-processor covers all families
+- Reuses the matcher in `km_p4_statements.py` rather than re-implementing it, and labels `level`
+  as `unrecorded_in_artifact` where the artifact holds no HL signal, so a default is never mistaken
+  for a printed reading
+
 #### `km_row_reads.py`
 - Locates each of KM's 473 requested rows by printed key and text in the named sha's text layer,
   with a crop per read region. No OCR, no model

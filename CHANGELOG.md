@@ -47,9 +47,20 @@
   layer. Fixed `ib_guide_extract_sciences.py`, whose `--content-end` was taken at its first
   occurrence anywhere: the Biology guide mentions the end marker before the content starts, so the
   extractor ran on an empty body and wrote zero units (its own docstring example did this). It now
-  searches after the start and fails loudly when the end is missing. `business_management`,
-  `computer_science`, `design_technology` and `ess` still need their per-subject invocation
-  (`--anchor`/`--start`, `--theme-rx`/`--code-rx`) recovered.
+  searches after the start and fails loudly when the end is missing. All 12 subjects with an extractor
+  now rerun: `ess` (8/27/439) and `business_management` (5/37) joined the ten above once their
+  invocations were recovered (`--theme-rx "^# Topic (\d): (.+)$"` with a numeric theme key for ESS;
+  `--anchor unit_header` for Business Management, whose guide prints no "Recommended teaching time"
+  line). `computer_science` and `design_technology` are the two that do not match the old artifacts:
+  the rerun captures every printed code line in its syllabus range (136 and 145) where the old
+  artifacts hold 111 and 162, so both are reported rather than one overwriting the other.
+- `scripts/standards/ib_depth_to_statements.py` flattens each depth artifact into
+  `statements.csv`: **2,303 statements** across the 12 subjects (1,744 located exactly, 487 across a
+  line wrap or page break, 72 partial), every row carrying page, bbox, md_line and the guide's own
+  printed text, with 0 verbatim failures. It walks all five depth schema shapes and marks `level` as
+  `unrecorded_in_artifact` where the artifact holds no HL signal — 968 statements have a recorded
+  level and 1,335 do not, because six extractors do not catch those guides' AHL markers (a
+  pre-existing grammar limitation, identical in the old artifacts).
 ## Unreleased - 2026-09-16
 
 ### Fixed

@@ -546,8 +546,33 @@ invocations will be added here when recovered; no artifact has been written for 
 - [ ] KM: rule which Visual Arts edition governs; if 2027, the 194 partials need a shape decision.
 - [ ] KM: confirm whether the 12 debris rows and the 63 empty-text rows stay in your reference.
 - [ ] KM: rule on the nine subjects where the topic-code rule cannot hold (point 5).
-- [ ] pipeline-documents: the extractor reruns and `ib_depth_to_statements.py` (topic tree, levels),
-      then the arts/language shapes once ruled.
+- [x] pipeline-documents: the extractor reruns and `ib_depth_to_statements.py` are done — see the
+      statements section below (all 12 subjects, 2,303 statements with page and bbox). The
+      arts/language shapes still wait on your ruling.
 
 Full text: `docs/handoff/INCOMING.md` (2026-09-17 entry). Counts and tables:
 `data/output/km_requests/2026-09-17/p4_dp_statements/SUMMARY.md`.
+
+**Statements with topic, level, page and bbox (the second half of P4).** `depth.json` holds the
+topic tree but not where a statement is printed. `scripts/standards/ib_depth_to_statements.py` joins
+each artifact to its guide's text layer with the same tested matcher, so every statement carries
+topic code, printed level, page, bbox and md_line — the shape your acceptance check needs next to
+`statements_located.jsonl`.
+
+- **2,303 statements across all 12 subjects with an extractor**: 1,744 located exactly, 487 across a
+  line wrap or page break, 72 partial. Every row carries page, bbox and the guide's own printed
+  text; **0 verbatim failures**.
+- Per subject: biology 549, ESS 439, Global Politics 402, physics 169, chemistry 165, Design
+  Technology 145, Computer Science 136, Business Management 123, SEHS 66, Maths AI 50, Maths AA 44,
+  History 15.
+- **Level is recorded for 968 of the 2,303; the other 1,335 carry `SL` as a default, not a reading**
+  (`level_basis = unrecorded_in_artifact`). Chemistry, Physics, ESS, Design Technology, Global
+  Politics and History mark "Additional higher level" in a form the family extractors do not catch,
+  so those artifacts hold no HL flag at all — exactly as the pre-existing `ib_native` artifacts do.
+  The level column is therefore a printed reading only for the other six subjects; if you need levels
+  for the rest, say so and we will extend those grammars rather than infer them.
+- Business Management's 123 rows also carry the AOs printed against each block (86 rows), because its
+  extractor records `ao_depth`.
+
+Artifacts: `p4_dp_statements/<sha>/statements.csv` and `statements_summary.json` (per subject), plus
+`p4_dp_statements/STATEMENTS_SUMMARY.md` for the combined table.

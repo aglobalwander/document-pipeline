@@ -14,8 +14,14 @@ Usage:
     poetry run python scripts/standards/ib_guide_extract_sciences.py \
         --guide data/output/markdown/ib_guides/biology_2025.md --subject biology \
         --themes "A=Unity and diversity,B=Form and function,C=Interaction and interdependence,D=Continuity and change" \
-        --content-start "# A1.1 Water" --content-end "# Collaborative sciences project" \
+        --content-start "# A1.1 Water" --content-end "# D4.3 ..." \
         --out data/output/ib_native/biology/depth.json
+
+Both boundaries must be single guide lines, and `--content-end` must occur *after*
+`--content-start`: pick the first topic header and the next top-level heading after the last
+topic header. (The previous example here named "# Collaborative sciences project", which the
+Biology guide prints *earlier*, in its syllabus overview, so the extractor ran on an empty body
+and wrote zero units.)
 """
 import argparse
 import json
@@ -186,7 +192,15 @@ def main():
     raw = pathlib.Path(args.guide).read_text(encoding="utf-8").replace("\xa0", " ")
     lines = clean(raw.splitlines())
     start = next(i for i, l in enumerate(lines) if l.strip() == args.content_start)
-    end = next(i for i, l in enumerate(lines) if l.strip() == args.content_end)
+    # The end boundary must be searched *after* the start: several guides mention the syllabus
+    # end marker earlier, in their intro or contents list, and taking the first occurrence
+    # anywhere silently produced an empty body (the docstring's biology example did exactly that).
+    try:
+        end = next(i for i in range(start + 1, len(lines)) if lines[i].strip() == args.content_end)
+    except StopIteration:
+        raise SystemExit(
+            f"content-end {args.content_end!r} does not occur after content-start "
+            f"{args.content_start!r} (line {start + 1}); check the pair against the guide")
     body = lines[start:end]
 
     if args.mode == "chemistry":

@@ -40,6 +40,16 @@
   returning: the matcher required a statement on one printed line (which cost 2,253 false
   `not_located` rows) and the verbatim check compared cross-page spans against a single page.
   `tests/test_p4_statement_locator.py` covers the matching rules; the suite is 108 passed.
+- Depth reruns against the P4 text layers, 8 of the 12 subjects with an existing extractor:
+  `math_aa`, `math_ai`, `history` and `global_politics` reproduce their existing `depth.json`
+  byte-identically, and `biology`, `chemistry`, `physics` and `sehs` reproduce the counts exactly
+  (4/40/549, 2/22/165, 5/24/169, 3/12/66) with 1–11 small field differences that favour the new
+  layer. Fixed `ib_guide_extract_sciences.py`, whose `--content-end` was taken at its first
+  occurrence anywhere: the Biology guide mentions the end marker before the content starts, so the
+  extractor ran on an empty body and wrote zero units (its own docstring example did this). It now
+  searches after the start and fails loudly when the end is missing. `business_management`,
+  `computer_science`, `design_technology` and `ess` still need their per-subject invocation
+  (`--anchor`/`--start`, `--theme-rx`/`--code-rx`) recovered.
 ## Unreleased - 2026-09-16
 
 ### Fixed

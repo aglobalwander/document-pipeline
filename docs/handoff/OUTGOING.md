@@ -507,10 +507,36 @@ break. Both are fixed — the matcher anchors on the rarest printed token and th
 the verbatim check now covers every page the span touches — and the figures above are the corrected
 ones. The fix is covered by `tests/test_p4_statement_locator.py`.
 
-**Still open in P4:** the per-subject depth artifacts (topic tree, printed SL/HL/AHL level) come from
-the extractor reruns, which are the next step. The 10 arts/language subjects' "what counts as a
-statement" question is partly answered by your reference (`arts_language=yes` = 1,554 rows) but not
-yet confirmed.
+**Depth reruns (started 2026-09-17, after the return above).** The per-topic artifact KM asked
+alongside the statements — topic tree, printed SL/HL/AHL level, guided/linking questions — comes from
+rerunning the existing extractors against these same text layers. Eight subjects are done, each read
+from the store sha and compared with the existing `data/output/ib_native/<subject>/depth.json`:
+
+| subject | extractor | result |
+|---|---|---|
+| math_aa, math_ai, history, global_politics | `ib_guide_extract_math.py`, `_history.py`, `_prescribed.py` | **byte-identical** to the existing artifact |
+| biology (4/40/549), chemistry (2/22/165), physics (5/24/169), sehs (3/12/66) | `ib_guide_extract_sciences.py` (`--mode`), `_generic.py` | **counts identical**; 1–11 field differences each |
+
+The differences are small and favour the new layers: chemistry's old artifact carried a broken glyph
+run (`average kinetic energy ( Ek)  of`) where the guide prints `energy Ek of`; physics differs on one
+double space; and the old biology artifact had swallowed the whole *Assessment* section prose into a
+lone linking question, which the new layer does not. Counts matched only after two invocation
+defects were found and fixed:
+
+- `ib_guide_extract_sciences.py` took `--content-end` at its first occurrence *anywhere*, so the
+  guide's earlier mention of the end marker (line 1147, before `--content-start` at 1818) produced an
+  empty body and zero units. It now searches after the start and fails loudly if the end is not
+  found; its docstring example was the one that did this.
+- the SEHS code regex has to require the fourth code segment, or the guide's 29 *topic* headings are
+  captured as understandings (94 instead of 66).
+
+**Not yet rerun, with the reason:** `business_management` (the `ib_guide_extract.py` invocation needs
+its `--anchor`/`--start` values recovered; a first attempt parsed 0 units), `computer_science`,
+`design_technology` and `ess` (each needs its own `--theme-rx`/`--code-rx` recovered: CS and DT print
+codes without a dot after the theme letter, ESS numbers its themes 1–8 rather than A–E). Their
+invocations will be added here when recovered; no artifact has been written for them.
+
+---
 
 ### Action Required
 

@@ -551,13 +551,21 @@ def main() -> None:
     crops.mkdir(parents=True, exist_ok=True)
     results = [read_row(r, crops) for r in rows]
     # A row not read in its named sha is re-read in the other shas of the same framework named in
-    # this request, when at least 80% of the aid's 5-word runs are printed there. The named-sha
+    # this request, when at least 75% of the aid's 5-word runs are printed there. The named-sha
     # result stays the row's status; the other-document read is attached as evidence.
+    #
+    # Restricted to ACTFL: its NOV/IMD/ADV/SUP benchmark PDFs share one layout and the request
+    # mislabels which level a row belongs to, so a row absent from its named sha is genuinely
+    # found in a sibling. In every other framework the aid coincides through shared boilerplate or
+    # an overlapping sibling guide (DP Mathematics AA vs AI), where "not in the named document" is
+    # a false finding rather than a swapped source.
     by_fw: dict[str, set[str]] = {}
     for r in rows:
+        if r["framework"] != "actfl":
+            continue
         by_fw.setdefault(r["framework"], set()).add(r["sha256"])
     for r, res in zip(rows, results):
-        if res["status"] == "read" or r["framework"] == "ap":
+        if res["status"] == "read" or r["framework"] != "actfl":
             continue
         aid = r["canon_text"].strip() or r["hub_text"].strip()
         toks = tokens(aid)

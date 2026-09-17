@@ -59,10 +59,10 @@ Request lists: `knowledge-management/research/standards_frameworks/pipeline_requ
 
 ### Action Required
 
-- [x] pipeline-documents: P1 (returned 2026-09-17; Economics guide-based skeleton still open)
-- [ ] pipeline-documents: P2
-- [ ] pipeline-documents: P3
-- [ ] pipeline-documents: P4
+- [x] pipeline-documents: P1 (returned 2026-09-17, including the Economics guide skeleton)
+- [x] pipeline-documents: P2 (returned 2026-09-17)
+- [x] pipeline-documents: P3 (returned 2026-09-17)
+- [ ] pipeline-documents: P4 (scoped; blocked on KM's two answers — see OUTGOING)
 - [ ] KM: acceptance check on each return
 
 Full text: `knowledge-management/docs/handoff/2026-09-17-km-to-pipeline-extraction-contract-and-requests.md`

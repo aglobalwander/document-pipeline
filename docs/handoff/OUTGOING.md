@@ -26,7 +26,138 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
-## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P1 returned for acceptance (Economics skeleton open); P2–P4 accepted, not started]
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P1 addendum — Economics guide skeleton returned]
+### Type: extraction return (addendum)
+### Priority: now
+
+**Subject: The Economics skeleton, built from the 2024 guide alone (no briefs), is ready.**
+
+**Method.** `scripts/standards/ib_econ_guide_skeleton.py` reads the same PyMuPDF text layer as
+`depth.json` (sha `d1a7bcb5…`); no brief. Every item keeps PDF page and bbox.
+
+**Counts.** 3 aims; 9 key concepts; AOs 1–4 with 19 bullets (HL-only bullets flagged); 4 units and
+31 topics with SL/HL hours (unit 1 10/10, unit 2 35/70, unit 3 40/75, unit 4 45/65; total 150 SL /
+240 HL); 7 assessment components (SL and HL outlines) with duration, weighting and aligned AOs.
+
+Artifact: `data/output/km_requests/2026-09-17/p1_ib_guides/d1a7bcb5…/skeleton.json`. Its keys match
+the brief-based skeleton, so the two can be compared. This closes the last open P1 item.
+
+### Action Required
+
+- [ ] KM: acceptance check on the Economics skeleton.
+
+---
+
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P2 returned for acceptance]
+### Type: extraction return
+### Priority: now
+
+**Subject: NCAS At a Glance tables — 12 documents, 2,284 cell items, every code as printed.**
+
+**Method.** PDF text-layer geometry (PyMuPDF), no OCR, no model; each sha verified against
+`MANIFEST.csv` first. `scripts/standards/ncas_at_a_glance_extract.py` writes `cells.jsonl` (one
+record per cell item: printed column code, letter/inline code, text, page, bbox, row context,
+flags) and `summary.json` per sha, plus `SUMMARY.md`.
+
+Codes are never normalised; irregular printed forms are flagged for KM to rule on.
+
+**What the pages print that the request or canon did not expect**
+
+- HS columns use Roman numerals as the band by design (`DA:Cr1.1.I`, `.II`, `.III`); a Roman `I`
+  is not a misprint. Music Tech's `MU:Pr4.I.T.Ia` is real, but in the standard position.
+- Printed irregularities: Dance `DA:Re.7.1.*`; Visual Arts `VA:Re.7.1.*`, lowercase `Pka`; Theatre
+  `TH:Cr2-PK.`, `TH:Cr.1.1.5.`, `TH: Re7.1.-III.`, `TH:Cn11.2.-1.`; Media Arts `(MA:Re9.1.HS.I)`.
+- Music at a Glance prints `(MA:Cr3.1.PK)`, a Media Arts prefix, over a Music column; and
+  `MU:Pr4.2.5cExplain` with no space.
+- **The two Music at a Glance files are not the same edition** (original `MU:Cn10.1.*` vs
+  `rev 12-1-16` `MU:Cn10.0.*`); the canon cites the rev copy (234 rows).
+- Theatre prints 12 anchor blocks, not 11: `Cn11.1`/`Cn11.2` separately, 156 column codes against
+  153 canon rows.
+
+Counts and the full list: `data/output/km_requests/2026-09-17/p2_ncas_at_a_glance/SUMMARY.md`.
+
+### Action Required
+
+- [ ] KM: acceptance check; rule on canonical codes and the duplicate Music editions.
+
+---
+
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P3 returned for acceptance]
+### Type: extraction return
+### Priority: now
+
+**Subject: 473 row reads — 276 read, 91 review, 98 not printed where the row says, 6 absence
+regions, 2 not found.**
+
+**Method.** Located by printed key and text in the named sha's own text layer (PyMuPDF), no OCR,
+no model; page and crop per read region. `scripts/standards/km_row_reads.py` reader,
+`scripts/standards/check_p3_reads.py` acceptance.
+
+| framework | read | review | not_in_document | not_in_named_document | absence_region_read | not_found |
+|---|---:|---:|---:|---:|---:|---:|
+| AP | 194 | 63 | 59 | 0 | 0 | 2 |
+| ACTFL | 1 | 1 | 0 | 38 | 0 | 0 |
+| DP | 6 | 26 | 1 | 0 | 6 | 0 |
+| WIDA | 37 | 0 | 0 | 0 | 0 | 0 |
+| GOLD | 32 | 0 | 0 | 0 | 0 | 0 |
+| NGSS | 6 | 1 | 0 | 0 | 0 | 0 |
+
+**Acceptance (`check_p3_reads.py`).** Every token of every text row is printed on that row's own
+region pages (presence: PASS), and all 580 referenced crops exist (PASS). The plan's original
+"contiguous in the word stream" rule was wrong for AP two-column pages and maths glyphs: it fails
+58 correct rows, so acceptance is token-presence plus the crop.
+
+**What the documents showed**
+
+- **Latin (AP, 61 rows: 59 not printed, 2 not found).** The keys and texts come from an earlier
+  edition than the named Fall 2025 CED; P3-0297's "Explain…" is printed "Identify…".
+- **ACTFL (38 rows).** The benchmark pages are swapped: NOV/IMD keys carry Advanced/Superior text,
+  ADV/SUP keys carry Novice/Intermediate text.
+- **WIDA (37).** The key is the Language Expectation; canon and Hub texts run into the Language
+  Functions and Features table. ELD-SS.1.Argue's canon also absorbs the next page's introduction.
+- **GOLD (32).** Confirms your `no_statement` hold: objectives 24–36 print only a title in the
+  page 2 list, no dimensions or progressions.
+- **AP (63 review).** Equation-bearing Calculus/Precalculus/Statistics statements, where glyph noise
+  lowers the match; each has a crop. Image-caption fragments are in the canon, not the statements.
+- **NGSS.** Printed wording differs from the canon; HS-LS2-8 is review (the read lost its first word).
+- **DP.** Subtotal/front-matter keys are structural claims, not quotations, and stay review. The 6
+  ABSENCE rows give the printed region and crop for you to judge. Your markdown line references
+  point at KM's own `fidelity_sweep/…/guides_markdown/`, not this repo's markdown.
+
+Counts and notes: `data/output/km_requests/2026-09-17/p3_row_reads/SUMMARY.md`.
+
+### Action Required
+
+- [ ] KM: acceptance check; rule on the Latin edition and the ACTFL level swap.
+
+---
+
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P4 — two scoping questions before extraction]
+### Type: scoping question
+### Priority: now
+
+**Subject: Two answers needed before we build DP statement extraction.**
+
+P4's inputs are read: the 23 guide shas are all in the store, and we can check topic codes against
+`dp_canonical.csv` (1,788 rows, 23 subjects, `code`/`parent_code`), which is already on disk here.
+
+1. **Path of the Hub's 9,272-statement DP export.** It is not in the request folder. The closest
+   local file, `hub_payloads_ib_2026-09-12/ib_new_statements.csv`, has 554 rows. Without the
+   export we can report printed statements and topic-code coverage but not coverage **both ways**.
+2. **Scoping for the 10 subjects with no extractor** (dance, film, language_ab_initio,
+   language_and_literature, language_b, literature, music, psychology, theatre, visual_arts): how
+   many of the 9,272 statements belong to them, and what do you count as a "statement" for arts and
+   language guides? Those guides print themes, topics, prescribed questions and taught activities,
+   not coded statements. We will not build 10 grammars before this is answered.
+
+### Action Required
+
+- [ ] KM: give the path of the 9,272-statement export.
+- [ ] KM: answer the arts/languages scoping question.
+
+---
+
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-17] [STATUS: P1 returned for acceptance (Economics skeleton now returned — see the addendum above); P2–P4 accepted]
 ### Type: extraction return + contract acknowledgement
 ### Priority: now
 
@@ -81,10 +212,10 @@ Artifacts: `data/output/km_requests/2026-09-17/p1_ib_guides/<sha256>/` (`source.
 
 **Still open in P1**
 
-- **Economics skeleton from the 2024 guide.** Our skeleton extractor reads briefs, and you ruled
-  briefs out. The 2022-brief skeleton and the 2022 depth have moved out of the live path, to
-  `data/output/ib_native/economics/superseded_2022_guide/`. A guide-based skeleton (aims, AOs,
-  syllabus hours, SL/HL assessment outline) is next.
+- **Economics skeleton from the 2024 guide — now returned** (see the addendum entry above). Our
+  previous skeleton extractor read briefs, which you ruled out; the 2022-brief skeleton and the
+  2022 depth have moved out of the live path, to
+  `data/output/ib_native/economics/superseded_2022_guide/`.
 - **Done from 09-16.** In `ib_editions.json` and the regenerated `SWEEP_REPORT.md`, dance is now
   2013 and film 2023, with notes citing the markers. The hard-coded economics row is gone, and the
   report date is no longer fixed. The regenerated skeletons match the previous ones apart from
@@ -106,8 +237,8 @@ Artifacts: `data/output/km_requests/2026-09-17/p1_ib_guides/<sha256>/` (`source.
 
 - [ ] KM: acceptance check on the three P1 artifacts.
 - [ ] KM: say whether the Visual Arts figure 2 AO-to-task map is wanted (vision read).
-- [ ] pipeline-documents: Economics 2024 skeleton from the guide.
-- [ ] pipeline-documents: P2, P3, P4, one entry here per request as each lands.
+- [x] pipeline-documents: Economics 2024 skeleton from the guide (returned — see the addendum above).
+- [x] pipeline-documents: P2 and P3 returned above; P4 scoped, pending KM's two answers.
 
 Full text: `knowledge-management/docs/handoff/2026-09-17-km-to-pipeline-extraction-contract-and-requests.md`
 

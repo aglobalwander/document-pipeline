@@ -60,6 +60,28 @@ This directory contains scripts for extracting and processing educational standa
 - Guide-shaped extractors for DP Theory of Knowledge (2022) and Visual Arts (2027), which print
   no statement codes; read `text_layer.jsonl` so every item carries page and bbox
 
+#### `ib_econ_guide_skeleton.py`
+- Builds the DP Economics skeleton from the guide alone (aims, key concepts, AOs, syllabus units
+  and hours, assessment components), replacing the brief-based sweep for that subject
+- Reads `text_layer.jsonl`; every item keeps PDF page and bbox
+
+#### `ncas_at_a_glance_extract.py`
+- Reads the 12 NCAS At a Glance PDFs by sha and writes `cells.jsonl` + `summary.json`: printed
+  column code, letter/inline code, text, page, bbox, row context and flags
+- Never normalises codes; irregular printed forms are flagged for KM to rule on
+
+#### `km_row_reads.py`
+- Locates each of KM's 473 requested rows by printed key and text in the named sha's text layer,
+  with a crop per read region. No OCR, no model
+- Re-reads a row across sibling shas only for ACTFL, where the level PDFs share a layout and the
+  request mislabels the source; other frameworks' coincidences are boilerplate, not a swapped source
+
+#### `check_p3_reads.py`
+- Acceptance for P3: every token of a read row's `printed_text` is printed on that row's own region
+  pages (presence), and every referenced crop exists. Exits non-zero on either failure
+- Reports token order separately (soft): maths glyphs, rubric codes and GOLD heading reconstruction
+  legitimately reorder text, so order is not a failure condition
+
 #### `map_ncas_to_drupal_hierarchy.py`
 - Maps extracted NCAS standards to Drupal's 4-level hierarchy
 - Creates hierarchy entries and standard entries with proper taxonomy references

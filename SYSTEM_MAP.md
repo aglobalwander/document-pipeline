@@ -3,8 +3,8 @@
 ## Runtime
 
 - Python 3.13 managed by Poetry (`python = ">=3.13,<3.14"`; `.python-version` = 3.13).
-  Floor raised from 3.10 on 2026-09-17: 3.10 reaches end-of-life in Oct 2026, and
-  Poetry otherwise builds an unusable 3.14 environment
+  Floor raised from 3.10 on 2026-09-17 (3.10 reaches end-of-life in Oct 2026); the
+  `<3.14` ceiling is load-bearing — `onnxruntime <=1.23.2` publishes no cp314 wheels
 - local CLI tooling; no deployed service or HTTP routes
 - local PDF stack: Enhanced Docling, Docling, PyMuPDF
 - Office stack: MarkItDown, Mammoth, python-pptx, python-docx

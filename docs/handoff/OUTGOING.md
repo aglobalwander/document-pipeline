@@ -416,6 +416,17 @@ are flow's to record, and per-repo `MAP.yml` keys are contract-governed.
       in `ecosystem-map/TOOLING.md`, and note that `.python-version` pins 3.13 rather than the 3.10
       in your status line.
 - [ ] flow: confirm the ruling and close the inbox item (3 actions were open there).
+
+**Correction to this entry (same day).** My earlier note said relaxing the
+`youtube-transcript-api` pin was "the single change needed" to open the ceiling above 3.13. That was
+wrong, and I checked it before acting on it: **onnxruntime is the gate.** `onnxruntime <=1.23.2`
+publishes cp310–cp313 wheels only, so `uv pip compile --python-version 3.14` refuses to resolve the
+declared set. onnxruntime publishes cp314 wheels from **1.24.1**, so opening 3.14 means moving the
+`onnxruntime` ceiling — plus `torch` (lock holds 2.13.0; cp314 appears at 2.14.0) and `docling-parse`
+(lock holds 7.12.0; cp314 only on 7.8.x/7.9.0) — i.e. exactly the OCR migration your ruling avoided.
+The `youtube-transcript-api` override stays in place as a second, independent guard; it is not the
+unlock. Nothing dependency-wise was changed for this: the pin was left alone rather than edited for
+no benefit. Recorded in `docs/MODEL_ROUTING.md`, `README.md`, `SYSTEM_MAP.md` and `CHANGELOG.md`.
 - [x] pipeline-documents: narrow applied, `.python-version` added (3.13), lock re-resolved, tests
       returned.
 

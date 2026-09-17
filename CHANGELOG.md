@@ -7,13 +7,18 @@
 - Raised the Python floor from 3.10 to 3.13 and narrowed the project constraint to
   `python = ">=3.13,<3.14"` (`pyproject.toml`), added `.python-version` (3.13), and
   re-resolved `poetry.lock` (197 → 186 packages; `[metadata] python-versions` now
-  `">=3.13,<3.14"`). Two reasons, in order: 3.10 reaches end-of-life in October 2026,
-  and Poetry selects Homebrew `python3.14` whenever the constraint allows it, where
-  `youtube-transcript-api` is excluded by marker so the declared dependency set cannot
-  install. 3.13 needs no OCR migration — `onnxruntime <=1.23.2` ships cp313 wheels —
-  and the archived `scripts/archive/youtube_adhoc/*` scripts remain the only
-  `youtube-transcript-api` consumers (the live path is yt-dlp). Documented in
-  `README.md`, `SYSTEM_MAP.md`, `AGENTS.md` and `docs/MODEL_ROUTING.md`.
+  `">=3.13,<3.14"`). 3.10 reaches end-of-life in October 2026; 3.13 is a supported
+  interpreter that needs no OCR migration, because `onnxruntime 1.23.2` ships cp313
+  wheels. Documented in `README.md`, `SYSTEM_MAP.md`, `AGENTS.md` and
+  `docs/MODEL_ROUTING.md`.
+- Corrected the reason the `<3.14` ceiling is load-bearing: it is the OCR stack, not
+  the archived YouTube scripts. `onnxruntime <=1.23.2` publishes cp310–cp313 wheels
+  only, so `uv pip compile --python-version 3.14` cannot resolve the declared set
+  (onnxruntime itself publishes cp314 wheels only from 1.24.1). `torch 2.13.0` and
+  `docling-parse 7.12.0` would need movement too. Opening 3.14 therefore means moving
+  the OCR ceiling — the migration this change deliberately avoided — and is recorded
+  rather than attempted. The `youtube-transcript-api` `<3.14` override stays as a
+  second, independent guard (it is not, on its own, what blocks 3.14).
 ## Unreleased - 2026-09-16
 
 ### Fixed

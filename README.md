@@ -21,8 +21,8 @@ CSV, or XLSX—so downstream repositories can decide how to store and index them
 
 Python 3.13 and Poetry are required. The project floor and ceiling are
 `python = ">=3.13,<3.14"` in `pyproject.toml`, and `.python-version` pins 3.13.
-The `<3.14` ceiling is deliberate: on 3.14 the declared dependency set does not
-install (`youtube-transcript-api` is excluded by marker).
+The `<3.14` ceiling is deliberate and verified: `onnxruntime <=1.23.2` publishes
+cp310–cp313 wheels only, so the OCR stack cannot install on 3.14.
 
 ```bash
 git clone https://github.com/aglobalwander/document-pipeline.git

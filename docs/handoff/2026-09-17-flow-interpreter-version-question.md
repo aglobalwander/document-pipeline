@@ -68,6 +68,12 @@ Poetry on Scott's Mac resolves the conflict by silently building a 3.14 environm
   `scripts/archive/youtube_adhoc/nike_transcript.py:6`.
 - So the pin that decides the interpreter question appears to protect archived code, not the live
   pipeline. **Not verified:** whether those archived scripts still need to be runnable.
+- **Correction, same day (verified).** The paragraph above implied the archived pin was the reason
+  3.14 is unavailable. It is not. The gate is the OCR stack: `onnxruntime <=1.23.2` publishes
+  cp310–cp313 wheels only, so `uv pip compile --python-version 3.14` cannot resolve the declared set;
+  onnxruntime publishes cp314 wheels from 1.24.1, and `torch` (lock: 2.13.0) and `docling-parse`
+  (lock: 7.12.0) would need movement as well. On 3.13 none of that is needed. The archived pin is a
+  second, independent guard, not the unlock.
 
 ## Why this is live rather than theoretical
 

@@ -19,10 +19,10 @@ classifiers = [
 packages = [{include = "doc_processing"}]
 
 [tool.poetry.dependencies]
-# Floor raised 3.10 -> 3.13 (2026-09-17, flow ruling). The <3.14 ceiling is deliberate: Poetry
-# otherwise selects Homebrew python3.14, where youtube-transcript-api is excluded by marker and
-# the declared dependency set does not install. 3.13 is a supported interpreter inside that
-# ceiling and needs no OCR migration (onnxruntime <=1.23.2 ships cp313 wheels).
+# Floor raised 3.10 -> 3.13 (2026-09-17, flow ruling). The <3.14 ceiling is deliberate and verified:
+# onnxruntime <=1.23.2 publishes cp310-cp313 wheels only, so the declared OCR stack cannot install
+# on 3.14 (youtube-transcript-api is marker-excluded there as well). 3.13 sits inside that ceiling
+# and needs no OCR migration: onnxruntime 1.23.2 ships cp313 wheels.
 python = ">=3.13,<3.14"
 typer = ">=0.15.2,<0.27"
 pydantic-settings = "^2.9.1"

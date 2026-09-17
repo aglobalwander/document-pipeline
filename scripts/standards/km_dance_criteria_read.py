@@ -70,7 +70,10 @@ def item_at(match: dict, layer: list[dict]) -> dict:
     same = [r for r in layer if r["page"] == page and r["md_line"] >= match["md_line"]]
     lines = [match]
     for rec in same[1:]:
-        if rec["bbox"][1] - y > 16 or re.match(r"^[A-Z]\.\s|^\d+\.\s", rec["text"].strip()):
+        # A lettered sub-item starts a new criterion and must not be glued onto the previous one.
+        # The letters print lowercase (`a.`…`e.`), so the stop rule has to accept both cases — the
+        # first version matched only `[A-Z]\.` and silently merged `b.` into the row above.
+        if rec["bbox"][1] - y > 16 or re.match(r"^[A-Za-z]\.\s|^\d+\.\s", rec["text"].strip()):
             break
         lines.append(rec)
         y = rec["bbox"][1]

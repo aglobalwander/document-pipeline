@@ -90,7 +90,7 @@ These major-version holds are intentional rather than missed upgrades:
 
 | Package | Constraint kept | Reason |
 |---|---|---|
-| Python | `^3.10` | Preserve documented support for now; current yt-dlp warns that 3.10 is deprecated, so move the Poetry environment to 3.11+ as a separate compatibility migration |
+| Python | `>=3.13,<3.14` | Applied 2026-09-17. Floor raised from `^3.10` because 3.10 reaches end-of-life in Oct 2026 and Poetry otherwise selects Homebrew 3.14, where `youtube-transcript-api` is excluded by marker and the declared set does not install. 3.13 is a supported interpreter inside the `<3.14` ceiling and needs no OCR migration (`onnxruntime <=1.23.2` ships cp313 wheels). The archived `scripts/archive/youtube_adhoc/*` scripts are the only `youtube-transcript-api` consumers; the live YouTube path is yt-dlp |
 | pandas | `^2.2.0` | pandas 3 is a separate compatibility migration, not a lock refresh |
 | pytest | `^8.3` | pytest 9 is a separate test-infrastructure migration |
 | onnxruntime | `<=1.23.2` | Preserve the existing runtime compatibility ceiling |

@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased - 2026-09-17
+
+### Changed
+
+- Raised the Python floor from 3.10 to 3.13 and narrowed the project constraint to
+  `python = ">=3.13,<3.14"` (`pyproject.toml`), added `.python-version` (3.13), and
+  re-resolved `poetry.lock` (197 → 186 packages; `[metadata] python-versions` now
+  `">=3.13,<3.14"`). Two reasons, in order: 3.10 reaches end-of-life in October 2026,
+  and Poetry selects Homebrew `python3.14` whenever the constraint allows it, where
+  `youtube-transcript-api` is excluded by marker so the declared dependency set cannot
+  install. 3.13 needs no OCR migration — `onnxruntime <=1.23.2` ships cp313 wheels —
+  and the archived `scripts/archive/youtube_adhoc/*` scripts remain the only
+  `youtube-transcript-api` consumers (the live path is yt-dlp). Documented in
+  `README.md`, `SYSTEM_MAP.md`, `AGENTS.md` and `docs/MODEL_ROUTING.md`.
 ## Unreleased - 2026-09-16
 
 ### Fixed

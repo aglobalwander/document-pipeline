@@ -31,6 +31,12 @@ audit. Recheck official provider documentation before changing model aliases.
 Use Poetry for every repository Python command. Do not use the available Conda
 environments.
 
+The interpreter is **Python 3.13**: `pyproject.toml` pins `python = ">=3.13,<3.14"`
+and `.python-version` pins 3.13. Keep the `<3.14` ceiling — Poetry otherwise picks
+Homebrew `python3.14`, where the declared dependency set cannot install. If Poetry
+ever builds an unintended environment, re-point it with
+`poetry env use /opt/homebrew/opt/python@3.13/bin/python3.13`.
+
 ```bash
 poetry install
 poetry run python -c "import doc_processing; print('ready')"

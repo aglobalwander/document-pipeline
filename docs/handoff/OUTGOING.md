@@ -306,3 +306,117 @@ and no AOs).
       27 numeric codes with none added or removed) as reproduced or not, with the code-set diff.
 
 Full text: `docs/handoff/2026-09-16-km-request-ib-guide-re-extraction.md`
+
+---
+
+## [FROM: pipeline-documents] [TO: flow] [DATE: 2026-09-17] [STATUS: open — question sent; no repo change made]
+### Type: runtime-decision-question
+### Priority: now
+
+**Subject: Which interpreter does this ecosystem expect for pipeline-documents — 3.10 or 3.14?**
+
+We cannot tell from this repo's own artifacts, so we are asking flow rather than choosing: either
+answer changes a dependency, and that is not this repo's call.
+
+- `pyproject.toml` says `python = "^3.10"` (Poetry reads the caret as `>=3.10,<4.0`, so 3.14 is
+  allowed), while `youtube-transcript-api` is capped at `python = ">=3.10,<3.14"`; `poetry.lock`
+  encodes that as a marker (`python_version < "3.14"`, line 6288), so a 3.14 install *succeeds and
+  silently omits the package* instead of failing.
+- `README.md:22` and `SYSTEM_MAP.md:5` say "Python 3.10+" with no ceiling, and there is no
+  `.python-version` in this repo.
+- `flow/ecosystem-map/MAP.yml` records no interpreter or runtime key for this repo or any other, so
+  the ecosystem map cannot answer it either.
+- Sibling practice points at 3.14: `data_analysis/.python-version` is `3.14.0`, and flow's
+  `work_ledger.yml` (2026-09-04) records Studio Lab's `.venv` consolidated "onto its verified
+  Python 3.14 venv".
+- On Scott's Mac, 2026-09-17, a plain `poetry run` auto-created a 3.14 env (Poetry 2.4.1 takes the
+  first satisfying `python3` on `PATH`) that lacks project packages and failed its creation pip
+  seed, leaving `poetry run` broken until the 3.10 env was re-activated. Verified after the fix:
+  `poetry run pytest -q` → 51 passed, 17 deselected.
+- The deciding pin looks vestigial: the live YouTube path is `yt-dlp`
+  (`doc_processing/loaders/youtube_loader.py:8`), and `youtube-transcript-api` is imported only by
+  `scripts/archive/youtube_adhoc/*`. Not verified: whether those archived scripts stay runnable.
+
+### Action Required
+
+- [ ] flow: rule 3.10 (dependency set unchanged) or 3.14 (relax or drop the archived pin).
+- [ ] flow: say whether an interpreter fact belongs in `MAP.yml` (for example an optional
+      `runtime: {python: "3.10"}`) or `TOOLING.md`, so agents stop inferring it from `PATH`.
+- [ ] pipeline-documents: apply the ruling, re-run `poetry lock`, and confirm the tests.
+
+Full text: `docs/handoff/2026-09-17-flow-interpreter-version-question.md`. Same note filed in flow's
+inbox: `flow/docs/handoff/INCOMING.md` (2026-09-17 entry, `[TO: flow]`).
+
+---
+
+## [FROM: pipeline-documents] [TO: flow] [DATE: 2026-09-17] [STATUS: applied — floor raised to 3.13, ceiling held at `<3.14`; evidence below]
+### Type: runtime-decision-applied
+### Priority: now
+
+**Subject: Narrow applied and the floor raised to 3.13 — constraint diff, lock change and test
+result as requested.**
+
+Scott directed the floor raise to 3.13 rather than pinning `.python-version` to 3.10, so the narrow
+you asked for was applied as the **ceiling** (`<3.14`) and the **floor** moved 3.10 → 3.13. That is
+the only deviation from your status line: `.python-version` is `3.13`, not `3.10`.
+
+**Constraint diff** (`pyproject.toml`)
+
+- `python = "^3.10"` → `python = ">=3.13,<3.14"`, with a four-line comment recording why the
+  ceiling is load-bearing (Poetry otherwise selects Homebrew `python3.14`, where
+  `youtube-transcript-api` is marker-excluded and the declared set cannot install).
+- Classifiers `3.10`/`3.11` → `3.12`/`3.13`.
+- `youtube-transcript-api`'s own `python = ">=3.10,<3.14"` pin was **left in place**; on 3.13 it
+  installs normally. Its floor is now looser than the project's — if the archived
+  `scripts/archive/youtube_adhoc/*` scripts are ever dropped, relaxing that pin is what would allow
+  3.14 later.
+- New tracked file: `.python-version` = `3.13`.
+
+**Lock change** (`poetry.lock`)
+
+| | before | after |
+|---|---|---|
+| `[metadata] python-versions` | `"^3.10"` | `">=3.13,<3.14"` |
+| `content-hash` | `e57f62c3…` | `dabd2720…` |
+| package entries | 197 | 186 |
+| `youtube-transcript-api` | marker-gated `python_version < "3.14"` | installs normally (no marker) |
+
+`poetry check --lock` reports no lock inconsistency (only the pre-existing legacy
+`[tool.poetry]` metadata deprecation warnings this repo already defers in
+`docs/MODEL_ROUTING.md`).
+
+**Test result — matches your expectation exactly**
+
+- `poetry run pytest -q` → **51 passed, 17 deselected** in 18.17s.
+- Interpreter in use: **3.13.15** (`poetry env use /opt/homebrew/opt/python@3.13/bin/python3.13`;
+  `poetry env list` shows `…py3.13 (Activated)`). `poetry install` completed on 3.13.
+- OCR stack intact, no migration: **onnxruntime 1.23.2**, PyMuPDF 1.28.2, yt-dlp 2026.07.04;
+  `poetry run python -c "import doc_processing"` → `ready`; `run_pipeline.py --help` renders.
+- End-to-end smokes on 3.13, not just imports: `run_pipeline.py --pipeline_type text` on
+  `data/input/text/sample_report.txt` saved 812 chars; `master_docling.py` on a 1-page PDF
+  (`AI Vendor Due Diligence.pdf`) ran the full Torch/Docling/onnxruntime stack and wrote
+  `data/output/markdown/AI Vendor Due Diligence_docling.md` with real headings and table content.
+- The current workstream also runs on 3.13: `scripts/standards/check_p3_reads.py` → **P3 acceptance:
+  PASS** (473 rows, presence PASS, crops PASS, 83 soft-order rows — identical to the 3.10 result).
+- 3.13 is inside support (security support to ~Oct 2029) rather than next month's 3.10 EOL.
+
+**Docs updated in the same patch:** `README.md` (setup), `SYSTEM_MAP.md` (runtime), `AGENTS.md`
+(required environment, plus the `poetry env use` recovery command), `docs/MODEL_ROUTING.md` (the
+Python row now reads `>=3.13,<3.14` with the reason), `CHANGELOG.md` (new dated Unreleased entry).
+
+**Claim boundary:** verified on Scott's Mac only, from the local Poetry environment — this is not a
+CI matrix result and does not assert that every optional extras combination resolves on 3.13.
+
+**Not done, deliberately:** `ecosystem-map/TOOLING.md` was not touched — per-repo interpreter facts
+are flow's to record, and per-repo `MAP.yml` keys are contract-governed.
+
+### Action Required
+
+- [ ] flow: record the interpreter fact for pipeline-documents as **Python 3.13** (`>=3.13,<3.14`)
+      in `ecosystem-map/TOOLING.md`, and note that `.python-version` pins 3.13 rather than the 3.10
+      in your status line.
+- [ ] flow: confirm the ruling and close the inbox item (3 actions were open there).
+- [x] pipeline-documents: narrow applied, `.python-version` added (3.13), lock re-resolved, tests
+      returned.
+
+Full text: `docs/handoff/2026-09-17-flow-interpreter-version-question.md` (status now resolved).

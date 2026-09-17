@@ -29,6 +29,58 @@ row nor an authorization to rule editions, canonize, or crosswalk.
 
 ---
 
+## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: answers received — all seven P4 asks answered; seven items are ours, two need Scott]
+### Type: answers + rulings + asks back
+### Priority: now
+
+**Subject: KM answered the seven P4 questions and landed three DP repairs; the remaining seven actions are ours, two decisions are Scott's**
+
+KM measured before answering: every number was recomputed on our return and on KM's own canon, and
+where the two disagree the answer says so and gives the reproduction path. The answers cover the six
+Hub-composite-code subjects, the arts/language statement shape, the Visual Arts canon basis, the nine
+stale `subject_area` labels, reference hygiene, level coverage, and acceptance.
+
+**Landed on KM's side since the answers were written** (full record pasted alongside as
+`2026-09-17-km-dp-repairs-executed.md`):
+
+- the `geography` → `global_politics` rekey — **789 rows**, basis recorded per row,
+  `apply_authorized: false`; the label itself is Hub's to change;
+- the heading → canon-code mapping, taking our join from **61.5% → 84.8%** of the 2,338 rows, by four
+  named rules;
+- the statement layer canonised — **1,499 rows** plus **839 held**, with `check_source_fidelity.py`
+  returning **`exact` on all 1,499** (and 754 of the 838 holds), so the holds are a grain question
+  rather than a text-quality one.
+
+**Seven items remain ours:** `printed_heading` plus the canon subject slug (217 rows do not join as
+written); the statement code with its printed section qualifier (`Structure 1.1.1` and
+`Reactivity 1.1.1` both arrive as `1.1.1`, which is what breaks `(subject, code)` as the layer's
+identity); one duplicated `design_technology` row; **one** context-spine extractor rather than ten —
+and the work is **seven documents, not a scatter**; the six level grammars; adoption of the nine
+markers; and keeping the 12 debris and 63 Maths rows in the reference. **Two decisions are Scott's:**
+Biology's edition, and whether KM's derived canon codes are retired long term.
+
+### Action Required
+
+- [x] KM: rekey `geography` → `global_politics` (789 rows, basis per row).
+- [x] KM: build the heading → canon-code mapping (61.5% → 84.8% join).
+- [x] KM: canonise the statement layer (1,499 + 839 held; `exact` on all 1,499).
+- [ ] pipeline-documents: emit `printed_heading` and the canon subject slug per statement row (217
+      rows do not join as written).
+- [ ] pipeline-documents: emit the statement code with its section qualifier, as printed.
+- [ ] pipeline-documents: remove the duplicated `design_technology` row (`B1.1` / `1.1.2`).
+- [ ] pipeline-documents: one context-spine extractor for the seven documents — the statement *unit*
+      is what is missing, not the text (already `exact`).
+- [ ] pipeline-documents: extend the six level grammars; keep `unrecorded_in_artifact` until they land.
+- [ ] pipeline-documents: adopt the nine markers; leave the Geography label to Hub.
+- [ ] pipeline-documents: keep the 12 debris rows and the 63 Maths rows in the reference.
+- [ ] Scott: Biology's edition (the newest-governs choice was surfaced with its delta and declined).
+- [ ] Scott: whether KM's derived canon codes for the six composite-code subjects are retired.
+
+Full text: `docs/handoff/2026-09-17-km-answers-p4-open-questions.md`. Detail behind KM's changes:
+`docs/handoff/2026-09-17-km-dp-repairs-executed.md`. The asks being answered:
+`docs/handoff/2026-09-17-pipeline-to-km-open-questions.md` (our `a8ad1d6`).
+
+---
 ## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: accepted — P1 (with the Economics skeleton addendum), P2, P3 and P4 returned; P4 needs three rulings]
 ### Type: working contract + extraction requests
 ### Priority: now

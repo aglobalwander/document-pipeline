@@ -126,8 +126,38 @@ def test_code_check_separates_a_missing_topic_from_a_deeper_statement_code(monke
                       {"subject": "Music", "printed_code": "M1", "rows": 1}]
     assert stats["topic_is_a_canonical_row"] == 1
     assert stats["statement_is_its_own_topic"] == 1
-    assert stats["topic_not_in_canonical"] == 2
+    assert stats["topic_not_in_canonical_strict_and_tolerant"] == 2
     assert stats["subject_not_in_canonical"] == 1
+
+
+def test_tolerant_topic_matching_absorbs_the_mechanical_layer_differences():
+    # spacing: the reference prints "AHL 1.10" where the canonical holds "AHL1.10"
+    assert p4.tolerant_topic_of("AHL 1.10", {"AHL1.10"}) == "AHL1.10"
+    # theme name instead of letter: "Reactivity 1.1" against canonical "R1.1"
+    assert p4.tolerant_topic_of("Reactivity 1.1", {"R1.1"}) == "R1.1"
+    # theme letter dropped: reference "1.1.1" against canonical "A1.1"
+    assert p4.tolerant_topic_of("1.1.1", {"A1.1"}) == "A1.1"
+    # the longest numeric tail wins, so a topic beats the theme row above it
+    assert p4.tolerant_topic_of("1.1.1", {"A", "A1", "A1.1"}) == "A1.1"
+
+
+def test_tolerant_topic_matching_still_refuses_a_code_with_no_numbers():
+    assert p4.tolerant_topic_of("ArtMaking-C13", {"AO-CURATE"}) is None
+    assert p4.tolerant_topic_of("", {"A1.1"}) is None
+
+
+def test_code_check_reports_strict_and_tolerant_separately(monkeypatch):
+    monkeypatch.setattr(p4, "canonical_codes",
+                        lambda: {"mathematics_ai": {"AHL1.10"}, "biology": {"A1.1"}})
+    rows = [{"subject": "Mathematics Applications and Interpretation", "printed_code": "AHL 1.10"},
+            {"subject": "Biology", "printed_code": "1.1.1"},
+            {"subject": "Biology", "printed_code": "Q9.9"}]
+
+    misses, stats = p4.code_check(rows)
+
+    assert misses == [{"subject": "Biology", "printed_code": "Q9.9", "rows": 1}]
+    assert stats["topic_only_under_tolerant_matching"] == 2
+    assert stats["topic_not_in_canonical_strict_and_tolerant"] == 1
 
 
 def test_ao_marker_matches_numbered_forms_only():

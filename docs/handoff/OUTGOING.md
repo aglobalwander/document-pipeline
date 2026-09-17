@@ -546,6 +546,8 @@ invocations will be added here when recovered; no artifact has been written for 
 - [ ] KM: rule which Visual Arts edition governs; if 2027, the 194 partials need a shape decision.
 - [ ] KM: confirm whether the 12 debris rows and the 63 empty-text rows stay in your reference.
 - [ ] KM: rule on the nine subjects where the topic-code rule cannot hold (point 5).
+      **Corrected below:** it is six subjects, not nine, and the codes in question are your Hub
+      composite IDs — see correction 1.
 - [x] pipeline-documents: the extractor reruns and `ib_depth_to_statements.py` are done — see the
       statements section below (all 12 subjects, 2,303 statements with page and bbox). The
       arts/language shapes still wait on your ruling.
@@ -576,3 +578,49 @@ topic code, printed level, page, bbox and md_line — the shape your acceptance 
 
 Artifacts: `p4_dp_statements/<sha>/statements.csv` and `statements_summary.json` (per subject), plus
 `p4_dp_statements/STATEMENTS_SUMMARY.md` for the combined table.
+
+**Two corrections to what we told you above, both from evidence we went and got.**
+
+1. **The topic-code section overstates the problem, and the nine subjects were the wrong ones.** Our
+   first check compared the codes literally. When we tolerate the mechanical differences the two
+   layers actually use — spacing (`AHL 1.10` against canonical `AHL1.10`), theme name against theme
+   letter (`Reactivity 1.1` against `R1.1`), and the reference dropping the theme letter
+   (`1.1.1` against `A1.1`) — the misses fall from **2,525 to 236 rows**, and Chemistry,
+   Mathematics (AA and AI), Design Technology, Business Management and Economics match entirely.
+   The 236 that survive both checks sit in **six subjects only** — Visual Arts 94, Dance 57,
+   Music 34, Psychology 24, Literature 14, Language and Literature 13 — and they survive because
+   their reference `printed_code` values are Hub composite IDs (`ArtMaking-C13`,
+   `CompAnalysis-C10_2`, `Concepts-Bias-Desc`, `Experiment-creator-C1`, `AC-10`), not codes the
+   guides print. So the ruling you need is narrower than we implied: not nine subjects, and not a
+   canonical-layer shape problem, but what those six references should carry as a code.
+2. **Visual Arts is settled, and it is the mirror of the label problem.** The store holds the
+   superseded **`Visual Arts (2017).pdf`**, so we read it and located your 214 rows in both editions:
+
+   | guide | lines | your rows located |
+   |---|---:|---|
+   | Visual Arts (2027) — the guide your request named | 4,350 | 19 / 214 (8.9%) |
+   | Visual Arts (2017) — superseded, in the same store | 3,186 | **212 / 214 (99.1%)** |
+
+   So Visual Arts' canon rows are the **2017** record, its `subject_area` label (first assessment
+   2017) was **right**, and it is the guide your request named that differs — the opposite of the
+   other nine. Ruling wanted: either re-derive the Visual Arts statements from the 2027 guide (we
+   hold its P1 depth and its located rows), or keep the 2017 record and label it as that edition.
+   Both are one command for us once you say which.
+
+**The other nine label disagreements are the stale ones.** Their content locates in the guide your
+request named at 87–100%, so the canon text is from the newer edition and the labels are not. The
+markers we read from those documents, for adoption: Computer Science **2027**, Design Technology
+**2027**, ESS **2026**, Global Politics **2026**, History **2028**, Language and Literature **2026**,
+Literature **2026**, Physics **2025**, Psychology **2027**. Two labels carry a second defect worth
+correcting at the same time: Global Politics' label says *Geography*, and ESS' label ends at
+last assessment 2025 while the guide we hold prints 2026.
+
+**Still open on our side, and the shape question with it.** The ten arts/language subjects have no
+depth artifact, so their statements appear only in `statements_located.jsonl` (located, with page and
+bbox) and not in a `statements.csv` with a topic tree. We will not build ten grammars on a guess. Our
+proposal, if you want it before you rule: use **your reference as the spine** — for each located row
+capture the nearest preceding printed theme and topic headings as its topic context, so you get
+"statements under each topic" for those subjects without any per-subject grammar being invented,
+and with every row still carrying the guide's own text, page and bbox. It does not pre-empt your
+ruling — the topic context is read from the guide's own headings, and the row's identity is still
+your reference code.

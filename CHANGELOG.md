@@ -61,6 +61,20 @@
   `unrecorded_in_artifact` where the artifact holds no HL signal — 968 statements have a recorded
   level and 1,335 do not, because six extractors do not catch those guides' AHL markers (a
   pre-existing grammar limitation, identical in the old artifacts).
+- `scripts/standards/km_reference_context.py` covers the subjects with no depth artifact: it gives
+  each of KM's reference rows its printed topic context (the two nearest headings above the row,
+  read from the guide's text layer), so "statements under each topic" exists for all ten
+  arts/language subjects without inventing a grammar per subject. **1,778 rows; all but three carry
+  a printed topic heading above them.** `--sha` re-locates the rows against a different edition
+  first, which is how the Visual Arts rows were placed in the 2017 guide.
+- Two corrections to the earlier P4 return, both measured rather than argued. The topic-code check
+  was comparing codes literally; tolerating the differences the two layers actually use (spacing
+  `AHL 1.10` vs `AHL1.10`, theme name `Reactivity 1.1` vs `R1.1`, a dropped theme letter
+  `1.1.1` vs `A1.1`) drops the misses from **2,525 rows to 236**, and the nine subjects named
+  earlier become six — the ones whose reference codes are Hub composite IDs. And the Visual Arts
+  edition question is now settled by evidence: the store holds the superseded 2017 guide and KM's
+  214 rows locate **212 (99.1%)** in it against **19 (8.9%)** in the 2027 guide the request named,
+  so the label was right and the named guide differs.
 ## Unreleased - 2026-09-16
 
 ### Fixed

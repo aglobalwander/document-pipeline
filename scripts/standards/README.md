@@ -94,6 +94,16 @@ This directory contains scripts for extracting and processing educational standa
   as `unrecorded_in_artifact` where the artifact holds no HL signal, so a default is never mistaken
   for a printed reading
 
+#### `km_reference_context.py`
+- For the subjects with no depth artifact (the ten KM flags `arts_language=yes`), gives each of KM's
+  own reference rows its printed topic context: the two nearest headings above the row, read from
+  the guide's text layer, so "statements under each topic" is available without inventing a grammar
+  per subject
+- `--sha` re-locates rows against a different edition's layer first (used for Visual Arts, whose
+  rows belong to the 2017 guide rather than the 2027 guide the request named)
+- Writes `statements_arts.csv` and `arts_summary.json`; the row keeps the reference's code so KM can
+  rule on the shape afterwards
+
 #### `km_row_reads.py`
 - Locates each of KM's 473 requested rows by printed key and text in the named sha's text layer,
   with a crop per read region. No OCR, no model

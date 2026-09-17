@@ -318,6 +318,30 @@ def topic_of(code: str, codes: set[str]) -> str | None:
     return best
 
 
+DIGITS = re.compile(r"\d+(?:\.\d+)*")
+
+
+def tolerant_topic_of(code: str, codes: set[str]) -> str | None:
+    """Topic match that tolerates the mechanical differences between the two layers.
+
+    Compared on the numeric tail, so the pairs the layers really use still match: `AHL1.10` against
+    `AHL 1.10` (spacing), `R1.1` against `Reactivity 1.1` (theme name instead of letter), `A1.1`
+    against `1.1.1` (the reference drops the theme letter). Reported alongside the strict result, not
+    instead of it, because it is deliberately permissive: a numeric tail can coincide across themes.
+    """
+    low = (code or "").strip().lower()
+    tail = DIGITS.search(low)
+    if not tail:
+        return None
+    want = tail.group(0)
+    best = None
+    for c in codes:
+        m = DIGITS.search((c or "").lower())
+        if m and want.startswith(m.group(0)) and (best is None or len(m.group(0)) > len(best)):
+            best = c
+    return best
+
+
 def code_check(rows: list[dict]) -> tuple[list[dict], dict]:
     """KM's acceptance asks that each statement's *topic* exist in dp_canonical, not its own code:
     the canonical layer is coarser than the statement set (1,788 rows against 9,272 statements).
@@ -332,13 +356,16 @@ def code_check(rows: list[dict]) -> tuple[list[dict], dict]:
         code = (r["printed_code"] or "").strip()
         codes = canon.get(slug or "", set())
         topic = topic_of(code, codes) if codes else None
+        loose = tolerant_topic_of(code, codes) if codes and topic is None else None
         if not slug:
             stats["subject_not_in_canonical"] += 1
         elif not code:
             stats["no_printed_code"] += 1
-        elif topic is None:
-            stats["topic_not_in_canonical"] += 1
+        elif topic is None and loose is None:
+            stats["topic_not_in_canonical_strict_and_tolerant"] += 1
             misses[(r["subject"], code)] += 1
+        elif topic is None:
+            stats["topic_only_under_tolerant_matching"] += 1
         elif topic.lower() == code.lower():
             stats["statement_is_its_own_topic"] += 1
         else:

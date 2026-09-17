@@ -75,6 +75,16 @@
   edition question is now settled by evidence: the store holds the superseded 2017 guide and KM's
   214 rows locate **212 (99.1%)** in it against **19 (8.9%)** in the 2027 guide the request named,
   so the label was right and the named guide differs.
+- Recorded Scott's edition rule in `AGENTS.md`: where the store holds more than one edition of the
+  same guide, the newest governs the extraction, but the choice is surfaced with its evidence first
+  and the decision recorded against the sha. Checking the store against it found exactly three
+  subjects with two editions — `biology` (2025 / 2028), `economics` (2022 / 2024) and `visual arts`
+  (2017 / 2027). Economics and Visual Arts were already read from their newest edition; Biology was
+  read from the 2025 guide KM named while **`Biology (2028).pdf`** (sha `6b3d707d…`, marker "First
+  assessment 2028", 137 pp) is newer and also in the store. Its content delta is small and additive:
+  591 distinct printed codes against 589, the two additions being `A2.3.4` and `C2.1.2`, none
+  dropped, and KM's 589 Biology rows locate 588 in *both* editions — so re-deriving biology from 2028
+  is a re-attribution rather than a re-extraction. Awaiting Scott's decision; nothing changed yet.
 ## Unreleased - 2026-09-16
 
 ### Fixed

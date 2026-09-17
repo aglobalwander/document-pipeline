@@ -22,6 +22,13 @@ Processing defaults:
 - Keep `--llm_provider` unset for local processing. A selected provider is an
   explicit paid API opt-in, never an automatic fallback.
 - Never imply that local extraction proves downstream ingestion succeeded.
+- **Edition rule (Scott decides).** Where the store holds more than one edition of the
+  same guide, **the newest edition governs the extraction**. Never adopt that silently:
+  surface the choice first — which editions exist, the first-assessment marker each prints,
+  which edition the existing artifacts were read from, and what the content delta is — and
+  let Scott decide. Record the decision and the sha it applies to in the artifact's
+  `source.json` block and in the handoff. This is about which *document* we read: canon
+  edition *labels* remain knowledge-management's to set.
 
 See `docs/MODEL_ROUTING.md` for the current subscription/API boundary and model
 audit. Recheck official provider documentation before changing model aliases.

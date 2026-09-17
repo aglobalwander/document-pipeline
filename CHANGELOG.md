@@ -65,6 +65,15 @@
   The item is the paragraph (a gap larger than the guide's line pitch starts a new one) or a bulleted
   item, so a question unit carries its printed question. `unit_layout` records when a unit's body is a
   criteria **table** — Dance's are, and its cells are flagged for KM's grain ruling rather than keyed.
+- Four follow-ups KM asked for after the acceptance: **unit extents terminate at the next heading of any
+  kind** (the four subjects' statements fall from 871 over-captured items to **62**, and a question unit
+  carries its printed question); **list markers are handled structurally** — a bare `1.` starts the next
+  item instead of being glued to the previous one, so 0 statements end in a marker and none of the 8
+  legitimate sentence-final numbers (`… illustrated in figure 2.`) is corrupted; **Visual Arts and
+  Psychology are enumerated** (6/6 and 44/45, 104 of 105 in scope, the single `not_found` reported); and
+  the Music edition question is **declined with evidence** — `rev 12-1-16` is not the basis per KM's own
+  `rule_ncas_music_edition.py`, which keeps `Music at a Glance.pdf` because the rev extraction lost 20
+  well-formed codes and gained 2 truncated stubs while the text is identical on all 214 shared codes.
 
 ### Added
 

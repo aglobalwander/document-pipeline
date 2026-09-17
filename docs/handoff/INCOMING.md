@@ -97,7 +97,10 @@ At-a-Glance `source.json` files currently spell `unresolved`.
       next-heading extent rule: **62 printed items** across the 54 units, keyed
       `(subject, unit_code, item_index)`. Each item is the guide's own text with page, bbox and
       md_line; a question unit carries its printed question (`AoE1-Q1` → *Why and how do we study
-      literature?*).
+      literature?*). **Corrected after the consistency pass:** extending the enumerator to Visual Arts and
+      Psychology also brought their units into this extractor, so the artifact now carries **124 items
+      across 101 of the 104 units** (Visual Arts 12, Psychology 50). The three units with no statement are
+      genuinely empty under the next-heading rule: Dance `comp-ca`, Literature `AoE1-TOK` and `AoE2-TOK`.
 - [x] pipeline-documents: exclude **front matter** at source — done, **141 rows** excluded with the
       matched class kept per row in `front_matter_excluded.csv`: cover line 4, contents list 1, IB
       boilerplate 1, course-level sections 14, summary-outline table 56, and 65 rows whose heading is a

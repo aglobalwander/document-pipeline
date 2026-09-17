@@ -49,7 +49,10 @@ FIELDS = ["subject", "pdf_sha256", "unit_code", "unit_label", "item_index", "sta
           "unit_layout", "page", "bbox", "md_line", "source_line"]
 GUIDES = {"Dance": "Dance (2013).pdf", "Music": "Music (2022).pdf",
           "Literature": "Literature (2026).pdf",
-          "Language and Literature": "Language and Literature (2026).pdf"}
+          "Language and Literature": "Language and Literature (2026).pdf",
+          # KM asked for these two to be enumerated as well; their units have statements under them
+          # like the first four, so the extractor has to know their guides.
+          "Visual Arts": "Visual Arts (2027).pdf", "Psychology": "Psychology (2027).pdf"}
 
 
 def pitch(layer: list[dict]) -> float:

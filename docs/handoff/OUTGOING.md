@@ -93,6 +93,10 @@ cleanly.
 kind, and the four subjects' statements fall from 871 over-captured items to **62** at the right grain
 (Music's `comp-explorectx` is its own paragraph; a question unit carries its printed question); note
 that Dance's criteria tables now sit under their own sub-headings and are no longer inside a unit span.
+**Correction after the consistency pass:** enumerating Visual Arts and Psychology also brought their
+units into the unit-statements extractor, so `statements_units.csv` now carries **124 items across 101
+of the 104 units** (Visual Arts 12, Psychology 50); the three units with no printed statement are
+genuinely empty under the next-heading rule — Dance `comp-ca` and Literature `AoE1-TOK` / `AoE2-TOK`.
 Trailing list numbers are handled **structurally** — a bare marker (`1.`, `2.`) starts the next item
 rather than being glued to the previous one, so 0 statements end in a marker, and no text strip was
 applied because 8 items legitimately end in a number (`… illustrated in figure 2.`). `printed_units.csv`

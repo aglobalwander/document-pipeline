@@ -643,3 +643,7 @@ recorded against the sha in that artifact's `source.json`. Outcomes:
   size), so the byte-identity note we relayed earlier from your index does not hold for these two.
 
 None of this changes the returns above: it records which document each artifact was read from.
+
+**Everything we need from you, in one place:** `docs/handoff/2026-09-17-pipeline-to-km-open-questions.md`
+— seven asks (the six Hub-composite-code subjects, the arts/language shape, the Visual Arts canon
+basis, the nine stale labels, the 12 debris and 63 empty rows, level coverage, and acceptance).

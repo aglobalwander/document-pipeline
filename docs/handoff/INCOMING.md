@@ -137,10 +137,34 @@ whether they are the same population as KM's 115 is a hypothesis to check, not a
   from ordering rather than printed. The acceptance asks that *"the lettered sub-item matches the
   guide's lettering"* — that cannot be met as written, and the finding is the result rather than a pass.
 
-**Substrate for the two withheld reads is in hand (2026-09-18).** The milestone's **315 NCAS residuals**
-and **137 Theatre derived scales** have no enumerated list yet, and KM chose to ask rather than invent
-one. Both need the same thing from this side, so that substrate is built now and those reads become
-**joins rather than new extraction** once the definitions arrive:
+**Substrate for the two withheld reads is in hand (2026-09-18), and one of them is now a join rather
+than a read.** The milestone named the **315 NCAS residuals** and the **137 Theatre derived scales**
+without an enumeration; KM has since built the 315's by joining against this substrate. **Provenance
+decision, since the substrate is generated and therefore lives under the ignored `data/output/` tree
+rather than in git:** the summary publishes its sha256s, so the pin is checkable by regenerating from
+the tracked script, and two runs produce byte-identical files (verified).
+
+| artifact | sha256 | reproducible by |
+|---|---|---|
+| `ncas_code_source_index.csv` | `773b36d38734d559aa7a9a55ccdff06efb43afc19743139e6daf769aefdf0e93` | `poetry run python scripts/standards/km_ncas_theatre_substrate.py` |
+| `theatre_printed_codes.csv` | `28c33d2b27ab0e93579db60bb698693564edefc8158923503e0902d055f47f68` | same command |
+
+**If KM's recorded pin differs from these hashes, this is the version to re-verify against** — the
+extractor logic has not changed since their join, but a pin that does not match anchors the measurement
+to different bytes, and that must be settled rather than assumed.
+
+**R3's outcome (KM's join): 292/315 = 92.7%, residue 23 — corrected upward from a first pass of 265.**
+The 50-row first residue was the **measuring key, not the data**: KM's normaliser stripped a `Dance: `
+label prefix on its own side while the substrate's side kept the `DA:`-bearing form, so 20 Dance rows
+scored as misses when the code was there all along. The corrected residue collapses to **~2 genuine
+absences** — `TH:Cr1.1.5` and `TH:Cr1.1.7`, which print in DA/MA/MU/VA but **not** Theatre — with the
+rest needing two **notation rulings** (`TH:Cr2.1.<band>` prints as `TH:Cr2-I.`/`-PK.`/`-6.` with no `.1`
+item number; `TH: Re7.1.I.` carries a space and `TH:Cn11.2.-1.` hyphens) and one **grain ruling**
+(`MA:Re9.1.HS` is the unsubdivided parent of `.HS.I/II/III`). Also surfaced as an as-printed
+irregularity: `TH:Cr1.1.6` prints without the trailing period all its siblings carry. **138 of the 292
+resolved rows are source-ambiguous** — the ambiguity the residuals exist to adjudicate, now per row.
+
+**What the substrate carries** (raw evidence, deliberately unopinionated about what qualifies):
 
 | artifact | content | measure |
 |---|---|---|
@@ -153,6 +177,8 @@ acceptance artifact** — it reports what the twelve returned documents print an
 qualifies.
 
 ### Action Required
+
+- [x] pipeline-documents: `statement_code_qualified` for **design technology** (49 groups) — done: 121
       rows qualified from the guide's printed topic heading (`A1.1 1.1.1`), collisions now 0 on
       `(subject, statement_code_qualified)`, the `statement_code` column untouched, and no other
       subject moved.

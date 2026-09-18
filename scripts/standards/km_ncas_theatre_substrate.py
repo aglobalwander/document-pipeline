@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import collections
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -30,6 +31,14 @@ from km_text_layer import OUT_ROOT
 REQUEST = "p2_ncas_at_a_glance"
 FIELDS_INDEX = ["printed_code", "documents", "occurrences", "first_page", "first_bbox"]
 FIELDS_THEATRE = ["printed_code", "inline_code", "band_as_printed", "page", "bbox", "file"]
+
+
+def sha256_of(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def build_substrate(documents: list[dict]) -> tuple[dict, list[dict]]:
@@ -91,6 +100,10 @@ def main() -> None:
 
     shared = sum(1 for e in index.values() if len(e["documents"]) > 1)
     bands = collections.Counter(t["band_as_printed"] for t in theatre)
+    # The substrate is generated (so it lives under the ignored output tree), and KM's R3 join pins it
+    # by sha256. The hashes are published here for exactly that reason: the pin is checkable by
+    # regenerating these files from this tracked script and comparing, which is what makes an
+    # otherwise-untracked artifact safe to anchor a measurement to.
     summary = {
         "documents": [d["file"] for d in documents],
         "distinct_printed_codes": len(index),
@@ -99,6 +112,11 @@ def main() -> None:
         "theatre_bands": dict(bands),
         "theatre_bands_that_are_scales_not_grades": sorted(
             b for b in bands if not b.isdigit() and b not in ("PreK", "K", "HS I", "HS II", "HS III", "HS IV")),
+        "artifact_sha256": {
+            "ncas_code_source_index.csv": sha256_of(base / "ncas_code_source_index.csv"),
+            "theatre_printed_codes.csv": sha256_of(base / "theatre_printed_codes.csv"),
+        },
+        "reproducible_by": "poetry run python scripts/standards/km_ncas_theatre_substrate.py",
         "method": "printed codes and bands from the cached cells; no OCR, no model",
         "status": "substrate for reads KM has not requested; not an acceptance artifact",
     }

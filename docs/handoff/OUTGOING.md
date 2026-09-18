@@ -26,6 +26,68 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: R5 returned — 205 of 267 located; chemistry is 31 of 32, not 0 of 32; R6 logged]
+### Type: extraction return
+### Priority: now
+
+**Subject: R5 — the printed string for 267 DP codes, read as spans of the guides' own lines**
+
+Artifacts in `data/output/km_requests/2026-09-18/r5_dp_printed/`: `r5_dp_printed_read.csv`,
+`r5_dp_printed_read_summary.json`, and the seven text layers, each verified against the store's
+`MANIFEST.csv` by sha256 (`km_text_layer.py` refuses bytes whose hash does not match).
+
+**205 of the 267 rows carry a printed string** — 183 on one printed line, 22 across the guide's own
+wrap — with page and bbox. **62 are `not_printed`, each carrying the region read.**
+
+**Chemistry is 31 of 32, not 0 of 32, and your named residue is answered.** You wrote that chemistry
+prints *section headings* (`Structure 1. Models of the bonding`) where the canon holds *topic labels*
+(`Electron sharing reactions`) — **0 of 32 match**. The guide prints
+`Reactivity 3.3—Electron sharing reactions` on p.67. The topic *is* printed: it sits **inside** the
+section heading, after an em dash. So the delta is a **notation prefix** (`Structure 1.1—`,
+`Reactivity 3.3—`), not a grain difference. All 30 located chemistry rows return as
+`Structure N.` / `Structure N.M—` / `Reactivity N.` / `Reactivity N.M—` with page and bbox. The one
+`not_printed` is `EXP3` *Scientific investigation (IA teaching time)*.
+
+**Why the rest were hidden — and it is the same reason everywhere: the guides wrap.** The text layer
+is one record per printed line, and these guides break a heading or a cell across lines. Dance prints
+`AO1.` and `Knowledge and understanding` as two lines on p.17; Psychology prints `Animal
+research/animal` and wraps to `models`; Music prints its roles as a row of single words. A per-line
+equality test cannot see any of that, which is why `label == printed_text` reached 104 of 371. This
+read matches **tokens over a window of 1–3 consecutive lines, never crossing a page**.
+
+**Tolerances, named per row so no ruling is made silently:** `label_is_the_printed_line`,
+`label_on_one_printed_line`, `label_over_N_printed_lines`, and `*_spelling_tolerant` — a closed
+spelling list (behaviour/behavior, programme/program, …) applied **only** when the label is otherwise
+unlocatable, on the guess that a label written from one guide carries another's spelling.
+
+**Every row reports `occurrences` and `heading`.** 145 rows have more than three spans: a two-word
+label such as `Identity` occurs in prose as well as in a heading, so the count is in the artifact and
+the summary lists the rows. The ranking prefers a line that **is** the label, then a standalone line,
+then a heading, then the tightest run. That ranking is not a detail — spot-checks before this went out
+caught two of our own defects in it: `Artistic intentions` had resolved to p.13 **prose** (*"their
+artistic intentions and to create with curiosity…"*) instead of the p.31 heading, and a Psychology
+cell came back padded with the unrelated lines above it. Both are fixed, and both are pinned by tests.
+
+**The region read** for a `not_printed` row walks your `parent_code` chain in `dp_canonical.csv` to
+the nearest ancestor whose own label locates: `ca-*` returns under `Composition and analysis` (p.23),
+`wds-*` under `World dance studies` (p.26), `ext-culture-*` under `Culture` (p.42). **25 of the 62
+carry no region** — their chain has no printable ancestor — and the artifact says so rather than
+leaving a blank.
+
+### Action Required
+
+- [ ] KM: accept the 205 located rows; rule the 145 high-occurrence rows and the 62 `not_printed`.
+- [ ] KM: the DP derived-code rekey is no longer behind us.
+- [x] pipeline-documents: R3's two items — `km_r3_residual_read.py` and its test committed (`cdb09e3`);
+      the key is now `\s+[a-e]\.?\s*$` applied tail-first in a loop, as you measured. Suite **190
+      passed, 17 deselected**.
+- [x] pipeline-documents: R6 logged in `INCOMING.md`; the read itself is not started.
+- [x] pipeline-documents: fixed a repo bug found by running the layers — `km_text_layer.py` died on
+      its final print (`NameError: name 'markers'`, from `ae02b9d`), so every run wrote its artifacts
+      and then exited non-zero.
+
+---
+
 ## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: R1 and R2 returned — 205/205 NCAS rows printed, 20/20 Dance rows located with both locations; one acceptance wording cannot be met as written]
 ### Type: extraction return
 ### Priority: now

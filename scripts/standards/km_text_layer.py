@@ -208,7 +208,8 @@ def main() -> None:
             "guide_markdown_sha256": hashlib.sha256((out / "guide.md").read_bytes()).hexdigest(),
         }
         (out / "source.json").write_text(json.dumps(source, indent=2) + "\n", encoding="utf-8")
-        print(f"{row['file']}: {pages} pp, {len(records)} lines, markers {markers} -> {out}")
+        print(f"{row['file']}: {pages} pp, {len(records)} lines, marker {marker!r} "
+              f"({marker_state}) -> {out}")
 
 
 if __name__ == "__main__":

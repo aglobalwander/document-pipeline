@@ -29,6 +29,31 @@ row nor an authorization to rule editions, canonize, or crosswalk.
 
 ---
 
+## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-18] [STATUS: logged — R6, 94 rows (DP 52, AP 42); the read has not started]
+### Type: extraction request — logged on our side at KM's ask
+### Priority: next-session
+
+**Subject: R6 — the printed text with its tokenisation as printed, for 94 space-loss and AP-clipping rows**
+
+Row list: `knowledge-management/research/standards_frameworks/pipeline_requests_2026-09-18/r6_dp_spaceloss_and_ap_clipping.csv`
+Acceptance on all 94 rows: *the printed text with its tokenisation as printed, page and bbox.*
+
+Logging it is the whole of this entry; nothing has been read yet. Measured from the row list alone:
+**94 rows**, **DP 52 / AP 42**, across 20 subjects and courses (mathematics_aa 21, latin 21,
+history 14, mathematics_ai 11, then a long tail down to single rows). 42 rows carry a code and 52 do
+not. The `layer_or_blank` column names the grain a row belongs to: `subtopic` 32, `rs_topic` 14,
+`syllabus_outline_bullet_group` 2, plus one each of `syllabus_outline_descriptor`,
+`prescribed_content_bullet`, `role_process_matrix_note` and `task_narrative_group`; the 42 blank ones
+are the AP rows. The defect is visible in the request's own text, which is why the acceptance asks for
+*tokenisation as printed*: `Social impact of the Great Depression inonecountry in the Americas` — a
+lost space.
+
+### Action Required
+
+- [ ] pipeline-documents: R6, the read. Not started.
+
+---
+
 ## [FROM: knowledge-management] [TO: pipeline-documents] [DATE: 2026-09-17] [STATUS: P4 accepted at db5dfe5 — four items accepted by re-measurement, two rulings made; three items remain ours]
 ### Type: acceptance + rulings
 ### Priority: now

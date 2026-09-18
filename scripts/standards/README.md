@@ -137,6 +137,19 @@ editions, canonize, or crosswalk.
 - Re-reads a row across sibling shas only for ACTFL, where the level PDFs share a layout and the
   request mislabels the source; other frameworks' coincidences are boilerplate, not a swapped source
 
+#### `km_dp_printed_read.py`
+- R5: for each of KM's 267 derived DP codes, the printed string it stands for, with page and bbox;
+  where the guide prints no string for it, an explicit `not_printed` carrying the region read
+- Matches **tokens over a window of 1-3 consecutive printed lines**, not per line, because these
+  guides wrap a heading or a table cell across lines (Dance prints `AO1.` and `Knowledge and
+  understanding` as two lines); a window never crosses a page
+- Ranking prefers a line that *is* the label, then a standalone line, then a heading, then the
+  tightest run; `occurrences` and `heading` are reported per row, so a two-word label that also
+  occurs in prose is visible rather than silently picked
+- A `not_printed` row walks the canon's own `parent_code` chain to the nearest ancestor whose label
+  locates, so the region the guide *does* print comes back with the row
+- Reads only the text layers written by `km_text_layer.py`; no OCR, no model
+
 #### `check_p3_reads.py`
 - Acceptance for P3: every token of a read row's `printed_text` is printed on that row's own region
   pages (presence), and every referenced crop exists. Exits non-zero on either failure

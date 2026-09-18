@@ -154,6 +154,13 @@ editions, canonize, or crosswalk.
   locates, so the region the guide *does* print comes back with the row
 - Reads only the text layers written by `km_text_layer.py`; no OCR, no model
 
+#### `km_ap_store_edition_index.py`
+- What every AP source in the store *is*, from the document's own statement rather than its filename:
+  one row per AP entry in `MANIFEST.csv`, with the marker, the page it prints on and the edition year
+- Reports where a course is **held in more than one edition** and which of them is the newest, since
+  the newest governs the extraction — AP Latin is held at 2020 and 2025
+- No body read and no text comparison: the marker is front matter, and nothing here reads a statement
+
 #### `km_r7_ap_edition_markers.py`
 - R7: the edition marker each AP course description prints, with the page it prints on; where a
   document states no edition, an explicit `no_marker_printed` with the region read

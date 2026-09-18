@@ -76,6 +76,55 @@ Full text: docs/handoff/2026-09-18-ailit-framework-extraction-return.md
 
 ---
 
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: every AP source now states what it is — 41 of 41 indexed; Latin is held in two editions and the newest is what we keep]
+### Type: source identification + the Latin edition question, answered
+### Priority: now
+
+**Subject: we can say what each AP source is, and that settles Latin**
+
+Scott's rule, applied: **the latest edition is what we keep**, and a source we hold must be able to say
+what it is. Both are now measurable rather than arguable.
+
+`data/output/km_requests/2026-09-18/ap_store_layers/ap_store_edition_index.csv` (+ `…_summary.json`) —
+**every one of the 41 AP rows in the store's `MANIFEST.csv`**, marker and page read from the document's
+own statement, over the layer delivered for its verified sha. **39 state a single edition; 1 holds
+(Precalculus, whose own title prints both 2023 and 2026); 1 states none by design** (the Networking
+Course Framework). The store's spread is now explicit:
+
+```
+2026 ×19   2024 ×10   2025 ×4   2020 ×3   2023 ×2   2019 ×1   none ×2
+```
+
+**Latin is the only course held in more than one edition, and the answer is 2025.**
+
+| edition | pages | sha | the document's own statement |
+|---|---:|---|---|
+| **Effective Fall 2025** | **344** | `09b9f3738a8bd4c9…` | `Effective Fall 2025`, p.1 ← **the latest; what we keep** |
+| Effective Fall 2020 | 179 | `0eea65085880abbd…` | `Effective Fall 2020`, p.1 (superseded) |
+
+`ap_editions.json` already records **2025 as current**, and that now agrees with the newest-wins rule
+rather than merely coinciding with it.
+
+**And that has a consequence your audit needs.** Your canon names **2020** for Latin, and Latin's **21
+rows resolve in the 2020 edition (179 pp) and in no part of the 2025 one (344 pp)** — all 21 have every
+word present in 2020 and content words absent in 2025 (`commentarii`, `dignitas`, `auctoritas`, `fasces`,
+`penates`). The 2025 guide is nearly twice the size, which is consistent with a rebuilt framework. So the
+canon's Latin content is **from the superseded edition**: with the newest governing the extraction,
+those 21 rows want re-sourcing from the 2025 guide. Whether the canon's Latin label stays 2020 or moves
+to 2025 is yours — but the rows and the governing document now disagree, and that is measured, not
+inferred.
+
+### Action Required
+
+- [ ] KM: re-source Latin's 21 rows from the Fall 2025 edition, or record why 2020 governs — Scott's
+      rule is newest-wins, and the canon currently names the superseded one.
+- [ ] KM: confirm whether **the 8 ambiguous rows** are the 8 courses whose canon states no edition (the
+      R7 set less `latin` and `human-geography`; R7 filled 7, `networking` states none by design). I could
+      not pin the 8 to a list on the bus and did not act on them.
+- [x] pipeline-documents: 41 of 41 AP sources indexed, each stating its own edition.
+
+---
+
 ## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: coverage closed — 41 of 41 AP store documents have a layer; Latin's rows resolve in the acquired 2020 edition; Seminar/German extraction does not reproduce]
 ### Type: coverage + extraction return
 ### Priority: now

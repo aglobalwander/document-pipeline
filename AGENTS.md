@@ -8,6 +8,15 @@ This project extracts and transforms PDF, DOCX, PPTX, text, images, audio,
 video, and supported URLs into text, Markdown, JSON, CSV, or XLSX. It does not
 own Milvus, Postgres, or other downstream ingestion.
 
+It does not own the standards **canon** either. The canon is knowledge-management's,
+built from the publisher documents under `_01_hubs/knowledge-management/research/
+standards_frameworks/`; a copy under `_01_hubs/master_data_model_drupal/data_transforming/
+km_canon_<date>/` is a dated delivery snapshot, not the authority. Publisher sources
+are read by sha256 from the OneDrive store `_Standards Frameworks/
+_curriculum_ontology_sources/MANIFEST.csv` (`km_text_layer.py` refuses bytes whose hash
+does not match). An extraction or a received request is evidence — never a canon row,
+and never authorization to canonize, rule editions, or crosswalk.
+
 Processing defaults:
 
 - Use the active Codex subscription interactively for one-off LLM review and

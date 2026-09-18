@@ -2,6 +2,33 @@
 
 This directory contains scripts for extracting and processing educational standards from PDF documents that have been converted to text.
 
+## Where the canon and the sources live
+
+Established 2026-09-18 and not ours to change:
+
+- **The canon is knowledge-management's artifact**, not this repo's.
+  `_01_hubs/knowledge-management/research/standards_frameworks/<framework>_canonical/output/*.csv`
+  (NCAS: `ncas_canonical/output/ncas_canonical.csv`) is the authority, tracked in KM git and built by
+  KM's builders (`build_ncas_canonical.py`, `extract_ncas_at_a_glance.py`, …) from the publisher
+  documents. KM's `SOURCE_OF_TRUTH.md` names the tiers: SOURCE (the publisher's own material) →
+  HUB (the live standard nodes) → KM DECONSTRUCTION.
+- **A copy under `_01_hubs/master_data_model_drupal/data_transforming/km_canon_<date>/` is a dated
+  delivery snapshot, not the canon.** Check its date before reading any difference from KM's copy as a
+  defect. The `km_canon_20260914` snapshot is **16 duplicate-group repairs behind** the canon —
+  KM commit `c6de8ccc4` ("the 16-row child rekey", duplicate groups 226 → 210) gave 16 Music child rows
+  their own code (`MU:Cr3.1.2a`) where the snapshot still carries two rows both keyed `MU:Cr3.1.2`.
+  Snapshot `1af88ffe…`; canon `6c2613b2…`; both 2,000 rows.
+- **The official publisher source store is the OneDrive mount**
+  `~/Library/CloudStorage/OneDrive-ShanghaiAmericanSchool/2_Models-Frameworks-Research/_Standards Frameworks/_curriculum_ontology_sources`,
+  addressed by sha256 through its `MANIFEST.csv`. `km_text_layer.py` reads it and refuses bytes whose
+  hash does not match. NCAS rows still migrating onto it are visible in the canon's own provenance:
+  1,379 rows cite the Drupal scrape with the basis *"sha256 of ncas.csv … NOT a publisher sha: the text
+  was not parsed from the PDF"*.
+
+The boundary is fixed (see `docs/handoff/INCOMING.md`): this repo extracts and transforms, so an
+extraction is evidence and a received request is neither a canon row nor an authorization to rule
+editions, canonize, or crosswalk.
+
 ## Scripts Overview
 
 ### Extraction Scripts

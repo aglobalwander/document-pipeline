@@ -246,10 +246,20 @@ def main() -> None:
         "by_status": dict(by_status),
         "by_subject": {f"{s}/{st}": n for (s, st), n in sorted(by_subject.items())},
         "located": by_status["printed"] + by_status["printed_wrapped"],
-        "no_region": {r["code"]: r["evidence"][:90] for r in out
+        "no_region": {f"{r['subject']}/{r['code']}": r["evidence"][:90] for r in out
                       if r["status"] == "not_printed" and not r.get("region_code")},
-        "ambiguous": {r["code"]: int(r["occurrences"] or 0) for r in out
-                      if int(r["occurrences"] or 0) > 3},
+        # Keyed by (subject, code). Keying by code alone dropped 8 rows from this map, because 16
+        # codes repeat across subjects — the "145" first published here was that loss, and the true
+        # count is 153. Split by whether the chosen span IS the printed line, because 109 of the 153
+        # are exact and carry no ambiguity: a label that is a common word occurs often, which is a
+        # property of the word, not a question for KM. Only the remainder is worth a ruling.
+        "spans_over_3": {f"{r['subject']}/{r['code']}": int(r["occurrences"]) for r in out
+                         if int(r["occurrences"] or 0) > 3},
+        "ambiguous_not_an_exact_line": {
+            f"{r['subject']}/{r['code']}": {"occurrences": int(r["occurrences"]), "page": r["page"],
+                                            "rule": r["rule"]}
+            for r in out if int(r["occurrences"] or 0) > 3
+            and not r["rule"].startswith("label_is_the_printed_line")},
         "method": ("token match over windows of 1-3 consecutive printed lines, headings preferred; "
                    "no window crosses a page"),
         "apply_authorized": False,

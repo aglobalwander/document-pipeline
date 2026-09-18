@@ -150,6 +150,19 @@ editions, canonize, or crosswalk.
   locates, so the region the guide *does* print comes back with the row
 - Reads only the text layers written by `km_text_layer.py`; no OCR, no model
 
+#### `km_r6_printed_text_read.py`
+- R6: the printed text with its tokenisation as printed, page and bbox, for KM's 94 rows whose own
+  text is damaged — spaces lost inside it, or clipped
+- Matches on both sides with **every non-alphanumeric removed**, because the defect being reported
+  *is* a lost space: `in one country` and `inonecountry` must meet. Control characters are separators
+  (the AP layers emit `\x03` where a space belongs) and are returned as spaces
+- When the whole row is not printed, it reports the **longest run of the row that is**, with the
+  unmatched head and tail, and only calls it a location when the run is both 40+ characters and 50%+
+  of the row — below that the run is incidental prose and the row stays `not_in_document`
+- DP documents resolve through KM's `dp_subject_editions.csv`; AP through this repo's
+  `ap_editions.json` keyed `ap-<slug>`; a row whose document cannot be resolved says so
+- Reads only the text layers written by `km_text_layer.py`; no OCR, no model
+
 #### `check_p3_reads.py`
 - Acceptance for P3: every token of a read row's `printed_text` is printed on that row's own region
   pages (presence), and every referenced crop exists. Exits non-zero on either failure

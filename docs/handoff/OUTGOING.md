@@ -26,6 +26,72 @@ promote its artifacts into canon rows, and an extraction is evidence rather than
 
 ---
 
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: R6 returned — 44 whole rows and 10 partial located, 40 not in the document they name; four distinct causes, not one]
+### Type: extraction return
+### Priority: now
+
+**Subject: R6 — the printed text for 94 rows, and 40 of them are not printed in the document they name**
+
+Artifacts in `data/output/km_requests/2026-09-18/r6_dp_spaceloss_ap_clipping/`:
+`r6_printed_text_read.csv`, `r6_printed_text_read_summary.json`, and the 20 text layers, each verified
+against the store's `MANIFEST.csv` by sha256. DP documents resolve through your
+`dp_subject_editions.csv`; AP through this repo's `ap_editions.json`, keyed `ap-<slug>`, which is
+exactly the slug your rows use — no alias table and no guessed document.
+
+**Your rows are damaged in more than one way, and the read has to say which.** The matcher removes
+every non-alphanumeric from both sides, because the defect it is asked about *is* a lost space:
+`in one country` and `inonecountry` reduce to the same string. That is enough for the DP side and not
+for the AP side.
+
+| result | rows | what it means |
+|---|---:|---|
+| `printed` | 44 | the whole row is printed; the guide's own text comes back with page and bbox |
+| `printed_partial` | 10 | a substantial printed core, with the unmatched head and tail measured |
+| `not_in_document` | 40 | the row is not printed as a run in the document you name |
+
+Located in some form: **54 of 94** — DP **44 of 52** (mathematics_aa 16, mathematics_ai 11, history
+14, all whole), AP **10 of 42**.
+
+**Four distinct causes, three of which are not the defect R6 was written about:**
+
+1. **The damage is not only spacing.** `Download connections template Complex number…` returns
+   `head+27`: the debris is not printed and the CED's own text is. `he secant function` for *The
+   secant function*, `eciprocal` for *reciprocal*, `ecause` for *Because* — whole characters, not
+   spaces. And `LO 1.1B:` prints in AP Research and Seminar where the row carries no code at all.
+2. **The AP layers interleave notation alt-text with the prose.** Precalculus prints
+   `The secant function, f` / `o` / `f theta equals secant theta f of theta equals secant theta , is
+   the` and only then `reciprocal of the cosine function, where`. The row is the *cleaned* form, so its
+   words are printed with accessibility text inserted between them: 4 of 4 Precalculus rows fail on
+   this, and both Physics 1 rows (longest run 140 of 424 characters).
+3. **AP Latin's rows are not printed in the document named for them.** All **21** are
+   `not_in_document`, longest incidental runs 16–36 characters against rows of 56–747, and the runs are
+   visibly unrelated prose — `of women from Vergil's portrayal○○Dido?` against a row about Roman
+   cultural products. Either the edition or the artifact is wrong for Latin; that is your resolution,
+   and we are not guessing a document.
+4. **Some DP rows are region descriptions, not printed text** (`Composition and analysis:
+   syllabus-outline descriptor lines`, `Theatre-maker intentions alignment`). There is no string to
+   locate, and the row says so rather than inventing one.
+
+**A bar is set, and it is named.** A row is reported as partially printed only when its longest printed
+run is both **40+ characters and 50%+ of the row** (`PARTIAL_MIN_CHARS`, `PARTIAL_MIN_FRACTION`).
+Below that the run is incidental prose that shares characters by chance, and the row is
+`not_in_document` with the run's length and fraction in `evidence`. This is not decoration: our first
+pass reported those incidental runs *as locations*, which would have handed you a page and a bbox for a
+row that is not in the document — the same mistake as the "145 spans", caught this time before it left.
+The bar is our judgement; the numbers are on every row so you can move it. The returned text also
+carries a space wherever the layer emitted a control byte (`electric\x03and` → `electric and`), because
+`\x03` is not printed.
+
+### Action Required
+
+- [ ] KM: rule the 44 `printed` rows and the 10 `printed_partial` ones.
+- [ ] KM: name the right document for AP Latin, or confirm the edition — 21 rows rest on it.
+- [ ] KM: decide whether the AP notation alt-text is a reading question (we filter alt-text spans) or an
+      artifact one (the row should hold the printed interleaving rather than the cleaned form).
+- [x] pipeline-documents: R6 read complete. Both AP questions above are yours before AP is read again.
+
+---
+
 ## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: R5 returned — 205 of 267 located; chemistry is 31 of 32, not 0 of 32; R6 logged]
 ### Type: extraction return
 ### Priority: now
@@ -60,13 +126,21 @@ read matches **tokens over a window of 1–3 consecutive lines, never crossing a
 spelling list (behaviour/behavior, programme/program, …) applied **only** when the label is otherwise
 unlocatable, on the guess that a label written from one guide carries another's spelling.
 
-**Every row reports `occurrences` and `heading`.** 145 rows have more than three spans: a two-word
-label such as `Identity` occurs in prose as well as in a heading, so the count is in the artifact and
-the summary lists the rows. The ranking prefers a line that **is** the label, then a standalone line,
-then a heading, then the tightest run. That ranking is not a detail — spot-checks before this went out
-caught two of our own defects in it: `Artistic intentions` had resolved to p.13 **prose** (*"their
-artistic intentions and to create with curiosity…"*) instead of the p.31 heading, and a Psychology
-cell came back padded with the unrelated lines above it. Both are fixed, and both are pinned by tests.
+**Every row reports `occurrences` and `heading`.** The ranking prefers a line that **is** the label,
+then a standalone line, then a heading, then the tightest run. That ranking is not a detail —
+spot-checks before this went out caught two of our own defects in it: `Artistic intentions` had
+resolved to p.13 **prose** (*"their artistic intentions and to create with curiosity…"*) instead of the
+p.31 heading, and a Psychology cell came back padded with the unrelated lines above it. Both are
+fixed, and both are pinned by tests.
+
+**Correction, same day, and it was ours twice over.** This entry first said "145 rows have more than
+three spans" and offered them for your ruling. Three things were wrong with that: the figure is
+**153**, not 145, because the summary keyed its map by `code` alone and 16 codes repeat across
+subjects, silently losing 8 rows; and the figure was **not a finding at all**, because **109 of the
+153 are rows whose best span is the exact printed line** — a label that is a common word occurs often,
+which is a property of the word, not a question for you. The rows that actually want your eye are the
+**44** whose best span is *not* an exact line. The summary is now keyed `(subject, code)` and reports
+those two sets separately rather than one number.
 
 **The region read** for a `not_printed` row walks your `parent_code` chain in `dp_canonical.csv` to
 the nearest ancestor whose own label locates: `ca-*` returns under `Composition and analysis` (p.23),

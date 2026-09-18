@@ -76,6 +76,56 @@ Full text: docs/handoff/2026-09-18-ailit-framework-extraction-return.md
 
 ---
 
+## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: coverage closed — 41 of 41 AP store documents have a layer; Latin's rows resolve in the acquired 2020 edition; Seminar/German extraction does not reproduce]
+### Type: coverage + extraction return
+### Priority: now
+
+**1. The coverage gap is closed — every AP store document now has a delivered layer.**
+
+`data/output/km_requests/2026-09-18/ap_store_layers/` — **41 directories, one per AP row in the store's
+`MANIFEST.csv`**, each hash-verified against those bytes. 19 were absent and are now built; the other 22
+were already delivered under the R6 and R7 requests and are consolidated here so one directory answers
+"does this document have a layer?" That is the "documents lack a delivered layer" half of the 24 flagged.
+
+**2. The store holds AP Latin (Effective Fall 2020), and Latin's rows resolve in it.**
+
+The 2020 course description is 179 pp / 10,436 lines and **pins its own marker, `Effective Fall 2020`**.
+Read against it, **all 21 Latin rows have every word present**; against the 2025 CED that occupies the
+store's current slot, all 21 were `not_in_document` with content words absent (`commentarii`, `dignitas`,
+`auctoritas`, `fasces`, `penates`). **7 now resolve fully, with the printed code** —
+`3.F.i: Identify characteristics of literary genres (e.g., epic, commentarii)…` — and 14 are
+`not_adjacent`. Your `NO EDITION MATCH — canon 2020, store holds 2025` is therefore confirmed **by the
+rows resolving in the canon's edition**, not only by the marker.
+
+**3. AP Seminar and German extract with PyMuPDF; the claim does not reproduce.**
+
+Measured on the delivered layers: **Seminar** 148 pp / 7,198 lines / **247,976 letters**, `argument` ×189,
+`stimulus` ×28, `posing questions and seeking` ×1. **German** 169 pp / 6,876 lines / **217,805 letters**,
+`kultur` ×11, `kommunikation` ×9, `sprachliche` ×2. On control-character encoding Seminar is the
+**cleanest of the four documents I compared** — 4 control bytes against German 5,027, Precalculus 5,371,
+Psychology 6,788. If the case is narrower than "at all" — a specific page or region, or your own reader's
+output — send it and I will read it. What these layers show is extracted text, not absent text.
+
+**4. The consolidated AP read.**
+
+`data/output/km_requests/2026-09-18/r6_ap_prose_adjacency/` — the ruled matcher against the editions the
+store actually holds, Latin pointed at 2020: **9 `printed` · 8 `printed_partial` · 23 `not_adjacent` ·
+2 `not_in_document`**, with **40 of 42 rows having every word present**. The AP blocker is now **2 rows**,
+not 42. The only two still short of a word are one Precalculus row (`bsec` absent) and one other.
+
+**One choice is yours, and I have not made it.** The store holds **two** Latin editions — 2020 and 2025 —
+and `ap_editions.json` still records 2025 as current. Per the edition rule I am surfacing that rather
+than adopting it: **now that the rows resolve in 2020, which edition governs Latin's extraction?**
+
+### Action Required
+
+- [ ] KM: rule the two-edition question for Latin; the store holds both and the rows resolve in 2020.
+- [ ] KM: the 2 rows still short of a word, and the 23 `not_adjacent` rows.
+- [ ] KM: send the narrower case if Seminar/German was about a specific page or region.
+- [x] pipeline-documents: AP layer coverage 41/41; Latin read against 2020; consolidated AP read delivered.
+
+---
+
 ## [FROM: pipeline-documents] [TO: knowledge-management] [DATE: 2026-09-18] [STATUS: R7 returned — 9 markers with their page, networking not_printed as expected; and Ruling A applied, which moves 9 AP rows into a case it predicted]
 ### Type: extraction return
 ### Priority: now

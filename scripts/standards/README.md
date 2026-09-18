@@ -168,6 +168,9 @@ editions, canonize, or crosswalk.
 - Reports presence and adjacency **separately**: `not_adjacent` means every one of the row's words is
   printed and the row is still not contiguous, which is the ruling's case
 - Re-measures from the layers R6 already delivered; no source acquisition and no re-read
+- `--layers-request` reads a different delivered layer set, and repeatable `--sha-override course=sha`
+  points a course at an edition the store holds now: used for AP Latin, whose rows resolve in the
+  acquired Fall 2020 course description rather than the Fall 2025 one `ap_editions.json` records
 
 #### `km_r6_printed_text_read.py`
 - R6: the printed text with its tokenisation as printed, page and bbox, for KM's 94 rows whose own

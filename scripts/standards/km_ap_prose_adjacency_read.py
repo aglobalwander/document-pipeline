@@ -44,6 +44,10 @@ from km_text_layer import OUT_ROOT
 NOTATION_FONTS = ("minionpro", "stix", "symbol", "euclidmath", "wingdings", "zapfdingbats",
                   "applesymbols")
 REQUEST = "r6_ap_prose_adjacency"
+# Which delivered layer set to read. Overridable because a store edition can arrive *after* the layers
+# a request named — the AP Latin 2020 course description did — and the ruled matcher should be able to
+# run against it without a second copy of the matcher.
+LAYERS_REQUEST = R6_REQUEST
 FIELDS = ["subject_or_course", "code", "text_as_km_holds_it", "guide_file", "guide_sha256",
           "status", "rule", "printed_text", "page", "bbox", "tokens_total", "tokens_present",
           "missing_tokens", "missing_head", "missing_tail", "evidence"]
@@ -88,7 +92,7 @@ def read_row(row: dict, shas: dict, cache: dict) -> dict:
         return out
     out["guide_sha256"] = sha
     if sha not in cache:
-        base = OUT_ROOT / "2026-09-18" / R6_REQUEST / sha
+        base = OUT_ROOT / "2026-09-18" / LAYERS_REQUEST / sha
         records = [json.loads(line) for line in
                    (base / "text_layer.jsonl").open(encoding="utf-8")]
         source = json.loads((base / "source.json").read_text(encoding="utf-8"))
@@ -148,14 +152,24 @@ def read_row(row: dict, shas: dict, cache: dict) -> dict:
 
 
 def main() -> None:
+    global LAYERS_REQUEST
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--rows", type=Path, default=ROWS)
     ap.add_argument("--date", default="2026-09-18")
+    ap.add_argument("--layers-request", default=R6_REQUEST,
+                    help="the delivered layer set to read (default: R6's)")
+    ap.add_argument("--sha-override", action="append", default=[],
+                    help="repeatable `course=sha256`, to read a row against an edition the store "
+                         "holds now rather than the one ap_editions.json records")
     args = ap.parse_args()
+    LAYERS_REQUEST = args.layers_request
 
     rows = [r for r in csv.DictReader(args.rows.open(newline="", encoding="utf-8"))
             if r["framework"] == "AP"]
     shas = resolve()
+    for spec in args.sha_override:
+        course, _, sha = spec.partition("=")
+        shas[("AP", course.strip())] = sha.strip()
     cache: dict[str, tuple] = {}
     out = [read_row(r, shas, cache) for r in rows]
 

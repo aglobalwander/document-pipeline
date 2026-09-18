@@ -154,6 +154,21 @@ editions, canonize, or crosswalk.
   locates, so the region the guide *does* print comes back with the row
 - Reads only the text layers written by `km_text_layer.py`; no OCR, no model
 
+#### `km_r7_ap_edition_markers.py`
+- R7: the edition marker each AP course description prints, with the page it prints on; where a
+  document states no edition, an explicit `no_marker_printed` with the region read
+- No body read and no text comparison: it takes the text layer `km_text_layer.py` wrote from the
+  store's hash-verified bytes and reports what the front matter states about its edition
+- A document printing two editions (`AP Precalculus`) is a `marker_review_hold`, never a pick
+
+#### `km_ap_prose_adjacency_read.py`
+- Ruling A applied: the row's characters against the document's **prose stream** — notation spans
+  dropped (KM's font families), and line breaks dropped because these guides split words across
+  lines (`pho` / `tographs`)
+- Reports presence and adjacency **separately**: `not_adjacent` means every one of the row's words is
+  printed and the row is still not contiguous, which is the ruling's case
+- Re-measures from the layers R6 already delivered; no source acquisition and no re-read
+
 #### `km_r6_printed_text_read.py`
 - R6: the printed text with its tokenisation as printed, page and bbox, for KM's 94 rows whose own
   text is damaged — spaces lost inside it, or clipped

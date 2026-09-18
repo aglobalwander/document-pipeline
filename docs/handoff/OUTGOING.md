@@ -89,6 +89,16 @@ carries a space wherever the layer emitted a control byte (`electric\x03and` →
 - [ ] KM: decide whether the AP notation alt-text is a reading question (we filter alt-text spans) or an
       artifact one (the row should hold the printed interleaving rather than the cleaned form).
 - [x] pipeline-documents: R6 read complete. Both AP questions above are yours before AP is read again.
+- [x] pipeline-documents: the R6 summary's `located` key now counts `printed_partial` too — **54**,
+      which is what the prose above says; the key had counted `printed` only (44).
+- [x] pipeline-documents: `km_text_layer.py` reads AP's marker as well as IB's, and from a **joined**
+      page rather than line by line — an AP course description prints `Effective` on one line and
+      `Fall 2026` on the next, so widening the pattern alone would still have found nothing. All **13**
+      AP documents in this request now pin their own edition: **12** singly (each matching its file
+      name) and **AP Precalculus** as `multiple_detected_markers_review_hold`, because its own title
+      prints both *Effective Fall 2026* and *Effective Fall 2023*. No IB or DP marker moved: re-read
+      across `p1_ib_guides`, `p2_ncas_at_a_glance`, `p3_row_reads` and `p4_dp_statements`, **0 of the
+      files in each changed**.
 
 ---
 

@@ -34,7 +34,9 @@ STORE = Path.home() / (
     "Library/CloudStorage/OneDrive-ShanghaiAmericanSchool/2_Models-Frameworks-Research/"
     "_Standards Frameworks/_curriculum_ontology_sources")
 OUT_ROOT = Path("data/output/km_requests")
-MARKER_RX = re.compile(r"[Ff]irst (?:assessments?|examinations?)\s+\d{4}")
+MARKER_RX = re.compile(
+    r"[Ff]irst (?:assessments?|examinations?)\s+\d{4}"          # IB: `First assessment 2025`
+    r"|[Ee]ffective\s+(?:Fall|Spring|Summer|Winter)\s+\d{4}")  # AP: `Effective Fall 2025`
 # The marker prints on the title/imprint pages, but not always in the first three: SEHS prints
 # `First assessment 2026` on page 7, which is why it read as unresolved. Eight pages covers every
 # guide in the store without reaching the syllabus body.
@@ -42,21 +44,30 @@ MARKER_PAGES = 8
 
 
 def read_markers(records: list[dict], max_page: int = MARKER_PAGES) -> list[dict]:
-    """First-assessment markers with the page each prints on, in page order.
+    """Edition markers with the page each prints on, in page order.
 
     Compared case-insensitively: `first assessment 2023` and `First assessment 2023` are the same
     marker, and treating them as two is what put Film in a review hold for one document.
+
+    A page's text is searched **joined**, not line by line. An AP course description prints its
+    edition as `Effective` on one line and `Fall 2026` on the next, so a per-line search finds the
+    word and never the marker — which is why no AP artifact could be pinned by its own marker. The
+    marker is the document's own statement either way, so joining the page is reading it, not
+    inferring it.
     """
     found: list[dict] = []
     seen: set[str] = set()
+    pages: dict[int, list[str]] = {}
     for rec in records:
         if rec["page"] > max_page:
             break
-        for match in MARKER_RX.finditer(rec["text"]):
+        pages.setdefault(rec["page"], []).append(rec["text"])
+    for page in sorted(pages):
+        for match in MARKER_RX.finditer(" ".join(pages[page])):
             key = match.group(0).lower()
             if key not in seen:
                 seen.add(key)
-                found.append({"marker": match.group(0), "page": rec["page"]})
+                found.append({"marker": match.group(0), "page": page})
     return found
 
 

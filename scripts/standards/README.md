@@ -82,6 +82,10 @@ editions, canonize, or crosswalk.
   markers, method) under `data/output/km_requests/<date>/<request>/<sha256>/`
 - PDF text layer via PyMuPDF only: no OCR, no model. On Economics 2022 it reproduces the old guide
   markdown closely enough that `ib_guide_extract.py` returns an identical `depth.json`
+- `source.json`'s edition marker reads both registers — IB's `First assessment YYYY` /
+  `First examinations YYYY` and AP's `Effective Fall YYYY` — from a **joined** page, because an AP
+  course description prints `Effective` on one line and `Fall 2026` on the next. A document that
+  prints two editions, as AP Precalculus does in its own title, holds rather than picking one
 
 #### `ib_tok_extract.py`, `ib_va_extract.py`
 - Guide-shaped extractors for DP Theory of Knowledge (2022) and Visual Arts (2027), which print

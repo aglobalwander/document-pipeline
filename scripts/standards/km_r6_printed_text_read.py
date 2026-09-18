@@ -309,7 +309,7 @@ def main() -> None:
         "rows": len(out),
         "by_status": dict(by_status),
         "by_framework": {f"{fw}/{st}": n for (fw, st), n in sorted(by_framework.items())},
-        "located": by_status["printed"],
+        "located": by_status["printed"] + by_status["printed_partial"],
         "documents": len({r["guide_sha256"] for r in out if r["guide_sha256"]}),
         "tolerances": {
             "matching": ("every non-alphanumeric removed from both sides, so a lost space in the "
